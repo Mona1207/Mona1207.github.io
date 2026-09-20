@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实验1 精讲 · Java 基本程序设计与选择结构</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== 顶部导航 ===== -->
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="cup" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" stroke="#e26a1c" stroke-width="1.8" fill="#fdeee0"/>
+        <path d="M17 10h2.2a2.8 2.8 0 0 1 0 5.6H17" stroke="#e26a1c" stroke-width="1.8"/>
+        <path d="M8 2.6c-.6.9-.6 1.7 0 2.6M11.5 2.6c-.6.9-.6 1.7 0 2.6" stroke="#b8530f" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Java 实验 01 · 精讲
+    </div>
+    <div class="navlinks" id="navlinks">
+      <a href="#overview">实验概览</a>
+      <a href="#knowledge">知识储备</a>
+      <a href="#task1">任务一</a>
+      <a href="#task2">任务二</a>
+      <a href="#thinking">思考题</a>
+      <a href="#pitfalls">易错点</a>
+      <a href="#summary">小结</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>JAVA LANGUAGE PROGRAMMING · LAB 01</span>
+        <h1>Java 基本程序设计<br>与<span class="hl">选择结构</span>实验精讲</h1>
+        <p class="sub">从 <span class="mono">javac</span> 编译运行，到变量常量、键盘输入、格式化输出、<span class="mono">if-else</span> 分支与逻辑判断——两个完整程序（成绩计算器 + 三角形分析器）带你把本章知识点一次打通。页面内含两个可交互的「在线实验台」，输入数据即可复现真实运行结果。</p>
+        <div class="hero-meta">
+          <span class="meta-chip">课程：<b>Java 语言程序设计（基础）</b></span>
+          <span class="meta-chip">实验类型：<b>设计综合</b></span>
+          <span class="meta-chip">两个类：<b>GradeCalculator / TriangleAnalyzer</b></span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#task1">开始精读
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#lab1">直接上手实验台</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://aka.doubaocdn.com/s/mGuoHTUq1k" alt="Java 编程实验主题插画：笔记本电脑、咖啡杯、几何三角与实验报告">
+        <div class="hero-badge"><span class="ok">$</span> javac *.java &amp;&amp; java Main<br><span class="ok">✓</span> 11 组测试用例全部通过</div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">2</div><div class="lbl">个完整 Java 程序</div></div>
+      <div class="hero-stat"><div class="num">12</div><div class="lbl">个核心知识点</div></div>
+      <div class="hero-stat"><div class="num">11</div><div class="lbl">组实测用例</div></div>
+      <div class="hero-stat"><div class="num">0</div><div class="lbl">编译 / 运行错误</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 实验概览 ===== -->
+<section class="block" id="overview">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag">01 · OVERVIEW</span>
+      <h2>实验概览：这次实验到底在练什么</h2>
+      <p>本实验是 Java 入门后的第一次综合训练：把「变量与常量、数据类型、键盘输入、运算、选择结构」这些零散语法，组织成两个能处理非法输入、能给出格式化结果的完整程序。</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <div class="card">
+        <h3 class="t-h"><span class="n">A</span>实验目的</h3>
+        <ul class="tick">
+          <li>熟悉 Java 程序的基本结构，掌握 <code class="inline">javac</code> 编译、<code class="inline">java</code> 运行的完整流程</li>
+          <li>掌握变量、<code class="inline">final</code> 常量的定义与「见名知意」的命名规范</li>
+          <li>掌握 <code class="inline">int / double / boolean / String</code> 等类型及类型转换</li>
+          <li>熟练使用 <code class="inline">Scanner</code> 键盘输入与 <code class="inline">printf</code> 格式化输出</li>
+          <li>熟练运用 <code class="inline">if / if-else / switch</code> 选择结构与逻辑运算符解决分支问题</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="t-h"><span class="n">B</span>实验环境</h3>
+        <ul class="dot">
+          <li><b>操作系统：</b>Windows 10 / 11（macOS、Linux 同理）</li>
+          <li><b>JDK：</b>JDK 17（LTS）或课程指定版本，命令行 <code class="inline">javac</code> / <code class="inline">java</code> 可用</li>
+          <li><b>开发工具：</b>IntelliJ IDEA / Eclipse，或其他能编译运行 Java 的工具（如 VS Code + Java 扩展包）</li>
+        </ul>
+        <div class="callout note" style="margin-bottom:0">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 11v5M12 8h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          验证环境：命令行执行 <code class="inline">javac -version</code> 与 <code class="inline">java -version</code> 能打印版本号，即说明 JDK 安装并配置成功。
+        </div>
+      </div>
+    </div>
+
+    <div class="task-map reveal" style="margin-top:20px">
+      <div class="task-card t1">
+        <span class="tk">TASK 01 · 顺序 + 单分支</span>
+        <h3>课程总评成绩计算器</h3>
+        <span class="cls">class GradeCalculator</span>
+        <p class="body" style="margin-bottom:6px">输入姓名、学号和三项成绩（平时 10%、实验 30%、期末 60%），校验 0~100 合法性后计算总评，保留两位小数，并按分数段输出等级。</p>
+        <p class="small">训练点：常量、Scanner 混合读取、<code class="inline">||</code> 合法性判断、<code class="inline">if-else if</code> 链、<code class="inline">printf</code></p>
+      </div>
+      <div class="task-card t2">
+        <span class="tk">TASK 02 · 多级嵌套判断</span>
+        <h3>三角形类型分析器</h3>
+        <span class="cls">class TriangleAnalyzer</span>
+        <p class="body" style="margin-bottom:6px">输入三条 1~1000 的整数边，依次完成范围校验、构成判断、类型分类、直角判定，最后计算周长与海伦公式面积。</p>
+        <p class="small">训练点：<code class="inline">&amp;&amp;</code> 组合条件、判断顺序、<code class="inline">boolean</code>、<code class="inline">Math.sqrt</code>、整数除法陷阱</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="dyn-sections"></div>
+<footer>
+  <div class="wrap">
+    <div><b>Java 语言程序设计（基础）</b> · 实验1 基本程序设计与选择结构 · 精讲页</div>
+    <div class="mono" style="font-size:12px">GradeCalculator.java · TriangleAnalyzer.java · 11 test cases passed</div>
+  </div>
+</footer>
+
+<script src="sections1.js"></script>
+<script src="sections2.js"></script>
+<script>document.getElementById("dyn-sections").innerHTML = S1 + S2;</script>
+<script src="app.js"></script>
+</body>
+</html>
