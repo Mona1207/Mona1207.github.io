@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>实验1 答题闯关 · Java 基本程序设计与选择结构</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#eef1f5;
+  --paper:#ffffff;
+  --paper-warm:#faf8f4;
+  --ink:#202631;
+  --ink-2:#46505e;
+  --muted:#6b7686;
+  --line:#d9dfe7;
+  --line-soft:#e7ebf0;
+  --brand:#e26a1c;
+  --brand-deep:#b8530f;
+  --brand-soft:#fdeee0;
+  --teal:#0e7c66;
+  --teal-soft:#e0f0ec;
+  --blue:#2563a9;
+  --blue-soft:#e8f0f9;
+  --red:#c0392b;
+  --red-soft:#fbeae7;
+  --green:#1e8e5a;
+  --green-soft:#e3f4ec;
+  --dark:#171b22;
+  --dark-2:#202632;
+  --font-sans:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--bg);color:var(--ink);line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+::selection{background:var(--brand);color:#fff}
+code{font-family:var(--font-mono);font-size:.88em;background:#eceff3;border:1px solid var(--line);border-radius:5px;padding:1.5px 6px;color:#b8530f}
+button{font-family:var(--font-sans)}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(238,241,245,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:58px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;font-size:15px;white-space:nowrap}
+.brand svg{width:24px;height:24px}
+.brand .sub{font-family:var(--font-mono);font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.08em}
+.topbar .spacer{flex:1}
+.quiz-progress-mini{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-2);display:none}
+.view{display:none;padding:36px 0 80px;min-height:calc(100vh - 58px)}
+.view.active{display:block}
+.hero-card{background:var(--dark);color:#e8edf4;border-radius:22px;padding:44px 40px;position:relative;overflow:hidden}
+.hero-card::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(226,106,28,.35),transparent 70%)}
+.hero-card .kicker{font-family:var(--font-mono);font-size:12px;letter-spacing:.16em;color:#e8873a;font-weight:700;margin-bottom:14px;position:relative}
+.hero-card h1{font-size:clamp(26px,4.4vw,38px);font-weight:900;line-height:1.25;color:#fff;position:relative}
+.hero-card p{color:#9fb0c4;margin-top:14px;font-size:15px;max-width:34em;position:relative}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#2d3543;border:1px solid #2d3543;border-radius:14px;overflow:hidden;margin-top:26px;position:relative}
+.hero-stats .hs{background:var(--dark-2);padding:16px 10px;text-align:center}
+.hero-stats .hs b{display:block;font-family:var(--font-mono);font-size:24px;color:#e8873a}
+.hero-stats .hs span{font-size:12px;color:#9fb0c4}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;margin-top:22px;box-shadow:0 1px 2px rgba(32,38,49,.05)}
+.panel h2{font-size:18px;font-weight:800;margin-bottom:16px;display:flex;align-items:center;gap:9px}
+.panel h2::before{content:"";width:5px;height:18px;border-radius:2px;background:var(--brand)}
+.cat-list{display:grid;grid-template-columns:1fr 1fr;gap:9px 18px}
+.cat-row{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink-2)}
+.cat-row .cn{font-family:var(--font-mono);font-size:11px;font-weight:700;color:var(--brand-deep);background:var(--brand-soft);border-radius:5px;padding:2px 7px;flex:none;min-width:30px;text-align:center}
+.cat-row .cc{margin-left:auto;font-family:var(--font-mono);font-size:12px;color:var(--muted)}
+.rule-list{list-style:none}
+.rule-list li{position:relative;padding-left:26px;margin:10px 0;color:var(--ink-2);font-size:14.5px}
+.rule-list li::before{content:"";position:absolute;left:2px;top:9px;width:13px;height:8px;border-left:2.5px solid var(--teal);border-bottom:2.5px solid var(--teal);transform:rotate(-45deg)}
+.best-score{margin-top:18px;background:var(--brand-soft);border:1px solid #f3cdb0;border-radius:12px;padding:13px 18px;font-size:14px;color:#7a3c0a;display:none}
+.best-score b{font-family:var(--font-mono);font-size:17px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:none;border-radius:12px;padding:15px 30px;font-size:16px;font-weight:700;cursor:pointer;transition:.18s}
+.btn-primary{background:var(--brand);color:#fff;width:100%;margin-top:22px}
+.btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px)}
+.btn-ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep)}
+.btn-row{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.btn-row .btn{flex:1;min-width:150px;margin-top:0}
+.quiz-head{margin-bottom:18px}
+.quiz-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.qp-text{font-family:var(--font-mono);font-size:13px;font-weight:700;color:var(--ink)}
+.qp-text b{color:var(--brand)}
+.tags{display:flex;gap:7px;margin-left:auto}
+.tag-chip{font-size:11.5px;font-weight:700;border-radius:6px;padding:3px 9px;letter-spacing:.03em}
+.tag-cat{background:var(--blue-soft);color:var(--blue)}
+.tag-type{background:#efe9f7;color:#6b46a8}
+.tag-type.t-fill{background:var(--teal-soft);color:var(--teal)}
+.tag-type.t-multi{background:#fbf1da;color:#9a6a00}
+.tag-type.t-judge{background:#e8edf2;color:#46505e}
+.progress-track{height:8px;background:#dde3ea;border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;background:linear-gradient(90deg,#e8873a,#e26a1c);border-radius:99px;width:0;transition:width .35s ease}
+.q-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px 30px 26px;box-shadow:0 2px 10px rgba(32,38,49,.05)}
+.q-stem{font-size:18px;font-weight:700;line-height:1.7;margin-bottom:22px}
+.q-stem .qno{font-family:var(--font-mono);color:var(--brand);margin-right:8px}
+.opts{display:grid;gap:11px}
+.opt{
+  display:flex;align-items:flex-start;gap:13px;width:100%;text-align:left;
+  background:var(--paper);border:1.7px solid var(--line);border-radius:12px;
+  padding:14px 16px;font-size:15px;color:var(--ink);cursor:pointer;transition:.15s;line-height:1.6;
+}
+.opt:hover:not(:disabled){border-color:var(--brand);background:var(--brand-soft)}
+.opt .marker{
+  flex:none;width:26px;height:26px;border-radius:8px;border:1.7px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-family:var(--font-mono);
+  font-size:13px;font-weight:700;color:var(--muted);background:#f4f6f9;transition:.15s;
+}
+.opt.selected{border-color:var(--brand);background:var(--brand-soft)}
+.opt.selected .marker{background:var(--brand);border-color:var(--brand);color:#fff}
+.opt.correct{border-color:var(--green);background:var(--green-soft)}
+.opt.correct .marker{background:var(--green);border-color:var(--green);color:#fff}
+.opt.wrong{border-color:var(--red);background:var(--red-soft)}
+.opt.wrong .marker{background:var(--red);border-color:var(--red);color:#fff}
+.opt:disabled{cursor:default}
+.fill-row{display:flex;gap:10px;flex-wrap:wrap}
+.fill-row input{
+  flex:1;min-width:200px;border:1.7px solid var(--line);border-radius:12px;padding:13px 16px;
+  font-family:var(--font-mono);font-size:15px;outline:none;transition:.15s;background:var(--paper);color:var(--ink);
+}
+.fill-row input:focus{border-color:var(--brand);box-shadow:0 0 0 3px rgba(226,106,28,.16)}
+.fill-row input:disabled{background:#f4f6f9}
+.feedback{display:none;margin-top:20px;border-radius:12px;padding:16px 18px;font-size:14.5px;line-height:1.75}
+.feedback.show{display:block;animation:fadeUp .3s ease}
+.feedback.ok{background:var(--green-soft);border:1px solid #bfe3d1;color:#155f3e}
+.feedback.no{background:var(--red-soft);border:1px solid #f2c4bf;color:#8a2820}
+.feedback .ft{font-weight:800;display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.feedback .ans-line{font-size:13.5px;margin:4px 0}
+.feedback .explain{margin-top:8px;padding-top:9px;border-top:1px dashed currentColor;color:var(--ink-2)}
+.feedback.no .explain{border-top-color:#e0a8a2}
+.feedback.ok .explain{border-top-color:#a9d6c0}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.next-row{margin-top:18px;display:flex;justify-content:flex-end}
+.btn-next{background:var(--ink);color:#fff;border:none;border-radius:11px;padding:13px 30px;font-size:15px;font-weight:700;cursor:pointer;transition:.15s;display:none}
+.btn-next.show{display:inline-flex;align-items:center;gap:8px}
+.btn-next:hover{background:#000}
+.confirm-hint{font-size:12.5px;color:var(--muted);margin-top:9px;display:none}
+.confirm-hint.show{display:block}
+.result-card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:38px 32px;text-align:center;box-shadow:0 2px 10px rgba(32,38,49,.05)}
+.ring-wrap{position:relative;width:190px;height:190px;margin:4px auto 16px}
+.ring-wrap svg{transform:rotate(-90deg)}
+.ring-bg{fill:none;stroke:#e6eaf0;stroke-width:13}
+.ring-fg{fill:none;stroke:var(--brand);stroke-width:13;stroke-linecap:round;stroke-dasharray:502.65;stroke-dashoffset:502.65;transition:stroke-dashoffset 1s ease}
+.ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring-center .score{font-family:var(--font-mono);font-size:40px;font-weight:800;line-height:1}
+.ring-center .total{font-size:13px;color:var(--muted);margin-top:3px}
+.result-tier{display:inline-block;font-weight:800;font-size:16px;border-radius:999px;padding:7px 20px;margin:4px 0 6px}
+.result-msg{color:var(--ink-2);font-size:14.5px;max-width:34em;margin:0 auto}
+.mastery{margin-top:30px;text-align:left}
+.mastery h3{font-size:15.5px;font-weight:800;margin-bottom:14px}
+.m-row{display:grid;grid-template-columns:138px 1fr 56px;gap:11px;align-items:center;margin:9px 0;font-size:13px}
+.m-row .mname{color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.m-track{height:9px;background:#e6eaf0;border-radius:99px;overflow:hidden}
+.m-fill{height:100%;border-radius:99px;background:var(--teal);transition:width .8s ease}
+.m-fill.low{background:var(--red)}
+.m-fill.mid{background:#d9930f}
+.m-val{font-family:var(--font-mono);font-size:12.5px;text-align:right;color:var(--muted)}
+.review{margin-top:22px;display:none;text-align:left}
+.review.show{display:block}
+.review h3{font-size:15.5px;font-weight:800;margin-bottom:12px}
+.rv-item{border:1px solid var(--line);border-left:4px solid var(--red);border-radius:10px;padding:15px 17px;margin-bottom:11px;background:var(--paper-warm)}
+.rv-item .rv-q{font-weight:700;font-size:14px;line-height:1.65;margin-bottom:7px}
+.rv-item .rv-a{font-size:13px;margin:3px 0;color:var(--ink-2)}
+.rv-item .rv-a .you{color:var(--red);font-weight:700}
+.rv-item .rv-a .right{color:var(--green);font-weight:700}
+.rv-item .rv-ex{font-size:13px;color:var(--muted);margin-top:7px;padding-top:7px;border-top:1px dashed var(--line)}
+.rv-allgood{background:var(--green-soft);border:1px solid #bfe3d1;color:#155f3e;border-radius:12px;padding:18px;text-align:center;font-weight:700;display:none}
+.rv-allgood.show{display:block}
+@media (max-width:640px){
+  .hero-card{padding:32px 24px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .cat-list{grid-template-columns:1fr}
+  .q-card{padding:24px 20px}
+  .q-stem{font-size:16.5px}
+  .m-row{grid-template-columns:96px 1fr 52px}
+  .result-card{padding:30px 20px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" stroke="#e26a1c" stroke-width="1.8" fill="#fdeee0" />
+        <path d="M17 10h2.2a2.8 2.8 0 0 1 0 5.6H17" stroke="#e26a1c" stroke-width="1.8" />
+        <path d="M8 2.6c-.6.9-.6 1.7 0 2.6M11.5 2.6c-.6.9-.6 1.7 0 2.6" stroke="#b8530f" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+      Java 实验 01 · 答题闯关
+      <span class="sub">LAB QUIZ</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="quiz-progress-mini" id="mini-progress"></div>
+  </div>
+</header>
+<main class="view active" id="view-start" data-route="start">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="kicker">JAVA LAB 01 · KNOWLEDGE CHECK</div>
+      <h1>实验1 知识点自测<br>50 题闯关</h1>
+      <p>覆盖《Java 基本程序设计与选择结构》全部考点：程序结构、变量常量、数据类型、运算符、Scanner、printf、选择结构、逻辑判断、Math 与海伦公式、字符串比较，以及两个实验程序的综合应用。答完即时出解析。</p>
+      <div class="hero-stats">
+        <div class="hs"><b>50</b><span>道题目</span></div>
+        <div class="hs"><b>5</b><span>种题型</span></div>
+        <div class="hs"><b>12</b><span>知识模块</span></div>
+        <div class="hs"><b>100%</b><span>附解析</span></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>知识模块与题量分布</h2>
+      <div class="cat-list" id="cat-list"></div>
+    </div>
+    <div class="panel">
+      <h2>答题规则</h2>
+      <ul class="rule-list">
+        <li>题型包含：单选题、多选题、判断题、填空题，以及程序阅读类题目；</li>
+        <li>每题作答后立即判定正误并给出解析，可先思考再对答案；</li>
+        <li>多选题需勾选全部正确选项后点「提交答案」；填空题答案忽略大小写与首尾空格；</li>
+        <li>交卷后按知识模块生成掌握度报告，并可逐题回顾错题；最佳成绩会保存在本机浏览器中。</li>
+      </ul>
+      <div class="best-score" id="best-score"></div>
+      <button class="btn btn-primary" onclick="startQuiz()">开始答题
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+      </button>
+    </div>
+  </div>
+</main>
+<main class="view" id="view-quiz" data-route="quiz">
+  <div class="wrap">
+    <div class="quiz-head">
+      <div class="quiz-meta">
+        <div class="qp-text">第 <b id="qp-now">1</b> / <span id="qp-total">50</span> 题</div>
+        <div class="tags">
+          <span class="tag-chip tag-cat" id="qp-cat"></span>
+          <span class="tag-chip" id="qp-type"></span>
+        </div>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="qp-bar"></div></div>
+    </div>
+    <div class="q-card">
+      <div class="q-stem" id="q-stem"></div>
+      <div id="q-body"></div>
+      <div class="feedback" id="q-feedback">
+        <div class="ft" id="q-ft"></div>
+        <div id="q-ansline"></div>
+        <div class="explain" id="q-explain"></div>
+      </div>
+      <div class="confirm-hint" id="q-hint">多选题：请勾选全部正确选项后提交</div>
+      <div class="next-row">
+        <button class="btn-next" id="btn-next" onclick="nextQuestion()">下一题
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="view" id="view-result" data-route="result">
+  <div class="wrap">
+    <div class="result-card">
+      <div class="ring-wrap">
+        <svg width="190" height="190" viewBox="0 0 190 190">
+          <circle class="ring-bg" cx="95" cy="95" r="80"></circle>
+          <circle class="ring-fg" id="ring-fg" cx="95" cy="95" r="80"></circle>
+        </svg>
+        <div class="ring-center">
+          <div class="score" id="rs-score">0</div>
+          <div class="total" id="rs-total">/ 50</div>
+        </div>
+      </div>
+      <div class="result-tier" id="rs-tier"></div>
+      <p class="result-msg" id="rs-msg"></p>
+      <div class="mastery">
+        <h3>分知识模块掌握度</h3>
+        <div id="mastery-body"></div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary" style="margin-top:18px" onclick="toggleReview()" id="btn-review">查看错题回顾</button>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-ghost" onclick="startQuiz()">再做一次</button>
+        <button class="btn btn-ghost" onclick="goHome()">回到首页</button>
+      </div>
+      <div class="review" id="review-box">
+        <h3>错题回顾</h3>
+        <div class="rv-allgood" id="rv-allgood">全部答对，没有错题，知识点掌握非常扎实。</div>
+        <div id="rv-list"></div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+var CATS = {
+  A:'程序结构与编译运行', B:'变量常量与命名', C:'数据类型与转换', D:'运算符',
+  E:'Scanner 输入', F:'输出与格式化', G:'选择结构', H:'逻辑与判断顺序',
+  I:'Math 与海伦公式', J:'字符串比较', K:'任务一综合', L:'任务二综合'
+};
+var Q = [
+ {c:'A',t:'single',q:'Java 程序的执行入口，main 方法的正确签名是？',
+  o:['public static void main(String[] args)','public void main(String args)','static int main()','public static void Main(String[] args)'],
+  a:0,ex:'入口方法必须是 <code>public static void main(String[] args)</code>：方法名小写 main，无返回值，参数为字符串数组。'},
+ {c:'A',t:'single',q:'编译并运行 GradeCalculator.java 的正确命令顺序是？',
+  o:['javac GradeCalculator.java，然后 java GradeCalculator','java GradeCalculator.java，然后 javac GradeCalculator','javac GradeCalculator.class，然后 java GradeCalculator.java','java GradeCalculator.class 一步完成'],
+  a:0,ex:'<code>javac</code> 把 .java 源文件编译成 .class 字节码，再用 <code>java 类名</code> 启动 JVM 运行。'},
+ {c:'A',t:'judge',q:'运行程序时应当输入命令 java GradeCalculator.class。',
+  a:1,ex:'错误。java 后面跟主类名，<b>不带 .class 后缀</b>；带上后缀会报“找不到或无法加载主类”。'},
+ {c:'A',t:'single',q:'关于源文件名与 public 类名的关系，正确的是？',
+  o:['必须同名且区分大小写，如 GradeCalculator.java 中是 public class GradeCalculator','可以任意命名，只要后缀是 .java','类名首字母必须小写','一个文件里类名不能超过 5 个字母'],
+  a:0,ex:'public 类名与源文件名必须完全一致（含大小写）；类名按惯例使用大驼峰。'},
+ {c:'B',t:'single',q:'正确声明“期末考试权重 60%”命名常量的是？',
+  o:['private static final double EXAM_WEIGHT = 0.60;','private double EXAM_WEIGHT = 0.60;','static final EXAM_WEIGHT = 0.60;','final double examWeight = 60%;'],
+  a:0,ex:'类常量标准写法是 <code>private static final 类型 全大写名 = 值;</code>；Java 没有 60% 这种数字字面量。'},
+ {c:'B',t:'multi',q:'下列标识符中，既合法、又符合本实验命名规范的有哪些？（多选）',
+  o:['usualScore','studentId','2score','final','lab_score'],
+  a:[0,1],ex:'<code>2score</code> 以数字开头非法；<code>final</code> 是关键字不能用作名字；<code>lab_score</code> 虽合法但不符合小驼峰惯例。变量要求见名知意，如 usualScore、studentId。'},
+ {c:'B',t:'judge',q:'被 final 修饰的变量赋值后，再次对它赋值会导致编译不通过。',
+  a:0,ex:'正确。final 变量只能赋值一次，重复赋值编译器直接报错，这正是用它保护权重常量的原因。'},
+ {c:'B',t:'single',q:'Java 中类名的命名惯例是？',
+  o:['大驼峰，如 GradeCalculator','全小写，如 gradecalculator','全大写，如 GRADECALCULATOR','下划线分隔，如 grade_calculator'],
+  a:0,ex:'类名大驼峰（UpperCamelCase）；变量/方法小驼峰；常量全大写加下划线。'},
+ {c:'C',t:'single',q:'下列哪一个不是 Java 的基本数据类型？',
+  o:['String','int','double','boolean'],
+  a:0,ex:'String 是 java.lang 包下的<b>类（引用类型）</b>；8 种基本类型是 byte/short/int/long/float/double/char/boolean。'},
+ {c:'C',t:'single',q:'在两个 int 相除的表达式中，5 / 2 的结果是？',
+  o:['2','2.5','2.50','编译错误'],
+  a:0,ex:'整数除法向零截断，小数部分直接丢弃，结果为 2；想得到 2.5 要让其中一个操作数为 double，如 5 / 2.0。'},
+ {c:'C',t:'single',q:'<code>int perimeter = 12; double p = perimeter / 2.0;</code> 执行后，p 的值和类型是？',
+  o:['6.0，double','6，int','6.0，int','编译错误'],
+  a:0,ex:'2.0 是 double 字面量，运算时 int 自动提升为 double，进行浮点除法，结果为 double 类型的 6.0。'},
+ {c:'C',t:'single',q:'强制类型转换 (int)3.9 的结果是？',
+  o:['3','4','3.9','编译错误'],
+  a:0,ex:'double 强转 int 直接<b>截断</b>小数部分，不做四舍五入，结果为 3。'},
+ {c:'C',t:'judge',q:'int 类型的值可以直接赋值给 double 变量，属于自动类型转换。',
+  a:0,ex:'正确。小类型向大类型拓宽（int→double）自动完成且不丢精度；反向则需要强制转换。'},
+ {c:'D',t:'single',q:'表示 x 落在闭区间 [0, 100]（含端点）的正确条件是？',
+  o:['x &gt;= 0 &amp;&amp; x &lt;= 100','x &gt; 0 &amp;&amp; x &lt; 100','x &gt;= 0 || x &lt;= 100','0 &lt;= x &lt;= 100'],
+  a:0,ex:'两个条件要同时成立用 <code>&amp;&amp;</code>；Java 不支持 0&lt;=x&lt;=100 这种数学连写。'},
+ {c:'D',t:'single',q:'当 isRight 为 false 时，表达式 <code>isRight ? "是" : "否"</code> 的值是？',
+  o:['"否"','"是"','true','编译错误'],
+  a:0,ex:'三元运算符：条件为真取问号前的值，为假取冒号后的值。'},
+ {c:'D',t:'judge',q:'|| 是短路或：当左边表达式为 true 时，右边表达式不会再计算。',
+  a:0,ex:'正确。|| 左真即真、短路右侧；&amp;&amp; 左假即假。'},
+ {c:'D',t:'single',q:'表达式 10 % 3 的结果是？',
+  o:['1','0','3','3.33'],
+  a:0,ex:'% 是取余（取模）运算，10 = 3×3 + 1，余数为 1。'},
+ {c:'E',t:'single',q:'使用 Scanner 类必须编写的导入语句是？',
+  o:['import java.util.Scanner;','include java.util.Scanner;','import java.lang.Scanner;','不需要任何导入'],
+  a:0,ex:'Scanner 位于 java.util 包，必须显式 import；而 Math 在 java.lang 包，无需导入。'},
+ {c:'E',t:'single',q:'读取用户输入的姓名（一整行文本）应使用的方法是？',
+  o:['nextLine()','nextInt()','nextDouble()','nextChar()'],
+  a:0,ex:'nextLine() 读取一整行字符串；nextInt/nextDouble 读数值；Scanner 没有 nextChar 方法。'},
+ {c:'E',t:'judge',q:'程序结束前调用 scanner.close() 关闭输入流，是良好的编程习惯。',
+  a:0,ex:'正确。close() 释放占用的系统资源，本实验两个程序结尾都调用了它。'},
+ {c:'E',t:'single',q:'先调用 nextInt() 读取数字，紧接着调用 nextLine()，常见问题是？',
+  o:['nextLine() 读到行尾残留的换行符，得到空字符串','程序必然崩溃','nextInt() 会把整行都读走','编译报错'],
+  a:0,ex:'nextInt() 只取走数字、留下换行符，随后的 nextLine() 读到空串。可额外调用一次 nextLine() 消耗换行；本实验把字符串输入放在数值之前规避了它。'},
+ {c:'F',t:'single',q:'让 double 类型的总评成绩保留两位小数输出，应使用哪个格式符？',
+  o:['%.2f','%2f','%.2d','%s'],
+  a:0,ex:'%f 对应浮点数，.2 表示小数点后保留两位；%d 对应整数，%s 对应字符串。'},
+ {c:'F',t:'single',q:'在 printf 中输出“跨平台换行符”应使用？',
+  o:['%n','\\t','%%','%s'],
+  a:0,ex:'%n 会根据操作系统输出对应的换行序列；%% 用于输出一个百分号本身。'},
+ {c:'F',t:'judge',q:'System.out.print 输出后不换行，System.out.println 输出后自动换行。',
+  a:0,ex:'正确。输入提示语用 print 让光标停在同一行，结果输出用 println 或 printf 配合 %n 换行。'},
+ {c:'F',t:'single',q:'<code>System.out.printf("面积：%.2f%n", 6.0);</code> 的输出是？',
+  o:['面积：6.00 并换行','面积：6.0 并换行','面积：6 并换行','编译错误'],
+  a:0,ex:'%.2f 固定输出两位小数，6.0 显示为 6.00。'},
+ {c:'G',t:'single',q:'等级判定的 if-else if 链为什么要按 &gt;=90、&gt;=80、&gt;=70…… 从高到低书写？',
+  o:['分支自上而下互斥匹配，从高到低才能让每个分数归入正确档次','编译器强制要求必须这样写','从低到高结果完全相同','只是个人习惯，没有影响'],
+  a:0,ex:'若先写 &gt;=60，90 分也会先命中“及格”分支，等级直接判错。'},
+ {c:'G',t:'single',q:'Java 中 if 后面小括号内的条件表达式必须是什么类型？',
+  o:['boolean','int','String','任意类型都可以'],
+  a:0,ex:'条件必须是值为 true/false 的 boolean 表达式，不能像部分语言那样用 0/非0 代替。'},
+ {c:'G',t:'judge',q:'else 总是与它前面最近的、尚未配对的 if 相结合。',
+  a:0,ex:'正确。这就是“悬挂 else”规则，嵌套 if 时建议用大括号明确归属。'},
+ {c:'G',t:'single',q:'下列哪种类型不能直接作为 switch 的判断表达式？',
+  o:['double','int','char','String'],
+  a:0,ex:'switch 支持 byte/short/int/char、String 与枚举，不支持 float/double/boolean。'},
+ {c:'H',t:'single',q:'成绩越界条件为 <code>usualScore &lt; 0 || usualScore &gt; 100</code>，输入成绩 100 时判定为？',
+  o:['合法，边界 100 包含在内','非法，必须严格小于 100','程序崩溃','取决于其他成绩'],
+  a:0,ex:'越界条件是小于 0 或大于 100，端点 0 和 100 都属于合法成绩。'},
+ {c:'H',t:'single',q:'任务二为什么必须“先判断输入合法性，再分类与计算”？',
+  o:['非法数据参与分类或开方会得出错误结论甚至 NaN，且任务要求非法即停止','只是为了让代码行数更少','编译器规定的固定书写顺序','先后顺序对结果没有影响'],
+  a:0,ex:'先校验后处理（卫语句），保证后续分类、勾股判定和海伦公式都建立在有效数据之上。'},
+ {c:'H',t:'single',q:'三角形分类时，为什么“等边”分支要写在“等腰”分支之前？',
+  o:['等边三边相等也满足“两边相等”，写后面会被提前判成等腰','等边三角形出现概率更高','编译器要求先判等边','等腰三角形必须先排除直角'],
+  a:0,ex:'分类条件应从特殊（严格）到一般（宽松）：等边是特殊的等腰，必须先拦截。'},
+ {c:'I',t:'single',q:'Java 中计算平方根的方法是？',
+  o:['Math.sqrt(x)','Math.sqr(x)','Math.root(x)','x.sqrt()'],
+  a:0,ex:'Math 是 java.lang 下的静态工具类，平方根方法名为 sqrt，无需 import。'},
+ {c:'I',t:'single',q:'调用 Math.sqrt(-1.0) 的返回结果是？',
+  o:['NaN','0','编译错误','抛出异常并终止程序'],
+  a:0,ex:'对负数开平方不会报错，而返回 NaN（非数字）。这正是必须先确认能构成三角形再套海伦公式的原因。'},
+ {c:'I',t:'single',q:'三边为 3、4、5，半周长 p=6，按海伦公式面积为？',
+  o:['6.00','12.00','5.00','3.00'],
+  a:0,ex:'S = √(6×3×2×1) = √36 = 6.00。'},
+ {c:'I',t:'judge',q:'求半周长应写 perimeter / 2.0 而不是 perimeter / 2，以避免整数除法。',
+  a:0,ex:'正确。int/int 会截断小数；除以 double 字面量 2.0 才执行浮点除法。'},
+ {c:'J',t:'single',q:'比较两个 String 的字符内容是否相同，应当使用？',
+  o:['equals()','==','=','compareToOnly()'],
+  a:0,ex:'对引用类型，== 比较的是对象地址；String 的 equals() 才比较字符序列内容。'},
+ {c:'J',t:'single',q:'表达式 <code>new String("abc") == new String("abc")</code> 的结果是？',
+  o:['false','true','编译错误','运行时抛出空指针异常'],
+  a:0,ex:'两次 new 创建的是两个不同对象、内存地址不同，== 结果为 false；用 equals() 比较内容才是 true。'},
+ {c:'J',t:'single',q:'忽略大小写、比较两个字符串内容是否相等的方法是？',
+  o:['equalsIgnoreCase()','equals()','toLowerCase()','=='],
+  a:0,ex:'如 "Abc".equalsIgnoreCase("ABC") 结果为 true；toLowerCase 只是转小写，本身不做比较。'},
+ {c:'K',t:'single',q:'三项成绩为 90、85、88 时，加权总评成绩是？',
+  o:['87.30','87.3','88.00','86.50'],
+  a:0,ex:'90×0.1 + 85×0.3 + 88×0.6 = 9 + 25.5 + 52.8 = 87.3，经 %.2f 输出为 87.30，等级良好。'},
+ {c:'K',t:'single',q:'输入成绩 120、85、88 时，程序的行为是？',
+  o:['输出“输入成绩不合法”，return 结束程序，不再计算和输出总评','自动把 120 改成 100 后继续计算','先输出总评，再提示错误','编译阶段直接报错'],
+  a:0,ex:'120 越过 100 上限，命中合法性 if，打印提示后 return 直接结束 main，后续代码不执行。'},
+ {c:'K',t:'judge',q:'本实验要求三个权重必须定义为命名常量，不能在算式中直接写 0.1、0.3、0.6。',
+  a:0,ex:'正确。这是任务书的硬性要求：常量语义清晰、避免魔法数字、调整权重时只改一处。'},
+ {c:'K',t:'fill',q:'任务一中期末考试成绩权重常量 EXAM_WEIGHT 的值是 ____（填小数）。',
+  f:['0.6','0.60','.6'],ex:'期末成绩占 60%，即 EXAM_WEIGHT = 0.60。'},
+ {c:'L',t:'single',q:'输入三边 1、2、3，程序的判定结果是？',
+  o:['三条边不能构成三角形','等腰三角形','不等边三角形，面积为 0','输入边长不合法'],
+  a:0,ex:'1+2=3，不满足“任意两边之和严格大于第三边”，属于退化（三点共线）情形；边长本身在 1~1000 内，不是范围非法。'},
+ {c:'L',t:'single',q:'输入三边 2、2、2，正确的输出组合是？',
+  o:['等边三角形 / 非直角 / 周长 6 / 面积 1.73','等腰三角形 / 直角 / 周长 6 / 面积 1.73','等边三角形 / 直角 / 周长 6 / 面积 2.00','三条边不能构成三角形'],
+  a:0,ex:'三边相等先判等边；2²+2²=8≠4 故非直角；周长 6；面积 √(3×1×1×1)=√3≈1.73。'},
+ {c:'L',t:'single',q:'判断直角三角形的正确做法是？',
+  o:['比较三组“两边平方和”与“第三边平方”（a²+b²==c² 三种组合）','只比较 a²+b²==c² 一组','只要有两边相等就是直角三角形','三个角都小于 90 度'],
+  a:0,ex:'事先不知道哪条边是斜边，三组平方关系都要检查，任一成立即为直角，无需先排序。'},
+ {c:'L',t:'single',q:'输入三边 0、3、4 时，程序输出？',
+  o:['输入边长不合法，边长应为1~1000','三条边不能构成三角形','不等边直角三角形，面积 6.00','周长 7'],
+  a:0,ex:'第一道范围闸门先拦截 0，打印范围错误并 return，根本走不到构成判断。'},
+ {c:'L',t:'judge',q:'用 <code>a+b &lt;= c</code> 判定“不能构成三角形”是正确的，其中等号对应退化三角形。',
+  a:0,ex:'正确。三角形不等式要求严格大于；a+b=c 时三点共线，不能构成三角形。'},
+ {c:'L',t:'fill',q:'三边为 3、4、5 的三角形，周长是 ____（填整数）。',
+  f:['12'],ex:'周长 = 3 + 4 + 5 = 12，用 int 存储。'},
+ {c:'L',t:'fill',q:'创建键盘扫描器对象的代码是 new ____(System.in)，空白处应填的类名是？',
+  f:['scanner'],ex:'完整写法为 new Scanner(System.in)，类名 Scanner 首字母大写。'}
+];
+var TYPE_LABEL = {single:'单选题',multi:'多选题',judge:'判断题',fill:'填空题'};
+var LETTERS = ['A','B','C','D','E','F'];
+var state = { order:[], idx:0, answers:[], optOrder:[] };
+function shuffle(arr){
+  var a = arr.slice();
+  for(var i=a.length-1;i>0;i--){
+    var j = Math.floor(Math.random()*(i+1));
+    var t = a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+function showView(name){
+  document.querySelectorAll('.view').forEach(function(v){
+    v.classList.toggle('active', v.getAttribute('data-route')===name);
+  });
+  if(location.hash !== '#'+name){ history.replaceState(null,'','#'+name); }
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', function(){
+  var h = location.hash.replace('#','') || 'start';
+  if(['start','quiz','result'].indexOf(h)===-1) h='start';
+  showView(h);
+});
+function goHome(){ showView('start'); renderHome(); }
+function renderHome(){
+  var counts = {};
+  Q.forEach(function(q){ counts[q.c] = (counts[q.c]||0)+1; });
+  var html = Object.keys(CATS).map(function(k){
+    return '<div class="cat-row"><span class="cn">'+k+'</span><span>'+CATS[k]+'</span><span class="cc">'+(counts[k]||0)+' 题</span></div>';
+  }).join('');
+  document.getElementById('cat-list').innerHTML = html;
+  var best = localStorage.getItem('javaLab1Best');
+  var box = document.getElementById('best-score');
+  if(best){
+    var b = JSON.parse(best);
+    box.style.display='block';
+    box.innerHTML = '本机最佳成绩：<b>'+b.score+' / '+b.total+'</b>（正确率 '+b.pct+'%）　完成于 '+b.date;
+  }else{ box.style.display='none'; }
+}
+function startQuiz(){
+  state.order = shuffle(Q.map(function(_,i){return i;}));
+  state.idx = 0;
+  state.answers = [];
+  state.optOrder = state.order.map(function(qi){
+    var q = Q[qi];
+    if(q.t==='single' && q.c!=='X'){
+      return q.t==='judge' ? null : shuffle(q.o.map(function(_,i){return i;}));
+    }
+    if(q.t==='multi') return shuffle(q.o.map(function(_,i){return i;}));
+    return null;
+  });
+  document.getElementById('qp-total').textContent = Q.length;
+  showView('quiz');
+  renderQuestion();
+}
+function renderQuestion(){
+  var qi = state.order[state.idx];
+  var q = Q[qi];
+  var num = state.idx+1;
+  document.getElementById('qp-now').textContent = num;
+  document.getElementById('qp-bar').style.width = ((state.idx)/Q.length*100)+'%';
+  document.getElementById('mini-progress').textContent = num+' / '+Q.length;
+  document.getElementById('mini-progress').style.display = 'block';
+  var catEl = document.getElementById('qp-cat');
+  catEl.textContent = q.c+' · '+CATS[q.c];
+  var typeEl = document.getElementById('qp-type');
+  typeEl.textContent = TYPE_LABEL[q.t];
+  typeEl.className = 'tag-chip ' + (q.t==='fill'?'t-fill':q.t==='multi'?'t-multi':q.t==='judge'?'t-judge':'');
+  document.getElementById('q-stem').innerHTML = '<span class="qno">Q'+num+'.</span>'+q.q;
+  var body = document.getElementById('q-body');
+  var fb = document.getElementById('q-feedback');
+  fb.className = 'feedback';
+  document.getElementById('btn-next').classList.remove('show');
+  document.getElementById('q-hint').classList.remove('show');
+  if(q.t==='single' || q.t==='judge'){
+    var order = q.t==='judge' ? [0,1] : state.optOrder[state.idx];
+    var labels = q.t==='judge' ? ['正确','错误'] : q.o;
+    body.innerHTML = '<div class="opts">' + order.map(function(oi,k){
+      return '<button class="opt" data-oi="'+oi+'" onclick="answerSingle(this,'+oi+')"><span class="marker">'+LETTERS[k]+'</span><span>'+labels[oi]+'</span></button>';
+    }).join('') + '</div>';
+  } else if(q.t==='multi'){
+    var morder = state.optOrder[state.idx];
+    body.innerHTML = '<div class="opts" id="multi-opts">' + morder.map(function(oi,k){
+      return '<button class="opt" data-oi="'+oi+'" onclick="toggleMulti(this)"><span class="marker">'+LETTERS[k]+'</span><span>'+q.o[oi]+'</span></button>';
+    }).join('') + '</div>'
+      + '<div class="btn-row" style="margin-top:14px"><button class="btn btn-primary" style="margin-top:0;padding:12px 24px" onclick="answerMulti()">提交答案</button></div>'
+      + '<div class="confirm-hint show">多选题：请勾选全部正确选项后提交</div>';
+  } else if(q.t==='fill'){
+    body.innerHTML = '<div class="fill-row"><input id="fill-input" type="text" autocomplete="off" placeholder="在此输入你的答案…">'
+      + '<button class="btn btn-primary" style="width:auto;margin:0;padding:0 24px" onclick="answerFill()">提交</button></div>'
+      + '<div class="confirm-hint show">填空题忽略大小写与首尾空格</div>';
+    var inp = document.getElementById('fill-input');
+    inp.focus();
+    inp.addEventListener('keydown', function(e){ if(e.key==='Enter') answerFill(); });
+  }
+}
+function lockOptions(){
+  document.querySelectorAll('#q-body .opt').forEach(function(b){ b.disabled = true; });
+  var inp = document.getElementById('fill-input');
+  if(inp) inp.disabled = true;
+  document.querySelectorAll('#q-body .btn').forEach(function(b){ b.disabled = true; b.style.opacity=.6; });
+}
+function answerSingle(btn, chosenOi){
+  var qi = state.order[state.idx], q = Q[qi];
+  lockOptions();
+  var correct = chosenOi === q.a;
+  document.querySelectorAll('#q-body .opt').forEach(function(b){
+    var oi = parseInt(b.getAttribute('data-oi'),10);
+    if(oi===q.a) b.classList.add('correct');
+    if(oi===chosenOi && !correct) b.classList.add('wrong');
+  });
+  finishQuestion(correct, chosenOi===q.a?null:q.a, q.t==='judge'?['正确','错误'][chosenOi]:q.o[chosenOi],
+                 q.t==='judge'?['正确','错误'][q.a]:q.o[q.a], q.ex);
+}
+function toggleMulti(btn){
+  if(btn.disabled) return;
+  btn.classList.toggle('selected');
+}
+function answerMulti(){
+  var qi = state.order[state.idx], q = Q[qi];
+  var chosen = [];
+  document.querySelectorAll('#multi-opts .opt').forEach(function(b){
+    if(b.classList.contains('selected')) chosen.push(parseInt(b.getAttribute('data-oi'),10));
+  });
+  if(chosen.length===0){ return; }
+  lockOptions();
+  var rightSet = q.a.slice().sort();
+  var chosenSet = chosen.slice().sort();
+  var correct = rightSet.length===chosenSet.length && rightSet.every(function(v,i){return v===chosenSet[i];});
+  document.querySelectorAll('#q-body .opt').forEach(function(b){
+    var oi = parseInt(b.getAttribute('data-oi'),10);
+    if(rightSet.indexOf(oi)>=0) b.classList.add('correct');
+    else if(chosenSet.indexOf(oi)>=0) b.classList.add('wrong');
+  });
+  var youTxt = chosen.sort((x,y)=>x-y).map(i=>q.o[i]).join('；');
+  var rightTxt = q.a.slice().sort((x,y)=>x-y).map(i=>q.o[i]).join('；');
+  finishQuestion(correct, null, youTxt, rightTxt, q.ex);
+}
+function answerFill(){
+  var qi = state.order[state.idx], q = Q[qi];
+  var inp = document.getElementById('fill-input');
+  var raw = inp.value.trim();
+  if(raw===''){ inp.focus(); return; }
+  lockOptions();
+  var norm = raw.replace(/\s+/g,'').toLowerCase();
+  var accepted = q.f.map(function(s){return String(s).replace(/\s+/g,'').toLowerCase();});
+  var correct = accepted.indexOf(norm)>=0;
+  finishQuestion(correct, null, raw, q.f[0], q.ex, true);
+}
+function finishQuestion(correct, correctIdx, youTxt, rightTxt, explain, isFill){
+  var qi = state.order[state.idx], q = Q[qi];
+  state.answers.push({qi:qi, correct:correct, you:youTxt, right:rightTxt});
+  var fb = document.getElementById('q-feedback');
+  fb.classList.add('show');
+  fb.classList.toggle('ok', correct);
+  fb.classList.toggle('no', !correct);
+  document.getElementById('q-ft').innerHTML = correct
+    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" /></svg> 回答正确'
+    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg> 回答错误';
+  var line = correct ? '' :
+    '<div class="ans-line">你的答案：<span class="you">'+youTxt+'</span>　|　正确答案：<span class="right">'+rightTxt+'</span></div>';
+  document.getElementById('q-ansline').innerHTML = line;
+  document.getElementById('q-explain').innerHTML = '<b>解析：</b>'+explain;
+  var btn = document.getElementById('btn-next');
+  btn.classList.add('show');
+  btn.innerHTML = (state.idx===Q.length-1 ? '查看结果' : '下一题')
+    + '<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>';
+  document.getElementById('qp-bar').style.width = ((state.idx+1)/Q.length*100)+'%';
+}
+function nextQuestion(){
+  if(state.idx < Q.length-1){ state.idx++; renderQuestion(); }
+  else { renderResult(); }
+}
+function renderResult(){
+  showView('result');
+  var total = Q.length;
+  var score = state.answers.filter(function(a){return a.correct;}).length;
+  var pct = Math.round(score/total*100);
+  document.getElementById('rs-score').textContent = score;
+  document.getElementById('rs-total').textContent = '/ '+total;
+  var C = 2*Math.PI*80;
+  document.getElementById('ring-fg').style.strokeDashoffset = C;
+  requestAnimationFrame(function(){
+    requestAnimationFrame(function(){
+      document.getElementById('ring-fg').style.strokeDashoffset = C*(1-score/total);
+    });
+  });
+  var tier, msg, color;
+  if(pct>=90){ tier='优秀 · 知识点掌握扎实'; msg='全部核心概念与程序细节都已吃透，可以直接上手写同类程序。'; color='var(--green)'; }
+  else if(pct>=80){ tier='良好 · 基本掌握'; msg='主干知识已经掌握，回看下方标红模块中的错题即可补齐细节。'; color='var(--teal)'; }
+  else if(pct>=60){ tier='及格 · 还需巩固'; msg='对实验有整体印象，但若干语法细节和判断逻辑还不牢固，建议结合精讲页复习后再做一次。'; color='#d9930f'; }
+  else { tier='不及格 · 需要系统复习'; msg='错误较多，建议先完整阅读实验精讲页（尤其选择结构、类型转换与判断顺序），再回来重测。'; color='var(--red)'; }
+  var tierEl = document.getElementById('rs-tier');
+  tierEl.textContent = tier; tierEl.style.color = color; tierEl.style.background = color+'1a';
+  document.getElementById('rs-msg').textContent = msg;
+  var stat = {};
+  state.answers.forEach(function(a){
+    var k = Q[a.qi].c;
+    if(!stat[k]) stat[k] = {ok:0,all:0};
+    stat[k].all++; if(a.correct) stat[k].ok++;
+  });
+  var mh = Object.keys(CATS).map(function(k){
+    var s = stat[k] || {ok:0,all:0};
+    var r = s.all? Math.round(s.ok/s.all*100) : 0;
+    var cls = r<60?'low':r<85?'mid':'';
+    return '<div class="m-row"><span class="mname">'+k+' · '+CATS[k]+'</span>'
+      + '<div class="m-track"><div class="m-fill '+cls+'" style="width:0" data-w="'+r+'"></div></div>'
+      + '<span class="m-val">'+s.ok+'/'+s.all+' · '+r+'%</span></div>';
+  }).join('');
+  document.getElementById('mastery-body').innerHTML = mh;
+  setTimeout(function(){
+    document.querySelectorAll('.m-fill').forEach(function(el){ el.style.width = el.getAttribute('data-w')+'%'; });
+  }, 120);
+  var wrong = state.answers.filter(function(a){return !a.correct;});
+  var rvList = document.getElementById('rv-list');
+  document.getElementById('rv-allgood').classList.toggle('show', wrong.length===0);
+  rvList.innerHTML = wrong.map(function(a,idx){
+    var q = Q[a.qi];
+    return '<div class="rv-item"><div class="rv-q">'+(idx+1)+'. ['+q.c+' · '+TYPE_LABEL[q.t]+'] '+q.q+'</div>'
+      + '<div class="rv-a">你的答案：<span class="you">'+a.you+'</span></div>'
+      + '<div class="rv-a">正确答案：<span class="right">'+a.right+'</span></div>'
+      + '<div class="rv-ex"><b>解析：</b>'+q.ex+'</div></div>';
+  }).join('');
+  document.getElementById('review-box').classList.remove('show');
+  document.getElementById('btn-review').textContent = '查看错题回顾'+(wrong.length?'（'+wrong.length+' 题）':'');
+  var best = localStorage.getItem('javaLab1Best');
+  var save = true;
+  if(best){ var b = JSON.parse(best); if(b.score > score) save = false; }
+  if(save){
+    var d = new Date();
+    var dateStr = (d.getMonth()+1)+'月'+d.getDate()+'日';
+    localStorage.setItem('javaLab1Best', JSON.stringify({score:score,total:total,pct:pct,date:dateStr}));
+  }
+}
+function toggleReview(){
+  document.getElementById('review-box').classList.toggle('show');
+}
+renderHome();
+showView(location.hash ? location.hash.replace('#','') : 'start');
+</script>
+</body>
+</html>
