@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java 实验1 · 基本程序设计与选择结构 | 精讲 + 答题闯关</title>
+<meta name="description" content="Java 实验1：基本程序设计与选择结构。知识点精讲网站 + 50 题答题闯关，覆盖 GradeCalculator 成绩计算器与 TriangleAnalyzer 三角形分析器全部考点。">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#eef1f5;
+  --paper:#ffffff;
+  --ink:#202631;
+  --ink-2:#46505e;
+  --muted:#6b7686;
+  --line:#d9dfe7;
+  --brand:#e26a1c;
+  --brand-deep:#b8530f;
+  --brand-soft:#fdeee0;
+  --teal:#0e7c66;
+  --teal-soft:#e0f0ec;
+  --dark:#171b22;
+  --dark-2:#202632;
+  --font-sans:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--font-sans);
+  background:
+    radial-gradient(1000px 420px at 85% -10%,rgba(226,106,28,.12),transparent 60%),
+    radial-gradient(800px 380px at 0% 110%,rgba(14,124,102,.10),transparent 60%),
+    var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--font-mono)}
+.top{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 0;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:15px;letter-spacing:.02em;white-space:nowrap}
+.brand .cup{width:26px;height:26px}
+.ghlink{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--ink-2);
+  border:1px solid var(--line);background:var(--paper);border-radius:9px;padding:8px 14px;transition:.15s;
+}
+.ghlink:hover{border-color:var(--brand);color:var(--brand-deep)}
+.ghlink svg{width:17px;height:17px}
+.hero{padding:70px 0 30px;text-align:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-mono);font-size:12.5px;font-weight:700;letter-spacing:.14em;
+  color:var(--brand-deep);background:var(--brand-soft);
+  border:1px solid #f6d2b3;border-radius:999px;padding:6px 16px;margin-bottom:24px;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--brand)}
+.hero h1{font-size:clamp(30px,5vw,50px);font-weight:900;line-height:1.22;letter-spacing:-.01em}
+.hero h1 .hl{color:var(--brand)}
+.hero .sub{margin:20px auto 0;max-width:40em;font-size:17px;color:var(--ink-2)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:26px}
+.meta-chip{font-size:13px;font-weight:500;color:var(--ink-2);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:5px 13px}
+.meta-chip b{color:var(--ink)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:56px 0 30px}
+.site-card{
+  position:relative;display:block;background:var(--paper);border:1px solid var(--line);
+  border-radius:20px;padding:36px 34px;overflow:hidden;
+  box-shadow:0 1px 2px rgba(32,38,49,.05);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.site-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -22px rgba(32,38,49,.35)}
+.site-card.guide{border-top:5px solid var(--brand)}
+.site-card.quiz{border-top:5px solid var(--teal)}
+.site-card .kicker{font-family:var(--font-mono);font-size:12px;font-weight:700;letter-spacing:.14em;margin-bottom:12px}
+.site-card.guide .kicker{color:var(--brand-deep)}
+.site-card.quiz .kicker{color:var(--teal)}
+.site-card h2{font-size:25px;font-weight:900;margin-bottom:10px;letter-spacing:-.01em}
+.site-card p{font-size:14.5px;color:var(--ink-2);margin-bottom:20px}
+.site-card ul{list-style:none;margin-bottom:26px}
+.site-card li{position:relative;padding-left:22px;font-size:13.5px;color:var(--ink-2);margin:8px 0}
+.site-card li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%}
+.site-card.guide li::before{background:var(--brand)}
+.site-card.quiz li::before{background:var(--teal)}
+.go{
+  display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:700;
+  border-radius:11px;padding:12px 22px;transition:.15s;
+}
+.site-card.guide .go{background:var(--brand);color:#fff}
+.site-card.guide .go:hover{background:var(--brand-deep)}
+.site-card.quiz .go{background:var(--teal);color:#fff}
+.site-card.quiz .go:hover{background:#0a614f}
+.go svg{width:16px;height:16px;transition:transform .15s}
+.site-card:hover .go svg{transform:translateX(4px)}
+.site-card .bigico{position:absolute;right:-14px;bottom:-18px;width:150px;height:150px;opacity:.07}
+.site-card.guide .bigico{color:var(--brand)}
+.site-card.quiz .bigico{color:var(--teal)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:10px 0 70px;box-shadow:0 1px 2px rgba(32,38,49,.05)}
+.stat{background:var(--paper);padding:22px 16px;text-align:center}
+.stat .num{font-size:26px;font-weight:900;font-family:var(--font-mono);color:var(--brand)}
+.stat:nth-child(even) .num{color:var(--teal)}
+.stat .lbl{font-size:12.5px;color:var(--muted);margin-top:2px}
+.flow-note{
+  background:var(--dark);border-radius:18px;padding:34px 36px;color:#e8edf4;margin-bottom:70px;
+}
+.flow-note h3{color:#fff;font-size:18px;font-weight:900;margin-bottom:14px}
+.flow-note p{font-size:14px;color:#9fb0c4;margin-bottom:14px}
+.flow-steps{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.fstep{background:var(--dark-2);border:1px solid #2d3543;border-radius:10px;padding:11px 16px;font-size:13.5px;font-weight:600}
+.fstep .n{font-family:var(--font-mono);color:var(--brand);font-size:11px;display:block;letter-spacing:.1em}
+.farrow{color:var(--brand);font-family:var(--font-mono)}
+.flow-note .tip{margin-top:18px;font-size:13px;color:#7ee0a6}
+footer{background:#101319;color:#8a95a5;padding:32px 0;font-size:13px;text-align:center}
+footer b{color:#d6dee8}
+footer .mono{font-size:12px;margin-top:6px;display:block}
+@media (max-width:760px){
+  .cards{grid-template-columns:1fr;margin:40px 0 24px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .flow-steps{flex-direction:column;align-items:stretch}
+  .farrow{transform:rotate(90deg);text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="brand">
+      <svg class="cup" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z" stroke="#e26a1c" stroke-width="1.8" fill="#fdeee0" />
+        <path d="M17 10h2.2a2.8 2.8 0 0 1 0 5.6H17" stroke="#e26a1c" stroke-width="1.8" />
+        <path d="M8 2.6c-.6.9-.6 1.7 0 2.6M11.5 2.6c-.6.9-.6 1.7 0 2.6" stroke="#b8530f" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+      Java 实验 01
+    </div>
+    <a class="ghlink" href="https://github.com/Mona1207/java-lab1" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" /></svg>
+      GitHub 源码
+    </a>
+  </div>
+  <header class="hero">
+    <span class="eyebrow"><span class="dot"></span>JAVA LANGUAGE PROGRAMMING · LAB 01</span>
+    <h1>Java 基本程序设计与<span class="hl">选择结构</span><br>实验精讲与答题闯关</h1>
+    <p class="sub">两个完整程序（成绩计算器 GradeCalculator + 三角形分析器 TriangleAnalyzer）、12 个核心知识点、50 道闯关题。先读精讲把原理吃透，再用答题网站检验掌握程度。</p>
+    <div class="hero-meta">
+      <span class="meta-chip">课程：<b>Java 语言程序设计（基础）</b></span>
+      <span class="meta-chip">实验类型：<b>设计综合</b></span>
+      <span class="meta-chip">纯静态站点 · <b>GitHub Pages</b></span>
+    </div>
+  </header>
+  <main>
+    <div class="cards">
+      <a class="site-card guide" href="guide/">
+        <svg class="bigico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2V5z" stroke="currentColor" stroke-width="1.6" /><path d="M18 3v18M8 7h6M8 10h6M8 13h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" /></svg>
+        <div class="kicker">PART 01 · 精讲网站</div>
+        <h2>知识点逐段精讲</h2>
+        <p>从 javac 编译运行到 if-else 选择结构，配合逐段代码讲解、判定流程图、真实测试记录与两个可交互的在线实验台。</p>
+        <ul>
+          <li>12 个核心知识点 + 2 道思考题精讲</li>
+          <li>两个程序的完整源码逐段拆解</li>
+          <li>在线实验台：输入数据即复现 Java 运行结果</li>
+          <li>十大易错点自查清单</li>
+        </ul>
+        <span class="go">进入精讲
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </span>
+      </a>
+      <a class="site-card quiz" href="quiz/">
+        <svg class="bigico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 11l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" /></svg>
+        <div class="kicker">PART 02 · 答题闯关</div>
+        <h2>50 题答题闯关</h2>
+        <p>覆盖本次实验全部知识点：单选、判断、多选、填空四种题型，即时解析、模块掌握度分析、错题回顾，自动记录最佳成绩。</p>
+        <ul>
+          <li>50 题：36 单选 + 10 判断 + 1 多选 + 3 填空</li>
+          <li>12 个知识模块逐题标注，每题附解析</li>
+          <li>交卷后生成得分环与模块掌握度雷达</li>
+          <li>错题回顾 + 本地保存最佳成绩</li>
+        </ul>
+        <span class="go">开始答题
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </span>
+      </a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">2</div><div class="lbl">个完整 Java 程序</div></div>
+      <div class="stat"><div class="num">12</div><div class="lbl">个核心知识点</div></div>
+      <div class="stat"><div class="num">50</div><div class="lbl">道闯关题</div></div>
+      <div class="stat"><div class="num">11</div><div class="lbl">组实测用例</div></div>
+    </div>
+    <div class="flow-note">
+      <h3>建议学习路径</h3>
+      <p>两个站点覆盖同一份实验的「理解」与「检验」两个环节，建议按下面顺序使用：</p>
+      <div class="flow-steps">
+        <div class="fstep"><span class="n">STEP 1</span>读精讲：过一遍 12 个知识点</div>
+        <span class="farrow">→</span>
+        <div class="fstep"><span class="n">STEP 2</span>玩实验台：输入用例看判定过程</div>
+        <span class="farrow">→</span>
+        <div class="fstep"><span class="n">STEP 3</span>去闯关：完成 50 道题</div>
+        <span class="farrow">→</span>
+        <div class="fstep"><span class="n">STEP 4</span>看错题：对照解析回精讲补漏</div>
+      </div>
+      <div class="tip">提示：答题网站的最佳成绩保存在你自己的浏览器本地，不会上传任何数据。</div>
+    </div>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <b>Java 语言程序设计（基础）</b> · 实验1 基本程序设计与选择结构
+    <span class="mono">GradeCalculator.java · TriangleAnalyzer.java · GitHub Pages</span>
+  </div>
+</footer>
+</body>
+</html>
