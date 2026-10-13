@@ -1,5 +1,5 @@
 // Readable UI source; embedded by build-ui-v10.py into the existing React bundle.
-function v10(tag,props,...children){return e.jsxs(tag,{...props,children:children.flat().filter(x=>x!==null&&x!==false&&x!==undefined)});}
+function v10(tag,props,...children){return children.length?e.jsxs(tag,{...props,children:children.flat().filter(x=>x!==null&&x!==false&&x!==undefined)}):e.jsx(tag,props||{});}
 function v10Pick(id){window.location.hash='knowledge?node='+encodeURIComponent(id);}
 function v10Practice(k){return k.practice||{distinct_count:0,practiced_count:0,new_count:0};}
 function v10Status(k){const p=v10Practice(k);return !k.unlock.allowed?'需先学前置知识':p.new_count?`${p.new_count} 道不同考法`:p.distinct_count?'本轮考法已练完':'练习待补充';}

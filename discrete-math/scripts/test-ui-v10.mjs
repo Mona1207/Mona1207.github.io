@@ -51,3 +51,15 @@ assert(seed.questions.filter(q=>q.verification==='verified').every(q=>!practiceG
 assert.equal(practiceGroup({id:'custom1',prompt:'求 25 加 3',meta:{}}),practiceGroup({id:'custom2',prompt:'求 40 加 8',meta:{}}));
 for(const id of ['DM-K01-02','DM-K04-02','DM-K18-02'])assert(new Set(seed.links.filter(l=>l.knowledge_id===id).map(l=>seed.questions.find(q=>q.id===l.question_id)).filter(q=>q.verification==='verified').map(practiceGroup)).size>=2);
 console.log(`PASS: ${seed.knowledge.length} points; semantic grouping, cross-session/cross-point exclusion, no padding, prerequisites, history preservation, resume, intentional review.`);
+// Component contract regression: void elements must never receive children.
+// This caught the real browser's React #137 during the chooser return path.
+const jsx=(type,props,key)=>({type,props:props||{},key});
+const ui={e:{jsx,jsxs:jsx},m:{useState:value=>[typeof value==='function'?value():value,()=>{}]},sessionStorage:{getItem:()=>null},window:{location:{}},z:()=>{}};
+for(const icon of ['S','D','J','ee','me','Ke','xe','he','ts','ke'])ui[icon]=()=>null;
+ui.B=({text})=>jsx('p',{children:text});ui.De=(state,id)=>{let k=[...state.knowledge,...state.chapters].find(x=>x.id===id);while(k?.chapter_id||k?.parent_id)k=state.chapters.find(x=>x.id===(k.chapter_id||k.parent_id));return k};
+vm.createContext(ui);vm.runInContext(read('scripts/ui-v10-components.js'),ui);
+const data=fresh().state();
+function inspect(node){if(!node||typeof node!=='object')return;if(Array.isArray(node)){node.forEach(inspect);return}if(typeof node.type==='function'){inspect(node.type(node.props));return}if(['input','img','br','hr'].includes(node.type))assert(!('children' in node.props),node.type+' must not have children');inspect(node.props?.children);}
+for(const name of ['Es','Ls','Hs','qs'])inspect(ui[name]({state:data,pick:()=>{},onPick:()=>{},report:{}}));
+for(const k of data.knowledge)inspect(ui.V10Lesson({k,state:data,pick:()=>{},start:()=>{},bookmark:()=>{},readSource:()=>{}}));
+console.log('PASS: homepage, chooser, directory, tree, and all 46 lesson component trees render without invalid void-element children.');

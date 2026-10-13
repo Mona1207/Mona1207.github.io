@@ -51,5 +51,6 @@ app=app.replace('s.chapters.find(h=>h.id===l.chapter_id)','s.knowledge.find(h=>h
 (root/'assets/app-ui-v10.js').write_text(app)
 index=(root/'index.html').read_text().replace('app-ui-v9.js?v=9.1','app-ui-v10.js?v=10').replace('quiet-study-v9','knowledge-study-v10')
 if 'ui-v10.css' not in index:index=index.replace('</head>','  <link rel="stylesheet" href="/discrete-math/assets/ui-v10.css?v=10">\n</head>')
+index=index.replace('app-ui-v10.js?v=10"','app-ui-v10.js?v=10.1"')
 (root/'index.html').write_text(index)
 print('Built v10 UI, client and selection engine')
