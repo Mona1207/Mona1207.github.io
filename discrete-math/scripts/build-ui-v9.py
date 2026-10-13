@@ -42,5 +42,6 @@ index=(root/'index.html').read_text()
 index=index.replace('reference-v8','quiet-study-v9').replace('#fdfdf5','#f7f8f5').replace('#18201b','#151c19').replace('index-ByL3H-tF.js','app-ui-v9.js')
 if 'ui-v9.css' not in index:
     index=index.replace('</head>','  <link rel="stylesheet" href="/discrete-math/assets/ui-v9.css">\n</head>')
+index=index.replace('assets/app-ui-v9.js\"','assets/app-ui-v9.js?v=9.1\"').replace('assets/ui-v9.css\"','assets/ui-v9.css?v=9.1\"')
 (root/'index.html').write_text(index)
 print('Created app-ui-v9.js with guarded presentation-only changes.')
