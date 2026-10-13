@@ -1,0 +1,313 @@
+/* 知序 / Quiet study. Responsive enhancement for the existing learning app. */
+:root {
+  --bg:#f7f8f5; --surface:#ffffff; --surface-2:#f0f3ef;
+  --ink:#202d28; --ink-2:#4b5e54; --muted:#69776f;
+  --accent:#26735b; --accent-dark:#22694f; --accent-soft:#e8f2ec;
+  --border:#e5eae4; --border-strong:#c9d5cb; --ring-track:#e7ede7;
+  --yellow:#f5f1e5; --pink:#f8eeeb;
+  --shadow:0 8px 30px #263f2f06;
+}
+html[data-theme=dark] {
+  --bg:#151c19; --surface:#1e2822; --surface-2:#26322b;
+  --ink:#eaf1eb; --ink-2:#c0cec4; --muted:#a4b5a8;
+  --accent:#92d1ae; --accent-dark:#a6dfbe; --accent-soft:#293e32;
+  --border:#354439; --border-strong:#506855; --ring-track:#35473b;
+  --yellow:#343429; --pink:#3c2c29; --shadow:0 8px 30px #0001;
+}
+body {font-size:15px; letter-spacing:.005em}
+button {touch-action:manipulation; transition:background .18s,border-color .18s,box-shadow .18s,transform .18s}
+button:focus-visible,a:focus-visible,summary:focus-visible {outline:3px solid var(--accent);outline-offset:4px}
+button:disabled {opacity:.5;transform:none}
+.primary {background:var(--accent);color:var(--surface);border-radius:14px;box-shadow:0 3px 7px #214c2c10;font-weight:600}
+html[data-theme=dark] .primary {color:#14281d}
+.primary:hover:not(:disabled) {filter:none;box-shadow:0 5px 16px #214c2c22;transform:translateY(-1px)}
+.primary:active:not(:disabled) {transform:translateY(0) scale(.99)}
+.panel,.ref-card {border:1px solid var(--border);box-shadow:var(--shadow);border-radius:20px}
+.app-header {border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--bg) 88%,transparent)}
+.desktop-brand {letter-spacing:-.04em}
+.desktop-brand>span {letter-spacing:.02em;color:var(--muted)}
+.desktop-navigation {background:var(--surface-2);border-radius:13px;padding:4px;gap:3px}
+.desktop-navigation button {border-radius:9px;min-height:36px;color:var(--ink-2);padding:7px 23px}
+.desktop-navigation button.active {background:var(--surface);color:var(--ink);box-shadow:0 1px 4px #243a2112}
+.page-content {max-width:860px;padding:32px 24px 100px}
+.page-home,.page-settings,.page-graph {max-width:1060px;padding:38px 28px 100px}
+.reference-home {gap:20px}
+.ref-welcome {height:auto;min-height:100px;padding:0 0 22px;display:flex;align-items:center}
+.ref-welcome h1 {font-size:34px;font-weight:650;letter-spacing:-.05em;margin-bottom:8px}
+.ref-welcome p {font-size:14px;white-space:normal;max-width:calc(100% - 72px);color:var(--muted)}
+.coral-dash {width:26px;height:3px;background:var(--accent);margin-bottom:13px}
+.art-bunny {width:104px;height:96px;right:4px;top:0;opacity:.95}
+.ref-start-card {margin:0;padding:30px;border:1px solid #d6e5da;border-radius:22px;background:var(--accent-soft);box-shadow:none;display:flex;flex-direction:column}
+.study-hero-heading {padding:0;min-height:160px;flex:1}
+.ref-current {max-width:100%;padding-right:80px}
+.ref-current>small {font-size:12px;letter-spacing:.1em;font-weight:650;margin-bottom:16px;color:var(--accent-dark)}
+.ref-current h2 {font-size:30px;line-height:1.4;font-weight:600;letter-spacing:-.03em;overflow-wrap:break-word;text-wrap:balance;margin:0 0 12px}
+.ref-current p {font-size:14px;line-height:1.7;color:var(--ink-2);-webkit-line-clamp:3;margin-bottom:14px}
+.art-books {width:88px;height:88px;right:-8px;top:18px;opacity:.85}
+.ref-progress {height:5px;background:color-mix(in srgb,var(--ink) 9%,transparent)}
+.ref-progress i {background:var(--accent);transition:width .35s ease}
+.ref-current>.ref-progress {max-width:220px;margin:14px 0 24px}
+.ref-continue {width:100%;height:50px;margin:8px 0 12px;font-size:16px;padding:12px 40px;border-radius:13px}
+.ref-continue>span {background:transparent;color:inherit;right:16px}
+.ref-start-actions {gap:10px}
+.ref-start-actions button {min-height:44px;background:color-mix(in srgb,var(--surface) 65%,transparent);border:1px solid color-mix(in srgb,var(--accent) 15%,transparent);border-radius:11px;font-size:12px;padding:9px 8px;gap:5px;color:var(--ink-2)}
+.ref-start-actions .start-first {background:transparent}
+.ref-start-actions button>svg:first-child {width:17px;height:17px;color:var(--accent-dark);fill:none;stroke-width:1.8}
+.ref-start-actions .start-first>svg:first-child {color:var(--accent-dark);fill:none}
+.ref-start-actions button:hover {background:var(--surface)}
+.ref-card {padding:24px;background:var(--surface)}
+.ref-section-head {margin-bottom:22px;gap:12px}
+.ref-section-head h2 {font-size:16px;font-weight:600;gap:8px;letter-spacing:0}
+.ref-section-head h2:before {display:none}
+.ref-section-head>button {font-size:12px;min-height:32px;color:var(--accent-dark)}
+.mastery-card .ref-section-head {margin-bottom:22px}
+.ref-mastery {gap:22px;align-items:center}
+.mastery-ring {width:112px;height:112px}
+.mastery-ring circle {stroke-width:7}
+.ring-value {stroke:var(--accent)}
+.mastery-ring b {font-size:31px;font-weight:550;font-variant-numeric:tabular-nums}
+.mastery-ring b small {font-size:17px;font-weight:500}
+.mastery-ring span {font-size:11px}
+.ref-chapter-bars {gap:17px}
+.ref-chapter-bars button {border-radius:5px}
+.ref-chapter-bars button>span {font-size:12px;margin-bottom:5px}
+.ref-chapter-bars .ref-progress {height:4px}
+.ref-chapter-bars small {font-size:11px;color:var(--ink-2)}
+.ref-chapter-bars button:hover>span {color:var(--accent-dark)}
+.completion-card {min-height:0}
+.completion-card .ref-section-head {margin-bottom:16px}
+.completion-card .reference-art,.recommendation-card .reference-art {display:none}
+.ref-completion {background:none;padding:0;gap:18px;border-radius:0}
+.ref-completion>div {gap:10px;align-items:center}
+.ref-completion>div+div {padding-left:20px;border-color:var(--border)}
+.ref-completion b {font-size:30px;font-weight:550;line-height:1.3;font-variant-numeric:tabular-nums}
+.ref-completion span>small {font-size:12px}
+.ref-completion .ref-icon {width:34px;height:34px;border-radius:10px}
+.ref-icon.pink,.ref-icon.yellow,.ref-icon.mint {background:var(--surface-2);color:var(--accent-dark)}
+.recommendation-card {background:transparent;box-shadow:none;border:0;border-top:1px solid var(--border);border-radius:0;padding:22px 0 0}
+.recommendation-card .ref-section-head {padding:0;margin-bottom:14px}
+.ref-recommendation {grid-template-columns:42px minmax(0,1fr) auto;padding:0;border-radius:0;background:none;gap:14px}
+.ref-recommendation h3 {font-size:15px;font-weight:600;margin-bottom:3px}
+.ref-recommendation p {font-size:12px;line-height:1.6}
+.ref-recommendation>button {background:var(--surface);border:1px solid var(--border-strong);color:var(--ink);font-size:13px;border-radius:11px;min-height:42px;padding:9px 16px}
+/* The tree stays a tree: one reading direction, lines, and quiet state labels. */
+.reference-tree {padding:0;max-width:840px;margin:auto}
+.reference-tree h1 {font-size:32px;font-weight:600;margin:0 0 28px}
+.title-mark {display:none}
+.ref-branch.depth-0 {margin-bottom:12px}
+.ref-tree-row {min-height:56px;border-radius:12px;margin-bottom:8px;gap:12px;padding:8px 14px;background:transparent}
+.ref-tree-row.root-row {padding:9px 16px;min-height:62px;border:1px solid var(--border);background:var(--surface);border-radius:14px}
+.ref-tree-row.root-row:has(.locked) {background:var(--surface)}
+.ref-tree-title,.root-row .ref-tree-title {font-size:15px;line-height:1.6;font-weight:550;min-height:44px;padding:7px 0}
+.ref-tree-title:hover {color:var(--accent-dark)}
+.ref-toggle {width:44px;height:44px;background:var(--accent-soft);color:var(--accent-dark);border-radius:11px}
+.ref-toggle svg {width:19px;height:19px;stroke-width:2}
+.ref-toggle.locked {background:var(--surface-2);color:var(--muted)}
+.ref-state {font-size:11px;padding:5px 9px;font-weight:500;background:var(--surface-2);color:var(--muted)}
+.ref-state.locked {background:var(--surface-2);color:var(--muted)}
+.ref-state.mastered {color:var(--accent-dark);background:var(--accent-soft)}
+.ref-state.learning {color:#866624;background:var(--yellow)}
+.ref-tree-children {margin-left:37px;padding-left:28px}
+.ref-tree-children:before {background:var(--border-strong);width:1px;top:-9px;bottom:35px}
+.ref-tree-children>.ref-tree-row:before {background:var(--border-strong);height:1px;left:-28px;width:24px}
+.ref-node-dot {width:9px;height:9px;left:-5px;border-width:2px}
+.leaf-row {padding-left:14px;padding-right:14px}
+.leaf-row:hover {background:var(--surface)}
+/* Settings share native grouped-list proportions, not dashboard cards. */
+.reference-settings {max-width:760px;margin:auto}
+.ref-settings-header {height:auto;padding:0 0 32px}
+.ref-settings-header h1 {font-size:32px;font-weight:600;line-height:1.4}
+.ref-settings-header .reference-art {display:none}
+.ref-settings-group {padding:8px 22px;margin-bottom:24px;border:1px solid var(--border);border-radius:17px;background:var(--surface);box-shadow:none}
+.ref-settings-group>h2 {font-size:12px;color:var(--muted);font-weight:500;letter-spacing:.08em;background:none;padding:12px 0 8px;margin:0}
+.ref-settings-group>h2:before {display:none}
+.ref-settings-row {min-height:79px;gap:16px;padding:13px 0}
+.ref-settings-row b {font-size:15px;font-weight:550}
+.ref-settings-row small {font-size:12px;margin-top:3px}
+.ref-settings-row .ref-icon {width:36px;height:36px;border-radius:10px;color:var(--accent-dark)}
+.ref-settings-row .ref-icon svg {width:19px;height:19px}
+.ref-settings-row>svg {width:16px;height:16px;color:var(--muted)}
+.ref-settings-row:hover b {color:var(--accent-dark)}
+.ref-switch {width:46px;height:28px;background:var(--border-strong)}
+.ref-switch:before {width:22px;height:22px;box-shadow:0 1px 3px #0002}
+.ref-switch.on:before {transform:translateX(18px)}
+.ref-advanced {font-size:13px;min-height:44px;color:var(--ink-2)}
+/* Focus mode: a readable worksheet, with explicit save-and-reflect feedback. */
+.focus-session .page-content {max-width:780px;padding:30px 24px 48px}
+.quiz-nav {grid-template-columns:44px 1fr 44px;margin:0 0 24px;row-gap:18px}
+.quiz-nav>.icon-button {width:44px;height:44px;min-height:44px;border:1px solid var(--border);background:var(--surface);border-radius:12px}
+.quiz-page-title {font-size:17px;font-weight:600}
+.quiz-tools {font-size:20px}
+.quiz-progress {padding:0;gap:16px}
+.quiz-progress .meter {height:4px;background:var(--ring-track)}
+.quiz-progress .meter i {background:var(--accent);transition:width .25s}
+.quiz-progress small {font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.question-paper {padding:32px;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.question-meta {margin-bottom:24px;gap:8px}
+.quiz-chapter-badge,.quiz-kind-badge {font-size:12px;font-weight:500;line-height:1.5;padding:5px 10px;border-radius:7px;background:var(--accent-soft);color:var(--accent-dark)}
+.quiz-kind-badge {background:var(--surface-2);color:var(--muted)}
+.question-stem {margin-bottom:26px}
+.question-stem p {font-size:23px;line-height:1.7;font-weight:550}
+.options {gap:10px;margin-bottom:22px}
+.options button {min-height:60px;padding:13px 18px;border-radius:12px;gap:16px;font-size:17px}
+.option-text p {font-size:17px;line-height:1.65}
+.option-letter {font-size:14px;font-weight:500;color:var(--muted);margin-right:6px}
+.options button i {width:18px;height:18px;border-color:var(--border-strong)}
+.options button.chosen {border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 1px var(--accent)}
+.options button:hover:not(:disabled):not(.chosen) {background:var(--surface-2);border-color:var(--border-strong)}
+.options button.answer-correct {background:var(--accent-soft);border-color:var(--accent);box-shadow:none}
+.options button.answer-correct i {background:var(--accent);border-color:var(--accent)}
+.options button.answer-incorrect {background:var(--pink);border-color:#bd7770;box-shadow:none}
+.quiz-submit>.primary {height:48px;font-size:15px;border-radius:12px}
+.question-note-entry {margin:16px 0 0;width:100%;border:0;border-top:1px solid var(--border);border-radius:0;padding:18px 0 0;min-height:44px;font-size:13px;background:none;color:var(--ink-2)}
+.question-note-entry>svg {width:18px;height:18px}
+.solution {margin:24px 0 0;padding:22px;background:var(--surface-2);border-radius:14px;border-left:3px solid var(--accent)}
+.solution-retry {border-left-color:#b88258}
+.solution-header {min-height:0;margin-bottom:17px}
+.solution-header .reference-art {display:none}
+.solution-header strong {font-size:18px;font-weight:600;padding:0;color:var(--accent-dark)}
+.solution-header strong:after {display:none}
+.solution-retry .solution-header strong {color:var(--ink)}
+.solution h3 {font-size:13px;color:var(--muted);font-weight:500;margin-bottom:9px}
+.solution p {font-size:16px;line-height:1.85;margin-bottom:8px}
+.solution-step {padding:4px 0}
+.solution-errors {margin:12px 0}
+.solution-errors summary {padding:8px 0;color:var(--ink-2)}
+.quiz-knowledge-link {font-size:13px;border-radius:9px;background:var(--surface);padding:12px;color:var(--accent-dark);gap:9px}
+.inline-reflection {margin-top:22px;padding:22px;background:var(--surface);border:1px solid var(--border);border-radius:16px}
+.inline-reflection h2 {font-size:16px;font-weight:600;margin-bottom:6px}
+.inline-reflection>p {font-size:12px;color:var(--muted);margin-bottom:16px;line-height:1.7}
+.inline-reflection .reflection-choices {grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.reflection-choices button {border-radius:10px;min-height:66px;background:var(--surface);border-color:var(--border);padding:12px}
+.reflection-choices button:hover:not(:disabled) {border-color:var(--accent);background:var(--accent-soft)}
+.reflection-choices button b {font-size:13px;font-weight:550}
+.reflection-choices button small {font-size:11px;line-height:1.5}
+.reflection-choices button:last-child:nth-child(odd) {grid-column:1/-1}
+.inline-reflection .inline-label {margin-bottom:0}
+.quiz-next {margin-top:16px;padding:0}
+.quiz-next>.primary {height:50px;font-size:15px;border-radius:13px}
+.quiz-save-status {padding:16px 3px 0;color:var(--accent-dark);font-size:13px;line-height:1.7}
+.quiz-save-status p {margin:5px 0 0;font-size:12px;color:var(--muted)}
+.study-sheet {border:1px solid var(--border);box-shadow:0 24px 80px #15271f20;border-radius:22px}
+.sheet-backdrop {background:#16281f40;backdrop-filter:blur(5px)}
+.study-chooser>header h2 {font-size:27px;font-weight:600}
+.study-chooser>header p {font-size:13px}
+.chooser-list {max-height:52dvh;border-radius:16px;padding:4px 16px}
+.chooser-row {min-height:65px}
+.chooser-row b {font-size:14px;font-weight:550}
+.chooser-row small {font-size:12px}
+.chooser-row.selected {background:var(--accent-soft)}
+.chooser-start {position:sticky;bottom:12px;border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--surface);box-shadow:0 -6px 25px #263b2510;z-index:5}
+.count-stepper>.icon-button {width:44px;height:44px;min-height:44px;border-radius:10px}
+.list-row {font-size:14px}
+.caption {font-size:13px}
+.bottom-nav {background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(18px);height:calc(64px + env(safe-area-inset-bottom));padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom))}
+.bottom-nav .nav-icon {width:46px;height:28px;border-radius:9px}
+.bottom-nav svg {width:20px;height:20px}
+.bottom-nav button>span:last-child {font-size:11px}
+.bottom-nav button.active[aria-label=进入首页] svg {fill:none;stroke:var(--accent)}
+@media(min-width:900px) {
+ .app-header {height:76px;padding:0 max(28px,calc((100vw - 1004px)/2))}
+ .page-home {padding-top:48px;padding-bottom:50px}
+ .reference-home {grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:22px;align-items:stretch}
+ .ref-welcome {grid-column:1/-1;margin-bottom:4px;min-height:98px}
+ .ref-welcome h1 {font-size:38px}
+ .ref-welcome .art-bunny {right:7px;top:-12px;width:125px;height:114px}
+ .ref-start-card {grid-column:1;grid-row:2/4;padding:34px}
+ .mastery-card {grid-column:2;grid-row:2;padding:25px}
+ .completion-card {grid-column:2;grid-row:3;padding:22px 25px}
+ .recommendation-card {grid-column:1/-1;margin-top:8px}
+ .study-hero-heading {min-height:176px}
+ .ref-current {padding-right:66px}
+ .ref-current h2 {font-size:32px}
+ .ref-continue {margin-top:20px}
+ .art-books {right:-10px;width:82px}
+ .focus-session .page-content {padding-top:42px}
+ .page-settings,.page-graph {padding-top:48px}
+ .reader-toolbar {top:76px}
+}
+@media(min-width:600px) and (max-width:899px) {
+ .page-home {max-width:650px}
+ .ref-current {padding-right:130px}
+ .art-books {width:125px;height:110px}
+}
+@media(max-width:599px) {
+ .page-content {padding:24px 18px calc(90px + env(safe-area-inset-bottom))}
+ .page-home,.page-settings,.page-graph {padding:30px 20px calc(94px + env(safe-area-inset-bottom))}
+ .reference-home {gap:16px}
+ .ref-welcome {padding:0 0 12px;min-height:105px}
+ .ref-welcome h1 {font-size:28px;letter-spacing:-.045em}
+ .ref-welcome p {font-size:12px;max-width:calc(100% - 42px)}
+ .art-bunny {width:76px;height:76px;right:-10px;top:-8px}
+ .ref-start-card {padding:24px 21px;border-radius:19px}
+ .ref-current {padding-right:58px}
+ .ref-current h2 {font-size:25px;line-height:1.5;text-wrap:pretty}
+ .ref-current>small {font-size:11px;margin-bottom:11px}
+ .ref-current p {font-size:12px}
+ .study-hero-heading {min-height:144px}
+ .art-books {width:66px;height:72px;right:-5px;top:20px}
+ .ref-continue {font-size:15px}
+ .ref-start-actions button {font-size:11px;gap:4px;min-height:44px}
+ .ref-start-actions button>svg:first-child {width:14px}
+ .ref-start-actions button>svg:last-child {width:10px}
+ .ref-card {padding:20px}
+ .ref-section-head h2 {font-size:15px}
+ .ref-mastery {gap:16px}
+ .mastery-ring {width:94px;height:94px}
+ .mastery-ring b {font-size:28px}
+ .ref-chapter-bars button>span {font-size:11px}
+ .ref-chapter-bars {gap:14px}
+ .ref-completion>div {gap:9px}
+ .ref-completion>div+div {padding-left:14px}
+ .ref-completion .ref-icon {width:28px;height:28px}
+ .ref-completion b {font-size:27px}
+ .ref-completion span>small {font-size:11px}
+ .recommendation-card {padding:20px 0 0}
+ .ref-recommendation {grid-template-columns:34px minmax(0,1fr);gap:10px}
+ .ref-recommendation .ref-icon {width:34px;height:36px}
+ .ref-recommendation>button {grid-column:2;justify-self:start;margin-top:4px}
+ .ref-recommendation h3 {font-size:14px}
+ .ref-recommendation p {font-size:12px}
+ .reference-tree h1,.ref-settings-header h1 {font-size:29px}
+ .ref-tree-row.root-row {padding:6px 10px;gap:8px}
+ .ref-tree-title,.root-row .ref-tree-title {font-size:14px}
+ .ref-state {font-size:10px;padding:4px 6px;gap:4px}
+ .ref-state svg {width:12px;height:12px}
+ .ref-toggle {width:40px;height:44px;min-width:40px}
+ .ref-tree-children {margin-left:30px;padding-left:17px}
+ .ref-tree-children>.ref-tree-row:before {left:-17px;width:14px}
+ .leaf-row {padding:5px 8px 5px 10px;gap:7px}
+ .ref-tree-children:before {bottom:33px}
+ .ref-settings-header {padding-bottom:24px}
+ .ref-settings-group {padding:6px 16px;margin-bottom:18px}
+ .ref-settings-row {gap:12px}
+ .ref-settings-row b {font-size:15px}
+ .ref-settings-row small {font-size:11px}
+ .focus-session .page-content {padding:18px 16px 34px}
+ .quiz-nav {margin-bottom:18px;row-gap:13px}
+ .question-paper {padding:22px 18px;border-radius:17px}
+ .question-stem p {font-size:21px}
+ .question-meta {margin-bottom:20px}
+ .options button {min-height:57px;padding:12px;gap:12px}
+ .option-text p {font-size:16px}
+ .solution {padding:17px 15px}
+ .solution p {font-size:15px}
+ .inline-reflection {padding:18px}
+ .reflection-choices button {padding:10px;gap:5px}
+ .reflection-choices button>svg {width:13px}
+ .study-sheet {border-radius:22px 22px 0 0}
+}
+@media(max-width:359px) {
+ .page-home,.page-settings,.page-graph {padding-left:14px;padding-right:14px}
+ .ref-start-card {padding:20px 16px}
+ .ref-current h2 {font-size:23px}
+ .ref-welcome h1 {font-size:26px}
+ .ref-completion .ref-icon {display:none}
+ .inline-reflection .reflection-choices {grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:no-preference) {
+ .solution,.inline-reflection,.quiz-save-status {animation:reveal .22s ease-out}
+ .ref-tree-children {animation:reveal .18s ease-out}
+ @keyframes reveal {from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(prefers-reduced-motion:reduce) {*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
