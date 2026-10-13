@@ -1,7 +1,7 @@
 /* 知序 / Quiet study. Responsive enhancement for the existing learning app. */
 :root {
   --bg:#f7f8f5; --surface:#ffffff; --surface-2:#f0f3ef;
-  --ink:#202d28; --ink-2:#4b5e54; --muted:#69776f;
+  --ink:#202d28; --ink-2:#4b5e54; --muted:#637269;
   --accent:#26735b; --accent-dark:#22694f; --accent-soft:#e8f2ec;
   --border:#e5eae4; --border-strong:#c9d5cb; --ring-track:#e7ede7;
   --yellow:#f5f1e5; --pink:#f8eeeb;
@@ -33,6 +33,7 @@ html[data-theme=dark] .primary {color:#14281d}
 .page-home,.page-settings,.page-graph {max-width:1060px;padding:38px 28px 100px}
 .reference-home {gap:20px}
 .ref-welcome {height:auto;min-height:100px;padding:0 0 22px;display:flex;align-items:center}
+.ref-welcome>div {width:100%;min-width:0}
 .ref-welcome h1 {font-size:34px;font-weight:650;letter-spacing:-.05em;margin-bottom:8px}
 .ref-welcome p {font-size:14px;white-space:normal;max-width:calc(100% - 72px);color:var(--muted)}
 .coral-dash {width:26px;height:3px;background:var(--accent);margin-bottom:13px}

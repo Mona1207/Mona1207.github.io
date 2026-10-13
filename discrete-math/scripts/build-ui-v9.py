@@ -14,6 +14,13 @@ replace('children:"每天进步一点点，遇见更好的自己"','children:"�
 replace('"选择章节，开始第一题"','"从命题与真值开始，完成一组独立练习。"')
 replace('children:"从首章开始"','children:a?"从首章重练":"从首章开始"')
 replace('className:"start-first",disabled:!p,onClick:()=>p&&n(p.id,"chapter")','className:"start-first",disabled:!p,onClick:()=>p&&(!a||window.confirm("重新从首章安排一组练习？已有答题与笔记会保留。"))&&n(p.id,"chapter")')
+# Refresh the report after submission, so returning home cannot show a stale count.
+replace('localStorage.removeItem("draft-"+l.id)}catch(h)','localStorage.removeItem("draft-"+l.id),await o()}catch(h)')
+# Avoid calling the four mock exams textbook chapters in the report link.
+replace('children:[i.length," 个章节",e.jsx(S,{size:15})]', 'children:["全书进度",e.jsx(S,{size:15})]')
+# Removed decorative images should not still download behind display:none.
+for kind in ['clipboard','reading-sun','settings-sun','idea']:
+    replace('e.jsx(ie,{kind:"'+kind+'"})', 'null')
 # No-attempt states should not look like measured zero accuracy.
 replace('children:[t!=null&&t.attempt_count?Math.round((t.independent_correct||0)/t.attempt_count*100):0,e.jsx("small",{children:"%"})]', 'children:[t!=null&&t.attempt_count?Math.round((t.independent_correct||0)/t.attempt_count*100):"—",e.jsx("small",{children:t!=null&&t.attempt_count?"%":""})]')
 replace('"切换主题，舒适护眼"','"选择更适合当前光线的外观"')
@@ -25,7 +32,7 @@ replace('children:["提交独立答案",e.jsx(D,{size:17})]','children:[w?"正�
 replace('children:[g+1<t.questions.length?"下一题":"完成本次学习",e.jsx(D,{size:22})]','children:[w?"正在保存…":_?(g+1<t.questions.length?"下一题":"完成本次学习"):"评价理解并继续",e.jsx(D,{size:22})]')
 # Put reflection in the reading flow. The existing H handler retains all mastery rules.
 anchor='p&&e.jsx("div",{className:"quiz-next",'
-inline='''p&&!_&&e.jsxs("section",{className:"inline-reflection","aria-label":"记录本题理解",children:[e.jsx("h2",{children:"这道题，你理解到哪一步？"}),e.jsx("p",{children:"答案已保存。选择实际理解程度后，计入完成题数与掌握度。"}),e.jsx("div",{className:"reflection-choices",children:Os.map(([h,v,R])=>e.jsxs("button",{disabled:w,onClick:()=>H(h),children:[e.jsxs("span",{children:[e.jsx("b",{children:v}),e.jsx("small",{children:R})]}),e.jsx(S,{size:17})]},h))}),p.attempt.actual_result==="incorrect"&&e.jsxs("label",{className:"inline-label",children:["这次主要卡在哪里？",e.jsx("select",{value:Q,onChange:h=>A(h.target.value),children:["概念理解","计算错误","逻辑推理","符号与条件","步骤不完整"].map(h=>e.jsx("option",{children:h},h))})]})]}),p&&_&&e.jsxs("div",{className:"quiz-save-status",role:"status",children:["✓ 已计入学习记录 · ",ve[p.attempt.self_rating]||"评价已保存",d&&e.jsx("p",{children:Object.entries(d.mastery_changes||{}).map(([h,v])=>{const item=s.knowledge.find(O=>O.id===h);return(item?item.title:"知识点")+" "+Math.round(v.before)+"% → "+Math.round(v.after)+"%"}).join(" · ")||"继续通过独立练习积累掌握证据。"})]}),'''
+inline='''p&&!_&&e.jsxs("section",{className:"inline-reflection","aria-label":"记录本题理解",children:[e.jsx("h2",{children:"这道题，你理解到哪一步？"}),e.jsx("p",{children:"答案已保存。完成自评后，更新本组进度与掌握度。"}),e.jsx("div",{className:"reflection-choices",children:Os.map(([h,v,R])=>e.jsxs("button",{disabled:w,onClick:()=>H(h),children:[e.jsxs("span",{children:[e.jsx("b",{children:v}),e.jsx("small",{children:R})]}),e.jsx(S,{size:17})]},h))}),p.attempt.actual_result==="incorrect"&&e.jsxs("label",{className:"inline-label",children:["这次主要卡在哪里？",e.jsx("select",{value:Q,onChange:h=>A(h.target.value),children:["概念理解","计算错误","逻辑推理","符号与条件","步骤不完整"].map(h=>e.jsx("option",{children:h},h))})]})]}),p&&_&&e.jsxs("div",{className:"quiz-save-status",role:"status",children:["✓ 已计入学习记录 · ",ve[p.attempt.self_rating]||"评价已保存",d&&e.jsx("p",{children:Object.entries(d.mastery_changes||{}).map(([h,v])=>{const item=s.knowledge.find(O=>O.id===h);return(item?item.title:"知识点")+" "+Math.round(v.before)+"% → "+Math.round(v.after)+"%"}).join(" · ")||"继续通过独立练习积累掌握证据。"})]}),'''
 replace(anchor,inline+anchor)
 # Consistent adaptive copy for the modal fallback.
 replace('children:"选出最符合这次表现的一项。"','children:"选择实际理解程度，保存后继续。看懂解析不等于独立掌握。"')
