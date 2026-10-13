@@ -1,0 +1,129 @@
+{
+  "questions": [
+    {
+      "id": "DM-V10-01-02",
+      "chapter_id": "DM-C01-S1",
+      "title": "蕴涵联结词 · 必要条件符号化",
+      "prompt": "设 p 表示“允许入场”，q 表示“持有门票”。规定“只有持有门票，才允许入场”。该规定应写成哪一个公式？",
+      "kind": "choice",
+      "difficulty": 1,
+      "page": 3,
+      "source_type": "ai_extra",
+      "verification": "verified",
+      "answer": {
+        "text": "A. p→q",
+        "accepted": [
+          "A",
+          "p→q"
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "“持有门票”是“允许入场”的必要条件。入场意味着持票，持票本身不保证入场。"
+        ],
+        "summary": "“持有门票”是“允许入场”的必要条件。入场意味着持票，持票本身不保证入场。",
+        "errors": [
+          "区分定义中的必要条件与额外要求。"
+        ]
+      },
+      "meta": {
+        "options": [
+          "A. p→q",
+          "B. q→p",
+          "C. p↔q"
+        ],
+        "family_id": "DM-K01-02-必要条件符号化",
+        "label": "系统补充练习 · 定义核对，非教材原题"
+      }
+    },
+    {
+      "id": "DM-V10-04-02",
+      "chapter_id": "DM-C04-S1",
+      "title": "约束变元与自由变元 · 避免变量捕获",
+      "prompt": "对公式 ∀x P(x,y) 中的自由变元 y 代入 x。为避免原来自由的 x 被量词捕获，应如何处理？（z 是未使用的新变元）",
+      "kind": "choice",
+      "difficulty": 1,
+      "page": 67,
+      "source_type": "ai_extra",
+      "verification": "verified",
+      "answer": {
+        "text": "B. 先把约束变元 x 改名为 z，再得到 ∀z P(z,x)",
+        "accepted": [
+          "B",
+          "∀z P(z,x)"
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "先将约束变元改为新名字 z，得到 ∀z P(z,y)，再将自由的 y 替换成 x。这样代入的 x 仍保持自由。"
+        ],
+        "summary": "先将约束变元改为新名字 z，得到 ∀z P(z,y)，再将自由的 y 替换成 x。这样代入的 x 仍保持自由。",
+        "errors": [
+          "区分定义中的必要条件与额外要求。"
+        ]
+      },
+      "meta": {
+        "options": [
+          "A. 直接写成 ∀x P(x,x)",
+          "B. 先把约束变元 x 改名为 z，再得到 ∀z P(z,x)",
+          "C. 删除全称量词"
+        ],
+        "family_id": "DM-K04-02-避免变量捕获",
+        "label": "系统补充练习 · 定义核对，非教材原题"
+      }
+    },
+    {
+      "id": "DM-V10-18-02",
+      "chapter_id": "DM-C18-S1",
+      "title": "顶点着色与色数 · 合法着色验证",
+      "prompt": "路径图 a—b—c 的顶点着色为：a 红色，b 蓝色，c 红色。这是否是合法的顶点着色？",
+      "kind": "choice",
+      "difficulty": 1,
+      "page": 368,
+      "source_type": "ai_extra",
+      "verification": "verified",
+      "answer": {
+        "text": "A. 合法，因为每条边的两个端点颜色不同",
+        "accepted": [
+          "A",
+          "合法"
+        ]
+      },
+      "explanation": {
+        "steps": [
+          "合法顶点着色只要求相邻顶点异色。a 与 c 不相邻，可以共用红色；这与要求所有顶点异色不同。"
+        ],
+        "summary": "合法顶点着色只要求相邻顶点异色。a 与 c 不相邻，可以共用红色；这与要求所有顶点异色不同。",
+        "errors": [
+          "区分定义中的必要条件与额外要求。"
+        ]
+      },
+      "meta": {
+        "options": [
+          "A. 合法，因为每条边的两个端点颜色不同",
+          "B. 不合法，因为 a 与 c 颜色相同",
+          "C. 不合法，因为每个顶点都必须使用不同颜色"
+        ],
+        "family_id": "DM-K18-02-合法着色验证",
+        "label": "系统补充练习 · 定义核对，非教材原题"
+      }
+    }
+  ],
+  "links": [
+    {
+      "question_id": "DM-V10-01-02",
+      "knowledge_id": "DM-K01-02",
+      "strength": 1
+    },
+    {
+      "question_id": "DM-V10-04-02",
+      "knowledge_id": "DM-K04-02",
+      "strength": 1
+    },
+    {
+      "question_id": "DM-V10-18-02",
+      "knowledge_id": "DM-K18-02",
+      "strength": 1
+    }
+  ]
+}
