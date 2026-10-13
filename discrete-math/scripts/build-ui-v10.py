@@ -11,6 +11,9 @@ w=swap(w,'sessionQuestions(e,i,t){','validateSnapshot(e){',(root/'scripts/worker
 w=w.replace('meta:h,attempt_count:','meta:{...h,practice_group:practiceGroup(e)},attempt_count:')
 w=w.replace('question_ids:[...l],completed_questions:','question_ids:[...l],practice:this.practiceSummary(t.id),completed_questions:')
 w=w.replace('h.add(String(f.meta.family_id||f.id))','h.add(practiceGroup(f))')
+# Prior uncertainty shrinks when enough distinct methods exist; two-method points
+# must be able to reach mastery without repeating parameter variants.
+w=w.replace('d/(l+i.prior_weight)','d/(l+Math.max(0,i.min_independent_families-h.size)*i.prior_weight)')
 # Transfer evidence for the same audited method across point boundaries.
 w=w.replace('t=new Set((this.indexes.qByKp.get(e)||[]).map(w=>w.id)),a=this.snapshot.attempts', 't=new Set((this.indexes.qByKp.get(e)||[]).map(w=>w.id)),methodGroups=new Set((this.indexes.qByKp.get(e)||[]).map(practiceGroup)),a=this.snapshot.attempts')
 w=w.replace('let E=(this.indexes.links.get(f.id)||[]).find(N=>N.knowledge_id===e).strength*','let E=((this.indexes.links.get(f.id)||[]).find(N=>N.knowledge_id===e)?.strength??1)*')
@@ -29,9 +32,9 @@ w=w.replace('return h.sessions.push(E),','for(const old of h.sessions)if(!old.en
 a='if(a==="/sessions/latest"){'; b='if(s[0]==="sessions"&&s[2]==="end")'
 w=swap(w,a,b,'if(a==="/sessions/latest"){return this.resumeSession(h.sessions.filter(f=>!f.ended_at).at(-1))}')
 (root/'assets/pages-worker-v10.js').write_text(w)
-client=(root/'assets/client-BHieulgK.js').read_text().replace('pages.worker-qfrGCWkM.js','pages-worker-v10.js')
+client=(root/'assets/client-BHieulgK.js').read_text().replace('pages.worker-qfrGCWkM.js','pages-worker-v10.js?v=10.2')
 (root/'assets/client-v10.js').write_text(client)
-app=(root/'assets/app-ui-v9.js').read_text().replace('client-BHieulgK.js','client-v10.js')
+app=(root/'assets/app-ui-v9.js').read_text().replace('client-BHieulgK.js','client-v10.js?v=10.2')
 for name in ['Es','Ls','Vs','qs','Ws','Hs','Bs']:
  app=app.replace('function '+name+'(','function '+name+'Legacy(',1)
 app=app.replace('const Ys=',(root/'scripts/ui-v10-components.js').read_text()+'\nconst Ys=')
@@ -51,6 +54,6 @@ app=app.replace('s.chapters.find(h=>h.id===l.chapter_id)','s.knowledge.find(h=>h
 (root/'assets/app-ui-v10.js').write_text(app)
 index=(root/'index.html').read_text().replace('app-ui-v9.js?v=9.1','app-ui-v10.js?v=10').replace('quiet-study-v9','knowledge-study-v10')
 if 'ui-v10.css' not in index:index=index.replace('</head>','  <link rel="stylesheet" href="/discrete-math/assets/ui-v10.css?v=10">\n</head>')
-index=index.replace('app-ui-v10.js?v=10"','app-ui-v10.js?v=10.1"')
+index=re.sub(r'app-ui-v10\.js\?v=10(?:\.\d+)?', 'app-ui-v10.js?v=10.2', index)
 (root/'index.html').write_text(index)
 print('Built v10 UI, client and selection engine')

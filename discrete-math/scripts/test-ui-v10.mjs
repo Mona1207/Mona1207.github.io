@@ -29,6 +29,8 @@ const session=engine.request('/sessions','POST',{target_id:'DM-K01-01',mode:'kno
 assert.equal(session.questions.length,2,'does not pad to 10');
 for(const q of session.questions){const answer=engine.getQuestion(q.id).answer.accepted[0];const res=engine.request('/attempts','POST',{session_id:session.session.id,question_id:q.id,answer,duration:25});engine.request('/attempts/'+res.attempt.id+'/rate','POST',{rating:'independent'});}
 assert.equal(engine.sessionQuestions('DM-K01-01','knowledge',10).length,0,'all future variants excluded');
+assert.equal(engine.knowledge('DM-K01-01').mastery,100,'sufficient distinct methods can reach full performance without repetition');
+assert.equal(engine.knowledge('DM-K01-01').state,'basic','mastered still requires spaced evidence');
 assert.throws(()=>engine.request('/sessions','POST',{target_id:'DM-K01-01',mode:'knowledge'}),/没有新的考法/);
 // Shared methods are excluded across knowledge points, not just within a point.
 engine=fresh();engine.eligible=()=>true;
