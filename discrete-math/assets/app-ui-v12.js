@@ -78,11 +78,11 @@ function V10LessonBeforeV12({k,state:s,pick,start,readSource,bookmark}){
 // Clarity workspace. Visual interactions explain real concepts without recording attempts.
 function V12Mark(){return v10('svg',{viewBox:'0 0 32 32',fill:'none','aria-hidden':true},v10('path',{d:'M8 23L16 8L24 23H8Z',stroke:'currentColor',strokeWidth:1.8,strokeLinejoin:'round'}),[[8,23],[16,8],[24,23]].map(([cx,cy])=>v10('circle',{key:cx,cx,cy,r:3,fill:'currentColor'})));}
 function v12Symbol(k){return ({'DM-K01-01':'p','DM-K01-02':'→','DM-K01-03':'T/F'}[k.id]||{'02':'≡','03':'∴','04':'∀','05':'∃','06':'∈','07':'R','08':'f','09':'∘','10':'G','11':'∨','12':'!','13':'aₙ','14':'G','15':'G','16':'T','17':'G','18':'χ','19':'≡'}[k.id.slice(4,6)]||'·');}
-function V12SetLab({pick}){
+function V12SetLab({pick,inline=false}){
  const [mode,setMode]=m.useState('intersection');
  const modes=[['intersection','交集','A ∩ B','{3}','两个集合共同的元素'],['union','并集','A ∪ B','{1, 2, 3, 4}','属于任意一个集合的元素'],['difference','差集','A − B','{1, 2}','只属于 A、不属于 B 的元素']];
  const selected=modes.find(x=>x[0]===mode);
- return v10('aside',{className:'set-lab','aria-label':'集合运算实验台'},
+ return v10('aside',{className:'set-lab'+(inline?' inline-lab':''),'aria-label':'集合运算实验台'},
   v10('div',{className:'lab-heading'},v10('span',{className:'lab-dot','aria-hidden':true}),v10('b',{},'小小实验室'),v10('span',{},'集合运算')),
   v10('div',{className:'lab-modes','aria-label':'选择集合运算'},modes.map(([id,label])=>v10('button',{key:id,'aria-pressed':mode===id,onClick:()=>setMode(id)},label))),
   v10('svg',{className:'set-diagram',viewBox:'0 0 340 188',role:'img','aria-label':selected[2]+' = '+selected[3]},
@@ -93,7 +93,19 @@ function V12SetLab({pick}){
    v10('text',{className:'set-label',x:94,y:22},'A'),v10('text',{className:'set-label',x:242,y:22},'B'),
    v10('text',{className:mode!=='intersection'?'set-number selected':'set-number',x:110,y:82},'1'),v10('text',{className:mode!=='intersection'?'set-number selected':'set-number',x:110,y:118},'2'),v10('text',{className:mode!=='difference'?'set-number selected':'set-number',x:170,y:102},'3'),v10('text',{className:mode==='union'?'set-number selected':'set-number',x:232,y:102},'4')),
   v10('div',{className:'lab-result','aria-live':'polite'},v10('b',{},selected[2]),v10('span',{},'='),v10('strong',{},selected[3])),v10('p',{className:'lab-description'},selected[4]),
-  v10('button',{className:'lab-link',onClick:()=>pick('DM-K06-03')},'学习集合运算',e.jsx(D,{size:15})));
+  !inline&&v10('button',{className:'lab-link',onClick:()=>pick('DM-K06-03')},'学习集合运算',e.jsx(D,{size:15})));
+}
+function V12PropositionDemo(){
+ const [index,setIndex]=m.useState(0);const examples=[['陈述句','2 是偶数。','是命题 · 真','这句话陈述了一件事，而且能确定为真。'],['祈使句','请关门。','不是命题','它表达的是要求，不能判断为真或假。'],['含变量','x 大于 2。','不是命题','这里的 x 尚未确定；给定具体值后，才可以判断真假。']];const x=examples[index];
+ return v10('section',{className:'sentence-lab','aria-label':'命题判断演示'},v10('div',{className:'inline-lab-heading'},v10('b',{},'换句话看看'),v10('span',{},'动手理解')),
+  v10('div',{className:'sentence-modes','aria-label':'选择句子类型'},examples.map(([label],i)=>v10('button',{key:label,'aria-pressed':index===i,onClick:()=>setIndex(i)},label))),
+  v10('div',{className:'sentence-result','aria-live':'polite'},v10('blockquote',{},'“'+x[1]+'”'),v10('span',{className:index===0?'is-proposition':''},x[2]),v10('p',{},x[3])));
+}
+function V12RelationDemo(){
+ const [edges,setEdges]=m.useState([false,true,true,false]);const toggle=i=>setEdges(old=>old.map((x,j)=>j===i?!x:x));
+ return v10('section',{className:'relation-lab','aria-label':'关系矩阵与箭头演示'},v10('div',{className:'inline-lab-heading'},v10('b',{},'矩阵与箭头，一起变化'),v10('span',{},'A = {a, b}')),
+  v10('div',{className:'relation-playground'},v10('div',{className:'relation-matrix'},v10('span',{className:'matrix-column-label'},'终点 →'),v10('div',{className:'matrix-grid'},v10('span',{},''),v10('b',{},'a'),v10('b',{},'b'),...['a','b'].flatMap((from,row)=>[v10('b',{key:from},from),...['a','b'].map((to,col)=>{const i=row*2+col;return v10('button',{key:from+to,'aria-label':from+' 到 '+to+'，当前 '+(edges[i]?1:0),'aria-pressed':edges[i],onClick:()=>toggle(i)},edges[i]?1:0);})])),v10('small',{},'行是起点，列是终点。点击 0 / 1。')),
+  v10('svg',{className:'relation-graph',viewBox:'0 0 330 180',role:'img','aria-label':'当前关系图：'+edges.map((x,i)=>x?['a 到 a','a 到 b','b 到 a','b 到 b'][i]:'').filter(Boolean).join('，')},v10('defs',{},v10('marker',{id:'relation-arrow-v12',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto'},v10('path',{d:'M0 0L10 5L0 10Z',fill:'currentColor'}))),edges[0]&&v10('path',{d:'M77 70C23 0 151 0 102 70',className:'relation-edge',markerEnd:'url(#relation-arrow-v12)'}),edges[1]&&v10('path',{d:'M117 83H218',className:'relation-edge',markerEnd:'url(#relation-arrow-v12)'}),edges[2]&&v10('path',{d:'M218 98H117',className:'relation-edge',markerEnd:'url(#relation-arrow-v12)'}),edges[3]&&v10('path',{d:'M231 70C177 0 306 0 255 70',className:'relation-edge',markerEnd:'url(#relation-arrow-v12)'}),[[90,'a'],[245,'b']].map(([cx,label])=>v10('g',{key:label},v10('circle',{cx,cy:90,r:25,className:'relation-node'}),v10('text',{x:cx,y:93},label))),v10('text',{className:'relation-hint',x:165,y:151},'1 对应一条有向边'))),v10('p',{className:'relation-caption'},'把某一格改成 1，就添加对应箭头；改回 0，箭头消失。'));
 }
 function V12Mastery({state:s,pick,go,report}){
  const [hover,setHover]=m.useState('');const point=s.knowledge.find(k=>k.id===hover);
@@ -137,7 +149,7 @@ function V10Lesson({k,state:s,pick,start,readSource,bookmark}){
     v10('div',{className:'reading-tabs',role:'tablist','aria-label':'知识点内容',onKeyDown:ev=>{const i=tabs.findIndex(x=>x[0]===view);if(['ArrowLeft','ArrowRight','Home','End'].includes(ev.key)){ev.preventDefault();const n=ev.key==='Home'?0:ev.key==='End'?tabs.length-1:(i+(ev.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;setView(tabs[n][0]);ev.currentTarget.querySelectorAll('button')[n].focus();}}},tabs.map(([id,label])=>v10('button',{key:id,id:'lesson-tab-'+id,role:'tab','aria-controls':'lesson-panel-'+id,'aria-selected':view===id,tabIndex:view===id?0:-1,onClick:()=>setView(id)},label))),
     v10('div',{className:'reading-content',key:view,role:'tabpanel',id:'lesson-panel-'+view,'aria-labelledby':'lesson-tab-'+view,tabIndex:0},
      v10('span',{className:'reading-eyebrow'},view==='concept'?'概念 / CONCEPT':view==='example'?'例子 / EXAMPLE':'提醒 / REMINDER'),
-     view==='concept'&&v10('div',{},v10('div',{className:'reading-definition'},e.jsx(B,{text:content.definition||content.plain||'讲解正在补充。'})),extra.map(([key,title])=>v10('div',{className:'reading-extra',key},v10('h3',{},title),e.jsx(B,{text:content[key]}))),k.id==='DM-K01-02'&&e.jsx(V10LogicDemo,{})),
+     view==='concept'&&v10('div',{},v10('div',{className:'reading-definition'},e.jsx(B,{text:content.definition||content.plain||'讲解正在补充。'})),extra.map(([key,title])=>v10('div',{className:'reading-extra',key},v10('h3',{},title),e.jsx(B,{text:content[key]}))),k.id==='DM-K01-01'&&e.jsx(V12PropositionDemo,{}),k.id==='DM-K01-02'&&e.jsx(V10LogicDemo,{}),k.id==='DM-K06-03'&&e.jsx(V12SetLab,{pick,inline:true}),k.id==='DM-K07-03'&&e.jsx(V12RelationDemo,{})),
      view==='example'&&v10('div',{className:'reading-example'},e.jsx(B,{text:content.example||'这一知识点的例子仍在补充，可以对照教材阅读。'}),k.id==='DM-K01-02'&&e.jsx(V10LogicDemo,{})),
      view==='caution'&&v10('div',{className:'reading-caution'},e.jsx(ee,{size:22}),v10('div',{},[...new Set([content.errors,content.confusions].filter(Boolean))].map((text,i)=>e.jsx(B,{text},i)),!content.errors&&!content.confusions&&v10('p',{},'对照定义，逐项确认条件是否满足。')))),
     v10('footer',{className:'reading-source'},v10('span',{},'系统整理讲解'),v10('button',{className:'text-button',onClick:()=>readSource(Number(k.source?.pdf_page)||(k.page||1)+8)},'对照教材',e.jsx(S,{size:14})))),
