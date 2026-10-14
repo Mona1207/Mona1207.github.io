@@ -1,0 +1,37 @@
+import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import {webcrypto} from 'node:crypto';import {practiceGroup} from '../assets/practice-groups-v13.js';
+const root=new URL('../',import.meta.url),read=p=>fs.readFileSync(new URL(p,root),'utf8'),catalog=JSON.parse(read('data/books-v15.json'));
+let total=0;const states={};
+for(const id of ['DM2T','DM2','LA7','PS3']){
+ const book=JSON.parse(read(id==='DM2'?'data/book.json':'data/book-'+id+'-v15.json'));const shards=book.question_files.map(f=>JSON.parse(read('data/'+f)));const seed={...book,books:catalog,questions:shards.flatMap(s=>s.questions),links:shards.flatMap(s=>s.links)};
+ const context={practiceGroup,crypto:webcrypto,structuredClone,URLSearchParams,Date,console,self:{location:{search:'?book='+id}},setTimeout,clearTimeout};vm.createContext(context);vm.runInContext(read('assets/pages-worker-v15.js').replace(/^import[^\n]+\n/,'').replace('let K=Promise.resolve();','globalThis.Engine=M;let K=Promise.resolve();'),context);const Engine=context.Engine;const engine=new Engine(structuredClone(seed),null,()=> '2026-10-14T09:00:00Z');states[id]=engine.state();assert.equal(states[id].settings.current_book,id);assert.equal(states[id].books.length,4);
+ for(const k of states[id].knowledge){const q=engine.sessionQuestions(k.id,'knowledge',50);assert.equal(new Set(q.map(practiceGroup)).size,q.length);if(!k.unlock.allowed)assert.equal(q.length,0);}
+ // Exhaust independently reviewed methods through the real APIs; do not manufacture evidence by repeating variants.
+ const e=new Engine(structuredClone(seed),null,()=> '2026-10-14T09:00:00Z');e.eligible=()=>true;e.unlock=()=>({allowed:true,reasons:[]});
+ for(const k of seed.knowledge){
+  const seen=new Set();while(e.sessionQuestions(k.id,'knowledge',50).length){const session=e.request('/sessions','POST',{target_id:k.id,mode:'knowledge',question_count:10});for(const q of session.questions){assert(!q.answer&&!q.explanation,'solutions hidden before submit');const full=e.getQuestion(q.id);assert(!seen.has(practiceGroup(full)));seen.add(practiceGroup(full));assert(full.prompt.trim()&&full.explanation.steps.length);const r=e.request('/attempts','POST',{session_id:session.session.id,question_id:q.id,answer:full.answer.accepted[0],duration:30});assert.equal(r.attempt.actual_result,'correct',q.id);e.request('/attempts/'+r.attempt.id+'/rate','POST',{rating:'independent'});total++;}e.request('/sessions/'+session.session.id+'/end','POST');}
+  assert.equal(e.sessionQuestions(k.id,'knowledge',50).length,0);
+ }
+ const snapshot=structuredClone(engine.snapshot);engine.validateSnapshot(snapshot);snapshot.config.current_book=id==='DM2'||id==='DM2T'?'LA7':'DM2';assert.throws(()=>engine.validateSnapshot(snapshot),/另一教材/);
+ assert.throws(()=>engine.request('/settings','PUT',{config:{current_book:id==='DM2'||id==='DM2T'?'LA7':'DM2'}}),/我的教材/);
+ const point=seed.knowledge[0];engine.eligible=()=>true;const ses=engine.request('/sessions','POST',{target_id:point.id,mode:'knowledge'}),q=ses.questions[0],full=engine.getQuestion(q.id);
+ const bad=full.meta.options.find(o=>!full.answer.accepted.includes(o[0]))[0];const wrong=engine.request('/attempts','POST',{session_id:ses.session.id,question_id:q.id,answer:bad,duration:10});assert.equal(wrong.attempt.actual_result,'incorrect');engine.request('/attempts/'+wrong.attempt.id+'/rate','POST',{rating:'understood'});assert(engine.request('/personal').wrong.some(w=>w.question_id===q.id));
+ const note=engine.request('/notes','POST',{target_id:q.id,content:'核对概念'});engine.request('/notes/'+note.id,'PUT',{content:'修改保存'});assert.equal(engine.state().notes[0].content,'修改保存');
+ console.log('PASS',id,seed.knowledge.length,'points',seed.questions.length,'questions; grading, semantic deduplication, prerequisites, wrong book backup rejection, notes.');
+}
+// Render every custom page against real engine state using a React-element tree contract.
+const jsx=(type,props,key)=>({type,props:props||{},key}),ui={e:{jsx,jsxs:jsx,Fragment:'fragment'},m:{useState:v=>[typeof v==='function'?v():v,()=>{}],useEffect:()=>{},useRef:()=>({current:null}),useCallback:x=>x},Date,console,fetch:()=>{},localStorage:{getItem:()=>null},sessionStorage:{getItem:()=>null},window:{location:{hash:''}},z:()=>{},ne:x=>x||'',Os:[['independent','独立正确',''],['partial','部分正确',''],['understood','解析后理解',''],['confused','仍不理解',''],['memorized','仅记住答案','']]};
+for(const icon of ['S','D','J','ee','me','Ke','xe','he','ts','ke','Ne','Ae','be','Be'])ui[icon]=()=>null;ui.B=({text})=>jsx('p',{children:text});ui.X=({title})=>jsx('div',{children:title});ui.Ds=()=>null;ui.ge=({children})=>jsx('dialog',{children});ui.VsLegacy=()=>null;ui.De=(s,id)=>{let k=[...s.knowledge,...s.chapters].find(k=>k.id===id);while(k?.chapter_id||k?.parent_id)k=s.chapters.find(c=>c.id===(k.chapter_id||k.parent_id));return k};
+vm.createContext(ui);vm.runInContext(read('scripts/ui-v10-components.js'),ui);vm.runInContext(read('scripts/ui-v12-components.js'),ui);vm.runInContext(read('scripts/ui-v14-components.js'),ui);
+function inspect(n){if(!n||typeof n!=='object')return;if(Array.isArray(n))return n.forEach(inspect);if(typeof n.type==='function')return inspect(n.type(n.props));if(['input','img','hr','br'].includes(n.type))assert(!('children' in n.props),n.type+' must be a void element');assert(n.type!==undefined,'element type must be defined');inspect(n.props?.children)}
+for(const [id,state] of Object.entries(states)){
+ const props={state,personal:{wrong:[],attempts:[]},report:{},pick:()=>{},onPick:()=>{},onStart:()=>{},go:()=>{},readSource:()=>{},fail:()=>{},start:()=>{},refresh:()=>{},toggleTheme:()=>{}};
+ for(const name of ['Es','As','Bs','Fs','Ks','$s','Ps','Ls','qs','V14Framework','V14Reader'])inspect(ui[name]({...props,page:1}));
+ for(const k of state.knowledge)inspect(ui.V10Lesson({...props,k,bookmark:()=>{}}));
+ if(id!=='DM2')for(const k of state.knowledge)assert(k.content.content_version===15);
+ const q=state.questions[0];const active={session:{id:'test',target_id:state.knowledge[0].id},questions:[q],attempts:[]};inspect(ui.Ms({...props,active,setActive:()=>{}}));
+ console.log('PASS',id,'all page element trees and every knowledge lesson.');
+}
+// All original PDF pages are present exactly once; every exercise reference resolves to a real part.
+const source=JSON.parse(read('data/textbook-catalog-v15.json'));for(const b of source.books.filter(b=>b.parts)){let next=1;for(const p of b.parts){assert.equal(p.start,next);assert(!('file' in p),'complete source PDFs are not public');next=p.end+1;}assert.equal(next,b.pdf_pages+1);for(const group of b.exercise_groups)assert(b.parts.some(p=>group.pdf_page>=p.start&&group.pdf_page<=p.end));}
+assert(read('index.html').includes('app-ui-v15.js?v=15'));assert(read('assets/client-v15.js').includes('book="+selected'));assert(read('assets/pages-worker-v15.js').includes('selectedBook==="DM2"?"zhixu-pages-v2"'));
+console.log('PASS original page coverage, archive indexes, cache and legacy DB compatibility;',total,'independent method attempts checked.');
