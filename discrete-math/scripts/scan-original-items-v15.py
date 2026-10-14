@@ -124,6 +124,9 @@ for bid in ['DM2T','LA7','PS3']:
   for k in pool:
    terms=[t for t in re.split(r'[、，与及和的\s]',k['title']) if len(t)>1];score=sum(len(t)*text.count(t) for t in terms);rank.append((score,k))
   rank.sort(key=lambda p:p[0],reverse=True);positive=[k['id'] for score,k in rank if score>0];item['knowledge_ids']=positive[:4] if positive else [k['id'] for _,k in (rank if item['kind']=='exercise_group' else rank[:4])];item['mapping_status']='section_and_keywords' if positive else 'section_scope'
+  if item.get('source_scope')=='appendix':
+   number=int(re.findall(r'\d+',item['title'])[-1]);topics={1:['03-05','04-02'],2:['04-02'],3:['04-03'],4:['04-03'],5:['04-03'],6:['08-03'],7:['08-03'],8:['08-03'],9:['08-02'],10:['08-02','07-02'],11:['08-02','07-02'],12:['07-03'],13:['10-01','10-02'],14:['10-02'],15:['12-01'],16:['08-02'],17:['12-01','12-02','12-03']}
+   item['knowledge_ids']=['PS-K'+t for t in topics[number]];item['mapping_status']='reviewed_appendix_topic';item['mapping_basis']='按辅助材料例号及实际计算主题整理；不是主教材小节号。'
   item['verification']='source_location';item['scoring']='reference_only';item['counted_as_mastery']=False
  items.sort(key=lambda x:(x['pdf_page'],x['segments'][0]['top'] if x['segments'] else 0))
  for k in points:k['source_item_ids']=[i['id'] for i in items if k['id'] in i['knowledge_ids']]
