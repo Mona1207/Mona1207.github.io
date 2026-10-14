@@ -55,6 +55,7 @@ w=w.replace('if(r==="/backup")return G(v.snapshot);', 'if(r==="/backup")return G
 (ROOT/'assets/pages-worker-v14.js').write_text(w)
 index=(ROOT/'index.html').read_text().replace('app-ui-v12.js?v=13','app-ui-v14.js?v=14').replace('clarity-workspace-v12','warm-learning-v14').replace('知序 · 离散数学学习实验室','知序 · 数学学习空间').replace('#f5f6fa','#f8f7f3').replace('#15171d','#1d211f')
 index=re.sub(r'<link rel="stylesheet" href="/discrete-math/assets/ui-v14.css[^>]*>\s*','',index)
+index=re.sub(r'app-ui-v14\.js\?v=[\d.]+','app-ui-v14.js?v=14.1',index)
 index=index.replace('</head>','<link rel="stylesheet" href="/discrete-math/assets/ui-v14.css?v=14">\n</head>')
 (ROOT/'index.html').write_text(index)
 print('Built v14 UI, separate book engines, reader and cache URLs.')
