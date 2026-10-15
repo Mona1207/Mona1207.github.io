@@ -1,0 +1,29 @@
+[
+  {
+    "book": "DM2T",
+    "indexed": 227,
+    "text_examples": 227,
+    "reviewed": 227,
+    "unreviewed": 0,
+    "rendered_formulas": 3268,
+    "problems": []
+  },
+  {
+    "book": "LA7",
+    "indexed": 103,
+    "text_examples": 103,
+    "reviewed": 103,
+    "unreviewed": 0,
+    "rendered_formulas": 844,
+    "problems": []
+  },
+  {
+    "book": "PS3",
+    "indexed": 190,
+    "text_examples": 190,
+    "reviewed": 190,
+    "unreviewed": 0,
+    "rendered_formulas": 1385,
+    "problems": []
+  }
+]

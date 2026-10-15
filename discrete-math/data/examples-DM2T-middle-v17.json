@@ -1,0 +1,760 @@
+{
+  "version": 17,
+  "book_id": "DM2T",
+  "items": [
+    {
+      "id": "SRC-DM2T-X058-2347",
+      "title": "例 3.1",
+      "prompt": "判断下列推理是否正确：\n\n（1）由 $p,\\ p\\to q$ 推出 $q$。\n\n（2）由 $p,\\ q\\to p$ 推出 $q$。",
+      "solution": "（1）正确。前提同时为真时 p 为真，$p\\to q$ 也为真，故 q 必为真；即 $p\\land(p\\to q)\\models q$。\n\n（2）不正确。取 $p=1,q=0$，此时 $p\\land(q\\to p)=1$，但结论 q=0，构成反例。\n\n|p|q|$p\\land(p\\to q)$|$p\\land(q\\to p)$|结论q|\n|---|---|---|---|---|\n|0|0|0|0|0|\n|0|1|0|0|1|\n|1|0|0|1|0|\n|1|1|1|1|1|",
+      "explanation": [
+        "判断推理正确性只看是否存在“所有前提真、结论假”的赋值，不要求每个赋值下结论都真。",
+        "第一问是肯定前件式（假言推理）；第二问把方向反过来，由后件 p 为真不能推出前件 q 为真。",
+        "反例 (p,q)=(1,0) 同时满足第二问两个前提，因此足以否定该推理。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        58
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S1",
+      "knowledge_ids": [
+        "DM-K03-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 47,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X059-7397",
+      "title": "例 3.2",
+      "prompt": "判断下列推理是否正确：\n\n（1）若 a 能被 4 整除，则 a 能被 2 整除；a 能被 4 整除，所以 a 能被 2 整除。\n\n（2）若 a 能被 4 整除，则 a 能被 2 整除；a 能被 2 整除，所以 a 能被 4 整除。\n\n（3）下午马芳去看电影或去游泳；她没去看电影，所以她去游泳了。\n\n（4）若下午气温超过 30℃，则王小燕必去游泳；若她去游泳，她就不去看电影。所以，若王小燕没去看电影，下午气温必超过了 30℃。",
+      "solution": "（1）设 p 为“a 能被 4 整除”，q 为“a 能被 2 整除”。前提 $p\\to q,p$，结论 q，形式为 $((p\\to q)\\land p)\\to q$，是重言式，推理正确。\n\n（2）同样设 p、q，前提 $p\\to q,q$，结论 p。赋值 p=0,q=1 使前提真、结论假，故推理不正确。可取 a=2 作为实际反例。\n\n（3）设 p 为“马芳去看电影”、q 为“马芳去游泳”，前提 $p\\lor q,\\neg p$，结论 q，由析取三段论得推理正确。\n\n（4）设 p 为“气温超过 30℃”、q 为“王小燕游泳”、r 为“王小燕看电影”。前提 $p\\to q,q\\to\\neg r$，结论 $\\neg r\\to p$。形式 $$((p\\to q)\\land(q\\to\\neg r))\\to(\\neg r\\to p)\\equiv p\\lor r,$$ 不是重言式。其主析取范式为 $$m_1\\lor m_3\\lor m_4\\lor m_5\\lor m_6\\lor m_7,$$ 缺少 $m_0,m_2$，故推理不正确。",
+      "explanation": [
+        "第一问有已知 p，再用 p→q 得 q；第二问仅知道 q，不能倒推 p，偶数未必是 4 的倍数。",
+        "第三问的“或”用相容析取表示，即至少发生一件；排除看电影后只可能游泳。",
+        "第四问能合法推出的是 p→¬r（天气热则不看电影），原结论却是其逆命题，方向不可随意反转。",
+        "例如 p=0,q=0,r=0 时两个前提都真，而 ¬r→p 为假；这给出无需写完整真值表的反例。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        59,
+        60,
+        61
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S1",
+      "knowledge_ids": [
+        "DM-K03-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 48,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X063-7808",
+      "title": "例 3.3",
+      "prompt": "在自然推理系统 P 中构造下列推理的证明：\n\n（1）前提 $p\\lor q,\\ q\\to r,\\ p\\to s,\\neg s$；结论 $r\\land(p\\lor q)$。\n\n（2）前提 $\\neg p\\lor q,\\ r\\lor\\neg q,\\ r\\to s$；结论 $p\\to s$。",
+      "solution": "（1）证明序列：\n\n1. $p\\to s$（前提）；\n2. $\\neg s$（前提）；\n3. $\\neg p$（1、2，拒取式）；\n4. $p\\lor q$（前提）；\n5. $q$（3、4，析取三段论）；\n6. $q\\to r$（前提）；\n7. $r$（5、6，假言推理）；\n8. $r\\land(p\\lor q)$（7、4，合取引入）。\n\n（2）由前提 $\\neg p\\lor q$ 置换得 $p\\to q$；由 $r\\lor\\neg q$ 置换得 $q\\to r$。两者用假言三段论得 $p\\to r$，再与前提 $r\\to s$ 用假言三段论，得 $p\\to s$。",
+      "explanation": [
+        "第一问先从 ¬s 逆推 ¬p，再在 p∨q 中排除 p，从而确定 q，最后走 q→r。",
+        "结论要求的不只是 r，还包括已有前提 p∨q，需最后做一次合取引入。",
+        "第二问先将两个析取式改写为蕴涵，形成 p→q→r→s 的完整链；无需把 p 误当作已知前提。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        63,
+        64
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S2",
+      "knowledge_ids": [
+        "DM-K03-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 52,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X064-5670",
+      "title": "例 3.4",
+      "prompt": "在自然推理系统 P 中证明：若数 a 是实数，则它不是有理数就是无理数；若 a 不能表示成分数，则它不是有理数。a 是实数且它不能表示成分数，所以 a 是无理数。",
+      "solution": "设 p：“a 是实数”，q：“a 是有理数”，r：“a 是无理数”，s：“a 能表示成分数”。前提 $$p\\to(q\\lor r),\\quad\\neg s\\to\\neg q,\\quad p\\land\\neg s；$$ 结论为 r。\n\n从 $p\\land\\neg s$ 化简得 p 与 $\\neg s$。由 p 与 $p\\to(q\\lor r)$ 得 $q\\lor r$；由 $\\neg s$ 与 $\\neg s\\to\\neg q$ 得 $\\neg q$；最后由 $q\\lor r$ 与 $\\neg q$ 得 r。因此 a 是无理数。",
+      "explanation": [
+        "先把实数分类命题译成 p→(q∨r)，不能只写 q∨r 而丢掉条件。",
+        "由“不能表示成分数”及第二条前提否定“是有理数”，再利用分类只剩无理数。",
+        "每一步都直接对应前提化简、假言推理或析取三段论，结论不依赖省略的数学常识。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        64,
+        65
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S2",
+      "knowledge_ids": [
+        "DM-K03-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 53,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X065-5229",
+      "title": "例 3.5",
+      "prompt": "在自然推理系统 P 中构造证明：如果小张和小王去看电影，则小李也去看电影；小赵不去看电影或小张去看电影；小王去看电影。所以，当小赵去看电影时，小李也去。",
+      "solution": "设 p、q、r、s 依次表示小张、小王、小李、小赵去看电影。前提 $$(p\\land q)\\to r,\\quad\\neg s\\lor p,\\quad q；$$ 结论 $s\\to r$。\n\n使用附加前提证明法：\n\n1. 假设 s（附加前提）；\n2. 由 $\\neg s\\lor p$ 和 s，得 p（析取三段论）；\n3. q（原前提）；\n4. 由 p、q 得 $p\\land q$（合取引入）；\n5. 由 $(p\\land q)\\to r$ 得 r（假言推理）；\n6. 解除附加前提 s，得 $s\\to r$。",
+      "explanation": [
+        "目标是蕴涵 s→r，所以可暂时假设其前件 s，再证明后件 r。",
+        "¬s∨p 不是说小赵一定不去；在 s 已假设为真时，¬s 被排除，才推出小张去。",
+        "最后必须解除附加前提，得到条件结论；不能把 r 当作在没有 s 假设时也已证明。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        65,
+        66
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S2",
+      "knowledge_ids": [
+        "DM-K03-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 54,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X066-4733",
+      "title": "例 3.6",
+      "prompt": "在自然推理系统 P 中证明：如果小张守第一垒并且小李向 B 队投球，则 A 队取胜；或者 A 队未取胜，或者 A 队成为联赛第一名；A 队没有成为联赛第一名；小张守第一垒。因此，小李没向 B 队投球。",
+      "solution": "设 p：“小张守第一垒”，q：“小李向 B 队投球”，r：“A 队取胜”，s：“A 队成为联赛第一名”。前提 $$(p\\land q)\\to r,\\quad\\neg r\\lor s,\\quad\\neg s,\\quad p；$$ 结论 $\\neg q$。\n\n用归谬法，附加结论的否定 q。由 $\\neg r\\lor s$、$\\neg s$ 得 $\\neg r$；与 $(p\\land q)\\to r$ 用拒取式得 $\\neg(p\\land q)$，置换为 $\\neg p\\lor\\neg q$。再与前提 p 得 $\\neg q$，从而得到 $q\\land\\neg q$。附加 q 导致矛盾，故 $\\neg q$ 成立。",
+      "explanation": [
+        "先由 A 队不是第一名，排除“成为第一名”的选项，只能得出未取胜。",
+        "若同时 p、q 成立就应取胜，和未取胜矛盾；因为 p 已知真，只能否定 q。",
+        "归谬时假设的是目标 ¬q 的否定 q，不能再次假设 ¬q；矛盾推导完成后撤销假设。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        66,
+        67
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S2",
+      "knowledge_ids": [
+        "DM-K03-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 55,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X067-3788",
+      "title": "例 3.7",
+      "prompt": "用消解证明法证明下面推理：前提 $q\\to p,\\ q\\leftrightarrow s,\\ s\\leftrightarrow t,\\ t\\land r$；结论 $p\\land q\\land s$。",
+      "solution": "将前提及结论否定化成子句：$$\\neg q\\lor p,\\quad\\neg q\\lor s,\\quad\\neg s\\lor q,\\quad\\neg s\\lor t,\\quad\\neg t\\lor s,\\quad t,\\quad r,\\quad\\neg p\\lor\\neg q\\lor\\neg s。$$ 消解：\n\n1. 由 $\\neg t\\lor s$ 和 t，得 s；\n2. 由 $\\neg s\\lor q$ 和 s，得 q；\n3. 由 $\\neg q\\lor p$ 和 q，得 p；\n4. 由 $\\neg p\\lor\\neg q\\lor\\neg s$ 和 p，得 $\\neg q\\lor\\neg s$；\n5. 再与 q 消解，得 $\\neg s$；\n6. 与 s 消解得到空子句 $\\square$。\n\n故原前提与结论否定不相容，推理正确。",
+      "explanation": [
+        "双条件 q↔s 要拆为两个子句，s↔t 也一样；t∧r 则拆成两个单文字子句。",
+        "否定合取结论时用德摩根律得到一个析取子句 ¬p∨¬q∨¬s，不能拆成三个分别成立的前提。",
+        "先沿 t→s→q→p 得出三个正文字，再依次消掉结论否定中的三个负文字，最终导出空子句。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        67
+      ],
+      "chapter": 3,
+      "section_id": "DM-C03-S3",
+      "knowledge_ids": [
+        "DM-K03-S03"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 56,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X072-6909",
+      "title": "例 4.1",
+      "prompt": "将下列命题在一阶逻辑中用 0 元谓词符号化，并讨论真值：\n\n（1）只有 2 是素数，4 才是素数。\n\n（2）如果 5 大于 4，则 4 大于 6。",
+      "solution": "（1）设一元谓词 $F(x)$：“x 是素数”，则符号化为 $$F(4)\\to F(2)。$$ 其中 F(4) 为假，蕴涵前件为假，故整个命题为真。\n\n（2）设二元谓词 $G(x,y)$：“x>y”，则符号化为 $$G(5,4)\\to G(4,6)。$$ 前件 5>4 为真、后件 4>6 为假，故命题为假。",
+      "explanation": [
+        "“只有 A，才 B”表达 B→A，第一问不能把 2 和 4 的位置颠倒。",
+        "F(4)、F(2)、G(5,4) 等已填入具体常项，不再含个体变项，都是 0 元谓词即命题。",
+        "蕴涵仅在前真后假时为假，因此第一问虽然出现“4 是素数”，整个条件命题仍为真。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        72
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S1",
+      "knowledge_ids": [
+        "DM-K04-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 61,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X073-3757",
+      "title": "例 4.2",
+      "prompt": "分别在（a）个体域为人类集合 $D_1$、（b）个体域为全总个体域 $D_2$ 时，将下列命题符号化：\n\n（1）凡人都呼吸。\n\n（2）有的人用左手写字。",
+      "solution": "令 $F(x)$：“x 呼吸”，$G(x)$：“x 用左手写字”。\n\n（a）域中全部是人，所以分别为 $$\\forall xF(x),\\qquad\\exists xG(x)。$$\n\n（b）域中还包括其他事物，另令特性谓词 $M(x)$：“x 是人”，则分别为 $$\\forall x(M(x)\\to F(x)),$$ $$\\exists x(M(x)\\land G(x))。$$",
+      "explanation": [
+        "全称限制用蕴涵：凡是人就呼吸，不声称其他事物也必须是人。",
+        "存在限制用合取：必须找到同一个个体，既是人又用左手写字。",
+        "若在全总域把存在命题误写成 ∃x(M(x)→G(x))，任何一个非人个体就会使蕴涵为真，无法保证存在左撇子。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        73,
+        74
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S1",
+      "knowledge_ids": [
+        "DM-K04-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 62,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X074-3540",
+      "title": "例 4.3",
+      "prompt": "分别在（a）$D_1=\\mathbb N$、（b）$D_2=\\mathbb R$ 时，符号化下列命题并给出真值：\n\n（1）对于任意的 x，均有 $x^2-3x+2=(x-1)(x-2)$。\n\n（2）存在 x，使得 $x+5=3$。",
+      "solution": "令 $F(x)$ 为等式 $x^2-3x+2=(x-1)(x-2)$，$G(x)$ 为等式 $x+5=3$。两问分别符号化为 $$\\forall xF(x),\\qquad\\exists xG(x)。$$\n\n（a）自然数域中，第一式是恒等式，真；第二式唯一实数解是 −2，不是自然数，故假。\n\n（b）实数域中，第一式仍真；第二式有解 x=−2，故也真。",
+      "explanation": [
+        "符号化形式在两个域中相同，但量词遍历的对象不同。",
+        "第一式展开右端就与左端相等，对任意实数都成立，因此在自然数子域中也成立。",
+        "存在命题必须要求见证属于当前个体域，不能用域外的 −2 证明自然数域中的存在性。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        74
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S1",
+      "knowledge_ids": [
+        "DM-K04-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 63,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X074-7390",
+      "title": "例 4.4",
+      "prompt": "将下列命题符号化，并讨论它们的真值：\n\n（1）所有的人都长着黑头发。\n\n（2）有的人登上过月球。\n\n（3）没有人登上过木星。\n\n（4）在美国留学的学生未必都是亚洲人。",
+      "solution": "取全总个体域，令 $M(x)$：“x 是人”。\n\n（1）令 F(x)：“x 长着黑头发”，符号化为 $\\forall x(M(x)\\to F(x))$。存在非黑发的人作为反例，故假。\n\n（2）令 G(x)：“x 登上过月球”，符号化为 $\\exists x(M(x)\\land G(x))$。原书以 1969 年登月的阿姆斯特朗为见证，判为真。\n\n（3）令 H(x)：“x 登上过木星”，符号化为 $\\neg\\exists x(M(x)\\land H(x))$。原书按其叙述背景给出的真值为真。\n\n（4）令 F(x)：“x 是在美国留学的学生”，G(x)：“x 是亚洲人”，符号化为 $$\\neg\\forall x(F(x)\\to G(x)),$$ 等价于 $\\exists x(F(x)\\land\\neg G(x))$。原书判为真。",
+      "explanation": [
+        "全称命题为假只需一个反例，第一问可用非黑发者，不必枚举所有人。",
+        "第二问为存在命题，一个已经登月的人即可作见证。第三问是在否定“存在登上木星的人”，不是断言所有个体都是人。",
+        "“未必都是”在此题中表达“并非所有”，否定的是整个全称命题，等价于至少存在一个不满足结论的对象。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        74,
+        75
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S1",
+      "knowledge_ids": [
+        "DM-K04-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 63,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X075-4020",
+      "title": "例 4.5",
+      "prompt": "将下列命题符号化：\n\n（1）兔子比乌龟跑得快。\n\n（2）有的兔子比所有的乌龟跑得快。\n\n（3）并不是所有的兔子都比乌龟跑得快。\n\n（4）不存在跑得同样快的两只兔子。",
+      "solution": "取全总个体域，设 $F(x)$：“x 是兔子”，$G(y)$：“y 是乌龟”，$H(x,y)$：“x 比 y 跑得快”，$L(x,y)$：“x 与 y 跑得同样快”，$N(x,y)$：“x≠y”。\n\n（1）$\\forall x\\forall y((F(x)\\land G(y))\\to H(x,y))$。\n\n（2）$\\exists x(F(x)\\land\\forall y(G(y)\\to H(x,y)))$。\n\n（3）$\\neg\\forall x\\forall y((F(x)\\land G(y))\\to H(x,y))$，等价于 $\\exists x\\exists y(F(x)\\land G(y)\\land\\neg H(x,y))$。\n\n（4）$\\neg\\exists x\\exists y(F(x)\\land F(y)\\land N(x,y)\\land L(x,y))$，等价于 $\\forall x\\forall y((F(x)\\land F(y)\\land N(x,y))\\to\\neg L(x,y))$。",
+      "explanation": [
+        "第二问必须先选出同一只兔子 x，再要求它胜过每只乌龟；∃x∀y 的次序体现这一点。",
+        "第三问否定全称后，两个量词都变为存在，需要一对兔子与乌龟构成反例。",
+        "第四问中的“两只”要求 x≠y；若不加 N(x,y)，同一只兔子与自身同速会被错误地排除。",
+        "所有用于限制个体类别的全称条件放在蕴涵前件，存在条件则用合取连接。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        75,
+        76
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S1",
+      "knowledge_ids": [
+        "DM-K04-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 64,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X077-7227",
+      "title": "例 4.6",
+      "prompt": "指出下列公式的指导变元、各量词辖域，以及个体变项的自由出现与约束出现：\n\n（1）$\\forall x(F(x,y)\\to G(x,z))$。\n\n（2）$(\\forall x(F(x)\\to G(y)))\\to\\exists y(H(x)\\land L(x,y,z))$。",
+      "solution": "（1）指导变元为 x；$\\forall x$ 的辖域是 $F(x,y)\\to G(x,z)$。F、G 中的两个 x 均为约束出现；y、z 各自由出现一次。\n\n（2）前件的量词 $\\forall x$：指导变元为 x，辖域 $F(x)\\to G(y)$，其中 x 约束出现一次、y 自由出现一次。后件的量词 $\\exists y$：指导变元为 y，辖域 $H(x)\\land L(x,y,z)$，其中 y 约束出现一次，x 自由出现两次，z 自由出现一次。\n\n整式统计：\n\n|变项|自由出现次数|约束出现次数|\n|---|---:|---:|\n|x|2|1|\n|y|1|1|\n|z|1|0|",
+      "explanation": [
+        "判断某一次出现是否约束，要看它是否落在同名量词的辖域内，而不是看整式里有没有同名量词。",
+        "第二式左侧的 ∀x 不管辖右侧，所以右侧 H(x)、L(x,y,z) 的两个 x 仍自由。",
+        "计数时统计谓词内的变项出现，不把量词旁的指导变元另算成一次自由或约束出现。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        77,
+        78
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S2",
+      "knowledge_ids": [
+        "DM-K04-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 66,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X078-5422",
+      "title": "例 4.7",
+      "prompt": "（1）对公式 $\\exists xF(f(x),a)$，分别取（a）个体域 $\\mathbb R$、（b）个体域 $\\mathbb N$，并解释 $a=0,f(x)=2x+1,F(x,y)$ 为 x=y，讨论其含义与真值。\n\n（2）公式 $\\forall xG(x,y)$ 中，取域 $\\mathbb N$，G(x,y) 为 x≥y。说明为何仍需赋值，并分别令 y=0、y=1 讨论真值。",
+      "solution": "（1）公式解释为“存在 x，使 2x+1=0”。在实数域中有见证 x=−1/2，故真；在自然数域中没有这样的 x，故假。\n\n（2）解释后公式为“所有自然数 x 都大于等于 y”。y 自由出现，尚未指定数值前还不能确定真值。按原书包含 0 的自然数约定：y=0 时 $\\forall x\\in\\mathbb N\\ (x\\ge0)$ 为真；y=1 时取 x=0 即得反例，故假。",
+      "explanation": [
+        "解释决定域、常项、函数和谓词的意义；赋值再指定自由变项的值，两者作用不同。",
+        "第一式的 x 已被存在量词约束，不需要另行指定 x=某值，求见证即可。",
+        "第二式中 y 在 ∀x 的辖域内却不被该量词约束，因为量词只约束同名变项 x。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        78
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S2",
+      "knowledge_ids": [
+        "DM-K04-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 67,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X079-3641",
+      "title": "例 4.8",
+      "prompt": "给定解释与赋值：$D=\\mathbb N$，$a=0$，$f(x,y)=x+y$，$g(x,y)=xy$，F(x,y) 为 x=y，$\\sigma(x)=1,\\sigma(y)=2,\\sigma(z)=3$。写出下列公式的解释并判断真值：\n\n（1）$F(f(x,y),g(x,y))$。\n（2）$F(f(x,a),y)\\to F(g(x,y),z)$。\n（3）$\\neg F(g(x,y),g(y,z))$。\n（4）$\\forall xF(g(x,y),z)$。\n（5）$(\\forall xF(g(x,a),x))\\to F(x,y)$。\n（6）$\\forall xF(g(x,a),x)$。\n（7）$\\forall x\\forall y(F(f(x,a),y)\\to F(f(y,a),x))$。\n（8）$\\forall x\\forall y\\exists zF(f(x,y),z)$。\n（9）$\\exists xF(f(x,x),g(x,x))$。",
+      "solution": "各式解释与结果如下：\n\n|题号|解释后命题|真值与理由|\n|---|---|---|\n|1|$1+2=1\\cdot2$|假，3≠2|\n|2|$(1+0=2)\\to(1\\cdot2=3)$|真，蕴涵前件为假|\n|3|$1\\cdot2\\ne2\\cdot3$|真，2≠6|\n|4|$\\forall x\\ (2x=3)$|假，例如 x=0 不成立|\n|5|$(\\forall x\\ (x\\cdot0=x))\\to(1=2)$|真，前件全称式为假，例如 x=1 不满足|\n|6|$\\forall x\\ (x\\cdot0=x)$|假，x=1 时 0≠1|\n|7|$\\forall x\\forall y((x+0=y)\\to(y+0=x))$|真，等号对称性|\n|8|$\\forall x\\forall y\\exists z(x+y=z)$|真，取 z=x+y∈ℕ|\n|9|$\\exists x(x+x=x^2)$|真，取 x=2（也可取 0）|",
+      "explanation": [
+        "只把自由出现的变项代成 σ 给出的数值；已被量词约束的 x、y、z 仍由量词遍历。",
+        "第五式的 ∀x 只管辖前件，后件中的 x 是自由的，要代成 1；第六式则整个公式都在 ∀x 辖域中。",
+        "第二、第五式都不能凭后件为假断定全式为假，应先看其前件，前件为假则蕴涵为真。",
+        "第八式的见证 z 可随 x、y 改变；第九式只需给出一个自然数根，不要求所有 x 满足。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        79,
+        80
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S2",
+      "knowledge_ids": [
+        "DM-K04-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 68,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X080-6390",
+      "title": "例 4.9",
+      "prompt": "判断下列公式中哪些是永真式、哪些是矛盾式：\n\n（1）$\\forall x(F(x)\\to G(x,y))$。\n\n（2）$\\exists x(F(x)\\land G(x,y))$。\n\n（3）$(\\forall xF(x))\\to((\\exists x\\exists yG(x,y))\\to\\forall xF(x))$。\n\n（4）$\\neg((\\forall xF(x))\\to\\exists yG(y))\\land\\exists yG(y)$。",
+      "solution": "（1）既非永真也非矛盾。取实数域、F(x) 为“x 是整数”、G(x,y) 为“x 是有理数”（可不依赖 y），式为真；改令 F(x) 为“x 是无理数”、G(x,y) 为“x 能表示成分数”，式为假。\n\n（2）既非永真也非矛盾。取实数域、F(x) 为“x 是自然数”、G(x,y) 为 x=y。y=1 时可取 x=1，式真；y=−1 时没有自然数见证，式假。\n\n（3）是重言式 $p\\to(q\\to p)$ 的代换实例，故为永真式。\n\n（4）是矛盾式 $\\neg(p\\to q)\\land q$ 的代换实例；因 $\\neg(p\\to q)\\equiv p\\land\\neg q$，整式含 $\\neg q\\land q$，故为矛盾式。",
+      "explanation": [
+        "一个解释下真不等于永真，永真要求所有解释和自由变项赋值下都真。",
+        "前两式分别给出成真和成假的解释或赋值，既排除永真，也排除矛盾，因此是非永真的可满足式。",
+        "后两式将重复子公式整体视为 p、q，即可利用命题逻辑的重言式或矛盾式，不必枚举谓词解释。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        80,
+        81
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S2",
+      "knowledge_ids": [
+        "DM-K04-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 69,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X081-1340",
+      "title": "例 4.10",
+      "prompt": "证明下列公式为永真式（个体域按一阶逻辑约定非空）：\n\n（1）$\\forall xF(x)\\to\\exists xF(x)$。\n（2）$\\forall xF(x)\\to F(y)$。\n（3）$\\forall xF(x)\\to F(c)$。\n（4）$F(y)\\to\\exists xF(x)$。\n（5）$F(c)\\to\\exists xF(x)$。",
+      "solution": "取任意解释 I 及赋值 σ，域为非空集合 D。\n\n（1）若前件真，则每个 d∈D 都使 F(d) 真；D 非空，任取一个 d 即为存在量词的见证，因此后件真。前件假时蕴涵也真。\n\n（2）若前件真，所有 d∈D 均有 F(d)，特别地 $d=\\sigma(y)$ 时成立，故 F(y) 真。\n\n（3）同理，常项 c 在 I 中所指个体也属于 D，全称式真就保证 F(c) 真。\n\n（4）若 F(y) 真，取 $d=\\sigma(y)$ 为见证便得 $\\exists xF(x)$。\n\n（5）若 F(c) 真，取 c 所指个体为见证即可。五式在任意解释、赋值下均真，故都是永真式。",
+      "explanation": [
+        "全称命题允许取域中任何个体作特称实例，所以第二、第三式成立。",
+        "由某个具体个体满足 F 可以推出存在满足 F 的个体，所以第四、第五式成立。",
+        "第一式的非空域条件有实际作用：若允许空域，全称可真而存在为假，此时第一式就不再永真。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        81
+      ],
+      "chapter": 4,
+      "section_id": "DM-C04-S2",
+      "knowledge_ids": [
+        "DM-K04-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 70,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X086-2572",
+      "title": "例 5.1",
+      "prompt": "将下列公式化为等值公式，使其中不含既约束出现又自由出现的个体变项：\n\n（1）$(\\forall xF(x,y,z))\\to\\exists yG(x,y,z)$。\n\n（2）$\\forall x(F(x,y)\\to\\exists yG(x,y,z))$。",
+      "solution": "（1）原式中 x 在前件约束、后件自由；y 在前件自由、后件约束。把前件的约束 x 改名为 t，后件的约束 y 改名为 w：$$(\\forall tF(t,y,z))\\to\\exists wG(x,w,z)。$$ 此时 t、w 只有约束出现，x、y、z 只有自由出现。\n\n（2）x 只有约束出现，z 只有自由出现；只有 y 同时有两种出现。将存在量词指导变元及其辖域内的 y 一起改为 t：$$\\forall x(F(x,y)\\to\\exists tG(x,t,z))。$$",
+      "explanation": [
+        "换名只修改某个量词的指导变元及受它约束的那些出现，不能把同字母的自由出现一起改掉。",
+        "新名字应选该量词辖域中未出现的字母，避免捕获原本自由的变项。",
+        "第二问的 F(x,y) 中 y 必须保留，G(x,y,z) 中受 ∃y 约束的 y 才改为 t。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        86
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S1",
+      "knowledge_ids": [
+        "DM-K05-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 75,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X086-5407",
+      "title": "例 5.2",
+      "prompt": "证明下列公式一般不等值，其中 A(x)、B(x) 为含 x 自由出现的公式：\n\n（1）$\\forall x(A(x)\\lor B(x))$ 与 $(\\forall xA(x))\\lor(\\forall xB(x))$。\n\n（2）$\\exists x(A(x)\\land B(x))$ 与 $(\\exists xA(x))\\land(\\exists xB(x))$。",
+      "solution": "均取自然数域，令 A(x) 为“x 是奇数”、B(x) 为“x 是偶数”。\n\n（1）每个自然数不是奇数就是偶数，所以左式真；“所有自然数是奇数”与“所有自然数是偶数”都假，右式假。因此不等值。\n\n（2）没有自然数既奇又偶，左式假；但奇数和偶数都各自存在，右式真。因此也不等值。",
+      "explanation": [
+        "证明一般不等值只需给出一个让左右真值不同的解释，不必否定每个解释。",
+        "全称量词不对析取无条件分配：不同个体可分别满足不同选项，而无需同一个选项对全域成立。",
+        "存在量词不对合取无条件分配：右式两次存在的见证可以不同，左式却要求同一见证同时满足两性质。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        86
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S1",
+      "knowledge_ids": [
+        "DM-K05-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 75,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X086-8582",
+      "title": "例 5.3",
+      "prompt": "设个体域 $D=\\{a,b,c\\}$，消去下列公式的量词：\n\n（1）$\\forall x(F(x)\\to G(x))$。\n\n（2）$\\forall x(F(x)\\lor\\exists yG(y))$。\n\n（3）$\\exists x\\forall yF(x,y)$。",
+      "solution": "（1）$$(F(a)\\to G(a))\\land(F(b)\\to G(b))\\land(F(c)\\to G(c))。$$\n\n（2）因 $\\exists yG(y)$ 不含 x 的自由出现，可先缩小全称量词辖域：$$\\forall xF(x)\\lor\\exists yG(y)$$ $$\\equiv(F(a)\\land F(b)\\land F(c))\\lor(G(a)\\lor G(b)\\lor G(c))。$$\n\n（3）先消去内层全称，再展开外层存在：$$(F(a,a)\\land F(a,b)\\land F(a,c))$$ $$\\lor(F(b,a)\\land F(b,b)\\land F(b,c))$$ $$\\lor(F(c,a)\\land F(c,b)\\land F(c,c))。$$",
+      "explanation": [
+        "有限域中，全称对应对域中每个元素的合取，存在对应析取。",
+        "第三问先选同一个 x，再要求所有 y；每个括号内第一参数保持不变、第二参数取遍 a、b、c。",
+        "第二问的存在式与 x 无关，可整体移出 ∀x 的辖域，避免重复写三个相同析取块。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        86,
+        87
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S1",
+      "knowledge_ids": [
+        "DM-K05-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 75,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X087-3788",
+      "title": "例 5.4",
+      "prompt": "给定解释 I：$D=\\{2,3\\}$，常项 a 指 2；函数满足 $f(2)=3,f(3)=2$；谓词真值为 $F(2)=0,F(3)=1$，$G(2,2)=G(2,3)=G(3,2)=1,G(3,3)=0$，$L(2,2)=L(3,3)=1,L(2,3)=L(3,2)=0$。求：\n\n（1）$\\forall x(F(x)\\land G(x,a))$。\n（2）$\\exists x(F(f(x))\\land G(x,f(x)))$。\n（3）$\\forall x\\exists yL(x,y)$。\n（4）$\\exists y\\forall xL(x,y)$。",
+      "solution": "（1）$$(F(2)\\land G(2,2))\\land(F(3)\\land G(3,2))=(0\\land1)\\land(1\\land1)=0。$$\n\n（2）$$(F(3)\\land G(2,3))\\lor(F(2)\\land G(3,2))=(1\\land1)\\lor(0\\land1)=1。$$\n\n（3）$$(L(2,2)\\lor L(2,3))\\land(L(3,2)\\lor L(3,3))=(1\\lor0)\\land(0\\lor1)=1。$$\n\n（4）$$(L(2,2)\\land L(3,2))\\lor(L(2,3)\\land L(3,3))=(1\\land0)\\lor(0\\land1)=0。$$\n\n答案依次为假、真、真、假。",
+      "explanation": [
+        "第二问要先算函数 f，再查谓词表；x=2 时 f(x)=3，故已能给出使存在式为真的见证。",
+        "第三问允许每个 x 选择自己的 y：x=2 选 y=2，x=3 选 y=3。",
+        "第四问要求存在同一个 y 对所有 x 成立；y=2 和 y=3 都无法同时适配两个 x，说明量词次序不能任意交换。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        87,
+        88
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S1",
+      "knowledge_ids": [
+        "DM-K05-01"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 76,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X088-1379",
+      "title": "例 5.5",
+      "prompt": "证明下列等值式：\n\n（1）$\\neg\\exists x(M(x)\\land F(x))\\equiv\\forall x(M(x)\\to\\neg F(x))$。\n\n（2）$\\neg\\forall x(M(x)\\to F(x))\\equiv\\exists x(M(x)\\land\\neg F(x))$。\n\n（3）$\\neg\\forall x\\forall y((F(x)\\land G(y))\\to H(x,y))\\equiv\\exists x\\exists y(F(x)\\land G(y)\\land\\neg H(x,y))$。\n\n（4）$\\neg\\exists x\\exists y(F(x)\\land G(y)\\land L(x,y))\\equiv\\forall x\\forall y((F(x)\\land G(y))\\to\\neg L(x,y))$。",
+      "solution": "（1）$$\\neg\\exists x(M\\land F)\\equiv\\forall x\\neg(M\\land F)\\equiv\\forall x(\\neg M\\lor\\neg F)\\equiv\\forall x(M\\to\\neg F)。$$\n\n（2）$$\\neg\\forall x(M\\to F)\\equiv\\exists x\\neg(\\neg M\\lor F)\\equiv\\exists x(M\\land\\neg F)。$$\n\n（3）将两个全称量词依次取反成为存在量词：$$\\exists x\\exists y\\neg((F(x)\\land G(y))\\to H(x,y))$$ $$\\equiv\\exists x\\exists y(F(x)\\land G(y)\\land\\neg H(x,y))。$$\n\n（4）将两个存在量词取反成为全称量词：$$\\forall x\\forall y\\neg(F(x)\\land G(y)\\land L(x,y))$$ $$\\equiv\\forall x\\forall y(\\neg(F(x)\\land G(y))\\lor\\neg L(x,y))$$ $$\\equiv\\forall x\\forall y((F(x)\\land G(y))\\to\\neg L(x,y))。$$ 第一、二问中简记 M=M(x)、F=F(x)。",
+      "explanation": [
+        "否定穿过量词时，全称与存在互换；否定号继续留在量词后的公式前。",
+        "否定蕴涵 A→B 应变为 A∧¬B，不能把前件 A 也否定。",
+        "第一、四问最终将“不是同时满足”改写成条件否定；第二、三问则给出使全称断言失败的存在反例。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        88
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S2",
+      "knowledge_ids": [
+        "DM-K05-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 77,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X089-2595",
+      "title": "例 5.6",
+      "prompt": "求下列公式的前束范式：\n\n（1）$(\\forall xF(x))\\land\\neg\\exists xG(x)$。\n\n（2）$(\\forall xF(x))\\lor\\neg\\exists xG(x)$。",
+      "solution": "（1）先改为 $(\\forall xF(x))\\land\\forall y\\neg G(y)$，再外提量词得 $$\\forall x\\forall y(F(x)\\land\\neg G(y))。$$ 也可用全称量词对合取的分配律得到更短的前束式 $$\\forall x(F(x)\\land\\neg G(x))。$$\n\n（2）$$\\forall xF(x)\\lor\\neg\\exists xG(x)$$ $$\\equiv\\forall xF(x)\\lor\\forall y\\neg G(y)$$ $$\\equiv\\forall x\\forall y(F(x)\\lor\\neg G(y))。$$",
+      "explanation": [
+        "先把 ¬∃ 改为 ∀¬，使否定号不挡在待外提的量词之前。",
+        "两边原先使用同一个 x，但作用域互不相同；外提前换名成 x、y，避免错误合并。",
+        "第一问可把两个全称的合取合并，第二问却不能写成 ∀x(F(x)∨¬G(x))，因为全称不对析取作等值分配。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        89
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S2",
+      "knowledge_ids": [
+        "DM-K05-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 78,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X089-8087",
+      "title": "例 5.7",
+      "prompt": "求下列公式的前束范式，并说明每一步根据：\n\n（1）$(\\exists xF(x))\\land\\forall xG(x)$。\n\n（2）$(\\forall xF(x))\\to\\exists xG(x)$。\n\n（3）$(\\exists xF(x))\\to\\forall xG(x)$。",
+      "solution": "（1）换名，再逐层扩大量词辖域：$$\\exists yF(y)\\land\\forall xG(x)\\equiv\\exists y(F(y)\\land\\forall xG(x))\\equiv\\exists y\\forall x(F(y)\\land G(x))。$$\n\n（2）换名后为 $\\forall yF(y)\\to\\exists xG(x)$。蕴涵前件的全称移出时变为存在：$$\\exists y(F(y)\\to\\exists xG(x))\\equiv\\exists y\\exists x(F(y)\\to G(x))。$$\n\n（3）换名后为 $\\exists yF(y)\\to\\forall xG(x)$。蕴涵前件的存在移出时变为全称：$$\\forall y(F(y)\\to\\forall xG(x))\\equiv\\forall y\\forall x(F(y)\\to G(x))。$$",
+      "explanation": [
+        "为满足量词扩张的条件，先用 y 替换左式受约束的 x，使它不在右式自由出现。",
+        "蕴涵前件处于否定位置，量词移出前件时种类反转：∀ 变 ∃、∃ 变 ∀。",
+        "后件处于肯定位置，量词外提保持原种类。量词统一置于最前、其后矩阵不含量词，才是前束范式。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        89,
+        90
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S2",
+      "knowledge_ids": [
+        "DM-K05-02"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 78,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X090-3826",
+      "title": "例 5.8",
+      "prompt": "求下列公式的前束范式：\n\n（1）$(\\forall xF(x,y))\\to\\exists yG(x,y)$。\n\n（2）$((\\forall x_1F(x_1,x_2))\\to\\exists x_2G(x_2))\\to\\forall x_1H(x_1,x_2,x_3)$。",
+      "solution": "（1）先把前件约束 x 改为 t、后件约束 y 改为 w：$$(\\forall tF(t,y))\\to\\exists wG(x,w)。$$ 再移出量词，前件全称反转为存在，得 $$\\exists t\\exists w(F(t,y)\\to G(x,w))。$$ 原先自由的 x、y 仍保持自由。\n\n（2）将第一处约束 $x_1$ 改为 $x_4$，存在量词约束的 $x_2$ 改为 $x_5$：$$((\\forall x_4F(x_4,x_2))\\to\\exists x_5G(x_5))\\to\\forall x_1H(x_1,x_2,x_3)。$$ 内层蕴涵化成 $\\exists x_4\\exists x_5(F(x_4,x_2)\\to G(x_5))$，再作为外层蕴涵前件外提时，两个存在都反转为全称。可得 $$\\forall x_5\\forall x_4\\forall x_1((F(x_4,x_2)\\to G(x_5))\\to H(x_1,x_2,x_3))。$$ 两个相邻全称量词 $\\forall x_4,\\forall x_5$ 可互换次序。",
+      "explanation": [
+        "关键是防止变量捕获：第一问中 x、y 都同时有自由和约束出现，必须先换约束名字。",
+        "第二问的 x₂ 在 F 与 H 中自由，原 ∃x₂ 只管辖 G；换名后自由 x₂ 不能跟着变成 x₅。",
+        "内层蕴涵中的全称先变为存在；这个内层式又处于外层前件，存在再次反转为全称，因此最后三个量词都是 ∀。",
+        "本题例题解答只到前束式，后面的推理理论正文不属于本例，未混入题解。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        90
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S3",
+      "knowledge_ids": [
+        "DM-K05-S03"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 79,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X093-8613",
+      "title": "例 5.9",
+      "prompt": "在一阶逻辑自然推理系统中证明：任何自然数都是整数；存在自然数。所以，存在整数。（个体域为实数集 $\\mathbb R$。）",
+      "solution": "设 $F(x)$：“x 为自然数”，$G(x)$：“x 为整数”。前提 $$\\forall x(F(x)\\to G(x)),\\quad\\exists xF(x)；$$ 结论 $\\exists xG(x)$。\n\n由全称消去得到对任一个体的 $F(x)\\to G(x)$。再由存在引入得 $F(x)\\to\\exists xG(x)$。结合前提 $\\exists xF(x)$，应用存在消去规则，推出 $\\exists xG(x)$。\n\n用见证表述同一步骤：由存在前提暂取一个新的见证 c，使 F(c)；全称前提给 F(c)→G(c)，故 G(c)，从而存在 G。结论不依赖 c，可解除见证假设。",
+      "explanation": [
+        "自然数见证必然也是整数，所以可以把同一个个体用作整数存在的见证。",
+        "存在消去使用的新名字不得在其他前提或结论中预先出现，避免把未知见证误认成某个指定数。",
+        "结论是存在整数，无需也不能从一个见证推出“所有实数都是整数”。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        93,
+        94
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S3",
+      "knowledge_ids": [
+        "DM-K05-S03"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 82,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X094-3284",
+      "title": "例 5.10",
+      "prompt": "在自然推理系统中证明：前提 $$\\forall x(F(x)\\to G(x)),\\qquad\\exists x(F(x)\\land H(x))；$$ 结论 $$\\exists x(G(x)\\land H(x))。$$",
+      "solution": "取存在前提的一个新见证 c，暂设 $F(c)\\land H(c)$。\n\n1. 由合取消去得 F(c)、H(c)；\n2. 全称前提消去得 $F(c)\\to G(c)$；\n3. 由 F(c) 和该蕴涵得 G(c)；\n4. 与 H(c) 合取，得 $G(c)\\land H(c)$；\n5. 存在引入得 $\\exists x(G(x)\\land H(x))$；\n6. 此结论不含 c，解除存在见证的临时假设，完成证明。\n\n原书也先推出一般蕴涵 $F(x)\\land H(x)\\to G(x)\\land H(x)$，再用存在量词规则得到同一结论。",
+      "explanation": [
+        "必须保留同一个见证的 H 性质，不能把两个彼此无关的存在个体拼成一个。",
+        "全称前提只把 F 转成 G，不会改变个体或使 H 丢失，因此原见证同时满足 G、H。",
+        "新见证 c 仅用于子证明，最终结论要恢复为存在量词，不能把 G(c)∧H(c) 当作对任意指定 c 都成立。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        94
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S3",
+      "knowledge_ids": [
+        "DM-K05-S03"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 83,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    },
+    {
+      "id": "SRC-DM2T-X094-6406",
+      "title": "例 5.11",
+      "prompt": "在自然推理系统中构造证明（个体域为实数集）：不存在能表示成分数的无理数；有理数都能表示成分数。因此，有理数都不是无理数。",
+      "solution": "设 F(x)：“x 为无理数”，G(x)：“x 为有理数”，H(x)：“x 能表示成分数”。前提 $$\\neg\\exists x(F(x)\\land H(x)),\\quad\\forall x(G(x)\\to H(x))；$$ 结论 $\\forall x(G(x)\\to\\neg F(x))$。\n\n第一前提依量词否定及德摩根律化为 $$\\forall x(\\neg F(x)\\lor\\neg H(x))\\equiv\\forall x(F(x)\\to\\neg H(x))。$$ 任取一个不在前提中自由出现的个体变项 t，全称消去得 $$F(t)\\to\\neg H(t),\\qquad G(t)\\to H(t)。$$ 对第一式用逆否置换得 $H(t)\\to\\neg F(t)$，再用假言三段论得 $G(t)\\to\\neg F(t)$。t 是任取的，故可全称引入，得到所需结论。",
+      "explanation": [
+        "“不存在既无理又能表示成分数的数”可转为“无理数不能表示成分数”，再取逆否得“能表示成分数的不是无理数”。",
+        "连接有理数→能表示成分数→不是无理数，得到针对任意实数 t 的条件结论。",
+        "全称引入要求 t 不被前提的自由出现限制；本题前提是闭式，所以任取新 t 满足该条件。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        94,
+        95
+      ],
+      "chapter": 5,
+      "section_id": "DM-C05-S3",
+      "knowledge_ids": [
+        "DM-K05-S03"
+      ],
+      "ocr_method": "OCR初提取后据原页核对公式与题解边界",
+      "counted_as_mastery": false,
+      "scoring": "reference_only",
+      "printed_page": 83,
+      "text_origin": "据原书逐页核对转写；讲解为本题推理步骤说明"
+    }
+  ],
+  "audit": {
+    "indexed_examples": 28,
+    "reviewed_examples": 28,
+    "coverage": "第3—5章已定位例题逐题校订；保留原编号与知识点映射。"
+  }
+}

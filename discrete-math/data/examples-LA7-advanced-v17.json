@@ -1,0 +1,1028 @@
+{
+  "version": 17,
+  "book_id": "LA7",
+  "items": [
+    {
+      "id": "SRC-LA7-X089-7224",
+      "title": "例 1",
+      "chapter": 4,
+      "section_id": "LA-C04-S1",
+      "knowledge_ids": [
+        "LA-K04-01",
+        "LA-K03-04"
+      ],
+      "printed_page": 85,
+      "prompt": "设 $a_1=(1,1,2,2)^T$，$a_2=(1,2,1,3)^T$，$a_3=(1,-1,4,0)^T$，$b=(1,0,3,1)^T$。证明 $b$ 能由向量组 $a_1,a_2,a_3$ 线性表示，并求出表示式。",
+      "solution": "令 $A=(a_1,a_2,a_3)$，增广矩阵为\n$$ (A,b)=\\begin{pmatrix}1&1&1&1\\\\1&2&-1&0\\\\2&1&4&3\\\\2&3&0&1\\end{pmatrix}\\sim\\begin{pmatrix}1&0&3&2\\\\0&1&-2&-1\\\\0&0&0&0\\\\0&0&0&0\\end{pmatrix}.$$\n因此 $R(A)=R(A,b)=2$，方程有解。取 $x_3=c\\in\\mathbb R$，则 $x_1=2-3c$、$x_2=2c-1$，故\n$$b=(2-3c)a_1+(2c-1)a_2+ca_3\\quad(c\\in\\mathbb R).$$",
+      "explanation": [
+        "把“线性表示”变为系数未知的方程 Ax=b；对增广矩阵做行变换即可判断是否有解。",
+        "第三列不是主元列，所以第三个系数可以自由取值；本题的表示式不是唯一的。",
+        "取 c=0 可得到最简单的一种表示 b=2a₁−a₂。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        89,
+        90
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X090-4548",
+      "title": "例 2",
+      "chapter": 4,
+      "section_id": "LA-C04-S1",
+      "knowledge_ids": [
+        "LA-K04-01",
+        "LA-K04-03"
+      ],
+      "printed_page": 86,
+      "prompt": "设 $a_1=(1,-1,1,-1)^T$，$a_2=(3,1,1,3)^T$，$b_1=(2,0,1,1)^T$，$b_2=(1,1,0,2)^T$，$b_3=(3,-1,2,0)^T$。证明向量组 $a_1,a_2$ 与向量组 $b_1,b_2,b_3$ 等价。",
+      "solution": "记 $A=(a_1,a_2)$、$B=(b_1,b_2,b_3)$。有\n$$(A,B)=\\begin{pmatrix}1&3&2&1&3\\\\-1&1&0&1&-1\\\\1&1&1&0&2\\\\-1&3&1&2&0\\end{pmatrix}\\sim\\begin{pmatrix}1&3&2&1&3\\\\0&2&1&1&1\\\\0&0&0&0&0\\\\0&0&0&0&0\\end{pmatrix}.$$\n故 $R(A)=R(A,B)=2$。又 $B$ 中有非零二阶子式，且 $R(B)\\le R(A,B)=2$，所以 $R(B)=2$。综上 $R(A)=R(B)=R(A,B)$，两向量组等价。",
+      "explanation": [
+        "等价要求两个向量组能相互表示，只证明其中一个方向还不够。",
+        "拼接矩阵的前两列给出 A 的秩；B 的前两列取前两行，其行列式为 2，故 B 的秩至少为 2。",
+        "三个秩相等，说明两组向量张成同一个二维子空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        90,
+        91
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X091-4431",
+      "title": "例 3",
+      "chapter": 4,
+      "section_id": "LA-C04-S1",
+      "knowledge_ids": [
+        "LA-K04-01",
+        "LA-K03-03"
+      ],
+      "printed_page": 87,
+      "prompt": "设向量组 $a_1,\\ldots,a_m$ 构成 $n\\times m$ 矩阵 $A=(a_1,\\ldots,a_m)$；$E=(e_1,\\ldots,e_n)$ 为 $n$ 阶单位矩阵。证明：$e_1,\\ldots,e_n$ 能由向量组 $A$ 线性表示的充分必要条件是 $R(A)=n$。",
+      "solution": "由向量组可表示的秩判据，$E$ 的列向量能由 $A$ 的列向量表示，当且仅当 $R(A)=R(A,E)$。由于 $E$ 的秩为 $n$，而 $(A,E)$ 只有 $n$ 行，所以 $R(A,E)=n$。故所求条件就是 $R(A)=n$。等价地，存在 $m\\times n$ 矩阵 $K$ 使 $AK=E_n$ 的充分必要条件为 $R(A)=n$。",
+      "explanation": [
+        "单位矩阵的全部列向量张成整个 ℝⁿ，因此 A 必须具有满行秩。",
+        "拼接矩阵已经含有 n 个线性无关的单位向量，同时不可能超过 n 个独立行，所以其秩恰为 n。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        91,
+        92
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X092-5425",
+      "title": "例 4",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 88,
+      "prompt": "试讨论 $n$ 维单位坐标向量组 $e_1,\\ldots,e_n$ 的线性相关性。",
+      "solution": "以这些向量为列构成 $E=(e_1,\\ldots,e_n)$。因为 $|E|=1\\ne0$，所以 $R(E)=n$，等于向量个数。因此 $e_1,\\ldots,e_n$ 线性无关。",
+      "explanation": [
+        "每个单位向量在自己的坐标位置为 1，其余位置为 0。",
+        "若 k₁e₁+⋯+kₙeₙ=0，逐坐标比较立即得所有系数为 0，也可直接由定义证明。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        92
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X092-6620",
+      "title": "例 5",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02",
+        "LA-K04-03"
+      ],
+      "printed_page": 88,
+      "prompt": "已知 $a_1=(1,1,1)^T$，$a_2=(0,2,5)^T$，$a_3=(2,4,7)^T$。试讨论向量组 $a_1,a_2,a_3$ 及向量组 $a_1,a_2$ 的线性相关性。",
+      "solution": "将它们排列成列并作行变换：\n$$\\begin{pmatrix}1&0&2\\\\1&2&4\\\\1&5&7\\end{pmatrix}\\sim\\begin{pmatrix}1&0&2\\\\0&2&2\\\\0&5&5\\end{pmatrix}\\sim\\begin{pmatrix}1&0&2\\\\0&2&2\\\\0&0&0\\end{pmatrix}.$$\n因此 $R(a_1,a_2,a_3)=2<3$，三向量线性相关；$R(a_1,a_2)=2$，两向量线性无关。",
+      "explanation": [
+        "一次行化简可以同时读取全矩阵和前两列的秩。",
+        "本题 a₃=2a₁+a₂，直接给出一个相关关系；前两向量不成比例，所以无关。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        92,
+        93
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X093-1452",
+      "title": "例 6",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02",
+        "LA-K04-01"
+      ],
+      "printed_page": 89,
+      "prompt": "已知向量组 $a_1,a_2,a_3$ 线性无关，$b_1=a_1+a_2$，$b_2=a_2+a_3$，$b_3=a_3+a_1$。证明 $b_1,b_2,b_3$ 线性无关。",
+      "solution": "设 $x_1b_1+x_2b_2+x_3b_3=0$，代入得\n$$(x_1+x_3)a_1+(x_1+x_2)a_2+(x_2+x_3)a_3=0.$$\n由 $a_1,a_2,a_3$ 线性无关，三个系数均为零。该齐次方程组的系数矩阵\n$$K=\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix},\\qquad |K|=2\\ne0,$$\n故 $x_1=x_2=x_3=0$，即 $b_1,b_2,b_3$ 线性无关。\n也可写成 $B=AK$；$K$ 可逆，故 $R(B)=R(A)=3$。",
+      "explanation": [
+        "先把待判定向量的线性组合展开到已知无关的向量组上。",
+        "不能因为每个 b 都由 a 表示就断言无关；关键还要验证变换系数矩阵 K 可逆。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        93,
+        94
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X094-8220",
+      "title": "例 7",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02",
+        "LA-K04-01"
+      ],
+      "printed_page": 90,
+      "prompt": "设 $a_1,a_2,a_3$ 线性相关，而 $a_2,a_3,a_4$ 线性无关。证明：（1）$a_1$ 能由 $a_2,a_3$ 线性表示；（2）$a_4$ 不能由 $a_1,a_2,a_3$ 线性表示。",
+      "solution": "（1）$a_2,a_3$ 是无关组 $a_2,a_3,a_4$ 的部分组，故无关；添加 $a_1$ 后相关，所以 $a_1$ 能由 $a_2,a_3$ 线性表示。\n（2）反设 $a_4$ 能由 $a_1,a_2,a_3$ 表示。把（1）所得的 $a_1$ 的表示式代入，就得到 $a_4$ 能由 $a_2,a_3$ 表示，与 $a_2,a_3,a_4$ 无关矛盾。故不能表示。",
+      "explanation": [
+        "相关组中并不是任何一个向量都一定能被其他向量表示；本题先证明 a₂、a₃ 无关，才可确定 a₁ 是被表示的对象。",
+        "第二问利用线性表示的传递性，把 a₁ 消掉；若 a₄ 也落入两向量的张成空间，就会破坏给定的无关性。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        94,
+        95,
+        96
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X096-7183",
+      "title": "例 8",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03",
+        "LA-K04-04"
+      ],
+      "printed_page": 92,
+      "prompt": "全体 $n$ 维向量构成的向量组记作 $\\mathbb R^n$。求 $\\mathbb R^n$ 的一个最大无关组及 $\\mathbb R^n$ 的秩。",
+      "solution": "$n$ 维单位坐标向量 $e_1,\\ldots,e_n$ 线性无关；$\\mathbb R^n$ 中任意 $n+1$ 个向量都线性相关。因此 $e_1,\\ldots,e_n$ 是其一个最大无关组，$\\mathbb R^n$ 的秩为 $n$。最大无关组不唯一：任意 $n$ 个线性无关的 $n$ 维向量均可。",
+      "explanation": [
+        "任意向量 (x₁,…,xₙ)ᵀ 都等于 x₁e₁+⋯+xₙeₙ，所以这些单位向量既无关又能表示全体向量。",
+        "这里向量组有无限多个向量，但最大无关组仍只有 n 个。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        96,
+        97
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X097-0939",
+      "title": "例 9",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03",
+        "LA-K04-05",
+        "LA-K03-05"
+      ],
+      "printed_page": 93,
+      "prompt": "设齐次线性方程组\n$$\\begin{cases}x_1+2x_2+x_3-2x_4=0,\\\\2x_1+3x_2-x_4=0,\\\\x_1-x_2-5x_3+7x_4=0\\end{cases}$$\n的全体解向量构成向量组 $S$，求 $S$ 的秩。",
+      "solution": "系数矩阵化简为\n$$\\begin{pmatrix}1&2&1&-2\\\\2&3&0&-1\\\\1&-1&-5&7\\end{pmatrix}\\sim\\begin{pmatrix}1&0&-3&4\\\\0&1&2&-3\\\\0&0&0&0\\end{pmatrix}.$$\n故 $x_1=3x_3-4x_4$、$x_2=-2x_3+3x_4$。令 $x_3=c_1$、$x_4=c_2$，得\n$$x=c_1(3,-2,1,0)^T+c_2(-4,3,0,1)^T.$$\n这两个解向量无关且能表示全体解，所以 $R_S=2$。",
+      "explanation": [
+        "S 的秩是解空间的维数，不是原系数矩阵的秩；本题两者巧合都为 2。",
+        "取自由变量分别为 (1,0) 与 (0,1)，得到一组基础解系；其第三、第四分量构成单位矩阵，保证无关。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        97,
+        98
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X098-1271",
+      "title": "例 10",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03",
+        "LA-K04-01",
+        "LA-K03-03"
+      ],
+      "printed_page": 94,
+      "prompt": "设\n$$A=\\begin{pmatrix}2&-1&-1&1&2\\\\1&1&-2&1&4\\\\4&-6&2&-2&4\\\\3&6&-9&7&9\\end{pmatrix}=(a_1,a_2,a_3,a_4,a_5).$$\n求列向量组的一个最大无关组，并把不属于最大无关组的列向量用它线性表示。",
+      "solution": "作初等行变换得\n$$A\\sim\\begin{pmatrix}1&1&-2&1&4\\\\0&1&-1&1&0\\\\0&0&0&1&-3\\\\0&0&0&0&0\\end{pmatrix}\\sim B=\\begin{pmatrix}1&0&-1&0&4\\\\0&1&-1&0&3\\\\0&0&0&1&-3\\\\0&0&0&0&0\\end{pmatrix}.$$\n主元列为第 $1,2,4$ 列，因此原矩阵的 $a_1,a_2,a_4$ 是一个最大无关组。最简形中有 $b_3=-b_1-b_2$、$b_5=4b_1+3b_2-3b_4$。初等行变换保持列向量间的线性关系，故\n$$a_3=-a_1-a_2,\\qquad a_5=4a_1+3a_2-3a_4.$$",
+      "explanation": [
+        "必须从原矩阵取对应主元列，不能把化简后的列当作原向量组的最大无关组。",
+        "行变换虽然会改变每个列向量，但不改变它们之间相同系数的线性关系，因此可从最简形读取表示系数。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        98,
+        99
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X099-6169",
+      "title": "例 11",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-01",
+        "LA-K04-03"
+      ],
+      "printed_page": 95,
+      "prompt": "设向量组 $B$ 能由向量组 $A$ 线性表示，且它们的秩相等。证明 $A$ 与 $B$ 等价。",
+      "solution": "设拼接后的向量组为 $C=(A,B)$。由于 $B$ 能由 $A$ 表示，$R_A=R_C$；由题设 $R_B=R_A$，因此 $R_A=R_B=R_C$。根据向量组等价的秩判据，$A$ 与 $B$ 等价。",
+      "explanation": [
+        "仅有秩相等并不能保证等价；还需要题设的单向可表示条件。",
+        "单向可表示保证拼接不会增加 A 的秩，再结合 B 的秩也相同，就得到双向可表示。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        99,
+        100
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X101-1671",
+      "title": "例 18",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04",
+        "LA-K04-01"
+      ],
+      "printed_page": 97,
+      "prompt": "设向量组 $a_1,\\ldots,a_m$ 与向量组 $b_1,\\ldots,b_s$ 等价。记\n$$L_1=\\{\\lambda_1a_1+\\cdots+\\lambda_ma_m\\mid\\lambda_1,\\ldots,\\lambda_m\\in\\mathbb R\\},$$\n$$L_2=\\{\\mu_1b_1+\\cdots+\\mu_sb_s\\mid\\mu_1,\\ldots,\\mu_s\\in\\mathbb R\\}.$$\n试证 $L_1=L_2$。",
+      "solution": "任取 $x\\in L_1$，则 $x$ 能由 $a_1,\\ldots,a_m$ 线性表示。因两组等价，所有 $a_i$ 又能由 $b_1,\\ldots,b_s$ 表示；代入得 $x$ 能由 $b_1,\\ldots,b_s$ 表示，即 $x\\in L_2$。故 $L_1\\subseteq L_2$。交换两组作同样推理，得 $L_2\\subseteq L_1$，所以 $L_1=L_2$。",
+      "explanation": [
+        "这里要证明集合相等，标准方法是证明两个方向的包含关系。",
+        "“线性表示的传递性”可直接代入各向量的表示式验证；等价正好提供双向的表示条件。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        101,
+        102
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X102-4909",
+      "title": "例 19",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04",
+        "LA-K04-01",
+        "LA-K06-02"
+      ],
+      "printed_page": 98,
+      "prompt": "设\n$$A=(a_1,a_2,a_3)=\\begin{pmatrix}2&2&-1\\\\2&-1&2\\\\-1&2&2\\end{pmatrix},\\qquad B=(b_1,b_2)=\\begin{pmatrix}1&4\\\\0&3\\\\-4&2\\end{pmatrix}.$$\n验证 $a_1,a_2,a_3$ 是 $\\mathbb R^3$ 的一个基，并求 $b_1,b_2$ 在这个基下的坐标。",
+      "solution": "把增广矩阵作行变换得\n$$(A,B)\\sim\\begin{pmatrix}1&0&0&\\frac23&\\frac43\\\\0&1&0&-\\frac23&1\\\\0&0&1&-1&\\frac23\\end{pmatrix}.$$\n左侧 $A$ 可化为单位矩阵，故三列无关，构成 $\\mathbb R^3$ 的一个基。右侧就是 $A^{-1}B$，因此\n$$[b_1]_A=(\\tfrac23,-\\tfrac23,-1)^T,\\qquad[b_2]_A=(\\tfrac43,1,\\tfrac23)^T.$$",
+      "explanation": [
+        "所求坐标是表达式 b=x₁a₁+x₂a₂+x₃a₃ 的系数，不是 b 的原分量。",
+        "同时求两个向量的坐标，可把两个右端一起附到 A 后面，一次行变换求出。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        102,
+        103,
+        104
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X104-2553",
+      "title": "例 20",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04",
+        "LA-K06-03"
+      ],
+      "printed_page": 100,
+      "prompt": "在 $\\mathbb R^3$ 中取两个基 $a_1,a_2,a_3$ 与 $b_1,b_2,b_3$。设 $A=(a_1,a_2,a_3)$、$B=(b_1,b_2,b_3)$。求从基 $A$ 到基 $B$ 的过渡矩阵 $P$，并求向量 $\\alpha\\in\\mathbb R^3$ 在两基下的坐标变换公式。",
+      "solution": "以自然基为参照，有 $B=AP$，所以\n$$P=A^{-1}B.$$\n若 $\\alpha$ 在基 $A$ 下坐标为 $y$，在基 $B$ 下坐标为 $z$，则 $\\alpha=Ay=Bz=APz$，故\n$$y=Pz,\\qquad z=P^{-1}y=B^{-1}Ay.$$\n这是从旧坐标 $y$ 到新坐标 $z$ 的变换。",
+      "explanation": [
+        "过渡矩阵的第 j 列是新基向量 bⱼ 在旧基 A 下的坐标。",
+        "基的变换和坐标的变换方向相反：B=AP，而新坐标是 P⁻¹ 乘旧坐标，不能直接乘 P。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        104
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X104-7828",
+      "title": "例 21",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04",
+        "LA-K06-03"
+      ],
+      "printed_page": 100,
+      "prompt": "设 $\\mathbb R^3$ 的两个基为：\n基Ⅰ：$a_1=(1,0,0)^T$，$a_2=(1,1,0)^T$，$a_3=(1,1,1)^T$；\n基Ⅱ：$b_1=(1,2,1)^T$，$b_2=(2,3,3)^T$，$b_3=(3,7,1)^T$。\n（1）求由基Ⅰ到基Ⅱ的过渡矩阵；（2）向量 $c$ 在基Ⅰ下的坐标为 $(-2,1,2)^T$，求其在基Ⅱ下的坐标。",
+      "solution": "（1）令 $A=(a_1,a_2,a_3)$、$B=(b_1,b_2,b_3)$。由 $P=A^{-1}B$，行变换求得\n$$P=\\begin{pmatrix}-1&-1&-4\\\\1&0&6\\\\1&3&1\\end{pmatrix}.$$\n（2）\n$$P^{-1}=\\begin{pmatrix}-18&-11&-6\\\\5&3&2\\\\3&2&1\\end{pmatrix},\\qquad[c]_{\\mathrm{II}}=P^{-1}\\begin{pmatrix}-2\\\\1\\\\2\\end{pmatrix}=\\begin{pmatrix}13\\\\-3\\\\-2\\end{pmatrix}.$$\n故所求坐标为 $(13,-3,-2)^T$。",
+      "explanation": [
+        "第一问把 (A,B) 的左块化为单位矩阵，右块就是 P。",
+        "第二问先由旧坐标还原向量，再在新基表示也可；直接计算 P⁻¹ 乘旧坐标更快。",
+        "可验算：13b₁−3b₂−2b₃=(1,3,2)ᵀ，与 −2a₁+a₂+2a₃ 相同。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X108-6048",
+      "title": "例 22",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05",
+        "LA-K03-05"
+      ],
+      "printed_page": 104,
+      "prompt": "求齐次线性方程组\n$$\\begin{cases}x_1+x_2-x_3-x_4=0,\\\\2x_1-5x_2+3x_3+2x_4=0,\\\\7x_1-7x_2+3x_3+x_4=0\\end{cases}$$\n的基础解系与通解。",
+      "solution": "系数矩阵化为最简形得\n$$\\begin{pmatrix}1&0&-\\frac27&-\\frac37\\\\0&1&-\\frac57&-\\frac47\\\\0&0&0&0\\end{pmatrix}.$$\n所以 $x_1=\\frac27x_3+\\frac37x_4$、$x_2=\\frac57x_3+\\frac47x_4$。一组基础解系为\n$$\\xi_1=(\\tfrac27,\\tfrac57,1,0)^T,\\quad\\xi_2=(\\tfrac37,\\tfrac47,0,1)^T,$$\n通解为 $x=c_1\\xi_1+c_2\\xi_2$，$c_1,c_2\\in\\mathbb R$。\n原书还展示不同选择：取 $(x_3,x_4)=(1,1),(1,-1)$ 得基础解系 $(\\frac57,\\frac97,1,1)^T$、$(-\\frac17,\\frac17,1,-1)^T$；也可选 $x_1,x_2$ 自由，得到 $(1,0,-4,5)^T$、$(0,1,3,-2)^T$。",
+      "explanation": [
+        "秩为 2，未知数为 4，因此基础解系恰有 2 个向量。",
+        "基础解系不唯一，但每一组都必须由两个独立的解向量构成，且张成同一个解空间。",
+        "若改选 x₁、x₂ 为自由变量，需重新解出 x₃、x₄，不能直接套用原最简形的读法。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        108,
+        109,
+        110,
+        111
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X112-4458",
+      "title": "例 26",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05",
+        "LA-K03-04"
+      ],
+      "printed_page": 108,
+      "prompt": "求解方程组\n$$\\begin{cases}x_1-x_2-x_3+x_4=0,\\\\x_1-x_2+x_3-3x_4=1,\\\\x_1-x_2-2x_3+3x_4=-\\frac12.\\end{cases}$$",
+      "solution": "增广矩阵化简为\n$$\\begin{pmatrix}1&-1&0&-1&\\frac12\\\\0&0&1&-2&\\frac12\\\\0&0&0&0&0\\end{pmatrix}.$$\n故 $x_1=x_2+x_4+\\frac12$、$x_3=2x_4+\\frac12$。取 $x_2=x_4=0$，得特解 $\\eta^*=(\\frac12,0,\\frac12,0)^T$。对应齐次组的一组基础解系为 $\\xi_1=(1,1,0,0)^T$、$\\xi_2=(1,0,2,1)^T$。通解为\n$$x=c_1(1,1,0,0)^T+c_2(1,0,2,1)^T+(\\tfrac12,0,\\tfrac12,0)^T,\\quad c_1,c_2\\in\\mathbb R.$$",
+      "explanation": [
+        "非齐次通解等于一个特解加对应齐次方程组的通解。",
+        "特解可以通过把自由变量取零找到；基础解系则要把右端改成零后再取两组独立自由变量。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        112,
+        113
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X120-1508",
+      "title": "例 1",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01",
+        "LA-K03-05"
+      ],
+      "printed_page": 116,
+      "prompt": "已知 $\\mathbb R^3$ 中 $a_1=(1,1,1)^T$ 与 $a_2=(1,-2,1)^T$ 正交。求一个非零向量 $a_3$，使 $a_1,a_2,a_3$ 两两正交。",
+      "solution": "$a_3=(x_1,x_2,x_3)^T$ 应满足\n$$\\begin{pmatrix}1&1&1\\\\1&-2&1\\end{pmatrix}x=0.$$\n行化简得 $x_1=-x_3$、$x_2=0$。故可取 $a_3=(-1,0,1)^T$。",
+      "explanation": [
+        "把与两个已知向量正交分别写成内积等于零，得到两个方程。",
+        "通解是 t(−1,0,1)ᵀ；t 必须非零，本题只需给出其中一个。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        120,
+        121
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X121-7244",
+      "title": "例 2",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 117,
+      "prompt": "设 $a_1=(1,2,-1)^T$、$a_2=(-1,3,1)^T$、$a_3=(4,-1,0)^T$。用施密特正交化把这组向量标准正交化。",
+      "solution": "先正交化：\n$$b_1=a_1,$$\n$$b_2=a_2-\\frac{(a_2,b_1)}{(b_1,b_1)}b_1=a_2-\\frac46a_1=\\frac53(-1,1,1)^T,$$\n$$b_3=a_3-\\frac{(a_3,b_1)}{(b_1,b_1)}b_1-\\frac{(a_3,b_2)}{(b_2,b_2)}b_2=2(1,0,1)^T.$$\n再单位化得\n$$\\xi_1=\\frac1{\\sqrt6}(1,2,-1)^T,\\quad\\xi_2=\\frac1{\\sqrt3}(-1,1,1)^T,\\quad\\xi_3=\\frac1{\\sqrt2}(1,0,1)^T.$$",
+      "explanation": [
+        "每一步从当前向量中减去它在先前所有正交方向上的投影。",
+        "第二步的投影系数是 4/6；第三步必须同时减去 b₁、b₂ 方向，漏掉任意一个就不能保证两两正交。",
+        "最后除以各自长度；正交化和单位化是两个不同步骤。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        121,
+        122
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X122-5366",
+      "title": "例 3",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01",
+        "LA-K03-05"
+      ],
+      "printed_page": 118,
+      "prompt": "已知 $a_1=(1,1,1)^T$。求一组非零向量 $a_2,a_3$，使 $a_1,a_2,a_3$ 两两正交。",
+      "solution": "与 $a_1$ 正交的向量满足 $x_1+x_2+x_3=0$。其基础解系可取 $\\xi_1=(-1,1,0)^T$、$\\xi_2=(-1,0,1)^T$。将它们正交化：\n$$a_2=\\xi_1=(-1,1,0)^T,$$\n$$a_3=\\xi_2-\\frac{(\\xi_2,\\xi_1)}{(\\xi_1,\\xi_1)}\\xi_1=\\frac12(-1,-1,2)^T.$$\n两者仍属于 $a_1^\\perp$，且彼此正交，故符合要求。",
+      "explanation": [
+        "齐次方程组的基础解系只保证线性无关，不能保证彼此正交。",
+        "先找垂直于 a₁ 的整个平面的一组基，再在平面内作施密特正交化即可。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        122,
+        123
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X123-5205",
+      "title": "例 4",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 119,
+      "prompt": "验证矩阵\n$$P=\\begin{pmatrix}\\frac12&-\\frac12&\\frac12&-\\frac12\\\\\\frac12&-\\frac12&-\\frac12&\\frac12\\\\\\frac1{\\sqrt2}&\\frac1{\\sqrt2}&0&0\\\\0&0&\\frac1{\\sqrt2}&\\frac1{\\sqrt2}\\end{pmatrix}$$\n是正交矩阵。",
+      "solution": "记四列为 $p_1,p_2,p_3,p_4$。每列长度的平方都是 $\\frac14+\\frac14+\\frac12=1$。直接求内积有 $p_i^Tp_j=0$（$i\\ne j$），例如 $p_1^Tp_2=-\\frac14-\\frac14+\\frac12=0$、$p_1^Tp_3=\\frac14-\\frac14=0$。因此 $P^TP=E$，故 $P$ 是正交矩阵。",
+      "explanation": [
+        "对方阵，全部列向量为单位向量且两两正交，等价于矩阵正交。",
+        "矩阵中第三、第四行带来的 1/2 恰好补足列长度，也使对应列的内积抵消。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        123,
+        124,
+        125
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X125-2203",
+      "title": "例 5",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02"
+      ],
+      "printed_page": 121,
+      "prompt": "求矩阵 $A=\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}$ 的特征值和特征向量。",
+      "solution": "特征多项式\n$$|A-\\lambda E|=(3-\\lambda)^2-1=(4-\\lambda)(2-\\lambda).$$\n所以 $\\lambda_1=2$、$\\lambda_2=4$。当 $\\lambda=2$ 时，方程给出 $x_1=x_2$，全部特征向量为 $k(1,1)^T$（$k\\ne0$）；当 $\\lambda=4$ 时，$x_1=-x_2$，全部特征向量为 $k(-1,1)^T$（$k\\ne0$）。",
+      "explanation": [
+        "先求特征方程的根，再分别解 (A−λE)x=0。",
+        "特征向量不能是零向量，因此参数 k 必须非零。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        125
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X125-8955",
+      "title": "例 6",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02",
+        "LA-K03-05"
+      ],
+      "printed_page": 121,
+      "prompt": "求矩阵 $A=\\begin{pmatrix}-1&1&0\\\\-4&3&0\\\\1&0&2\\end{pmatrix}$ 的特征值和特征向量。",
+      "solution": "特征多项式 $|A-\\lambda E|=(2-\\lambda)(1-\\lambda)^2$，故特征值为 $2,1,1$。\n当 $\\lambda=2$ 时，$(A-2E)x=0$ 化简得 $x_1=x_2=0$，全部特征向量为 $k(0,0,1)^T$，$k\\ne0$。\n当 $\\lambda=1$ 时，$A-E\\sim\\begin{pmatrix}1&0&1\\\\0&1&2\\\\0&0&0\\end{pmatrix}$，所以全部特征向量为 $k(-1,-2,1)^T$，$k\\ne0$。",
+      "explanation": [
+        "特征值 1 是二重根，但其特征空间只有一维，不能因此写出两个独立特征向量。",
+        "本矩阵总共只有两个独立特征向量，所以不能对角化。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        125,
+        126
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X126-7347",
+      "title": "例 7",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02",
+        "LA-K02-03"
+      ],
+      "printed_page": 122,
+      "prompt": "设 $\\lambda$ 是方阵 $A$ 的特征值。证明：（1）$\\lambda^2$ 是 $A^2$ 的特征值；（2）当 $A$ 可逆时，$1/\\lambda$ 是 $A^{-1}$ 的特征值。",
+      "solution": "存在 $p\\ne0$ 使 $Ap=\\lambda p$。\n（1）$A^2p=A(Ap)=A(\\lambda p)=\\lambda Ap=\\lambda^2p$，故 $\\lambda^2$ 是 $A^2$ 的特征值。\n（2）$A$ 可逆保证 $\\lambda\\ne0$；在 $Ap=\\lambda p$ 两边左乘 $A^{-1}$，得 $p=\\lambda A^{-1}p$，所以 $A^{-1}p=\\lambda^{-1}p$，结论成立。",
+      "explanation": [
+        "两问都沿用同一个非零特征向量 p，只需把等式整理成“新矩阵乘 p 等于新标量乘 p”。",
+        "第二问必须先说明 λ 非零，否则 1/λ 没有定义。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        126,
+        127
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X127-2544",
+      "title": "例 8",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02",
+        "LA-K02-03"
+      ],
+      "printed_page": 123,
+      "prompt": "三阶矩阵 $A$ 的特征值为 $1,-1,2$。求 $A^*+3A-2E$ 的特征值，其中 $A^*$ 为伴随矩阵。",
+      "solution": "$|A|=1\\cdot(-1)\\cdot2=-2\\ne0$，故 $A^*=|A|A^{-1}=-2A^{-1}$。记 $\\varphi(\\lambda)=-2/\\lambda+3\\lambda-2$。对应于 $A$ 的每个特征向量，新矩阵的特征值为\n$$\\varphi(1)=-1,\\quad\\varphi(-1)=-3,\\quad\\varphi(2)=3.$$\n故所求为 $-1,-3,3$。",
+      "explanation": [
+        "星号表示伴随矩阵，不是转置；先用 A*=|A|A⁻¹ 化简。",
+        "三个原特征值互异，具有三个独立特征向量；它们同样构成新矩阵的特征向量基，因此已得到全部三个特征值。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        127,
+        128
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X128-0991",
+      "title": "例 9",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02",
+        "LA-K04-02"
+      ],
+      "printed_page": 124,
+      "prompt": "设 $\\lambda_1\\ne\\lambda_2$ 是矩阵 $A$ 的两个特征值，对应特征向量依次为 $p_1,p_2$。证明 $p_1+p_2$ 不是 $A$ 的特征向量。",
+      "solution": "反设存在 $\\lambda$ 使 $A(p_1+p_2)=\\lambda(p_1+p_2)$。另一方面 $A(p_1+p_2)=\\lambda_1p_1+\\lambda_2p_2$。相减得\n$$(\\lambda_1-\\lambda)p_1+(\\lambda_2-\\lambda)p_2=0.$$\n不同特征值对应的特征向量线性无关，故两系数均为零，从而 $\\lambda_1=\\lambda=\\lambda_2$，与题设矛盾。",
+      "explanation": [
+        "同一特征空间中的非零线性组合仍是该特征值的特征向量；本题特意给出不同特征值，因此不能直接相加。",
+        "无关性还保证 p₁+p₂ 非零，反证的矛盾来自无法同时满足两个不同的缩放倍数。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        128,
+        129,
+        130
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X130-1277",
+      "title": "例 10",
+      "chapter": 5,
+      "section_id": "LA-C05-S3",
+      "knowledge_ids": [
+        "LA-K05-03",
+        "LA-K05-02"
+      ],
+      "printed_page": 126,
+      "prompt": "设 $A=\\begin{pmatrix}-2&1&1\\\\0&2&0\\\\-4&1&3\\end{pmatrix}$。问 $A$ 能否对角化？若能，求可逆矩阵 $P$ 和对角矩阵 $\\Lambda$，使 $P^{-1}AP=\\Lambda$。",
+      "solution": "特征多项式 $|A-\\lambda E|=-(\\lambda+1)(\\lambda-2)^2$。当 $\\lambda=-1$ 时，一组基础解系为 $p_1=(1,0,1)^T$；当 $\\lambda=2$ 时，方程为 $-4x_1+x_2+x_3=0$，可取两个独立解 $p_2=(0,1,-1)^T$、$p_3=(1,0,4)^T$。\n三个特征向量无关，故可对角化。取\n$$P=\\begin{pmatrix}1&0&1\\\\0&1&0\\\\1&-1&4\\end{pmatrix},\\qquad\\Lambda=\\operatorname{diag}(-1,2,2),$$\n则 $P^{-1}AP=\\Lambda$。",
+      "explanation": [
+        "二重根 2 的特征空间维数为 2，恰好提供两个独立特征向量。",
+        "P 的每列与 Λ 同一位置的对角元必须对应，调整列顺序时也要调整对角元顺序。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        130,
+        131
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X131-1682",
+      "title": "例 11",
+      "chapter": 5,
+      "section_id": "LA-C05-S3",
+      "knowledge_ids": [
+        "LA-K05-03",
+        "LA-K05-02",
+        "LA-K03-03"
+      ],
+      "printed_page": 127,
+      "prompt": "设 $A=\\begin{pmatrix}0&0&1\\\\1&1&t\\\\1&0&0\\end{pmatrix}$。问 $t$ 为何值时矩阵 $A$ 可以对角化？",
+      "solution": "特征多项式为 $|A-\\lambda E|=-(\\lambda-1)^2(\\lambda+1)$，特征值为 $-1,1,1$。可对角化当且仅当二重根 $1$ 有二维特征空间，即 $R(A-E)=1$。而\n$$A-E=\\begin{pmatrix}-1&0&1\\\\1&0&t\\\\1&0&-1\\end{pmatrix}\\sim\\begin{pmatrix}1&0&-1\\\\0&0&t+1\\\\0&0&0\\end{pmatrix}.$$\n秩等于 $1$ 的条件为 $t+1=0$。故仅当 $t=-1$ 时可对角化。",
+      "explanation": [
+        "特征多项式不含 t，但特征空间维数会随 t 改变，所以只看特征值不能判断。",
+        "简单特征值 −1 总有一维特征空间，关键是二重特征值 1 是否再提供两个独立方向。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        131,
+        132,
+        133
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X133-2926",
+      "title": "例 12",
+      "chapter": 5,
+      "section_id": "LA-C05-S4",
+      "knowledge_ids": [
+        "LA-K05-04",
+        "LA-K05-02",
+        "LA-K05-01"
+      ],
+      "printed_page": 129,
+      "prompt": "设 $A=\\begin{pmatrix}0&-1&1\\\\-1&0&1\\\\1&1&0\\end{pmatrix}$。求正交矩阵 $P$，使 $P^{-1}AP=\\Lambda$ 为对角矩阵。",
+      "solution": "$|A-\\lambda E|=-(\\lambda-1)^2(\\lambda+2)$，故特征值为 $-2,1,1$。对应 $-2$，取单位特征向量 $p_1=\\frac1{\\sqrt3}(-1,-1,1)^T$。\n对应 $1$，基础解系可取 $\\xi_2=(-1,1,0)^T$、$\\xi_3=(1,0,1)^T$。正交化得 $\\eta_2=\\xi_2$、$\\eta_3=\\xi_3+\\frac12\\eta_2=\\frac12(1,1,2)^T$，单位化得 $p_2=\\frac1{\\sqrt2}(-1,1,0)^T$、$p_3=\\frac1{\\sqrt6}(1,1,2)^T$。因此\n$$P=\\begin{pmatrix}-\\frac1{\\sqrt3}&-\\frac1{\\sqrt2}&\\frac1{\\sqrt6}\\\\-\\frac1{\\sqrt3}&\\frac1{\\sqrt2}&\\frac1{\\sqrt6}\\\\\\frac1{\\sqrt3}&0&\\frac2{\\sqrt6}\\end{pmatrix},\\quad P^{-1}AP=P^TAP=\\operatorname{diag}(-2,1,1).$$",
+      "explanation": [
+        "实对称矩阵不同特征值的特征向量天然正交，但同一重根的基础解系仍需施密特正交化。",
+        "必须单位化，才能保证 P⁻¹=Pᵀ；只有无关特征向量得到的是普通对角化。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        133,
+        134
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X134-4834",
+      "title": "例 13",
+      "chapter": 5,
+      "section_id": "LA-C05-S4",
+      "knowledge_ids": [
+        "LA-K05-03",
+        "LA-K05-02",
+        "LA-K02-02"
+      ],
+      "printed_page": 130,
+      "prompt": "设 $A=\\begin{pmatrix}2&-1\\\\-1&2\\end{pmatrix}$，求 $A^n$。",
+      "solution": "$|A-\\lambda E|=(\\lambda-1)(\\lambda-3)$，对应特征向量取 $(1,1)^T$、$(1,-1)^T$。令\n$$P=\\begin{pmatrix}1&1\\\\1&-1\\end{pmatrix},\\quad P^{-1}=\\frac12P,\\quad\\Lambda=\\operatorname{diag}(1,3).$$\n由 $A=P\\Lambda P^{-1}$ 得\n$$A^n=P\\Lambda^nP^{-1}=\\frac12\\begin{pmatrix}1+3^n&1-3^n\\\\1-3^n&1+3^n\\end{pmatrix}.$$",
+      "explanation": [
+        "矩阵相似可把重复乘方转成对角元分别乘方。",
+        "不能把矩阵每个元素各自取 n 次方；应通过 A=PΛP⁻¹，让中间的 P⁻¹P 逐次消去。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        134,
+        135,
+        136,
+        137,
+        138
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X138-2711",
+      "title": "例 14",
+      "chapter": 5,
+      "section_id": "LA-C05-S5",
+      "knowledge_ids": [
+        "LA-K05-05",
+        "LA-K05-04"
+      ],
+      "printed_page": 134,
+      "prompt": "求一个正交变换 $x=Py$，把二次型 $f=-2x_1x_2+2x_1x_3+2x_2x_3$ 化为标准形。",
+      "solution": "二次型矩阵为 $A=\\begin{pmatrix}0&-1&1\\\\-1&0&1\\\\1&1&0\\end{pmatrix}$，与本章例 12 相同。取\n$$P=\\begin{pmatrix}-\\frac1{\\sqrt3}&-\\frac1{\\sqrt2}&\\frac1{\\sqrt6}\\\\-\\frac1{\\sqrt3}&\\frac1{\\sqrt2}&\\frac1{\\sqrt6}\\\\\\frac1{\\sqrt3}&0&\\frac2{\\sqrt6}\\end{pmatrix}.$$\n则 $P^TAP=\\operatorname{diag}(-2,1,1)$，所以 $x=Py$ 把二次型化为\n$$f=-2y_1^2+y_2^2+y_3^2.$$\n若再令 $y_1=z_1/\\sqrt2$、$y_2=z_2$、$y_3=z_3$，得规范形 $f=-z_1^2+z_2^2+z_3^2$。",
+      "explanation": [
+        "交叉项系数必须平分到矩阵的两个对称位置，例如 −2x₁x₂ 对应 a₁₂=a₂₁=−1。",
+        "正交变换得到的平方项系数就是特征值；进一步缩放得到规范形，但这个缩放一般不再正交。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        138,
+        139
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X139-4340",
+      "title": "例 15",
+      "chapter": 5,
+      "section_id": "LA-C05-S6",
+      "knowledge_ids": [
+        "LA-K05-06",
+        "LA-K05-05"
+      ],
+      "printed_page": 135,
+      "prompt": "把二次型 $f=x_1^2+2x_2^2+5x_3^2+2x_1x_2+2x_1x_3+6x_2x_3$ 化为标准形，并求所用的变换矩阵。",
+      "solution": "配方得\n$$f=(x_1+x_2+x_3)^2+x_2^2+4x_2x_3+4x_3^2=(x_1+x_2+x_3)^2+(x_2+2x_3)^2.$$\n令 $y_1=x_1+x_2+x_3$、$y_2=x_2+2x_3$、$y_3=x_3$，则标准形（也是规范形）为 $f=y_1^2+y_2^2$。反解为 $x_1=y_1-y_2+y_3$、$x_2=y_2-2y_3$、$x_3=y_3$，故\n$$x=Cy,\\qquad C=\\begin{pmatrix}1&-1&1\\\\0&1&-2\\\\0&0&1\\end{pmatrix},\\quad |C|=1\\ne0.$$",
+      "explanation": [
+        "先把含 x₁ 的项一次配成平方，再处理剩余 x₂、x₃ 的二次型。",
+        "题目要求的变换矩阵按 x=Cy 给出，所以应反解变量；直接把 y 关于 x 的系数排列，会得到 C⁻¹。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        139
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X139-8428",
+      "title": "例 16",
+      "chapter": 5,
+      "section_id": "LA-C05-S6",
+      "knowledge_ids": [
+        "LA-K05-06",
+        "LA-K05-05"
+      ],
+      "printed_page": 135,
+      "prompt": "把二次型 $f=2x_1x_2+2x_1x_3-6x_2x_3$ 化为规范形，并求所用的变换矩阵。",
+      "solution": "原式没有平方项。先令 $x_1=y_1+y_2$、$x_2=y_1-y_2$、$x_3=y_3$，则\n$$f=2y_1^2-2y_2^2-4y_1y_3+8y_2y_3=2(y_1-y_3)^2-2(y_2-2y_3)^2+6y_3^2.$$\n令 $z_1=\\sqrt2(y_1-y_3)$、$z_2=\\sqrt2(y_2-2y_3)$、$z_3=\\sqrt6y_3$，得到规范形\n$$f=z_1^2-z_2^2+z_3^2.$$\n反解并合并两次变换，有\n$$x=Cz,\\qquad C=\\begin{pmatrix}\\frac1{\\sqrt2}&\\frac1{\\sqrt2}&\\frac3{\\sqrt6}\\\\\\frac1{\\sqrt2}&-\\frac1{\\sqrt2}&-\\frac1{\\sqrt6}\\\\0&0&\\frac1{\\sqrt6}\\end{pmatrix},\\quad |C|=-\\frac1{\\sqrt6}\\ne0.$$",
+      "explanation": [
+        "没有平方项时，先用和差替换把 2x₁x₂ 变成 2y₁²−2y₂²，再继续配方。",
+        "规范形各非零系数必须为 ±1，所以配方后的系数 2、−2、6 还要通过平方根缩放吸收。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        139,
+        140,
+        141,
+        142
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X142-2036",
+      "title": "例 17",
+      "chapter": 5,
+      "section_id": "LA-C05-S7",
+      "knowledge_ids": [
+        "LA-K05-07",
+        "LA-K01-05"
+      ],
+      "printed_page": 138,
+      "prompt": "判定二次型 $f=-5x^2-6y^2-4z^2+4xy+4xz$ 的正定性。",
+      "solution": "对称矩阵为\n$$A=\\begin{pmatrix}-5&2&2\\\\2&-6&0\\\\2&0&-4\\end{pmatrix}.$$\n顺序主子式依次为 $\\Delta_1=-5<0$、$\\Delta_2=26>0$、$\\Delta_3=|A|=-80<0$，符合奇阶负、偶阶正的负定判据。因此 $f$ 是负定二次型。",
+      "explanation": [
+        "交叉项 4xy、4xz 对应的矩阵元素为 2。",
+        "负定时各阶顺序主子式不是全负，而是符号交替；也可对 −A 使用正定判据。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        142
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X151-2168",
+      "title": "例 6",
+      "chapter": 6,
+      "section_id": "LA-C06-S2",
+      "knowledge_ids": [
+        "LA-K06-02",
+        "LA-K06-01"
+      ],
+      "printed_page": 147,
+      "prompt": "在线性空间 $P[x]_4$ 中，$p_1=1,p_2=x,p_3=x^2,p_4=x^3,p_5=x^4$ 是一个基。求多项式 $p=a_4x^4+a_3x^3+a_2x^2+a_1x+a_0$ 在此基下的坐标；若另取基 $q_1=1,q_2=1+x,q_3=2x^2,q_4=x^3,q_5=x^4$，求 $p$ 在这个基下的坐标。",
+      "solution": "在第一个基下，$p=a_0p_1+a_1p_2+a_2p_3+a_3p_4+a_4p_5$，所以坐标为 $(a_0,a_1,a_2,a_3,a_4)^T$。\n在第二个基下，\n$$p=(a_0-a_1)\\cdot1+a_1(1+x)+\\frac{a_2}{2}(2x^2)+a_3x^3+a_4x^4,$$\n所以坐标为 $(a_0-a_1,a_1,\\frac12a_2,a_3,a_4)^T$。",
+      "explanation": [
+        "坐标是沿所选基的展开系数；换了基，原多项式不变，系数会变化。",
+        "q₂=1+x 除了提供 x 项还额外贡献常数 a₁，因此 q₁ 的系数必须减去 a₁；q₃ 自带系数 2，故其展开系数除以 2。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        151,
+        152,
+        153
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X153-2890",
+      "title": "例 7",
+      "chapter": 6,
+      "section_id": "LA-C06-S3",
+      "knowledge_ids": [
+        "LA-K06-03",
+        "LA-K06-02"
+      ],
+      "printed_page": 149,
+      "prompt": "在 $P[x]_3$ 中取两个基：\n$$\\alpha_1=x^3+2x^2-x,\\quad\\alpha_2=x^3-x^2+x+1,\\quad\\alpha_3=-x^3+2x^2+x+1,\\quad\\alpha_4=-x^3-x^2+1,$$\n$$\\beta_1=2x^3+x^2+1,\\quad\\beta_2=x^2+2x+2,\\quad\\beta_3=-2x^3+x^2+x+2,\\quad\\beta_4=x^3+3x^2+x+2.$$\n求坐标变换公式：从 $\\alpha$ 基坐标 $x=(x_1,x_2,x_3,x_4)^T$ 到 $\\beta$ 基坐标 $x'=(x'_1,x'_2,x'_3,x'_4)^T$。",
+      "solution": "以 $(x^3,x^2,x,1)$ 为共同参照基，有\n$$(\\alpha_1,\\alpha_2,\\alpha_3,\\alpha_4)=(x^3,x^2,x,1)A,\\quad(\\beta_1,\\beta_2,\\beta_3,\\beta_4)=(x^3,x^2,x,1)B,$$\n其中\n$$A=\\begin{pmatrix}1&1&-1&-1\\\\2&-1&2&-1\\\\-1&1&1&0\\\\0&1&1&1\\end{pmatrix},\\quad B=\\begin{pmatrix}2&0&-2&1\\\\1&1&1&3\\\\0&2&1&1\\\\1&2&2&2\\end{pmatrix}.$$\n因为同一多项式满足 $Ax=Bx'$，所以\n$$x'=B^{-1}Ax=\\begin{pmatrix}0&1&-1&1\\\\-1&1&0&0\\\\0&0&0&1\\\\1&-1&1&-1\\end{pmatrix}x.$$",
+      "explanation": [
+        "两个基都是多项式，先相对于同一个自然基排列其系数，问题就变成普通矩阵运算。",
+        "原书将 (B,A) 的左块化为单位矩阵，右块即为 B⁻¹A；求新坐标时先乘旧系数矩阵 A，再乘新系数矩阵的逆 B⁻¹。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        153,
+        154,
+        155
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X155-7805",
+      "title": "例 8",
+      "chapter": 6,
+      "section_id": "LA-C06-S4",
+      "knowledge_ids": [
+        "LA-K06-04"
+      ],
+      "printed_page": 151,
+      "prompt": "在线性空间 $P[x]_3$ 中，设 $p=a_3x^3+a_2x^2+a_1x+a_0$。讨论下列映射是否为线性变换：（1）微分运算 $D(p)=p'$；（2）$T(p)=a_0$；（3）$T_1(p)=1$。",
+      "solution": "（1）是线性变换。对 $p,q\\in P[x]_3$、$\\lambda\\in\\mathbb R$，求导法则给出 $D(p+q)=Dp+Dq$、$D(\\lambda p)=\\lambda Dp$；导数仍属于 $P[x]_3$。\n（2）是线性变换。若 $q=b_3x^3+b_2x^2+b_1x+b_0$，则 $T(p+q)=a_0+b_0=T(p)+T(q)$，$T(\\lambda p)=\\lambda a_0=\\lambda T(p)$。\n（3）不是线性变换。虽然它是映射，但 $T_1(p+q)=1$，而 $T_1(p)+T_1(q)=2$，不满足加法保持性。",
+      "explanation": [
+        "第（2）问的输出 a₀ 被看作常数多项式，确实仍在原空间内。",
+        "第（3）问是把所有输入都变成常数 1，和“提取常数项”不同；也可由 T₁(0)=1≠0 立即否定。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        155,
+        156
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X156-3329",
+      "title": "例 9",
+      "chapter": 6,
+      "section_id": "LA-C06-S4",
+      "knowledge_ids": [
+        "LA-K06-04"
+      ],
+      "printed_page": 152,
+      "prompt": "关系式\n$$T\\begin{pmatrix}x\\\\y\\end{pmatrix}=\\begin{pmatrix}\\cos\\varphi&-\\sin\\varphi\\\\\\sin\\varphi&\\cos\\varphi\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}$$\n确定了 $xOy$ 平面上的一个变换 $T$。说明它的几何意义。",
+      "solution": "写 $x=r\\cos\\theta$、$y=r\\sin\\theta$，则\n$$T\\begin{pmatrix}x\\\\y\\end{pmatrix}=\\begin{pmatrix}r\\cos\\theta\\cos\\varphi-r\\sin\\theta\\sin\\varphi\\\\r\\cos\\theta\\sin\\varphi+r\\sin\\theta\\cos\\varphi\\end{pmatrix}=\\begin{pmatrix}r\\cos(\\theta+\\varphi)\\\\r\\sin(\\theta+\\varphi)\\end{pmatrix}.$$\n长度 $r$ 不变，极角由 $\\theta$ 变为 $\\theta+\\varphi$。因此 $T$ 把任一向量绕原点逆时针旋转 $\\varphi$ 角（带符号理解）。",
+      "explanation": [
+        "先改用极坐标，矩阵公式直接化成三角函数的和角公式。",
+        "旋转中心为原点，半径保持不变；φ 为负时等价于顺时针旋转 |φ|。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        156,
+        157
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X157-2451",
+      "title": "例 10",
+      "chapter": 6,
+      "section_id": "LA-C06-S4",
+      "knowledge_ids": [
+        "LA-K06-04",
+        "LA-K06-05"
+      ],
+      "printed_page": 153,
+      "prompt": "设 $n$ 阶矩阵 $A=(a_{ij})=(\\alpha_1,\\ldots,\\alpha_n)$。定义 $\\mathbb R^n$ 中的变换 $T(x)=Ax$。证明 $T$ 为线性变换，并说明它的像空间和核。",
+      "solution": "对 $a,b\\in\\mathbb R^n$，由矩阵乘法分配律和数乘结合律，有\n$$T(a+b)=A(a+b)=Aa+Ab=T(a)+T(b),$$\n$$T(\\lambda a)=A(\\lambda a)=\\lambda Aa=\\lambda T(a).$$\n故 $T$ 是线性变换。又因 $Ax=x_1\\alpha_1+\\cdots+x_n\\alpha_n$，所以\n$$T(\\mathbb R^n)=\\operatorname{Span}\\{\\alpha_1,\\ldots,\\alpha_n\\},\\qquad N_T=\\{x\\mid Ax=0\\}.$$\n即像空间为列空间，核为齐次方程组的解空间。",
+      "explanation": [
+        "定义已经把每个 x 对应到唯一的 Ax，故确实是映射；再检验加法与数乘两条性质。",
+        "像空间看所有可能的输出 Ax，核看输出为零的全部输入；两者分别对应列空间与零空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        157
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X159-6671",
+      "title": "例 11",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05"
+      ],
+      "printed_page": 155,
+      "prompt": "在 $P[x]_3$ 中取基 $p_1=x^3,p_2=x^2,p_3=x,p_4=1$。求微分运算 $D$ 在此基下的矩阵。",
+      "solution": "依次求基向量的像并在原基下表示：\n$$Dp_1=3p_2,\\quad Dp_2=2p_3,\\quad Dp_3=p_4,\\quad Dp_4=0.$$\n把这些像的坐标按列排列，得\n$$[D]=\\begin{pmatrix}0&0&0&0\\\\3&0&0&0\\\\0&2&0&0\\\\0&0&1&0\\end{pmatrix}.$$",
+      "explanation": [
+        "第 j 列必须是 Dpⱼ 的坐标，不能把这些坐标按行排列。",
+        "本题基按降幂排列，因此非零元素落在次对角线；若用升幂基，矩阵位置会不同。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        159,
+        160
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X160-1715",
+      "title": "例 12",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05",
+        "LA-K06-04"
+      ],
+      "printed_page": 156,
+      "prompt": "在 $\\mathbb R^3$ 中，$T$ 为投影到 $xOy$ 平面的线性变换：$T(xi+yj+zk)=xi+yj$。（1）取基 $i,j,k$，求 $T$ 的矩阵；（2）取基 $\\alpha=i,\\beta=j,\\gamma=i+j+k$，求 $T$ 的矩阵。",
+      "solution": "（1）$Ti=i$、$Tj=j$、$Tk=0$，所以\n$$[T]_{(i,j,k)}=\\begin{pmatrix}1&0&0\\\\0&1&0\\\\0&0&0\\end{pmatrix}.$$\n（2）$T\\alpha=\\alpha$、$T\\beta=\\beta$、$T\\gamma=i+j=\\alpha+\\beta$，故\n$$[T]_{(\\alpha,\\beta,\\gamma)}=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\0&0&0\\end{pmatrix}.$$",
+      "explanation": [
+        "变换本身没有变化，变化的是输入输出的坐标参照基。",
+        "第二问的 γ 投影后为 i+j，它在新基中的坐标是 (1,1,0)ᵀ，因此新矩阵第三列不是零。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        160,
+        161
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    },
+    {
+      "id": "SRC-LA7-X161-2167",
+      "title": "例 13",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05",
+        "LA-K06-03"
+      ],
+      "printed_page": 157,
+      "prompt": "设二维线性空间 $V_2$ 中的线性变换 $T$ 在基 $\\alpha_1,\\alpha_2$ 下的矩阵为 $A=\\begin{pmatrix}a_{11}&a_{12}\\\\a_{21}&a_{22}\\end{pmatrix}$。求 $T$ 在基 $\\alpha_2,\\alpha_1$ 下的矩阵。",
+      "solution": "交换基向量的过渡矩阵为\n$$P=\\begin{pmatrix}0&1\\\\1&0\\end{pmatrix},\\qquad P^{-1}=P.$$\n因此新矩阵\n$$B=P^{-1}AP=\\begin{pmatrix}a_{22}&a_{21}\\\\a_{12}&a_{11}\\end{pmatrix}.$$",
+      "explanation": [
+        "基交换同时改变输入坐标和输出坐标，故应同时交换矩阵的两列和两行。",
+        "只交换行或只交换列都不对；矩阵的相似变换 P⁻¹AP 正好实现这两次交换。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        161
+      ],
+      "text_origin": "原书扫描逐题核对后转写；讲解为针对本题的补充说明"
+    }
+  ]
+}

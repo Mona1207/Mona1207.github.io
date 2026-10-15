@@ -1,0 +1,2418 @@
+{
+  "version": 17,
+  "book_id": "LA7",
+  "coverage": {
+    "indexed_examples": 103,
+    "reviewed_examples": 61,
+    "ocr_needs_review": 42,
+    "statement": "覆盖已定位的全部例题；不将OCR初稿冒充逐题校订，未证明定位扫描绝无漏检。",
+    "reviewed_by_chapter": {
+      "1": 14,
+      "2": 20,
+      "3": 13,
+      "4": 9,
+      "5": 0,
+      "6": 5
+    },
+    "numbering_audit": {
+      "chapter_max_examples": [
+        13,
+        19,
+        13,
+        26,
+        17,
+        13
+      ],
+      "continuations": [
+        "SRC-LA7-X021-5264",
+        "SRC-LA7-X037-7394"
+      ],
+      "note": "第1—3章例号连续且已视觉核对，含两条续例。第4—6章仍需后续校订确认。"
+    }
+  },
+  "items": [
+    {
+      "id": "SRC-LA7-X006-7072",
+      "title": "例 1",
+      "chapter": 1,
+      "section_id": "LA-C01-S1",
+      "knowledge_ids": [
+        "LA-K01-01"
+      ],
+      "printed_page": 2,
+      "prompt": "求解二元线性方程组：$$\\begin{cases}3x_1-2x_2=12,\\\\2x_1+x_2=1.\\end{cases}$$",
+      "solution": "系数行列式 $$D=\\begin{vmatrix}3&-2\\\\2&1\\end{vmatrix}=7\\ne0.$$ $$D_1=\\begin{vmatrix}12&-2\\\\1&1\\end{vmatrix}=14,\\qquad D_2=\\begin{vmatrix}3&12\\\\2&1\\end{vmatrix}=-21.$$ 因此 $$x_1=D_1/D=2,\\qquad x_2=D_2/D=-3.$$",
+      "explanation": [
+        "先计算系数行列式 3×1−(−2)×2=7。非零说明可以用克拉默法则，且解唯一。",
+        "求 x₁ 时用常数列 (12,1)ᵀ 替换第一列；求 x₂ 时替换第二列，未替换的列保持原位。",
+        "代回验证：3×2−2×(−3)=12，2×2−3=1，两个原方程都成立。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        6,
+        7
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X007-7474",
+      "title": "例 2",
+      "chapter": 1,
+      "section_id": "LA-C01-S1",
+      "knowledge_ids": [
+        "LA-K01-01"
+      ],
+      "printed_page": 3,
+      "prompt": "计算三阶行列式 $$D=\\begin{vmatrix}1&2&-4\\\\-2&2&1\\\\-3&4&-2\\end{vmatrix}.$$ ",
+      "solution": "按对角线法则：$$D=1\\cdot2\\cdot(-2)+2\\cdot1\\cdot(-3)+(-4)\\cdot(-2)\\cdot4-1\\cdot1\\cdot4-2\\cdot(-2)\\cdot(-2)-(-4)\\cdot2\\cdot(-3)=-14.$$",
+      "explanation": [
+        "前三项是三条正对角线乘积，后三项是三条负对角线乘积；每项均取不同行、不同列的三个元素。",
+        "各项依次为 −4、−6、32、−4、−8、−24，相加得到 −14。",
+        "对角线法则只适用于二阶、三阶行列式，不能直接推广到四阶。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        7
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X008-0733",
+      "title": "例 3",
+      "chapter": 1,
+      "section_id": "LA-C01-S2",
+      "knowledge_ids": [
+        "LA-K01-02"
+      ],
+      "printed_page": 4,
+      "prompt": "求解方程 $$\\begin{vmatrix}1&1&1\\\\2&3&x\\\\4&9&x^2\\end{vmatrix}=0.$$ ",
+      "solution": "左端行列式 $$D=3x^2+4x+18-9x-2x^2-12=x^2-5x+6.$$ 因而 $$(x-2)(x-3)=0,$$ 解为 $$x=2\\quad\\text{或}\\quad x=3.$$",
+      "explanation": [
+        "把三阶行列式展开为普通多项式，注意每项的正负号。",
+        "合并同类项得到 x²−5x+6，再分解为 (x−2)(x−3)。",
+        "本题行列式等于零不表示 x=0；应解行列式展开后得到的方程。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        8
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X009-1860",
+      "title": "例 4",
+      "chapter": 1,
+      "section_id": "LA-C01-S2",
+      "knowledge_ids": [
+        "LA-K01-02"
+      ],
+      "printed_page": 5,
+      "prompt": "求排列 32514 的逆序数。",
+      "solution": "逐位统计其前面比当前数大的元素个数，依次为 $$t_1=0,\\quad t_2=1,\\quad t_3=0,\\quad t_4=3,\\quad t_5=1.$$ 所以 $$t=0+1+0+3+1=5.$$",
+      "explanation": [
+        "3 前面没有元素；2 前面有 3；5 前面没有比它大的数。",
+        "1 前面有 3、2、5 三个更大的数；4 前面只有 5 比它大。",
+        "每对逆序只在其后一个元素处统计一次，所以不会重复计数。逆序数 5 为奇数，故该排列为奇排列。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        9
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X011-4328",
+      "title": "例 5",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 7,
+      "prompt": "证明：(1) 下三角行列式 $D=\\det(a_{ij})$（当 $j>i$ 时 $a_{ij}=0$）等于 $a_{11}a_{22}\\cdots a_{nn}$；(2) 对角行列式 $\\det\\operatorname{diag}(\\lambda_1,\\ldots,\\lambda_n)=\\lambda_1\\cdots\\lambda_n$。",
+      "solution": "(1) 在定义的展开项 $a_{1p_1}\\cdots a_{np_n}$ 中，要不含必为零的元素就必须 $p_i\\le i$。又 $(p_1,\\ldots,p_n)$ 是 1 至 n 的排列，所以 $\\sum p_i=\\sum i$，只能有 $p_i=i$。唯一可能非零的项是主对角线乘积，其符号为正。因此 $D=\\prod_{i=1}^na_{ii}$。(2) 对角行列式也是下三角行列式，直接应用 (1)。",
+      "explanation": [
+        "先找“哪些展开项可能不为零”，不必真的写出 n! 项。",
+        "各 pᵢ≤i 且两边总和相等，若有任何一个严格小于就会使总和变小，故必须逐项相等。",
+        "唯一留下的列排列是标准排列 12…n，逆序数为零，所以乘积前的符号是正号。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        11
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X015-1183",
+      "title": "例 6",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 11,
+      "prompt": "计算：(1) $D=\\det(a_{ij})_{n\\times n}$，其中 $i+j<n+1$ 时 $a_{ij}=0$；(2) 仅副对角线非零，按从右上到左下依次为 $\\lambda_1,\\ldots,\\lambda_n$ 的 n 阶行列式。",
+      "solution": "(1) 将行次序完全颠倒，共需 $(n-1)+(n-2)+\\cdots+1=n(n-1)/2$ 次相邻行对换，成为上三角行列式。于是 $$D=(-1)^{n(n-1)/2}a_{1n}a_{2,n-1}\\cdots a_{n1}。$$ (2) 是 (1) 的特例，结果为 $$(-1)^{n(n-1)/2}\\lambda_1\\lambda_2\\cdots\\lambda_n。$$",
+      "explanation": [
+        "原行列式的零区在左上角，不能直接当作通常上三角或下三角来乘主对角线。",
+        "将行顺序颠倒后，副对角线上的元素变成主对角线；每次换行都使行列式变号。",
+        "换行总次数是 1+2+…+(n−1)，故符号因子为 (−1)^{n(n−1)/2}。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        15
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X015-7918",
+      "title": "例 7",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 11,
+      "prompt": "计算 $$D=\\begin{vmatrix}3&1&-1&2\\\\-5&1&3&-4\\\\2&0&1&-1\\\\1&-5&3&-3\\end{vmatrix}。$$",
+      "solution": "先交换第 1、2 列，使左上角出现 1，行列式前添负号。再做 $r_2\\gets r_2-r_1$、$r_4\\gets r_4+5r_1$，并交换第 2、3 行。两次交换的符号抵消，得到 $$D=\\begin{vmatrix}1&3&-1&2\\\\0&2&1&-1\\\\0&-8&4&-6\\\\0&16&-2&7\\end{vmatrix}。$$ 做 $r_3\\gets r_3+4r_2$、$r_4\\gets r_4-8r_2$，从第 3、4 行分别提取 2、5，得 $$D=10\\begin{vmatrix}1&3&-1&2\\\\0&2&1&-1\\\\0&0&4&-5\\\\0&0&-2&3\\end{vmatrix}。$$ 最后 $r_4\\gets r_4+\\tfrac12r_3$，得到 $$D=10\\cdot1\\cdot2\\cdot4\\cdot\\tfrac12=40。$$",
+      "explanation": [
+        "选主元 1 消元可以避免用最初的 3 作主元而引入分数。",
+        "换列、换行各一次，总共变号两次，最终符号恢复为正；倍加不改变行列式。",
+        "三角化后只需相乘主对角线，但提取出的行公因子 2×5=10 不能遗漏。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        15,
+        16
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X016-5102",
+      "title": "例 8",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 12,
+      "prompt": "计算 $$D=\\begin{vmatrix}3&1&1&1\\\\1&3&1&1\\\\1&1&3&1\\\\1&1&1&3\\end{vmatrix}。$$",
+      "solution": "将第 2、3、4 行加到第 1 行，第 1 行成为 $(6,6,6,6)$。提出公因子 6，再分别用第 2、3、4 行减去第 1 行：$$D=6\\begin{vmatrix}1&1&1&1\\\\0&2&0&0\\\\0&0&2&0\\\\0&0&0&2\\end{vmatrix}=6\\cdot2^3=48。$$",
+      "explanation": [
+        "观察到每列元素和都是 6，因此把多行加到第一行能制造一整行相同元素。",
+        "先提出 6，使第一行成为全 1，再相减便在其余三行各留下一个 2。",
+        "行的倍加不变值，整行提出 6 才会在外面出现系数 6。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        16
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X016-7797",
+      "title": "例 9",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 12,
+      "prompt": "计算 $$D=\\begin{vmatrix}a&b&c&d\\\\a&a+b&a+b+c&a+b+c+d\\\\a&2a+b&3a+2b+c&4a+3b+2c+d\\\\a&3a+b&6a+3b+c&10a+6b+3c+d\\end{vmatrix}。$$",
+      "solution": "从第 4 行开始依次用后行减前行，得到 $$\\begin{vmatrix}a&b&c&d\\\\0&a&a+b&a+b+c\\\\0&a&2a+b&3a+2b+c\\\\0&a&3a+b&6a+3b+c\\end{vmatrix}。$$ 再按 $r_4\\gets r_4-r_3$、$r_3\\gets r_3-r_2$，最后 $r_4\\gets r_4-r_3$，得 $$D=\\begin{vmatrix}a&b&c&d\\\\0&a&a+b&a+b+c\\\\0&0&a&2a+b\\\\0&0&0&a\\end{vmatrix}=a^4。$$",
+      "explanation": [
+        "相邻行的累加结构适合做差，第一次消掉第一列下面的 a，第二轮再消掉第二列。",
+        "每轮要从下往上做，确保被减去的前一行仍是本轮开始时的原行。",
+        "全过程只有倍加运算，值不变；三角形主对角线全是 a，所以结果为 a⁴，无需假设 a≠0。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        16,
+        17
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X017-7422",
+      "title": "例 10",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 13,
+      "prompt": "设 $A=(a_{ij})$ 为 k 阶方阵，B 为 n 阶方阵，C 为 $n\\times k$ 矩阵。证明分块行列式 $$D=\\det\\begin{pmatrix}A&O\\\\C&B\\end{pmatrix}=\\det A\\det B。$$",
+      "solution": "对 A 进行不改变行列式的行倍加，将其化为下三角形 P；对 B 进行不改变行列式的列倍加，将其化为下三角形 Q。在 D 的前 k 行、后 n 列作同样运算，右上零块保持不变，整个行列式成为下三角形。因此 $$D=\\prod_{i=1}^kp_{ii}\\prod_{j=1}^nq_{jj}=\\det A\\det B。$$",
+      "explanation": [
+        "右上角的零块是关键：对前 k 行倍加不会破坏它，对后 n 列倍加也不会使它出现非零。",
+        "两个对角块三角化后，整个分块矩阵就是下三角形，C 块中的具体元素不会影响主对角线乘积。",
+        "不能对任意分块矩阵直接相乘两个对角块的行列式；这里依赖另一角整块为零。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        17,
+        18
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X018-6432",
+      "title": "例 11",
+      "chapter": 1,
+      "section_id": "LA-C01-S4",
+      "knowledge_ids": [
+        "LA-K01-04"
+      ],
+      "printed_page": 14,
+      "prompt": "计算 2n 阶行列式 $D_{2n}$：其前 n 行主对角线上元素为 a、副对角线上元素为 b；后 n 行副对角线上元素为 c、主对角线上元素为 d；未写出的元素均为零。",
+      "solution": "把最后一行依次与前面的行交换到第 2 行，并将最后一列同样移到第 2 列，行、列各作 $2n-2$ 次相邻对换，总符号为正。左上角得到 $\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$，余下仍为同结构的 $D_{2n-2}$。由分块行列式公式，$$D_{2n}=(ad-bc)D_{2n-2}。$$ 又 $D_2=ad-bc$，所以 $$D_{2n}=(ad-bc)^n。$$",
+      "explanation": [
+        "同时移动一行和一列，行列式产生的负号相互抵消。",
+        "每次剥离一个 2×2 对角块，其行列式是 ad−bc，余下部分保持原来的模式。",
+        "写出递推关系后还要检查起点 n=1，这样才完整得到 n 次幂。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        18,
+        19
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X021-5264",
+      "title": "例 7（续）",
+      "chapter": 1,
+      "section_id": "LA-C01-S5",
+      "knowledge_ids": [
+        "LA-K01-05"
+      ],
+      "printed_page": 17,
+      "prompt": "例 7（续）：用按行（列）展开法则计算 $$D=\\begin{vmatrix}3&1&-1&2\\\\-5&1&3&-4\\\\2&0&1&-1\\\\1&-5&3&-3\\end{vmatrix}。$$",
+      "solution": "作 $c_1\\gets c_1-2c_3$、$c_4\\gets c_4+c_3$，使第 3 行变为 $(0,0,1,0)$。按第 3 行展开，$$D=\\begin{vmatrix}5&1&1\\\\-11&1&-1\\\\-5&-5&0\\end{vmatrix}。$$ 做 $r_2\\gets r_2+r_1$，再按第 3 列展开：$$D=\\begin{vmatrix}-6&2\\\\-5&-5\\end{vmatrix}=40。$$",
+      "explanation": [
+        "保留第三行的 1，通过列倍加把同一行其余元素全部消成零，展开只剩一个三阶子式。",
+        "代数余子式符号是 (−1)^{3+3}=+1；不要遗漏保留元素所在位置的符号。",
+        "三阶式同样先造零再展开，最后二阶式直接计算为 30+10=40，与例 7 原方法相符。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        21
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X021-8400",
+      "title": "例 12",
+      "chapter": 1,
+      "section_id": "LA-C01-S5",
+      "knowledge_ids": [
+        "LA-K01-05"
+      ],
+      "printed_page": 17,
+      "prompt": "证明范德蒙德行列式 $$D_n=\\begin{vmatrix}1&1&\\cdots&1\\\\x_1&x_2&\\cdots&x_n\\\\x_1^2&x_2^2&\\cdots&x_n^2\\\\\\vdots&\\vdots&&\\vdots\\\\x_1^{n-1}&x_2^{n-1}&\\cdots&x_n^{n-1}\\end{vmatrix}=\\prod_{1\\le j<i\\le n}(x_i-x_j)。$$",
+      "solution": "用归纳法。$n=2$ 时 $D_2=x_2-x_1$。设 n−1 阶结论成立，从第 n 行起依次作 $r_k\\gets r_k-x_1r_{k-1}$，使第一列除首元外全零。按第一列展开，并由第 2 至 n 列各提出 $x_i-x_1$，得 $$D_n=\\prod_{i=2}^n(x_i-x_1)D_{n-1}(x_2,\\ldots,x_n)。$$ 用归纳假设，即得所有差因子的乘积。",
+      "explanation": [
+        "从下往上倍加保证前一行尚未改变，因此每个元素都会正确产生因子 xⱼ−x₁。",
+        "第一列只剩首项 1，展开后行列式降一阶；提出每列的差因子后，余式又是范德蒙德形。",
+        "差因子的方向与列顺序有关，这里的排列是 xᵢ−xⱼ（i>j），不能全部颠倒而不计算符号。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        21,
+        22
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X023-8912",
+      "title": "例 13",
+      "chapter": 1,
+      "section_id": "LA-C01-S5",
+      "knowledge_ids": [
+        "LA-K01-05"
+      ],
+      "printed_page": 19,
+      "prompt": "设 $$D=\\begin{vmatrix}3&-5&2&1\\\\1&1&0&-5\\\\-1&3&1&3\\\\2&-4&-1&-3\\end{vmatrix}。$$ 记其余子式、代数余子式为 $M_{ij},A_{ij}$，求 $$A_{11}+A_{12}+A_{13}+A_{14}\\quad\\text{及}\\quad M_{11}+M_{21}+M_{31}+M_{41}。$$",
+      "solution": "第一式等于把 D 第 1 行替换成 $(1,1,1,1)$ 所得的行列式。按原书倍加、展开化为 $$\\begin{vmatrix}1&1&-5\\\\-2&2&2\\\\1&-1&0\\end{vmatrix}=\\begin{vmatrix}2&-5\\\\0&2\\end{vmatrix}=4。$$ 第二式利用 $M_{i1}=(-1)^{i+1}A_{i1}$，化为 $$A_{11}-A_{21}+A_{31}-A_{41}。$$ 这等于把第 1 列替换成 $(1,-1,1,-1)^{\\mathsf T}$ 的行列式，原书化为 $$-\\begin{vmatrix}1&2&1\\\\-1&0&-5\\\\1&1&3\\end{vmatrix}=0。$$ 因而两式依次为 4、0。",
+      "explanation": [
+        "代数余子式不含被划去的那一行，所以第一行的元素改为全 1，不会改变 A₁ⱼ 本身。",
+        "余子式与代数余子式差一个棋盘式符号，第二问要先把 M 转换成 A，系数应为 1、−1、1、−1。",
+        "将多个三阶行列式之和还原成一个四阶行列式，再造零展开，比逐项计算省力。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        23,
+        24
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X030-7708",
+      "title": "例 1",
+      "chapter": 2,
+      "section_id": "LA-C02-S1",
+      "knowledge_ids": [
+        "LA-K02-01"
+      ],
+      "printed_page": 26,
+      "prompt": "对于含 m 个方程、n 个未知数的非齐次线性方程组 $$\\sum_{j=1}^na_{ij}x_j=b_i\\quad(i=1,\\ldots,m),$$ 写出系数矩阵、未知数矩阵、常数项矩阵、增广矩阵。",
+      "solution": "系数矩阵为 $A=(a_{ij})_{m\\times n}$，未知数矩阵为 $x=(x_1,\\ldots,x_n)^{\\mathsf T}$，常数项矩阵为 $b=(b_1,\\ldots,b_m)^{\\mathsf T}$，增广矩阵为 $$B=(A\\mid b)=\\begin{pmatrix}a_{11}&\\cdots&a_{1n}&b_1\\\\\\vdots&&\\vdots&\\vdots\\\\a_{m1}&\\cdots&a_{mn}&b_m\\end{pmatrix}。$$",
+      "explanation": [
+        "每个方程对应 A 的一行，每个未知数对应 A 的一列，需先固定未知数的排列顺序。",
+        "x 有 n 行 1 列，b 有 m 行 1 列；增广矩阵在 A 的右边另添一列 b，所以是 m×(n+1) 型。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        30,
+        31
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X031-2658",
+      "title": "例 2",
+      "chapter": 2,
+      "section_id": "LA-C02-S1",
+      "knowledge_ids": [
+        "LA-K02-01"
+      ],
+      "printed_page": 27,
+      "prompt": "某工厂向三个商店（1、2、3）发送四种产品（Ⅰ、Ⅱ、Ⅲ、Ⅳ）。用矩阵表示各商店收到的产品数量，以及四种产品的单价和单件质量。",
+      "solution": "数量矩阵 $$A=\\begin{pmatrix}a_{11}&a_{12}&a_{13}&a_{14}\\\\a_{21}&a_{22}&a_{23}&a_{24}\\\\a_{31}&a_{32}&a_{33}&a_{34}\\end{pmatrix},$$ 其中 $a_{ij}$ 是发给第 i 家商店的第 j 种产品数量。单价和质量矩阵 $$B=\\begin{pmatrix}b_{11}&b_{12}\\\\b_{21}&b_{22}\\\\b_{31}&b_{32}\\\\b_{41}&b_{42}\\end{pmatrix},$$ 其中 $b_{j1}$ 是第 j 种产品单价，$b_{j2}$ 是单件质量。",
+      "explanation": [
+        "数量表中行表示商店、列表示产品，因此 A 为 3×4。",
+        "B 的行仍依同样的产品顺序排列，第一列单价、第二列质量，因此是 4×2，为后续计算 AB 做准备。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        31
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X031-6371",
+      "title": "例 3",
+      "chapter": 2,
+      "section_id": "LA-C02-S1",
+      "knowledge_ids": [
+        "LA-K02-01"
+      ],
+      "printed_page": 27,
+      "prompt": "四个城市的单向航线为 $1\\to2,\\ 1\\to3,\\ 1\\to4,\\ 2\\to1,\\ 3\\to2,\\ 4\\to1,\\ 4\\to3$。若从 i 市到 j 市有航线时取 $a_{ij}=1$，否则为 0，用矩阵表示该航线图。",
+      "solution": "按始发城市为行、目的城市为列，得到 $$A=\\begin{pmatrix}0&1&1&1\\\\1&0&0&0\\\\0&1&0&0\\\\1&0&1&0\\end{pmatrix}。$$",
+      "explanation": [
+        "第一行有三个 1，表示从城市 1 可直接去 2、3、4。",
+        "第三行只有第 2 列为 1，表示从城市 3 只能直接到城市 2。",
+        "这是有向关系，aᵢⱼ 与 aⱼᵢ 可以不同；不能按无向图自动填成对称矩阵。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        31
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X031-8643",
+      "title": "例 4",
+      "chapter": 2,
+      "section_id": "LA-C02-S1",
+      "knowledge_ids": [
+        "LA-K02-01"
+      ],
+      "printed_page": 27,
+      "prompt": "设 n 个变量 x 与 m 个变量 y 满足 $$y_i=\\sum_{j=1}^na_{ij}x_j\\quad(i=1,\\ldots,m)。$$ 用矩阵表示这种线性变换，并指出 $y_i=\\lambda_i x_i$ 的系数矩阵。另说明平面投影矩阵 $\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$ 及旋转矩阵 $R(\\varphi)=\\begin{pmatrix}\\cos\\varphi&-\\sin\\varphi\\\\\\sin\\varphi&\\cos\\varphi\\end{pmatrix}$ 的几何意义。",
+      "solution": "系数矩阵为 $A=(a_{ij})_{m\\times n}$，变换写成 $y=Ax$。若 $y_i=\\lambda_i x_i$（i=1,…,n），则 $$A=\\operatorname{diag}(\\lambda_1,\\ldots,\\lambda_n)。$$ 当全部 $\\lambda_i=1$ 时，$y=x$ 为恒等变换，系数矩阵为单位矩阵 E。投影矩阵将 $(x,y)^{\\mathsf T}$ 变为 $(x,0)^{\\mathsf T}$，是向 x 轴的投影。旋转矩阵给出 $x_1=x\\cos\\varphi-y\\sin\\varphi$、$y_1=x\\sin\\varphi+y\\cos\\varphi$。若 $x=r\\cos\\theta,y=r\\sin\\theta$，则 $x_1=r\\cos(\\theta+\\varphi),y_1=r\\sin(\\theta+\\varphi)$，故保持长度、使辐角增加 $\\varphi$，即绕原点逆时针旋转。",
+      "explanation": [
+        "每个输出 yᵢ 的各输入系数排列为第 i 行，因此给定矩阵就确定了该线性变换，反之亦然。",
+        "yᵢ 仅依赖 xᵢ 时，非对角位置系数全是零，所以出现对角矩阵。",
+        "单位矩阵主对角线全为 1，左乘向量后各分量保持不变。",
+        "投影把竖直分量变为零、保留水平分量；旋转则由和角公式证明长度不变且方向增加 φ，两者都可由矩阵乘向量逐分量核验。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        31,
+        32,
+        33
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X035-7951",
+      "title": "例 5",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 31,
+      "prompt": "求 $$A=\\begin{pmatrix}4&-1&2&1\\\\1&1&0&3\\\\0&3&1&4\\end{pmatrix},\\quad B=\\begin{pmatrix}1&2\\\\0&1\\\\3&0\\\\-1&2\\end{pmatrix}$$ 的乘积 AB。",
+      "solution": "A 为 3×4，B 为 4×2，乘积为 3×2。逐行乘列得到 $$AB=\\begin{pmatrix}9&9\\\\-2&9\\\\-1&11\\end{pmatrix}。$$ 例如 $$c_{11}=4\\cdot1+(-1)\\cdot0+2\\cdot3+1\\cdot(-1)=9,$$ $$c_{32}=0\\cdot2+3\\cdot1+1\\cdot0+4\\cdot2=11。$$",
+      "explanation": [
+        "先检查内维 4 相等，确定可乘；外维 3 和 2 决定结果的尺寸。",
+        "结果第 i 行第 j 列元素，用 A 第 i 行和 B 第 j 列对应相乘再相加。",
+        "BA 不存在，因为 B 的列数 2 不等于 A 的行数 3。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        35,
+        36
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X036-7997",
+      "title": "例 6",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 32,
+      "prompt": "求 $$A=\\begin{pmatrix}-2&4\\\\1&-2\\end{pmatrix},\\qquad B=\\begin{pmatrix}2&4\\\\-3&-6\\end{pmatrix}$$ 的乘积 AB 及 BA。",
+      "solution": "分别按行乘列计算：$$AB=\\begin{pmatrix}-16&-32\\\\8&16\\end{pmatrix},\\qquad BA=\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}。$$",
+      "explanation": [
+        "例如 AB 的首元为 (−2)×2+4×(−3)=−16，而 BA 首元为 2×(−2)+4×1=0。",
+        "AB≠BA，说明即使两者都是同阶方阵，矩阵乘法一般仍不满足交换律。",
+        "A、B 都非零但 BA=O，说明不能由矩阵积为零推出某个因子为零。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        36
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X037-7394",
+      "title": "例 2（续）",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 33,
+      "prompt": "例 2（续）：用数量矩阵 $A=(a_{ij})_{3\\times4}$、单价质量矩阵 $B=(b_{jk})_{4\\times2}$ 表示各商店的产品总价与总质量，并解释 $$D=\\begin{pmatrix}1&1&1\\\\0&-1&1\\end{pmatrix}$$ 左乘 AB 的意义。",
+      "solution": "记 C=AB，则 $$c_{i1}=\\sum_{j=1}^4a_{ij}b_{j1}$$ 是第 i 家商店的产品总价，$$c_{i2}=\\sum_{j=1}^4a_{ij}b_{j2}$$ 是总质量。若 H=DC，则第一行是三家商店合计总价、总质量；第二行是第 3 家减去第 2 家的价款和质量差。",
+      "explanation": [
+        "数量乘单价得到价款，数量乘单件质量得到质量；按四种产品求和就得到商店合计。",
+        "左乘 D 的第一行系数 (1,1,1) 表示把 C 的三行相加；第二行 (0,−1,1) 表示第三行减第二行。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        37,
+        38
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X038-6179",
+      "title": "例 7",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 34,
+      "prompt": "将线性方程组 $\\sum_{j=1}^na_{ij}x_j=b_i$ 和线性变换 $y_i=\\sum_{j=1}^na_{ij}x_j$ 写成矩阵形式。说明平面逆时针旋转角 $\\varphi$ 的矩阵及其 n 次幂。",
+      "solution": "方程组写成 $Ax=b$，齐次时为 $Ax=0$；线性变换写成 $y=Ax$，其中 A 为 m×n，x 为 n×1。平面旋转矩阵为 $$R(\\varphi)=\\begin{pmatrix}\\cos\\varphi&-\\sin\\varphi\\\\\\sin\\varphi&\\cos\\varphi\\end{pmatrix}。$$ 连续旋转 n 次相当于旋转 $n\\varphi$，所以 $$R(\\varphi)^n=\\begin{pmatrix}\\cos n\\varphi&-\\sin n\\varphi\\\\\\sin n\\varphi&\\cos n\\varphi\\end{pmatrix}。$$",
+      "explanation": [
+        "Ax 的第 i 分量正好是第 i 行系数与未知数向量的内积，因此能够整体表示全部方程。",
+        "旋转属于对向量左乘的线性变换；矩阵连乘对应连续进行变换。",
+        "每次增加同一个角 φ，n 次后的总角为 nφ，这给出矩阵幂的几何解释。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        38,
+        39
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X040-5511",
+      "title": "例 8",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 36,
+      "prompt": "已知 $$A=\\begin{pmatrix}2&0&-1\\\\1&3&2\\end{pmatrix},\\quad B=\\begin{pmatrix}1&7&-1\\\\4&2&3\\\\2&0&1\\end{pmatrix},$$ 求 $(AB)^{\\mathsf T}$。",
+      "solution": "先求 $$AB=\\begin{pmatrix}0&14&-3\\\\17&13&10\\end{pmatrix},$$ 再将行列交换，得 $$ (AB)^{\\mathsf T}=\\begin{pmatrix}0&17\\\\14&13\\\\-3&10\\end{pmatrix}。$$ 另一解法为先转置再逆序相乘：$$(AB)^{\\mathsf T}=B^{\\mathsf T}A^{\\mathsf T}。$$",
+      "explanation": [
+        "先乘后转置时，2×3 的 AB 会变成 3×2，尺寸可用来检验结果。",
+        "先转置再相乘必须颠倒次序：Bᵀ 是 3×3，Aᵀ 是 3×2；AᵀBᵀ 的尺寸甚至不匹配。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        40,
+        41
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X041-2424",
+      "title": "例 9",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 37,
+      "prompt": "设列矩阵 $X=(x_1,\\ldots,x_n)^{\\mathsf T}$ 满足 $X^{\\mathsf T}X=1$，令 $H=E-2XX^{\\mathsf T}$。证明 H 对称，且 $HH^{\\mathsf T}=E$。",
+      "solution": "由转置法则 $$H^{\\mathsf T}=E-2(XX^{\\mathsf T})^{\\mathsf T}=E-2XX^{\\mathsf T}=H,$$ 故 H 对称。并且 $$HH^{\\mathsf T}=H^2=E-4XX^{\\mathsf T}+4X(X^{\\mathsf T}X)X^{\\mathsf T}=E。$$",
+      "explanation": [
+        "XᵀX 是 1×1 的数，而 XXᵀ 是 n×n 矩阵，必须区分两者。",
+        "计算 (XXᵀ)(XXᵀ) 时可用结合律改写成 X(XᵀX)Xᵀ，再使用已知 XᵀX=1。",
+        "中间的 −4XXᵀ 与 +4XXᵀ 正好抵消，因此 H 同时还是正交矩阵。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        41
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X042-4821",
+      "title": "例 10",
+      "chapter": 2,
+      "section_id": "LA-C02-S2",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "printed_page": 38,
+      "prompt": "设 $A^*=(A_{ji})$ 是 A 的伴随矩阵，其中 $A_{ij}$ 为 $|A|$ 中元素 $a_{ij}$ 的代数余子式。证明 $$AA^*=A^*A=|A|E。$$",
+      "solution": "记 $AA^*=(b_{ij})$，则 $$b_{ij}=\\sum_{k=1}^na_{ik}A_{jk}=\\begin{cases}|A|,&i=j,\\\\0,&i\\ne j。\\end{cases}$$ 同行元素与其代数余子式乘积之和为原行列式，异行对应乘积之和为零。因此 $AA^*=|A|E$。按列展开可同理证明 $A^*A=|A|E$。",
+      "explanation": [
+        "伴随矩阵要把代数余子式矩阵转置；A* 的第 j 列是 A 第 j 行的代数余子式。",
+        "对角位置用行列式展开公式，非对角位置用异行代数余子式乘积之和为零。",
+        "这一定理不要求 A 可逆；只有进一步除以 |A| 求逆时，才需要 |A|≠0。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        42
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X044-5545",
+      "title": "例 11",
+      "chapter": 2,
+      "section_id": "LA-C02-S3",
+      "knowledge_ids": [
+        "LA-K02-03"
+      ],
+      "printed_page": 40,
+      "prompt": "求二阶可逆矩阵 $$A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}$$ 的逆矩阵。",
+      "solution": "由 $|A|=ad-bc\\ne0$ 且 $$A^*=\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix},$$ 有 $$A^{-1}=\\frac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}。$$",
+      "explanation": [
+        "二阶公式是主对角线两元素交换、副对角线两元素变号，再除以行列式。",
+        "前提 ad−bc≠0 必不可少；若行列式为零，矩阵无逆，不能使用这个分式。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        44
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X044-7438",
+      "title": "例 12",
+      "chapter": 2,
+      "section_id": "LA-C02-S3",
+      "knowledge_ids": [
+        "LA-K02-03"
+      ],
+      "printed_page": 40,
+      "prompt": "求 $$A=\\begin{pmatrix}1&2&3\\\\2&2&1\\\\3&4&3\\end{pmatrix}$$ 的逆矩阵。",
+      "solution": "计算得 $|A|=2\\ne0$。其余子式排列为 $$ (M_{ij})=\\begin{pmatrix}2&3&2\\\\-6&-6&-2\\\\-4&-5&-2\\end{pmatrix}。$$ 添上 $(-1)^{i+j}$ 的符号并转置，得到 $$A^*=\\begin{pmatrix}2&6&-4\\\\-3&-6&5\\\\2&2&-2\\end{pmatrix}。$$ 所以 $$A^{-1}=\\frac12\\begin{pmatrix}2&6&-4\\\\-3&-6&5\\\\2&2&-2\\end{pmatrix}。$$",
+      "explanation": [
+        "先验算行列式非零，确定逆矩阵存在。",
+        "从余子式得到代数余子式时，位置符号按 +−+ / −+− / +−+ 分布，随后还要转置。",
+        "可以将 A 与所得逆矩阵相乘，检查是否得到单位矩阵，避免漏转置或符号错误。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        44,
+        45
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X045-3810",
+      "title": "例 13",
+      "chapter": 2,
+      "section_id": "LA-C02-S3",
+      "knowledge_ids": [
+        "LA-K02-03"
+      ],
+      "printed_page": 41,
+      "prompt": "设 $$A=\\begin{pmatrix}1&2&3\\\\2&2&1\\\\3&4&3\\end{pmatrix},\\quad B=\\begin{pmatrix}2&1\\\\5&3\\end{pmatrix},\\quad C=\\begin{pmatrix}1&3\\\\2&0\\\\3&1\\end{pmatrix}。$$ 求矩阵 X 使 $AXB=C$。",
+      "solution": "$|A|=2$、$|B|=1$，均可逆。左乘 $A^{-1}$、右乘 $B^{-1}$，得 $$X=A^{-1}CB^{-1}。$$ 已知 $$A^{-1}=\\begin{pmatrix}1&3&-2\\\\-3/2&-3&5/2\\\\1&1&-1\\end{pmatrix},\\quad B^{-1}=\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}。$$ 因此 $$X=\\begin{pmatrix}1&1\\\\0&-2\\\\0&2\\end{pmatrix}\\begin{pmatrix}3&-1\\\\-5&2\\end{pmatrix}=\\begin{pmatrix}-2&1\\\\10&-4\\\\-10&4\\end{pmatrix}。$$",
+      "explanation": [
+        "A 在 X 左侧，要从左边乘 A⁻¹；B 在 X 右侧，要从右边乘 B⁻¹，次序不可颠倒。",
+        "X 应为 3×2，因此 A⁻¹C 和最终结果的尺寸都匹配。",
+        "矩阵方程不能直接把 A、B 当作数写成“C/(AB)”；左右乘的位置是解题关键。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        45
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X046-0751",
+      "title": "例 14",
+      "chapter": 2,
+      "section_id": "LA-C02-S3",
+      "knowledge_ids": [
+        "LA-K02-03"
+      ],
+      "printed_page": 42,
+      "prompt": "设 $$P=\\begin{pmatrix}1&2\\\\1&4\\end{pmatrix},\\quad\\Lambda=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix},\\quad AP=P\\Lambda。$$ 求 $A^n$。",
+      "solution": "$|P|=2$，$$P^{-1}=\\frac12\\begin{pmatrix}4&-2\\\\-1&1\\end{pmatrix}。$$ 因而 $A=P\\Lambda P^{-1}$，连乘时中间的 $P^{-1}P$ 抵消，得 $A^n=P\\Lambda^nP^{-1}$。所以 $$A^n=\\begin{pmatrix}2-2^n&2^n-1\\\\2-2^{n+1}&2^{n+1}-1\\end{pmatrix}。$$",
+      "explanation": [
+        "从 AP=PΛ 出发先右乘 P⁻¹，得到相似分解。",
+        "对角矩阵的幂只需把各对角元素分别取幂，Λⁿ=diag(1,2ⁿ)。",
+        "n=0 时公式应给 E，n=1 时应给 A，可用这两个值快速核验指数和符号。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        46
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X047-3020",
+      "title": "例 15",
+      "chapter": 2,
+      "section_id": "LA-C02-S3",
+      "knowledge_ids": [
+        "LA-K02-03"
+      ],
+      "printed_page": 43,
+      "prompt": "设 $$P=\\begin{pmatrix}-1&1&1\\\\1&0&2\\\\1&1&-1\\end{pmatrix},\\quad\\Lambda=\\operatorname{diag}(1,2,-3),\\quad AP=P\\Lambda。$$ 求 $\\varphi(A)=A^3+2A^2-3A$。",
+      "solution": "$|P|=6\\ne0$，故 $$\\varphi(A)=P\\varphi(\\Lambda)P^{-1}。$$ 因为 $\\varphi(1)=0$、$\\varphi(2)=10$、$\\varphi(-3)=0$，有 $$\\varphi(\\Lambda)=\\operatorname{diag}(0,10,0)。$$ 原书计算所需代数余子式 $A_{12}=3,A_{22}=0,A_{32}=3$，于是 $$\\varphi(A)=5\\begin{pmatrix}1&0&1\\\\0&0&0\\\\1&0&1\\end{pmatrix}。$$",
+      "explanation": [
+        "不必先求出 A 再计算 A²、A³；将同一多项式作用于相似分解可大幅减少运算。",
+        "对角上的 1 和 −3 都是 φ 的零点，只有特征值 2 对应位置留下 10。",
+        "乘积仅用到 P 的第二列及 P⁻¹ 的第二行，所以无需计算完整的逆矩阵。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        47
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X049-3697",
+      "title": "例 16",
+      "chapter": 2,
+      "section_id": "LA-C02-S4",
+      "knowledge_ids": [
+        "LA-K02-04"
+      ],
+      "printed_page": 45,
+      "prompt": "分别用克拉默法则与逆矩阵法求解 $$\\begin{cases}x_1-x_2-x_3=2,\\\\2x_1-x_2-3x_3=1,\\\\3x_1+2x_2-5x_3=0。\\end{cases}$$",
+      "solution": "系数矩阵 $$A=\\begin{pmatrix}1&-1&-1\\\\2&-1&-3\\\\3&2&-5\\end{pmatrix}$$ 的行列式为 3，故有唯一解。克拉默法则中替换列所得的行列式依次为 $|A_1|=15,|A_2|=0,|A_3|=9$，所以 $$x_1=5,\\quad x_2=0,\\quad x_3=3。$$ 逆矩阵法为 $$x=A^{-1}b=\\frac13\\begin{pmatrix}11&-7&2\\\\1&-2&1\\\\7&-5&1\\end{pmatrix}\\begin{pmatrix}2\\\\1\\\\0\\end{pmatrix}=\\begin{pmatrix}5\\\\0\\\\3\\end{pmatrix}。$$",
+      "explanation": [
+        "先判断 |A|=3≠0，满足克拉默法则和逆矩阵法的共同前提。",
+        "克拉默法则求 xⱼ 时只替换第 j 列，不换行，也不同时替换多列。",
+        "代回：5−0−3=2，10−0−9=1，15+0−15=0，三个方程都成立。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        49,
+        50
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X051-8601",
+      "title": "例 17",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "knowledge_ids": [
+        "LA-K02-05"
+      ],
+      "printed_page": 47,
+      "prompt": "设 $$A=\\begin{pmatrix}1&0&0&0\\\\0&1&0&0\\\\-1&2&1&0\\\\1&1&0&1\\end{pmatrix},\\quad B=\\begin{pmatrix}1&0&1&0\\\\-1&2&0&1\\\\1&0&4&1\\\\-1&-1&2&0\\end{pmatrix}。$$ 求 AB。",
+      "solution": "按前后两行、两列分块，写成 $$A=\\begin{pmatrix}E&O\\\\A_1&E\\end{pmatrix},\\quad B=\\begin{pmatrix}B_{11}&E\\\\B_{21}&B_{22}\\end{pmatrix}。$$ 则 $$AB=\\begin{pmatrix}B_{11}&E\\\\A_1B_{11}+B_{21}&A_1+B_{22}\\end{pmatrix},$$ 其中 $$A_1B_{11}+B_{21}=\\begin{pmatrix}-2&4\\\\-1&1\\end{pmatrix},\\quad A_1+B_{22}=\\begin{pmatrix}3&3\\\\3&1\\end{pmatrix}。$$ 所以 $$AB=\\begin{pmatrix}1&0&1&0\\\\-1&2&0&1\\\\-2&4&3&3\\\\-1&1&3&1\\end{pmatrix}。$$",
+      "explanation": [
+        "观察 A 左上和右下是单位块、右上是零块，按 2×2 分块能使多数乘法直接消去。",
+        "分块乘法仍要遵守先后次序，左下块是 A₁B₁₁+B₂₁，而非 B₁₁A₁。",
+        "各子块尺寸都为 2×2，计算后按原块位置拼回 4×4 矩阵。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        51,
+        52
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X053-4217",
+      "title": "例 18",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "knowledge_ids": [
+        "LA-K02-05"
+      ],
+      "printed_page": 49,
+      "prompt": "设 $$A=\\begin{pmatrix}5&0&0\\\\0&3&1\\\\0&2&1\\end{pmatrix}，$$ 求 $A^{-1}$。",
+      "solution": "分为 $A=\\operatorname{diag}(A_1,A_2)$，其中 $A_1=(5)$、$A_2=\\begin{pmatrix}3&1\\\\2&1\\end{pmatrix}$。分别求逆：$$A_1^{-1}=(1/5),\\quad A_2^{-1}=\\begin{pmatrix}1&-1\\\\-2&3\\end{pmatrix}。$$ 故 $$A^{-1}=\\begin{pmatrix}1/5&0&0\\\\0&1&-1\\\\0&-2&3\\end{pmatrix}。$$",
+      "explanation": [
+        "两个非零对角块均可逆，分块对角矩阵的逆仍按相同位置放置各块的逆。",
+        "右下块行列式是 3×1−1×2=1，因此可直接用二阶求逆公式。",
+        "不能仅把整个矩阵每个非零元素分别取倒数；只有一阶对角块才对应普通倒数。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        53
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X054-5747",
+      "title": "例 19",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "knowledge_ids": [
+        "LA-K02-05"
+      ],
+      "printed_page": 50,
+      "prompt": "证明实矩阵 $A=O$ 的充分必要条件是 $$A^{\\mathsf T}A=O。$$",
+      "solution": "必要性显然。证充分性：按列写 $A=(a_1,\\ldots,a_n)$，则 $A^{\\mathsf T}A$ 的第 j 个对角元素是 $$a_j^{\\mathsf T}a_j=\\sum_{i=1}^ma_{ij}^2。$$ 若 $A^{\\mathsf T}A=O$，则每列实数分量的平方和都是零，从而每个 $a_{ij}=0$，故 A=O。",
+      "explanation": [
+        "仅需查看 AᵀA 的对角线就足够，因为它们分别是 A 各列长度的平方。",
+        "实数的平方非负，和为零迫使各项全为零。",
+        "不能把 AᵀA=O 直接用“零因子”推理约掉 Aᵀ；矩阵一般没有这种消去律。本题依赖实数平方和。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        54,
+        55
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X067-7951",
+      "title": "例 1",
+      "chapter": 3,
+      "section_id": "LA-C03-S1",
+      "knowledge_ids": [
+        "LA-K03-01",
+        "LA-K03-02"
+      ],
+      "printed_page": 63,
+      "prompt": "设 $$A=\\begin{pmatrix}2&-1&-1\\\\1&1&-2\\\\4&-6&2\\end{pmatrix}$$ 的行最简形为 F，求 F 及一个可逆矩阵 P，使 $PA=F$。",
+      "solution": "将 A 与单位矩阵并列，对 $(A\\mid E)$ 作相同的初等行变换。原书先交换第 1、2 行，再逐步消元，得到 $$(A\\mid E)\\sim\\left(\\begin{array}{ccc|ccc}1&0&-1&-3&3&1\\\\0&1&-1&3&-2&-1\\\\0&0&0&10&-8&-3\\end{array}\\right)。$$ 因而 $$F=\\begin{pmatrix}1&0&-1\\\\0&1&-1\\\\0&0&0\\end{pmatrix},\\quad P=\\begin{pmatrix}-3&3&1\\\\3&-2&-1\\\\10&-8&-3\\end{pmatrix}。$$",
+      "explanation": [
+        "左乘初等矩阵等价于做初等行变换；把 E 一起变换可记录所有左乘操作的总效果。",
+        "A 的主元出现在第 1、2 列，故最简形第三行为零，秩为 2。",
+        "P 可逆是因为它是若干初等矩阵的乘积。这里 P 并不唯一，继续改变 F 的零行对应的操作仍可能保持 F 不变。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        67,
+        68
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X068-4397",
+      "title": "例 2",
+      "chapter": 3,
+      "section_id": "LA-C03-S1",
+      "knowledge_ids": [
+        "LA-K03-01",
+        "LA-K03-02"
+      ],
+      "printed_page": 64,
+      "prompt": "设 $$A=\\begin{pmatrix}0&-2&1\\\\3&0&-2\\\\-2&3&0\\end{pmatrix}，$$ 证明 A 可逆，并求 $A^{-1}$。",
+      "solution": "对增广矩阵 $(A\\mid E)$ 作初等行变换，原书得到 $$(A\\mid E)\\sim\\left(\\begin{array}{ccc|ccc}1&0&0&6&3&4\\\\0&1&0&4&2&3\\\\0&0&1&9&4&6\\end{array}\\right)。$$ 左块化为 E，故 A 可逆，且 $$A^{-1}=\\begin{pmatrix}6&3&4\\\\4&2&3\\\\9&4&6\\end{pmatrix}。$$",
+      "explanation": [
+        "求逆时只做行变换，并同步作用在左右两块；左块化为 E 后右块就是逆。",
+        "本题原书先调整第三行并交换行，使第一列出现较方便的主元，再消元归一。",
+        "用原矩阵第一行 (0,−2,1) 乘逆矩阵三列得 (1,0,0)，可直接核验第一行。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        68
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X068-8548",
+      "title": "例 3",
+      "chapter": 3,
+      "section_id": "LA-C03-S1",
+      "knowledge_ids": [
+        "LA-K03-01",
+        "LA-K03-02"
+      ],
+      "printed_page": 64,
+      "prompt": "求解矩阵方程 $AX=B$，其中 $$A=\\begin{pmatrix}2&1&-3\\\\1&2&-2\\\\-1&3&2\\end{pmatrix},\\quad B=\\begin{pmatrix}1&-1\\\\2&0\\\\-2&5\\end{pmatrix}。$$",
+      "solution": "对 $(A\\mid B)$ 作行变换：先交换前两行，再消元，最终 $$ (A\\mid B)\\sim\\left(\\begin{array}{ccc|cc}1&0&0&-4&2\\\\0&1&0&0&1\\\\0&0&1&-3&2\\end{array}\\right)。$$ 因此 A 可逆，方程有唯一解 $$X=A^{-1}B=\\begin{pmatrix}-4&2\\\\0&1\\\\-3&2\\end{pmatrix}。$$",
+      "explanation": [
+        "B 有两列，等价于两个右端不同、系数矩阵相同的线性方程组，可一次消元同时求解。",
+        "无需先求完整的 A⁻¹；把 B 一起消元更直接，左块为 E 时右块即 X。",
+        "未知矩阵 X 必须是 3×2；可将 AX 相乘检验得到原 B。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        68,
+        69
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X069-6290",
+      "title": "例 4",
+      "chapter": 3,
+      "section_id": "LA-C03-S1",
+      "knowledge_ids": [
+        "LA-K03-01",
+        "LA-K03-02"
+      ],
+      "printed_page": 65,
+      "prompt": "求解 $$\\begin{cases}x_1-x_2-x_3=2,\\\\2x_1-x_2-3x_3=1,\\\\3x_1+2x_2-5x_3=0。\\end{cases}$$",
+      "solution": "对增广矩阵消元：$$\\left(\\begin{array}{ccc|c}1&-1&-1&2\\\\2&-1&-3&1\\\\3&2&-5&0\\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c}1&-1&-1&2\\\\0&1&-1&-3\\\\0&5&-2&-6\\end{array}\\right)\\sim\\left(\\begin{array}{ccc|c}1&0&0&5\\\\0&1&0&0\\\\0&0&1&3\\end{array}\\right)。$$ 故唯一解为 $$x=(5,0,3)^{\\mathsf T}。$$",
+      "explanation": [
+        "第二行减第一行的 2 倍，第三行减第一行的 3 倍，先消掉第一列下面的元素。",
+        "再用第二行消掉第三行的 5，可得第三个主元为 3；归一并向上消元。",
+        "这与第 2 章例 16 相同，但增广矩阵消元法通常比逐一计算行列式或完整逆矩阵更方便。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        69,
+        70
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X072-3549",
+      "title": "例 5",
+      "chapter": 3,
+      "section_id": "LA-C03-S2",
+      "knowledge_ids": [
+        "LA-K03-03"
+      ],
+      "printed_page": 68,
+      "prompt": "求矩阵 A、B 的秩，其中 $$A=\\begin{pmatrix}1&2&3\\\\2&3&-5\\\\4&7&1\\end{pmatrix},\\quad B=\\begin{pmatrix}3&2&0&5&0\\\\3&-2&3&6&-1\\\\2&0&1&5&-3\\\\1&6&-4&-1&4\\end{pmatrix}。$$",
+      "solution": "A 中二阶子式 $\\begin{vmatrix}1&2\\\\2&3\\end{vmatrix}=-1\\ne0$，而 $|A|=0$，故 $R(A)=2$。对 B 作行变换可得 $$B\\sim\\begin{pmatrix}1&6&-4&-1&4\\\\0&-4&3&1&-1\\\\0&0&0&4&-8\\\\0&0&0&0&0\\end{pmatrix}。$$ 阶梯形有三行非零行，因此 $R(B)=3$。",
+      "explanation": [
+        "对小方阵 A，找一个非零二阶子式，再证明唯一三阶子式为零，就能确定秩恰为 2。",
+        "对较大的 B，用行变换化阶梯形，再数非零行更有效。",
+        "不能仅数原矩阵的非零行，因为原矩阵的非零行之间可能存在依赖关系。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        72
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X072-8401",
+      "title": "例 6",
+      "chapter": 3,
+      "section_id": "LA-C03-S2",
+      "knowledge_ids": [
+        "LA-K03-03"
+      ],
+      "printed_page": 68,
+      "prompt": "设 $$A=\\begin{pmatrix}1&-2&2&-1\\\\2&-4&8&0\\\\-2&4&-2&3\\\\3&-6&0&-6\\end{pmatrix},\\quad b=\\begin{pmatrix}1\\\\2\\\\3\\\\4\\end{pmatrix}。$$ 求 A 与 $B=(A\\mid b)$ 的秩。",
+      "solution": "同步消元可得 $$B\\sim\\left(\\begin{array}{cccc|c}1&-2&2&-1&1\\\\0&0&2&1&0\\\\0&0&0&0&1\\\\0&0&0&0&0\\end{array}\\right)。$$ 左边 A 的阶梯形有 2 行非零行，而整块 B 有 3 行，故 $$R(A)=2,\\qquad R(B)=3。$$ 对应方程 $Ax=b$ 无解，因为第三行是 $0=1$。",
+      "explanation": [
+        "对增广矩阵只做行变换，左侧四列会同时成为 A 的一个阶梯形，因此一次消元可读两个秩。",
+        "第三行的主元在增广列中，这会增加 B 的秩，却不增加 A 的秩。",
+        "出现矛盾行 0=1，即使其余行都有正常系数，也足以使整个方程组无解。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        72,
+        73
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X073-4405",
+      "title": "例 7",
+      "chapter": 3,
+      "section_id": "LA-C03-S2",
+      "knowledge_ids": [
+        "LA-K03-03"
+      ],
+      "printed_page": 69,
+      "prompt": "设 $$A=\\begin{pmatrix}1&2&-1&1\\\\3&2&\\lambda&-1\\\\5&6&3&\\mu\\end{pmatrix}，$$ 已知 $R(A)=2$，求 $\\lambda,\\mu$。",
+      "solution": "作 $r_2\\gets r_2-3r_1$、$r_3\\gets r_3-5r_1$，再作 $r_3\\gets r_3-r_2$，得 $$A\\sim\\begin{pmatrix}1&2&-1&1\\\\0&-4&\\lambda+3&-4\\\\0&0&5-\\lambda&\\mu-1\\end{pmatrix}。$$ 前两行始终独立，秩要等于 2，最后一行必须全零，所以 $$\\lambda=5,\\qquad\\mu=1。$$",
+      "explanation": [
+        "前两个主元为 1、−4，均不随参数变化，所以秩至少是 2。",
+        "最后一行若有任一元素非零，就会形成第三个主元，秩将变成 3。",
+        "因此不是只令某一个三阶子式为零，而是同时令该行两个剩余元素都为零。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        73
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X075-1593",
+      "title": "例 8",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-04",
+        "LA-K03-05"
+      ],
+      "printed_page": 71,
+      "prompt": "设 A 为 n 阶矩阵，证明 $$R(A+E)+R(A-E)\\ge n。$$",
+      "solution": "因为 $$(A+E)+(E-A)=2E,$$ 利用 $R(U+V)\\le R(U)+R(V)$，得 $$n=R(2E)\\le R(A+E)+R(E-A)=R(A+E)+R(A-E)。$$",
+      "explanation": [
+        "把目标中的两个矩阵相加后消掉 A，留下满秩矩阵 2E。",
+        "E−A=−(A−E)，非零数乘不会改变矩阵的秩。",
+        "注意方向：秩的次可加性给出“和的秩≤秩之和”，故得到下界 n。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        75
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X075-2819",
+      "title": "例 9",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-04",
+        "LA-K03-05"
+      ],
+      "printed_page": 71,
+      "prompt": "证明：若 $A_{m\\times n}B_{n\\times l}=C$ 且 $R(A)=n$，则 $$R(B)=R(C)。$$",
+      "solution": "A 列满秩，存在可逆矩阵 P 使 $$PA=\\begin{pmatrix}E_n\\\\O\\end{pmatrix}。$$ 因而 $$PC=PAB=\\begin{pmatrix}B\\\\O\\end{pmatrix}。$$ 可逆左乘不改变秩，添零行也不改变秩，所以 $$R(C)=R(PC)=R\\begin{pmatrix}B\\\\O\\end{pmatrix}=R(B)。$$",
+      "explanation": [
+        "R(A)=n 等于列数，说明 A 的每一列都有主元，行最简形由单位矩阵和零行构成。",
+        "把使 A 变为该形式的可逆左乘 P 同时作用于 C，就将乘积简化为 B 下方添零行。",
+        "特别地，若 AB=O 且 A 列满秩，则 R(B)=0，从而 B=O；这比普通矩阵的消去律多了列满秩条件。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        75
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X077-4887",
+      "title": "例 10",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-05",
+        "LA-K03-04"
+      ],
+      "printed_page": 73,
+      "prompt": "求齐次方程组的通解：$$\\begin{cases}x_1+2x_2+2x_3+x_4=0,\\\\2x_1+x_2-2x_3-2x_4=0,\\\\x_1-x_2-4x_3-3x_4=0。\\end{cases}$$",
+      "solution": "系数矩阵化为行最简形 $$A\\sim\\begin{pmatrix}1&0&-2&-5/3\\\\0&1&2&4/3\\\\0&0&0&0\\end{pmatrix}。$$ 因而 $$x_1=2x_3+\\tfrac53x_4,\\qquad x_2=-2x_3-\\tfrac43x_4。$$ 令 $x_3=c_1,x_4=c_2$，得 $$x=c_1\\begin{pmatrix}2\\\\-2\\\\1\\\\0\\end{pmatrix}+c_2\\begin{pmatrix}5/3\\\\-4/3\\\\0\\\\1\\end{pmatrix},\\quad c_1,c_2\\in\\mathbb R。$$",
+      "explanation": [
+        "阶梯形的主元列是第 1、2 列，因此 x₁、x₂ 为受约束变量，x₃、x₄ 可自由取值。",
+        "共有 4 个未知数、秩为 2，所以需要 4−2=2 个独立参数。",
+        "两个参数分别取 (1,0)、(0,1) 得到两个基础解向量，它们的任意线性组合就是所有解。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        77,
+        78
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X078-4652",
+      "title": "例 11",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-05",
+        "LA-K03-04"
+      ],
+      "printed_page": 74,
+      "prompt": "求非齐次方程组 $$\\begin{cases}x_1-2x_2+3x_3-x_4=1,\\\\3x_1-x_2+5x_3-3x_4=2,\\\\2x_1+x_2+2x_3-2x_4=3。\\end{cases}$$ 的解。",
+      "solution": "增广矩阵消元后为 $$\\left(\\begin{array}{cccc|c}1&-2&3&-1&1\\\\0&5&-4&0&-1\\\\0&0&0&0&2\\end{array}\\right)。$$ 最后一行表示 $0=2$，故 $R(A)=2$、$R(A\\mid b)=3$，方程组无解。",
+      "explanation": [
+        "第二行减第一行的三倍，第三行减第一行的两倍，会得到系数部分相同而常数项相反的两行。",
+        "两行再相减，左边全部消为零、右边却等于 2，构成矛盾。",
+        "一旦出现矛盾行即可停止，无需再求自由变量或将其化为完整最简形。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        78
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X078-7892",
+      "title": "例 12",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-05",
+        "LA-K03-04"
+      ],
+      "printed_page": 74,
+      "prompt": "求非齐次方程组 $$\\begin{cases}x_1+x_2-3x_3-x_4=1,\\\\3x_1-x_2-3x_3+4x_4=4,\\\\x_1+5x_2-9x_3-8x_4=0。\\end{cases}$$ 的通解。",
+      "solution": "增广矩阵化为行最简形 $$\\left(\\begin{array}{cccc|c}1&0&-3/2&3/4&5/4\\\\0&1&-3/2&-7/4&-1/4\\\\0&0&0&0&0\\end{array}\\right)。$$ 令 $x_3=c_1,x_4=c_2$，得 $$x=c_1\\begin{pmatrix}3/2\\\\3/2\\\\1\\\\0\\end{pmatrix}+c_2\\begin{pmatrix}-3/4\\\\7/4\\\\0\\\\1\\end{pmatrix}+\\begin{pmatrix}5/4\\\\-1/4\\\\0\\\\0\\end{pmatrix},\\quad c_1,c_2\\in\\mathbb R。$$",
+      "explanation": [
+        "两矩阵秩相等且等于 2，小于未知数个数 4，因此有两个自由参数、无穷多解。",
+        "将主元变量 x₁、x₂ 用 x₃、x₄ 表示，常数项分别为 5/4、−1/4。",
+        "通解由一个特解加对应齐次方程组的通解组成；末向量是特解，前两个向量是齐次解。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        78,
+        79
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X079-6638",
+      "title": "例 13",
+      "chapter": 3,
+      "section_id": "LA-C03-S3",
+      "knowledge_ids": [
+        "LA-K03-04"
+      ],
+      "printed_page": 75,
+      "prompt": "设 $$\\begin{cases}(1+\\lambda)x_1+x_2+x_3=0,\\\\x_1+(1+\\lambda)x_2+x_3=3,\\\\x_1+x_2+(1+\\lambda)x_3=\\lambda。\\end{cases}$$ 问参数取何值时有唯一解、无解、无穷多解，并求无穷多解时的通解。",
+      "solution": "系数行列式 $$|A|=(\\lambda+3)\\lambda^2。$$ (1) $\\lambda\\ne0,-3$ 时行列式非零，有唯一解。(2) $\\lambda=0$ 时三个方程左端相同，右端含 0 与 3，互相矛盾，故无解；此时 $R(A)=1,R(A\\mid b)=2$。(3) $\\lambda=-3$ 时增广矩阵化为 $$\\left(\\begin{array}{ccc|c}1&0&-1&-1\\\\0&1&-1&-2\\\\0&0&0&0\\end{array}\\right),$$ 故 $R(A)=R(A\\mid b)=2$，有无穷多解：$$x=c\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}+\\begin{pmatrix}-1\\\\-2\\\\0\\end{pmatrix},\\quad c\\in\\mathbb R。$$",
+      "explanation": [
+        "先用方阵行列式找出特殊参数 0、−3；其他参数时直接判定唯一解。",
+        "行列式为零只能说明不唯一，不能直接断言无解；两个特殊值都必须单独检查增广矩阵。",
+        "λ=−3 时取 x₃=c，得到 x₁=c−1、x₂=c−2。含参消元时不要在未分类前除以可能为零的 λ 或 λ+3。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        79,
+        80,
+        81
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X089-7224",
+      "title": "例 1",
+      "chapter": 4,
+      "section_id": "LA-C04-S1",
+      "knowledge_ids": [
+        "LA-K04-01"
+      ],
+      "printed_page": 85,
+      "prompt": "例 1 设",
+      "solution": "证 明 向 量 能 由 向 量 组 w ,az ,as 线性 表示 ,并 求 出 表示 式 .\n解 根据 定理 1 ,要 证 矩阵 4= (ai ,az,as) 与 马 =(4,) 的 秩 相等 .为 此 ,把 如 化 成\n行 最 简 形 矩阵\n85\n\n11 11 11107o 3 2\npz|1 2 -1 9| 邮 | 1 -2 -212\n21 43| 一 |o-1 2 1 loo% oo\n23 01 0 1-2-) oo 0 0\n可 见 ,R(4)= 尺 (了 3) ,因此 ,向 量 丸 能 由 向 量 组 ci ,az ,as 线性 表示 .\n1\n由 上 述 行 最 简 形 矩 阵 , 可 得 方程 (ww ,aa ,as )| ”> | = 的 通 解 为\n3\n所 (-33f 2 1-3c+2\n加 IN 0 ce\n其 中 < 可 任意 取 值 ,从 而 得 表示 式\n2\n0= (ai ,aa ,as3)| za |=(-3c+2)ai+(2c-1)a2+cas-\n3",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        89,
+        90
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X090-4548",
+      "title": "例 2",
+      "chapter": 4,
+      "section_id": "LA-C04-S1",
+      "knowledge_ids": [
+        "LA-K04-01"
+      ],
+      "printed_page": 86,
+      "prompt": "例 2 设\n1 5 2 1 3\n-1 1 0 J -1\n|\n-1 3 1 2 0",
+      "solution": "证 明 向 量 组 ci ,a; 与 向 量 组 2 ,pb ,2 等 价 .\n证 记 4=(a,a),B=(b,b:,b). 根 据 定理 2 的 推论 ,只 要 证 R(4)= R( 刀 )=\nR(4,B). 为 此 把 矩阵 (4 , 刀 ) 化 成 行 阶梯 形 和 矩阵:\n1321 3 13 2 1 3 13213\n-1101 -04 2 2 2|， 02111\n(4,B)= 一 ，\n1110 2 站 嗓 枯 才 考 00000\n-1312 0 063 3 3 00000\n可 见 ,R(4)= 2,R(4,B)= 2.\n容易 看 出 矩阵 下 中 有 不 等 于 0 的 2 阶 子 式 , 故 尺 ( 妃 ) 2 又\nR(B)<RC4,B)=2，\n于 是 知 R( 下 )= 2 因此 ，\nR(4)=R(B)=R(4,B)，\n故 向 量 组 o, ,a; 与 向 量 组 j ,D: ,2 等 价 .\n\n定理 3 设 向 量 组 B: 思 ,2,…, 思 能 由 向 量 组 4:a,a,…,aw 线性 表示 , 则\n玉 ( 及 ,2 ) 三 尽 (aa Ge)\n证 记 4=(a,a,…,an), 了 =( 罗 ba,…,2). 按 定理 的 条 件 ,根据 定理 2 有\nR(4)=R(4,B) ,而 R(B)<R(4, 了 3) ,因此\n及 (B) <RC4). 证 毕\n前 面 我 们 把 定理 1 与 上 章 定理 5 对 应 ,把 定理 2 与 上 章 定理 6 对 应 ,而 定理 3 可 与\n上 章 定理 7 对 应 .事实 上 , 按 定理 3 的 条 件 , 知 有 矩阵 下, 使 如 =4 玉 ,从 而 根据 上 章 定理\n7, 即 有 R( 吾 ) <RC4).\n上 述 各 定理 之 间 的 对 应 ,其 基础 是 向 量 组 与 矩阵 的 对 应 ,从 而 有 下 述 对 应 ;\n向 量 组 B:5, ,02，…, 思 能 由 向 量 组 4:ai ,aa ，…,ao。 线性 表示\n仿 有 和 矩阵 下 ,使 甩 =A4 玉\n心 方 程 4E= 有 有 解 .\n上 述 对 应 的 三 种 令 述 都 可 对 应 到 充分 必要 条 件 :R(4)= R(4 ,下 ) ,并 都 有 必要 条\n件 :R(4) =R(B).",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        90,
+        91
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X091-4431",
+      "title": "例 3",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 87,
+      "prompt": "例 3 设 ” 维 向 量 组 4:ai ,aa ,…,aw 构成 nxm 矩阵 4= (eaz，…an) mn 阶 单位\n矩阵 巨 = (el ,ea ,es ) 的 列 向 量 叫做 ” 维 单位 坐标 向 量 . 证 明 :n 维 单位 坐标 向 量 组\neye，…yew 能 由 向 量 组 4 线性 表示 的 充分 必要 条 件 是 R(4)=",
+      "solution": "证 ”根据 定理 2, 向 量 组 e,,e:,…,e, 能 由 向 量 组 4 线性 表示 的 充分 必要 条 件 是\nR(4)=R(4, 巨 ).\n而 R(4, 巨 ) > 及 ( 殖 ) = nn, 又 矩阵 (4, 匹 ) 含 mn 行 , 知 R(4, 尼 ) <n, 合 起 来 有\nR(4, 巨 )=m 因 此 条 件 R(4)=R(4, 巨 ) 就 是 R(A)=m\n本 例 所 证 结论 用 矩阵 语言 可 倪 述 为\n对 和 矩阵 4 ,存在 矩阵 玉 。。 ,使 4K = 已, 的 充分 必要 条 件 是 R(4)= 半\n也 可 亿 述 为\n矩阵 方程 4。 了 = 已, 有 解 的 充分 必要 条 件 是 有 (4)=m (参见 第 3 章 习 题 三 第\n24 题 ).\n$2 向 量 组 的 线性 相关 性\n定义 4 给 定向 量 组 4:0 ,az,… ,an, 若 存在 不 全 为 零 的 数 石 ,入 ，… 如 ,使\nja +j12a2+…+an=0，\n则 称 向 量 组 4 是 线性 相关 的 ,否则 称 它 线性 无 关 .\n87\n\n对 于 只 含 一 个 向 量 a 的 向 量 组 , 当 a= 0 时 是 线性 相关 的 , 当 a& 关 0 时 是 线性 无 关\n的 .对 于 含 两 个 向 量 w, ,as 的 向 量 组 , 它 线性 相关 的 充分 必要 条 件 是 &, ,a; 的 分 量 对 应\n成 比例 ,其 几何 意义 是 两 向 量 共 线 . 三 个 向 量 线性 相关 的 几何 意义 是 三 向 量 共 面 .\n向 量 组 4:a, ,az,…,a。( 玫 2) 线性 相关 的 充分 必要 条 件 是 在 向 量 组 4 中 至 少\n有 一 个 向 量 能 由 其 余 m-1 个 向 量 线性 表示 .这 是 因为\n若 向 量 组 4 线性 相关 , 则 有 不 全 为 0 的 数 请 , 姑 ,…, 知 使 和 e+jaaa+…+knan=\n0. 因 态 , 刀 ji 不 全 为 0, 不 妨 设 国 夫 0, 于 是 便 有\n= 二 (basybast' tknas)，\n即 o, 能 由 a; ,a ,…,aw 线性 表示 .\n如 果 向 量 组 4 中 有 某 个 向 量 能 由 其 余 m-1 个 向 量 线性 表示 ,不妨 设 e。 能 由 a，\naa，…aw-i 线 性 表示 , 即 有 Ai ,Aa，…,Aw-i 使 ao=Aiai+Azaz+…+Awiawi ,于 是\nAiGi+A2aa2+…+Aw-iGn-i+(-1)an=0，\n因为 AN,A，…,Aw-,-1 这 普 个 数 不 全 为 0 (至 少 -1 尖 0) ,所 以 向 量 组 4 线性 相关 .\n向 量 组 4:a ,az,…,ao 构成 矩阵 4= (4 ,aa，…,qw) ,向 量 组 4 线性 相关 ,就 是 齐\n次 线性 方程 组\n1G1+X202+… 二 Xman 二 0\n即 4x=0 有 非 零 解 .由 上 章 定理 4, 立即 可 得\n定理 4 向 量 组 4:a,a;,…,a。 线性 相关 的 充分 必要 条 件 是 它 所 构成 的 矩阵 4=\n(aaz,…,aw ) 的 秩 小 于 向 量 个 数 mm; 向 量 组 4 线性 无 关 的 充分 必要 条 件 是 RO4)=m.",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        91,
+        92
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X092-5425",
+      "title": "例 4",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 88,
+      "prompt": "例 4 试 讨论 ” 维 单位 坐标 向 量 组 的 线性 相关 性 .",
+      "solution": "解 \" 维 单位 坐标 向 量 组 构成 的 矩阵\n五 =(el,ez，…ev)\n是 阶 单位 矩阵 .由 | 至 |=1 天 0, 知 及 (已 )= nm, 即 尺 ( 瑟 ) 等 于 向 量 组 中 向 量 的 个 数 , 故 由\n定理 4 知 此 向 量 组 是 线性 无 关 的 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        92
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X092-6620",
+      "title": "例 5",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 88,
+      "prompt": "例 5 已 知\n0 上\n1\nai=|1|，2=\n1 昌 7\n4\n试 讨论 向 量 组 el ,az ,as 及 向 量 组 c, ,a; 的 线性 相关 性 .",
+      "solution": "解 ” 对 矩阵 (a,a: ,as ) 施行 初等 行 变换 变 成 行 阶梯 形 和 矩阵, 即 可 同时 看 出 矩阵\n(aaa,as) 及 (ai,az) 的 秩 , 利 用 定理 4 即 可 得 出 结论 .\n1 0 2 1 0 2 1 0 2\n(evasa)=|1 2 4| 科 -| 2 2| 一 -| 2 2|，\n1 5 7 有 0 0 0\n88\n\n可 见 R(ai ,az,as)= 2, 故 向 量 组 ai ,aa,as 线性 相关 ;同时 可 见 R(a ,az)= 2, 故 向 量 组\naiyaa 线性 无 关 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        92,
+        93
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X093-1452",
+      "title": "例 6",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 89,
+      "prompt": "例 6 已 知 向 量 组 ec ,oa; ,as 线性 无 关 , 六 =ai+az ,ba =az+a3,b3=43+4i, 试 证 向 量\n组 访 , 思 ,bs 线性 无 关 .",
+      "solution": "证 法 1 设 有 x ,xz,xs 使\nx+xa8a+x3D3 =0，\n即\n作\nxi(ai+aa ) +xa(aa+G3 ) +xa(G3+GI )= 0，\n亦 即\n《xi1+xa )Qi+(2%I+xa ) aa+(xa+xs )G3=0，\n因 w, ,aas 线性 无 关 , 故 有\n1+X3 二 0，\n+xa=0，\nx+za=0，\n由 于 此 方程 组 的 系数 矩阵\n1 0 1\n1 1 0\n0 1 1\n的 行列 式 | 天 |=2 尖 0, 故 方程 组 只 有 零 解 % = 和 = 入 =0, 所 以 向 量 组 六 ,5 ,5 线性\n无 关 .\n证 法 2 把 已 知 的 三 个 向 量 等 式 写成 一 个 矩阵 等 式\n10 1\noaareeo 1 0\n0 1 1\n记 作 玉 =4R. 设 Br=0, 以 刀 =4 下 代入 得 4( 和 zx)= 0. 因 为 矩阵 4 的 列 向 量 组 线性 无 关 ，\n根据 向 量 组 线性 无 关 的 定义 , 知 Exz =0. 又 因 | 下 |=2 天 0, 知 方程 Rxz = 0 只 有 零 解 x=\n小 所 以 矩阵 如 的 列 向 量 组 加 ,22 ,2: 线性 无 关 .\n证 法 3 把 已 知 条 件 合 写成\n1 0 1\noaareeo 1 0\n0 1 1\n记 作 妇 =4K. 因 | 天 |=2 天 0, 知 天 可 道 ,根据 上 章 所 述 矩 阵 秩 的 性 质 @ 知 R(B)= R(A).\n因为 4 的 列 向 量 组 线性 无 关 ,根据 定理 4 知 R(4)= 3, 从 而 R(B)= 3, 再 由 定理 4\n89\n\n知 妇 的 3 个 列 向 量 线性 无 关 , 即 和 ,5 ,2 线性 无 关 .\n本 例 给 出 三 种 证 法 ,这 三 种 证 法 都 是 常用 的 .证 法 1 是 按 线性 相关 性 的 定义 ,通过\n向 量 的 运算 得 到 以 天 为 系数 矩阵 的 齐 次 方程 组 ,再 把 问题 转化 为 它 只 有 零 解 ;证 法 2\n和 证 法 3 都 首先 把 已 知 三 个 向 量 等 式 合并 成 矩阵 等 式 ,立即 得 到 矩阵 下 ;之 后 ,证 法 2\n把 证 明 向 量 组 线性 无 关 转 化 为 证 明 齐 次 方程 组 没有 非 零 解 ,因而 去 考察 方程 组 Bx =\n0, 证 法 3 用 了 矩阵 的 秩 的 有 关 知 识 , 还 用 了 定理 4, 从 而 可 以 不 涉及 线性 方程 组 而 直\n接 证 得 结论 .\n线性 相关 性 是 向 量 组 的 一 个 重要 性 质 , 下 面 介绍 与 之 有 关 的 一 些 简单 的 结论\n定理 5 (1) 若 向 量 组 4:a, ,a;,…,a。 线性 相关 , 则 向 量 组 B:ai ,aa，…,anyann\n也 线性 相关 .反之 , 若 向 量 组 中 线性 无 关 , 则 向 量 组 4 也 线性 无 关 .\n(2) mm 个 mn 维 向 量 组 成 的 向 量 组 ; 当 维 数 \" 小 于 向 量 个 数 m 时 一 定 线性 相关 . 特\n别 地 ,n+1l 个 n 维 向 量 一 定 线性 相关 .\n(3) 设 向 量 组 4:ai ,a:,…,aw 线性 无 关 , 而 向 量 组 B:a ,a:,…,a。,2 线性 相关 ，\n则 向 量 必 能 由 向 量 组 4 线性 表示 , 且 表 示 式 是 惟一 的 .\n证 ”这些 结论 都 可 利用 定理 4 来 证 明 .\n(1) 记 4=(al,a…an) ,有 =(a,aa…anyami), 有 尺 ( 玉 ) 三 R(A)+1. 因 向 量\n组 4 线性 相关 , 故 根据 定理 4, 有 R(4)<m, 从 而 R() <R(4)+1<m+1, 因 此 根据 定理\n4 知 向 量 组 下 线 性 相关 .\n(2) mm 个 nm 维 向 量 ci ,az,…,aw 构成 矩阵 4wo。 = (ai ,aa,…,ao), 有 R(4) <m. 当\nn<m 时 ,有 及 (4) <m, 故 mm 个 向 量 ai ,aa ,an 线性 相关 .\n(3) 记 4=(@,aa an),=(ayaa an 沁 ), 有 及 (4) 三 尺 ( 巨 ). 因 向 量 组 4\n线性 无 关 , 有 R(4)= mm; 因 向 量 组 妃 线 性 相关 ,有 及 (下 ) <m+1. 所 以 严 短 及 ( 互 ) <m+1，\n即 有 R( 吾 )= mm.\n由 R(4)=R()=mm, 根 据 上 章 定理 3, 知 方程 组\n《ai aa ，…Qm) 工 = 太\n有 惟一 解 , 即 向 量 妨 能 由 向 量 组 4 线性 表示 , 且 表示 式 是 惟一 的 . 证 毕\n结论 (1) 是 对 向 量 组 增加 1 个 向 量 而 言 的 ,增加 多 个 向 量 结论 也 仍然 成 立 . 即 设 向 量\n组 4 是 向 量 组 妃 的 一 部 分 (这 时 称 向 量 组 4 是 向 量 组 刀 的 部 分 组 ) ,于 是 结论 (1) 可 一 般\n地 叙述 为 :一 个 向 量 组 若 有 线性 相关 的 部 分 组 , 则 该 向 量 组 线性 相关 .特别 地 , 含 零 向 量\n的 向 量 组 必 线 性 相关 .一 个 向 量 组 若 线性 无 关 , 则 它 的 任何 部 分 组 都 线性 无 关 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        93,
+        94
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X094-8220",
+      "title": "例 7",
+      "chapter": 4,
+      "section_id": "LA-C04-S2",
+      "knowledge_ids": [
+        "LA-K04-02"
+      ],
+      "printed_page": 90,
+      "prompt": "例 7， 设 向 量 组 ci ,a;,as 线性 相关 ,向 量 组 aa ,as,a 线性 无 关 , 证 明 :\n(1) a, 能 由 aa ,as 线性 表示 ;\n(2) a, 不 能 由 w ,aa ,as 线性 表示 .",
+      "solution": "证 (1) 因 a;,ai,a, 线性 无 关 ,由 定理 5(1 ) 知 ea,as 线性 无 关 ,而 ci ,az ,as 线性\n相关 ,由 定理 5(3) 知 w 能 由 ,as 线性 表示 . _\n(2) 用 反 证 法 .假设 ae 能 由 ai ,az ,as 线性 表示 ,而 由 (1) 知 w, 能 由 a: ,as 线性 表\n示 , 因 此 as 能 由 az ,as 线性 表示 ,这 与 ax ,aa ,a4 线性 无 关 矛 盾 . 故 es 不 能 由 w ,az,as\n线性 表示 .\n$3 向 量 组 的 秩\n在 上 两 节 的 讨论 中 ,向 量 组 只 局 限于 含有 限 个 向 量 .现在 我 们 将 去 掉 这 一 限制 :向\n量 组 可 以 含 无 限 多 个 向 量 .\n例如\n国 旧 四 一\n0 人 2 下\n与\n人 人 四- 全\n就 是 这 样 的 向 量 组 .因为 它们 都 是 2 维 向 量 组 ,由 定理 5 之 (2) , 知 向 量 组 4 或 向 量 组\n了 中 任意 三 个 向 量 都 是 线性 相关 的 ;但 进一步 从 线性 无 关 部 分 组 所 含 向 量 的 个 数 来 看\n就 不 一 样 了 :向 量 组 刀 中 有 含 两 个 向 量 的 线性 无 关 部 分 组 ,如 四 ， 图 ;但 向 量 组 4\n2\n中 任何 含 两 个 向 量 的 部 分 组 都 是 线性 相关 的 ,换言之 ,4 组 中 只 有 最 多 含 一 个 向 量 的\n线性 无 关 部 分 组 ,而 刀 组 中 却 有 最 多 含 两 个 向 量 的 线性 无 关 部 分 组 ,\n上 一 章 中 ,我 们 引入 了 和 撼 阵 的 最 高 阶 非 零 子 式 ,并 把 它 的 阶 数 定义 为 矩阵 的 秩 , 它\n在 前 两 节 向 量 组 线性 表示 和 线性 相关 性 的 讨论 中 起 了 十 分 重要 的 作用 .现在 , 按 向 量\n组 与 矩阵 的 对 应 ,特别 把 含 最 多 个 向 量 的 线性 无 关 部 分 组 与 最 高 阶 的 非 零 子 式 相对\n应 ,就 可 将 秩 的 概念 引进 向 量 组 ,\n定义 5 ” 设 有 向 量 组 4, 如 果 在 4 中 能 选 出 \"个 向 量 ec,,a:，…,a, ,满足\n(i) 向 量 组 4o:a ,aa，…,@, 线性 无 关 ;\n(ii) 向 量 组 4 中 任意 z+1 个 向 量 (如 果 4 中 有 r+1 个 向 量 的 话 ) 都 线性 相关 ,那么 称\n向 量 组 4 是 向 量 组 4 的 一 个 最 大 线性 无 关 向 最 组 (简称 最 太 无 关 组 ) ,最 大 无 关 组 所\n含 向 量 的 个 数 \" 称 为 向 量 组 4 的 秩 , 记 作 R.\n只 含 零 向 量 的 向 量 组 没有 最 大 无 关 组 ,规定 它 的 秩 为 0.\n91\n\n根据 定义 5, 本 节 一 开始 给 出 的 向 量 组 4 的 秩 Ri = 1， 人 js 一 个 县 大 天\n组 ;向 量 组 8 的 秩 By= 2， 0 ， 上] 生计 风 一 个 县 大 天 ,显然 者 的 最 大 天 闫 组\n都 不 惟一 (甚至 都 有 无 限 多 个 ).\n若 向 量 组 4 线性 无 关 , 则 4 自身 就 是 它 的 最 大 无 关 组 ,而 其 秩 就 等 于 它 所 合 向 量\n的 个 数 .\n向 量 组 4 和 它 自己 的 最 大 无 关 组 4 是 等 价 的 .这 是 因为 向 量 组 4 是 向 量 组 4 的\n一 个 部 分 组 , 故 向 量 组 ho 总 能 由 向 量 组 4 线性 表示 (4 中 每 个 向 量 都 能 由 向 量 组 4 线\n性 表示 ) ;而 由 定义 5 的 条 件 (ii) 知 ,对 于 4 中 任 一 向 量 e,r+1l 个 向 量 ai ,az，…,arya\n线性 相关 ,而 wa;…,a 线性 无 关 , 根 据 定理 5 (3) 知 a 能 由 ,az…,o, 线性 表示 , 即\n向 量 组 4 能 由 向 量 组 4 线性 表示 .所 以 向 量 组 4 与 向 量 组 4 等 价 .n 维 向 量 组 4 可 能\n含有 许多 个 甚至 无 限 多 个 向 量 ,但 ho 至 多 含 n 个 向 量 .\n上 述 结论 的 逆 命 题 也 是 成 立 的 , 即 能 与 向 量 组 自身 等 价 的 线性 无 关 部 分 组 一 定 是\n最 大 无 关 组 , 现 把 它 作为 定理 3 的 推论 叙述 如 下 ;\n推论 (最 大 无 关 组 的 等 价 定 义 ) ” 设 向 量 组 4u:a ,a;,…,a, 是 向 量 组 4 的 一 个 部\n分 组 , 且 满足\n(i) 向 量 组 4 线性 无 关 ;\n(ii) 向 量 组 4 的 任 一 向 量 都 能 由 向 量 组 4。 线性 表示 ，\n那么 向 量 组 4 便 是 向 量 组 4 的 一 个 最 大 无 关 组 .\n证 “只 要 证 向 量 组 4 中 任意 r+1 个 向 量 线性 相关 . 设 六 ,22，…,2。, 是 4 中 任意\n+1 个 向 量 , 由 条 件 (这 ) 知 这 r+1 个 向 量 能 由 向 量 组 4 线性 表示 ,从 而 根据 定理 3, 有\n及 (2 5) 二 及 (ai yaa sa,)=\n再 据 定理 4 知 r+1 个 向 量 妨 ,六 ，…,5 线 性 相关 .因此 向 量 组 4 满足 定义 5 所 规定 的\n最 大 无 关 组 的 条 件 . 证 毕\n下 面 给 出 分 别 按 定义 5 和 它 的 等 价 定义 求 向 量 组 的 秩 的 例题 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        94,
+        95,
+        96
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X096-7183",
+      "title": "例 8",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03"
+      ],
+      "printed_page": 92,
+      "prompt": "例 8 全体， 维 向 量 构成 的 向 量 组 记 作 及 \", 求 可 的 一 个 最 大 无 关 组 及 取 \" 的 秩 .\n解 “在 例 4 中 ,我 们 证 明了 \" 维 单 位 坐标 向 量 构成 的 向 量 组\n尼 :e1yez，ew\n是 线性 无 关 的 ,又 根据 定理 5 的 结论 (2) , 知 及 \" 中 的 任意 n+1l 个 向 量 都 线性 相关 , 因\n此 向 量 组 刁 是 取 \" 的 一 个 最 大 先 关 组 , 且 取 \" 的 秩 等 于\n显然, 取 \" 的 最 大 无 关 组 很 多 ,任何 n 个 线性 无 关 的 m 维 向 量 都 是 及 \" 的 最 大 无\n关 组 .\n92",
+      "solution": "",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "题干与解答边界尚待人工划分；不能据此认定原书无解答。"
+      ],
+      "source_pages": [
+        96,
+        97
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X097-0939",
+      "title": "例 9",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03"
+      ],
+      "printed_page": 93,
+      "prompt": "例 9 设 齐 次 线性 方程 组\nx+2xa2+ x3-2x4=0，\n2x,+3x2> - xj=0，\n七 - 和-Sx3+7x4=0\n的 全 体 解 向 量 构成 的 向 量 组 为 S, 求 的 秩 .",
+      "solution": "解 ” 先 解 方程 ,为 此 把 系数 矩阵 4 化 成 行 最 简 形 矩阵 :\n1 2 1-2 1 21- omfl0 -3 4\n4=|2 3 0-1| 妇 |o-1-2 3| 呈 So 1 : 直\n1-1-5 7 0-3-6 9 00 00\n得\n志 =3x-4zi\n人\n令 自 由 未 知 数 x; =ci,xs=ca ,得 通 解\n后 3\\、 -4\n| |-2\n居 = 1 | 到 (ccze 了 到) ，\n0 1\n把 上 式 记 作 x=cit+cxs , 知\nS= |z|z=ctit+cx&accze 取 | ，\n即 $ 能 由 向 量 组 志 ,线性 表示 .又 因 霹 , 络 的 四 个 分 量 显然 不 成 比例 , 故 专 ,所 线性\n无 关 , 因 此 根据 最 大 无 关 组 的 等 价 定义 知 台 , 络 是 $ 的 最 大 无 关 组 ,从 而 Rs= 2.\n对 于 只 含有 限 个 m 维 向 量 的 向 量 组 4:ai ,as,…,aw, 它 可 以 构成 矩阵 4= (al ,as，…，\nw). 把 定义 5 与 上 章 矩 阵 的 最 高 阶 非 零 子 式 及 矩阵 的 秩 的 定义 作 比较 ,容易 想到 向 量\n组 4 的 秩 就 等 于 矩阵 4 的 秩 , 即 有\n定理 6 ”和 矩 阵 的 秩 等 于 它 的 列 向 量 组 的 秩 ,也 等 于 它 的 行 向 量 组 的 秩 .\n证 设 4=(o,oa,…vans),R(CA)=m, 并 设 r 阶 子 式 甩 关 0. 根 据 定理 4, 由 也, 尖 0\n知 及 所 在 的 r 列 构成 的 nxr 矩阵 的 秩 为 r, 故 此 r 列 线性 无 关 ; 又 由 4 中 所 有 7+1 阶\n子 式 均 为 零 , 知 4 中 任意 r+1 个 列 向 量 构成 的 nx(r+1) 矩 阵 的 秩 <r+1, 故 此 r+1l 列 线\n性 相关 .因此 ,所 在 的 列 是 4 的 列 向 量 组 的 一 个 最 大 无 关 组 ,所 以 列 向 量 组 的 秩 等\n平 m\n类 侯 可 证 矩阵 4 的 行 向 量 组 的 秩 也 等 于 R(4). 证 毕\n今后 向 量 组 ci ,ea ,…,aw 的 秩 也 记 作 R(ai ,az ,…，,aw).\n从 上 述 证 明 中 可 见 : 若 了 , 是 矩阵 4 的 一 个 最 高 阶 非 霍 子 式 , 则 及 所 在 的 r 列 即\n93\n\n是 4 的 列 向 量 组 的 一 个 最 大 无 关 组 , 忆 , 所 在 的 > 行 即 是 4 的 行 向 量 组 的 一 个 最 大 无\n关 组 .这 一 事实 在 下 面 的 例题 中 得 到 应 用 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        97,
+        98
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X098-1271",
+      "title": "例 10",
+      "chapter": 4,
+      "section_id": "LA-C04-S3",
+      "knowledge_ids": [
+        "LA-K04-03"
+      ],
+      "printed_page": 94,
+      "prompt": "例 10 设 矩 阵\n2 -1 -1 12\n1 1 -2 14\n4= ，\n4 -6 2 -2 4\n3 6 -9 7 9\n求 矩 阵 4 的 列 向 量 组 的 一 个 最 大 无 关 组 ,并 把 不 属于 最 大 无 关 组 的 列 向 量 用 最 大 无\n关 组 线性 表示 .",
+      "solution": "解 对 4 施行 初等 行 变换 变 为 行 阶梯 形 和 矩阵 (参看 第 3 章 $ 1 引 例 )\n1 -21 4\n0 1L1 -1 1 0\n4 二\n00 00 0\n知 R(4)= 3, 故 列 向 量 组 的 最 大 无 关 组 含 3 个 向 量 .而 三 个 非 零 行 的 首 元 在 第 1,2,4\n三 列 , 故 e ,aa,a4 为 列 向 量 组 的 一 个 最 大 无 关 组 .\n为 把 os,as 用 ,az,a4 线性 表示 ,把 4 再 变 成 行 最 简 形 矩阵\n10-10 4\n,|01 -10 3\n4 一 ，\n00 01 -3\n00 00 0\n把 上 述 行 最 简 形 矩 阵 记 作 如 = (bi ,ba ,2 ,2 ,25) , 则 方程 4z= 0 与 Bxz=0 同 解 , 即 方程\n21G1 +xaG2+x303+X4G4+X505 = 人\n与\n和 1 态 ， +X2 古 2 十 X3 态 3 十 %44+X555 = 人\n同 解 .现在\n于 1 0\n到 0 1\n加 = =(~1) +(-1) 0 = 一 -b2，\n0 0 0\n,= 45 +352-37，\n此 即 z=-l,z=-l,xs=-1,x=0,xs=0 与 zi=4,xa=3,xz=0,xi=-3,xs=-1 是 Br=0\n的 解 ,因此 也 是 4x=0 的 解 .\n\n故 也 有\n03 =-Qi-d2， 45=4ai+302 一 304\n依据 向 量 组 的 秩 的 定义 及 定理 6 可 知 前 面 介绍 的 定理 1 定理 2 定理 3 定理 4 中\n出 现 的 矩阵 的 秩 都 可 改 为 向 量 组 的 秩 .例如 定理 2 可 令 述 为\n定理 2” 向 量 组 久 ,2,…, 能 由 向 量 组 c, ,oa:,…,aw 线性 表示 的 充分 必要 条\n件 是\n及 (ai ,az wm)= 尽 (ai Ga Gy 2\n这 里 记号 Ra ,a,…,aw ) 既 可 理解 为 矩阵 的 秩 , 也 可 理解 成 向 量 组 的 秩 .\n前 面 我 们 建立 定理 1 定理 2 定理 3 时 ,限制 向 量 组 只 含有 限 个 向 量 ,现在 我 们\n要 去 掉 这 一 限制 ,把 定理 1* 定 理 2 定理 3 推广 到 一 般 情 形 .推广 的 方法 是 利用 向 量\n组 的 最 大 无 关 组 作 过 渡 . 下 面 仅 推广 定理 ,定理 1 和 定理 2 的 推广 请 读者 自行\n完成 .\n定理 3 若 向 量 组 也 能 由 向 量 组 4 线性 表示 , 则 Re 大 R.\n证 设 Ri=s,Rs=tb 并 设 向 量 组 4 和 有 的 最 大 无 关 组 依次 为\n4o:002 10， 和 Bo:D 0\n由 于 向 量 组 Be 能 由 向 量 组 刀 线 性 表示 ,向 量 组 刀 能 由 向 量 组 4 线性 表示 ,向 量 组 4\n能 由 向 量 组 4 线性 表示 ,因此 向 量 组 Be 能 由 向 量 组 he 线性 表示 ,根据 定理 3, 有\n民 ( 厂 82) 三民 (aa 0) ，\n即 < 证 毕\n今后 ,定理 3 与 定理 3' 将 不 加 区 别 ,都 称 定理 3. 定 理 1 和 2 与 推广 后 的 定理 也 不 加\n区 别",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        98,
+        99
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X099-6169",
+      "title": "例 11",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 95,
+      "prompt": "例 11 设 向 量 组 妃 能 由 向 量 组 4 线性 表示 , 且 它 们 的 秩 相等 ,证 明 向 量 组 4 与 向\n量 组 了 等 价 .",
+      "solution": "证 设 向 量 组 4 和 妃 合 并 成 向 量 组 C ,根据 定理 2, 因 向 量 组 妃 能 由 向 量 组 4\n表示 , 故 Ri=Rc, 又 已 知 Re=R4, 故 有 Ri=Ra=Rc. 根 据 定理 2 的 推论 , 知 向 量 组 4\n与 向 量 组 等 价 .\n8$4 向 量 空间\n本 章 $ 1 中 把 上 维 向 量 的 全 体 所 构成 的 集合 取 \" 叫做 = 维 向 量 空间 .下 面 介 绍 向\n量 空间 的 有 关 知 识 .\n定义 6 设 了 为 ” 维 向 量 的 集合 ,如 果 集 合 了 非 空 , 且 集合 了 对 于 向 量 的 加 法 及\n95\n\n数 乘 两 种 运算 封闭 ,那么 就 称 集合 Y 为 向 量 空间 .\n所 谓 填 闭 ,是 指 在 集合 Y 中 可 以 进行 向 量 的 加 法 及 数 乘 两 种 运算 .具体 地 说 ,就\n是 : 若 aeV,bpey, 则 a+be; 若 ae,Ae 取 , 则 AaeR",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        99,
+        100
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X100-1451",
+      "title": "例 12",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "说明三维向量的全体 $\\mathbb R^3$ 为什么是向量空间，并推广到 $\\mathbb R^n$。",
+      "solution": "任意两个三维向量之和仍是三维向量，任意实数与三维向量的数乘也仍是三维向量，故对加法和数乘封闭，构成向量空间。类似地，$\\mathbb R^n$ 也是向量空间。",
+      "explanation": [
+        "取 a=(a₁,a₂,a₃)ᵀ、b=(b₁,b₂,b₃)ᵀ，则 a+b=(a₁+b₁,a₂+b₂,a₃+b₃)ᵀ，仍有三个实数分量。",
+        "对任意 λ∈ℝ，λa=(λa₁,λa₂,λa₃)ᵀ 也仍属于 ℝ³；逐分量定义的运算已满足向量空间运算律。",
+        "当 n>3 时仍是向量空间，但通常不再有三维空间中那样直接的几何图像。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X100-3203",
+      "title": "例 13",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "判断集合 $$V=\\{x\\mid x=(0,x_2,\\ldots,x_n)^{\\mathsf T},\\ x_2,\\ldots,x_n\\in\\mathbb R\\}$$ 是否为向量空间。",
+      "solution": "是。若 $a=(0,a_2,\\ldots,a_n)^{\\mathsf T}$、$b=(0,b_2,\\ldots,b_n)^{\\mathsf T}$ 属于 V，$\\lambda\\in\\mathbb R$，则 $$a+b=(0,a_2+b_2,\\ldots,a_n+b_n)^{\\mathsf T}\\in V,$$ $$\\lambda a=(0,\\lambda a_2,\\ldots,\\lambda a_n)^{\\mathsf T}\\in V.$$",
+      "explanation": [
+        "本集合的限制只有第一分量等于零，其他分量任意。",
+        "两个零相加仍是零，零乘任意标量仍是零，所以两种运算都保持这一限制。",
+        "V 非空且对通常的加法、数乘封闭，故是 ℝⁿ 的子空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X100-4471",
+      "title": "例 14",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "判断集合 $$V=\\{x\\mid x=(1,x_2,\\ldots,x_n)^{\\mathsf T},\\ x_2,\\ldots,x_n\\in\\mathbb R\\}$$ 是否为向量空间。",
+      "solution": "不是。取 $a=(1,a_2,\\ldots,a_n)^{\\mathsf T}\\in V$，则 $$2a=(2,2a_2,\\ldots,2a_n)^{\\mathsf T}\\notin V.$$",
+      "explanation": [
+        "数乘封闭要求对所有实数标量都成立；找到一个反例就足以否定。",
+        "标量取 2 时第一分量从 1 变成 2，违反集合的定义，所以不封闭。",
+        "零向量也不在此集合中，这同样能迅速说明它不是向量空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X100-5487",
+      "title": "例 15",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "判断 n 元齐次线性方程组的解集 $$S=\\{x\\mid Ax=0\\}$$ 是否为向量空间。",
+      "solution": "是，称为齐次线性方程组的解空间。若 $\\xi_1,\\xi_2\\in S$，$\\lambda\\in\\mathbb R$，则 $$A(\\xi_1+\\xi_2)=A\\xi_1+A\\xi_2=0,$$ $$A(\\lambda\\xi_1)=\\lambda A\\xi_1=0.$$ 所以 $\\xi_1+\\xi_2\\in S$ 且 $\\lambda\\xi_1\\in S$。",
+      "explanation": [
+        "解向量相加后，矩阵乘法的分配律使结果仍满足 Ax=0。",
+        "解向量乘任意实数后，由 A(λξ)=λ(Aξ) 可知结果仍为零。",
+        "零向量本身就是解，所以解集非空；这与非齐次方程组的解集性质不同。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X100-6489",
+      "title": "例 16",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "判断非齐次线性方程组的解集 $$S=\\{x\\mid Ax=b\\},\\qquad b\\ne0$$ 是否为向量空间。",
+      "solution": "不是。若 S 为空集，则不构成向量空间。若 S 非空，取 $\\eta\\in S$，则 $$A(2\\eta)=2b\\ne b,$$ 故 $2\\eta\\notin S$。",
+      "explanation": [
+        "先分清无解和有解两种情形：空集缺少零向量，自然不是向量空间。",
+        "有解时取任意一个解 η；其两倍满足的右端是 2b，而不是原方程的 b。",
+        "因为 b≠0，所以 2b≠b，数乘不封闭。非齐次解集通常是平移后的集合，而非子空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X100-7463",
+      "title": "例 17",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 96,
+      "prompt": "设 a、b 为两个已知的 n 维向量，判断 $$V=\\{\\lambda a+\\mu b\\mid\\lambda,\\mu\\in\\mathbb R\\}$$ 是否为向量空间。",
+      "solution": "是。取 $x_1=\\lambda_1a+\\mu_1b$、$x_2=\\lambda_2a+\\mu_2b$，$k\\in\\mathbb R$，则 $$x_1+x_2=(\\lambda_1+\\lambda_2)a+(\\mu_1+\\mu_2)b\\in V,$$ $$kx_1=(k\\lambda_1)a+(k\\mu_1)b\\in V.$$ 此空间记作 $\\operatorname{Span}\\{a,b\\}$。",
+      "explanation": [
+        "相加只是把 a、b 各自的系数相加，结果依然是同两个向量的线性组合。",
+        "数乘只是把两个系数同时乘 k，形式也保持不变。",
+        "取 λ=μ=0 得零向量；无论 a、b 是否线性相关，这个集合都构成向量空间。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        100,
+        101
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X101-1671",
+      "title": "例 18",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 97,
+      "prompt": "例 18 设 向 量 组 cl ,az，…,aw 与 向 量 组 0 22，…,2, 等 价 , 记\n万 = | Ai+Aaaa+…+Anan | AAA E 取 | ，\n五 = | 启 术 Ha82+ Ha ss E 取 | ，\n试 证 局 = 疡 .",
+      "solution": "证 设 xe 矿 , 则 x 可 由 avaa，…aw 线性 表示 . 因 a ,aa ，…aw 可 由 轧 , 加 2, 线性\n表示 , 故 x 可 由 轧 , 思 ,线性 表示 ,所 以 ze 厂 . 这 就 是 说 , 若 ze 厂 , 则 ze 瑟 , 因 此\n本 辐\n类 他 地 可 证 : 若 ze 疡 , 则 ze 万, 因此 疡 己方\n因为 厂 GE 疡 , 疡 E 三 ,所 以 万 = 六.\n定义 7 ” 设 有 向 量 空间 妨 及 用 , 若 矶 G 用 ,就 称 册 是 到 的 空间 子 .\n例如 任何 由 王 维 向 量 所 组 成 的 向 量 空间 ,总 有 YE 了 及\" ,这样 的 向 量 空间 总 是 及 \"\n的 子 空间 . 据 此 可 知 , 例 13、 例 15、 例 17 中 的 向 量 空间 均 是 及 \" 的 子 空间 .\n定义 8 设 了 为 向 量 空间 ,如 果 个 向 量 a ,aa ,asey, 且 满足\n(i) ww ,aa ，…，a, 线性 无 关 ;\n( 芝 ) 了 中 任 一 向 量 都 可 由 w, ,a;,…,a, 线性 表示 ，\n那么 向 量 组 w ,wa,…,a, 称 为 向 量 空间 了 的 二 个 基 ,r 称 为 向 量 空间 了 的 维 数 , 记 为\ndim =r, 并 称 了 为 > 维 向 量 空间 .\n如 果 向 量 空 间 了 没有 基 ,那么 了 的 维 数 为 0. 0 维 向 量 空间 只 含 一 个 零 向 量 0.\n若 把 向 量 空间 了 看 作 向 量 组 , 则 由 最 大 无 关 组 的 等 价 定 义 可 知 ,Y 的 基 就 是 向 量\n组 的 最 大 无 关 组 ,” 的 维 数 就 是 向 量 组 的 秩 .\n例如 ,由 例 8 知 ,任何 ”个 线性 无 关 的 维 向 量 都 可 以 是 向 量 空间 了 及\" 的 一 个 基 ，\n且 由 此 可 知 及 \" 的 维 数 为 ,所 以 我 们 把 及 \" 称 为 上 维 向 量 空间 .\n又 如 ,向 量 空间\nV= 1(0,za)7 xx E 取 }\n的 一 个 基 可 取 为 es = (0,1;0,…,0) ,…,es=(0,…,0,1) 7 并 由 此 可 知 它 是\nmn-1 维 向 量 空间 .\n设 由 向 量 组 w ,a:，…,aw 所 生成 的 向 量 空间\n了 = | Ai+Aza2+…+Anan | AAAnE 取 | ，\n显然 向 量 空间 与 向 量 组 w ,az，… ,an 等 价 ,所 以 向 量 组 ai ,az ,…,aw 的 最 大 无 关 组\n就 是 工 的 一 个 基 , 向 量 组 cl ,a; ,…,aw 的 秩 就 是 工 的 维 数 ，\n若 向 量 组 al ,aa ,…,a, 是 向 量 空间 了 的 一 个 基 , 则 了 可 表示 为\n97\n\nV= | Aiai+Azaa+…+A,a | AAAE 取 | ，\n即 了 是 基 所 生成 的 向 量 空 间 Span | ae, ,az,…a,| ,这 就 较 清楚 地 显示 出 向 量 空间 了 的\n构造 .\n例如 齐 次 线性 方程 组 的 解 空间 S= |x* | 4x=0| , 若 能 找到 解 空间 的 一 个 基 专 ，\n纪 ,，… 改 , 则 解 空间 可 表示 为\nS= | ci 用 +cx 世 2+…+c 志 ， | cycz， 和 cn E 到 | .\n定义 9 如 果 在 向 量 空间 7 中 取 定 一 个 基 o,a ,…,a,, 那 么 了 中 任 一 向 量 x 可 惟\n一 地 表示 为\n天 三 AIGI+ 和 A2Q2 二 十 和 AGE\n这 个 有 序数 组 A,,A2，…,A, 称 为 向 量 x 在 基 wa ,az,…,a, 下 的 付 标 ,并 记 作 (Ai,A2，…，\n必 )\n特别 地 ,在 = 维 向 量 空间 及 \" 中 取 单 位 坐标 向 量 组 el,e,…,e, 为 基 , 则 以 二,，\n入,…an 为 分 量 的 向 量 * 可 表示 为\n工 =x1E1+XaE2 二 二 XnEny\n可 见 向 量 在 基 e,e:,…,e, 下 的 坐标 就 是 该 向 量 的 分 量 .因此 ,el ,ez，…e, 叫做 到 中 的 息\n然 基 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        101,
+        102
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X102-4909",
+      "title": "例 19",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 98,
+      "prompt": "例 19 设\n2 2 -1l 1 4\n4=(a,a;a)=| 2 -1 2|， er |\n-1 2 2 -4 2\n验证 el ,az,as 是 权 : 的 一 个 基 ,并 求 ,2 在 这 个 基 下 的 坐标 .",
+      "solution": "解 要 证 ai ,oa;,a; 是 取 : 的 一 个 基 , 只 要 证 oi ,az ,as 线性 无 关 , 即 只 要 证 4 一 瓦\n设 六 =xiiGi +xaiGa+xalG3 ,及 =xiaGi+xzzG2+xa203， 即\n2 xp\n(及 ,b2)= (aaa,as)| xz xp |，\n3 xmz\n记 作画 =4 妃 .\n对 和 矩阵 (4 ,了 3) 施 行 初等 行 变换 , 若 4 能 变 为 已, 则 a ,az ,as 为 取 的 一 个 基 , 且 当\n4 变 为 已 时 ,B 变 为 下 =4 吾 .\n2 2 -1 14\n1 1 1 =1 晨\n0 -3 0 2 引\n)|\n印\n(4, 刀 )=\n2-L1 2 03\n2\naerl\n0 33-5 5\n-1 2 2 -4 2\n98\n\n2 4\n- 100 二 工\n1 11 3 本\nal0 10 -一 1| 9\nEee 3 [了\n5 5\n21L1 要 001 -1 二\n3\n因 有 4 ~ 巨 , 故 ci ,az,a 为 到 ;的 一 个 基 , 且\n2 4\n性\n3 3\n2\n《282)= (aaazyas) 了 本 1 |，\n-1 二\n即 2 ,2 在 基 a ,az,as 中 的 坐标 依次 为\n2 2 4 2\n本 -31 和 了 了\n定义 10 在 向 量 空间 了 中 取 定 两 个 基 oj ,az，…@, 与 为 ,和 2: 设 =Puai+\nPada+…+pua (i=1,2,…，n), 则\n思 =PnQi+paiga+…+pngn，\n思 =Pizai+Pzaa+…+puagn，\n妨 ,=Pingi+paGz+…+pman，\n利用 和 矩阵 ,也 可 形式 地 写 为\n(5 852)= 《aa myGn)P，\n这 里\nPn Pa … Pm\nP= 册 硬 人 下 ，\nPo Pa Pum\n此 式 即 称 为 基 变 换 公式 ,矩阵 己 称 为 从 基 ai ,az，…,a 到 基 玉 ,加 的 过 渡 和 矩阵 .\n定义 1 设 a ,az,…,a, 与 六 ,,…,b 是 向 量 空间 7 的 两 个 基 . Ya s 六 设 e 在\n基 @vaa，…,a 下 的 坐标 为 x, 在 基 轧 ,bb 下 的 坐标 为 ?, 即\n四\n2\na=xiaitaaaat'…Hxaas=(a yao)z，x=| “|，\n99\n\n思\n|\n和 狼\n若 从 wa,…,a, 到 力 ,2 的 过 渡 矩 阵 为 己 , 则\na=(DD0)7=(aaa ya ) PP\n从 而 x= 忆 ,此 即 称 为 坐标 变换 公式 ，",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        102,
+        103,
+        104
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X104-2553",
+      "title": "例 20",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 100,
+      "prompt": "例 20 在 了 中 取 定 一 个 基 o ,a: ,ai ,再 取 一 个 新 基 六 , 思 2 ,5 , 设 4= (ai,az,ai) ，\n妃 = (5 ,53). 求 从 基 ai ,aa,as 到 基 ,b2,23 的 过 渡 矩 阵 已 ,并 求 向 量 e (ae 到 ) 在\n两 个 基 下 的 坐标 变换 公式 .",
+      "solution": "解 因\n(aaaya)= (eea,es)4， (elezyes)=(aiyaayas)4\n故\n(六 ,0203)= (el,ez,es) 甩 = (aa as)4\n即 基 变换 公式 为\n(2 ,5 ,503 )= (ai ,aa ,as ) 己 ，\n其 中 和 矩阵 P=4-B 即 为 从 旧 基 到 新 基 的 过 淡 矩 阵 . 胜 考\n设 向 量 e 在 旧 基 和 新 基 下 的 坐标 分 别 为 yj ,yz,ys 和 zi ,zza, 即\n2\n思\n，a=(b bbs) 2 |，\na= (oaazya3)| 7\n2\nJs\n力 2 后 力\n故 4 7 |= 相 二 | ,得 [za |=B-24| 7 | , 即\nJa3 .23 .23 3\n四 和\n五 |=P| 7 |，\n二 和\n这 就 是 从 有 旧 坐 标 到 新 坐标 的 坐标 变换 公式 ，",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        104
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X104-7828",
+      "title": "例 21",
+      "chapter": 4,
+      "section_id": "LA-C04-S4",
+      "knowledge_ids": [
+        "LA-K04-04"
+      ],
+      "printed_page": 100,
+      "prompt": "例 21 设 了 ”的 两 个 基 工 和 为\n1 1 1 1 攻 学\nI:w=|0|,w=|1|,o=|1|， :加 =|2|,2=|3|,2=|7|，\n0 0 1 1 3 1\n(1) 求 由 基 工 到 基 开 的 过 渡 矩 阵 ;\n100\n\n(2) 设 向 量 e 在 基 工 下 的 坐标 为 -2,1,2, 求 “ 在 基 下 下 的 坐标 .",
+      "solution": "解 (1) 由 基 工 到 基 开 的 过 渡 矩 阵 已 =4 了 3, 其 中 4=(a ,aas) ,B= (023). 用\n和 矩阵 的 初等 行 变换 把 矩阵 (4 ,B) 中 的 4 变 成 忆 , 则 如 相应 地 变 成 4 至\n(4,B)= (oayaayDibay23)\n100-l1 -1 -4\n111123\n二 |0 10 1 0 6|.\n=|011237\n001131 001 1 3 1\n-1 -1 -4\n| 1 0 ]\n3\n-18 -11 -6\n(2) ser | 5 3 2|, 故 向 量 e 在 基 工 下 的 坐标 (向 量 ) 为\n全 宣 也\n= 区 13\n-18 -11 -6\n二 并\n1\n雪 3 2\n1 |=| -3 |，\n器\n2 \\- 和 2\n3 2 1\nb\n即 向 量 c 在 基 开 下 的 坐标 为 13,-3,-2.\n8$5 线性 方程 组 的 解 的 结构\n在 上 一 章 中 ,我 们 已 经 介绍 了 用 矩阵 的 初等 行 变换 解 线性 方程 组 的 方法 ,并 建立\n了 两 个 重要 定理 , 即\n(1) n 个 未 知 数 的 齐 次 线性 方程 组 4r=0 有 非 零 解 的 充分 必要 条 件 是 系数 矩阵 的\n秩 R(4) <m.\n(2) mn 个 未 知 数 的 非 齐 次 线性 方程 组 hx =& 有 解 的 充分 必要 条 件 是 系数 矩阵 4\n的 秩 等 于 增 广 和 矩阵 如 的 秩 , 且 当 尺 (4) = 及 (好 )= 时 方程 组 有 惟一 解 , 当 R(4) =\nR(B)= r<n 时 方程 组 有 无 限 多 个 解 .\n下 面 我 们 用 向 量 组 线性 相关 性 的 理论 来 讨论 线性 方程 组 的 解 .\n一 、 齐 次 线性 方程 组\n设 有 齐 次 线性 方程 组\n101\n\naxi+aliax2+…+Qinxn=0，\nao)xl+azxa+…+Gaxn 二 0，\n(1)\n记\nan Ql2 Qhn 和 1\noa 2 az 22\n4= | 于\n辣 汪 国\n则 (1) 式 可 写成\n4xr=(0. (2)\n车\n(下\nzx 和 -| 名\n是 方程 组 (1) 的 解 向 量 , 它 也 就 是 方程 (2) 的 解 .\n由 本 章 例 15 知 ,方程 组 (1) 的 解 集 S= |x |4x=0| 是 一 个 向 量 空间 .只 要 找到 向 量\n空间 的 一 个 基 ,就 能 精确 描述 该 空间 .\n设 0: 二: 吉 ， 才 为 3 的 一 个 基 , 则 zx= 且 二 +jota+ + (有 E 及 ) 就\n是 方程 (2) 的 通 解 .\n齐 次 线性 方程 组 的 解 空 间 的 一 个 基 称 为 该 齐 次 线性 方程 组 的 基础 解 系 .由 上 面 的\n讨论 可 知 , 要 求 齐 次 线性 方程 组 的 通 解 ,只 需求 出 它 的 基础 解 系 .\n上 一 章 我 们 用 初等 行 变 换 的 方法 求 线性 方程 组 的 通 解 , 下 面 我 们 用 同一 方法 来 求\n齐 次 线性 方程 组 的 基础 解 系 .\n设 方程 组 (1) 的 系数 矩阵 4 的 秩 为 >, 并 不 妨 设 4 的 前 个 列 向 量 线性 无 关 ,于 是\n4 的 行 最 简 形 矩阵 为 ， 到\n1 四 0 Di 区 sr\n0 1 pb be\n了 = 本\n102\n\n与 下 对 应 , 即 有 方程 组\nea (3)\n区 三 一 502rH 一 … 一 久 sy\n把 wxzna,…vzu 作为 自由 未 知 数 ,并 令 它们 依次 等 于 ci ,c: ,…,cv, 可 得 方程 组 (1)\n的 通 解\n入 bn -bz 一 bo\n各 ta -ba 一 brr\nxnrrl |=cl|l 1 |+cz| 0 |+…+cw| 0\n2 0 1 0\n芭 0 0 1\n把 上 式 记 作\n于 0 各 co 二 Co- 攻 ，\n可 知 解 空间 $ 中 的 任 一 向 量 x 能 由 如 , 纪 ,…, 参 -线性 表示 ,又 因为 矩阵 ( 吉 ，\n页 ，… 交 -) 中 有 mr 阶 子 式 | 已 -| 天 0, 故 及 (二 ,于 和 -)= mr 所 以 起 吉 -\n线性 无 关 .根据 基 的 定义 , 即 知 志 , 关 ，…, 志 ,是 解 空间 $ 的 一 个 基 , 即 吉 , 志 ，…, 志 -是\n方程 组 (1) 的 基础 解 系 .\n在 上 面 的 讨论 中 ,我 们 先 求 出 齐 次 线性 方程 组 的 通 解 ,再 从 通 解 求 得 基础 解 系 .其\n实 我 们 也 可 先 求 基础 解 系 ,再 写 出 通 解 .这 只 需 在 得 到 方程 组 (3) 以 后 , 令 自由 未 知 数\nxrlxray xn 取 下 列 nr 组 数\n1 0\n0 1 0\n， ，\n0 0 1\n3\n由 (3) 即 可 得 | ”| 依次 为\n力\n103\n\noo -bz\n-| |- 姑\n-人 -ie\n合 起 来 便 得 基础 解 系\n-in -bo\n-bo -=\n- 一 0\n吉 =| “|， 扣 =| “\n二 L 0\n0 1\n0 0\n依据 以 上 的 讨论 ,还 可 推 得\n定理 7 设 mxn 矩阵 4 的 秩 R(4)= \", 则 元 齐 次 线性 方程 组 4x =0 的 解 空间 $\n的 维 数 dim S=n-r ( 即 该 齐 次 线性 方程 组 的 自由 未 知 数 的 个 数 ) .\n当 R(4)=nm 时 ,方程 (1) 只 有 零 解 ,没有 基础 解 系 (此 时 解 空间 $ 只 含 一 个 零 向\n量 ) ; 当 R(4)= rcn 时 ,由 定理 7 可 知 方程 组 (1) 的 基础 解 系 含 n~r 个 向 量 .因此 ,由 最\n大 无 关 组 的 性 质 可 知 ,方程 组 (1) 的 任何 n-r 个 线性 无 关 的 解 都 可 构成 它 的 基础 解\n系 .并 由 此 可 知 齐 次 线性 方程 组 的 基础 解 系 并 不 是 惟一 的 , 它 的 通 解 的 形式 也 不 是 惟\n一 的 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        104,
+        105,
+        106,
+        107,
+        108
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X108-6048",
+      "title": "例 22",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05"
+      ],
+      "printed_page": 104,
+      "prompt": "例 22 求 齐 次 线性 方程 组\n+ 罗 - 5- =0，\n2xi-5xza+3xs+2x4=0，\n7Txi-7x2+3xs+ 和 =0\n的 基础 解 系 与 通 解 .",
+      "solution": "解 ” 对 系数 矩阵 4 作 初等 行 变换 变 为 行 最 简 形 矩阵 ,有\n1 中 no 吐\n2 1 =1 =\n中 -5 3 2\nJE\n= 了\n5\n1\n0 -14\n10\n了 < 和\n104\n\n2 3\n1 1 -1 -1l | \"0 了 7 了\n阅 |。 5 4 -5 4|，\n0 0 0 0 7 7\n00 0 0\n便 得\n2 3\n人\n改\n5 4 (2\n1\n2+\n至 由 介 ，\n2 fi fo 了 7\n他 人] 人 mm 人 隐 4 , 即 得 基础 解 系\n2 OA 六 | 14\n7) \\7\n之 3\n和 吕\n5 4\n纪 =| 了 |， 终 =| 了 |，\n1 0\n0 1\n并 由 此 写 出 通 解\n二 人\n有 7 7\n加 5 4\n=o||oj 了 | (ooem)\nZX3\n1 0\n4\n0 1\n上 一 章 中 线性 方程 组 的 解法 是 从 ( * ) 式 写 出 才 解 (从 通 解 的 表达 趟 即 可 得 基础\n解 系 ) ,现在 从 ( * ) 式 先 取 基 础 角 系 ,再 写 出 通 解 ,两 各 解法 其 实 没 有 多 少 差别\n根据 ( <) 式 , 如 了 | 站] aaa 人 (>\n4 2\n点 本\n有 7\n及\n吧 革\n了 7\n即 得 不 同 的 基础 解 系\n105\n\n下 可\n7 7\n1\n=| 本 |，m=| 了 |，\n1 1\n1 =1\n从 而 得 通 解\n之 | 全\n二 7 7\n2 9 1\n= 加 了 +b| 了 (如 pe 到 ).\n3\n1 1\n4\n1 =-1\n显然 志 ,#: 与 ,9 是 等 价 的 ,两 个 通 解 虽然 形式 不 一 样 , 但 都 含 两 个 任意 常数 , 且 都\n可 表示 方程 组 的 任 一 解 .\n上 述 解 法 中 ,由 于 行 最 简 形 矩阵 的 结构 ,将 za ,x+ 选 为 自由 未 知 数 最 方便 .如 果 要\n选 % ,z 为 自由 未 知 数 ,那么 就 不 能 采用 上 述 化 系数 矩阵 为 行 最 简 形 和 矩阵 的 “标准 程\n序 ”, 而 要 稍 作 变 化 ,具体 如 下 :\n-5 201\n是\n4 -3 10 4 -3 1 中\n世\n十 届 2\n2\n2 -5 3 2\noo\nEee\n7 -7 3 1 8 -6 2 0 0 000\nmx(-D\n上 式 最 后 一 个 矩阵 虽 不 是 行 最 简 形 矩阵 ,但 也 具备 行 最 简 形 矩阵 的 功能 .按照 这 个 矩\n阵 , 取 ”% ,xz 为 自由 未 知 数 , 便 可 写 出 通 解\n3 = 一 4xi 二 3x2 ，\n(xxz 可 任意 取 值 ) ，\nxi=Szi-2x2\n即\n本 1 0\n2 0\n-| (ovc e 取 ) ，\n辣 5 -2\n而 对 应 的 基础 解 系 为\n1 0\n0 1\n-4 | 3\n5 -2\n106\n\n定理 7 不 仅 是 线性 方程 组 各 种 解法 的 理论 基础 ,而 且 在 讨论 向 量 组 的 线性 相关 性\n时 也 很 有 用 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        108,
+        109,
+        110,
+        111
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X111-1395",
+      "title": "例 23",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05"
+      ],
+      "printed_page": 107,
+      "prompt": "设 $A_{m\\times n}B_{n\\times l}=O$，证明 $$R(A)+R(B)\\le n.$$ ",
+      "solution": "记 $B=(b_1,\\ldots,b_l)$。由 $AB=O$ 得 $Ab_i=0$，故 B 的各列都在 $Ax=0$ 的解空间 S 中。所以 $$R(B)=R(b_1,\\ldots,b_l)\\le\\dim S=n-R(A),$$ 即 $$R(A)+R(B)\\le n.$$",
+      "explanation": [
+        "矩阵乘积按列理解：AB 的第 i 列就是 Abᵢ；AB 全零说明每一个 bᵢ 都是齐次方程组的解。",
+        "B 的列空间包含于 A 的零空间，因此其维数不能超过零空间维数。",
+        "利用秩与零空间维数之和为未知数个数 n，将 R(B)≤n−R(A) 移项即得结论。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        111
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X111-3081",
+      "title": "例 24",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05"
+      ],
+      "printed_page": 107,
+      "prompt": "设 n 元齐次线性方程组 $Ax=0$ 与 $Bx=0$ 同解，证明 $$R(A)=R(B)。$$",
+      "solution": "两个方程组有相同解空间 S，故 $$\\dim S=n-R(A)=n-R(B)。$$ 因此 $$R(A)=R(B)。$$",
+      "explanation": [
+        "同解意味着解空间完全相同，因此维数也相同。",
+        "两个方程组都含 n 个未知数，各自的解空间维数分别为 n−R(A) 与 n−R(B)。",
+        "相等式两边约去 n，即得矩阵秩相等；这里不要求 A、B 的行数相同。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        111
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X111-3810",
+      "title": "例 25",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05"
+      ],
+      "printed_page": 107,
+      "prompt": "证明对实矩阵 A 有 $$R(A^{\\mathsf T}A)=R(A)。$$",
+      "solution": "只需证明 $Ax=0$ 与 $(A^{\\mathsf T}A)x=0$ 同解。若 $Ax=0$，左乘 $A^{\\mathsf T}$ 即得 $(A^{\\mathsf T}A)x=0$。反之，若 $(A^{\\mathsf T}A)x=0$，则 $$0=x^{\\mathsf T}A^{\\mathsf T}Ax=(Ax)^{\\mathsf T}(Ax)。$$ 实向量分量平方和为零，故 $Ax=0$。两方程组同解，由例 24 得秩相等。",
+      "explanation": [
+        "正向包含关系只需对 Ax=0 再左乘 Aᵀ。",
+        "逆向不能随意约去 Aᵀ，因为它未必可逆；应左乘 xᵀ，得到 Ax 的长度平方。",
+        "实数平方和为零意味着各项全为零，所以 Ax=0。两个零空间相同、未知数个数相同，矩阵秩便相同。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        111
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X112-4458",
+      "title": "例 26",
+      "chapter": 4,
+      "section_id": "LA-C04-S5",
+      "knowledge_ids": [
+        "LA-K04-05"
+      ],
+      "printed_page": 108,
+      "prompt": "例 26 求解 方程 组\nxi-x- x+ xz4= 0，\nxi-xa2+ xs-3x4= 1，\n1 一 %2 一 2x3+3x4 三 一 一",
+      "solution": "解 ”对 增 广 矩 阵 了 施行 初等 行 变换 :\n1-1-1 1 0 1-1-L 1 0\n1-1 1-3 10 0 2-4 1\n1 1 | 2 1\n1 -1 -2 王 0 0 -1! 2 王\n1\n”1 0 = 一\n1 了\nnn 1\n吗 |0 01 -2 了 本 |\n0 00 00\n可 见 R(A)= R( 了 3)= 2, 故 方程 组 有 解 ,并 有\n1\n力 =atxs+7 ，\nMa 三 2x4 二\n108\n\n取 二 =x=0, 则 =aa= 二 , 即 得 方程 组 的 一 个 解\n八\n在 对应 的 刘 交 性 方 组 | 引 中 ja\n和 1 二 2 十 %4 2 1 0 2\n23 一 2x4\n即 得 对 应 的 齐 次 线性 方程 组 的 基础 解 系\n: 1 1\n_ 0\n吉 = 0 乡 = 2|，\n0 1\n于 是 所 求 通 解 为\n工\naa AN AN | 2\n大 | -| 加)，\n[站\n-| ol\n0",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        112,
+        113
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X120-1508",
+      "title": "例 1",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 116,
+      "prompt": "例 1 已 知 3 维 向 量 空间 取 ' 中 两 个 向 量\n引\n1\n中\n1\n正 交 , 试 求 一 个 非 堆 向 量 cs; ,使 el ,az ,as 两 两 正 交 .",
+      "solution": "解 记\n4 人 1 〗]\neu- 了 册\nas 应 满足 齐 次 线性 方程 组 4r=0, 即\n『\n[= 小 | 他\n1 -2 ! 0\n3\n-人 1 中 0 j\n4 一 一 四\n0 -30 10\n-1 -1\n= 一 %3\n和 ,从 而 有 基础 解 系\n即 合 所 求 .\n, 取 a=| 0\n0\n=0\n1\n1\n定义 3 ， 设 维 向 量 专 , 志 ，… 沁 是 向 量 空间 (YE 取 \" ) 的 一 个 基 , 若 名 ,所 ，\n专 两 两 正 交 , 且 都 是 单位 向 量 , 则 称 专 ,所 ，…,, 是 了 的 一 个 标准 正 交 基 ，\n例如\n工 0 0\n代 0 0\n工 本 1 了 | 工\n负 =| 厅 |， 提 =| 万 |， 提 -| 万 |， 缚 了 | 万\n0 0 古 _ 工\n0 0 MI 民\n就 是 区 的 一 个 标准 正 交 基 。\n若 志 ,所 ， 沁 是 了 的 一 个 标准 正 交 基 ,那么 了 中 任 一 向 量 a 应 能 由 名 ,名 ,各\n线性 表示 , 设 表示 式 为\n116\n\n= AN 吉 +Az 攻 2+ +A 攻 ，\n为 求 其 中 的 系数 Ni，(i= 1,2,…,r) ,可 用 如 左 乘 上 式 , 有\n到 0=A 才 和 =Ai，\n即\n和 = 条 a=(a, 志 ) ，\n这 就 是 向 量 在 标准 正 交 基 下 的 坐标 的 计算 公式 .利用 这 个 公式 能 方便 地 求 得 向 量 的 坐\n标 ,因此 ,我 们 在 给 向 量 空间 取 基 时 常常 取 标 准 正 交 基 .\n设 w ,wa,…,a, 是 向 量 空 间 了 的 一 个 基 , 要 求 了 的 一 个 标准 正 交 基 .这 也 就 是 要 找\n一 组 两 两 正 交 的 单位 向 量 志 ,名 ，… 忆 ,使 扣 , 和 ， 忆 与 ao,a, 等 价 这 样 一 个\n问题 , 称 为 把 基 wjvaz,…:ax 标 准 正 交 化 .\n我 们 可 以 用 以 下 办 法 把 wj ,oa，…;a, 标准 正 交 化 : 取\n已 =Qi，\n(azD)\n2\n2 =a2\n(5 )\n(or (op (ec\n人\n容易 验证 访 , 轧 ，…,2, 两 两 正 交 , 且 太 ,5 ,2 与 ol ,aa，…，a, 等 价 .\n然后 把 它们 单位 化 , 即 取\n1 1 1\nITTIOENTAEE TI\n就 是 了 的 一 个 标准 正 交 基\n上 述 从 线性 无 关 向 量 组 @ ,as,…,a, 导出 正 交 间 量 组 ,5 ，… ,的 过 程 称 为 施\n寓 特 (Schmidt) 正 交 化 . 它 不 仅 满足 画 ,5。，…, 有 与 mi ,aa,…，a 等 价 ,还 满足 :对 任何\nk(1< 大 Er) ,向 量 组 力 ,8 …, 态 与 @i ,Ga 1Gx 等 价 .\n1 | 4",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        120,
+        121
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X121-7244",
+      "title": "例 2",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 117,
+      "prompt": "例 2 设 a= ,试用 施 密 特 正 交 化 把 这 组 向 量 标准 正\n2 |,a =| 31,a =| -1\n< | 0\n117\n\n4 fn fn 0\n5 | | | 到 | 过 中\n志 沁\nLa 1 22 1 0 3 3 j\n再 把 它们 单位 化 , 取\n1 站 一 本 1\n名 1 | “| 儿 T5 人 再 下 旬 \"15 万 站\n的 四 二\n名 ,名 ,二 即 合 所 求 .\n本 例 中 各 向 量 如 图 5.1 所 示 . 用 解析 几何 的 术语",
+      "solution": "解释 如 下 :\n良 刀 =a-ci, 而 c: 为 a 在 轧 上 的 投影 向 量 , 即\nmm 几何 直观 < 人 和\nITILNTAE\n已 =a-cl, 而 c; 为 ms 在 平行 于 及 , 轧 的 平面 上 的 投\n影 向 量 ,由 于 轧 上 思 , 故 c, 等 于 o 分 别 在 页, 加 上 的 投\n影 向 量 cy 及 ca 之 和 , 即\n(ab) (aas,b2)\nC3 =Cal+Ca =\n[NT\n| ee 0 ,3 ,使 ai ,aa,as 两 两 正 交 .\n1",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        121,
+        122
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X122-5366",
+      "title": "例 3",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 118,
+      "prompt": "例 3 已 知 a=\n1",
+      "solution": "解 ao; 应 满足 方程 Cxz=0, 即\nXi+x2+Xs 三 0，\n它 的 基础 解 系 为\n把 基础 解 系 正 交 化 , 亦 即 取 公众 号 ， 旗\n| | 站 小\n-1 -1\n和) | | 1 _\n118\n\n因 wa: ,as 是 专 , 志 的 线性 组 合 , 故 它们 仍 与 mw 正 交 , 于 是 cz ,as 即 合 所 求 .\n定义 4 如 果 半 阶 矩 阵 4 满足\n474 = 已 ( 即 42=47)，\n那么 称 4 为 正 交 矩 陈 .\n上 式 用 4 的 列 向 量 表示 , 即 是\n1\n加\n|(elyaa，…as) = 五，\n这 也 就 是 疡 个 关系 式 …\nTa -| 人, 当 计 7)， 本 )= on\noo (=1)2，…m)，\n这 就 说 明 : 方 阵 4 为 正 交 矩 阵 的 充分 必要 条 件 是 4 的 列 向 量 都 是 单位 向 量 , 且 两 两\n正 交 .\n因为 474= 巨 与 447 = 无 等 价 ,所 以 上 述 结论 对 4 的 行 向 量 亦 成 立 .\n由 此 可 见 ,n 阶 正 交 矩阵 4 的 ”个 列 ( 行 ) 向 量 构成 向 量 空间 及 \" 的 一 个 标准 正\n交 基",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        122,
+        123
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X123-5205",
+      "title": "例 4",
+      "chapter": 5,
+      "section_id": "LA-C05-S1",
+      "knowledge_ids": [
+        "LA-K05-01"
+      ],
+      "printed_page": 119,
+      "prompt": "例 4 验证 矩阵\n1 - 工 工 - 工\n图 “ 交 2 2\n1 - 工 - 工 工\n站 呈 和 2\n=| 1 1\n一 二 0\n业 人 风\n1 1\n0 0 二 二\n业 全\n是 正 交 和 矩阵 .",
+      "solution": "证 己 的 每 个 列 向 量 都 是 单位 向 量 , 且 两 两 正 交 ,所 以 己 是 正 交 和 矩阵 .\n正 交 矩阵 有 下 述 性 质 ，，\n(i) 若 4 为 正 交 和 矩阵 , 则 4 =47 也 是 正 交 矩 阵 , 且 |41=1 或 -1;\n(ii) 车 4 和 如 都 是 正 交 和 矩阵 , 则 4B 也 是 正 交 矩 阵 .\n这 些 性 质 都 可 根据 正 交 矩 阵 的 定义 直接 证 得 ,请 读者 证 明之 .\n定义 5 若 忆 为 正 交 和 矩阵 , 则 线性 变换 ?= Px 称 为 正 交 变换 .\n设 ?=P 为 正 交 变换 , 则 有\nlp 有 1 = =VPPr =Vexz= zl\n119\n\n由 于 | zx | 表示 向 量 的 长 度 , 相 当 于 线段 的 长 度 , 因 此 1 7y 1 = |z 外 说 明 经 正 交 变\n换 线段 长 度 保持 不 变 (从 而 三 角形 的 形状 保持 不 变 ) ,这 是 正 交 变 换 的 优良 特性 .\n$2， 方 阵 的 特征 值 与 特征 向 量\n工程 技术 中 的 一 些 问题 ,如 振动 问题 和 稳定 性 问题 , 常 可 归结 为 求 一 个 方 阵 的 特\n征 值 和 特征 向 量 的 问题 ,数学 中 诸如 方 阵 的 对 角 化 及 解 微分 方程 组 等 问题 ,也 都 要 用\n到 特征 值 的 理论 .\n定义 6 设 4 是 m 阶 矩阵 ,如 果 数 A 和 n 维 非 零 列 向 量 x 使 关系 式\nrz=Az 人\n成 立 ,那么 这 样 的 数 》 称 为 矩阵 4 的 特征 值 , 非 零 向 量 x 称 为 4 的 对 应 于 特征 值 A 的\n特征 向 量 .\n(1) 式 也 可 写成\n(4-AE)z=0，\n这 是 m 个 未 知 数 n 个 方程 的 齐 次 线性 方程 组 , 它 有 非 零 解 的 充分 必要 条 件 是 系数 行列 式\n14-) 五 |=0，\n即\nan-A an an\nam ee | -0\n上 国 证 明 拓展\nam Ga Qm- 人 人\n上 式 是 以 为 未 知 数 的 一 元 ”次 方程 , 称 为 矩阵 4 的 特征 方程 , 其 左 端 |4-A 五 |\n是 和 的 nm 次 多 项 式 , 记 作 大 A) , 称 为 矩阵 4 的 特征 多 项 式 .显然 ,4 的 特征 值 就 是 特征\n方程 的 解 .特征 方程 在 复数 范围 内 恒 有 解 ,其 个 数 为 方程 的 次 数 ( 重 根 按 重 数 计算 ) , 因\n此 ,n 阶 矩阵 4 在 复数 范围 内 有 ” 个 特征 值 .\n设 n” 阶 矩阵 4= (ai) 的 特征 值 为 A,A:，…A,, 不 难 证 明 @\n(i) Ai+Az+…+As=an+az+…+am【〈 其 中 an+an+…+am 称 为 4 的 迹 , 记 为 tr(4));\n(ii) AiA2…As= |4|.\n由 (ii) 可 知 4 是 可 逆 矩 阵 的 充分 必要 条 件 是 它 的 ”个 特征 值 全 不 为 零 .\n@ JUA)= (Ai-A)(Az-A)…(As-A) ,其 中 A 和 A\": 的 系数 依次 为 ANA2…A。 和 (-1)\" (AI+Aa+…+An) ，\n故 只 需 证 明 多 项 式 |4-AE | 中 A9 和 \"的 系数 依次 为 14 和 (-1) 生 (en+am+…+am)，\n120\n\n设 和 = 入 , 为 矩阵 4 的 一 个 特征 值 , 则 由 方程\n(4-AiE)z=0\n可 求 得 非 零 解 x=P, ,那么 户 便 是 4 的 对 应 于 特征 值 A, 的 特征 向 量 , (车 A, 为 实数 , 则\n户 可取 实 向 量 ; 若 为 复数 , 则 疡 为 复 向 量 . )",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        123,
+        124,
+        125
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X125-2203",
+      "title": "例 5",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02"
+      ],
+      "printed_page": 121,
+      "prompt": "例 5 yj 阵 4 1] age 相生\n3 -1",
+      "solution": "解 4 的 特征 多 项 式 为\naa 了 | -Goiarewe=trDG-)，\n-1 3\n所 以 4 的 特征 值 为 A,=2,Az=4.\n当 和 =2 时 ,对 应 的 特征 向 量 应 满足\n3-2 -1 站 :0\n-1 3-2 八 2 \\o\n即\nL\n-1 1 人 狼 ) o)\n解 得 x; =xa, 所 以 对 应 的 特征 向 量 可 取 为\n人\n当 Ma=4 时 ,由\nCN 风\n即\n四 | 四\n解 得 x, = -xz, 所 以 对 应 的 特征 向 量 可 取 为\n“人\n|\n显然 , 若 忆 (i= 1,2) 是 矩阵 4 的 对 应 于 特征 值 Ni 的 特征 向 量 , 则 急 ，(k 天 0) 也\n是 对 应 于 A, 的 特征 向 量 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        125
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X125-8955",
+      "title": "例 6",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02"
+      ],
+      "printed_page": 121,
+      "prompt": "例 6 求 矩 阵\n121\n\n的 特征 值 和 特征 向 量 .",
+      "solution": "解 4 的 特征 多 项 式 为\n-1-A 1 0\n14-AE|=| -4 3-A 0 |=(2-A)(1-A)?，\n1 0 2-\n所 以 4 的 特征 值 为 Ai=2,A?=Aa=1\n当心 =2 时 , 解 方程 (4-2B)z=0. 由\n-3.10 00\n4-2B=|-4 1 0| 二 |0.1 0|，\n100)| ooo0\n得 基础 解 系\n疡 =\n1\n所 以 加, (k 关 0) 是 对 应 于 A,=2 的 全 部 特征 向 量 .\n当 A2=As=1 时, 解 方程 (4- 严 )z=0. 由\n-2 1 0\n101\n0 1 中\n4- 互 =\n-4 2 0\n0 0 0\n得 基础 解 系\n-1\nPa=| -2\n1\n所 以 如; (大 0) 是 对 应 于 A:=As= 1 的 全 部 特征 向 量 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        125,
+        126
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X126-7347",
+      "title": "例 7",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02"
+      ],
+      "printed_page": 122,
+      "prompt": "例 7 设 和 是 方 阵 4 的 特征 值 ,证 明 :\n(1) 驴 是 4 的 特征 值 ;\n(2) 当 4 可 间 时 ,二 是 4 的 特征 值",
+      "solution": "证 因 人 是 4 的 特征 值 , 芍 有 P 关 0 使 p=AP. 于 是\n(1) 因为 4?p=4(4p)=4(AP)=A(4p)=Azp, 所 以 和 是 4 的 特征 值\n(2) 当 4 可 逆 时 ,由 4p=AP, 有 忆 =A4-, 因 忆 尖 0, 知 人 天 0, 故\n122\n\n所 以 二 是 4 的 特征 值\n按 此 例 类 推 , 不 难 证 明 : 若 》 是 4 的 特征 值 , 则 和\" 是 4 的 特征 值 ;p(A) 是 (4)\n的 特征 值 (其 中 w(A)= ao+aA+…+anA\"” 是 入 的 多 项 式 ,p(A)= ao 可 +aiA+…+anA\n是 矩阵 4 的 多 项 式 ). 这 是 特征 值 的 一 个 重要 性 质 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        126,
+        127
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X127-2544",
+      "title": "例 8",
+      "chapter": 5,
+      "section_id": "LA-C05-S2",
+      "knowledge_ids": [
+        "LA-K05-02"
+      ],
+      "printed_page": 123,
+      "prompt": "例 8 设 3 阶 矩 阵 4 的 特征 值 为 1,-1,2, 求 4\"+34-25 的 特征 值 .",
+      "solution": "解 因 4 的 特征 值 全 不 为 0, 知 4 可逆, 故 4\" = |414 ,而 |4|=AAzAs=-2，\n所 以\n4 +34-2 有 =-24 +34 一 2 瑟 ,\n把 上 式 记 作 (4) ,有 9(A)= -二 +3A-2 这 里 ,p(4) 虽 不 是 矩阵 多 项 式 ,但 也 具有 撼 阵\n多 项 式 的 特性 ,从 而 可 得 p(4 ) 的 特征 值 为 pP(1)= -1,p(-1)= -3,p(2)= 3.\n下 面 介绍 特征 向 量 的 一 些 性 质 .\n定理 2 设 ,AM:,…,Aw 是 方 阵 4 的 普 个 特征 值 ,P,,P:,…,Pw。 依次 是 与 之 对 应\n的 特征 向 量 ,如 果 A; ,A;,…,Aw 各 不 相等 , 则 PP ,Pa,…,P。 线性 无 关 .\n证 用 数学 归纳 法 .\n当 兽 =]1 时 , 因 特 征 向 量 忆 天 0, 故 只 含 一 个 向 量 的 向 量 组 书 线性 无 关 .\n假设 当 普 =kt-~1 时 结论 成 立 , 要 证 当 杰 = 上 时 结论 也 成 立 . 即 假设 向 量 组 己 ,Pa，…，\n已-, 线 性 无 关 , 要 证 向 量 组 书 pa，…:Pk 线性 无 关 . 为 此 , 设 有\n和 有 1+X2 有 2 十 十 hr 和 -1 二 人 (2)\n用 4 左 乘 上 式 ,得\n204P +x24P2+…+Xi-TAPi+XZMAPE=0，\n即\n2 入 PP +X2 和 2 及 2 十 … 二 Xi-1AIPEI+XEAEPE= 人. (3)\n(3) 式 减 去 (2) 式 的 Ax 倍 ,得\n2(Ai-Ai)Pi+xa(A2-Ak)P2+…+zI(AEI-AE)Pi-i= 下\n按 归 纳 假设 忆 ,Pa，…:;Pii 线 性 无 关 , 故 xi(Ai-At)= 0(i=1,2,…-1). 而 和 Ai-Az 天 0\n(i=1,2,…,k-1) ,于 是 得 %=0 (i=1,2,…,-1) ,代入 (2) 式 得 立 Pi=0, 而 太夫 0, 得\n4=0. 因 此 ,向 量 组 忆 ,Pa,，…,Pk 线性 无 关 . 证 毕\n推论 设 A, 和》; 是 方 阵 4 的 两 个 不 同 特征 值 , 络 和 7 分\n别 是 对 应 于 和 和 》; 的 线性 无 关 的 特征 向 量 , 则 所 , 志 ，…, 志 ,7 ,7 线性 无\n关 . (证 明 留 作 习题 .)\n上 述 推论 表明 :对 应 于 两 个 不 同 特征 值 的 线性 无 关 的 特征 向 量 组 , 合 起 来 仍 是 线\n123\n\n性 无 关 的 .这 一 结论 对 mm (m>=2) 个 特征 值 的 情形 也 成 立 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        127,
+        128
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X128-0991",
+      "title": "例 9",
+      "chapter": 5,
+      "section_id": "LA-C05-S3",
+      "knowledge_ids": [
+        "LA-K05-03"
+      ],
+      "printed_page": 124,
+      "prompt": "例 9 设 人 和 和 ; 是 矩阵 4 的 两 个 不 同 的 特征 值 ,对 应 的 特征 向 量 依次 为 和\nPa 证明 P 书 +p; 不 是 4 的 特征 向 量 ，\n证 “ 按 题 设 ,有 4p, =AiPi ,4pz=AzPa, 故\n入 (Pt+Pa)= AiPi+AzPa-\n用 反 证 法 ,假设 六 +p: 是 4 的 特征 向 量 , 则 应 存在 数 和 ,使 4(P+p:)= 和 (Pi+P:)，\n于 是\nA(P+Pa)= AiPi+AzPa，\n即\n(Ai-A)Pi+(Az-A)Pz=0，\n因 A, 夫 A;, 按 定理 2 知 Pi ,P; 线性 无 关 , 故 由 上 式 得 A;-A=Aa2-A=0, 即 人 =A;, 与 题\n设 矛 盾 .因此 PP +p; 不 是 4 的 特征 向 量 ,\n8$3 相似 和 矩阵\n定义 7 设 4,B 都 是 ” 阶 矩 阵 , 若 有 可 逆 矩 阵 己 ,使\nP-4P= 开 ，\n则 称 吾 是 4 的 相似 矩阵 ,或 说 矩阵 4 与 如 相似 .对 4 进行 运算 严 4 忆 称 为 对 4 进行\n相似 变换 ,可逆 矩 阵 己 称 为 把 4 变 成 好 的 相似 变换 矩阵 .\n定理 3 车 n” 阶 矩阵 4 与 如 相似 , 则 4 与 刀 的 特征 多 项 式 相同 ,从 而 4 与 好 的 特\n征 值 亦 相 同 .",
+      "solution": "证 因 4 与 妃 相 似 , 即 有 可 逆 矩 阵 己 ,使 PP 4 己 = 开 . 故\n| 了 3-A 忆 | = | 忆 ,4P-P-(A 巨 ) 疡 |= |P (4-A 五 ) 己 |\n=|P ||14-A 忆 || 己 | = |4-A 互 |. 证 毕\n推论 若 n 阶 矩阵 4 与 对 角 和 矩阵\nAi\n相似 , 则 Ai ,A;，…,A， 即 是 4 的 ”个 特征 值 .\n证 因 ),)),，…,As 即 是 4 的 n 个 特征 值 ,由 定理 3 知 Ni),A，…,A， 也 就 是 4\n的 个 特征 值 证 毕\n124\n\n在 第 2 章 中 我 们 曾 得 出 结论 : 若 4=PBP- , 则 4=PB'P-.4 的 多 项 式\n9(4)= Pp(B3)P-\n特别 地 , 若 有 可 逆 矩 阵 己 使 PP,4P=4 为 对 角 和 矩阵 , 即 若 4 相似 于 对 角 和 矩阵 4 , 则\n44=Ph4iP-，p(4)=Pp(4)P-.\n而 对 于 对 角 和 矩阵 4, 有\n人 p(A)\n(A2)\n4 |，r0D- 的 ，\n必\n和 2(A。)\n由 此 可 方便 地 计算 4 的 多 项 式 p(4)，\n下 面 我 们 要 讨论 的 主要 问题 是 :对 mn 阶 和 矩阵 4 ,是否 存在 相似 变换 矩阵 已 , 使\nP- 4P=4 为 对 角 和 矩阵, 如 果 这 样 的 己 存 在 , 则 称 和 矩阵 4 可 对 角 化 .\n假设 已 经 找到 可 逆 矩 阵 已 ,使 P-\"4P=4 为 对 角 矩 阵 .把 己 用 其 列 向 量 表示 为\n了 = (Pi PP ) ，\n由 Ph4P=4, 得 4P=P4, 即\n和\n人 CPPa，Pn)= (PPpa pn) .. =(AiPi，AzP2，…Aspn) ，\n于 是 有\nApi=AiPi 〈(i=1,2,，n).\n可 见 AN 是 4 的 特征 值 ,而 己 的 列 向 量 忆 就 是 4 的 对 应 于 特征 值 \\, 的 特征 向 量 .由 于\n三 可 逆 , 所 以 4 有 个 线性 无 关 的 特征 向 量 书 ,Pa ，…:;P。\n反之 , 若 4 有 m 个 线性 无 关 的 特征 向 量 书 ,Pa，… ,P。, 其 中 书 对 应 于 特征 值 A， 则\n矩阵 忆 = (Pi ,Pa，…,P,) 可 逆 , 且 4P=P4, 这 里 4=diag(Ai,A2,…,A). 于 是 己 :4P=\n4 , 即 4 与 对 角 和 矩阵 相 似 .\n由 上 面 的 讨论 即 有\n定理 4 n 阶 矩阵 4 与 对 角 和 矩阵 相似 ( 即 4 可 对 角 化 ) 的 充分 必要 条 件 是 4 有\n个 线性 无 关 的 特征 向 量 .\n联系 定理 2, 可 得\n推论 ”如 果 阶 矩阵 4 的 ”个 特征 值 互 不 相等 , 则 4 与 对 角 和 矩阵 相似 .\n当 4 的 特征 方程 有 重 根 时 ,就 不 一 定 有 mn 个 线性 无 关 的 特征 向 量 ,从 而 不 一 定 能\n125\n\n对 角 化 .例如 在 例 6 中 4 的 特征 方程 有 重 根 , 确 实 找 不 到 3 个 线性 无 关 的 特征 向 量 , 因\n此 例 6 中 的 4 不 可 对 角 化 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        128,
+        129,
+        130
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X130-1277",
+      "title": "例 10",
+      "chapter": 5,
+      "section_id": "LA-C05-S3",
+      "knowledge_ids": [
+        "LA-K05-03"
+      ],
+      "printed_page": 126,
+      "prompt": "例 10 设 和 矩阵\n-2 1 1\n二 0 2 0|，\n-4 1 3\n问 4 能 否 对 角 化 ? 若 能 , 则 求 可 逆 矩 阵 P 和 对 角 矩 阵 4 ,使 忆 4P= 人 4.",
+      "solution": "解 ” 先 求 4 的 特征 值 .\n=2-A 人 1\n|-2-A 1\n14-A 忆 |=\n0 2-A 0\n人 |\n=(2-\n= 站 1，、 3-A\n=(2-A)(A?-A-2)= -(A+l)(A-2)”，\n所 以 4 的 特征 值 为 A,=-1,Az=As=2.\n再 求 4 的 特征 向 量 .\n当 和 =-1 时 , 解 方程 (4+ 尼 )z=0. 由\n-11N 0 -1l\nee 0 3 中 1 站\n-414| oo 0\n得 对 应 的 特征 向 量\n1\n|\n1\n当 》;=A:=2 时 , 解 方程 (4-2 忆 )z=0. 由\n-41DN 7-411\n4-2E=| 0 0 0 一 | oo ol，\n-4 1 1 0 0 0\n得 对 应 的 线性 无 关 特征 向 量\n0\n1\n1\n，Ps=|0|.\n忆 =\n-1 4\n由 定理 2 的 推论 , 知 忆 ,Pa,Ps 线性 无 关 ,再 由 定理 4 知 4 可 对 角 化 ;并 且 若 记\n1 0 1\nPP= (PPa,P)=\n0 1 0|，\n1 -1 4\n126\n\n则 有\nP-4P=diag(-1,2,2).\n要 注意 上 式 中 对 角 矩 阵 的 对 角 元 的 排列 次 序 应 与 严 中 列 向 量 的 排列 次 序 一 致",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        130,
+        131
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X131-1682",
+      "title": "例 11",
+      "chapter": 5,
+      "section_id": "LA-C05-S4",
+      "knowledge_ids": [
+        "LA-K05-04"
+      ],
+      "printed_page": 127,
+      "prompt": "例 11 设\n0 01\n中 1 |\n100\n履\n问 :为 何 值 时 ,矩阵 4 可 对 角 化 ?",
+      "solution": "解 由\n-0 1\n14=-A 巨 |= =G-| |--o-Dxos，\n- -A 1\n下\n1 -=\n0\n得 =-1,A;=A3=1，\n当 单 根 A,=-1 时 ,可 求 得 线性 无 关 的 特征 向 量 恰 有 1 个 , 故 矩 阵 4 可 对 角 化 的 充\n分 必要 条 件 是 对 应 重 根 A2 =As= 1, 有 2 个 线性 无 关 的 特征 向 量 , 即 方程 (4- 瑟 )z=0 有\n2 个 线性 无 关 的 解 , 亦 即 系数 矩阵 4- 忆 的 秩 R(4- 尼 )= 1. 由\no 1 0 -1\n4- 忆 =\n10 + 二 00 1 寻 1|，\n0 0 0\n1 0 -1\n要 R(4-E)= 1, 得 t+1=0, 即 =-1.\n因此 , 当 :=-1 时 ,矩阵 4 可 对 角 化 .\n$ 4 对称 矩阵 的 对 角 化\n一 个 ” 阶 矩 阵 具备 什么 条 件 才能 有 ) 个 线性 无 关 的 特征 向 量 ,从 而 可 对 角 化 ? 这\n是 一 个 较 复杂 的 问题 .我 们 对 此 不 进行 一 般 性 的 讨论 ,而 仅 讨论 当 4 为 对 称 矩 阵 的\n情形 .\n先 介绍 两 个 关于 对 称 矩 阵 的 特征 值 和 特征 向 量 的 性 质 .\n性 质 1 对 称 矩 阵 的 特征 值 为 实数\n证 ， 先 介绍 一 个 记号 . 设 复数 媒 阵 下 = (xi ) ,元 为 同 的 共 本 复数 , 记 亚 = (2 ) , 即 互\n是 由 下 的 对 应 元 素 的 共 辐 复数 构成 的 矩阵 .\n设 复数 为 对 称 炬 阵 4 的 特征 值 , 复 向 量 x 为 对 应 的 特征 向 量 , 即 4r= Ax,zr 丈 0，\n127\n\n用 克 表 示 A 的 共 杷 复数 ,而 4 为 实 代 阵 , 有 人 = 及 , 故 4z= 4F=4r=Az=7A. 于\n是 有\n了 Th4r=ZT(4xz)= 了 Ar=AETY\n及\nFMhr=(FT4T7)z=(4F)7rr=(AZ)Trz=Azrx，\n两 式 相 减 ,得\n(A-A)zrxz=0，\n但 因 z 天 9, 所 以\njz= 立 xi= 隐 |x| 关 0，\n各 各\n故 A-A=0, 即 人 = 和 ,这 就 说 明和 是 实数 . 证 毕\n显然 , 当 特 征 值 A, 为 实数 时 , 齐 次 线性 方程 组\n(4-AiE)z=0\n是 实 系数 方程 组 ,由 14-A; 互 |= 0 知 必 有 实 的 基础 解 系 , 所 以 对 应 的 特征 向 量 可 以 取\n实 向 量 .\n性 质 2 设 A,,A; 是 对 称 矩 阵 4 的 两 个 特征 值 ,P, ,P; 是 对 应 的 特征 向 量 . 若 ,天\nA, 则 P 书 与 忆 正 交 .\n证 AiPi=4P，A2Pz=4P ,Ai 天 人 >\n人 为 对 称 佐 阵 , 故 API= (Api) 7= (4Pi) =PI4 =P1A ,于 是\nANPIPa =PTAP?=PI(AaP2)= APIP2，\n即\n(AN-A?)PiP2=0.\n但 和 天 2, 故 站 pz=0, 即 书 与 忆 : 正 交 . 证 毕\n定理 5 设 4 为 n 阶 对 称 矩 阵 , 则 必 有 正 交 和 矩阵 已 ,使 P \"4P=P4P=4, 其 中 人\n是 以 4 的 nm 个 特征 值 为 对 角 元 的 对 角 矩 阵 .\n此 定理 不 予 证 明 .\n性 质 3 设 4 为 n” 阶 对 称 矩 阵 ,》 是 4 的 特征 方程 的 上 重 根 , 则 矩阵 4-A 慷 的 秩 R(4-\nAE)=n-k, 从 而 对 应 特征 值 \\ 惟有 上 个 线性 无 关 的 特征 向 量 .\n证 按 定 理 5 知 对 称 矩 阵 4 与 对 角 爷 阵 人 =diag(Ai,Az，…As) 相 似 , 从 而 和-A 厂\n与 4-A 巨 =diag(A-A,A2-A，…As-A) 相 似 . 当 入 是 4 的 大 重 特征 根 时 ,Ai,A2，…，A，\n这 半 个 特征 值 中 有 上 大 个 等 于 儿 ; 有 nm- 个 不 等 于 和 ,从 而 对 角 和 拭 阵 4-A 巨 的 对 角 元 恰\n有 上 个 等 于 0, 于 是 尽 (4-A 已 )= nm- 大 而 及 (4-A 玉 )= 尽 (4-A 巨 ) ,所 以 及 (4-A 五 )= mn-\n证 毕\n128\n\n依据 定理 5 及 性 质 3 ,我 们 有 下 述 把 ” 阶 对 称 和 矩阵 4 对 角 化 的 步骤 :\n(i) 求 出 4 的 全 部 互 不 相等 的 特征 值 N, ,A2,…,》,, 它 们 的 重 数 依次 为 二 ,很 ，…，\n大 (+ 十 … 十 大 = 半 )\n(ii) 对 每 个 心 重 特征 值 Ni, 求 方程 (4-A; 妃 )x*=0 的 基础 解 系 ,得 态 个 线性 无 关 的\n特征 向 量 .再 把 它们 正 交 化 .单位 化 ,得 态 个 两 两 正 交 的 单位 特征 向 量 . 因 妃 + 姑 +…+\n上 =n, 故 总 共 可 得 n 个 两 两 正 交 的 单位 特征 向 量 .\n( 计 ) 把 这 n 个 两 两 正 交 的 单位 特征 向 量 构成 正 交 和 矩阵 己 , 便 有 己 4 已 = PPAP=\n4. 注 意 4 中 对 角 元 的 排列 次 序 应 与 妃 中 列 向 量 的 排列 次 序 相 对 应 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        131,
+        132,
+        133
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X133-2926",
+      "title": "例 12",
+      "chapter": 5,
+      "section_id": "LA-C05-S4",
+      "knowledge_ids": [
+        "LA-K05-04"
+      ],
+      "printed_page": 129,
+      "prompt": "例 2 设\n0 -11\n4=|-1 0 |\n和 1 0\n求 一 个 正 交 和 矩阵 已 ,使 PP,4P=4 为 对 角 矩 阵 .",
+      "solution": "解 由\nSEE IAA-1 0 ID- oo0\n1M-MEl=| -1 -1 到 |- -| 区 |- -ml\n主 二 了 二 六 1 2\n=(]-A)(A2+A-2)= -(A-1)2(A+2) ，\n求 得 4 的 特征 值 为 Ah,=-2,Az=Aa=1\n对 应 A;=-2, 解 方程 (4+2)z=0, 由\n2-1DN 01\n-1 2 中 1 1|，\n4+2 巨 =\n1 12) oo0\n-1 |. 将 志 sewmr -让 |\nee\n得 基础 解 系 志 =\n1 1\n对 应 A:=As=1, 解 方程 (4- 尼 )x=0, 由\nfl = |\n4-=|-1 -1 1| 一 0 0 0|，\ni 1 =1 0 0 0\n1\nee\n得 基础 解 系 如 =\nI\n0 1\n将 名, 正 交 化 : 取 7= 台 ，\n129\n\n1 -1 1\n本 ,=| ol := 芭 : 三 一\n122 1 2 2 1\n1 0 2 2\n-1 ) 1 记\n再 将 9z ,9 单位 化 ,得 P 万 小 刘 |\n1\n= 一 | 1|,m= 一 |1|.\n将 书 ,Pa,ps 构成 正 交 和 矩阵\n- 工 - 工 工\n中 颗\n=- 孝 -了 上 二 工\nwwe 万 万历，\n1 2\n二\n6\n有\n-2 0 0\nCa 0 1 0|.\n0 .01",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        133,
+        134
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X134-4834",
+      "title": "例 13",
+      "chapter": 5,
+      "section_id": "LA-C05-S4",
+      "knowledge_ids": [
+        "LA-K05-04"
+      ],
+      "printed_page": 130,
+      "prompt": "例 13 六 4 了 求 如\n人 -1 2",
+      "solution": "解 因 4 对 称 , 故 4 可 对 角 化 , 即 有 可 逆 矩 阵 尼 及 对 角 矩 阵 4, 使 严 '4P=4. 于 是\n4=P4P-” ,从 而 4\"=P4\"P-. 由\nciel| |--osa=o-Dora，\n2-A -1\n得 4 的 特征 值 AN=1,A2=3. 于 是\nep 站 全 寺\n1 0 1 0\n0 3 0 3\n一\nas\n应 人 =1 由 4-B= 1 = Ta = 得\n对 应 改 =1， 到 | 王 |。 0 得 和\n[\nae 了 人 ae\n对 应 2=3, 由 4-3 -人 二。 | 得 各 =\n# 有 P 人 6)= _ -站 上\n1 1 -1 人 1\n=PhPi=I 人 1 1 ( 同人 1 -了 3\n2\\1 -1 狼 o 3 八 -1) 21-3，1+3\" 汪\n130\n\n8$5 二 次 型 及 其 标准 形\n在 解析 几何 中 ,为 了 便于 研究 二 次 曲线\nax2+bxy+cy2= 】 (4)\n的 几何 性 质 , 可 以 选择 适当 的 坐标 旋转 变换\n[sea\nx=x'cos g-y'sin 0，\n把 方程 (4) 化 为 标准 形\nmmx'2+ny= 工\n《4) 式 的 左边 是 一 个 二 次 齐 次 多 项 式 ,从 代数 学 的 观点 看 , 化 标准 形 的 过 程 就 是\n通过 变量 的 线性 变换 化 简 一 个 二 次 齐 次 多 项 式 ,使 它 只 含有 平方 项 .这 样 一 个 问题 ,在\n许多 理论 问题 或 实际 问题 中 常会 遇 到 .现在 我 们 把 这 类 问题 一 般 化 ,讨论 n 个 变量 的\n二 次 齐 次 多 项 式 的 化 简 问题 .\n定义 8 含有 7 个 变量 x, ,xz>，…,z， 的 二 次 齐 次 函数\n= +azx2+ 和 mx 二 2apxixa+2003xlx3+… 十 20 xwzx， (5)\n称 为 二 次 型\n当 六 时 , 取 力 =aj, 则 2ayxxj=ayx+oxxxi, 于 是 (5) 式 可 写成\n了 an 计 Haiaxi0a 二 +QinX12 0192 二 0 和 十 让 Qan72Xn 十 二 Golain1 二 QuanM2 十 Oomn 生\n= 5 pa (6)\n当 o 为 复数 时 , 了 称 为 复 二 次 型 ; 当 wy 为 实数 时 , / 称 为 实 二 次 型 .这 里 ,我 们 仅 讨\n论 实 二 次 型 .\n若 二 次 型 只 含有 平方 项 , 则 称 为 标准 二 次 型 (简称 标准 形 ) ; 若 二 次 型 形 如 jj=yi+\n3+ 和 41220-22-…-), 则 称 为 规范 二 次 型 (简称 规范 形 ).\n利用 矩阵 ,二 次 型 (6) 可 表示 为\n了 =50( Gil+aimpXa+…+Qinxn ) +Xa( GalX1 二 GT22 十 … 二 GanXn ) 十 … 上 +Xn( QniX1 二 GaaX2 十 … 十 Gang )\nQIX1 十 Qi2X2 十 十 QinXn\nQ2lX1 十 QZDX2 十 \"AH\n= (oa\nOn1X1 十 Qn2X2 十 十 Gonn\n131\n\nQnm Qi2 an 和 %1\n=\n四\n记\nan Qi Qn 和 1\n21 Qan ， 2\nQm Qo2 Qm Im\n则 二 次 型 可 用 矩阵 记 作\nJ=xzT4x， (7)\n其 中 4 为 对 称 矩阵\n例如 ,二 次 型 六 迪 -32-4xy+yz 用 矩阵 记号 写 出 来 ,就 是\n1 -2 0\n六 (ya 2 0 ]\n1 |]r\n1 了\n0 也 -3\n任 给 一 个 二 次 型 ,就 惟一 地 确定 一 个 对 称 和 矩阵; 反之, 任 给 一 个 对 称 矩 阵 ,也 可 惟\n一 地 确定 一 个 二 次 型 .这 样 , 二 次 型 与 对 称 矩 阵 之 间 存在 一 一 对 应 的 关系 .因此 ,我 们\n把 对 称 矩 阵 4 叫做 二 次 型 了 的 矩阵 ,也 把 了 叫做 对 称 和 矩阵 4 的 二 次 型 .对称 矩阵 4 的\n秩 就 叫做 二 次 型 /的 秩 .\n对 二 次 型 ,我 们 讨论 的 主要 问题 是 :是 否 存在 可 逆 的 线性 变换 (车 存在 ,如何 寻 找 ) :\n2 =cny1+cbaya2+…+Cinyn，\n和 ==ca71+czaya+ 二 caoyoy\n(8)\n二 Cal1 十 Cu272 十 … 十 Conyn\n入\n使 原 二 次 型 变 成 标准 形 .\n记 C=(cy) ,把 可 逆 变 换 (8) 记 作\nY=Cy，\n代 人 (7) 式 ,有 =xr4r=(Cy】 4ACy=7 (CAC)7.\n定义 9 设 4 和 中 是 n” 阶 矩阵 , 若 有 可 逆 矩 阵 C, 使 召 =C7AC, 则 称 矩阵 4 与 刀\n念 同 .\n132\n\n显然 , 若 4 为 对 称 矩 阵 , 则 至 =C\"4C 也 为 对 称 矩阵 , 且 尽 (了 3)= R(4). 事 实 上 ，\nBr=(C4C)7=CI4ATC=CTIAC=B，\n即 妇 为 对 称 矩 阵 . 又 因 召 = CI4C ,而 C 可 逆 , 从 而 C\" 也 可 逆 , 由 矩阵 秩 的 性 质 即 知\nR(B)=R(4).\n由 此 可 知 ,经 可 逆 变 换 x= Cy 后 ,二 次 型 了 的 矩阵 由 4 变 为 与 4 合同 的 矩阵\nCr4C, 且 二 次 型 的 秩 不 变 .\n要 使 二 次 型 /经 可 逆 变换 x= Cy 变 成 标准 形 ,这 就 是 要 使\n力 力\nTmT 2 2 2 如 2\n并 CACy = 用 +jay2+ 和 + (yy2 yyn) ， |，\n也 就 是 要 使 C\"4C 成 为 对 角 和 矩阵 .因此 ,我 们 的 主要 问题 就 是 :对 于 对 称 矩 阵 4 ,是 否\n存在 可 逆 矩 阵 C, 使 CAC 为 对 角 矩 阵 .这 个 问题 称 为 把 对 称 答 阵 叉 食 同 对 角 化 .\n由 上 节 定 理 5 知 , 任 给 对 称 矩 阵 4, 总 有 正 交 和 矩阵 P, 使 P\" 4P=4, 即 P4P=4. 把\n此 结论 应 用 于 二 次 型 , 即 有\n定理 6 任 给 二 次 型 广 》 ovxiz (oj=ay) ,总 有 正 交 变换 x= 有 ,使 /化 为 标准 形\n1\nAHA202+ +Anyn\n其 中 Ai,A?，…,A， 是 8 的 矩阵 4= (or) 的 特征 值 .\n推论 任 给 mn 元 二 次 型 Xz)=xY74xz (47=4) ,总 有 可 逆 变 换 x= Cz, 使 7Cz) 为\n规范 形 .\n证 按 定理 6, 有\n成 媚 )= 了 47= AIHA273+ 二 An\n设 二 次 型 /的 秩 为 >, 则 特征 值 Ni; 中 恰 有 r 个 不 为 0, 无妨 设 Mi,,Az,，…,A, 不 等 于 0，\nAi=Ansa=…=A =0. 令\n及\n其 中\n133\n\n则 天 可 逆 , 变 换 ?=Rz 把 成 媚 ) 化 为\nPKz)= zIK7PTAPKz=z7KT4RKz，\n而\nhkcans| 人 TO ,0， 中\n4 有 =diag| -人 2 人 可\n记 C=PK, 即 知 可逆 变 换 x=Cz 7\n2 A，\nAco-T 四 4 + 证 毕",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        134,
+        135,
+        136,
+        137,
+        138
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X138-2711",
+      "title": "例 14",
+      "chapter": 5,
+      "section_id": "LA-C05-S5",
+      "knowledge_ids": [
+        "LA-K05-05"
+      ],
+      "printed_page": 134,
+      "prompt": "例 14 求 一 个 正 交 变 换 x= 肠 ,把 二 次 型\n= -2xixa+2xix3+2x2x3\n化 为 标准 形 ，",
+      "solution": "解 二 次 型 / 的 矩阵 为\n0 -1 1\n-1 0 1|，\n4=\n1 10\n这 与 例 12 所 给 矩阵 相同 . 按 例 12 的 结果 ,有 正 交 和 矩阵\nLE\n中\n|\n中 由 |\n0 2\n. VG\n使\n-2 0 0\noo\n0 0 1\n于 是 有 正 交 变 换\n和\n- 工 - 工 工\n全 计 二\n网 如 |m\n工 工 工\n3 1 2 |\n万 ”大\n把 二 次 型 了 化 成 标准 形\n134\n\n2 2\n大 -271+y72+13，\n如 果 要 把 二 次 型 化 成 规范 形 ,只 需 令\n1\n万 和\nJ= 2，\nJa= 2\n即 得 / 的 规范 形\n大 -44\n8$6 用 配方 法 化 二 次 型 成 标准 形\n用 正 交 变 换 化 二 次 型 成 标准 形 ,具有 保持 几何 形状 不 变 的 优点 .如 果 不 限 于 用 正\n交 变 换 ,那么 还 可 以 有 多 种 方法 (对 应 有 多 个 可 逆 的 线性 变换 ) 把 二 次 型 化 成 标准\n形 . 这 里 只 介绍 拉 格 良 日 配方 法 ,下 面 举例 来 说 明 这 种 方法 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        138,
+        139
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X139-4340",
+      "title": "例 15",
+      "chapter": 5,
+      "section_id": "LA-C05-S6",
+      "knowledge_ids": [
+        "LA-K05-06"
+      ],
+      "printed_page": 135,
+      "prompt": "人 鲍 15 化 二 次 型\n= x+2x3+5x3+2xixa+2xix3 十 6xaxa\n成 标准 形 ,并 求 所 用 的 变换 矩阵 -",
+      "solution": "解 ”由 于 中 含 变量 xi 的 平方 项 , 故 把 含 xi 的 项 归并 起 来 ,配方 可 得\n= 好 +2xixa+2xix3 十 29 二 5x3+6waxa\n二 (2 Ha 03 ) 一 和 一 妈 一 24203 十 20 十 52 十 Gax3\n= (2 +xa +x3 ) ?+X2 十 4223 十 4 ，\n上 式 右 端 除 第 一 项 外 已 不 再 含 xj. 继续 配方 ,可 得\nJ= (xi +xa+x3 ) 2+(x2+2x3 )2.\n力 0+Ma+ 29， | 生 =Ji-72+ 3，\n令 192= mat2xza, 即 12= 和 -273, 就 把 了 化 成 标准 形 (规范 形 )f= 和 4+?3， 所 用\nya 二 2， 5 三 3a，\n变换 矩阵 为\n1 -1 1\n0 1 引 (|Cl=1z#0).\n0 0 1",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        139
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X139-8428",
+      "title": "例 16",
+      "chapter": 5,
+      "section_id": "LA-C05-S6",
+      "knowledge_ids": [
+        "LA-K05-06"
+      ],
+      "printed_page": 135,
+      "prompt": "例 16 化 二 次 型\n2 和 +2xixa -Go\n成 规范 形 , 并 求 所 用 的 变换 矩阵 .\n135",
+      "solution": "解 ”在 J] 中 不 含 平方 项 .由 于 含有 xxza 乘积 项 , 故 令\nya\n和 =\n2 =，\n代入 可 得\n291293 一 47173 十 87273\n再 配方 ,得\n= 2(7-73) -2(72-273) +673.\n了 购\n= 二\n=VI(m -7 )， 2\n人 =. 右 Gs-2m)， 本 =- 访 aa 语 。 训 把 /化成 规 苑 形\n=V67,， _\n四，\n= 了 43，\n所 用 变换 矩阵 为\nLo JIL 2\n全 让 | 全 人\ncj -ol 过 二 :| 二 -二 -二 | (lcl--zo).\n人 中 || 厂 本 刁\n0 01 1 1\n0 0 二 0 0 所\n一 般 地 ,任何 二 次 型 都 可 用 上 面 两 例 的 方法 找到 可 逆 变 换 , 把 二 次 型 化 成 标准 形\n(或 规范 形 ).\n$7 正定 二 次 型\n二 次 型 的 标准 形 显然 不 是 惟一 的 ,只 是 标准 形 中 所 含 项 数 是 确定 的 ( 即 是 二 次 型\n的 秩 ). 不 仅 如 此 ,在 限定 变换 为 实 变换 时 ,标准 形 中正 系 数 的 个 数 是 不 变 的 (从 而 负 系\n数 的 个 数 也 不 变 ) ,也 就 是 有\n定理 7 设 二 次 型 广 xr4x 的 秩 为 \", 且 有 两 个 可 逆 变 换\nx=Cy 及 x=P\n136\n\n使\n有 Ha72+ 和 + 《用 天 0)\n及\n= 入 +A222+…+AE2 (天 0)，\n则 三 , 坟 ,… 尖 中正 数 的 个 数 与 A ,A> ,…,》, 中 正 数 的 个 数 相 等 .\n这 个 定理 称 为 惯性 定理 ,这 里 不 予 证 明 .\n二 次 型 的 标准 形 中 正 系数 的 个 数 称 为 二 次 型 的 正 惯性 指数 , 负 系 数 的 个 数 称 为 负\n惯性 指数 , 若 二 次 型 了 的 正 惯性 指数 为 了 , 秩 为 \", 则 j 的 规范 形 便 可 确定 为\n银\nJE\n.概念 异同 wmem\n科学 技术 上 用 得 较 多 的 二 次 型 是 正 惯性 指数 为 ”或 负 惯性 指数 为 ”的 元 二 次\n型 ,我 们 有 下 述 定义 .\n定义 10 设 二 次 型 Xzr)=x74z, 若 对 任何 xz 和 0, 都 有 所 z)>0 (显然 凡 0)= 0) , 则\n称 ,/ 为 正定 二 次 型 ,并 称 对 称 和 矩阵 4 是 正定 的 ;如 果 对 任何 x 天 0 都 有 /zx) <0, 则 称 7 为\n负 定 二 次 型 ,并 称 对 称 矩 阵 4 是 负 宗 的 .\n定理 8 nm 元 二 次 型 /=zxr4x 为 正定 的 充分 必要 条 件 是 : 它 的 标准 形 的 ”个 系数\n全 为 正 , 即 它 的 规范 形 的 = 个 系数 全 为 1 , 亦 即 它 的 正 惯性 指数 等 于 m 公众 号 ; 旗 胜 考研\n证 ” 设 可 逆 变 换 x=Cy 使\nJrz)= 凡 Cy)= 垃 0\n先 证 充分 性 . 设 三 >0 (i=1,2,…,mn). 任 给 zx 天 0, 则 ?=C-xz 天 0, 故\nJo)= 六 67>0\n再 证 必要 性 .用 反 证 法 .假设 有 大 <0, 则 当 y=e (单位 从 标 向 量 ) 时 7C Ce ) = 大\n0. 显 然 Ce, 天 0, 这 与 /为 正定 相 矛 盾 .这 就 证 明了 户 >0 (i=1,2，…m). 证 毕\n推论 ”对 称 矩 阵 4 为 正定 的 充分 必要 条 件 是 :4 的 特征 值 全 为 正 .\n定理 9 对 称 矩 阵 4 为 正定 的 充分 必要 条 件 是 :4 的 各 阶 顺 序 主子 式 都 为 正 , 即\nan ap ou\nan ,ap 2 om om\nau>0， >0，…， >0，\naa az 2\n0 am om\n对 称 矩 阵 4 为 负 定 的 充分 必要 条 件 是 :奇数 阶 顺 序 主子 式 为 负 , 而 偶数 阶 顺 序 主子 式 为\n正 , 即\n137\n\nan an Q\n(De “|>0  (r=1,2，om)，\nan Q2 Qnr\n这 个 定理 称 为 区 尔 维 获 定 刺 , 这 里 不 予 证 明 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        139,
+        140,
+        141,
+        142
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X142-2036",
+      "title": "例 17",
+      "chapter": 5,
+      "section_id": "LA-C05-S7",
+      "knowledge_ids": [
+        "LA-K05-07"
+      ],
+      "printed_page": 138,
+      "prompt": "例 17 判定 二 次 型 /= -5x?-6)-42+4xy+4xz 的 正定 性 .",
+      "solution": "解 7 的 矩阵 为\n-5 2 2\n二 2 -6\n2 0 -4\n其 中\nai=-5<0， -| | 141=-80<0，\nan ao| |-5 2\naa azz 2 -6\n根据 定理 9 知 ,为 负 定 .\n设 几 x,y) 是 二 元 正定 二 次 型 , 则 所 *,y)=e (ec>0 为 常数 ) 的 图 形 是 以 原点 为 中 心\n的 燃 圆 . 当 把 看 作 任意 常数 时 则 是 一 族 椭圆 ,这 族 椭圆 随 着 一 0 而 收缩 到 原点 . 当 三\n为 三 元 正定 二 次 型 时 , 岂 x,y,z)= < (c>0) 的 图 形 是 一 族 椭 球 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        142
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X147-4242",
+      "title": "例 1",
+      "chapter": 6,
+      "section_id": "LA-C06-S1",
+      "knowledge_ids": [
+        "LA-K06-01"
+      ],
+      "printed_page": 143,
+      "prompt": "次数不超过 n 的实系数多项式全体 $$P[x]_n=\\{a_nx^n+\\cdots+a_1x+a_0\\mid a_i\\in\\mathbb R\\}$$ 对通常的多项式加法及数乘是否构成向量空间？",
+      "solution": "构成。两多项式相加的结果仍可写作 $$\\sum_{i=0}^n(a_i+b_i)x^i\\in P[x]_n,$$ 标量乘法的结果 $$\\lambda\\sum_{i=0}^na_ix^i=\\sum_{i=0}^n(\\lambda a_i)x^i\\in P[x]_n.$$ 通常的多项式运算满足线性运算律，因此为向量空间。",
+      "explanation": [
+        "“不超过 n”允许最高次项系数为零，也包含零多项式。",
+        "加法和数乘都不会产生超过 n 次的新项，所以两种运算封闭。",
+        "把系数排列为 (a₀,…,aₙ) 可对应到 ℝⁿ⁺¹，帮助理解它的向量空间结构。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        147
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X147-6187",
+      "title": "例 2",
+      "chapter": 6,
+      "section_id": "LA-C06-S1",
+      "knowledge_ids": [
+        "LA-K06-01"
+      ],
+      "printed_page": 143,
+      "prompt": "恰为 n 次的实系数多项式全体 $$Q[x]_n=\\{a_nx^n+\\cdots+a_0\\mid a_i\\in\\mathbb R,\\ a_n\\ne0\\}$$ 对通常的多项式加法及数乘是否构成向量空间？",
+      "solution": "不构成。对任一 $p\\in Q[x]_n$，有 $$0p=0x^n+\\cdots+0\\notin Q[x]_n,$$ 因为其 n 次项系数为零。所以数乘不封闭。",
+      "explanation": [
+        "本例与例 1 的差别是最高次系数必须非零。",
+        "取标量 0，任何多项式都变成零多项式，立即破坏“恰为 n 次”的限制。",
+        "无需逐条检验全部运算律；找到数乘不封闭这一反例已足够。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        147
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X147-7378",
+      "title": "例 3",
+      "chapter": 6,
+      "section_id": "LA-C06-S1",
+      "knowledge_ids": [
+        "LA-K06-01"
+      ],
+      "printed_page": 143,
+      "prompt": "正弦函数的集合 $$S[x]=\\{A\\sin(x+B)\\mid A,B\\in\\mathbb R\\}$$ 对通常的函数加法和数乘是否构成向量空间？",
+      "solution": "构成。利用三角公式，每个函数都可写为 $a\\cos x+b\\sin x$。因此 $$s_1+s_2=(a_1+a_2)\\cos x+(b_1+b_2)\\sin x=A\\sin(x+B)\\in S[x]。$$ 又 $$\\lambda s_1=(\\lambda A_1)\\sin(x+B_1)\\in S[x]。$$ 由封闭性及通常函数运算的线性规律，S[x] 为向量空间。",
+      "explanation": [
+        "把振幅—相位形式展开：A sin(x+B)=A sin B·cos x+A cos B·sin x。",
+        "和函数的两个系数仍可重新写成某个振幅与相位；两个系数全零时取 A=0 即可。",
+        "数乘只改变振幅，频率始终为 1，所以仍在同一集合中。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        147,
+        148
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X148-1946",
+      "title": "例 4",
+      "chapter": 6,
+      "section_id": "LA-C06-S1",
+      "knowledge_ids": [
+        "LA-K06-01"
+      ],
+      "printed_page": 144,
+      "prompt": "设 $$S^n=\\{(x_1,\\ldots,x_n)^{\\mathsf T}\\mid x_i\\in\\mathbb R\\}。$$ 使用通常的加法，但将数乘定义为 $$\\lambda\\circ x=(0,\\ldots,0)^{\\mathsf T}。$$ 说明这不构成向量空间。",
+      "solution": "虽然两种运算都封闭，但对非零向量 x，有 $$1\\circ x=0\\ne x,$$ 不满足数乘的单位律，因此不构成向量空间。",
+      "explanation": [
+        "这里的集合本身和 ℝⁿ 一样，但数乘规则已被改变，不能沿用 ℝⁿ 是向量空间的结论。",
+        "取任意非零向量，用标量 1 作用，定义强制得到零向量，而不是原向量。",
+        "封闭性是必要条件；对这种新定义运算，还必须检查八条线性运算律。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        148
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X148-5197",
+      "title": "例 5",
+      "chapter": 6,
+      "section_id": "LA-C06-S1",
+      "knowledge_ids": [
+        "LA-K06-01"
+      ],
+      "printed_page": 144,
+      "prompt": "在正实数集合 $\\mathbb R^+$ 上定义 $$a\\oplus b=ab,\\qquad\\lambda\\circ a=a^\\lambda。$$ 验证这些运算构成线性空间。",
+      "solution": "正实数的乘积及实数次幂仍是正实数，故封闭。加法交换、结合律分别由实数乘法的交换、结合律得到。零元素是 1，因为 $a\\oplus1=a$；负元素是 $a^{-1}$，因为 $a\\oplus a^{-1}=1$。又 $$1\\circ a=a,\\quad\\lambda\\circ(\\mu\\circ a)=a^{\\lambda\\mu}=(\\lambda\\mu)\\circ a,$$ $$(\\lambda+\\mu)\\circ a=a^{\\lambda+\\mu}=a^\\lambda a^\\mu=(\\lambda\\circ a)\\oplus(\\mu\\circ a),$$ $$\\lambda\\circ(a\\oplus b)=(ab)^\\lambda=a^\\lambda b^\\lambda=(\\lambda\\circ a)\\oplus(\\lambda\\circ b)。$$ 故各线性运算律成立。",
+      "explanation": [
+        "先区分新运算与通常运算：“加法”是正数相乘，“数乘”是取幂，不能用通常的加法零元 0。",
+        "新加法的零元素是 1，a 的负元素是倒数 1/a，恰好对应乘法单位元和乘法逆元。",
+        "指数运算法则逐一保证数乘的结合律及两条分配律，正底数保证任意实数次幂都有定义。",
+        "可用 ln a 对应普通实数：ln(ab)=ln a+ln b，ln(a^λ)=λ ln a，直观理解其结构。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        148,
+        149
+      ],
+      "text_origin": "据原书页面核对转写；讲解为本题步骤说明"
+    },
+    {
+      "id": "SRC-LA7-X151-2168",
+      "title": "例 6",
+      "chapter": 6,
+      "section_id": "LA-C06-S2",
+      "knowledge_ids": [
+        "LA-K06-02"
+      ],
+      "printed_page": 147,
+      "prompt": "例 6 在 线性 空间 P[z], 中 ,Pi = 1,Pa =x,Pa = 局 ,Pi4=z ,ps=x: 就 是 它 的 一 个\n基 . 任 一 不 超过 4 次 的 多 项 式\n疡 =a4x4+a3x3+aax2+GIX+ao\n都 可 表示 为\n忆 =aopi+QiPa+a2p3+aaP4+Q4D5，\n因此 疡 在 这 个 基 中 的 坐标 为 (ao,ai ,aa ,as ,ae)\n若 另 取 一 个 基 9j= 1,g:= 1+z,g3=2x”,g4= 好 ,95= 闻 , 则\n3 4\n忆 =ao+aiX+aax2+aa3xX2++Q4\n2 2 间\n=(qo-a)+ol(14z)+ 72 2x 十 G3X 十 QH 和\n1\n=(ao-oi)91+a1g3+ 7 0293+039g4+0495)\n因此 在 这 个 基 中 的 坐标 为 [se- ,ai 二 ea]\n建立 了 坐标 以 后 ,就 把 抽象 的 向 量 a 与 具体 的 数组 向 量 (x ,za ，…,x,) 联系 起 来\n了 ,并 且 还 可 把 风 中 抽象 的 线性 运算 与 及 ' 中 数组 向 量 的 线性 运算 联系 起 来 .\n设 oa,B e 风 ,有 =zan+xaaa+…+Hxnan ,有 = 力 a0+ya2aa+…+ynan ,于 是\natHB= (zi+yi)an+(xa+ya) aa+… 二 (xn+yn Ja ，\nAa=(Axzi )ai+(Axa )ao+…+(Axs)ar，\n即 arB 的 坐标 是\n(Ha192 = (502 二 (702 7)\nAa 的 坐标 是\n(Axi,Axa，…yAzn)T=A(z sa)\n总 之 , 设 在 维 线性 空间 及 中 取 定 一 个 基 m ,az ，…,a, 则 区 中 的 向 量 w 与 及 ”\n中 普 维 数组 向 量 空间 的 向 量 (x;,xa,…,x,) \"之 间 就 有 一 个 一 一 对 应 的 关系 , 且 这 个 对\n应 关系 具有 下 述 性 质 : ，\n设 ae (oo Bo) 7 , 则\n(iD ago 72\n147\n\n(ii) AareyA(z ,za xs) 工\n也 就 是 说 ,这 个 对 应 关系 保持 线性 组 合 的 对 应 .因此 ,我 们 可 以 说 允 与 芒 \" 有 相同 的 结\n构 , 我 们 称 几 与 及 \" 同 构 .\n一 般 地 , 设 了 与 也 是 两 个 线性 空间 ,如 果 在 它们 的 向 量 之 间 有 一 一 对 应 关系 , 且\n这 个 对 应 关系 保持 线性 组 合 的 对 应 ,那么 就 说 线性 空间 ? 与 同 构 .\n显然 ,任何 = 维 线性 空间 都 与 及 \" 同 构 , 即 维 数 相等 的 线性 空间 都 同 构 .从 而 可 知\n线性 空间 的 结构 完全 被 它 的 维 数 所 决定 .\n同 构 的 概念 除 向 量 一 一 对 应 外 ,主要 是 保持 线性 运算 的 对 应 关系 .因此 ,内 中 的 抽\n象 的 线性 运算 就 可 转化 为 及 \" 中 的 线性 运算 ,并且 及\" 了 中 凡是 只 涉及 线性 运算 的 性 质\n就 都 适用 于 甩 . 但 取 \" 中 超出 线性 运算 的 性 质 ,在 岂 中 就 不 一 定 具备 ,例如 及 \" 中 的 内\n积 概念 在 中 就 不 一 定 有 意义 .\n8$3 基 变 换 与 坐标 变换\n由 例 6 可 见 ,同一 向 量 在 不 同 的 基 中 有 不 同 的 坐标 ,那么 ,不同 的 基 与 不 同 的 坐标\n之 间 有 怎样 的 关系 呢 ?\n设 m ,aaa 及 B,,B:，…B,。 是 线性 空间 , 中 的 两 个 基 ，\n=Phuan+parao+…+pman，\n:=Phan+pzaa+…+puzah， (GD)\n=Pinan +Panat2+ +Pmatn，\n把 am,az,…,av 这 m 个 有 序 向 量 记 作 (ai ,aa ,…,av ) , 记 阶 矩阵 己 =(P) ,利用 向 量\n和 和 矩阵 的 形式 ,(1) 式 可 表示 为\n(BuBo)= (oa :ao) 已 (2)\n(1) 式 或 (2) 式 称 为 基 变 换 公式 ,矩阵 已 称 为 由 基 au ,az，…,a, 到 基 ,B:，……,B。\n的 过 淡 矩 阵 .由 于 B,B:，…,B, 线性 无 关 , 故 过 湾 矩 阵 王 可 弟 .\n定理 2 设 双 中 的 向 量 ac 在 基 am ,a ,…,a, 中 的 坐标 为 (xi ,za，…x,) ,在 基 ，\nB:，…,B。 中 的 坐标 为 (xi ,z4，…,x1) 7 车 两 个 基 满 足 关系 式 (2) , 则 有 坐标 变换 公式\n)\nxi 2 2 ai\n-有 或 | .|=P” 和 (3)\n148",
+      "solution": "证 因\n力 1] 和 1\n2\n(aa |=a=(BBB| =) 如 一 |，\n和 六\n由 于 m ,aa ,…，,av 线性 无 关 , 故 即 有 关系 式 (3)- 证 毕\n这 个 定理 的 逆 命 题 也 成 立 . 即 若 任 一 向 量 的 两 种 坐标 满足 坐标 变换 公式 (3) , 则 两\n必\n个 基 满 足 基 变 换 公式 (2)，",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        151,
+        152,
+        153
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X153-2890",
+      "title": "例 7",
+      "chapter": 6,
+      "section_id": "LA-C06-S3",
+      "knowledge_ids": [
+        "LA-K06-03"
+      ],
+      "printed_page": 149,
+      "prompt": "例 7 在 P[x*]; 中 取 两 个 基\n0 = 委 +2s2-Y， op = 好 -x+X+1， 0 = 一 x+2x2+x+1， at = 一 2 一 X2+1\n,=2x2+x2+1， := 和 2+2x+2， =-2x2+z2+x+2， = 和 +3x2+x+2.\n求 坐标 变换 公式 .",
+      "solution": "解 将 B,,B:,B:,B, 用 am ,aa,aas,a 表示 .由\n(aaaasyau)= (02x1)4，(BBBB)= ( 知 , 和 ,x,1) 了 B，\n其 中\n1 1 ~ ~ 2 0 =21\n碌 2 -~! 1 1 1 总\n4= ， 及 =\n-1 1 1 0 02 11\n0 工 1 1 和 和\n得\n(B,,B:,B,B,)= (aaa,aaas)4- 有 ，\n故 坐标 变换 公式 为\n2 1\n双 | -|\n和 和\n4 4\n算 如 下 :\n2 0 -2 1 RE\n1113j2- 2-i\n(4)slo 2 11 1 1 0\n12220o111\n149\n\n人 2\n0\n3\n2\n2\n-2\n0 0\n-13\n-13\n13\n13\nama\n0\n0\n0\n1\n4\n-3\n-3\n0\n3\n0\n1\n-2\n<-\nS\n-4\n3\n0 0\n蝇\n2\n-2\n2\n1\n一\n0\n1\n0\n1000i\n于 是 坐标 变换 公式 为\n线性 变换\n,4\n定义 5 设 有 两 个 非 空 集 合 4,B, 如 果 对 于 4 中 任 一 元 素 a, 按 照 一 定 的 规则 ,总\n150\n\n有 了 中 一 个 确定 的 元 素 5 和 它 对 应 ,那么 ,这 个 对 应 规则 称 为 从 集 含 4 到 集合 总 的 映\n擂 我 们 常用 字母 表示 一 个 映射 ,譬如 把 上 述 映射 记 作 7, 并 记\npB=7(a) 或 B=Ta (ae4)， (4)\n设 mw e4,T(ai )= ,就 说 映射 7 把 元 素 wm 变 为 B,,B, 称 为 w 在 映射 了 下 的 像 ，\non 称 为 B, 在 映射 了 下 的 原 像 .4 称 为 映射 7 的 定义 域 , 像 的 全 体 所 构成 的 集合 称 为 像\n集 , 记 作 7(4) , 即\n7(4)= 1B=T(a) |ce4|，\n作\n显然 T(4) GB.\n映射 的 概念 是 函数 概念 的 推广 .例如 , 设 二 元 函数 := 所 x,y) 的 定义 域 为 平面 区 域\nC, 函 数值 域 为 2 ,那么 ,函数 关系 /就 是 一 个 从 定义 域 C 到 实数 域 取 的 映射 ; 函数 值\nxzo,yo)= zo 就 是 元 素 (xo,yo) 的 像 ,(xo,yo) 就 是 zo 的 原 像 ,Z 就 是 像 集 -\n定义 6 设 双 ,U。 分 别 是 mn 维和 严 维 线性 空间 ,了 是 一 个 从 太 到 U。 的 映射 ,如\n果 映 射 了 满足\n(i) 任 给 m ,aa e 肥 (从 而 at+aae 肥 ) ,有\nT(a+az)=T(a)+T(aa)，\n(i) 任 给 we 及 ,Ae 玉 〈( 从 而 Mae 太 ) ,有\nT(Aa)=AT(a)，\n那么 了 就 称 为 从 岂 到 U。 的 线性 映射 ,\n简 言 之 ,线性 映射 就 是 保持 线性 组 合 的 对 应 的 映射\n例如 ,关系 式\n7 ] (au on an ]fm\n3 | -| mm， oz oo |\n刀 oo 人\n就 确定 了 一 个 从 及\" 到 及 ” 的 映射 ,并且 是 个 线性 映射 (参见 后 面 的 例 10)\n特别 地 ,在 定义 6 中 ,如 果 Du = 叉 , 那 么 了 是 一 个 从 线性 空间 见 到 其 自身 的 线性\n映射 , 称 为 线性 空间 风 中 的 线性 变换 .\n下 面 我 们 只 讨论 线性 空间 叉 中 的 线性 变换 ,",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "跨页解答的终点需复核，OCR段可能混入后续正文。"
+      ],
+      "source_pages": [
+        153,
+        154,
+        155
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X155-7805",
+      "title": "例 8",
+      "chapter": 6,
+      "section_id": "LA-C06-S4",
+      "knowledge_ids": [
+        "LA-K06-04"
+      ],
+      "printed_page": 151,
+      "prompt": "例 8 在 线性 空间 P[x]: 中 ，\n(1) 如 果 微分 运算 D 表示 对 x 求 时 的 运算 了 那么 是 一 个 线性 变换 .这 是 因为 任 取\n也 =aax +azz +aix+aoE 忆 [x], 则 Dp=3asx +2a2z+aii\ng=bax?+box2+bx+boE 忆 [x]:, 则 D9g=303x2+2b2x+bi，\n从 而 有\n\nD(P+g)=D[(as+ba)x2+(az+ba)x2+(ai+b)x+(ao+bo)]\n=3(as+b3)x2+2(aa+ba)x+(ai+bi)\n= (3asx?+2a?x+ai ) +(3b3x2+2b2x+bi )= DP+D9 ;\nD(Ap)= D(Aasx3+Aazx2+Aaix+Aao)= 和 (3asx2+2a2x+ai )= ADP.\n(2) 如 果 T(P)= ao, 那么 了 也 是 一 个 线性 变换 .这 是 因为\nT(P+g)= ao+bo=7(P)+7(9);\nT(AP)= Aao=AT(P).\n(3) 如 果 四 (P)= 1 ,那么 7 是 个 变换 ,但 不 是 线性 变换 .这 是 因为 Th(P+g)= 1 ,而\nTi(P)+7i(g)= 1+1=2, 故\nTi(P+g) 天 Ti(P)+7 9)",
+      "solution": "",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。",
+        "题干与解答边界尚待人工划分；不能据此认定原书无解答。"
+      ],
+      "source_pages": [
+        155,
+        156
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X156-3329",
+      "title": "例 9",
+      "chapter": 6,
+      "section_id": "LA-C06-S4",
+      "knowledge_ids": [
+        "LA-K06-04"
+      ],
+      "printed_page": 152,
+      "prompt": "例 9 关系 式\n7 则 性 9P ecos ?] 四\nifesw -sng]fz\n确定 了 xOy 平面 上 的 一 个 变换 7, 说 明 变换 7 的 几何 意义 (参见 第 2 章 图 2.3).",
+      "solution": "解 寺 于 是\nX%=rcos 6，\n=rsin 6，\n虽 _ 区 p-ysin ?] _ 人 bcos p-rsin bsin ?] _ 人\n7) xsin p+ycos p 外 【人 rcos bsin p+rsin bcos p) 【rsin(gtp) 作\n这 表示 变换 了 把 任 一 向 量 按 逆 时 针 方向 旋转 w 角 ( 由 例 10 可 知 这 个 变换 是 一 个 线性\n变换 )，\n线性 变换 具有 下 述 基本 性 质 :\n(i) 70=0,7(-a)= -Ta.\n(ii) 车 B= 司 an+jas+…+kan , 则\nTB = 后 Ta+kaTa2+…+koTa\n(这 ) 车 a ,az ,…,aw 线性 相关 , 则 Ta ,Ta ,…,Ta。 亦 线性 相关 .\n这 些 性 质 请 读者 证 明之 .注意 性 质 (这 ) 的 逆 命题 是 不 成 立 的 , 即 当 an ,aa ，…aw\n线性 无 关 时 ,Ta ,Ta ,Ta 不 一 定 线性 无 关 .\n(iv) 线性 变换 7 的 像 集 7( V, ) 是 一 个 线性 空间 , 称 为 线性 变换 7 的 像 空 间 .\n证 设 B,p:s7(V), 则 有 aazse 叉 ,使 Ta =B,,Tas=B:, 从 而\n+B; =Ta+7as =T(a+ta) se7T( 及 ) ( 因 am+ae 太 )，\nAMB,=ATm=7(Aa) se7(K) ( 因 Man se 多 )，\n由 上 述 证 明知 它 对 岂 中 的 线性 运算 封闭 , 故 它 是 一 个 线性 空间 . 证 毕\n(vY) 使 Tax=0 的 ce 的 全 体\n152\n\nNr=jlalae 只 ,Ta=0j\n也 是 一 个 线性 空间 . Nr 称 为 线性 变换 7 的 核 .\n证 NrE 久 , 且 易 见 7(0)= 0, 故 0eNr,Nr 秋 纪 .\n若 a ,as seNyr, 即 Tai =0,Tas:=0, 则 T(ai+as)= Ta+7Tas=0, 所 以 a+as seNr;\n车 m eNr,Ae 双 , 则 7T(Aa)= ATa =AO=0, 所 以 Ma eNr，\n以 上 表明 Nr 对 及 中 的 线性 运算 封闭 ,所 以 Ny 是 一 个 线性 空间 . 证 毕",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        156,
+        157
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X157-2451",
+      "title": "例 10",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05"
+      ],
+      "printed_page": 153,
+      "prompt": "例 10 设 有 nn 阶 和 矩阵\n八\n00 Qi On\n4=| 2 = (aaa，…ao)，\nGa  Qn2 Qmn\n其 中\nQT\nww=\n定义 取 \" 中 的 变换 ?=T(z ) 为\n7T(xz)=4xr (ze 到)，\n则 7 为 线性 变换 .",
+      "solution": "证 设 epeR\", 则 .\nT(at5)=4(a+p)=4a+4p=7T(a)+T(D) ，\n7T(AMa)=4(Aa)=AM4a=AT(a).\n故 了 是 线性 变换 .\n又 ,7 的 像 空间 就 是 由 m ,az ,…，av 所 生成 的 向 量 空间\n了 ( 取 \" )= | xia; +xa202+…+xsG | xi 22 E 了 |，\n了 的 核 Nr 就 是 齐 次 线性 方程 组 hr=0 的 解 空间 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        157
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X159-6671",
+      "title": "例 11",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05"
+      ],
+      "printed_page": 155,
+      "prompt": "例 11 在 P[x], 中 , 取 基\n局 = 妈 ，Pa= 妈 ，Ps=xz， Pi=1，\n求 微分 运算 D 的 矩阵 .\nDP, =3%2= 0pi+3p2+0ps+0p4，",
+      "solution": "解 DP:=2x=0p+0p:+2p3+0p4，\nDps=1= 0p,+0p2+0p3+1p4，\nDp4=0=0p,+0p:+0ps+0p4，\n所 以 D 在 这 组 基 下 的 矩阵 为\n155\n\n0 0 0 0\n3 0 0 0\n4= 上\n0 200\n0 010",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        159,
+        160
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X160-1715",
+      "title": "例 12",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05"
+      ],
+      "printed_page": 156,
+      "prompt": "例 12 在 到 中 ,7 表示 将 向 量 投影 到 xOy 平面 的 线性 变换 , 即\n了 (xi+y7+zK)= 和 +\n(1) 取 基 为 亡 户 大 , 求 了 的 矩阵 ;\n(2) 取 基 为 w=iB=jy=itj+K, 求 了 的 矩阵 .",
+      "solution": "解 (1) 了\n家 =\n.KE=0，\n即\n1 0 0\nrarez 昌 1\n0 0 0\n(2) 和\nTa=i=a，\nTy= 订 =a1B，\n即\n1 0 1\nT(a,B,7)= (a,B,7)\n0 1 1|.\n0 0 0\n由 上 例 可 见 ,同一 个 线性 变换 在 不 同 的 基 下 有 不 同 的 矩阵 .一 般 地 ,我 们 有\n定理 3 设 线性 空间 内 中 取 定 两 个 基\naa BoB\n由 基 ai ,as ,…,av 到 基 ,,B:,…,B, 的 过 渡 和 矩阵 为 也, 员 , 中 的 线性 变换 7 在 这 两 个 基\n下 的 矩阵 依次 为 4 和 瑟 , 那 么 如 = 忆 4\n证 按 定理 的 假设 ,有\n科\n(BB2 和 Bo)= (aa as)P，\n下 可 逆 ; 及\nT(a ,aa ,as)= (aaa，ao)4，\nT(B，p puB,)= (BE 1B,)B，\n于 是\n(BB:B,)B =T(B BuB,)=7T[(aaa ,ao)P]\n156\n\n=[T(a aa av)]P=(anaa， an)4 己\n=(B，B:，…B,)P- 4P，\n因为 B ,B:,…,B, 线性 无 关 , 所 以\n了 =P-I4P. 证 毕\n这 定理 表明 4 与 妃 相 似 , 且 两 个 基 之 间 的 过 渡 矩 阵 己 就 是 相似 变换 矩阵 .",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        160,
+        161
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    },
+    {
+      "id": "SRC-LA7-X161-2167",
+      "title": "例 13",
+      "chapter": 6,
+      "section_id": "LA-C06-S5",
+      "knowledge_ids": [
+        "LA-K06-05"
+      ],
+      "printed_page": 157,
+      "prompt": "例 13 设 态 中 的 线性 变换 了 在 基 oa ,as 下 的 矩阵 为\n4= ai amp\n全\noo 深入 探究 ms\n求 了 在 基 m,a 下 的 矩阵 .",
+      "solution": "解 2 moree 和\n0 1\n人 中 se 人 中 了 是 7 在 (oova) 下 的 了\n0 1 0 1\n2 人 | 交 病 提 小 人 “] 站 他 病\noo ww 人 oo om 人 os\n定义 8 线性 变换 7 的 像 空间 7( 吧 ) 的 维 数 , 称 为 线性 变换 了 的 秩 .\n显然 , 若 4 是 了 的 矩阵 , 则 7 的 秩 就 是 R(A)，\n若 了 的 秩 为 \", 则 了 的 核 V 的 维 数 为 mr",
+      "explanation": [],
+      "status": "ocr_needs_review",
+      "issues": [
+        "自动OCR初稿；矩阵、上下标、正负号和分数尚未逐式核对，不可作为已校订答案。"
+      ],
+      "source_pages": [
+        161
+      ],
+      "text_origin": "OCR文字初稿；非PDF或图片替代"
+    }
+  ]
+}

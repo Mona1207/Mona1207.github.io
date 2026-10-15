@@ -1,0 +1,270 @@
+{
+  "version": 17,
+  "book_id": "DM2T",
+  "scope": "第19章例19.1—19.11；视觉校订文字、公式、运算表及算法，讲解为本题补充。",
+  "items": [
+    {
+      "id": "SRC-DM2T-X384-1642",
+      "title": "例 19.1",
+      "prompt": "（1）99099 有多少个正因子？\n（2）$20!$ 的二进制表示中，从最低位数起有多少个连续的0？",
+      "solution": "（1）$99099=3^2\\times7\\times11^2\\times13$，正因子数为 $(2+1)(1+1)(2+1)(1+1)=36$。\n（2）$20!$ 中因子2的指数为 $\\lfloor20/2\\rfloor+\\lfloor20/4\\rfloor+\\lfloor20/8\\rfloor+\\lfloor20/16\\rfloor=10+5+2+1=18$，故二进制末尾有18个连续0。",
+      "explanation": [
+        "正因子唯一写成 $3^a7^b11^c13^d$，四个指数可分别取0至2、0至1、0至2、0至1，独立计数相乘。",
+        "二进制末尾0的个数等于被2整除的次数，不是十进制尾0数。先对所有偶数各计一个2，再对4的倍数补一个，8、16的倍数依次补计，恰好得到18。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        384
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S1",
+      "knowledge_ids": [
+        "DM-K19-S01"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X385-1425",
+      "title": "例 19.2",
+      "prompt": "判断127和133是否是素数。",
+      "solution": "$\\sqrt{127},\\sqrt{133}<13$，只需检查素数2、3、5、7、11。它们都不整除127，故127是素数；$133=7\\times19$，故133是合数。",
+      "explanation": [
+        "合数必有一个不超过自身平方根的素因子，所以不必遍历到126。127除以7余1、除以11余6，且其奇偶、数位和、末位已排除2、3、5。",
+        "对133，只要找到一个非平凡因子即可停止；7整除133提供了明确分解。素数判断要区分“所有候选均不整除”与“找到任意一个因子”这两种停机条件。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        385
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S1",
+      "knowledge_ids": [
+        "DM-K19-S01"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X386-7080",
+      "title": "例 19.3",
+      "prompt": "求168与300的最大公约数及最小公倍数。",
+      "solution": "$168=2^3\\times3\\times7$，$300=2^2\\times3\\times5^2$。\n$\\gcd(168,300)=2^2\\times3=12$；\n$\\operatorname{lcm}(168,300)=2^3\\times3\\times5^2\\times7=4200$。",
+      "explanation": [
+        "把两数按统一素数集合2、3、5、7展开，缺少的素数指数为0。公约数要求每个指数不超过两边，因此最大公约数逐项取较小指数。",
+        "公倍数需要包含两边所有素因子，最小公倍数逐项取较大指数。用 $12\\times4200=168\\times300$ 可复核。原书解开头出现“150和220”的字样，后续分解实际仍为题设168和300，此处按题设统一。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        386
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S2",
+      "knowledge_ids": [
+        "DM-K19-01"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X388-0844",
+      "title": "例 19.4",
+      "prompt": "用辗转相除法求168与300的最大公因子 $d$，并把 $d$ 表示成168和300的线性组合，即求整数 $x,y$ 使 $d=168x+300y$。",
+      "solution": "辗转相除：\n$300=168+132$；\n$168=132+36$；\n$132=3\\times36+24$；\n$36=24+12$；\n$24=2\\times12$。\n故 $d=12$。\n回代：$12=36-24=36-(132-3\\times36)=4\\times36-132=4(168-132)-132=4\\times168-5(300-168)=9\\times168-5\\times300$。\n可取 $x=9,y=-5$。",
+      "explanation": [
+        "余数递减，最后一个非零余数12就是最大公因子；余数0用于结束算法，不是最大公因子。",
+        "从产生12的等式倒推，逐次用更前面的式子消去24、36、132，直到只剩168与300。代回 $168\\times9+300\\times(-5)=12$ 验证系数。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        388
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S2",
+      "knowledge_ids": [
+        "DM-K19-01"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X388-6607",
+      "title": "例 19.5",
+      "prompt": "设 $a\\mid c$、$b\\mid c$，且 $a,b$ 互素，证明 $ab\\mid c$。",
+      "solution": "由 $\\gcd(a,b)=1$，存在整数 $x,y$ 使 $xa+yb=1$。两边乘 $c$，得 $c=cxa+cyb$。因为 $b\\mid c$，故 $ab\\mid cxa$；因为 $a\\mid c$，故 $ab\\mid cyb$。两项之和也被 $ab$ 整除，所以 $ab\\mid c$。",
+      "explanation": [
+        "互素条件允许用贝祖等式将1表示为 $a,b$ 的整数线性组合，乘以 $c$ 后就得到所需的两项。",
+        "例如 $c=bv$ 时 $cxa=abvx$，第一项确为 $ab$ 的倍数；第二项同理。互素条件不能去掉，如4和6都整除12，但24不整除12。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        388
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S2",
+      "knowledge_ids": [
+        "DM-K19-01"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X389-5670",
+      "title": "例 19.6",
+      "prompt": "写出 $\\mathbb Z_5$ 的全部元素，以及 $\\mathbb Z_5$ 上的加法表和乘法表。",
+      "solution": "$\\mathbb Z_5=\\{[0],[1],[2],[3],[4]\\}$，其中 $[i]=\\{5k+i:k\\in\\mathbb Z\\}$。\n\n加法表：\n\n| + | [0] | [1] | [2] | [3] | [4] |\n|---|---|---|---|---|---|\n| [0] | [0] | [1] | [2] | [3] | [4] |\n| [1] | [1] | [2] | [3] | [4] | [0] |\n| [2] | [2] | [3] | [4] | [0] | [1] |\n| [3] | [3] | [4] | [0] | [1] | [2] |\n| [4] | [4] | [0] | [1] | [2] | [3] |\n\n乘法表：\n\n| · | [0] | [1] | [2] | [3] | [4] |\n|---|---|---|---|---|---|\n| [0] | [0] | [0] | [0] | [0] | [0] |\n| [1] | [0] | [1] | [2] | [3] | [4] |\n| [2] | [0] | [2] | [4] | [1] | [3] |\n| [3] | [0] | [3] | [1] | [4] | [2] |\n| [4] | [0] | [4] | [3] | [2] | [1] |",
+      "explanation": [
+        "每个元素是一个同余类而非单个整数；所有整数按除以5的余数分入这五类。",
+        "表中每格先对行列代表数做普通加法或乘法，再取模5。如 $[3]+[4]=[7]=[2]$，$[2][3]=[6]=[1]$；运算结果始终回到五个类之一。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        389,
+        390
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S3",
+      "knowledge_ids": [
+        "DM-K19-02"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X390-2990",
+      "title": "例 19.7",
+      "prompt": "$3^{455}$ 的个位数是多少？",
+      "solution": "$3^4=81\\equiv1\\pmod{10}$，$455=4\\times113+3$，因此 $3^{455}=(3^4)^{113}3^3\\equiv27\\equiv7\\pmod{10}$。个位数是7。",
+      "explanation": [
+        "个位数就是模10的标准非负余数，用同余运算避免算出整个巨大整数。",
+        "模10下3的幂每4次循环一次，指数455除以4余3，故只需算 $3^3$ 的个位数。注意不能把指数直接对10取模。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        390
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S3",
+      "knowledge_ids": [
+        "DM-K19-02"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X390-3974",
+      "title": "例 19.8",
+      "prompt": "日期的星期数：怎样计算公历 $y$ 年 $m$ 月 $d$ 日为星期几？用0、1、…、6依次表示星期日、星期一、…、星期六。公历闰年规则为：非世纪年能被4整除者为闰年；世纪年仅当世纪数能被4整除时为闰年。推导星期数公式，并计算1949年10月1日及1945年8月15日的星期数。",
+      "solution": "将3月改记为第1月，…，12月为第10月，次年1月、2月为第11、12月：\n$M=(m-3)\\bmod12+1$，$Y=y-\\lfloor M/11\\rfloor=100C+X$，其中 $0\\le X<100$。\n以3月1日为年起点，当年3月1日星期数满足\n$w_Y\\equiv3-2C+X+\\lfloor X/4\\rfloor+\\lfloor C/4\\rfloor\\pmod7$。\n各新月份相对每月30天额外累计日数 $z$ 为：\n\n| $M$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| $z$ | 0 | 1 | 1 | 2 | 2 | 3 | 4 | 4 | 5 | 5 | 6 | 7 |\n\n$z=\\left\\lfloor(M+\\lfloor M/7\\rfloor)/2\\right\\rfloor+\\lfloor M/12\\rfloor$。因此最终公式为\n$w\\equiv X+\\lfloor X/4\\rfloor+\\lfloor C/4\\rfloor-2C+2M+\\left\\lfloor(M+\\lfloor M/7\\rfloor)/2\\right\\rfloor+\\lfloor M/12\\rfloor+d\\pmod7$，取余数0至6。\n\n1949年10月1日：$C=19,X=49,M=8,d=1$，$w\\equiv49+12+4-38+16+4+0+1=48\\equiv6\\pmod7$，星期六。\n1945年8月15日：$C=19,X=45,M=6,d=15$，$w\\equiv45+11+4-38+12+3+0+15=52\\equiv3\\pmod7$，星期三。",
+      "explanation": [
+        "把2月移到年末，可让每个计算年中的闰日都只影响年切换，避免在月公式中再分平年和闰年。1月、2月计算时务必使用上一年的 $Y$，世纪数和年内数也须随之调整。",
+        "以1600年3月1日为基准，经过的平年贡献每年1天，额外闰日数按“每4年加、每100年减、每400年加”修正；利用已知2004年3月1日为星期一，得到1600年基准星期数3。",
+        "从3月1日走到新 $M$ 月 $d$ 日需经过 $30(M-1)+z+d-1$ 天；对7取模后与年公式相加，常数项抵消得到最终公式。所有中括号都表示向下取整，不能作普通四舍五入。",
+        "原书计算的是公历规则。程序核对可按同样取整和非负取模实现；此公式已与标准日期计算逐日对照1600—2499年全部328719天。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        390,
+        391
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S3",
+      "knowledge_ids": [
+        "DM-K19-02"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X392-3308",
+      "title": "例 19.9",
+      "prompt": "解一次同余方程 $8x\\equiv4\\pmod6$。",
+      "solution": "$\\gcd(8,6)=2$ 且 $2\\mid4$，方程有解。整体约去公因子2时，模数也除以2，得 $4x\\equiv2\\pmod3$，即 $x\\equiv2\\pmod3$。\n故在模6下有两类解 $x\\equiv2,5\\pmod6$，也可写成 $x\\equiv2,-1\\pmod6$；最小正整数解为2。",
+      "explanation": [
+        "先验可解条件是 $\\gcd(a,m)\\mid c$。如果条件不满足，逐一试解也不会有结果。",
+        "约去2后应从模6变为模3，不能保留模6直接约分。模3的一类解在模6中对应2和5两类。",
+        "按原书枚举模6代表 $-2,-1,0,1,2,3$：其 $8x$ 余数依次为2、4、0、2、4、0，恰好选出-1与2，和约化法一致。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        392
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S4",
+      "knowledge_ids": [
+        "DM-K19-S04"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X392-7180",
+      "title": "例 19.10",
+      "prompt": "求5的模7逆。",
+      "solution": "$\\gcd(5,7)=1$，逆存在。\n方法1：观察 $3\\times5-2\\times7=1$，所以 $5^{-1}\\equiv3\\pmod7$。\n方法2：枚举 $x=-3,-2,-1,0,1,2,3$，$5x$ 模7余数依次为6、4、2、0、5、3、1，所以逆为3。\n方法3：辗转相除 $7=5+2$、$5=2\\times2+1$，回代 $1=5-2(7-5)=3\\times5-2\\times7$，得到同样结果。全部整数逆为 $3+7k$，$k\\in\\mathbb Z$。",
+      "explanation": [
+        "模逆指乘积在指定模数下同余于1，不是实数倒数1/5；有逆的充分必要条件是5与7互素。",
+        "三个方法都在解 $5x\\equiv1\\pmod7$。扩展欧几里得算法尤其适用于数值较大的情形，回代中5的系数3正是所求。",
+        "最终检验 $5\\times3=15\\equiv1\\pmod7$；模7下逆唯一，但作为整数可加任意7的倍数。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        392,
+        393
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S4",
+      "knowledge_ids": [
+        "DM-K19-S04"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    },
+    {
+      "id": "SRC-DM2T-X397-8830",
+      "title": "例 19.11",
+      "prompt": "RSA 算例：取 $p=43,q=59,n=pq=2537$，$\\varphi(n)=2436$，加密指数 $w=13$。字母 $a,b,\\ldots,z$ 用 $00,01,\\ldots,25$ 表示。加密明文 $m=2106$（vg）；再将收到的密文 0981 解密。",
+      "solution": "加密：$13=1+2^2+2^3$。反复平方并取模得\n$A_0=2106\\equiv-431$，$A_1\\equiv560$，$A_2\\equiv-988$，$A_3\\equiv-601\\pmod{2537}$。\n故 $c=2106^{13}\\bmod2537=(-431)(-988)(-601)\\bmod2537=2321$。\n解密指数 $d=13^{-1}\\bmod2436=937$（$13\\cdot937=5\\cdot2436+1$）。\n$937=1+2^3+2^5+2^7+2^8+2^9$。\n从 $A_0=981$ 开始，逐次平方取模得到 $A_1=838,A_2\\equiv-505,A_3=1325,A_4=21,A_5=441,A_6\\equiv-868,A_7\\equiv-65,A_8\\equiv-849,A_9=293$。\n因此 $981^{937}\\equiv981\\cdot1325\\cdot441\\cdot(-65)\\cdot(-849)\\cdot293\\equiv704\\pmod{2537}$。\n补足四位为 0704，按两位一字母解为 he。",
+      "explanation": [
+        "模幂不用直接算出巨大整数，先逐次平方，始终把数压缩为模 2537 的余数；负余数也可使用，只要同余即可。",
+        "把指数写成二进制，只乘二进制为 1 的位对应的幂。例如 13 的二进制是 1101，取 $A_0,A_2,A_3$。",
+        "解密指数是加密指数在模 $\\varphi(n)$ 下的乘法逆元，而不是模 $n$ 的逆元。",
+        "解密结果须保留前导 0，否则无法按约定的两位编码分割。"
+      ],
+      "status": "reviewed",
+      "issues": [],
+      "source_pages": [
+        397,
+        398
+      ],
+      "chapter": 19,
+      "section_id": "DM-C19-S6",
+      "knowledge_ids": [
+        "DM-K19-S06"
+      ],
+      "ocr_method": "visual-source-checked-and-math-retyped",
+      "counted_as_mastery": false,
+      "scoring": "reference_only"
+    }
+  ]
+}
