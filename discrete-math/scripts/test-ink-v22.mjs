@@ -1,8 +1,8 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import{createRequire}from'node:module';import{webcrypto}from'node:crypto';
 const require=createRequire(import.meta.url),{createCanvas,Image}=require(process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES+'/@napi-rs/canvas'),memory=new Map(),notes=new Map(),wait=ms=>new Promise(r=>setTimeout(r,ms));
 let source=fs.readFileSync(new URL('../scripts/ink-v22.js',import.meta.url),'utf8');
-if(process.env.MONA_UI==='24'){
- const app=fs.readFileSync(new URL('../assets/app-ui-v24.js',import.meta.url),'utf8'),a=app.indexOf('function V16Handwriting('),b=app.indexOf('\nfunction ',a+10);
+if(['24','26','27'].includes(process.env.MONA_UI)){
+ const app=fs.readFileSync(new URL('../assets/app-ui-v'+process.env.MONA_UI+'.js',import.meta.url),'utf8'),a=app.indexOf('function V16Handwriting('),b=app.indexOf('\nfunction ',a+10);
  source=source.replace('function V16Handwriting(','function V16HandwritingBeforeV24(')+'\nfunction v24ReadPen(){return 2}\nfunction v24SavePen(){}\nfunction V24WidthControl(){}\n'+app.slice(a,b);
 }
 const db={close(){},transaction(){const tx={objectStore:()=>({get(key){const r={};setTimeout(()=>{r.result=structuredClone(memory.get(key));r.onsuccess?.()},0);return r},put(value,key){setTimeout(()=>{memory.set(key,structuredClone(value));tx.oncomplete?.()},0)}})};return tx}};
@@ -22,7 +22,7 @@ const h=harness();let t=h.render();await h.flush();t=h.render();let c=h.canvas(t
 h.resize(720,500);await h.flush();const after=h.bounds();assert.equal(after.minx,before.minx);assert.equal(after.miny,before.miny);assert.deepEqual(memory.get('LA7:Q1'),saved,'pane resize must not move/scale strokes or rewrite paper');
 h.resize(0,0);await h.flush();assert.deepEqual(memory.get('LA7:Q1'),saved,'hiding draft for image notes preserves paper and strokes');h.resize(720,500);await h.flush();c=h.canvas(t);c.onPointerDown(h.event(100,100,'touch',2));c.onPointerDown(h.event(200,100,'touch',3));c.onPointerMove(h.event(300,100,'touch',3));c.onPointerUp(h.event(100,100,'touch',2));c.onPointerUp(h.event(300,100,'touch',3));await h.flush();assert.equal(memory.get('LA7:Q1').strokes.length,1,'pinch never writes ink');assert(h.bounds().count>before.count,'pinch changes rendered zoom');t=h.render();h.button(t,'查看全部').onClick();await h.flush();t=h.render();
 for(const label of ['柔绘笔','铅笔','钢笔'])assert.throws(()=>h.button(t,label));assert(h.button(t,'橡皮'));assert(h.find(t,n=>n.props?.['aria-label']==='笔迹大小'||n.type===h.ctx.V24WidthControl));for(const color of ['黑色','红色','蓝色'])assert(h.find(t,n=>n.props?.['aria-label']===color));
-if(process.env.MONA_UI==='24'){
+if(['24','26','27'].includes(process.env.MONA_UI)){
  const control=h.find(t,n=>n.type===h.ctx.V24WidthControl);control.props.onChange(1.7);t=h.render();c=h.canvas(t);c.onPointerDown(h.event(300,70));c.onPointerMove(h.event(350,70));c.onPointerUp(h.event(350,70));await h.flush();
  const newest=memory.get('LA7:Q1').strokes.at(-1);assert.equal(newest.width,1.7/960,'precise decimal pen width reaches the saved vector stroke');
  // Undo our precision probe so the existing touch/lasso checks keep their fixture.

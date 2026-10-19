@@ -1,0 +1,52 @@
+{
+  "version": 26,
+  "mode": "built-in image generation",
+  "design": "同一蒙娜丽莎身份，文艺复兴画风，奶油色与绿色雾化圆框，教材头像忠实参考上传封面。场景头像按功能设计，圆框外透明。",
+  "assets": [
+    {
+      "id": "PS3",
+      "path": "discrete-math/assets/avatars-v26/PS3.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona Chinese study website. Image 1 is the Mona Lisa face/style reference; retain her recognisable face, calm subtle smile and long dark hair. Image 2 is the real textbook COVER reference: use its actual color blocking, design and correct Chinese title on the book she is reading. Mona Lisa shown waist-up, face large and legible, holding an open textbook at chest height with the front cover angled toward viewer; her eyes look gently down at the pages. Refined Renaissance painterly portrait, with smooth clean edges and restrained fine detail suitable for a small 64px UI avatar. Round cream and pale sage fog backdrop, thin olive ring, fully transparent OUTSIDE the circular avatar. Muted sage garments, warm cream light, book preserves its distinctive cover colors. No extra props, floating symbols, captions, website text, watermarks, or logo wordmarks. Keep a clean consistent circular composition and distinctive recognizable Mona Lisa identity. Specific textbook: 工程数学·概率统计简明教程，第三版，the gold/yellow cream cover."
+    },
+    {
+      "id": "LA7",
+      "path": "discrete-math/assets/avatars-v26/LA7.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona Chinese study website. Image 1 is the Mona Lisa face/style reference; retain her recognisable face, calm subtle smile and long dark hair. Image 2 is the real textbook COVER reference: use its actual color blocking, design and correct Chinese title on the book she is reading. Mona Lisa shown waist-up, face large and legible, holding an open textbook at chest height with the front cover angled toward viewer; her eyes look gently down at the pages. Refined Renaissance painterly portrait, with smooth clean edges and restrained fine detail suitable for a small 64px UI avatar. Round cream and pale sage fog backdrop, thin olive ring, fully transparent OUTSIDE the circular avatar. Muted sage garments, warm cream light, book preserves its distinctive cover colors. No extra props, floating symbols, captions, website text, watermarks, or logo wordmarks. Keep a clean consistent circular composition and distinctive recognizable Mona Lisa identity. Specific textbook: 工程数学·线性代数，第七版，the lavender purple cover with dark indigo title panel."
+    },
+    {
+      "id": "DM2T",
+      "path": "discrete-math/assets/avatars-v26/DM2T.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona Chinese study website. Image 1 is the Mona Lisa face/style reference; retain her recognisable face, calm subtle smile and long dark hair. Image 2 is the real textbook COVER reference: use its actual color blocking, design and correct Chinese title on the book she is reading. Mona Lisa shown waist-up, face large and legible, holding an open textbook at chest height with the front cover angled toward viewer; her eyes look gently down at the pages. Refined Renaissance painterly portrait, with smooth clean edges and restrained fine detail suitable for a small 64px UI avatar. Round cream and pale sage fog backdrop, thin olive ring, fully transparent OUTSIDE the circular avatar. Muted sage garments, warm cream light, book preserves its distinctive cover colors. No extra props, floating symbols, captions, website text, watermarks, or logo wordmarks. Keep a clean consistent circular composition and distinctive recognizable Mona Lisa identity. Specific textbook: 离散数学（第2版），the wine-red burgundy cover."
+    },
+    {
+      "id": "PHYS",
+      "path": "discrete-math/assets/avatars-v26/PHYS.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona Chinese study website. Image 1 is the Mona Lisa face/style reference; retain her recognisable face, calm subtle smile and long dark hair. Image 2 is the real textbook COVER reference: use its actual color blocking, design and correct Chinese title on the book she is reading. Mona Lisa shown waist-up, face large and legible, holding an open textbook at chest height with the front cover angled toward viewer; her eyes look gently down at the pages. Refined Renaissance painterly portrait, with smooth clean edges and restrained fine detail suitable for a small 64px UI avatar. Round cream and pale sage fog backdrop, thin olive ring, fully transparent OUTSIDE the circular avatar. Muted sage garments, warm cream light, book preserves its distinctive cover colors. No extra props, floating symbols, captions, website text, watermarks, or logo wordmarks. Keep a clean consistent circular composition and distinctive recognizable Mona Lisa identity. Specific textbook: 物理学（第七版）下册，the blue-violet cover with cyan title panel."
+    },
+    {
+      "id": "settings",
+      "path": "discrete-math/assets/avatars-v26/settings.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona learning website. Use reference image 1 to preserve Mona Lisa's recognizable Renaissance face, subtle smile, brown hair and dark olive garment. Same refined painterly style and thin sage rim as the reference, face large and readable, half-body portrait, warm cream lighting, pale green mist inside the circular medallion, FULLY TRANSPARENT outside the circle. Elegant and minimal, NOT a cartoon. A very small number of large clear functional props only. No website text, letters, captions, watermarks or text outside the props. She is calmly adjusting two elegant brass-and-sage settings sliders on a small panel she holds, with ONE small brass gear visible beside the panel. The scene clearly suggests arranging personal settings and tools."
+    },
+    {
+      "id": "map",
+      "path": "discrete-math/assets/avatars-v26/map.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona learning website. Use reference image 1 to preserve Mona Lisa's recognizable Renaissance face, subtle smile, brown hair and dark olive garment. Same refined painterly style and thin sage rim as the reference, face large and readable, half-body portrait, warm cream lighting, pale green mist inside the circular medallion, FULLY TRANSPARENT outside the circle. Elegant and minimal, NOT a cartoon. A very small number of large clear functional props only. No website text, letters, captions, watermarks or text outside the props. She is attentively arranging a small cream card with a clean green branching mind map: a central circle connects to three larger circles with simple thin branches. Her hand gently points to one node. This is an illustrative prop, not a complex scientific diagram. No letters."
+    },
+    {
+      "id": "resume",
+      "path": "discrete-math/assets/avatars-v26/resume.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona learning website. Use reference image 1 to preserve Mona Lisa's recognizable Renaissance face, subtle smile, brown hair and dark olive garment. Same refined painterly style and thin sage rim as the reference, face large and readable, half-body portrait, warm cream lighting, pale green mist inside the circular medallion, FULLY TRANSPARENT outside the circle. Elegant and minimal, NOT a cartoon. A very small number of large clear functional props only. No website text, letters, captions, watermarks or text outside the props. She has returned to an open cream-and-sage study notebook, gently lifting a muted gold ribbon bookmark to continue where she left off, one hand on the page. Clear bookmark and resumed reading pose. No text."
+    },
+    {
+      "id": "practice",
+      "path": "discrete-math/assets/avatars-v26/practice.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona learning website. Use reference image 1 to preserve Mona Lisa's recognizable Renaissance face, subtle smile, brown hair and dark olive garment. Same refined painterly style and thin sage rim as the reference, face large and readable, half-body portrait, warm cream lighting, pale green mist inside the circular medallion, FULLY TRANSPARENT outside the circle. Elegant and minimal, NOT a cartoon. A very small number of large clear functional props only. No website text, letters, captions, watermarks or text outside the props. She is doing exercises, holding a small cream notebook at chest height and writing in it with a dark green pencil. A few simple neutral math marks on the page, no large text. Thoughtful and focused, distinctive writing pose."
+    },
+    {
+      "id": "knowledge",
+      "path": "discrete-math/assets/avatars-v26/knowledge.webp",
+      "prompt": "Use case: identity-preserve / logo-brand. Create ONE standalone square circular avatar for the Mona learning website. Use reference image 1 to preserve Mona Lisa's recognizable Renaissance face, subtle smile, brown hair and dark olive garment. Same refined painterly style and thin sage rim as the reference, face large and readable, half-body portrait, warm cream lighting, pale green mist inside the circular medallion, FULLY TRANSPARENT outside the circle. Elegant and minimal, NOT a cartoon. A very small number of large clear functional props only. No website text, letters, captions, watermarks or text outside the props. She is explaining a concept, holding a small open sage book with one hand and softly pointing at a single simple golden diagram on a page with the other, her gaze engaging and gently instructional. No text."
+    }
+  ]
+}

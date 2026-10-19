@@ -1,0 +1,6 @@
+{
+  "web_version": 27,
+  "web_name": "v27",
+  "updated_at": "2026-10-19",
+  "android": {"version_code": 1, "version_name": "1.0.0", "download_url": "https://mona1207.github.io/discrete-math/download/", "notes": "首次 Android 版：教材头像、栏内选择、脑图缩放、草稿与笔记、自动检查更新。"}
+}
