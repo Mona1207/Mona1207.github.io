@@ -39,3 +39,27 @@
 @media(min-width:700px){.v19-split-shell .v18-column-1{min-width:0}.v18-split-toolbar{max-width:100%}}
 @media(max-width:699px){.v19-split-shell .v18-split{display:block!important;position:relative}.v19-split-shell .v18-study-column{height:100%;width:100%;display:none!important}.v19-split-shell .v18-study-column.mobile-selected:not([hidden]){display:flex!important}.v19-split-shell .v18-resizer{display:none!important}.v22-note-heading{gap:5px}.v22-inline-tools{gap:5px}.v22-inline-tools>button{min-height:29px!important}.v18-study-heading>b{max-width:60%}.v18-next-prev{margin-left:0;width:100%;justify-content:flex-end}.v18-split-toolbar>small{display:none}.v18-split-toolbar>nav{display:flex!important;flex-wrap:wrap}.v18-split-toolbar{min-height:30px}.v22-size-picker input{width:90px}}
 @media(max-height:600px){.v20-ink .v16-ink-footer>span{display:none}.v20-ink .v16-ink-footer{max-height:58px}.v20-zoom-bar small{display:none}.v18-main{padding-top:4px;padding-bottom:5px}}
+
+/* Home cards keep their content height at browser zoom and large text sizes.
+   The page scrolls; the card row never shrinks underneath the following rows. */
+.v18-main.v18-page-home{display:block;overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable;overscroll-behavior-y:contain}
+.v18-main.v18-page-home>.v20-home{display:grid;grid-template-rows:auto minmax(min-content,1fr) auto auto;align-content:start;gap:13px;min-height:100%;height:auto;max-height:none;overflow:visible!important;flex:none;padding-bottom:4px}
+.v20-home>.v20-home-modules{flex:none;min-height:min-content;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;align-items:stretch}
+.v20-home .v20-practice-module{min-height:min-content}
+.v20-home .v20-home-module{height:auto;min-height:min-content;flex:1 0 auto;overflow-wrap:anywhere}
+.v20-home .v18-compact-heading{flex-wrap:wrap;align-items:flex-start;min-width:0}
+.v20-home .v18-compact-heading>div{flex:1 1 180px;min-width:0}
+.v20-home .v18-compact-heading h1,.v20-home .v18-compact-heading small{overflow-wrap:anywhere}
+.v20-home .v20-continue{flex:none;flex-wrap:wrap;min-width:0}
+.v20-home .v20-continue>div{flex:1 1 160px;min-width:0}
+.v20-home .v20-continue b{white-space:normal;overflow-wrap:anywhere}
+.v20-home button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.v20-home .v20-continue>button{flex:0 1 auto}
+.v20-home .v20-home-selectors{min-width:0}
+.v20-home .v20-home-selectors select{min-width:0;max-width:100%;width:100%}
+.v20-home .v18-home-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.v20-home .v18-home-stats>div{min-width:0;flex-wrap:wrap;align-content:center;gap:6px 10px}
+.v20-home .v18-home-stats small{overflow-wrap:anywhere;min-width:0}
+.v20-home .v18-home-links{min-width:0;align-content:flex-start}
+@media(max-width:820px){.v20-home>.v20-home-modules{grid-template-columns:minmax(0,1fr);gap:12px}.v20-home .v20-home-module{padding:17px}.v20-home .v20-concept-preview p{display:block}}
+@media(max-width:480px){.v20-home .v18-home-stats{grid-template-columns:minmax(0,1fr)}.v20-home .v18-home-stats>div{flex-direction:row;align-items:center}.v20-home .v18-home-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.v20-home .v18-home-links button{justify-content:center}}
