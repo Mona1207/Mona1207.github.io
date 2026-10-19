@@ -2,7 +2,7 @@
 # Intermediate PDF builds are never published.
 discrete-math/textbooks/v16/*.source.pdf
 discrete-math/textbooks/v16/*.building.pdf
-node_modules/
+node_modules
 android/build/
 android/signing/
 *.jks

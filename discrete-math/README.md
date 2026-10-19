@@ -1,4 +1,4 @@
-## v27 · 场景头像、紧凑选择与 Android 准备
+## v27 · 场景头像、紧凑选择与 Android App
 
 入口：<https://mona1207.github.io/discrete-math/?v=27#home>
 
@@ -6,6 +6,8 @@
 - 首页三块主模块：左上续练、左下章节/知识点选择后进入独立习题知识树、右侧知识点讲解；绿色渐变雾化、克制的金色/灰紫点缀和真实完成量粒子电池。
 - 章/知识点/评级等使用贴合控件宽度的非模态小下拉，超长列表可搜索、靠近边缘自动向上展开、旧 WebView 保留原生选择。脑图筛选并列，缩小顶部区域，支持围绕双指中点缩放、单指平移和视图恢复。
 - 设置标题居左，桌面每组四个独立卡片，窄屏两列；主导航一次返回根页面，连续切题替换同层历史，离开前保存草稿。网页轮询版本，有新版时先保存再更新。
+
+Android 安装页：<https://mona1207.github.io/discrete-math/download/>，首版 1.0.0 (1)，支持自动检查 APK 更新与网页更新，安装包约 77KB。编译源码、构建方式和实机验证边界见 `android/README.md`。
 
 重建：`python3 discrete-math/scripts/build-ui-v26.py`、`python3 discrete-math/scripts/build-ui-v27.py`。
 
