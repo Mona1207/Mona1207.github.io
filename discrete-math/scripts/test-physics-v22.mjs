@@ -1,0 +1,51 @@
+import fs from 'node:fs';import path from 'node:path';import vm from 'node:vm';import assert from 'node:assert/strict';import {webcrypto} from 'node:crypto';import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),R=new URL('../',import.meta.url),read=p=>fs.readFileSync(new URL(p,R),'utf8'),json=p=>JSON.parse(read(p)),data=json('data/exercises-PHYS-v21.json'),seed=json('data/book-PHYS-v15.json'),app=read('assets/app-ui-v22.js'),expected=['9-13','9-14','9-15','9-17','9-28','9-30','10-10','10-15','10-16','10-27','10-28','10-29','11-15','11-16','11-24','11-25','11-27','11-34','11-35'];
+assert.deepEqual(data.items.map(i=>i.number),expected);assert.equal(new Set(data.items.map(i=>i.id)).size,19);assert.equal(seed.questions.length,0);assert.equal(seed.knowledge.length,12);assert.equal(data.sources.length,10);
+assert.equal(json('data/books-v15.json').filter(b=>b.id==='PHYS').length,1);
+let formulas=0;const katex=require(process.env.V20_KATEX||'katex');
+for(const item of data.items){
+ assert.equal(item.chapter,Number(item.number.split('-')[0]));assert.equal(item.source.source_number,Number(item.number.split('-')[1]));assert.equal(item.source.id,item.id);assert.equal(item.status,'reviewed');assert.equal(item.answer_status,'reviewed');assert(item.prompt&&item.solution&&item.explanation.length);assert(item.knowledge_ids.every(id=>seed.knowledge.some(k=>k.id===id)));
+ for(const match of (item.prompt+'\n'+item.solution).matchAll(/!\[[^\]]*\]\((\/discrete-math\/[^)]+)\)/g))assert(fs.existsSync(new URL(match[1].replace('/discrete-math/',''),R)),match[1]);
+}
+for(const item of [...data.items,...seed.knowledge.map(k=>({id:k.id,prompt:Object.values(k.content).join('\n')}))]){
+ const text=[item.prompt,item.solution,...item.explanation||[]].filter(Boolean).join('\n');
+ assert(!/[\x00-\x09\x0b-\x1f]/.test(text),item.id);
+ for(const match of text.matchAll(/\$\$([\s\S]*?)\$\$|(?<!\\)\$([^$\n]+?)(?<!\\)\$/g)){katex.renderToString(match[1]??match[2],{throwOnError:true,strict:'error',displayMode:match[1]!==undefined});formulas++}
+}
+const one=n=>data.items.find(i=>i.number===n);assert(one('10-29').issues.length);assert(one('11-27').solution.includes('466'));assert(one('11-35').solution.includes('4.5'));
+const near=(a,b)=>assert(Math.abs(a-b)<1e-8,[a,b]);
+near(.5*.01*(8*Math.PI)**2*.005**2,0.00007895683520871487);
+near(.03*550*Math.PI*Math.sin(1.65*Math.PI),-46.18646258639743);
+near(800*(330-15)/(330-25),826.2295081967213);
+near(Math.tan(Math.asin(.38))-Math.tan(Math.asin(.20)),.20669266700102054);
+assert.equal(Math.round(20*250),5000);
+const fake=await import(process.env.V17_FAKE_INDEXEDDB||'fake-indexeddb'),requests=[];
+const virtualFetch=async url=>{const u=new URL(url,'https://example.test'),p=u.pathname.replace('/discrete-math/','');requests.push(p);assert(fs.existsSync(new URL(p,R)),p);return{ok:true,json:async()=>json(p)}};
+const self={location:{search:'?book=PHYS',origin:'https://example.test'}};let resolveReply,rejectReply;
+self.postMessage=message=>message.error?rejectReply(Error(message.error)):resolveReply(message.result);
+const worker={self,indexedDB:new fake.IDBFactory(),crypto:webcrypto,URL,URLSearchParams,structuredClone,TextEncoder,Date,console,fetch:virtualFetch,setTimeout,clearTimeout,practiceGroup:q=>q.id};
+vm.createContext(worker);vm.runInContext(read('assets/pages-worker-v21.js').replace(/^import[^\n]+\n/,''),worker);
+let callId=0;const call=(p,method='GET',body={})=>new Promise((resolve,reject)=>{resolveReply=resolve;rejectReply=reject;self.onmessage({data:{id:++callId,path:p,method,body}})});
+const state=await call('/state');assert.equal(state.settings.current_book,'PHYS');assert.equal(state.knowledge.length,12);assert(state.books.some(b=>b.id==='DM2T'));assert(state.books.some(b=>b.id==='PHYS'));assert.equal(state.questions.length,0);assert(state.knowledge.every(k=>k.unlock.allowed));
+await call('/notes','POST',{target_id:seed.knowledge[0].id,content:'物理学习笔记'});const backup=await call('/backup');assert.equal(backup.data.config.current_book,'PHYS');assert.equal(backup.data.notes.length,1);const preview=await call('/restore/validate','POST',{backup,raw_backup_text:JSON.stringify(backup)});assert.equal(preview.notes,1);assert.equal((await call('/backup')).data.revision,backup.data.revision,'preview must not modify stored learning records');
+await call('/notes','POST',{target_id:seed.knowledge[1].id,content:'恢复前的第二条笔记'});await call('/restore','POST',{backup,raw_backup_text:JSON.stringify(backup),confirm:true});assert.equal((await call('/backup')).data.notes.length,1);assert.equal((await call('/restore/previous')).data.notes.length,2);
+const corrupt=structuredClone(backup);corrupt.data.notes[0].content='changed';await assert.rejects(()=>call('/restore/validate','POST',{backup:corrupt,raw_backup_text:JSON.stringify(corrupt)}),/完整性/);
+const canonical=o=>Array.isArray(o)?'['+o.map(canonical).join(',')+']':o!==null&&typeof o==='object'?'{'+Object.keys(o).sort().map(k=>JSON.stringify(k)+':'+canonical(o[k])).join(',')+'}':JSON.stringify(o),wrongBook=structuredClone(backup);wrongBook.data.config.current_book='LA7';wrongBook.checksum=Buffer.from(await webcrypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(wrongBook.data)))).toString('hex');await assert.rejects(()=>call('/restore/validate','POST',{backup:wrongBook,raw_backup_text:JSON.stringify(wrongBook)}),/另一教材/);assert.equal((await call('/backup')).data.notes.length,1);
+assert(requests.includes('data/book-PHYS-v15.json'));
+let mathResolve,mathReject;const mathSelf={location:{search:'?book=LA7',origin:'https://example.test'},postMessage:message=>message.error?mathReject(Error(message.error)):mathResolve(message.result)},mathWorker={...worker,self:mathSelf};vm.createContext(mathWorker);vm.runInContext(read('assets/pages-worker-v21.js').replace(/^import[^\n]+\n/,''),mathWorker);const mathCall=p=>new Promise((resolve,reject)=>{mathResolve=resolve;mathReject=reject;mathSelf.onmessage({data:{id:1,path:p,method:'GET',body:{}}})});const mathState=await mathCall('/state');assert.equal(mathState.settings.current_book,'LA7');assert(mathState.books.some(b=>b.id==='PHYS'));assert.equal((await mathCall('/backup')).data.notes.length,0);assert.equal((await call('/backup')).data.notes.length,1,'math and physics databases must stay separate');
+console.log('PASS exact 19 source questions, source numbering, 12 knowledge mappings, corrected numerical results, '+formulas+' formulas, actual PHYS worker initialization and backup validation.');
+let slots=[],cursor=0,effects=[],deps=[];const ui={console,Map,Set,URL,Number,Math,Promise,fetch:virtualFetch,m:{useState(v){const i=cursor++;if(!(i in slots))slots[i]=typeof v==='function'?v():v;return[slots[i],v=>slots[i]=v]},useEffect(fn,d){const i=cursor++;if(!deps[i]||d.some((v,j)=>v!==deps[i][j])){deps[i]=d;effects.push(fn)}}}};
+function extract(start,end){const a=app.indexOf(start),b=app.indexOf(end,a+start.length);assert(a>=0&&b>a,start);return app.slice(a,b)}
+vm.createContext(ui);
+vm.runInContext('const v15SourceCache=new Map(),v19ExerciseCache=new Map(),v17ExampleCache=new Map();\n'+extract('function v15SourceData(book){','function useV15SourcesBeforeV17(')+extract('function useV15SourcesBeforeV17(','let v15PdfCache=')+extract('function useV17ExamplesBeforeV20(','function V17ExampleText(')+extract('function useV19Exercises(','function useV15Sources(')+extract('function useV15Sources(','function V19QuestionText(')+'\nfunction useV15SourcesBeforeV20(book){return useV15SourcesBeforeV17(book)}',ui);
+async function renderHook(name){cursor=0;const value=ui[name]('PHYS');for(const fn of effects.splice(0))fn();for(let n=0;n<5;n++)await new Promise(r=>setImmediate(r));return value}
+await renderHook('useV15Sources');const sources=await renderHook('useV15Sources');assert.equal(sources.items.length,19);assert.equal(new Set(sources.items.map(i=>i.id)).size,19);assert.equal(sources.error,'');assert(sources.items.every(i=>i.text_item?.answer_status==='reviewed'));
+slots=[];deps=[];effects=[];const before=requests.length;await renderHook('useV17ExamplesBeforeV20');await renderHook('useV17ExamplesBeforeV20');assert.equal(requests.length,before,'physics has no unrelated examples fetch');
+for(const name of ['As','V16Reader','V18Study','useV15Sources'])assert.equal(app.split('function '+name+'(').length-1,1,name);
+assert(app.includes("'PHYS'"));assert(app.includes('./client-v21.js?v=21'));assert(app.includes('item.source_label||'));assert(app.includes('v21SourceOrder(a)-v21SourceOrder(b)'));
+const client=read('assets/client-v21.js');assert(client.includes('pages-worker-v21.js?v=21'));assert(client.includes('u.searchParams.delete("book")'));
+const storage=new Map(),u=new URL('https://example.test/discrete-math/?v=21&book=PHYS#home');let replaced;
+vm.runInNewContext(client.slice(0,client.indexOf('\n')), {URL,localStorage:{setItem:(k,v)=>storage.set(k,v)},window:{location:{href:u.href},history:{state:null,replaceState:(_a,_b,url)=>replaced=url}}});assert.equal(storage.get('zhixu-current-book'),'PHYS');assert(!new URL(replaced).searchParams.has('book'));
+assert(read('index.html').includes('app-ui-v22.js?v=22'));for(const b of ['DM2T','LA7','PS3'])assert(json('data/books-v15.json').some(i=>i.id===b));
+ui.e={jsx:(type,props)=>({type,props}),Fragment:'fragment'};ui.V17Markdown=function Markdown(){};ui.V17ExampleText=function Example(){};vm.runInContext("function v10(type,props,...children){return e.jsx(type,{...props,children:children.flat().filter(x=>x!==undefined&&x!==null&&x!==false)})}\n"+extract('function V19Solution({item})','function V19KnowledgeSupport('),ui);slots=[];deps=[];effects=[];cursor=0;const detailed=ui.V19Solution({item:data.items[0]}),nodes=[];function walk(n){if(Array.isArray(n)){n.forEach(walk);return}if(n&&typeof n==='object'){nodes.push(n);walk(n.props?.children)}}walk(detailed);assert.equal(nodes.filter(n=>n.type===ui.V17Markdown).length,data.items[0].explanation.length,'show every rewritten step by default for physics');
+console.log('PASS actual compiled source hooks return only selected physics exercises, no missing example files, source image labels, numerical question ordering, course switching and physics deep link.');

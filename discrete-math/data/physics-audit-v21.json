@@ -1,0 +1,51 @@
+{
+  "book": "PHYS",
+  "numbered_questions": 19,
+  "reviewed_questions": 19,
+  "remaining_questions": 0,
+  "source_images": 10,
+  "selected_only": true,
+  "numbering_rule": "11-12 表示习题十一第12题",
+  "chapters": [
+    {
+      "chapter": 9,
+      "title": "习题九",
+      "numbers": [
+        13,
+        14,
+        15,
+        17,
+        28,
+        30
+      ],
+      "total": 6
+    },
+    {
+      "chapter": 10,
+      "title": "习题十",
+      "numbers": [
+        10,
+        15,
+        16,
+        27,
+        28,
+        29
+      ],
+      "total": 6
+    },
+    {
+      "chapter": 11,
+      "title": "习题十一",
+      "numbers": [
+        15,
+        16,
+        24,
+        25,
+        27,
+        34,
+        35
+      ],
+      "total": 7
+    }
+  ]
+}

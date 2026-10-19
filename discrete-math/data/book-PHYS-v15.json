@@ -1,0 +1,989 @@
+{
+  "book": {
+    "id": "PHYS",
+    "title": "大学物理 · 上传习题选题",
+    "short_title": "物理",
+    "edition": "上传题图 · 19 道指定习题",
+    "meta": {
+      "source": "user_supplied_images",
+      "source_scope": "selected_questions_only",
+      "image_count": 10,
+      "question_count": 19,
+      "numbering_rule": "11-12 表示习题十一第12题",
+      "full_textbook_available": false
+    }
+  },
+  "books": [
+    {
+      "id": "DM2T",
+      "title": "离散数学（第2版）",
+      "short_title": "离散数学",
+      "edition": "第2版 · 屈婉玲、耿素云、张立昂",
+      "meta": {
+        "pdf_pages": 414,
+        "printed_offset": 11,
+        "source": "user_supplied",
+        "source_scope": "local_pdf_reading"
+      }
+    },
+    {
+      "id": "LA7",
+      "title": "工程数学·线性代数（第七版）",
+      "short_title": "线性代数",
+      "edition": "第七版",
+      "pdf_pages": 176,
+      "printed_offset": 4,
+      "meta": {
+        "pdf_pages": 176,
+        "printed_offset": 4,
+        "source": "user_supplied",
+        "scanned": true,
+        "source_scope": "local_pdf_reading"
+      }
+    },
+    {
+      "id": "PS3",
+      "title": "工程数学·概率统计简明教程（第三版）",
+      "short_title": "概率统计",
+      "edition": "第三版",
+      "pdf_pages": 268,
+      "printed_offset": 10,
+      "meta": {
+        "pdf_pages": 268,
+        "printed_offset": 10,
+        "source": "user_supplied",
+        "scanned": true,
+        "source_scope": "local_pdf_reading"
+      }
+    },
+    {
+      "id": "PHYS",
+      "title": "大学物理 · 上传习题选题",
+      "short_title": "物理",
+      "edition": "上传题图 · 19 道指定习题",
+      "meta": {
+        "source": "user_supplied_images",
+        "source_scope": "selected_questions_only",
+        "image_count": 10,
+        "question_count": 19,
+        "numbering_rule": "11-12 表示习题十一第12题",
+        "full_textbook_available": false
+      }
+    },
+    {
+      "id": "DM2",
+      "title": "离散数学·学习指导与习题解析（第2版）·历史记录",
+      "meta": {
+        "pdf_pages": 445,
+        "printed_offset": 8,
+        "source": "user_supplied",
+        "scanned": true,
+        "parts": [
+          "数理逻辑",
+          "集合论",
+          "代数结构",
+          "组合数学",
+          "图论",
+          "初等数论"
+        ],
+        "original_subheadings": [
+          {
+            "parent_id": "DM-C01-S1",
+            "title": "1. 命题与联结词",
+            "page": 3,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C02-S1",
+            "title": "1. 等值式与基本等值式",
+            "page": 20,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C02-S1",
+            "title": "2. 析取范式与合取范式",
+            "page": 21,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C03-S1",
+            "title": "1. 推理的形式结构",
+            "page": 41,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C03-S1",
+            "title": "2. 自然推理系统 P",
+            "page": 42,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C04-S1",
+            "title": "1. 一阶逻辑命题符号化",
+            "page": 67,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C05-S1",
+            "title": "1. 一阶逻辑等值式与置换规则",
+            "page": 81,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C05-S1",
+            "title": "2. 一阶逻辑前束范式",
+            "page": 82,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C05-S1",
+            "title": "3. 一阶逮辑的推理理论",
+            "page": 82,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C06-S1",
+            "title": "1. 集合的基本概念",
+            "page": 107,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C06-S1",
+            "title": "2. 集合的基本运算",
+            "page": 107,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C06-S1",
+            "title": "3. 有穷集合元素的计数",
+            "page": 108,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C06-S1",
+            "title": "4. 集合恒等式",
+            "page": 108,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "1. 有序对与笛卡儿积",
+            "page": 130,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "2. 二元关系",
+            "page": 130,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "3. 关系的表示",
+            "page": 131,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "4. 关系的性质",
+            "page": 131,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "5. 关系运算的定义",
+            "page": 131,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "6. 关系运算的性质",
+            "page": 132,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "7. 等价关系与划分",
+            "page": 133,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C07-S1",
+            "title": "8. 偏序关系与偏序集",
+            "page": 133,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C08-S1",
+            "title": "1. 函数的基本概念",
+            "page": 161,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C08-S1",
+            "title": "2. 函数的性质",
+            "page": 161,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C08-S1",
+            "title": "3. 函数的复合与反函数",
+            "page": 162,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C08-S1",
+            "title": "4. 集合的等势与优势",
+            "page": 162,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C08-S1",
+            "title": "5. 集合的基数",
+            "page": 162,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C09-S1",
+            "title": "1. 二元运算与一元运算",
+            "page": 183,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C09-S1",
+            "title": "2. 二元运算的性质",
+            "page": 183,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C09-S1",
+            "title": "3. 代数系统",
+            "page": 184,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C09-S1",
+            "title": "4. 代数系统的同态与同构",
+            "page": 184,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C09-S1",
+            "title": "1. 会判断给定函数/ 是否为集合 $ 上的二元运算或一元运算.",
+            "page": 184,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "1. 半群与独异点",
+            "page": 198,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "2. 群的定义及实例",
+            "page": 198,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "3. 群的基本性质",
+            "page": 199,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "5. 群的分解",
+            "page": 199,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "6. 循环群",
+            "page": 200,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "7. 置换群",
+            "page": 200,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C10-S1",
+            "title": "8. 环的定义和性质",
+            "page": 200,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C11-S1",
+            "title": "1. 格的定义",
+            "page": 220,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C11-S1",
+            "title": "2. 格的性质",
+            "page": 220,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C11-S1",
+            "title": "4. 分配格`有界格\\有补格 ,布尔代数",
+            "page": 221,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C12-S1",
+            "title": "1. 加法法则与乘法法则",
+            "page": 235,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C12-S1",
+            "title": "2. 排列组合公式",
+            "page": 235,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C12-S1",
+            "title": "3. 二项式定理与多项式定理",
+            "page": 236,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C12-S1",
+            "title": "5. 组合计数模型",
+            "page": 236,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "1. 递推方程的定义",
+            "page": 253,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "2. 递推方程的主要求解方法",
+            "page": 253,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "3. 递推方程与递归算法",
+            "page": 254,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "5. 指数生成函数及其应用",
+            "page": 255,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "6. 常用的计数符号",
+            "page": 256,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C13-S1",
+            "title": "7. 基本的计数模型",
+            "page": 256,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C14-S1",
+            "title": "2. 通路与回路",
+            "page": 288,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C14-S1",
+            "title": "3. 图的连通性与连通度",
+            "page": 288,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C14-S1",
+            "title": "4. 图的矩阵表示",
+            "page": 288,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C14-S1",
+            "title": "5. 本章的主要定理",
+            "page": 288,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C15-S1",
+            "title": "1. 欧拉图",
+            "page": 312,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C15-S1",
+            "title": "2. 哈密顿图",
+            "page": 312,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C15-S1",
+            "title": "3. 最短路问题",
+            "page": 312,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C15-S1",
+            "title": "4. 中国邮递员问题",
+            "page": 312,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C15-S1",
+            "title": "5. 货郎担问题",
+            "page": 312,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C16-S1",
+            "title": "1. 无向树",
+            "page": 330,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C16-S1",
+            "title": "2. 生成树",
+            "page": 330,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C16-S1",
+            "title": "3. 根树及其应用",
+            "page": 331,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C16-S1",
+            "title": "4. 本章主要定理",
+            "page": 331,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C17-S1",
+            "title": "1. 平面图的基本概念",
+            "page": 351,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C17-S1",
+            "title": "2. 欧拉公式",
+            "page": 351,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C17-S1",
+            "title": "3. 平面图的判断",
+            "page": 351,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C17-S1",
+            "title": "4. 平面图的对偶图",
+            "page": 351,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C17-S1",
+            "title": "5. 本章的主要定理",
+            "page": 352,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "1. 支配集 ,点履盖集与点独立集",
+            "page": 368,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "2. 边覆盖集与匹配",
+            "page": 368,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "3. 二部图中的匹配",
+            "page": 368,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "4. 点着色",
+            "page": 369,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "5. 地图着色与平面图的点着色",
+            "page": 369,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "6. 边着色",
+            "page": 369,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C18-S1",
+            "title": "7. 主要定理",
+            "page": 369,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "2. 最大公约数与最小公倍数",
+            "page": 389,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "4. 一次同余方程",
+            "page": 390,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "5. 欧拉定理和费马小定理",
+            "page": 390,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "6. 产生均匀伪随机数的方法",
+            "page": 390,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "7. 密码学",
+            "page": 390,
+            "verification": "pending_ocr"
+          },
+          {
+            "parent_id": "DM-C19-S1",
+            "title": "8. 主要定理",
+            "page": 390,
+            "verification": "pending_ocr"
+          }
+        ],
+        "content_complete": false,
+        "content_version": "3.0.0",
+        "supplemental_generator": "既有有限穷举题＋逐题编写的完整补充练习；均不冒充教材原题",
+        "exercise_families": 483,
+        "pending_ocr_count": 718,
+        "question_statement_version": 13,
+        "verified_question_count": 2211,
+        "distinct_practice_methods": 483,
+        "authored_additions_v13": 368
+      },
+      "short_title": "离散数学·旧学习指导",
+      "edition": "第2版",
+      "legacy": true
+    }
+  ],
+  "chapters": [
+    {
+      "id": "PH-C09",
+      "book_id": "PHYS",
+      "parent_id": null,
+      "title": "习题九 · 振动",
+      "kind": "chapter",
+      "order": 9,
+      "origin": "user_selected_exercises",
+      "scope_complete": true,
+      "question_count": 6
+    },
+    {
+      "id": "PH-C09-S1",
+      "book_id": "PHYS",
+      "parent_id": "PH-C09",
+      "title": "关联知识",
+      "kind": "section",
+      "order": 1,
+      "origin": "system_explanation",
+      "scope_complete": true
+    },
+    {
+      "id": "PH-C10",
+      "book_id": "PHYS",
+      "parent_id": null,
+      "title": "习题十 · 波动",
+      "kind": "chapter",
+      "order": 10,
+      "origin": "user_selected_exercises",
+      "scope_complete": true,
+      "question_count": 6
+    },
+    {
+      "id": "PH-C10-S1",
+      "book_id": "PHYS",
+      "parent_id": "PH-C10",
+      "title": "关联知识",
+      "kind": "section",
+      "order": 1,
+      "origin": "system_explanation",
+      "scope_complete": true
+    },
+    {
+      "id": "PH-C11",
+      "book_id": "PHYS",
+      "parent_id": null,
+      "title": "习题十一 · 光的干涉与衍射",
+      "kind": "chapter",
+      "order": 11,
+      "origin": "user_selected_exercises",
+      "scope_complete": true,
+      "question_count": 7
+    },
+    {
+      "id": "PH-C11-S1",
+      "book_id": "PHYS",
+      "parent_id": "PH-C11",
+      "title": "关联知识",
+      "kind": "section",
+      "order": 1,
+      "origin": "system_explanation",
+      "scope_complete": true
+    }
+  ],
+  "knowledge": [
+    {
+      "id": "PH-K-shm-phase",
+      "chapter_id": "PH-C09-S1",
+      "title": "简谐振动的方程、初相与图像",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "$x=A\\cos(\\omega t+\\varphi_0)$；振幅 $A\\ge0$，周期 $T=2\\pi/\\omega$，频率 $f=1/T$。",
+        "definition": "$x=A\\cos(\\omega t+\\varphi_0)$；振幅 $A\\ge0$，周期 $T=2\\pi/\\omega$，频率 $f=1/T$。",
+        "theory": "$v=-A\\omega\\sin(\\omega t+\\varphi_0)$，$a=-\\omega^2x$。$x-t$ 曲线斜率表示速度；相位每增加 $2\\pi$ 经过一个周期。",
+        "method": "先读 $A,T$ 或两次已知相位间的时间；由 $\\cos\\varphi_0=x_0/A$ 求候选相位，再用速度方向确定 $\\sin\\varphi_0$ 的符号。",
+        "errors": "只看位移会得到两个初相候选；不要把 $x-t$ 图误读成空间波形图。相位可相差 $2n\\pi$。",
+        "conditions": "理想简谐振动；以平衡位置为位移零点，取余弦形式且振幅为非负数。",
+        "reason": "先从回复力或运动方程确认 $a=-\\omega^2x$。对 $x=A\\cos(\\omega t+\\varphi_0)$ 依次求导即可得到速度、加速度，因此三者的相位关系不能凭图形猜测。初始时 $x_0=A\\cos\\varphi_0$、$v_0=-A\\omega\\sin\\varphi_0$：位移确定余弦值，速度正负决定象限。相图上的相位随时间增大；从一个位置到另一个位置时还要检查运动方向，最后用 $\\Delta t=\\Delta\\varphi/\\omega$。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E009-013",
+        "SRC-PHYS-E009-015"
+      ]
+    },
+    {
+      "id": "PH-K-vertical-spring",
+      "chapter_id": "PH-C09-S1",
+      "title": "竖直弹簧振子的平衡位置与初始条件",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "静平衡满足 $k\\Delta l=mg$。从平衡位置计位移时，合力为 $-kx$。",
+        "definition": "静平衡满足 $k\\Delta l=mg$。从平衡位置计位移时，合力为 $-kx$。",
+        "theory": "$\\omega=\\sqrt{k/m}=\\sqrt{g/\\Delta l}$。若初始速度已知，$A=\\sqrt{x_0^2+(v_0/\\omega)^2}$。",
+        "method": "以平衡位置为原点，先写清向上或向下为正，再把题意转换为带符号的 $x_0,v_0$；最后确定振幅与初相。",
+        "errors": "静伸长量不是振幅；在平衡位置上方不一定是正位移。重力改变平衡位置，不额外加进从平衡位置计的回复力。",
+        "conditions": "弹簧质量忽略、满足胡克定律、忽略阻尼，物体始终与弹簧相连；从静平衡位置计位移。",
+        "reason": "若向下为正，弹簧总伸长为 $\\Delta l+x$，牛顿第二定律写成 $m\\ddot x=mg-k(\\Delta l+x)$。利用静平衡 $mg=k\\Delta l$ 后得到 $\\ddot x+(k/m)x=0$，所以重力只移动平衡位置。将初始位移和初速度代入 $x_0=A\\cos\\varphi_0$、$v_0=-A\\omega\\sin\\varphi_0$，两式平方相加可得振幅公式。求初相时必须同时满足两式，不能只取反余弦主值。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E009-014"
+      ]
+    },
+    {
+      "id": "PH-K-contact-loss",
+      "chapter_id": "PH-C09-S1",
+      "title": "振动平板的支持力与脱离条件",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "重物与平板保持接触时具有相同的竖直加速度。以向上为正，$N-mg=ma$。",
+        "definition": "重物与平板保持接触时具有相同的竖直加速度。以向上为正，$N-mg=ma$。",
+        "theory": "若平板位移为 $y$，则 $a=-\\omega^2y$，$N=m(g-\\omega^2y)$。最高点支持力最小，最低点最大。",
+        "method": "最低点代入 $y=-A$ 求压力；用 $N_{\\min}=0$ 求临界量：$\\omega^2A=g$。频率与角频率满足 $\\omega=2\\pi f$。",
+        "errors": "平板只能推不能拉，要求 $N\\ge0$。重物对平板的压力与支持力等大反向。等号是临界状态，超过临界值才发生一段离板运动。",
+        "conditions": "接触面水平、物体仅受重力和向上的支持力；只有接触期间物体加速度才等于平板加速度。",
+        "reason": "先单独给重物画受力图，向上为正时 $N-mg=ma$。接触阶段平板按简谐规律运动，代入 $a=-\\omega^2y$ 得 $N=m(g-\\omega^2y)$。因此最高点最容易脱离，最低点压力最大。若形式上算得 $N<0$，并不是平板产生向下的拉力，而是接触假设已经失效。临界条件 $N=0$ 应与临界位置和运动方向一起判断。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E009-017"
+      ]
+    },
+    {
+      "id": "PH-K-shm-energy",
+      "chapter_id": "PH-C09-S1",
+      "title": "简谐振动的能量与周期平均",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "以平衡位置的振动势能为零，$E=\\tfrac12kA^2=\\tfrac12m\\omega^2A^2$。",
+        "definition": "以平衡位置的振动势能为零，$E=\\tfrac12kA^2=\\tfrac12m\\omega^2A^2$。",
+        "theory": "$E_p=\\tfrac12m\\omega^2x^2$，$E_k=E-E_p$，$E_p/E=x^2/A^2$；完整周期平均满足 $\\overline{E_k}=\\overline{E_p}=E/2$。",
+        "method": "由 $a_{\\max}=\\omega^2A$ 确定角频率；能量等分时解 $x^2/A^2=1/2$。能量代入前将克、厘米全部转换为千克、米。",
+        "errors": "势能和位移的平方成正比，位移为振幅一半时势能不是一半。注意科学计数法与 $\\pi^2\\approx9.87$。",
+        "conditions": "无阻尼、无外界能量输入的理想简谐振动；平均动能等于平均势能的结论适用于整周期平均。",
+        "reason": "将速度公式代入 $E_k=mv^2/2$，将位移公式代入 $E_p=kx^2/2$，再用 $k=m\\omega^2$，两者相加时 $\\sin^2+\\cos^2=1$，得到总能量为常量。能量比只由 $x^2/A^2$ 决定，因此等动势能位置在平衡位置两侧对称。对一个周期积分，正弦平方和余弦平方的平均值均为 $1/2$；瞬时相等与周期平均相等是两个不同结论。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E009-028",
+        "SRC-PHYS-E009-030"
+      ]
+    },
+    {
+      "id": "PH-K-traveling-wave",
+      "chapter_id": "PH-C10-S1",
+      "title": "行波方程、波形图与质点运动",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "沿正 $x$ 方向传播的波可写为 $y=A\\cos(\\omega t-kx+\\varphi_0)$；沿负方向传播时改为 $+kx$。",
+        "definition": "沿正 $x$ 方向传播的波可写为 $y=A\\cos(\\omega t-kx+\\varphi_0)$；沿负方向传播时改为 $+kx$。",
+        "theory": "$\\omega=2\\pi f$，$k=2\\pi/\\lambda$，$u=\\omega/k=\\lambda f$。固定 $x$ 后得到该质点的振动方程。",
+        "method": "先从图读振幅和完整波长，再由波速或频率求其余参数。用图上斜率与运动方向判断传播方向：正向波 $\\partial_t y=-u\\partial_x y$，反向波符号相反。",
+        "errors": "相邻异向过零点间距是半波长；不要把波传播速度与质点振动速度混同。求质点速度必须对 $t$ 求偏导。",
+        "conditions": "均匀介质中的一维简谐行波，题中各质点振幅与角频率相同，忽略衰减。",
+        "reason": "从原点振动出发，沿正方向传播时，$x$ 点比原点晚 $x/u$ 开始同样的振动，所以用 $t-x/u$ 替换时间，得到 $\\omega t-kx$。传播方向反过来时用 $t+x/u$。波形图是同一时刻不同位置的位移；振动图是同一位置不同时间的位移。固定位置后对时间求导得到质点速度，不能把 $u$ 当作该速度。若只给瞬时波形，仍需传播方向或质点运动方向才能确定完整波动方程。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E010-010",
+        "SRC-PHYS-E010-015",
+        "SRC-PHYS-E010-016"
+      ]
+    },
+    {
+      "id": "PH-K-standing-wave",
+      "chapter_id": "PH-C10-S1",
+      "title": "驻波叠加、波节和质点速度",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "同频率、同振幅、反向传播的两列相干波相加形成驻波。例如 $y=2a\\cos(kx)\\cos(\\omega t)$。",
+        "definition": "同频率、同振幅、反向传播的两列相干波相加形成驻波。例如 $y=2a\\cos(kx)\\cos(\\omega t)$。",
+        "theory": "各点振幅为 $A(x)=2a|\\cos(kx)|$。波节满足 $\\cos(kx)=0$；相邻波节间距 $\\lambda/2$。两列原波各自振幅为 $a$。",
+        "method": "用和差化积合并方程，读出 $k,\\omega$。先写局部振幅的绝对值，再求指定振幅的位置；瞬时速度为 $\\partial y/\\partial t$。",
+        "errors": "驻波振幅不是各处都相同；局部振幅不能带负号。驻波方程中前面的系数通常是原行波振幅的两倍。",
+        "conditions": "两列沿相反方向传播的简谐波具有相同频率、波长、振幅，并保持相位差稳定。",
+        "reason": "以 $a\\cos(\\omega t-kx)$ 与 $a\\cos(\\omega t+kx)$ 相加，用和差化积得 $2a\\cos(kx)\\cos(\\omega t)$。空间因子决定各点振幅，时间因子决定振动。空间因子符号相同的区域内各点同相，跨越波节后相位差为 $\\pi$。波节固定不动；波腹振幅为 $2a$。指定位置的瞬时速度仍需对整个驻波方程求时间偏导，先代坐标再求导与先求导再代入等价。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E010-027",
+        "SRC-PHYS-E010-028"
+      ]
+    },
+    {
+      "id": "PH-K-doppler",
+      "chapter_id": "PH-C10-S1",
+      "title": "声波的多普勒效应",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "在静止介质中，声源与观察者相对介质的运动会改变观察者接收到的频率。",
+        "definition": "在静止介质中，声源与观察者相对介质的运动会改变观察者接收到的频率。",
+        "theory": "以沿声波从声源指向观察者的方向为正：$f_{\\rm obs}=f_0(u-v_o)/(u-v_s)$。$v_s,v_o$ 都是投影在此方向上的带符号速度。",
+        "method": "每种情况分别画传播方向。静止人听迎面驶来的声源为 $f_0u/(u-v_s)$；声源离去为 $f_0u/(u+v_s)$；追赶前方同向车辆时，观察者沿传播方向运动，分子应为 $u-v_o$。",
+        "errors": "不能只凭“靠近”给分子、分母随意加号。声速是相对介质的速度，物体速度也须相对同一介质。",
+        "conditions": "经典声波、静止均匀介质、声源和观察者速度小于声速；采用沿传播方向的速度分量。",
+        "reason": "一个声源周期 $T_0$ 内，前一个波面前进 $uT_0$，声源沿传播方向前进 $v_sT_0$，因此波长为 $(u-v_s)T_0$。观察者每秒与波面相遇的相对速度为 $u-v_o$，两者相除得到接收频率。这个推导同时解释了声源速度在分母、观察者速度在分子的原因。每次改变声源与观察者的位置关系，都应重新确定从声源到观察者的正方向。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E010-029"
+      ]
+    },
+    {
+      "id": "PH-K-double-slit",
+      "chapter_id": "PH-C11-S1",
+      "title": "双缝干涉与附加光程",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "光程为折射率乘几何路程。厚度 $d$ 的玻璃片替代同厚空气，增加光程 $(n-1)d$。",
+        "definition": "光程为折射率乘几何路程。厚度 $d$ 的玻璃片替代同厚空气，增加光程 $(n-1)d$。",
+        "theory": "两缝分别插入等厚薄片时，原中央位置的光程差大小为 $|n_2-n_1|d$。明纹条件为 $\\Delta=m\\lambda$。",
+        "method": "在原中央位置先写两路附加光程之差，再按题意确定干涉级次，求薄片厚度。",
+        "errors": "不要把两薄片分别引入的附加光程相加；等厚时空气项会相消。波长取真空/空气中的题给波长。",
+        "conditions": "两束相干光；薄片近似垂直入射且不改变传播方向；光程差用同一参考波长计量。",
+        "reason": "相位差由 $2\\pi\\Delta/\\lambda$ 决定。插片时比较的是用介质替代同厚空气后的光程增量，因此单路增量为 $(n-1)d$。两路都加薄片时先分别写增量，再相减。原中央位置的几何路程相同，剩余差只来自附加光程。若题目讨论条纹移动，移动方向还需根据哪一路光程增大判断；若只求厚度，一般使用光程差的大小并核对明暗级次。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E011-015"
+      ]
+    },
+    {
+      "id": "PH-K-thin-film",
+      "chapter_id": "PH-C11-S1",
+      "title": "薄膜干涉与半波损失",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "垂直入射时薄膜内部往返几何光程为 $2nd$。反射相位是否反转要逐个界面判断：由低折射率到高折射率反射有 $\\pi$ 相变。",
+        "definition": "垂直入射时薄膜内部往返几何光程为 $2nd$。反射相位是否反转要逐个界面判断：由低折射率到高折射率反射有 $\\pi$ 相变。",
+        "theory": "两束反射光仅一束发生半波损失时，反射增强为 $2nd=(m+\\tfrac12)\\lambda$；两束同时反转或均不反转时，反射增强为 $2nd=m\\lambda$。透射增强与反射增强互补。",
+        "method": "先列空气、薄膜、基底的折射率顺序，分别数两路反射的相位变化；再写明暗条件。颜色问题枚举可见波长，环数问题枚举厚度范围内完整的级次。",
+        "errors": "不能见“薄膜”就固定加半个波长；膜周边厚度为零也不总是暗环。多种波长同时增强时是混合色。",
+        "conditions": "近似垂直入射、介质透明；先确认所观察的是反射光还是透射光，并检查两个界面的折射率关系。",
+        "reason": "将两路相位差拆为传播相位与反射相位：传播部分为 $2\\pi(2nd)/\\lambda$，反射部分由两次反射各自是否发生 $\\pi$ 相变决定。相对反射相位为 $\\pi$ 时，传播光程为半整数波长对应反射增强；相对反射相位为零时，整数波长对应增强。非正入射应把 $2nd$ 改为 $2nd\\cos r$。枚举可见颜色时，应先写出允许的整数级次，再逐一计算波长，不能把单色结论直接推广为白光颜色。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E011-016",
+        "SRC-PHYS-E011-025"
+      ]
+    },
+    {
+      "id": "PH-K-newton-rings",
+      "chapter_id": "PH-C11-S1",
+      "title": "牛顿环与介质折射率",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "牛顿环薄层厚度近似 $d=r^2/(2R)$，其中 $R$ 为透镜曲率半径。",
+        "definition": "牛顿环薄层厚度近似 $d=r^2/(2R)$，其中 $R$ 为透镜曲率半径。",
+        "theory": "同一明环或暗环级次、同一装置和波长下，环直径平方与薄层介质折射率成反比：$nD^2=\\mathrm{const}$。",
+        "method": "将充液前后同级环比较，$n_{\\rm liquid}/n_{\\rm air}=D_{\\rm air}^2/D_{\\rm liquid}^2$。先明确题目给的是半径还是直径，但比值相同。",
+        "errors": "直径缩小表示折射率增大；折射率比与直径比的平方成反比，不能只取一次方。",
+        "conditions": "薄层厚度远小于曲率半径、近轴、同一波长；比较前后同一级明环或同一级暗环，接触与相位条件保持一致。",
+        "reason": "透镜几何满足 $r^2=2Rd-d^2$，忽略 $d^2$ 得 $d\\approx r^2/(2R)$。再将厚度代入薄膜干涉条件；若反射两路恰有一次半波损失，暗环满足 $2nd=m\\lambda$，所以 $r_m^2=m\\lambda R/n$。明环使用对应的半整数级次。只要比较的级次相同，其他量消去后得到 $nD^2$ 不变。若使用两级环的平方差，还能消去共同的初始间隙影响。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E011-024"
+      ]
+    },
+    {
+      "id": "PH-K-single-slit",
+      "chapter_id": "PH-C11-S1",
+      "title": "单缝衍射、次极大与半波带",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "夫琅禾费单缝衍射有 $I=I_0(\\sin\\beta/\\beta)^2$，$\\beta=\\pi b\\sin\\theta/\\lambda$，暗纹精确满足 $b\\sin\\theta=m\\lambda$。",
+        "definition": "夫琅禾费单缝衍射有 $I=I_0(\\sin\\beta/\\beta)^2$，$\\beta=\\pi b\\sin\\theta/\\lambda$，暗纹精确满足 $b\\sin\\theta=m\\lambda$。",
+        "theory": "次极大常用近似 $b\\sin\\theta\\approx(2k+1)\\lambda/2$，$k=1,2,\\ldots$；对应约 $2k+1$ 个半波带。精确次极大满足 $\\tan\\beta=\\beta$。",
+        "method": "焦平面位置与角度满足 $\\tan\\theta=x/f$；小角时 $\\sin\\theta\\approx x/f$。若级次、波长均未知，只凭某点为明纹一般不能唯一求出波长。",
+        "errors": "中央明纹不按普通次极大近似计数；次极大位置是近似值。补充可见光范围仍可能有多个候选级次，要逐一检查。",
+        "conditions": "夫琅禾费单缝衍射；暗纹条件可精确使用，半波带法给出的次极大位置为近似；采用小角近似前先检查角度。",
+        "reason": "把缝面到观察方向的总路程差写成 $b\\sin\\theta$。若它等于整数倍波长，可将缝分成偶数个半波带并两两相消，得到暗纹。奇数个半波带只能说明存在未完全抵消的贡献，因此次极大半整数位置是近似。由强度函数求导，除中央极大外可得 $\\tan\\beta=\\beta$。光屏或透镜焦平面位置需用几何关系转成角度；当次极大级次未知时，应保留所有符合题意的候选，不能擅自选第一级。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E011-027"
+      ]
+    },
+    {
+      "id": "PH-K-grating",
+      "chapter_id": "PH-C11-S1",
+      "title": "光栅方程、缺级与光谱范围",
+      "kind": "concept",
+      "weight": 1,
+      "critical": false,
+      "verification": "reviewed",
+      "source": {
+        "origin": "system_explanation",
+        "basis": "围绕上传的习题九、十、十一及其对应知识主题整理；推导为学习补充，完整教材正文尚未提供。"
+      },
+      "content": {
+        "plain": "光栅常数 $d$ 是相邻狭缝中心间距，狭缝宽度另记为 $b$。垂直入射主极大满足 $d\\sin\\varphi=k\\lambda$。",
+        "definition": "光栅常数 $d$ 是相邻狭缝中心间距，狭缝宽度另记为 $b$。垂直入射主极大满足 $d\\sin\\varphi=k\\lambda$。",
+        "theory": "若某主极大同时满足单缝暗纹条件 $b\\sin\\varphi=m\\lambda$，则该级缺级，故 $k=md/b$。斜入射时按约定的带符号角使用 $d(\\sin\\theta+\\sin\\varphi)=k\\lambda$。",
+        "method": "先用刻线密度求 $d$，用 $|\\sin\\varphi|<1$ 限定可见级次，再删除缺级；光谱在焦平面的宽度用 $f(\\tan\\varphi_{\\rm red}-\\tan\\varphi_{\\rm violet})$ 求。",
+        "errors": "不要把光栅常数当成狭缝宽度；只说某一级缺级未必能唯一确定 $b$，还要知道它与第几级单缝暗纹重合。题给严格角度范围时不能计入 $\\pm90^\\circ$。",
+        "conditions": "理想等间距多缝光栅，明确正入射或斜入射；主极大需同时考虑单缝衍射包络及观察角范围。",
+        "reason": "相邻缝的路程差为 $d\\sin\\varphi$，为整数倍波长时各缝同相叠加形成主极大。但每条缝本身还有衍射包络：若同一方向满足 $b\\sin\\varphi=m\\lambda$，主极大就被抑制，称为缺级。两式相除得到缺级条件。给定“某级缺级”时，若未说明与第几级单缝暗纹重合，可能存在多个缝宽。光谱边界先分别求波长对应角，再用 $x=f\\tan\\varphi$ 计算位置；大角度时不能直接使用 $x\\approx f\\sin\\varphi$。",
+        "estimated_minutes": 12
+      },
+      "source_item_ids": [
+        "SRC-PHYS-E011-034",
+        "SRC-PHYS-E011-035"
+      ]
+    }
+  ],
+  "dependencies": [],
+  "relations": [],
+  "original_subheadings": [],
+  "questions": [],
+  "links": []
+}
