@@ -61,6 +61,7 @@ study=study[:study.index('const v19ExerciseCache=')] + (R/'scripts/study-v20.js'
 study=study.replace("\n(value){if(!Array", "\nfunction v19Ratio(value){if(!Array",1)
 # The split functions are reused with larger default note width and intrinsic-safe tracks.
 study=replace(study,'[34,32,34]','[30,42,28]')
+study=replace(study,"ratioKey='zhixu-three-columns-v18-'","ratioKey='zhixu-three-columns-v22-'")
 study=replace(study,'question}){','question,supportSignal=0}){')
 study=replace(study," m.useEffect(()=>{if(finished)open()},[finished,revealSignal,question]);"," m.useEffect(()=>{if(finished)open()},[finished,revealSignal,question]);\n m.useEffect(()=>{if(supportSignal>0)open()},[supportSignal]);")
 study=replace(study,"actual[0]+'fr 10px '+actual[1]+'fr 10px '+actual[2]+'fr'","'minmax(0,'+actual[0]+'fr) 10px minmax(0,'+actual[1]+'fr) 10px minmax(0,'+actual[2]+'fr)'")
@@ -83,8 +84,8 @@ for name in ['v20PaperPoint','v20ValidateDraft','v20ImageLayer','v22InkBounds','
 code='\n'.join(parts+[study,(R/'scripts/knowledge-v22.js').read_text()])
 app=app.replace('const Ys=',code+'\nconst Ys=',1)
 (R/'assets/app-ui-v22.js').write_text(app)
-index=re.sub(r'app-ui-v(?:20|21|22)\.js\?v=\d+','app-ui-v22.js?v=22',(R/'index.html').read_text())
-index=re.sub(r'name="ui-version" content="[^"]*"','name="ui-version" content="textbook-infinite-notes-v22"',index)
+index=re.sub(r'app-ui-v(?:20|21|22)\.js\?v=[\d.]+','app-ui-v22.js?v=22.1',(R/'index.html').read_text())
+index=re.sub(r'name="ui-version" content="[^"]*"','name="ui-version" content="textbook-infinite-notes-v22.1"',index)
 if 'ui-v22.css' not in index:index=index.replace('</head>','<link rel="stylesheet" href="/discrete-math/assets/ui-v22.css?v=22">\n</head>')
 (R/'index.html').write_text(index)
 print('Built v22: selected in-place knowledge, vector infinite notes and bounded responsive tracks.')
