@@ -1,0 +1,1418 @@
+{
+  "SRC-DM2T-E001-001": {
+    "prompt": "下列句子中，哪些是命题？在是命题的句子中，哪些是简单命题？哪些是真命题？哪些命题的真值现在还不知道？\n\n1. 中国有四大发明。\n2. $\\sqrt5$ 是无理数。\n3. 3 是素数或 4 是素数。\n4. $2x+3<5$，其中 $x$ 是任意实数。\n5. 你去图书馆吗？\n6. 2 与 3 都是偶数。\n7. 刘红与魏欣是同学。\n8. 这朵玫瑰花多美丽呀！\n9. 吸烟请到吸烟室去！\n10. 圆的面积等于半径的平方乘 $\\pi$。\n11. 只有 6 是偶数，3 才能是 2 的倍数。\n12. 8 是偶数的充分必要条件是 8 能被 3 整除。\n13. 2025 年元旦下大雪。",
+    "solution": "命题：(1)(2)(3)(6)(7)(10)(11)(12)(13)。其中简单命题为 (1)(2)(7)(10)(13)，复合命题为 (3)(6)(11)(12)。\n\n- 真命题：(1)(2)(3)(10)(11)。\n- 假命题：(6)(12)。\n- 根据题面无法获知真值：(7)(13)。第 (13) 句须有约定的地点背景；不能凭日期推断天气。\n- (4) 按含自由变量的语句理解，不是命题；(5)(8)(9) 分别为疑问、感叹、祈使句，也不是命题。\n\n若另把 (4) 明确理解为“对所有实数 $x$ 均有 $2x+3<5$”，则得到一个假命题；这与未赋值的开语句是两种表达。",
+    "explanation": [
+      "先判断是否为能确定真假的陈述句，真值未知不等于没有真值。",
+      "再检查是否由联结词连接更简单的命题。“3 是素数或 4 是素数”是两个命题的析取。",
+      "“只有 $p$ 才 $q$”译为 $q\\to p$；(11) 的前件为假，因此蕴涵式为真。双条件两边真值不同则为假。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：25,26"
+  },
+  "SRC-DM2T-E001-002": {
+    "prompt": "将上题中是简单命题的命题符号化。\n\n上题对应句子：中国有四大发明；√5 是无理数；刘红与魏欣是同学；圆的面积等于半径的平方乘 π；2025 年元旦下大雪。",
+    "solution": "可分别设 $p$：中国有四大发明；$q$：$\\sqrt5$ 是无理数；$r$：刘红与魏欣是同学；$s$：圆的面积等于半径的平方乘 $\\pi$；$t$：2025 年元旦下大雪。\n\n它们各由一个命题变项表示，不能因为一句话含有“与”字就机械拆分谓语关系。",
+    "explanation": [
+      "先确定习题 1 第 1 题中的简单命题；这里已补列必要上下文。",
+      "给每个不同命题分配不同符号，并写明符号的自然语言解释；字母名称本身不影响正确性。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-003": {
+    "prompt": "写出下列命题的否定式，并将原命题及其否定式都符号化，最后指出各否定式的真值。\n\n1. $\\sqrt5$ 是有理数。\n2. $\\sqrt{25}$ 不是无理数。\n3. $2.5$ 是自然数。\n4. $\\ln1$ 是整数。",
+    "solution": "分别用 $p_1,p_2,p_3,p_4$ 表示四个原命题，其否定式依次为 $\\neg p_1,\\neg p_2,\\neg p_3,\\neg p_4$。\n\n| 小题 | 否定式 | 否定式真值 |\n| --- | --- | --- |\n| 1 | $\\sqrt5$ 不是有理数 | 真 |\n| 2 | $\\sqrt{25}$ 是无理数 | 假 |\n| 3 | $2.5$ 不是自然数 | 真 |\n| 4 | $\\ln1$ 不是整数 | 假 |",
+    "explanation": [
+      "否定的是整个原命题。“不是无理数”的否定是“是无理数”，不能重复保留“不”。",
+      "$\\sqrt{25}=5$，$\\ln1=0$，且 $0$ 是整数。否定式真值与原命题相反。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-004": {
+    "prompt": "将下列命题符号化，并指出各命题的真值。\n\n1. 2 与 5 都是素数。\n2. 不但 $\\pi$ 是无理数，而且自然对数的底 $e$ 也是无理数。\n3. 虽然 2 是最小的素数，但 2 不是最小的自然数。\n4. 3 是偶素数。\n5. 4 既不是素数，也不是偶数。",
+    "solution": "每题分别设 $p,q$ 为下述简单命题。\n\n1. $p$：2 是素数，$q$：5 是素数。原式 $p\\land q$，真。\n2. $p$：$\\pi$ 是无理数，$q$：$e$ 是无理数。原式 $p\\land q$，真。\n3. $p$：2 是最小的素数，$q$：2 是最小的自然数。原式 $p\\land\\neg q$，真。\n4. $p$：3 是偶数，$q$：3 是素数。原式 $p\\land q$，假。\n5. $p$：4 是素数，$q$：4 是偶数。原式 $\\neg p\\land\\neg q$，假。",
+    "explanation": [
+      "“都”“不但……而且”“虽然……但”在这里均表示合取。",
+      "合取只有两部分都真时才真；第 (5) 题前半真、后半假，所以整个命题为假。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-005": {
+    "prompt": "将下列命题符号化，并指出各命题的真值。\n\n1. 2 或 3 是偶数。\n2. 2 或 4 是偶数。\n3. 3 或 5 是偶数。\n4. 3 不是偶数或 4 不是偶数。\n5. 3 不是素数或 4 不是偶数。",
+    "solution": "每题依次用 $p,q$ 表示两个未否定的简单命题。\n\n1. $p\\lor q$：真或假，真。\n2. $p\\lor q$：真或真，真。\n3. $p\\lor q$：假或假，假。\n4. $\\neg p\\lor\\neg q$，其中 $p$：3 是偶数，$q$：4 是偶数。真或假，真。\n5. $\\neg p\\lor\\neg q$，其中 $p$：3 是素数，$q$：4 是偶数。假或假，假。",
+    "explanation": [
+      "本题的“或”为相容析取 $\\lor$，允许两个分支同时成立。",
+      "析取只有两边都假时才为假，因此第 (2) 题不能按排他或判为假。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-006": {
+    "prompt": "将下列命题符号化。\n\n1. 小丽只能从筐里拿一个苹果或一个梨。\n2. 这学期，刘晓月只能选学英语或日语中的一门外语课。",
+    "solution": "1. 设 $p$：小丽拿一个苹果，$q$：小丽拿一个梨。符号化为 $(p\\lor q)\\land\\neg(p\\land q)$。\n2. 设 $p$：刘晓月选学英语，$q$：刘晓月选学日语。符号化同样为 $(p\\lor q)\\land\\neg(p\\land q)$。\n\n也可写为 $(p\\land\\neg q)\\lor(\\neg p\\land q)$。",
+    "explanation": [
+      "“只能……一个/一门”要求恰好选择一个，须同时满足“至少一个”和“不能两个”。",
+      "先用 $p\\lor q$ 排除都不选，再用 $\\neg(p\\land q)$ 排除同时选。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-007": {
+    "prompt": "设 $p$：王冬生于 1971 年；$q$：王冬生于 1972 年。说明命题“王冬生于 1971 年或 1972 年”既可以符号化为 $(p\\land\\neg q)\\lor(\\neg p\\land q)$，又可以符号化为 $p\\lor q$ 的理由。",
+    "solution": "在同一公历出生年份的通常语境下，$p,q$ 不可能同时为真，已知 $\\neg(p\\land q)$。因此相容析取 $p\\lor q$ 在此语境下也只可能由“恰好一个为真”满足，与排他或表达相同事件。\n\n这两个公式并非对任意 $p,q$ 都逻辑等值；当 $p=q=1$ 时，前者假、后者真。",
+    "explanation": [
+      "先提取题目的语义约束：同一个人不能同时生于两个不同年份。",
+      "在约束 $\\neg(p\\land q)$ 下，$p\\lor q$ 与 $(p\\lor q)\\land\\neg(p\\land q)$ 一致；不要把语境下的一致误写为无条件等值。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-008": {
+    "prompt": "将下列命题符号化，并指出各命题的真值。\n\n1. 只要 $2<1$，就有 $3<2$。\n2. 如果 $2<1$，则 $3\\ge2$。\n3. 只有 $2<1$，才有 $3\\ge2$。\n4. 除非 $2<1$，才有 $3\\ge2$。\n5. 除非 $2<1$，否则 $3<2$。\n6. $2<1$ 仅当 $3<2$。",
+    "solution": "设 $p$：$2<1$，$q$：$3<2$，则 $p=q=0$。\n\n| 小题 | 符号化 | 真值 |\n| --- | --- | --- |\n| 1 | $p\\to q$ | 真 |\n| 2 | $p\\to\\neg q$ | 真 |\n| 3 | $\\neg q\\to p$ | 假 |\n| 4 | $\\neg q\\to p$ | 假 |\n| 5 | $\\neg p\\to q$ | 假 |\n| 6 | $p\\to q$ | 真 |",
+    "explanation": [
+      "“只有 $p$ 才 $r$”“除非 $p$ 才 $r$”均把 $p$ 放在必要条件位置，得到 $r\\to p$。",
+      "“除非 $p$，否则 $q$”表示 $\\neg p\\to q$；“$p$ 仅当 $q$”表示 $p\\to q$。",
+      "蕴涵式只有前真后假时为假；当前件为假时不要凭日常因果直觉判假。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26"
+  },
+  "SRC-DM2T-E001-009": {
+    "prompt": "设 $p$：俄罗斯位于南半球，$q$：亚洲人口最多。将下面命题用自然语言表达，并指出各命题的真值。\n\n1. $p\\to q$；2. $q\\to p$；3. $\\neg p\\to q$；4. $p\\to\\neg q$；5. $\\neg q\\to p$；6. $\\neg p\\to\\neg q$；7. $\\neg q\\to\\neg p$。",
+    "solution": "按题设通常地理事实取 $p=0,q=1$。\n\n1. 如果俄罗斯位于南半球，那么亚洲人口最多：真。\n2. 如果亚洲人口最多，那么俄罗斯位于南半球：假。\n3. 如果俄罗斯不位于南半球，那么亚洲人口最多：真。\n4. 如果俄罗斯位于南半球，那么亚洲人口并非最多：真。\n5. 如果亚洲人口并非最多，那么俄罗斯位于南半球：真。\n6. 如果俄罗斯不位于南半球，那么亚洲人口并非最多：假。\n7. 如果亚洲人口并非最多，那么俄罗斯不位于南半球：真。",
+    "explanation": [
+      "先给 $p,q$ 赋值，再依次计算 $\\neg p=1,\\neg q=0$。",
+      "逐项检查是否出现“前件 1、后件 0”。这里只在 (2)(6) 中出现。命题联结词并不要求两句之间有因果关系。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：26,27"
+  },
+  "SRC-DM2T-E001-010": {
+    "prompt": "设 $p$：9 是 3 的倍数；$q$：英国与土耳其相邻。将下列命题用自然语言表述，并指出真值。\\n(1) $p\\leftrightarrow q$；(2) $p\\leftrightarrow\\neg q$；(3) $\\neg p\\leftrightarrow q$；(4) $\\neg p\\leftrightarrow\\neg q$。",
+    "solution": "依次为：(1)“9 是 3 的倍数当且仅当英国与土耳其相邻”，假；(2)“9 是 3 的倍数当且仅当英国与土耳其不相邻”，真；(3)“9 不是 3 的倍数当且仅当英国与土耳其相邻”，真；(4)“9 不是 3 的倍数当且仅当英国与土耳其不相邻”，假。",
+    "explanation": [
+      "$p=1,q=0$；双条件在两侧真值相同时为真，异时为假。四个真值分别为 $1\\leftrightarrow0=0$、$1\\leftrightarrow1=1$、$0\\leftrightarrow0=1$、$0\\leftrightarrow1=0$。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27"
+  },
+  "SRC-DM2T-E001-011": {
+    "prompt": "将下列命题符号化，并给出真值。\n(1) 若 2+2=4，则地球是静止不动的。\n(2) 若 2+2=4，则地球是运动不止的。\n(3) 若地球上没有树木，则人类不能生存。\n(4) 若地球上没有水，则 $\\sqrt3$ 是无理数。",
+    "solution": "各题分别把“若”后、“则”后的陈述设为 $p_i,q_i$，符号式均为 $p_i\\to q_i$。真值依次为：假、真、真、真。",
+    "explanation": [
+      "(1) 前件真而后件假，故蕴涵为假。(2) 前件后件都真，故为真。",
+      "(3) 按命题逻辑的实质蕴涵处理；现实中“地球上没有树木”为假，假前件的蕴涵为真。这里不需要、也不能据此证明现实因果关系。",
+      "(4) 后件“$\\sqrt3$ 是无理数”为真，因此不论前件如何，蕴涵都为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27"
+  },
+  "SRC-DM2T-E001-012": {
+    "prompt": "将下列命题符号化，并给出真值。\\n(1) $2+2=4$ 当且仅当 $3+3=6$。\\n(2) $2+2=4$ 的充要条件是 $3+3\\ne6$。\\n(3) $2+2\\ne4$ 与 $3+3=6$ 互为充要条件。\\n(4) 若 $2+2\\ne4$，则 $3+3\\ne6$；反之亦然。",
+    "solution": "设 $p:2+2=4,q:3+3=6$。依次为 $p\\leftrightarrow q$（真）、$p\\leftrightarrow\\neg q$（假）、$\\neg p\\leftrightarrow q$（假）、$\\neg p\\leftrightarrow\\neg q$（真）。",
+    "explanation": [
+      "$p=q=1$。“充要条件”“互为充要条件”“若……则……，反之亦然”都使用双条件。",
+      "四个双条件的两侧真值分别为 $(1,1),(1,0),(0,1),(0,0)$，所以得到 $1,0,0,1$。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27"
+  },
+  "SRC-DM2T-E001-013": {
+    "prompt": "将下列命题符号化，并讨论真值。\n(1) 若今天是星期一，则明天是星期二。\n(2) 只有今天是星期一，明天才是星期二。\n(3) 今天是星期一当且仅当明天是星期二。\n(4) 若今天是星期一，则明天是星期三。",
+    "solution": "设 $p$：今天是星期一；$q$：明天是星期二；$r$：明天是星期三。依次为 $p\\to q,q\\to p,p\\leftrightarrow q,p\\to r$。前三句总为真；第四句在今天为星期一时假，其余六天真。",
+    "explanation": [
+      "按通常七天循环，$p$ 与 $q$ 始终同时真或同时假，因此两个方向的蕴涵和双条件都真。",
+      "今天星期一时，$p=1,r=0$，第四式为假；其他日期 $p=0$，第四式为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27"
+  },
+  "SRC-DM2T-E001-014": {
+    "prompt": "将下列命题符号化。\n(1) 刘晓月跑得快，跳得高。\n(2) 老王是山东人或河北人。\n(3) 因为天气冷，所以我穿了羽绒服。\n(4) 王欢与李乐组成一个小组。\n(5) 李辛与李末是兄弟。\n(6) 王强与刘威都学过法语。\n(7) 他一面吃饭，一面听音乐。\n(8) 如果天下大雨，他就乘班车上班。\n(9) 只有天下大雨，他才乘班车上班。\n(10) 除非天下大雨，否则他不乘班车上班。\n(11) 下雪路滑，他迟到了。\n(12) 2 与 4 都是素数，这是不对的。\n(13)“2 或 4 是素数，这是不对的”是不对的。",
+    "solution": "(1) 设 $p$：刘晓月跑得快，$q$：刘晓月跳得高，得 $p\\land q$。\\n(2) 设 $p$：老王是山东人，$q$：老王是河北人，得 $p\\lor q$。\\n(3) 设 $p$：天气冷，$q$：我穿了羽绒服，按题目因果句作为蕴涵表述得 $p\\to q$。\\n(4) 整句为简单命题 $p$。\\n(5) 整句为简单命题 $p$。\\n(6) 设 $p$：王强学过法语，$q$：刘威学过法语，得 $p\\land q$。\\n(7) 设 $p$：他吃饭，$q$：他听音乐，得 $p\\land q$。\\n(8)—(10) 共设 $p$：天下大雨，$q$：他乘班车上班，依次为 $p\\to q,q\\to p,\\neg p\\to\\neg q$。\\n(11) 设 $p$：下雪，$q$：路滑，$r$：他迟到，按并列陈述读为 $p\\land q\\land r$。\\n(12)—(13) 共设 $p$：2 是素数，$q$：4 是素数，依次为 $\\neg(p\\land q),\\neg\\neg(p\\lor q)$。",
+    "explanation": [
+      "命题中的“与”未必是合取：(4)(5) 描述两人的关系，不能拆成两个各自成立的命题。",
+      "“只有 $p$ 才 $q$”是 $q\\to p$；“除非 $p$，否则非 $q$”是 $\\neg p\\to\\neg q$，两者等值。",
+      "(11) 原句没有显式“若……则……”，这里按三项事实的合取符号化；若教学语境另外把前半句解释成迟到的充分条件，则必须明确改读为 $(p\\land q)\\to r$，不能混同。",
+      "(13) 外层“不对”否定整个内层否定，故有两个否定号。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27"
+  },
+  "SRC-DM2T-E001-015": {
+    "prompt": "设 $p:2+3=5$，$q$：大熊猫产在中国，$r$：太阳从西方升起。求真值。\\n(1) $(p\\leftrightarrow q)\\to r$；(2) $(r\\to(p\\land q))\\leftrightarrow\\neg p$；(3) $\\neg r\\to(\\neg p\\lor\\neg q\\lor r)$；(4) $(p\\land q\\land\\neg r)\\leftrightarrow((\\neg p\\lor\\neg q)\\to r)$。",
+    "solution": "真值依次为：0、0、0、1。",
+    "explanation": [
+      "$p=q=1,r=0$。",
+      "(1) $1\\to0=0$。(2) $(0\\to1)\\leftrightarrow0=1\\leftrightarrow0=0$。",
+      "(3) $1\\to(0\\lor0\\lor0)=0$。(4) 左边 $1\\land1\\land1=1$，右边 $(0\\lor0)\\to0=1$，双条件为 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：27,28"
+  },
+  "SRC-DM2T-E001-016": {
+    "prompt": "当 $p,q$ 的真值为 0，$r,s$ 的真值为 1 时，求真值。\\n(1) $p\\lor(q\\land r)$；(2) $(p\\leftrightarrow r)\\land(\\neg q\\lor s)$；(3) $(\\neg p\\land\\neg q\\land r)\\leftrightarrow(p\\land q\\land\\neg r)$；(4) $(\\neg r\\land s)\\to(p\\land\\neg q)$。",
+    "solution": "真值依次为：0、0、0、1。",
+    "explanation": [
+      "(1) $0\\lor(0\\land1)=0$。",
+      "(2) $(0\\leftrightarrow1)\\land(1\\lor1)=0$。",
+      "(3) 左边为 $1\\land1\\land1=1$，右边为 $0\\land0\\land0=0$，双条件为 0。",
+      "(4) 前件 $0\\land1=0$，所以整个蕴涵为 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-017": {
+    "prompt": "判断下面论述是否为真：“$\\pi$ 是无理数。并且，如果 3 是无理数，则 $\\sqrt2$ 也是无理数。另外，只有 6 能被 2 整除，6 才能被 4 整除。”",
+    "solution": "整段论述为真。",
+    "explanation": [
+      "第一项“$\\pi$ 是无理数”为真。第二项前件“3 是无理数”为假，后件为真，蕴涵为真。",
+      "第三项译为“若 6 能被 4 整除，则 6 能被 2 整除”，即 $0\\to1=1$。三项合取为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-018": {
+    "prompt": "在什么情况下，下面论述是真的：“说小王不会唱歌或小李不会跳舞是正确的，而说如果小王会唱歌，小李就会跳舞是不正确的。”",
+    "solution": "当且仅当小王会唱歌而小李不会跳舞时，论述为真。",
+    "explanation": [
+      "设 $p$：小王会唱歌，$q$：小李会跳舞。原式为 $(\\neg p\\lor\\neg q)\\land\\neg(p\\to q)$。",
+      "$\\neg(p\\to q)\\equiv p\\land\\neg q$；代入后整体化为 $p\\land\\neg q$。此时第一分句也为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-019": {
+    "prompt": "用真值表判断下列公式的类型。\n(1) $p\\to(p\\lor q\\lor r)$；(2) $(p\\to\\neg p)\\to\\neg q$；(3) $\\neg(q\\to r)\\land r$；(4) $(p\\to q)\\to(\\neg q\\to\\neg p)$；(5) $(p\\land r)\\leftrightarrow(\\neg p\\land\\neg q)$；(6) $((p\\to q)\\land(q\\to r))\\to(p\\to r)$；(7) $(p\\to q)\\leftrightarrow(r\\leftrightarrow s)$。",
+    "solution": "依次为：重言式、非重言的可满足式、矛盾式、重言式、非重言的可满足式、重言式、非重言的可满足式。\n\n|$pqr$|(1)|(2)|(3)|(4)|(5)|(6)|\n|---|---|---|---|---|---|---|\n|000|1|1|0|1|0|1|\n|001|1|1|0|1|0|1|\n|010|1|0|0|1|1|1|\n|011|1|0|0|1|1|1|\n|100|1|1|0|1|1|1|\n|101|1|1|0|1|0|1|\n|110|1|1|0|1|1|1|\n|111|1|1|0|1|0|1|\n\n(7) 按 $pqrs$ 顺序的成真赋值为 0000, 0011, 0100, 0111, 1001, 1010, 1100, 1111；其余赋值成假。",
+    "explanation": [
+      "逐行枚举全部赋值，全部为 1 是重言式，全部为 0 是矛盾式，同时出现 0 和 1 则为非重言的可满足式。",
+      "(2) 化为 $p\\lor\\neg q$，在 $p=0,q=1$ 时假。(3) 化为 $q\\land\\neg r\\land r$，恒假。",
+      "(4) 是逆否等值关系产生的蕴涵；(6) 是蕴涵的传递律，均恒真。",
+      "(7) 仅当 $p\\to q$ 与 $r\\leftrightarrow s$ 真值相同时为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-03",
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-020": {
+    "prompt": "求下列公式的成真赋值。\\n(1) $\\neg p\\to q$；(2) $p\\lor\\neg q$；(3) $(p\\land q)\\to\\neg p$；(4) $\\neg(p\\lor q)\\to q$。",
+    "solution": "均按 $pq$ 顺序：(1) 01、10、11；(2) 00、10、11；(3) 00、01、10；(4) 01、10、11。",
+    "explanation": [
+      "(1) 化为 $p\\lor q$，只排除 00。(2) 只在 $p=0,q=1$ 时假。",
+      "(3) 化为 $\\neg p\\lor\\neg q$，只排除 11。(4) 化为 $p\\lor q\\lor q\\equiv p\\lor q$，同 (1)。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-021": {
+    "prompt": "求下列公式的成假赋值。\\n(1) $\\neg(\\neg p\\land q)\\lor\\neg r$；(2) $(\\neg q\\lor r)\\land(p\\to q)$；(3) $(p\\to q)\\land(\\neg(p\\land r)\\lor p)$。",
+    "solution": "按 $pqr$ 顺序：(1) 011；(2) 010、100、101、110；(3) 100、101。",
+    "explanation": [
+      "(1) 析取为假须两项都假，因此 $\\neg p\\land q=1,r=1$，得到 011。",
+      "(2) 合取为假，只需 $\\neg q\\lor r=0$（$q=1,r=0$）或 $p\\to q=0$（$p=1,q=0$）；枚举即所列四组。",
+      "(3) 第二个合取项 $\\neg(p\\land r)\\lor p\\equiv\\neg p\\lor\\neg r\\lor p\\equiv1$，所以只看 $p\\to q$，即 $p=1,q=0$，$r$ 任意。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-022": {
+    "prompt": "已知公式 $\\neg(q\\to p)\\land p$ 是矛盾式，求公式 $\\neg(q\\to p)\\land p\\land\\neg r$ 的成真赋值和成假赋值。",
+    "solution": "无成真赋值；成假赋值为 $pqr$ 的全部八组：000、001、010、011、100、101、110、111。",
+    "explanation": [
+      "设已知矛盾式为 $A$，则原式为 $A\\land\\neg r$。任何赋值下 $A=0$，所以整个合取恒为 0。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-023": {
+    "prompt": "已知 $(p\\land q)\\to p$ 是重言式，求 $((p\\land q)\\to p)\\lor r$ 的成真赋值和成假赋值。",
+    "solution": "成真赋值为 $pqr$ 的全部八组；无成假赋值。",
+    "explanation": [
+      "设已知重言式为 $A$，则 $A\\lor r=1\\lor r=1$，与 $r$ 无关。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-024": {
+    "prompt": "已知 $(p\\to(p\\lor q))\\land((p\\land q)\\to p)$ 是重言式，试判断 $p\\to(p\\lor q)$ 及 $(p\\land q)\\to p$ 的类型。",
+    "solution": "两式都是重言式。",
+    "explanation": [
+      "对任意赋值，合取的真值为 1，就要求两个合取项同时为 1；该结论对全部赋值成立，故两项均恒真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-025": {
+    "prompt": "已知 $(\\neg(p\\to q)\\land q)\\lor(\\neg(\\neg q\\lor p)\\land p)$ 是矛盾式，试判断 $\\neg(p\\to q)\\land q$ 及 $\\neg(\\neg q\\lor p)\\land p$ 的类型。",
+    "solution": "两式都是矛盾式。",
+    "explanation": [
+      "扫描题面应读为 $\\neg(p\\to q)\\land q$；其化简为 $p\\land\\neg q\\land q=0$。第二项化为 $q\\land\\neg p\\land p=0$。",
+      "一般地，析取恒假要求每个析取项在每个赋值下都为假，所以可直接从已知推出两项均为矛盾式。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-026": {
+    "prompt": "已知 $p\\to(p\\lor q)$ 是重言式，$\\neg(p\\to q)\\land q$ 是矛盾式，判断 $(p\\to(p\\lor q))\\land(\\neg(p\\to q)\\land q)$ 及 $(p\\to(p\\lor q))\\lor(\\neg(p\\to q)\\land q)$ 的类型。",
+    "solution": "第一式是矛盾式；第二式是重言式。",
+    "explanation": [
+      "以 $T$ 表示恒真项、$F$ 表示恒假项，分别为 $T\\land F=F$ 与 $T\\lor F=T$。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01",
+      "DM-K01-02",
+      "DM-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-027": {
+    "prompt": "设 $A,B$ 都含命题变项 $p_1,\\ldots,p_n$，证明：$A\\land B$ 是重言式当且仅当 $A$ 与 $B$ 都是重言式。",
+    "solution": "结论成立。",
+    "explanation": [
+      "必要性：任取赋值，$A\\land B=1$，所以 $A=B=1$；赋值任意，两式均恒真。充分性：两式在任意赋值下都为 1，则合取也在任意赋值下为 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28"
+  },
+  "SRC-DM2T-E001-028": {
+    "prompt": "设 $A,B$ 都含命题变项 $p_1,\\ldots,p_n$。已知 $A\\land B$ 是矛盾式，能得出 $A$ 与 $B$ 都是矛盾式吗？为什么？",
+    "solution": "不能。例如 $A=p,B=\\neg p$，两者都不是矛盾式，但 $A\\land B=p\\land\\neg p$ 恒假。",
+    "explanation": [
+      "合取为假只要求至少一个合取项为假，不要求两个项同时为假；且不同赋值下使合取为假的项可以不同。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：28,29"
+  },
+  "SRC-DM2T-E001-029": {
+    "prompt": "设 $A,B$ 都含命题变项 $p_1,\\ldots,p_n$，证明：$A\\lor B$ 是矛盾式当且仅当 $A$ 与 $B$ 都是矛盾式。",
+    "solution": "结论成立。",
+    "explanation": [
+      "必要性：对任意赋值，$A\\lor B=0$ 必须 $A=B=0$，所以两式均恒假。充分性：两项在任意赋值下都为 0，则析取也恒为 0。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：29"
+  },
+  "SRC-DM2T-E001-030": {
+    "prompt": "设 $A,B$ 都含命题变项 $p_1,\\ldots,p_n$。已知 $A\\lor B$ 是重言式，能得出 $A$ 与 $B$ 都是重言式吗？为什么？",
+    "solution": "不能。例如 $A=p,B=\\neg p$，二者都不是重言式，而 $A\\lor B=p\\lor\\neg p$ 恒真。",
+    "explanation": [
+      "析取为真只需至少一项为真，并不要求两项同时为真，更不要求每项对全部赋值恒真。"
+    ],
+    "knowledge_ids": [
+      "DM-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：29"
+  },
+  "SRC-DM2T-E006-001": {
+    "prompt": "选择适当的谓词表示下列集合。\n(1) 小于 5 的非负整数集合；(2) 奇整数集合；(3) 10 的整倍数的集合。",
+    "solution": "(1) $\\{x\\in\\mathbb Z\\mid0\\le x<5\\}$；(2) $\\{x\\in\\mathbb Z\\mid\\exists k\\in\\mathbb Z,x=2k+1\\}$；(3) $\\{x\\in\\mathbb Z\\mid\\exists k\\in\\mathbb Z,x=10k\\}$。",
+    "explanation": [
+      "描述法要同时限制数域和元素性质。非负排除负数，奇整数及 10 的倍数都包括符合条件的负整数。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：115"
+  },
+  "SRC-DM2T-E006-002": {
+    "prompt": "用列元素法表示：\\n(1) $S_1=\\{x\\mid x\\text{ 是十进制数字}\\}$；(2) $S_2=\\{x\\mid x=2\\lor x=5\\}$；(3) $S_3=\\{x\\mid x\\in\\mathbb Z\\land3<x<12\\}$；(4) $S_4=\\{x\\mid x\\in\\mathbb R\\land x^2-1=0\\land x>3\\}$；(5) $S_5=\\{\\langle x,y\\rangle\\mid x,y\\in\\mathbb Z\\land0\\le x\\le2\\land-1\\le y\\le0\\}$。",
+    "solution": "(1) $\\{0,1,2,3,4,5,6,7,8,9\\}$；(2) $\\{2,5\\}$；(3) $\\{4,5,6,7,8,9,10,11\\}$；(4) $\\varnothing$；(5) $\\{\\langle0,-1\\rangle,\\langle0,0\\rangle,\\langle1,-1\\rangle,\\langle1,0\\rangle,\\langle2,-1\\rangle,\\langle2,0\\rangle\\}$。",
+    "explanation": [
+      "(3) 两端严格不等号，所以不包含 3 和 12。(4) 方程的根只有 $\\pm1$，没有一个大于 3。",
+      "(5) $x$ 有三个取值，$y$ 有两个取值，独立组合产生六个有序对。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：115"
+  },
+  "SRC-DM2T-E006-003": {
+    "prompt": "列出下列集合的元素。\\n(1) $\\{x\\mid x\\in\\mathbb N\\land\\exists t(t\\in\\{2,3\\}\\land x=2t)\\}$；\\n(2) $\\{x\\mid x\\in\\mathbb N\\land\\exists t\\exists s(t\\in\\{0,1\\}\\land s\\in\\{3,4\\}\\land t<x<s)\\}$；\\n(3) $\\{x\\mid x\\in\\mathbb N\\land\\forall t(t\\text{ 整除 }2\\to x\\ne t)\\}$。",
+    "solution": "(1) $\\{4,6\\}$；(2) $\\{1,2,3\\}$；(3) $\\mathbb N-\\{1,2\\}$。若采用 $0\\in\\mathbb N$ 的约定，(3) 即 $\\{0,3,4,5,\\ldots\\}$。",
+    "explanation": [
+      "(1) 分别代入 $t=2,3$。(2) 存在一个可行的 $t,s$ 即可：取 $t=0,s=4$ 已得到 1、2、3，其他组合不会增加元素。",
+      "(3) 2 的整数因子为 $\\pm1,\\pm2$，自然数中需排除 1、2；0 是否列入取决于本课程对自然数的约定。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：115"
+  },
+  "SRC-DM2T-E006-004": {
+    "prompt": "设 $F,S,M,R,T,G,H$ 分别为一年级、二年级、数学专业、计算机专业、听离散数学课、星期一晚听音乐会、星期一晚很迟睡觉的学生集合。将下列句子表示成集合表达式。\n(1) 所有计算机专业二年级学生在学离散数学；\n(2) 这些且只有这些学离散数学或星期一晚听音乐会的学生在星期一晚很迟睡觉；\n(3) 听离散数学的学生都没参加音乐会；\n(4) 音乐会只有大学一、二年级学生参加；\n(5) 除去数学和计算机专业外的二年级学生都参加音乐会。",
+    "solution": "(1) $S\\cap R\\subseteq T$（备选③）；(2) $H=G\\cup T$（④）；(3) $T\\cap G=\\varnothing$（⑤）；(4) $G\\subseteq F\\cup S$（⑦）；(5) $S-(R\\cup M)\\subseteq G$（⑧）。",
+    "explanation": [
+      "“所有……都……”表示包含关系；“这些且只有这些”表示相等；“都没”表示交为空。",
+      "(4)“只有一、二年级学生参加”限制参加者的范围，不表示一、二年级学生全都参加。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：115"
+  },
+  "SRC-DM2T-E006-005": {
+    "prompt": "确定命题是否为真。\\n(1) $\\varnothing\\subseteq\\varnothing$；(2) $\\varnothing\\in\\varnothing$；(3) $\\varnothing\\subseteq\\{\\varnothing\\}$；(4) $\\varnothing\\in\\{\\varnothing\\}$；(5) $\\{a,b\\}\\subseteq\\{a,b,c,\\{a,b,c\\}\\}$；(6) $\\{a,b\\}\\in\\{a,b,c,\\{a,b\\}\\}$；(7) $\\{a,b\\}\\subseteq\\{a,b,\\{\\{a,b\\}\\}\\}$；(8) $\\{a,b\\}\\in\\{a,b,\\{\\{a,b\\}\\}\\}$。",
+    "solution": "依次为：真、假、真、真、真、真、真、假（按题中 $a,b,c$ 为不同的普通元素理解）。",
+    "explanation": [
+      "(1)(3) 空集是任意集合的子集；(2) 空集没有元素；(4) 单元素集合 $\\{\\varnothing\\}$ 的唯一元素就是空集。",
+      "(5)(7) 检查左侧的元素 $a,b$ 是否逐个在右侧，而 (6)(8) 要检查集合 $\\{a,b\\}$ 本身是否作为一个元素出现。$\\{\\{a,b\\}\\}$ 与 $\\{a,b\\}$ 不是同一个对象。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：115,116"
+  },
+  "SRC-DM2T-E006-006": {
+    "prompt": "设 $a,b,c$ 各不相同，判断哪些等式为真。\\n(1) $\\{\\{a,b\\},c,\\varnothing\\}=\\{\\{a,b\\},c\\}$；(2) $\\{a,b,a\\}=\\{a,b\\}$；(3) $\\{\\{a\\},\\{b\\}\\}=\\{\\{a,b\\}\\}$；(4) $\\{\\varnothing,\\{\\varnothing\\},a,b\\}=\\{\\{\\varnothing,\\{\\varnothing\\}\\},a,b\\}$。",
+    "solution": "在题目通常把 $a,b,c$ 当作普通元素的语境下，只有 (2) 为真；(1)(3)(4) 为假。",
+    "explanation": [
+      "(1) 左边额外含空集元素；(2) 集合不计重复元素。",
+      "(3) 左边有两个单元素集合，右边只有一个二元素集合；(4) 左边分别包含 $\\varnothing$ 和 $\\{\\varnothing\\}$，右边把它们组成的集合整体作为一个元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：116"
+  },
+  "SRC-DM2T-E006-007": {
+    "prompt": "设 $S_1=\\{1,2,\\ldots,9\\},S_2=\\{2,4,6,8\\},S_3=\\{1,3,5,7,9\\},S_4=\\{3,4,5\\},S_5=\\{3,5\\}$。判断各条件能否确定 $X$ 等于其中某个集合。\\n(1) $X\\cap S_5=\\varnothing$；(2) $X\\subseteq S_4$ 且 $X\\cap S_2=\\varnothing$；(3) $X\\subseteq S_1$ 且 $X\\nsubseteq S_3$；(4) $X-S_3=\\varnothing$；(5) $X\\subseteq S_3$ 且 $X\\nsubseteq S_1$。",
+    "solution": "(1)—(4) 都不能确定 $X$ 恰好等于五个集合中的某一个；(5) 无集合满足条件。",
+    "explanation": [
+      "(1) 例如 $X=\\varnothing$ 和 $X=S_2$ 都满足，所以无法唯一确定。",
+      "(2) 只能推出 $X\\subseteq\\{3,5\\}=S_5$，$X=\\varnothing,\\{3\\},\\{5\\},S_5$ 均可。",
+      "(3) $X$ 是 $S_1$ 的子集且至少含一个偶数；$X=\\{2\\}$ 与 $X=S_2$ 都可。",
+      "(4) 等价于 $X\\subseteq S_3$，例如 $\\varnothing$ 与 $S_3$ 均可。",
+      "(5) $S_3\\subseteq S_1$，由传递性 $X\\subseteq S_1$，与后一个条件矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：116"
+  },
+  "SRC-DM2T-E006-008": {
+    "prompt": "求幂集。\\n(1) $\\{a,b,c\\}$；(2) $\\{1,\\{2,3\\}\\}$；(3) $\\{\\varnothing\\}$；(4) $\\{\\varnothing,\\{\\varnothing\\}\\}$；(5) $\\{\\{1,2\\},\\{2,1,1\\},\\{2,1,1,2\\}\\}$；(6) $\\{\\{\\varnothing,2\\},\\{2\\}\\}$。",
+    "solution": "(1) $\\{\\varnothing,\\{a\\},\\{b\\},\\{c\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},\\{a,b,c\\}\\}$。\\n(2) $\\{\\varnothing,\\{1\\},\\{\\{2,3\\}\\},\\{1,\\{2,3\\}\\}\\}$。\\n(3) $\\{\\varnothing,\\{\\varnothing\\}\\}$。\\n(4) $\\{\\varnothing,\\{\\varnothing\\},\\{\\{\\varnothing\\}\\},\\{\\varnothing,\\{\\varnothing\\}\\}\\}$。\\n(5) $\\{\\varnothing,\\{\\{1,2\\}\\}\\}$。\\n(6) $\\{\\varnothing,\\{\\{\\varnothing,2\\}\\},\\{\\{2\\}\\},\\{\\{\\varnothing,2\\},\\{2\\}\\}\\}$。",
+    "explanation": [
+      "有 $n$ 个不同元素的集合，其幂集有 $2^n$ 个元素，须包含空集及原集合。",
+      "(5) 三种写法都等于 $\\{1,2\\}$，原集合实际只有一个元素。(2)(4)(6) 的嵌套集合要整体作为元素选择，不能拆开。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：116"
+  },
+  "SRC-DM2T-E006-009": {
+    "prompt": "设 $E=\\{1,2,3,4,5,6\\},A=\\{1,4\\},B=\\{1,2,5\\},C=\\{2,4\\}$，求：(1) $A\\cap\\overline B$；(2) $(A\\cap B)\\cup\\overline C$；(3) $\\overline{A\\cap B}$；(4) $P(A)\\cap P(B)$；(5) $P(A)-P(B)$。",
+    "solution": "(1) $\\{4\\}$；(2) $\\{1,3,5,6\\}$；(3) $\\{2,3,4,5,6\\}$；(4) $\\{\\varnothing,\\{1\\}\\}$；(5) $\\{\\{4\\},\\{1,4\\}\\}$。",
+    "explanation": [
+      "$A\\cap B=\\{1\\}$，补集一律相对全集 $E$。$\\overline C=\\{1,3,5,6\\}$。",
+      "(4) 共有子集就是 $\\{1\\}$ 的子集；(5) $A$ 的子集中，只保留不是 $B$ 子集的两项，即含 4 的子集。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：116"
+  },
+  "SRC-DM2T-E006-010": {
+    "prompt": "设 $A,B,C,D$ 为 $\\mathbb Z$ 的子集，$A=\\{1,2,7,8\\},B=\\{x\\mid x^2<50\\land x\\in\\mathbb Z\\},C=\\{x\\mid x\\in\\mathbb Z\\land0\\le x\\le30\\land3\\mid x\\},D=\\{x\\mid x=2^k\\land k\\in\\mathbb Z\\land0\\le k\\le6\\}$。用列元素法表示：(1) $A\\cup B\\cup C\\cup D$；(2) $A\\cap B\\cap C\\cap D$；(3) $B-(A\\cup C)$；(4) $(\\overline A\\cap B)\\cup D$。",
+    "solution": "(1) $\\{-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,12,15,16,18,21,24,27,30,32,64\\}$；(2) $\\varnothing$；(3) $\\{-7,-6,-5,-4,-3,-2,-1,4,5\\}$；(4) $\\{-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,8,16,32,64\\}$。",
+    "explanation": [
+      "先列出 $B=\\{-7,-6,\\ldots,7\\}$、$C=\\{0,3,6,\\ldots,30\\}$、$D=\\{1,2,4,8,16,32,64\\}$。",
+      "(2) $A\\cap C=\\varnothing$，所以四者交为空；(4) $\\overline A\\cap B=B-A$，无需列出无限补集。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：116,117"
+  },
+  "SRC-DM2T-E006-011": {
+    "prompt": "(1) 设 $X=\\{x\\in\\mathbb R\\mid-3\\le x<0\\},Y=\\{x\\in\\mathbb R\\mid-1\\le x<5\\},W=\\{x\\in\\mathbb R\\mid x<1\\}$，求 $(X\\cap Y)-W$。\\n(2) $X=\\{1,2,3\\},Y=\\{2,3,4,5\\},W=\\{2,3\\}$，求 $(X\\cup Y)\\oplus W$。",
+    "solution": "(1) $\\varnothing$；(2) $\\{1,4,5\\}$。",
+    "explanation": [
+      "(1) $X\\cap Y=[-1,0)$，其元素都小于 1，全部被 $W$ 删去。",
+      "(2) $X\\cup Y=\\{1,2,3,4,5\\}$，对称差留下仅在两集合之一中的元素；$W$ 为其子集，结果就是删除 2、3。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117"
+  },
+  "SRC-DM2T-E006-012": {
+    "prompt": "(1) 设 $A$ 是 $n(n\\ge1)$ 元集，元素为英文字母；$B$ 是 $m$ 元集，元素为自然数，求 $P(A)\\cap P(B)$。\\n(2) $A=\\{1,2,3,4,5,6\\},B=\\{x\\mid x=n^2+1,n\\in\\mathbb N,x<20\\}$，求 $A\\cup B$。\\n(3) $A=\\{\\{a,\\{a\\}\\},a\\},B=\\{a,\\{a\\}\\}$，求 $A\\oplus B$。",
+    "solution": "(1) $\\{\\varnothing\\}$；(2) $\\{1,2,3,4,5,6,10,17\\}$；(3) $\\{\\{a,\\{a\\}\\},\\{a\\}\\}$。",
+    "explanation": [
+      "(1) 字母与自然数的集合不交，唯一的共同子集为空集，因此交幂集是含空集的单元素集合。",
+      "(2) $n=0,1,2,3,4$ 时产生 1、2、5、10、17；即使自然数从 1 起算，1 已在 $A$，并集结果不变。",
+      "(3) 共同元素 $a$ 在对称差中删去，剩余两个不同的嵌套集合。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117"
+  },
+  "SRC-DM2T-E006-013": {
+    "prompt": "以 $\\mathbb Z$ 为全集，$A=\\{x\\mid\\exists t\\in\\mathbb Z(t\\ge4\\land x=3t)\\},B=\\{x\\mid\\exists t\\in\\mathbb Z,x=2t\\},C=\\{x\\in\\mathbb Z\\mid|x|\\le10\\}$。用 $A,B,C$ 及集合运算表示：(1) 奇数集；(2) $\\{-10,-8,\\ldots,8,10\\}$；(3) $\\{x\\mid\\exists t\\in\\mathbb Z(t\\ge2\\land x=6t)\\}$；(4) $\\{x\\mid\\exists t\\in\\mathbb Z(t\\ge5\\land x=2t+1)\\}\\cup\\{x\\mid\\exists t\\in\\mathbb Z(t\\le-5\\land x=2t-1)\\}$。",
+    "solution": "(1) $\\overline B$；(2) $B\\cap C$；(3) $A\\cap B$；(4) $\\overline{B\\cup C}$。",
+    "explanation": [
+      "$B$ 为全部偶数，$C$ 为 -10 到 10 的整数；$A$ 为至少 12 的 3 的倍数。",
+      "(3) 同时为 3、2 的倍数且至少 12，正是所求。(4) 两部分分别为至少 11 和至多 -11 的奇数，即既不在偶数集、又不在 $C$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-03",
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117"
+  },
+  "SRC-DM2T-E006-014": {
+    "prompt": "化简：(1) $((A\\cup B)\\cap B)-(A\\cup B)$；(2) $((A\\cup B\\cup C)-(B\\cup C))\\cup A$；(3) $(B-(A\\cap C))\\cup(A\\cap B\\cap C)$。",
+    "solution": "(1) $\\varnothing$；(2) $A$；(3) $B$。",
+    "explanation": [
+      "(1) 被减数是 $A\\cup B$ 的子集，差为空。",
+      "(2) 左项等于 $A-(B\\cup C)$，为 $A$ 的子集，与 $A$ 并仍为 $A$。",
+      "(3) 把 $B$ 中不在 $A\\cap C$ 的部分，与在 $A\\cap C$ 的部分合并，恰为整个 $B$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117"
+  },
+  "SRC-DM2T-E006-015": {
+    "prompt": "画出文氏图：(1) $\\overline A\\cap\\overline B$；(2) $(A-(B\\cup C))\\cup((B\\cup C)-A)$；(3) $A\\cap(\\overline B\\cup C)$。",
+    "solution": "按以下区域涂色即可：(1) $A,B$ 两圆之外的全集区域；(2) 只在 $A$ 内而不在 $B,C$ 内的区域，加上在 $B\\cup C$ 内而不在 $A$ 内的区域；(3) $A$ 内不属于 $B$ 的部分，以及 $A\\cap C$ 的全部。",
+    "explanation": [
+      "(1) 由德摩根律等于 $\\overline{A\\cup B}$。",
+      "(2) 是 $A$ 与 $B\\cup C$ 的对称差；两者共同的部分不涂。",
+      "(3) 分配律得 $(A-B)\\cup(A\\cap C)$，因此三圆公共部分也必须涂色。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117"
+  },
+  "SRC-DM2T-E006-017": {
+    "prompt": "化简：(1) $\\bigcup\\{\\{3,4\\},\\{\\{3\\},\\{4\\}\\},\\{3,\\{4\\}\\},\\{\\{3\\},4\\}\\}$；(2) $\\bigcup\\{\\{\\varnothing\\},\\{\\{\\varnothing\\}\\}\\}$。",
+    "solution": "(1) $\\{3,4,\\{3\\},\\{4\\}\\}$；(2) $\\{\\varnothing,\\{\\varnothing\\}\\}$。",
+    "explanation": [
+      "广义并只去掉外层集合与其每个元素集合的这一层括号，把元素集合中的成员合在一起；不能继续展开所有嵌套层级。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：117,118"
+  },
+  "SRC-DM2T-E006-018": {
+    "prompt": "设 $A=\\{\\{1,2\\},\\{2,3\\},\\{1,3\\},\\{\\varnothing\\}\\}$，计算：(1) $\\bigcup A$；(2) $\\bigcap A$；(3) $\\bigcap\\bigcup A$；(4) $\\bigcup\\bigcap A$。",
+    "solution": "(1) $\\{1,2,3,\\varnothing\\}$；(2) $\\varnothing$；(3) $\\varnothing$；(4) $\\varnothing$。",
+    "explanation": [
+      "(1) 将四个元素集合的成员合并；(2) 前三个集合已无共同元素，故四者交为空。",
+      "(3) $\\bigcup A$ 中含空集，含空集的集合族其交必为空；(4) 空集合族的并为空。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-019": {
+    "prompt": "判断真假：(1) $a\\in\\{\\{a\\}\\}$；(2) $\\{a\\}\\in\\{\\{a\\}\\}$；(3) $x\\in\\{x\\}-\\{\\{x\\}\\}$；(4) $\\{x\\}\\subseteq\\{x\\}-\\{\\{x\\}\\}$；(5) $A-B=A\\Leftrightarrow B=\\varnothing$；(6) $A-B=\\varnothing\\Leftrightarrow A=B$；(7) $A\\oplus A=A$；(8) $A-(B\\cup C)=(A-B)\\cap(A-C)$；(9) 若 $A\\cap B=B$，则 $A=E$；(10) $A=\\{x\\}\\cup x$，则 $x\\in A$ 且 $x\\subseteq A$。",
+    "solution": "依次为：假、真、真、真、假、假、假、真、假、真（通常集合论语境，不允许集合属于自身）。",
+    "explanation": [
+      "(1)(2) 右集合唯一元素为 $\\{a\\}$。(3)(4) $x\\ne\\{x\\}$，所以相减仍为 $\\{x\\}$。",
+      "(5) 真正等价条件是 $A\\cap B=\\varnothing$；取 $A=\\{1\\},B=\\{2\\}$ 反例。(6) 真正条件为 $A\\subseteq B$，取 $A=\\varnothing,B=\\{1\\}$。",
+      "(7) $A\\oplus A=\\varnothing$，当 $A\\ne\\varnothing$ 时不等于 $A$。(8) 用差集定义及德摩根律立即得到。",
+      "(9) 只能推出 $B\\subseteq A$，取 $A=B=\\varnothing,E=\\{1\\}$。(10) $x\\in\\{x\\}\\subseteq A$，同时 $x$ 的所有成员也由并集包含在 $A$ 中。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-020": {
+    "prompt": "调查 60 人：25 人读《每周新闻》，26 人读《时代》，26 人读《财富》；9 人读《每周新闻》和《财富》，11 人读《每周新闻》和《时代》，8 人读《时代》和《财富》；8 人什么也不读。\n(1) 求三种都读的人数；(2) 分别求只读三种杂志各一种的人数。",
+    "solution": "(1) 3 人；(2) 只读《每周新闻》8 人，只读《时代》10 人，只读《财富》12 人。",
+    "explanation": [
+      "至少读一种的有 $60-8=52$ 人。容斥：$52=25+26+26-9-11-8+t$，得 $t=3$。",
+      "只读某一种须从该集合中删掉两个两两交，再补回被删两次的三重交：$25-9-11+3=8$；$26-11-8+3=10$；$26-9-8+3=12$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-021": {
+    "prompt": "某班 25 人，14 人会打篮球，12 人会打排球，6 人两者都会；5 人会打篮球和网球，2 人三种球都会。6 个会打网球的人都会打篮球或排球。求不会打这三种球的人数。",
+    "solution": "5 人。",
+    "explanation": [
+      "设篮球、排球、网球集合为 $B,V,T$。已知 $T\\subseteq B\\cup V$，所以 $B\\cup V\\cup T=B\\cup V$。",
+      "$|B\\cup V|=14+12-6=20$，故三种都不会的为 $25-20=5$；其余网球交集数据不影响此计算。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-022": {
+    "prompt": "在 1—300（含端点）的整数中求满足条件的个数。\n(1) 同时被 3、5、7 整除；(2) 不能被 3 和 5，也不能被 7 整除；(3) 被 3 整除，但不被 5、7 整除；(4) 被 3 或 5 整除，但不被 7 整除；(5) 只被 3、5、7 中一个数整除。",
+    "solution": "依次为：2、138、68、120、124。",
+    "explanation": [
+      "记 $A,B,C$ 为 3、5、7 的倍数集，大小为 100、60、42；两两交大小为 $\\lfloor300/15\\rfloor=20,\\lfloor300/21\\rfloor=14,\\lfloor300/35\\rfloor=8$；三重交为 2。",
+      "(1) $\\lfloor300/105\\rfloor=2$。(2) 按“不被其中任何一个整除”理解：$300-(100+60+42-20-14-8+2)=138$。",
+      "(3) $100-20-14+2=68$。(4) $100+60-20-14-8+2=120$。",
+      "(5) $100+60+42-2(20+14+8)+3\\times2=124$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-023": {
+    "prompt": "使用包含排斥原理求不超过 120 的素数个数。",
+    "solution": "30 个。",
+    "explanation": [
+      "合数若不超过 120，至少有一个不超过 $\\sqrt{120}$ 的素因子，即 2、3、5、7。",
+      "1—120 中这些数的倍数并集大小为 $(60+40+24+17)-(20+12+8+8+5+3)+(4+2+1+1)-0=93$。",
+      "未被这些数整除的有 $120-93=27$ 个，包括 1，并排除了素数 2、3、5、7；所以素数数目为 $27-1+4=30$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-024": {
+    "prompt": "1—10000（含端点）中不能被 4、5、6 中任何一个整除的整数有多少个？",
+    "solution": "5334 个。",
+    "explanation": [
+      "倍数集大小为 2500、2000、1666，两两交为 $\\lfloor10000/20\\rfloor=500,\\lfloor10000/12\\rfloor=833,\\lfloor10000/30\\rfloor=333$，三重交为 $\\lfloor10000/60\\rfloor=166$。容斥后并集为 4666，补集为 $10000-4666=5334$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-025": {
+    "prompt": "1—10000（含端点）中既不是整数的平方，也不是整数的立方的整数有多少个？",
+    "solution": "9883 个。",
+    "explanation": [
+      "正平方数有 100 个，正立方数有 21 个；同时为平方和立方的恰是正六次幂，有 $\\lfloor10000^{1/6}\\rfloor=4$ 个。容斥得 $10000-(100+21-4)=9883$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-026": {
+    "prompt": "1—1000000（含端点）中有多少个整数同时包含数字 1、2、3、4？",
+    "solution": "23160 个。",
+    "explanation": [
+      "把 0—999999 统一补前导零写成六位串，不影响是否包含 1、2、3、4。用容斥得到 $10^6-\\binom419^6+\\binom428^6-\\binom437^6+6^6=23160$。0 不满足条件，1000000 也不满足，故端点调整不改变结果。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-027": {
+    "prompt": "证明错位排列数 $D_n$ 满足：$n$ 为偶数当且仅当 $D_n$ 为奇数。",
+    "solution": "结论成立（$n\\ge1$）。",
+    "explanation": [
+      "由递推式 $D_n=nD_{n-1}+(-1)^n$，模 2 得 $D_n\\equiv nD_{n-1}+1$。若 $n$ 偶，则 $D_n\\equiv1$；若 $n$ 奇，则 $n-1$ 偶，故 $D_{n-1}$ 奇，于是 $D_n\\equiv1+1=0$。基例 $D_1=0,D_2=1$ 符合。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118"
+  },
+  "SRC-DM2T-E006-028": {
+    "prompt": "化简：(1) $(A\\cap B)\\cup(A-B)$；(2) $(A\\cup(B-A))-B$；(3) $((A-B)-C)\\cup((A-B)\\cap C)\\cup((A\\cap B)-C)\\cup(A\\cap B\\cap C)$；(4) $(A\\cap B\\cap C)\\cup(A\\cap\\overline B\\cap C)\\cup(\\overline A\\cap B\\cap C)$。",
+    "solution": "(1) $A$；(2) $A-B$；(3) $A$；(4) $(A\\cup B)\\cap C$。",
+    "explanation": [
+      "(1) 按是否属于 $B$ 将 $A$ 分成两部分。(2) 减去 $B$ 后，$B-A$ 的部分全部消失，留下 $A-B$。",
+      "(3) 前两项合为 $A-B$，后两项合为 $A\\cap B$，再合为 $A$。",
+      "(4) 先提取 $C$，括号内是 $A\\cap B,A\\cap\\overline B,\\overline A\\cap B$ 三个区域，合为 $A\\cup B$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：118,119"
+  },
+  "SRC-DM2T-E006-029": {
+    "prompt": "若 $P-Q=P$，判断：(1) $P\\cap Q=\\varnothing$；(2) $Q=P$；(3) $P\\subseteq Q$；(4) $Q\\subseteq P$。",
+    "solution": "只有 (1) 必然为真，其余都不一定为真。",
+    "explanation": [
+      "$P-Q=P$ 表示 $P$ 没有元素落在 $Q$，等价于不交。取 $P=\\{1\\},Q=\\{2\\}$，即可同时否定 (2)(3)(4)。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-030": {
+    "prompt": "设 $A,B,C$ 为任意集合，判断真假；真则证明，假则给反例。\\n(1) $A\\subseteq B\\land B\\subseteq C\\Rightarrow A\\subseteq C$；(2) $A\\ne B\\land B\\ne C\\Rightarrow A\\ne C$；(3) $A\\in B\\land B\\nsubseteq C\\Rightarrow A\\notin C$；(4) $(A-B)\\cup(B-C)=A-C$；(5) $(A-B)\\cup B=A$；(6) $(A\\cup B)-A=B$；(7) $(A\\cap B)-A=\\varnothing$；(8) $A\\cup B=A\\cup C\\Rightarrow B=C$。",
+    "solution": "(1)(7) 真；其余假。",
+    "explanation": [
+      "(1) 对 $x\\in A$，依次由包含关系得 $x\\in B,x\\in C$。(7) $A\\cap B\\subseteq A$，减去 $A$ 后为空。",
+      "(2) 取 $A=C=\\varnothing,B=\\{1\\}$。",
+      "(3) 取 $A=\\varnothing,B=\\{\\varnothing,1\\},C=\\{\\varnothing\\}$：$A\\in B,B\\nsubseteq C$，但 $A\\in C$。",
+      "(4) 取 $A=\\varnothing,B=\\{1\\},C=\\varnothing$，左为 $\\{1\\}$，右为空。",
+      "(5) 取 $A=\\varnothing,B=\\{1\\}$，左不为空。(6) 取 $A=B=\\{1\\}$，左为空而右非空。",
+      "(8) 取 $A=\\{1\\},B=\\varnothing,C=\\{1\\}$，两个并集相同而 $B\\ne C$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-031": {
+    "prompt": "设 $A,B$ 为任意集合，证明 $(A-B)\\cup(B-A)=(A\\cup B)-(A\\cap B)$。",
+    "solution": "等式成立。",
+    "explanation": [
+      "任意 $x$ 属于左式，当且仅当“$x\\in A,x\\notin B$”或“$x\\in B,x\\notin A$”，即 $x$ 至少属于 $A,B$ 之一且不同时属于两者，这恰是 $x$ 属于右式的条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-032": {
+    "prompt": "证明：(1) $(A-B)-C=A-(B\\cup C)$；(2) $(A-B)-C=(A-C)-(B-C)$；(3) $(A-B)-C=(A-C)-B$。",
+    "solution": "三式都成立。",
+    "explanation": [
+      "三式左端都为 $A\\cap\\overline B\\cap\\overline C$。(1) 右端由德摩根律也化为这一式；(3) 只交换两个交项的顺序。",
+      "(2) 右端 $=A\\cap\\overline C\\cap\\overline{B\\cap\\overline C}=A\\cap\\overline C\\cap(\\overline B\\cup C)=A\\cap\\overline B\\cap\\overline C$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-033": {
+    "prompt": "证明：(1) $A\\cap(B\\cup\\overline A)=B\\cap A$；(2) $\\overline{(\\overline A\\cup\\overline B)\\cap\\overline A}=A$。",
+    "solution": "等式均成立。",
+    "explanation": [
+      "(1) 分配律得 $(A\\cap B)\\cup(A\\cap\\overline A)=(A\\cap B)\\cup\\varnothing=A\\cap B$。",
+      "(2) 吸收律使被补集合化为 $\\overline A$，再取补得到 $A$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-034": {
+    "prompt": "若 $(A-B)\\cup(B-A)=A\\cup B$，证明 $A\\cap B=\\varnothing$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "若存在 $x\\in A\\cap B$，则 $x$ 属于右端 $A\\cup B$，却既不属于 $A-B$，也不属于 $B-A$，从而不属于左端，与两端相等矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-035": {
+    "prompt": "证明以下命题等价：$A\\subseteq B$；$\\overline B\\subseteq\\overline A$；$\\overline A\\cup B=E$；$A-B\\subseteq B$。",
+    "solution": "四命题等价。",
+    "explanation": [
+      "$A\\subseteq B$ 等价于“不存在 $x\\in A$ 而 $x\\notin B$”，也等价于“若 $x\\notin B$ 则 $x\\notin A$”，得第二项。",
+      "同一条件等价于每个 $x\\in E$ 均满足 $x\\notin A$ 或 $x\\in B$，得第三项。",
+      "$A-B$ 一定与 $B$ 不交，因此 $A-B\\subseteq B$ 当且仅当 $A-B=\\varnothing$，又当且仅当 $A\\subseteq B$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-036": {
+    "prompt": "证明 $P(A)\\subseteq P(B)\\Rightarrow A\\subseteq B$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "$A\\subseteq A$，所以 $A\\in P(A)$。由 $P(A)\\subseteq P(B)$ 得 $A\\in P(B)$，按幂集定义即 $A\\subseteq B$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-037": {
+    "prompt": "证明 $C\\subseteq A\\land C\\subseteq B\\Leftrightarrow C\\subseteq A\\cap B$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "前向：对 $x\\in C$，两项包含关系给出 $x\\in A$ 且 $x\\in B$，所以 $x\\in A\\cap B$。反向：$C\\subseteq A\\cap B$ 且 $A\\cap B\\subseteq A,B$，由传递性得到两个包含关系。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-038": {
+    "prompt": "证明 $P\\subseteq Q\\Leftrightarrow P-Q\\subseteq\\overline P$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "前向：$P\\subseteq Q$ 时 $P-Q=\\varnothing$，空集是 $\\overline P$ 的子集。反向：$P-Q$ 同时为 $P$ 与 $\\overline P$ 的子集，只能为空，故 $P\\subseteq Q$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-039": {
+    "prompt": "证明：如果对一切集合 $X$ 有 $X\\cup Y=X$，则 $Y=\\varnothing$。",
+    "solution": "$Y=\\varnothing$。",
+    "explanation": [
+      "条件对一切集合都成立，特别取 $X=\\varnothing$，得到 $\\varnothing\\cup Y=\\varnothing$，左边即为 $Y$，故结论成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-040": {
+    "prompt": "设 $A\\subseteq B$，证明 $B\\cup\\overline A=E$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "任意 $x\\in E$，若 $x\\in A$，则由 $A\\subseteq B$ 得 $x\\in B$；若 $x\\notin A$，则 $x\\in\\overline A$。故全集每个元素都在该并集中；并集又是全集子集，所以相等。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119"
+  },
+  "SRC-DM2T-E006-041": {
+    "prompt": "证明 $A\\cap C\\subseteq B\\cap C\\land A-C\\subseteq B-C\\Rightarrow A\\subseteq B$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "任取 $x\\in A$。若 $x\\in C$，则 $x\\in A\\cap C\\subseteq B\\cap C$，故在 $B$；若 $x\\notin C$，则 $x\\in A-C\\subseteq B-C$，仍在 $B$。两种情况穷尽，所以 $A\\subseteq B$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：119,120"
+  },
+  "SRC-DM2T-E006-042": {
+    "prompt": "证明 $A\\cup B=A\\cup C\\land A\\cap B=A\\cap C\\Rightarrow B=C$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "任取 $x\\in B$。若 $x\\in A$，则 $x\\in A\\cap B=A\\cap C$，所以在 $C$；若 $x\\notin A$，由 $x\\in A\\cup B=A\\cup C$ 只能得到 $x\\in C$。故 $B\\subseteq C$。交换 $B,C$ 同理得 $C\\subseteq B$，所以相等。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-043": {
+    "prompt": "判断：(1) $A\\subseteq B\\land C\\subseteq D\\Rightarrow A\\cup C\\subseteq B\\cup D$；(2) $A\\subset B\\land C\\subset D\\Rightarrow A\\cup C\\subset B\\cup D$（$\\subset$ 表示真包含）。",
+    "solution": "(1) 真；(2) 假。",
+    "explanation": [
+      "(1) 并集元素来自 $A$ 或 $C$，因而分别落在 $B$ 或 $D$，必在 $B\\cup D$。",
+      "(2) 取 $A=\\{1\\},B=\\{1,2\\},C=\\{2\\},D=\\{1,2\\}$。两个真包含都成立，但两个并集均为 $\\{1,2\\}$，并非真包含。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-044": {
+    "prompt": "证明 $A\\subseteq B\\Rightarrow P(A)\\subseteq P(B)$。",
+    "solution": "结论成立。",
+    "explanation": [
+      "任取 $X\\in P(A)$，按定义 $X\\subseteq A$；结合 $A\\subseteq B$ 得 $X\\subseteq B$，所以 $X\\in P(B)$，从而完成包含证明。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-045": {
+    "prompt": "证明：(1) $P(A)\\cap P(B)=P(A\\cap B)$；(2) $P(A)\\cup P(B)\\subseteq P(A\\cup B)$；(3) 举反例说明 (2) 不一定为等号。",
+    "solution": "(1)(2) 成立；(3) 可取 $A=\\{1\\},B=\\{2\\}$。",
+    "explanation": [
+      "(1) 对任意集合 $X$，$X\\in P(A)\\cap P(B)$ 当且仅当 $X\\subseteq A$ 且 $X\\subseteq B$，当且仅当 $X\\subseteq A\\cap B$，即属于右端。",
+      "(2) $X\\subseteq A$ 或 $X\\subseteq B$ 都蕴涵 $X\\subseteq A\\cup B$。",
+      "(3) $\\{1,2\\}\\in P(A\\cup B)$，但既不属于 $P(A)$，也不属于 $P(B)$，所以左边为真子集。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-046": {
+    "prompt": "求各等式成立的充要条件：(1) $A\\cup B=A$；(2) $A-B=A$；(3) $A-B=B$；(4) $A-B=B-A$；(5) $A\\oplus B=A$；(6) $A\\oplus B=\\varnothing$。",
+    "solution": "(1) $B\\subseteq A$；(2) $A\\cap B=\\varnothing$；(3) $A=B=\\varnothing$；(4) $A=B$；(5) $B=\\varnothing$；(6) $A=B$。",
+    "explanation": [
+      "(1) 并入 $B$ 不增加元素等价于 $B$ 全在 $A$ 内。(2) 删除 $B$ 不损失元素等价于不交。",
+      "(3) $A-B$ 与 $B$ 不交却等于 $B$，先得 $B=\\varnothing$，再得 $A=\\varnothing$。",
+      "(4) 两个差集互不相交却相等，故都为空，得到相互包含。",
+      "(5) 两边同与 $A$ 作对称差，利用结合律和 $A\\oplus A=\\varnothing$ 得 $B=\\varnothing$。(6) 对称差为空等价于没有只属于一方的元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-047": {
+    "prompt": "求充要条件：(1) $(A-B)\\cup(A-C)=A$；(2) $(A-B)\\cup(A-C)=\\varnothing$；(3) $(A-B)\\cap(A-C)=\\varnothing$；(4) $(A-B)\\cap(A-C)=A$。",
+    "solution": "(1) $A\\cap B\\cap C=\\varnothing$；(2) $A\\subseteq B\\cap C$；(3) $A\\subseteq B\\cup C$；(4) $A\\cap(B\\cup C)=\\varnothing$。",
+    "explanation": [
+      "前两式左端均化为 $A-(B\\cap C)$；一个差集等于 $A$ 当且仅当与被减集合不交，等于空集当且仅当包含于被减集合。",
+      "后两式左端均化为 $A-(B\\cup C)$，再分别应用同样的两个判据。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-048": {
+    "prompt": "设全集 $E=\\{x_1,\\ldots,x_n\\}$ 按固定顺序用 0-1 串表示子集，第 $k$ 位为 1 当且仅当 $x_k$ 属于该子集。\\n(1) $A$ 的串为 10110010，求 $\\overline A$ 的串。\\n(2) $A,B$ 的串为 $i_1\\cdots i_n,j_1\\cdots j_n$，$A\\cup B,A\\cap B,A-B,A\\oplus B$ 的串分别为 $a_1\\cdots a_n,b_1\\cdots b_n,c_1\\cdots c_n,d_1\\cdots d_n$，求各位。",
+    "solution": "(1) 01001101。\\n(2) $a_k=i_k\\lor j_k$，$b_k=i_k\\land j_k$，$c_k=i_k\\land\\neg j_k$，$d_k=i_k\\mathbin{\\mathrm{XOR}}j_k$（$k=1,\\ldots,n$）。",
+    "explanation": [
+      "补集对每一位取反。并、交、差、对称差分别对应“至少一位为1”“两位都为1”“前者为1且后者为0”“恰有一位为1”。",
+      "若以算术写出：$a_k=i_k+j_k-i_kj_k,b_k=i_kj_k,c_k=i_k(1-j_k),d_k=i_k+j_k-2i_kj_k$。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-049": {
+    "prompt": "求 $\\bigcup A,\\bigcap A$。\\n(1) $A=\\{A_i\\mid A_i=(-1/i,1/i),i\\in\\mathbb Z^+\\}$；(2) $A=\\{A_i\\mid A_i=[-1/i,1/i],i\\in\\mathbb Z^+\\}$。",
+    "solution": "(1) 并为 $(-1,1)$，交为 $\\{0\\}$；(2) 并为 $[-1,1]$，交为 $\\{0\\}$。",
+    "explanation": [
+      "两族都逐项嵌套缩小，且第一项包含后面的所有项，所以并就是第一项。",
+      "0 属于所有区间。对任意 $x\\ne0$，选正整数 $i>1/|x|$，则 $1/i<|x|$，$x$ 不在该区间，因此交中没有非零数。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  },
+  "SRC-DM2T-E006-050": {
+    "prompt": "设 $A=\\{\\{\\varnothing\\},\\{\\{\\varnothing\\}\\}\\}$，计算：(1) $P(A)$；(2) $P(\\bigcup A)$；(3) $\\bigcup P(A)$。",
+    "solution": "令 $u=\\{\\varnothing\\},v=\\{\\{\\varnothing\\}\\}$，则：\\n(1) $P(A)=\\{\\varnothing,\\{u\\},\\{v\\},\\{u,v\\}\\}$；\\n(2) $\\bigcup A=\\{\\varnothing,\\{\\varnothing\\}\\}$，所以 $P(\\bigcup A)=\\{\\varnothing,\\{\\varnothing\\},\\{\\{\\varnothing\\}\\},\\{\\varnothing,\\{\\varnothing\\}\\}\\}$；\\n(3) $\\bigcup P(A)=A=\\{\\{\\varnothing\\},\\{\\{\\varnothing\\}\\}\\}$。",
+    "explanation": [
+      "(1) $A$ 的两个元素是 $u,v$，幂集按“选或不选”枚举四项；代回可避免混淆括号层级。",
+      "(2) 广义并去掉一层，两个成员集合分别贡献 $\\varnothing$ 与 $\\{\\varnothing\\}$。",
+      "(3) 对任意集合 $A$ 都有 $\\bigcup P(A)=A$：每个子集的元素属于 $A$，反过来每个 $a\\in A$ 都出现在单元素子集 $\\{a\\}$ 中。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户教材分段 PDF 的原题扫描页校订；独立数学推导复核。源 PDF 页：120"
+  }
+}

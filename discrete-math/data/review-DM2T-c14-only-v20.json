@@ -1,0 +1,2511 @@
+{
+  "SRC-DM2T-E014-001": {
+    "prompt": "给定以下4个图的集合表示，画出图形表示。顶点集均为 $V=\\{v_1,v_2,v_3,v_4,v_5\\}$。无向图 $G_1$ 的边集为 $\\{(v_1,v_2),(v_2,v_3),(v_3,v_4),(v_3,v_3),(v_4,v_5)\\}$；无向图 $G_2$ 的边集为 $\\{(v_1,v_2),(v_2,v_3),(v_3,v_4),(v_4,v_5),(v_5,v_1)\\}$；有向图 $D_1$ 的边集为 $\\{\\langle v_1,v_2\\rangle,\\langle v_2,v_3\\rangle,\\langle v_3,v_2\\rangle,\\langle v_4,v_5\\rangle,\\langle v_5,v_1\\rangle\\}$；有向图 $D_2$ 的边集为 $\\{\\langle v_1,v_2\\rangle,\\langle v_2,v_5\\rangle,\\langle v_5,v_2\\rangle,\\langle v_3,v_4\\rangle,\\langle v_4,v_3\\rangle\\}$。",
+    "solution": "$G_1$：画链 $v_1—v_2—v_3—v_4—v_5$，再在 $v_3$ 画1个自环。$G_2$：画五边形 $v_1—v_2—v_3—v_4—v_5—v_1$。$D_1$：画 $v_4\\to v_5\\to v_1\\to v_2$，再画 $v_2\\to v_3$ 与 $v_3\\to v_2$。$D_2$：画两个分支 $v_1\\to v_2\\rightleftarrows v_5$、$v_3\\rightleftarrows v_4$。",
+    "explanation": [
+      "每个无序对画一条无向边；每个有序对画一条沿指定方向的有向边。两条反向边是两条不同的有向边，不能误画为一条无向边。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第322页（印刷页311起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 1 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 311,
+      "pdf_page": 322,
+      "segments": [
+        {
+          "page": 322,
+          "top": 0.767,
+          "bottom": 0.878
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-002": {
+    "prompt": "先将图14.18中各图的顶点标定顺序，然后写出各图的集合表示。原图见附图。",
+    "solution": "对每幅图，按“最上顶点、右上（或右侧）顶点、右下顶点、左下顶点、左上（或左侧）顶点”顺时针依次标为 $v_1,\\ldots,v_5$；图(c)中心孤立点为 $v_6$。 (a)$V=\\{v_1,\\ldots,v_5\\},E=\\{12,15,13,24,34\\}$，其中 $ij$ 表示无向边 $(v_i,v_j)$。(b)$V=\\{v_1,\\ldots,v_5\\},E=\\{15,15,12,23,34\\}$，两个 $15$ 是两条不同的平行边。(c)$V=\\{v_1,\\ldots,v_6\\},E=\\{\\langle1,5\\rangle,\\langle2,1\\rangle,\\langle5,4\\rangle,\\langle4,5\\rangle,\\langle4,3\\rangle,\\langle3,2\\rangle,\\langle2,2\\rangle\\}$。",
+    "explanation": [
+      "图中相交但没有小圆标记的位置不是顶点。(b)的两条弧连接同一对顶点；(c)的中心孤立点和右上自环均须保留。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第322, 323页（印刷页311起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 2 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 311,
+      "pdf_page": 322,
+      "segments": [
+        {
+          "page": 322,
+          "top": 0.879,
+          "bottom": 0.899
+        },
+        {
+          "page": 323,
+          "top": 0.075,
+          "bottom": 0.212
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 323,
+        "bbox": [
+          0.27,
+          0.075,
+          0.77,
+          0.215
+        ],
+        "caption": "图14.18：第2、3题共用原图"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-003": {
+    "prompt": "写出图14.18中各图的度数列；对有向图还要写出出度列和入度列。原图见附图。",
+    "solution": "对每幅图，按“最上顶点、右上（或右侧）顶点、右下顶点、左下顶点、左上（或左侧）顶点”顺时针依次标为 $v_1,\\ldots,v_5$；图(c)中心孤立点为 $v_6$。 按这一顶点顺序：(a)度数列 $(3,2,2,2,1)$；(b)度数列 $(3,2,2,1,2)$；(c)度数列 $(2,4,2,3,3,0)$，出度列 $(1,2,1,2,1,0)$，入度列 $(1,2,1,1,2,0)$。",
+    "explanation": [
+      "(a)、(b)各有5条边，度数和均为10；(c)有7条有向边，出度和、入度和均为7，总度数和为14。",
+      "有向自环对该顶点出度、入度各贡献1；孤立点三种度均为0。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第322, 323页（印刷页311起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 3 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 311,
+      "pdf_page": 322,
+      "segments": [
+        {
+          "page": 322,
+          "top": 0.899,
+          "bottom": 0.919
+        },
+        {
+          "page": 323,
+          "top": 0.075,
+          "bottom": 0.212
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 323,
+        "bbox": [
+          0.27,
+          0.075,
+          0.77,
+          0.215
+        ],
+        "caption": "图14.18：第2、3题共用原图"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-004": {
+    "prompt": "(1)写出图14.19(a)中 $v_1$ 的邻域 $N(v_1)$ 与闭邻域 $\\overline N(v_1)$。(2)写出图14.19(b)中 $u_1$ 的先驱元集 $\\Gamma^-(u_1)$、后继元集 $\\Gamma^+(u_1)$、邻域 $N(u_1)$ 及闭邻域 $\\overline N(u_1)$。原图见附图。",
+    "solution": "(1)$N(v_1)=\\{v_1,v_2,v_3,v_4\\}$，$\\overline N(v_1)=\\{v_1,v_2,v_3,v_4\\}$。(2)$\\Gamma^-(u_1)=\\{u_1,u_3,u_4\\}$，$\\Gamma^+(u_1)=\\{u_1,u_2,u_3\\}$；$N(u_1)=\\Gamma^-(u_1)\\cup\\Gamma^+(u_1)=\\{u_1,u_2,u_3,u_4\\}$，$\\overline N(u_1)=N(u_1)$。",
+    "explanation": [
+      "自环使顶点自身已在邻域中，所以此处加上自身后闭邻域不再扩大。平行边不会让集合中的同一邻点重复出现。",
+      "有向图中u4→u1、u5→u3；不能把u5误列为u1的邻点。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 4 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.23,
+          "bottom": 0.447
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 323,
+        "bbox": [
+          0.32,
+          0.28,
+          0.72,
+          0.446
+        ],
+        "caption": "图14.19：邻域、先驱元与后继元"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-005": {
+    "prompt": "无向图 $G$ 有10条边，3度与4度顶点各2个，其余顶点的度数均小于3。$G$ 至少有几个顶点？在最少顶点时写出度数列及 $\\Delta(G),\\delta(G)$。",
+    "solution": "至少7个顶点；最少顶点时度数列为 $(4,4,3,3,2,2,2)$，$\\Delta(G)=4,\\delta(G)=2$。",
+    "explanation": [
+      "握手定理给出总度数20。已知4个顶点贡献 $2\\times3+2\\times4=14$，其余还须贡献6；每个至多2，故至少另需3个顶点。",
+      "可行的简单图例：取顶点1至7，边为 $\\{12,13,14,15,23,24,26,37,47,56\\}$，度数为 $(4,4,3,3,2,2,2)$，故下界能达到。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 5 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.472,
+          "bottom": 0.519
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-006": {
+    "prompt": "(1)设 $n$ 阶无向图 $G$ 有 $m$ 条边，证明 $\\delta(G)\\le2m/n\\le\\Delta(G)$。(2)$n$ 阶非连通简单图边数最多、最少各为多少？",
+    "solution": "(1)各顶点度数均介于 $\\delta$ 与 $\\Delta$ 之间，故 $n\\delta\\le\\sum_vd(v)=2m\\le n\\Delta$，除以 $n$ 即得。(2)在 $n\\ge2$ 时最多 $\\binom{n-1}{2}$ 条，由 $K_{n-1}\\cup K_1$ 达到；最少0条，由 $n$ 个孤立点达到。",
+    "explanation": [
+      "若非连通图分支阶数为 $n_1,\\ldots,n_t$、$t\\ge2$，则 $m\\le\\sum_i\\binom{n_i}{2}\\le\\binom{n-1}{2}$。把两分支尽量合并能增加可能边数，最大分拆为 $n-1$ 与1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 6 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.519,
+          "bottom": 0.582
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-007": {
+    "prompt": "有向图 $D$ 的度数列为 $(2,3,2,3)$，出度列为 $(1,2,1,1)$。求入度列及 $\\Delta(D),\\delta(D),\\Delta^+(D),\\delta^+(D),\\Delta^-(D),\\delta^-(D)$。",
+    "solution": "入度列为 $(1,1,1,2)$；$\\Delta=3,\\delta=2,\\Delta^+=2,\\delta^+=1,\\Delta^-=2,\\delta^-=1$。",
+    "explanation": [
+      "逐项使用 $d^-(v)=d(v)-d^+(v)$。出度和与入度和均为5，因此图有5条有向边。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-007",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 7 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.583,
+          "bottom": 0.624
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-008": {
+    "prompt": "无向图有6条边，3度、5度顶点各1个，其余都是2度顶点。该图有几个顶点？",
+    "solution": "4个顶点。",
+    "explanation": [
+      "设还有 $x$ 个2度顶点，则 $3+5+2x=2\\times6$，得 $x=2$，总顶点数4。这不可能是4阶简单图，但题目允许一般无向图；例如边12取3条、边13和14各1条、边34取1条，度数即为5、3、2、2。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-008",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 8 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.624,
+          "bottom": 0.647
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-009": {
+    "prompt": "画出以 $(1,2,2,3)$ 为度数列的简单图和非简单图各一个。",
+    "solution": "以 $V=\\{1,2,3,4\\}$ 为顶点集。简单图可取 $E=\\{14,23,24,34\\}$；非简单图可取边14一条、边23两条，再在顶点4加一个自环。两图按顶点1、2、3、4的度数均为 $(1,2,2,3)$。",
+    "explanation": [
+      "非简单图中的平行边分别计数，自环对度数贡献2。两图可直接按所列边集绘制。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-009",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 9 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.647,
+          "bottom": 0.67
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-010": {
+    "prompt": "设9阶无向图G中，每个顶点度数不是5就是6。证明：G中至少有5个6度顶点，或至少有6个5度顶点。",
+    "solution": "设5度顶点有 $x$ 个，则6度顶点有 $9-x$ 个。握手定理说明奇度顶点数 $x$ 为偶数。若 $x\\ge6$，第二种情况成立；若 $x<6$，由偶性得 $x\\le4$，于是 $9-x\\ge5$，第一种情况成立。",
+    "explanation": [
+      "不能只用“共9个顶点”的鸽巢原理；关键是5度顶点数不能为5。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-010",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 10 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.67,
+          "bottom": 0.695
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-011": {
+    "prompt": "证明：三维空间中不存在面数为奇数、且每个面均有奇数条棱的多面体。",
+    "solution": "把“面—棱”的关联数计数两遍。一方面，每个面包含奇数条棱，奇数个奇数的和为奇数；另一方面，每条棱恰属于两个面，关联总数等于棱数的2倍，为偶数。矛盾。",
+    "explanation": [
+      "这里按通常多面体边界，每条棱恰被两个面共有；也可对对偶图应用奇度顶点个数必为偶数。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 11 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.695,
+          "bottom": 0.719
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-012": {
+    "prompt": "$G$ 是 $n\\ge2$ 阶无向简单图，$\\overline G$ 为补图，已知 $\\Delta(\\overline G)=k_1,\\delta(\\overline G)=k_2$，求 $\\Delta(G),\\delta(G)$。",
+    "solution": "$\\Delta(G)=n-1-k_2$，$\\delta(G)=n-1-k_1$。",
+    "explanation": [
+      "对任一顶点 $v$，$d_G(v)+d_{\\overline G}(v)=n-1$；原图最大度对应补图最小度，原图最小度对应补图最大度。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 12 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.719,
+          "bottom": 0.742
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-013": {
+    "prompt": "最大度与最小度都等于2的6阶无向图有几种非同构情况？其中几种是简单图？",
+    "solution": "允许自环、平行边的一般无向图共有11种，简单图有2种。令 $C_1$ 表示单顶点加一个自环，$C_2$ 表示两顶点间两条平行边，$C_k\\ (k\\ge3)$ 为普通圈。11种为：$C_6$；$C_5\\cup C_1$；$C_4\\cup C_2$；$C_4\\cup2C_1$；$2C_3$；$C_3\\cup C_2\\cup C_1$；$C_3\\cup3C_1$；$3C_2$；$2C_2\\cup2C_1$；$C_2\\cup4C_1$；$6C_1$。其中简单图为 $C_6$ 和 $2C_3$。",
+    "explanation": [
+      "每个连通2正则无向分支均是一条圈；允许重边与自环时，圈的阶数可为1或2。分类等价于列出6的11个整数分拆。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-013",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 13 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.742,
+          "bottom": 0.764
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-014": {
+    "prompt": "以下两个正整数列哪个可图化？对可图化的数列给出3种非同构无向图，其中至少2种为简单图。(1)$(2,2,3,3,4,4,5)$；(2)$(2,2,2,2,3,3,4,4)$。",
+    "solution": "(1)不可图化，度数和23为奇数。(2)可图化。以 $V=\\{1,\\ldots,8\\}$ 为顶点集，以下每组边直接确定一幅图。简单图A：$\\{12,16,23,37,45,48,57,58,67,68,78\\}$；简单图B：$\\{17,18,27,28,36,38,46,47,56,57,58\\}$。第三图C：顶点1、2、3、4各加一个自环，边56取3条，边78取4条。",
+    "explanation": [
+      "A与B按顶点1至8的度数均为2、2、2、2、3、3、4、4。A有3个三角形，B没有三角形，所以二者不同构；C含自环且不连通，与两幅简单图均不同构。",
+      "这里“可图化”允许一般无向图；“可简单图化”另须满足简单图限制。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-014",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 14 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.764,
+          "bottom": 0.844
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-015": {
+    "prompt": "以下各数列哪些可简单图化？对可简单图化者给出两个非同构简单图。(1)$(2,3,3,5,5,6,6)$；(2)$(1,1,1,2,2,3,3,5,5)$；(3)$(2,2,2,2,3,3)$。",
+    "solution": "仅(3)可简单图化。令顶点为1至6，图A取 $E_A=\\{12,15,25,34,36,46,56\\}$；图B取 $E_B=\\{12,13,26,35,45,46,56\\}$。两图度数列均为 $(2,2,2,2,3,3)$。",
+    "explanation": [
+      "(1)若存在，取补图后度数列为 $(4,3,3,1,1,0,0)$。去掉两个孤立点，在剩余5点中4度顶点连接其余4点，删去它后的度数为 $(2,2,0,0)$，不可能由简单图实现。",
+      "(2)度数和为23，违反握手定理。(3)图A有2个三角形、图B有1个三角形，故不同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第323页（印刷页312起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-015",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 15 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 312,
+      "pdf_page": 323,
+      "segments": [
+        {
+          "page": 323,
+          "top": 0.845,
+          "bottom": 0.945
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-016": {
+    "prompt": "画出无向完全图 $K_4$ 的所有非同构子图，指出哪些是生成子图，哪些是自补图。",
+    "solution": "以 $K_1$ 表示孤立顶点、$P_j$ 表示j顶点路径。非空顶点集的非同构子图共18种：1阶：$K_1$；2阶：$2K_1,K_2$；3阶：$3K_1,K_2\\cup K_1,P_3,K_3$；4阶：$4K_1,K_2\\cup2K_1,P_3\\cup K_1,2K_2,K_3\\cup K_1,K_{1,3},P_4,C_4$、三角形加一条悬挂边、$K_4-e,K_4$。其中全部11种4阶图为生成子图；自补图是 $K_1$ 与 $P_4$。若把空图也计为子图，则另加空图，共19种，空图亦自补。",
+    "explanation": [
+      "按顶点数1、2、3、4分类，各有1、2、4、11种；4阶再按边数0至6分类，各有1、1、2、3、2、1、1种，已无遗漏。",
+      "三角形加悬挂边的度序列为(3,2,2,1)，C4度序列为(2,2,2,2)，二者是4边类的两种。自补图边数必须为n(n−1)/4，4阶中只有P4满足且同构于其补图。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-016",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 16 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.088,
+          "bottom": 0.111
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-017": {
+    "prompt": "画出3阶有向完全图的所有非同构子图，指出哪些为生成子图，哪些为3阶竞赛图。",
+    "solution": "对无自环的有向完全图，非空顶点集的非同构子图共20种：1阶1种（孤立点），2阶3种（无弧、单向一条弧、两条反向弧），3阶16种。以下列全体3阶图的弧集，顶点集均为 $\\{1,2,3\\}$，$ij$ 表示 $i\\to j$：0条弧：{}；1条弧：{12}；2条弧：{12,13}、{12,21}、{13,21}、{13,23}；3条弧：{12,13,21}、{12,13,23}、{12,21,31}、{12,23,31}；4条弧：{12,13,21,23}、{12,13,21,31}、{12,13,23,31}、{13,21,23,31}；5条弧：{12,13,21,23,31}；6条弧：{12,13,21,23,31,32}。全部16种3阶图为生成子图；3阶竞赛图恰有2种：传递型 $\\{12,13,23\\}$ 与有向三角圈 $\\{12,23,31\\}$。若计空图，总数加1。",
+    "explanation": [
+      "对3个顶点的6条可能有向边穷举64个子集，再按顶点置换去重，得到各弧数下1、1、4、4、4、1、1种，共16种。",
+      "“有向完全图”含每一对顶点间的两条反向弧；“竞赛图”在每对顶点间恰取其中一个方向。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-017",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 17 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.111,
+          "bottom": 0.132
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-018": {
+    "prompt": "现有3个4阶4条边的无向简单图G1、G2、G3，证明其中至少两个同构。",
+    "solution": "每个图的补图均为4阶2条边的简单图。两条边只有两种非同构情况：相邻（$P_3\\cup K_1$）或不相邻（$2K_2$）。所以4阶4边图也恰有两种非同构类型（分别为三角形加悬挂边、$C_4$）。3幅图落入2类，由鸽巢原理至少两幅同构。",
+    "explanation": [
+      "补图保留同构关系；分类补图比直接画出4边图更简便。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-018",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 18 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.132,
+          "bottom": 0.154
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 18,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-019": {
+    "prompt": "$G$ 为 $n$ 阶自补图，证明 $n=4k$ 或 $n=4k+1$（教材表述中 $k$ 为正整数）。",
+    "solution": "自补图满足 $|E(G)|=|E(\\overline G)|$，故 $2|E(G)|=\\binom n2$，即 $|E(G)|=n(n-1)/4$ 为整数。所以 $n\\equiv0$ 或 $1\\pmod4$，即 $n=4k$ 或 $4k+1$。",
+    "explanation": [
+      "连续整数n、n−1之积要被4整除，偶数因子必须被4整除。该条件必要但单凭边数不能判定一幅具体图自补。",
+      "教材的正整数k应理解为非平凡阶数情形；若允许单顶点自补图K1，则n=1对应k=0。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-019",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 19 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.154,
+          "bottom": 0.175
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 19,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-020": {
+    "prompt": "$n$ 阶无向简单图 $G$ 有 $m$ 条边，求其补图 $\\overline G$ 的边数 $m^\\prime$。",
+    "solution": "$m^\\prime=\\binom n2-m=\\frac{n(n-1)}2-m$。",
+    "explanation": [
+      "每一对不同顶点恰在原图、补图之一中相邻，且两图无自环，因此两者边集恰好划分完全图的全部边。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-020",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 20 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.175,
+          "bottom": 0.198
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 20,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-021": {
+    "prompt": "无向图G如图14.20所示。(1)求全部点割集和边割集，指出割点和桥。(2)求点连通度κ(G)和边连通度λ(G)。保留原扫描图见附图。",
+    "solution": "按图中五条标号边 $e_1=ad,e_2=ab,e_3=bc,e_4=cd,e_5=de$，点割集为 $\\{d\\}$、$\\{a,c\\}$；割点只有d。边割集为 $\\{e_5\\}$ 及四边圈中任意两条边，即 $\\{e_1,e_2\\},\\{e_1,e_3\\},\\{e_1,e_4\\},\\{e_2,e_3\\},\\{e_2,e_4\\},\\{e_3,e_4\\}$；桥只有 $e_5$。$\\kappa(G)=\\lambda(G)=1$。",
+    "explanation": [
+      "按原书定义，割集具有包含极小性；例如含有割点d的更大顶点集合不再是点割集。",
+      "原扫描中e5中间另有无标号小圆。上述答案严格对应五条标号边的读法；若把该小圆认作额外顶点x，则尾部为d—x—e：点割集改为{d}、{x}、{a,c}，桥改为dx、xe，边割集为这两个单边集及圈上的六个双边集，κ=λ=1不变。原图保留供核对，没有省去该标记。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324, 324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-021",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 21 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.199,
+          "bottom": 0.261
+        },
+        {
+          "page": 324,
+          "top": 0.315,
+          "bottom": 0.434
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 21,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 324,
+        "bbox": [
+          0.27,
+          0.306,
+          0.48,
+          0.435
+        ],
+        "caption": "图14.20：按原书保留e5中间的无标号圆点"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-022": {
+    "prompt": "无向图G如图14.21所示。先将顶点和边标定，再求全部割点和桥，以及点连通度和边连通度。原图见附图。",
+    "solution": "标号如下：左侧四边形按“最左、左上、中央交汇点、左下”记为 $a,b,c,d$；c上方叶点为e；右侧三角形上、下顶点为f、g；f右下折点为h，最右端为i。则 $E=\\{ab,bc,cd,da,ce,cf,cg,fg,fh,hi\\}$。割点为c、f、h；桥为ce、fh、hi；$\\kappa(G)=\\lambda(G)=1$。",
+    "explanation": [
+      "所有四边形、三角形内的边都处于圈上，所以不是桥。删除c将左侧圈、上方叶点和右侧部分分开；删除f或h将右侧尾链切开。",
+      "原图没有标号，以上标号把每一个小圆都一一对应到顶点，交叉线条仅在有小圆的位置相接。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324, 324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-022",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 22 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.261,
+          "bottom": 0.303
+        },
+        {
+          "page": 324,
+          "top": 0.315,
+          "bottom": 0.434
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 22,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 324,
+        "bbox": [
+          0.495,
+          0.306,
+          0.73,
+          0.435
+        ],
+        "caption": "图14.21：顶点与桥的标号依据"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-023": {
+    "prompt": "求图14.22所示G的κ(G)、λ(G)、δ(G)。原图见附图。",
+    "solution": "$\\kappa(G)=2,\\quad\\lambda(G)=3,\\quad\\delta(G)=4$。",
+    "explanation": [
+      "图由左右各一个 $K_5$、中央点u组成；u分别连接左右 $K_5$ 中的两个顶点，且两个 $K_5$ 的最上顶点之间另有一条边。各 $K_5$ 内无外接边的顶点以及u的度数为4，所以δ=4。",
+      "删去u和左侧K5最上顶点后断开，故κ≤2；删任意一个顶点，两个K5剩余部分仍连通，且总有“经u”或“最上方跨边”的连接保留，故κ≥2。",
+      "把左侧K5与其余部分分开，需删u与左侧的两条边及最上方跨边，故λ≤3。任删至多2条边不能切断K5内部（K5边连通度4）；若两个K5内部保持连通，删去两条边也不能同时破坏两侧经u的通道和跨边，因此λ≥3。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 23 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.44,
+          "bottom": 0.61
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 23,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 324,
+        "bbox": [
+          0.3,
+          0.46,
+          0.7,
+          0.61
+        ],
+        "caption": "图14.22：两侧K5、中央顶点与最上方跨边"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-024": {
+    "prompt": "$G_1,G_2$ 均为无向简单图，$\\overline G_1,\\overline G_2$ 为相应补图，证明 $G_1\\cong G_2$ 当且仅当 $\\overline G_1\\cong\\overline G_2$。",
+    "solution": "若双射 $f:V(G_1)\\to V(G_2)$ 为同构，则对任意不同的u、v，$uv\\in E(G_1)\\iff f(u)f(v)\\in E(G_2)$，同时取否定得 $uv\\in E(\\overline G_1)\\iff f(u)f(v)\\in E(\\overline G_2)$，所以f也是补图同构。反方向对两个补图应用同一论证，并用 $\\overline{\\overline G_i}=G_i$ 即得。",
+    "explanation": [
+      "同构保持相邻关系，也保持不相邻关系；补图使用同一顶点集。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-024",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 24 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.635,
+          "bottom": 0.658
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 24,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-025": {
+    "prompt": "画出5阶3条边的所有非同构无向简单图。",
+    "solution": "共4种：$K_3\\cup2K_1$；$K_{1,3}\\cup K_1$；$P_4\\cup K_1$；$P_3\\cup K_2$。这里 $P_j$ 为j顶点路径。可直接按顶点集 $\\{1,2,3,4,5\\}$ 分别画边集 $\\{12,13,23\\}$、$\\{12,13,14\\}$、$\\{12,23,34\\}$、$\\{12,23,45\\}$。",
+    "explanation": [
+      "若含圈，只能是三角形，另有2个孤点。若不含圈则是森林：3条边连在一个非平凡分支中，得到四点星或四点路径；或者分成2条边与1条边的两个分支，得到P3∪K2。5点容不下3个各含一条边的分支，故已列全。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-025",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 25 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.658,
+          "bottom": 0.68
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 25,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-026": {
+    "prompt": "画出5阶7条边的所有非同构无向简单图。",
+    "solution": "共4种，恰为第25题四幅图的补图。以顶点1至5、完全图的全部10条边为底图，分别删去 $\\{12,13,23\\}$、$\\{12,13,14\\}$、$\\{12,23,34\\}$、$\\{12,23,45\\}$ 即为所求4幅图。",
+    "explanation": [
+      "$\\binom52-7=3$，所以取补图在5阶7边类与5阶3边类之间给出一一对应，且保持不同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-026",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 26 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.68,
+          "bottom": 0.702
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 26,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-027": {
+    "prompt": "6阶2-正则图有几种非同构情况？",
+    "solution": "按一般无向图允许自环、平行边的定义，共11种；其完整清单为第13题的11种圈分解。若本题约定“正则图”仅指简单图，则只有2种：$C_6$ 与 $C_3\\cup C_3$。",
+    "explanation": [
+      "2-正则意味着每个顶点度数均为2，与第13题的Δ=δ=2完全等价；必须先说明是否允许一阶自环分支C1和二阶平行边分支C2。",
+      "一般图的11种分拆为6；5+1；4+2；4+1+1；3+3；3+2+1；3+1+1+1；2+2+2；2+2+1+1；2+1+1+1+1；1+1+1+1+1+1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-027",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 27 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.702,
+          "bottom": 0.724
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 27,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-028": {
+    "prompt": "$n$ 阶无向简单图G为3-正则图，边数m满足 $2n-3=m$，问有几种非同构情况？",
+    "solution": "共2种：$K_{3,3}$ 和三棱柱图。三棱柱图可画为两个三角形123、456，再连接14、25、36。",
+    "explanation": [
+      "握手定理给出 $3n=2m=4n-6$，故n=6、m=9。补图是6阶简单2正则图，只能为C6或两个不相交C3；分别取补图即得三棱柱图和K3,3。两者分别含三角形和不含三角形，因此不同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-028",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 28 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.724,
+          "bottom": 0.801
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 28,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-029": {
+    "prompt": "设G是n阶、n+1条边的无向图，证明存在顶点v使d(v)≥3。",
+    "solution": "若所有顶点均有 $d(v)\\le2$，则握手定理给出 $2(n+1)=\\sum_vd(v)\\le2n$，矛盾。所以至少一个顶点度数不小于3。",
+    "explanation": [
+      "也可用平均度 $2(n+1)/n=2+2/n>2$，且顶点度数为整数。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-029",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 29 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S1",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.801,
+          "bottom": 0.824
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 29,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-030": {
+    "prompt": "设e=(u,v)为无向图G的一条边，证明：e为桥当且仅当e不在任何圈中。",
+    "solution": "若e在某圈上，删去e后，其两端点仍可沿该圈其余边相连，所以删边不增加连通分支数，e不是桥。反之，若e不是桥，则删去e后u、v仍连通，取G−e中一条u到v的简单通路，与e合成一个含e的圈。两方向合起来即得等价。",
+    "explanation": [
+      "自环本身就是长度1的圈，故不是桥；若存在两条平行边，它们构成长度2的圈，也符合结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-030",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 30 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.824,
+          "bottom": 0.847
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 30,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-031": {
+    "prompt": "$G$ 与补图 $\\overline G$ 的边数分别为 $m_1,m_2$，试确定G的阶数n。",
+    "solution": "$m_1+m_2=\\binom n2$，故 $n=\\dfrac{1+\\sqrt{1+8(m_1+m_2)}}2$。",
+    "explanation": [
+      "若只给出两整数作为候选边数，还必须检查根号内为完全平方数，并使右式为正整数；这是存在相应简单图的必要数量条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-031",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 31 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.847,
+          "bottom": 0.87
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 31,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-032": {
+    "prompt": "求彼得松图的点连通度κ与边连通度λ。",
+    "solution": "$\\kappa=\\lambda=3$。",
+    "explanation": [
+      "彼得松图是3正则图，所以κ≤λ≤δ=3。将它画成外五边形a0…a4、内五角星b0…b4和五条辐条ai—bi，内五角星本身也是一个5圈。",
+      "删去至多2个顶点：若删点都在同一圈，另一圈完整，破损圈的每个剩余分支都有辐条接入完整圈；若两圈各删1点，两圈剩余部分各是一条连通路径，至少3条辐条仍在，连接两条路径。因此删去任意至多2点仍连通，κ≥3，再由κ≤λ≤3得λ=3。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-032",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 32 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.87,
+          "bottom": 0.892
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 32,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-033": {
+    "prompt": "设e=(u,v)为无向图G中的桥，证明：u是割点当且仅当u不是悬挂顶点。",
+    "solution": "若u是悬挂顶点，则d(u)=1，删去u仅移去这个叶点，不增加连通分支数，故u不是割点。若u不是悬挂顶点，因e与u关联，必有d(u)≥2。删去桥e后，u与v位于不同分支；u一侧除u外还有顶点（若另一关联是自环则需另议，见说明）。删除u使u侧其余顶点与v侧分离，因此u是割点。",
+    "explanation": [
+      "本结论按原题通常的无自环图口径成立，包括允许平行边的无自环图。",
+      "若题目允许自环，原命题需要补充条件：仅在u附加一个自环、再以一条桥uv连接到v时，d(u)=3、u非悬挂顶点，但删u不增加分支数，所以u不是割点。严谨的通用条件应改为：删除桥uv后，含u的连通分支中还有除u外的顶点。保留此反例以免把原书省略的假设当成普遍定理。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-033",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 33 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.892,
+          "bottom": 0.914
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 33,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-034": {
+    "prompt": "证明：$n\\ge2$ 阶简单连通图G中至少有两个顶点不是割点。",
+    "solution": "取G中一条最长简单通路 $v_0v_1\\cdots v_k$，其中k≥1。若端点v0是割点，删去v0后的某个分支不含v1…vk；在该分支中取v0的邻点w，则 $wv_0v_1\\cdots v_k$ 是更长简单通路，矛盾。故v0不是割点；对另一端vk同理。两个端点不同，命题成立。",
+    "explanation": [
+      "也可取生成树的至少两个叶点；删除树叶后生成树仍连接其余顶点，原图删除相应顶点后也连通。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第324页（印刷页313起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-034",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 34 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 313,
+      "pdf_page": 324,
+      "segments": [
+        {
+          "page": 324,
+          "top": 0.914,
+          "bottom": 0.937
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 34,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-035": {
+    "prompt": "G为n阶无向简单图，n≥3且为奇数，证明G与补图 $\\overline G$ 中奇度顶点个数相等。",
+    "solution": "对每个顶点v，$d_{\\overline G}(v)=n-1-d_G(v)$。因n−1为偶数，两个度数同奇偶。所以不仅奇度顶点个数相等，两图的奇度顶点集合本身也相同。",
+    "explanation": [
+      "n为奇数是关键；n为偶数时，两个度数反而奇偶相反。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-035",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 35 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.082,
+          "bottom": 0.105
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 35,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-036": {
+    "prompt": "无向完全图 $K_n\\ (n\\ge4)$ 中有几种非同构的偶圈？长度各是多少？",
+    "solution": "共有 $\\lfloor n/2\\rfloor-1$ 种，长度为 $4,6,\\ldots,2\\lfloor n/2\\rfloor$。",
+    "explanation": [
+      "简单无向图无长度1或2的圈，偶圈从4开始；不同长度的圈不同构，K_n可取任意不超过n的顶点并依次相连成圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-036",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 36 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.105,
+          "bottom": 0.128
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 36,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-037": {
+    "prompt": "$n\\ge2$ 阶有向完全图中有几种非同构的圈？长度各是多少？",
+    "solution": "共n−1种，长度为 $2,3,\\ldots,n$。",
+    "explanation": [
+      "有向完全图无自环，但每对顶点间有两条反向弧，所以长度2的有向圈存在；任取k个不同顶点可构造有向k圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-037",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 37 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.128,
+          "bottom": 0.15
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 37,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-038": {
+    "prompt": "$n\\ge3$ 阶竞赛图中至多有几种非同构的圈？",
+    "solution": "至多n−2种，对应可能长度 $3,4,\\ldots,n$。",
+    "explanation": [
+      "竞赛图无自环且每对顶点间只有一个方向，故不能有长度1、2的有向圈；同一长度的有向圈相互同构。具体竞赛图可能缺少其中某些甚至全部长度，例如传递竞赛图没有有向圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-038",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 38 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.15,
+          "bottom": 0.172
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 38,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-039": {
+    "prompt": "若无向图G中恰有两个奇度顶点，证明这两个顶点必然连通。",
+    "solution": "假设它们位于不同连通分支。每个分支自身也是无向图，握手定理说明每个分支的奇度顶点数必须为偶数。但含其中一个奇度顶点的分支只能有这一个奇度顶点，与偶性矛盾。因此两点属于同一分支，必然连通。",
+    "explanation": [
+      "对整个图说“奇度顶点有两个”还不足以直接说明连通；要把握手定理分别用于各个分支。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-039",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 39 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.172,
+          "bottom": 0.194
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 39,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-040": {
+    "prompt": "(1)无向完全图 $K_n$ 中不同顶点u、v间的距离d(u,v)是多少？(2)n阶有向完全图中不同顶点u、v间的距离 $d\\langle u,v\\rangle$ 是多少？(3)n阶竞赛图任意不同顶点间的距离也为常数吗？为什么？",
+    "solution": "(1)1。(2)1。(3)一般不是。以传递3阶竞赛图 $a\\to b,a\\to c,b\\to c$ 为例，$d\\langle a,b\\rangle=1$，而b不能到达a，$d\\langle b,a\\rangle=\\infty$。即使强连通的3阶有向圈，沿弧方向距离为1，反方向距离为2。",
+    "explanation": [
+      "有向距离须按有序对区分，可能不对称，也可能无穷大。n=2时竞赛图同样一方向距离1、另一方向无穷大。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-040",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 40 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.194,
+          "bottom": 0.259
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 40,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-041": {
+    "prompt": "设G为无向简单图，$\\delta(G)\\ge2$，证明G中存在长度大于等于 $\\delta(G)+1$ 的圈。",
+    "solution": "取一条最长简单通路 $v_0v_1\\cdots v_k$。端点vk的全部邻点都在该通路上，否则可延长通路。设其中最早的邻点为vi。vk至少有δ(G)个不同邻点，故 $k-i\\ge\\delta(G)$。于是 $v_iv_{i+1}\\cdots v_kv_i$ 是长度 $k-i+1\\ge\\delta(G)+1$ 的圈。",
+    "explanation": [
+      "简单图保证邻点互异且无自环；δ≥2保证得到的圈长度至少3。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-041",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 41 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.259,
+          "bottom": 0.283
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 41,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-042": {
+    "prompt": "设 $D=\\langle V,E\\rangle$ 为有向简单图，$\\delta(D)\\ge2,\\delta^-(D)>0,\\delta^+(D)>0$。证明D中存在长度不小于 $\\max\\{\\delta^-(D),\\delta^+(D)\\}+1$ 的圈。",
+    "solution": "先取D的一条最长有向简单通路 $v_0\\to\\cdots\\to v_k$。vk的全部后继均在通路上；其后继至少有δ⁺(D)个，故最早的后继vi满足 $k-i\\ge\\delta^+(D)$，得到长度至少δ⁺(D)+1的有向圈。再把全部弧反向，同理得到长度至少δ⁻(D)+1的有向圈。两种下界中较大者保证存在长度至少 $\\max\\{\\delta^-,\\delta^+\\}+1$ 的圈。",
+    "explanation": [
+      "反向图与原图圈的长度相同，最小出度等于原图最小入度。两次论证给出的圈可以不同；只需取达到较大下界的那个。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-042",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 42 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.283,
+          "bottom": 0.325
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 42,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-043": {
+    "prompt": "有向图D如图14.23所示。(1)求非同构圈、非同构简单回路的种数。(2)求a到d的短程线及距离。(3)求d到a的短程线及距离。(4)判断连通类型。(5)对D的基图求(1)、(2)、(3)。原图见附图。",
+    "solution": "原图弧集为 $\\{b\\to a,a\\to e,e\\to b,b\\to c,b\\to d,d\\to c,d\\to e,e\\to d\\}$。(1)有2种非同构圈：长度2、3；有3种非同构简单回路：长度2的圈、长度3的圈、一个3圈与一个2圈在一点相接形成的长度5回路。(2)唯一短程线 $a\\to e\\to d$，距离2。(3)唯一短程线 $d\\to e\\to b\\to a$，距离3。(4)D单向连通，但不是强连通，因c为汇点、不能到达其他点。(5)基图保留d、e间由两条反向弧变成的两条平行无向边。有4种非同构圈，长度2、3、4、5；有7种非同构简单回路，其代表见解释。a与d间有两条短程线a—b—d、a—e—d，距离2；d到a为其反向，距离也为2。",
+    "explanation": [
+      "本书“简单回路”指边不重复，允许顶点重复；“圈”除起终点外顶点不重复。有向圈实例为d→e→d、b→a→e→b、b→d→e→b；后两个都是3圈，相互同构。长度5简单回路可取e→b→a→e→d→e。",
+      "基图7种简单回路的代表：d—e—d（长2）；b—e—a—b（长3）；b—d—e—a—b（长4）；b—e—d—e—a—b（长5、4顶点）；b—c—d—e—a—b（长5、5顶点）；b—d—c—b—e—a—b（长6）；b—d—e—d—c—b—e—a—b（长8）。重复经过d、e之间时使用两条不同的平行边。",
+      "已对原图8条边的全部子集筛选“连通且每个顶点偶度”的子图并按多重图同构去重，得到上述7类；正是可由不重复边闭通路走完的7种形状。c以外四点组成强连通分支，且均可到达c，故任意两点中至少一个方向可达。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325, 325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-043",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 43 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S2",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.325,
+          "bottom": 0.458
+        },
+        {
+          "page": 325,
+          "top": 0.48,
+          "bottom": 0.638
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 43,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 325,
+        "bbox": [
+          0.3,
+          0.478,
+          0.475,
+          0.638
+        ],
+        "caption": "图14.23：第43题有向图，方向与平行边均保留"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-044": {
+    "prompt": "有向图D如图14.24所示。(1)$v_1$ 到 $v_4$ 长度1、2、3、4的通路各几条？(2)$v_1$ 到 $v_1$ 相应长度回路各几条？(3)D中长度4通路多少条，其中回路多少条？(4)长度不大于4的通路多少条，其中回路多少条？(5)写可达矩阵。",
+    "solution": "顶点顺序为 $(v_1,v_2,v_3,v_4)$，邻接矩阵 $A=\\begin{pmatrix}1&2&0&0\\\\0&0&1&0\\\\1&0&0&1\\\\0&0&1&0\\end{pmatrix}$。(1)依次0、0、2、2条。(2)依次1、1、3、5条。(3)长度4通路44条，其中回路11条。(4)正长度1至4通路共88条，其中回路22条。(5)可达矩阵为4阶全1矩阵。",
+    "explanation": [
+      "矩阵幂的 $(i,j)$ 元计数vi到vj的指定长度通路；所有元素和为全图通路数，迹为全图回路数。原图v1到v2有两条同向平行边，v3→v1，v3与v4各有一条反向弧，且v1有自环。",
+      "$A^2=\\begin{pmatrix}1&2&2&0\\\\1&0&0&1\\\\1&2&1&0\\\\1&0&0&1\\end{pmatrix}$，$A^3=\\begin{pmatrix}3&2&2&2\\\\1&2&1&0\\\\2&2&2&1\\\\1&2&1&0\\end{pmatrix}$，$A^4=\\begin{pmatrix}5&6&4&2\\\\2&2&2&1\\\\4&4&3&2\\\\2&2&2&1\\end{pmatrix}$。",
+      "$A,A^2,A^3,A^4$ 元素和依次7、13、24、44；迹依次1、3、7、11。按原书推论，长度小于等于4的计数使用A+A²+A³+A⁴，不计长度0的平凡通路。各点均相互可达，因此P全1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325, 325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-044",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 44 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S4",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.458,
+          "bottom": 0.478
+        },
+        {
+          "page": 325,
+          "top": 0.48,
+          "bottom": 0.748
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 44,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 325,
+        "bbox": [
+          0.545,
+          0.478,
+          0.75,
+          0.638
+        ],
+        "caption": "图14.24：第44题原图"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-045": {
+    "prompt": "有向图D如图14.25所示，求：(1)$v_2$ 到 $v_3$ 长度1、2、3、4的通路数；(2)$v_5$ 到 $v_5$ 相应长度回路数；(3)D中长度4通路数（含回路）；(4)D中长度小于等于4的回路数；(5)可达矩阵。",
+    "solution": "按顶点 $v_1,\\ldots,v_5$，邻接矩阵 $A=\\begin{pmatrix}0&0&0&0&1\\\\1&0&1&0&0\\\\0&0&0&0&1\\\\1&0&1&0&0\\\\0&1&0&1&0\\end{pmatrix}$。(1)依次1、0、0、4条。(2)依次0、0、4、0条。(3)32条。(4)12条（正长度1至4）。(5)5阶全1矩阵。",
+    "explanation": [
+      "原图边为v4→v1、v2→v1、v2→v3、v4→v3、v1→v5、v3→v5、v5→v2、v5→v4。特别注意底边指向右，顶边指向左，不能看反。",
+      "$A^2=\\begin{pmatrix}0&1&0&1&0\\\\0&0&0&0&2\\\\0&1&0&1&0\\\\0&0&0&0&2\\\\2&0&2&0&0\\end{pmatrix}$，$A^3=\\begin{pmatrix}2&0&2&0&0\\\\0&2&0&2&0\\\\2&0&2&0&0\\\\0&2&0&2&0\\\\0&0&0&0&4\\end{pmatrix}$，$A^4=\\begin{pmatrix}0&0&0&0&4\\\\4&0&4&0&0\\\\0&0&0&0&4\\\\4&0&4&0&0\\\\0&4&0&4&0\\end{pmatrix}$。",
+      "长度4通路总数是A⁴所有元素之和32；A到A⁴的迹依次0、0、12、0，总回路数12。此图强连通，所以可达矩阵全1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-045",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 45 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S4",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.764,
+          "bottom": 0.897
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 45,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 325,
+        "bbox": [
+          0.79,
+          0.784,
+          0.94,
+          0.895
+        ],
+        "caption": "图14.25：第45题原图"
+      }
+    ]
+  },
+  "SRC-DM2T-E014-046": {
+    "prompt": "有向图 $D=\\langle V,E\\rangle$，$V=\\{v_1,v_2,v_3,v_4\\}$，邻接矩阵 $A=\\begin{pmatrix}0&2&1&0\\\\0&0&1&0\\\\0&0&0&1\\\\0&0&1&1\\end{pmatrix}$，求各顶点入度与出度。",
+    "solution": "按v1、v2、v3、v4顺序，入度列为 $(0,2,3,2)$，出度列为 $(3,1,1,2)$。",
+    "explanation": [
+      "第i行和为vi的出度，第j列和为vj的入度；两个总和均为7，等于有向边数。v4的自环对入度、出度各贡献1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第325, 326页（印刷页314起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-046",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 46 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S4",
+      "printed_page": 314,
+      "pdf_page": 325,
+      "segments": [
+        {
+          "page": 325,
+          "top": 0.897,
+          "bottom": 0.925
+        },
+        {
+          "page": 326,
+          "top": 0.075,
+          "bottom": 0.195
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 46,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-047": {
+    "prompt": "无向图 $G=\\langle V,E\\rangle$，$V=\\{v_1,v_2,v_3,v_4\\},E=\\{e_1,e_2,e_3,e_4,e_5\\}$，关联矩阵 $M(G)=\\begin{pmatrix}2&1&1&1&0\\\\0&1&1&0&0\\\\0&0&0&1&1\\\\0&0&0&0&1\\end{pmatrix}$。在同构意义下画图。",
+    "solution": "在v1画自环e1；在v1与v2之间画两条平行边e2、e3；画e4连接v1、v3，画e5连接v3、v4。即两条平行边 $v_2\\rightrightarrows v_1$ 与链 $v_1—v_3—v_4$ 相接，且v1有一个自环；平行边为无向边。",
+    "explanation": [
+      "逐列读矩阵：一列只有一个2表示相应顶点自环；两个1指明普通边两端点；第2、3列相同说明是平行边。每列和均为2，可核对无向边与顶点关联的计数。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-047",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 47 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S4",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.195,
+          "bottom": 0.329
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 47,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-048": {
+    "prompt": "写出习题47的G的邻接矩阵、可达矩阵，并求：(1)$v_1$ 到 $v_4$ 长度1、2、3、4的通路数；(2)$v_1$ 到 $v_1$ 相应长度的回路数。 为便于独立作答，习题47的图为：顶点集 $\\{v_1,v_2,v_3,v_4\\}$，v1有一个自环，v1与v2有两条平行边，另有边v1—v3、v3—v4。",
+    "solution": "按v1、v2、v3、v4顺序，$A=\\begin{pmatrix}1&2&1&0\\\\2&0&0&0\\\\1&0&0&1\\\\0&0&1&0\\end{pmatrix}$；P为4阶全1矩阵。(1)依次0、1、1、7条。(2)依次1、6、11、42条。",
+    "explanation": [
+      "这里邻接矩阵元素为两点间的边条数：一个自环在A11计1，与关联矩阵中自环计2的规则不同。通路按顶点、边的标定序列区分，v1、v2之间的两条平行边分别贡献计数。",
+      "$A^2=\\begin{pmatrix}6&2&1&1\\\\2&4&2&0\\\\1&2&2&0\\\\1&0&0&1\\end{pmatrix}$，$A^3=\\begin{pmatrix}11&12&7&1\\\\12&4&2&2\\\\7&2&1&2\\\\1&2&2&0\\end{pmatrix}$，$A^4=\\begin{pmatrix}42&22&12&7\\\\22&24&14&2\\\\12&14&9&1\\\\7&2&1&2\\end{pmatrix}$。读取(1,4)元和(1,1)元即得两问。",
+      "第47题边集为v1自环、两条v1—v2、v1—v3、v3—v4，所有顶点连通，且每点可达自身，所以P全1。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-048",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 48 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S4",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.329,
+          "bottom": 0.398
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 48,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-049": {
+    "prompt": "设 $2\\le r\\le s$，在完全二部图 $K_{r,s}$ 中：(1)有几种非同构的圈？(2)至多多少个顶点彼此不相邻？(3)至多多少条边彼此不相邻？(4)点连通度κ、边连通度λ各多少？",
+    "solution": "(1)r−1种，长度 $4,6,\\ldots,2r$。(2)s个。(3)r条。(4)$\\kappa=\\lambda=r$。",
+    "explanation": [
+      "二部图的圈在两部间交替，长度必须为2k，且每部各用k点，故2≤k≤r，所有这些长度都能在完全二部图中实现。",
+      "独立顶点集若同时含两部的顶点就会相邻，所以全部取较大的一部，最大s。互不相邻的边构成匹配，每条需占较小部一个不同顶点，至多r；取r条一一配对边即可达到。",
+      "删除较小部全部r点使图不连通，κ≤r；删少于r点时两部均有剩余顶点，仍为连通完全二部图，故κ≥r。由κ≤λ≤δ=r，得到λ=r。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-049",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 49 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.398,
+          "bottom": 0.486
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 49,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-050": {
+    "prompt": "设G为n阶m条边的无向连通图，证明m≥n−1。",
+    "solution": "从任一顶点出发逐步扩展已到达顶点集。只要尚有未到达顶点，连通性保证有一条边从已到达集合连到集合外；每次选这条边并加入一个新顶点。到达全部n点共须加入n−1个新顶点，选出的n−1条边互异，形成一棵生成树。因此原图至少有n−1条边。",
+    "explanation": [
+      "n=1时结论为m≥0，仍成立；自环和额外平行边不能减少连接所有不同顶点所需的边数。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-050",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 50 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.486,
+          "bottom": 0.51
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 50,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-051": {
+    "prompt": "设G为6阶无向简单图，证明G或补图 $\\overline G$ 中存在3个顶点彼此相邻。",
+    "solution": "任取顶点v。在其余5点中，至少3个与v相邻，或至少3个与v不相邻。第一种情况，取三个邻点a、b、c：若其中任意两点相邻，则它们与v构成G中的三角形；若三点两两不相邻，则它们在补图中构成三角形。第二种情况，对补图使用完全相同的论证，因为a、b、c在补图中均与v相邻。故结论成立。",
+    "explanation": [
+      "这是R(3,3)≤6的证明，核心是先按与一个固定顶点的相邻关系，把其他5点分成两组，再检查其中至少3点的组。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-051",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 51 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S5",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.51,
+          "bottom": 0.535
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 51,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E014-052": {
+    "prompt": "有3个油瓶，分别为1斤装、7两装、3两装；1斤装瓶内装满油，另两瓶为空。怎样用这3个瓶把1斤油分成两个5两？至少倒几次？",
+    "solution": "将1斤按10两计，状态按10两瓶、7两瓶、3两瓶的油量记录。最少9次：$(10,0,0)\\to(3,7,0)\\to(3,4,3)\\to(6,4,0)\\to(6,1,3)\\to(9,1,0)\\to(9,0,1)\\to(2,7,1)\\to(2,5,3)\\to(5,5,0)$。每次都将一瓶倒入另一瓶，直到源瓶空或目标瓶满。",
+    "explanation": [
+      "建立有限状态图：顶点为满足0≤x≤10、0≤y≤7、0≤z≤3且x+y+z=10的可达状态，边表示一次合法倾倒。对初态(10,0,0)进行广度优先搜索，目标(5,5,0)首次在第9层出现，所以9次不仅可行，而且最少。",
+      "从第0至第8层新状态依次为：{(10,0,0)}；{(3,7,0),(7,0,3)}；{(0,7,3),(3,4,3),(7,3,0)}；{(6,4,0),(4,3,3)}；{(6,1,3),(4,6,0)}；{(9,1,0),(1,6,3)}；{(9,0,1),(1,7,2)}；{(2,7,1),(8,0,2)}；{(2,5,3),(8,2,0)}。这些层没有目标；第9层首次得到(5,5,0)。"
+    ],
+    "knowledge_ids": [
+      "DM-K14-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充推导与解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第326页（印刷页315起）题号、条件与相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E014-052",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 14 · 第 52 题",
+      "chapter": 14,
+      "section_id": "DM-C14-S3",
+      "printed_page": 315,
+      "pdf_page": 326,
+      "segments": [
+        {
+          "page": 326,
+          "top": 0.535,
+          "bottom": 0.585
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 52,
+      "group_title": "习题 14",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K14-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  }
+}

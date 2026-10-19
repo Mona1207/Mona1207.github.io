@@ -1,0 +1,2064 @@
+{
+  "SRC-DM2T-E009-001": {
+    "prompt": "给出下列运算的运算表：(1)$A=\\{1,2,1/2\\}$，$\\circ x=1/x$；(2)$A=\\{1,2,3,4\\}$，$x\\circ y=\\max(x,y)$。",
+    "solution": "(1)按 $x=1,2,1/2$ 的次序，$\\circ x$ 分别为 $1,1/2,2$。\n\n(2)行列均按 $1,2,3,4$ 排列，运算表为 $\\begin{pmatrix}1&2&3&4\\\\2&2&3&4\\\\3&3&3&4\\\\4&4&4&4\\end{pmatrix}$。",
+    "explanation": [
+      "一元运算只需列每个输入的像；二元表的第 i 行第 j 列取两标号中较大者。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第202页（书页191）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-002": {
+    "prompt": "设 $A=\\{0,1\\},S=A^A$。(1)列出 $S$ 中所有函数；(2)给出 $S$ 上合成运算的运算表。",
+    "solution": "以函数在 $(0,1)$ 的值表示函数：$S=\\{c_0=(0,0),e=(0,1),s=(1,0),c_1=(1,1)\\}$。按本教材复合约定 $f\\circ g(x)=g(f(x))$（先行函数、后列函数），行列顺序为 $c_0,e,s,c_1$ 时，表为 $\\begin{pmatrix}c_0&c_0&c_1&c_1\\\\c_0&e&s&c_1\\\\c_0&s&e&c_1\\\\c_0&c_1&c_0&c_1\\end{pmatrix}$。",
+    "explanation": [
+      "二元集合上有2²=4个自映射。逐点按教材“先左后右”复合得到表；定义见PDF163—164页，不能套用另一些教材的相反记号。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第202页（书页191）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-003": {
+    "prompt": "设 $A=\\{a,b,c\\}$，$a,b,c\\in\\mathbb R$，能否确定a、b、c的值，使得：(1)A对普通乘法封闭；(2)A对普通加法封闭？",
+    "solution": "(1)能，例如取a=−1、b=0、c=1，集合中任意两个元素之积仍在其中。(2)若允许a、b、c取相同的值，取a=b=c=0，则A={0}对加法封闭。若题目按通常练习意图要求A恰有三个不同元素，则不能：任意有限非空加法封闭实数集只能是{0}。证明：对x∈A，x、2x、3x、…都在A，有限性迫使ix=jx（i≠j），从而x=0。",
+    "explanation": [
+      "原扫描题干没有明确写a、b、c互异。答案分别说明字面上允许重复与要求三元集合的两种情形，不在转录题干中添加条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第202页（书页191）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-004": {
+    "prompt": "判断封闭性：(1)$\\mathbb Z$ 的减法；(2)$\\mathbb Z^*$ 的除法（此处 $*$ 表非零）；(3)$M_n(\\mathbb R)$ 的加法、乘法；(4)可逆实方阵的加法、乘法（$n\\ge2$）；(5)$\\mathbb R^+$ 上 $a\\circ b=ab-a-b$；(6)$n\\mathbb Z$ 的加法、乘法（$n\\in\\mathbb Z^+$）；(7)$A=\\{a_1,\\ldots,a_n\\}$ 上 $a\\circ b=b$；(8)正奇数集的加法、乘法；(9)$\\{0,1\\}$ 的普通加法、乘法；(10)$\\{2^n:n\\in\\mathbb Z^+\\}$ 的普通加法、乘法。",
+    "solution": "(1)封闭。(2)不封闭，$1/2\\notin\\mathbb Z^*$。(3)均封闭。(4)加法不封闭（$I+(-I)=0$），乘法封闭，$(AB)^{-1}=B^{-1}A^{-1}$。(5)不封闭，$1\\circ1=-1$。(6)均封闭：$ni+nj=n(i+j)$、$(ni)(nj)=n(nij)$。(7)封闭，结果等于第二个元素。(8)加法不封闭（$1+1=2$），乘法封闭。(9)加法不封闭（$1+1=2$），乘法封闭。(10)加法不封闭（$2+4=6$），乘法封闭（$2^i2^j=2^{i+j}$）。",
+    "explanation": [
+      "封闭性要求对任意一对输入结果仍在集合中；否定只需一个反例。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第202,203页（书页191,192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-005": {
+    "prompt": "对于第4题中封闭的二元运算，判断是否满足交换律、结合律和分配律。",
+    "solution": "(1)整数减法既不交换也不结合：$1-2\\ne2-1$，$(1-2)-3\\ne1-(2-3)$。\n(3)矩阵加法交换、结合；矩阵乘法结合而一般不交换；乘法对加法满足左右分配律，加法对乘法不满足分配律。\n(4)可逆矩阵乘法结合、一般不交换。\n(6)$n\\mathbb Z$ 的加法、乘法都交换且结合，乘法对加法左右分配，加法对乘法不分配。\n(7)右投影 $a\\circ b=b$ 不交换、结合，并对自身左右分配（两边分别都化为 $c$ 或 $a$）。\n(8)(9)(10)各自封闭的普通乘法均交换、结合；(8)(10)对自身不分配，(9)因0、1均幂等，对自身左右分配。",
+    "explanation": [
+      "这里只对同一集合上同时封闭的两种运算讨论通常的乘加分配律。若将单个运算对自身分配也计入，除右投影外这些单运算均不具自分配性：例如普通乘法取 $2,2,2$ 得 $8\\ne16$（正奇数用 $3,3,3$）；$\\{0,1\\}$ 乘法因幂等反而满足左右自分配律。矩阵乘法可取 $2I,2I,2I$；整数减法取 $x=1,y=z=0$。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-006": {
+    "prompt": "对于第4题中封闭的二元运算，找出单位元、零元及所有可逆元素的逆元。",
+    "solution": "(1)整数减法没有双侧单位元、没有双侧零元，故不定义可逆元。\n(3)矩阵加法：单位元 $0$，无零元，每个 $A$ 的逆元为 $-A$；矩阵乘法：单位元 $I$、零元 $0$，可逆元恰为可逆矩阵，逆为 $A^{-1}$。\n(4)可逆矩阵乘法：单位元 $I$、无零元，每个元素可逆。\n(6)$n\\mathbb Z$ 加法：单位元 $0$，无零元，$ni$ 的逆元为 $-ni$；乘法：零元 $0$，当且仅当 $n=1$ 时有单位元 $1$，此时可逆元为 $1,-1$，各自为自身的逆元；$n>1$ 时无单位元。\n(7)右投影（$n\\ge2$）：无双侧单位元或双侧零元。\n(8)正奇数乘法：单位元 $1$，无零元，仅 $1$ 可逆，逆为 $1$。\n(9)$\\{0,1\\}$ 乘法：单位元 $1$、零元 $0$，仅 $1$ 可逆。\n(10)正整数指数的 $2$ 的幂乘法：无单位元（$1$ 不在集合内），无零元，故无可逆元。",
+    "explanation": [
+      "单位元必须两侧保持每个元素，零元必须两侧吸收每个元素；加法中的“单位元0”与“吸收零元”不是一回事。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-007": {
+    "prompt": "设 $*$ 为 $\\mathbb Z^+$ 上的运算，$x*y=\\min(x,y)$。(1)求 $4*6,7*3$；(2)判断交换、结合、幂等性；(3)求单位元、零元及所有可逆元素的逆元。",
+    "solution": "(1)$4*6=4,7*3=3$。(2)交换、结合、幂等：$\\min(x,y)=\\min(y,x)$，两种括号都等于三数最小值，$\\min(x,x)=x$。(3)没有单位元：任给正整数 $e$，$\\min(e,e+1)=e\\ne e+1$；零元为 $1$；因无单位元，不存在通常意义下的可逆元。",
+    "explanation": [
+      "原图的定义域为正整数集 Z⁺，故最小元素 1 是吸收零元。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-008": {
+    "prompt": "$S=\\mathbb Q\\times\\mathbb Q$，定义 $(a,b)*(x,y)=(ax,ay+b)$。(1)判断交换、结合、幂等性；(2)求单位元、零元以及所有可逆元素的逆元。",
+    "solution": "(1)不交换，例如 $(2,0)*(1,1)=(2,2)$，反序得 $(2,1)$；结合，因为两种括号都给出 $(axu,axv+ay+b)$；不幂等，例如 $(2,0)^2=(4,0)$。幂等元素恰为所有 $(0,b)$ 及 $(1,0)$。\n(2)单位元 $(1,0)$；无双侧零元。全部可逆元素为 $a\\ne0$ 的 $(a,b)$，逆元为 $(1/a,-b/a)$。",
+    "explanation": [
+      "幂等条件是 $a^2=a,ab=0$。若 $(u,v)$ 为双侧零元，由 $(a,b)*(u,v)=(u,v)$ 对所有 $b$ 成立将要求 $av+b=v$，矛盾。逆元由 $ax=1,ay+b=0$ 解得。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-009": {
+    "prompt": "实数集上给定六个函数：$f_1(x,y)=x+y,f_2(x,y)=x-y,f_3(x,y)=xy,f_4(x,y)=\\max(x,y),f_5(x,y)=\\min(x,y),f_6(x,y)=|x-y|$。(1)哪些是实数集上的二元运算？(2)判断交换、结合、幂等性；(3)求各运算的单位元、零元及每个可逆元素的逆元。",
+    "solution": "(1)六个都是二元运算。\n(2)按“交换/结合/幂等”列出：$f_1$ 是/是/否；$f_2$ 否/否/否；$f_3$ 是/是/否；$f_4,f_5$ 均是/是/是；$f_6$ 是/否/否。\n(3)$f_1$：单位元 $0$，无零元，$x$ 的逆为 $-x$。$f_2$：无双侧单位元、零元。$f_3$：单位元 $1$、零元 $0$，可逆元 $x\\ne0$ 的逆为 $1/x$。$f_4,f_5$：均无单位元、零元（实数无最大或最小元素）。$f_6$：无双侧单位元、零元；注意在整个实数集上 $|x-0|=|x|$，故 $0$ 不是单位元。无单位元的运算不谈通常的逆元。",
+    "explanation": [
+      "$f_6$ 不结合：$||1-2|-3|=2$，$|1-|2-3||=0$。$f_6(x,x)=0$，所以不幂等。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-010": {
+    "prompt": "$S=\\{a,b\\}$ 上四个运算按行列次序 $a,b$ 的表分别为：$*:\\begin{pmatrix}a&a\\\\a&a\\end{pmatrix}$，$\\circ:\\begin{pmatrix}a&b\\\\b&a\\end{pmatrix}$，$\\cdot:\\begin{pmatrix}b&a\\\\a&a\\end{pmatrix}$，$\\square:\\begin{pmatrix}a&b\\\\a&b\\end{pmatrix}$。(1)判断交换、结合、幂等性；(2)求单位元、零元及可逆元素。",
+    "solution": "$*$：交换、结合、不幂等；无单位元，零元 $a$。\n$\\circ$：交换、结合、不幂等；单位元 $a$，无零元，$a^{-1}=a,b^{-1}=b$。\n$\\cdot$：交换、不结合、不幂等；无单位元、无零元。\n$\\square$：不交换、结合、幂等；无双侧单位元、无双侧零元。除 $\\circ$ 外均无单位元，故无通常的可逆元。",
+    "explanation": [
+      "第三个运算不结合：$(a\\cdot a)\\cdot b=a$，$a\\cdot(a\\cdot b)=b$；第四个是右投影。可逐一检验全部 8 个三元组验证结合性。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203页（书页192）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-011": {
+    "prompt": "$S=\\{1,2,\\ldots,10\\}$，判断下列运算是否构成代数系统；若能，判断交换、结合性并求单位元、零元：(1)$x*y=\\gcd(x,y)$；(2)$x*y=\\operatorname{lcm}(x,y)$；(3)$x*y$ 为大于等于 $x,y$ 的最小整数；(4)$x*y$ 为区间 $[x,y]$ 中质数的个数，其中 $x\\le y$。",
+    "solution": "(1)封闭、交换、结合；无单位元（若有必须是 1 到 10 每个数的倍数却仍在集合内，不可能），零元为 $1$。\n(2)不封闭，例如 $\\operatorname{lcm}(6,7)=42$。\n(3)就是 $\\max(x,y)$，封闭、交换、结合，单位元 $1$、零元 $10$。\n(4)不是 $S$ 上二元运算：未定义 $x>y$ 时的值；即使补上对称定义，$[1,1]$ 无质数，结果 $0\\notin S$。",
+    "explanation": [
+      "二元运算首先必须是 S×S 到 S 的全函数，不能跳过封闭性与定义域条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第203,204页（书页192,193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-012": {
+    "prompt": "$S$ 为闭区间 $[a,b]$（$a<b$）上的全体实连续函数。判断逐点定义的函数加法、减法、乘法、除法是否与 $S$ 构成代数系统；若能，判断交换、结合性并求单位元、零元。",
+    "solution": "加法：封闭、交换、结合，单位元为恒零函数，无吸收零元。减法：封闭，不交换、不结合，无双侧单位元、零元。乘法：封闭、交换、结合，单位元为恒一函数，零元为恒零函数。除法：不构成二元运算，因为分母可能是恒零函数或在区间内有零点；此时商没有定义或不是连续函数。",
+    "explanation": [
+      "连续函数的和、差、积连续；商只有在分母处处非零时才保证连续，而题目没有这个限制。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-013": {
+    "prompt": "设 $A=\\{a,b\\}$，给出一个既不可交换又不可结合的二元运算。",
+    "solution": "取运算表 $\\begin{array}{c|cc}*&a&b\\\\\\hline a&b&a\\\\b&b&b\\end{array}$。$a*b=a\\ne b=b*a$，不交换；$(a*a)*a=b*a=b$，$a*(a*a)=a*b=a$，不结合。",
+    "explanation": [
+      "完整运算表保证封闭性，再分别给出两个性质失败的具体输入。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-01",
+      "DM-K09-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-014": {
+    "prompt": "下列自然数集的子集能否构成 $\\langle\\mathbb N,+\\rangle$ 的子代数？(1)某次幂能被16整除的自然数；(2)与5互素的自然数；(3)30的自然数因子；(4)30的自然数倍数。",
+    "solution": "(1)能，该集合恰是偶数集，偶数相加仍为偶数。(2)不能，$1,4$ 与5互素而 $1+4=5$ 不互素。(3)不能，$30+30=60$ 不是30的因子。(4)能，$30u+30v=30(u+v)$。",
+    "explanation": [
+      "若 $x^k$ 被16整除，则 x 必为偶数；反之偶数 x 的四次幂一定被16整除。子代数须是非空且对原运算封闭的子集。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-015": {
+    "prompt": "$V=\\langle\\mathbb Z,+,\\cdot\\rangle$。判断下列集合是否构成其子代数：(1)$S_1=\\{2n:n\\in\\mathbb Z\\}$；(2)$S_2=\\{2n+1:n\\in\\mathbb Z\\}$；(3)$S_3=\\{-1,0,1\\}$。",
+    "solution": "(1)是，偶数和、积都为偶数。(2)否，$1+1=2$ 不在其中。(3)否，$1+1=2$ 不在其中；虽对乘法封闭，仍不足以成为同时带加法、乘法的子代数。",
+    "explanation": [
+      "须对签名中的每一个运算都封闭。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-016": {
+    "prompt": "$V_1=\\langle\\{1,2,3\\},\\circ,1\\rangle$，$x\\circ y=\\max(x,y)$；$V_2=\\langle\\{5,6\\},*,6\\rangle$，$x*y=\\min(x,y)$。求所有子代数，并指出平凡与真子代数。",
+    "solution": "$V_1$ 的子代数底集为 $\\{1\\},\\{1,2\\},\\{1,3\\},\\{1,2,3\\}$，运算与常数取原限制。$V_2$ 的底集为 $\\{6\\},\\{5,6\\}$。单元素子代数分别为 $\\{1\\},\\{6\\}$；原代数本身也是通常所称的平凡子代数。真子代数是所有底集严格小于原底集的上述子代数；若使用“非平凡真子代数”说法，则只有 $V_1$ 的 $\\{1,2\\},\\{1,3\\}$。",
+    "explanation": [
+      "max/min 的结果总是输入之一，任意非空子集对它们封闭；但还必须包含零元运算指定的常数 1 或 6。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-017": {
+    "prompt": "$V=\\langle\\mathbb R^*,\\cdot\\rangle$，$\\mathbb R^*$ 为非零实数集。判断下列函数是否为自同态，若是再判断单、满、自同构并求同态像：(1)$|x|$；(2)$2x$；(3)$x^2$；(4)$1/x$；(5)$-x$；(6)$x+1$。",
+    "solution": "(1)自同态，像为 $\\mathbb R^+$，不单、不满、非自同构。\n(2)非同态，$f(1)=2\\ne4=f(1)f(1)$。\n(3)自同态，像为 $\\mathbb R^+$，不单、不满、非自同构。\n(4)自同态且双射，像为 $\\mathbb R^*$，是单、满自同态及自同构（自身为逆函数）。\n(5)非同态，$f(1)=-1\\ne1=f(1)^2$。\n(6)甚至不是 $\\mathbb R^*$ 到自身的函数，因 $f(-1)=0$，故不是自同态。",
+    "explanation": [
+      "乘法同态条件为 $f(xy)=f(x)f(y)$。绝对值和平方均使 x 与 −x 同像，因此不是单射。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-018": {
+    "prompt": "$V_1=\\langle\\mathbb Z,+,\\cdot\\rangle$，$V_2=\\langle\\mathbb Z_n,\\oplus,\\otimes\\rangle$，后两运算为模 $n$ 加、乘。令 $f(x)=x\\bmod n$，证明 $f$ 为 $V_1$ 到 $V_2$ 的满同态。",
+    "solution": "取 $x=qn+r,y=pn+s$，$0\\le r,s<n$。则 $f(x+y)=(r+s)\\bmod n=f(x)\\oplus f(y)$，$f(xy)=rs\\bmod n=f(x)\\otimes f(y)$，故保两种运算。每个 $r\\in\\mathbb Z_n$ 都有 $f(r)=r$，所以满射，因而为满同态。",
+    "explanation": [
+      "余数只依赖同余类；保加、保乘和满射三点都须验证。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E009-019": {
+    "prompt": "$V_1=\\langle A,\\circ\\rangle,V_2=\\langle B,*\\rangle$ 为同类型代数系统。积代数中定义投影 $f:A\\times B\\to A,f(x,y)=x$，证明它是到 $V_1$ 的同态映射。",
+    "solution": "积运算按坐标定义：$(x_1,y_1)\\diamond(x_2,y_2)=(x_1\\circ x_2,y_1*y_2)$。因此 $f((x_1,y_1)\\diamond(x_2,y_2))=x_1\\circ x_2=f(x_1,y_1)\\circ f(x_2,y_2)$，故同态。若底集按通常定义非空，任取 $b_0\\in B$，$f(a,b_0)=a$，还可见它是满同态。",
+    "explanation": [
+      "积代数的关键是逐坐标计算，投影自然保留第一坐标的运算。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第204页（书页193）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-001": {
+    "prompt": "设 $A=\\{0,1\\}$，给出半群 $\\langle A^A,\\circ\\rangle$ 的运算表，$\\circ$ 为函数复合。",
+    "solution": "以函数在 $(0,1)$ 的值表示函数：$S=\\{c_0=(0,0),e=(0,1),s=(1,0),c_1=(1,1)\\}$。按本教材复合约定 $f\\circ g(x)=g(f(x))$（先行函数、后列函数），行列顺序为 $c_0,e,s,c_1$ 时，表为 $\\begin{pmatrix}c_0&c_0&c_1&c_1\\\\c_0&e&s&c_1\\\\c_0&s&e&c_1\\\\c_0&c_1&c_0&c_1\\end{pmatrix}$。",
+    "explanation": [
+      "二元集合上有2²=4个自映射。逐点按教材“先左后右”复合得到表；定义见PDF163—164页，不能套用另一些教材的相反记号。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-002": {
+    "prompt": "判断下列集合及运算是否构成半群、独异点、群：(1)$G=\\{a^n:n\\in\\mathbb Z\\}$（$a>0$），普通乘法；(2)正有理数乘法；(3)正有理数加法；(4)一元实系数多项式加法；(5)一元实系数多项式乘法；(6)$U_n=\\{z\\in\\mathbb C:z^n=1\\}$ 的复数乘法。",
+    "solution": "(1)为阿贝尔群，单位元 $1=a^0$，$(a^k)^{-1}=a^{-k}$；$a=1$ 时为平凡群。(2)为阿贝尔群，单位元1，逆元 $1/q$。(3)仅为交换半群：0 不在正有理数内，无单位元。(4)为阿贝尔群：零多项式为单位元，$p$ 的逆元为 $-p$。(5)为交换独异点及半群，不是群：单位元恒1，零多项式不可逆；可逆元恰为非零常数。(6)为阿贝尔群：单位元1，逆元 $z^{-1}=z^{n-1}$。以上为群者也都是独异点与半群。",
+    "explanation": [
+      "依次检查封闭、结合、单位元及所有元素可逆；不要把“某些元素可逆”误判成群。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-003": {
+    "prompt": "在实数集上定义 $a*b=a+b+ab$，证明 $\\langle\\mathbb R,*\\rangle$ 为独异点。",
+    "solution": "封闭性显然；$(a*b)*c=a+b+c+ab+ac+bc+abc=a*(b*c)$，故结合。$a*0=0*a=a$，所以单位元为0。由此为独异点。",
+    "explanation": [
+      "也可用变换 $a*b+1=(a+1)(b+1)$ 理解其结合性；本题无须所有元素可逆（−1 就不可逆）。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-004": {
+    "prompt": "$S=\\{a,b,c\\}$，定义 $x*y=x$。(1)证明其为半群；(2)增加最少的元素，使其扩张为独异点。",
+    "solution": "(1)$(x*y)*z=x=x*(y*z)$，且封闭，故半群。(2)只需增加一个新元素 $e$，规定 $e*x=x*e=x$（$x\\in S\\cup\\{e\\}$），原来 $S$ 内的乘法保持不变。含e的结合律自动化简为原结合律，因此得到独异点。原集合内不可能有双侧单位元：若 $e\\in S$，则 $e*x=e$ 不会对所有不同的x等于x；故至少要加一个，一个已足够。",
+    "explanation": [
+      "这是为左投影半群添一个外部单位元的标准构造。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-005": {
+    "prompt": "$V=\\langle\\{a,b\\},*\\rangle$ 为半群，且 $a*a=b$。证明：(1)$a*b=b*a$；(2)$b*b=b$。",
+    "solution": "(1)$a*b=a*(a*a)=(a*a)*a=b*a$。(2)令 $c=a*b=b*a\\in\\{a,b\\}$。若 $c=a$，则 $b*b=(a*a)*b=a*(a*b)=a*a=b$。若 $c=b$，则 $b*b=(a*a)*b=a*(a*b)=a*b=b$。两种情形均得结论。",
+    "explanation": [
+      "结合律可以消去括号但不能随意交换；第二问须分清二元底集带来的两种可能。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-006": {
+    "prompt": "$V=\\langle S,*\\rangle$ 是可交换半群，$a,b$ 是幂等元。证明 $a*b$ 也幂等。",
+    "solution": "由结合律和交换律，$(a*b)*(a*b)=(a*a)*(b*b)=a*b$，故 $a*b$ 幂等。",
+    "explanation": [
+      "把同类因子移到一起，再使用 a*a=a、b*b=b。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-007": {
+    "prompt": "$G=\\{a+bi:a,b\\in\\mathbb Z\\}$，$i^2=-1$。验证其关于复数加法构成群。",
+    "solution": "$(a+bi)+(c+di)=(a+c)+(b+d)i\\in G$，故封闭；结合律继承复数加法；零元 $0+0i\\in G$；$a+bi$ 的加法逆元 $-a-bi\\in G$。所以是群，且交换，称高斯整数的加法群。",
+    "explanation": [
+      "逐一验证群公理即可；这里系数是整数，取负仍为整数。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-008": {
+    "prompt": "$S=\\{0,1,2,3\\}$，$x\\otimes y=xy\\bmod4$。它构成半群、独异点或群中的哪些系统？",
+    "solution": "构成交换半群及独异点，单位元为1；不构成群，因为0、2均不可逆（0乘任何元素为0，2的任何乘积模4都是偶数）。全部可逆元为1、3，各为自身的逆元。",
+    "explanation": [
+      "模4乘法封闭且继承普通乘法的结合性。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-009": {
+    "prompt": "在整数集上定义 $x\\circ y=x+y-2$，问是否构成群并说明理由。",
+    "solution": "是阿贝尔群。封闭；$(x\\circ y)\\circ z=x+y+z-4=x\\circ(y\\circ z)$；单位元为2；$x$ 的逆元为 $4-x$，因为 $x\\circ(4-x)=2$。",
+    "explanation": [
+      "单位元应解 x+e−2=x，得到2，不能沿用普通加法的0。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-010": {
+    "prompt": "$A=\\mathbb R\\setminus\\{0,1\\}$，$f_1(x)=x,f_2(x)=1/x,f_3(x)=1-x,f_4(x)=1/(1-x),f_5(x)=(x-1)/x,f_6(x)=x/(x-1)$。$F$ 为这六个函数的集合。(1)求复合表；(2)验证其为群。",
+    "solution": "采用教材约定 $f_i\\circ f_j(x)=f_j(f_i(x))$（先行后列），表内只写函数下标：$\\begin{pmatrix}1&2&3&4&5&6\\\\2&1&5&6&3&4\\\\3&4&1&2&6&5\\\\4&3&6&5&1&2\\\\5&6&2&1&4&3\\\\6&5&4&3&2&1\\end{pmatrix}$。表证明封闭；函数复合结合；单位元 $f_1$；$f_2,f_3,f_6$ 各为自身的逆，$f_4^{-1}=f_5,f_5^{-1}=f_4$。所以为群。",
+    "explanation": [
+      "逐式代入并约分得到运算表；所有函数及复合都在排除0、1后的同一集合上有定义。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-011": {
+    "prompt": "$G=\\{\\operatorname{diag}(1,1),\\operatorname{diag}(1,-1),\\operatorname{diag}(-1,1),\\operatorname{diag}(-1,-1)\\}$，证明其关于矩阵乘法构成群。",
+    "solution": "对角矩阵相乘等于对应两个符号相乘，所得仍是四个矩阵之一，故封闭；结合律继承矩阵乘法；单位元为 $I=\\operatorname{diag}(1,1)$；每个矩阵平方均为I，因此每个元素都以自身为逆元。所以是四阶阿贝尔群（克莱因四元群）。",
+    "explanation": [
+      "四个元素可视为两坐标分别取 ±1，逐坐标相乘。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228页（书页217）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E010-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 10 · 第 11 题",
+      "chapter": 10,
+      "section_id": "DM-C10-S1",
+      "printed_page": 217,
+      "pdf_page": 228,
+      "segments": [
+        {
+          "page": 228,
+          "top": 0.867,
+          "bottom": 0.919
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 11,
+      "group_title": "习题 10",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K10-01"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E010-012": {
+    "prompt": "$\\mathbb Z_n=\\{0,1,\\ldots,n-1\\}$，$T=\\{x\\in\\mathbb Z_n:\\gcd(x,n)=1\\}$，证明T关于模n乘法构成阿贝尔群（$n\\ge2$）。",
+    "solution": "若 $\\gcd(a,n)=\\gcd(b,n)=1$，则 $\\gcd(ab,n)=1$，取余后仍与n互素，故封闭。模n乘法交换、结合；1是单位元且在T中。由贝祖等式 $au+nv=1$，$a(u\\bmod n)\\equiv1\\pmod n$，且该逆元也与n互素。因此每个元素可逆，是阿贝尔群。",
+    "explanation": [
+      "逆元存在性的关键是互素和贝祖等式；该群通常记为模n单位群。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第228,229页（书页217,218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-013": {
+    "prompt": "设G为群，证明：(2)$(ab)^{-1}=b^{-1}a^{-1}$；(4)$(a^m)^n=a^{mn}$（整数指数）；(5)若G交换则 $(ab)^n=a^nb^n$。",
+    "solution": "(2)$(ab)(b^{-1}a^{-1})=a(bb^{-1})a^{-1}=e$，反序也为e，所以其为唯一逆元。\n(4)正指数时把n个 $a^m$ 连接，共有mn个a；零指数两边为e；负指数用 $a^{-k}=(a^{-1})^k$ 及(2)，同样化为对应整数幂，故对所有整数成立。\n(5)当n为正，把 $abab\\cdots ab$ 中的a、b用交换律分别聚合；n=0显然；n<0时对正指数公式取逆，利用(2)及交换性得到相同结论。",
+    "explanation": [
+      "非交换群中第五式一般不成立，必须保留交换假设。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-014": {
+    "prompt": "证明群中的运算满足左右消去律。",
+    "solution": "若 $ab=ac$，左乘 $a^{-1}$ 得 $a^{-1}(ab)=a^{-1}(ac)$，结合后得b=c。若 $ba=ca$，右乘 $a^{-1}$，同理得b=c。因此左右消去律都成立。",
+    "explanation": [
+      "必须在等式同一侧乘同一逆元，不能把群乘法当作可交换。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-015": {
+    "prompt": "设G为群且每个 $x\\in G$ 都有 $x^2=e$，证明G是交换群。",
+    "solution": "由 $x^2=e$ 得 $x^{-1}=x$。因此 $ab=(ab)^{-1}=b^{-1}a^{-1}=ba$，对任意a,b成立，故交换。",
+    "explanation": [
+      "在逆元乘积公式中代入每个元素等于自身逆元。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-016": {
+    "prompt": "设G为群，证明单位元e是唯一的幂等元。",
+    "solution": "e显然幂等。若 $x^2=x$，两边左乘 $x^{-1}$，得 $x=e$。因此没有其他幂等元。",
+    "explanation": [
+      "半群可以有多个幂等元；群的消去性将幂等元限制为单位元。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-017": {
+    "prompt": "设G为群，$a,b,c\\in G$，证明 $|abc|=|bca|=|cab|$（竖线表示元素的阶）。",
+    "solution": "注意 $bca=a^{-1}(abc)a$，$cab=c^{-1}(abc)c$。若 $y=g^{-1}xg$，归纳得 $y^m=g^{-1}x^mg$，所以 $y^m=e\\iff x^m=e$。共轭元素的所有归一正指数相同，因而其阶相同（无限阶的情形也同样成立），结论成立。",
+    "explanation": [
+      "循环移动乘积因子给出共轭元素，不能在非交换群中直接说乘积相等。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-018": {
+    "prompt": "证明偶数阶群必含2阶元。",
+    "solution": "除e外还有奇数个元素。把非单位元与它的逆元配对；若没有2阶元，每个非单位元都不同于自己的逆元，于是它们可分成不交的二元组，数量应为偶数，与奇数矛盾。因此存在 $a\\ne e$ 满足 $a=a^{-1}$，即a的阶为2。",
+    "explanation": [
+      "偶数阶指有限群；计数中必须先去掉自逆的单位元。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-019": {
+    "prompt": "设G为非阿贝尔群，证明存在两个不同的非单位元a,b，满足ab=ba。",
+    "solution": "若所有非单位元都为2阶元，第15题已证明G交换，矛盾。因此存在 $a$，$a^2\\ne e$。令 $b=a^{-1}$，则a、b均非单位元且 $a\\ne b$，并有 $ab=ba=e$，即得。",
+    "explanation": [
+      "选择同一循环子群中两个不同的元素即可；非交换假设确保存在非自逆元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-020": {
+    "prompt": "设G是 $M_n(\\mathbb R)$ 的加法群（$n\\ge2$）。判断下列子集是否构成子群：(1)全体对称矩阵；(2)全体对角矩阵；(3)行列式大于等于0的矩阵；(4)全体上（三角或下三角）矩阵。",
+    "solution": "(1)(2)(4)都构成子群：都含零矩阵，差矩阵仍保持相应的对称、对角、三角形状。\n(3)不构成子群。取 $A=\\operatorname{diag}(-1,-1,1,\\ldots,1)$，$B=\\operatorname{diag}(2,1/2,1,\\ldots,1)$，两者行列式均为1；但 $A+B=\\operatorname{diag}(1,-1/2,2,\\ldots,2)$，行列式为 $-2^{n-3}<0$，故不封闭。",
+    "explanation": [
+      "加法子群的判别可用“非空且对作差封闭”。第三问给出适用于所有 n≥2 的统一反例。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-021": {
+    "prompt": "$G$ 为群，$a\\in G$，$N(a)=\\{x\\in G:xa=ax\\}$（教材称a的正规化子）。证明 $N(a)$ 为子群。",
+    "solution": "e与a可交换，故非空。若x,y均与a可交换，由 $ya=ay$ 得 $y^{-1}a=ay^{-1}$，于是 $(xy^{-1})a=x(ay^{-1})=(xa)y^{-1}=(ax)y^{-1}=a(xy^{-1})$。所以对 $xy^{-1}$ 封闭，按子群判别法得结论。",
+    "explanation": [
+      "这里的集合也通常称 a 的中心化子；证明以教材所给集合定义为准。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-022": {
+    "prompt": "$H\\le G,x\\in G$，$xHx^{-1}=\\{xhx^{-1}:h\\in H\\}$。证明其为G的子群。",
+    "solution": "它含 $xex^{-1}=e$。若 $u=xh_1x^{-1},v=xh_2x^{-1}$，则 $uv^{-1}=xh_1x^{-1}xh_2^{-1}x^{-1}=x(h_1h_2^{-1})x^{-1}\\in xHx^{-1}$，因为 $h_1h_2^{-1}\\in H$。因此为子群，称H的共轭子群。",
+    "explanation": [
+      "中间的 x⁻¹x=e 可以消去，外层保留相同共轭形式。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-023": {
+    "prompt": "画出 $\\langle\\mathbb Z_{18},\\oplus\\rangle$ 的子群格。",
+    "solution": "全部子群为 $H_1=\\{0\\}$，$H_2=\\{0,9\\}$，$H_3=\\{0,6,12\\}$，$H_6=\\{0,3,6,9,12,15\\}$，$H_9=\\{0,2,4,6,8,10,12,14,16\\}$，$H_{18}=\\mathbb Z_{18}$；下标表示阶。哈斯图覆盖边为 $H_1\\prec H_2,H_1\\prec H_3,H_2\\prec H_6,H_3\\prec H_6,H_3\\prec H_9,H_6\\prec H_{18},H_9\\prec H_{18}$。按此从下到上连线即可得到完整子群格。",
+    "explanation": [
+      "循环群每个正因子d对应唯一d阶子群，由18/d生成；包含关系等价于阶的整除关系。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-024": {
+    "prompt": "H、K分别为群G的r阶、s阶子群，若 $\\gcd(r,s)=1$，证明 $H\\cap K=\\{e\\}$。",
+    "solution": "$H\\cap K$ 同时是H、K的子群。按拉格朗日定理，其阶同时整除r、s，所以整除1，即 $|H\\cap K|=1$。交集含e，故恰为 $\\{e\\}$。",
+    "explanation": [
+      "关键是先说明交集为子群，再对两个有限群分别使用拉格朗日定理。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-025": {
+    "prompt": "判断以下映射的同态、单、满、同构性质并求同态像：(1)$\\mathbb Z$ 加法群到非零实数乘法群，$f(x)=(-1)^x$；(2)$\\mathbb Z$ 加法群到单位圆乘法群A，$f(x)=\\cos x+i\\sin x$；(3)$\\mathbb R$ 加法群到同一A，$f(x)=\\cos x+i\\sin x$。",
+    "solution": "(1)同态，像为 $\\{1,-1\\}$，核为偶数集；不单、不满、不同构。\n(2)同态且单射，像为 $\\{e^{ik}:k\\in\\mathbb Z\\}$，不是满射，故非同构。单射因 $e^{im}=e^{in}$ 蕴含 $m-n=2k\\pi$，整数差只能在k=0时成立；非满例如 $-1$ 无整数辐角。\n(3)满同态，像为整个单位圆A，核为 $2\\pi\\mathbb Z$，非单射、非同构。",
+    "explanation": [
+      "利用 $e^{i(x+y)}=e^{ix}e^{iy}$ 验证同态，再分别检查核和像；第二问的辐角单位为弧度。"
+    ],
+    "knowledge_ids": [
+      "DM-K09-S03",
+      "DM-K10-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-026": {
+    "prompt": "证明循环群一定是阿贝尔群；说明阿贝尔群是否一定循环并证明或举反例。",
+    "solution": "若 $G=\\langle a\\rangle$，任意元素为 $a^m,a^n$，有 $a^ma^n=a^{m+n}=a^{n+m}=a^na^m$，故交换。反命题不成立，例如 $\\mathbb Z_2\\times\\mathbb Z_2$ 是四阶阿贝尔群，而每个非单位元只有2阶，没有4阶生成元，因此不循环。",
+    "explanation": [
+      "循环群的同底幂总可交换；克莱因四元群提供最小的标准反例。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229页（书页218）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-027": {
+    "prompt": "设 $G_1$ 是循环群，$f:G_1\\to G_2$ 是群同态。证明 $f(G_1)$ 也是循环群。",
+    "solution": "设 $G_1=\\langle a\\rangle$，则 $f(G_1)=\\{f(a^n):n\\in\\mathbb Z\\}=\\{f(a)^n:n\\in\\mathbb Z\\}=\\langle f(a)\\rangle$，所以是由f(a)生成的循环群。",
+    "explanation": [
+      "同态保整数次幂，这也包括负指数和单位元。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第229,230页（书页218,219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-028": {
+    "prompt": "设 $G=\\langle a\\rangle$ 是15阶循环群。(1)求全部生成元；(2)求全部子群。",
+    "solution": "(1)$a^k$ 是生成元当且仅当 $\\gcd(k,15)=1$，故生成元为 $a,a^2,a^4,a^7,a^8,a^{11},a^{13},a^{14}$。\n(2)全部子群为 $\\{e\\}$、$\\langle a^5\\rangle=\\{e,a^5,a^{10}\\}$、$\\langle a^3\\rangle=\\{e,a^3,a^6,a^9,a^{12}\\}$、G。",
+    "explanation": [
+      "循环群的子群由阶的每个正因子1、3、5、15唯一确定。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-029": {
+    "prompt": "$\\sigma=\\begin{pmatrix}1&2&3&4&5\\\\2&1&4&5&3\\end{pmatrix}$，$\\tau=\\begin{pmatrix}1&2&3&4&5\\\\3&4&5&1&2\\end{pmatrix}$。(1)求 $\\sigma\\tau,\\tau\\sigma,\\sigma^{-1},\\tau^{-1},\\sigma^{-1}\\tau\\sigma$；(2)把 $\\sigma\\tau,\\tau^{-1},\\sigma^{-1}\\tau\\sigma$ 写成不交轮换之积；(3)再写成对换之积并判断奇偶。",
+    "solution": "采用教材从左到右作用的置换乘积约定。\n(1)$\\sigma\\tau,\\tau\\sigma,\\sigma^{-1},\\tau^{-1},\\sigma^{-1}\\tau\\sigma$ 的二行表示下行依次为 $(4,3,1,2,5)$、$(4,5,3,2,1)$、$(2,1,5,3,4)$、$(4,5,1,2,3)$、$(5,4,1,3,2)$。\n(2)$\\sigma\\tau=(1\\ 4\\ 2\\ 3)$（固定5）；$\\tau^{-1}=(1\\ 4\\ 2\\ 5\\ 3)$；$\\sigma^{-1}\\tau\\sigma=(1\\ 5\\ 2\\ 4\\ 3)$。\n(3)按同样“左边先作用”的约定，分别为 $(1\\ 4)(1\\ 2)(1\\ 3)$、$(1\\ 4)(1\\ 2)(1\\ 5)(1\\ 3)$、$(1\\ 5)(1\\ 2)(1\\ 4)(1\\ 3)$。第一个奇置换，后两个偶置换。",
+    "explanation": [
+      "逐点先作用左边置换再作用右边，已对全部五个输入枚举复核；k轮换分解为k−1个对换，决定奇偶性。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-030": {
+    "prompt": "允许正方体在空间任意转动，用n种颜色给六个面着色，证明不同着色数为 $\\frac1{24}(n^6+8n^2+12n^3+3n^4)$。",
+    "solution": "24个旋转按面置换的循环数分类：恒等1个，固定 $n^6$ 种；绕对面中心轴转90°或270°共6个，面循环型 $1^2 4$，各固定 $n^3$；绕对面中心轴转180°共3个，型 $1^2 2^2$，各固定 $n^4$；绕对顶点轴转120°或240°共8个，型 $3^2$，各固定 $n^2$；绕对棱中点轴转180°共6个，型 $2^3$，各固定 $n^3$。由伯恩赛德引理平均得 $(n^6+6n^3+3n^4+8n^2+6n^3)/24$，即所求。",
+    "explanation": [
+      "颜色可重复，旋转中同一置换循环内的面必须同色；循环数为k时固定着色数为n^k。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-031": {
+    "prompt": "一个圆环上等距离镶有6颗珠子，每颗可为红、蓝、黄三色，问不同镶嵌方法数。",
+    "solution": "圆环允许整体旋转、翻转时共有92种。旋转的固定数总和为 $3^6+2\\cdot3+2\\cdot3^2+3^3=780$；三条过对珠轴的翻转各有4个循环，另三条过对间隙轴各有3个循环，固定数和为 $3\\cdot3^4+3\\cdot3^3=324$。由二面体群 $D_6$ 的伯恩赛德平均：$(780+324)/12=92$。若另约定只有旋转等价、禁止翻面，则答案为 $780/6=130$。",
+    "explanation": [
+      "把圆环作为可在空间翻转的饰物时，两面翻转给出同一镶法；附列只计平面旋转时的结果以明确等价约定。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-032": {
+    "prompt": "$A=\\{a+bi:a,b\\in\\mathbb Z,i^2=-1\\}$，证明其关于复数加法、乘法构成环。",
+    "solution": "加法由第7题已成阿贝尔群。乘法 $(a+bi)(c+di)=(ac-bd)+(ad+bc)i$ 的系数仍为整数，故封闭；乘法结合律及左右分配律均继承复数。故A为环，且含单位1、乘法交换，是高斯整数环。",
+    "explanation": [
+      "环不要求所有非零元可乘逆；例如2的复数逆1/2不在A内。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-033": {
+    "prompt": "$A=\\{a_0+a_1x+\\cdots+a_nx^n:a_i\\in\\mathbb R,n\\in\\mathbb N\\}$（含零多项式）。证明其关于多项式加法、乘法构成环。",
+    "solution": "两个多项式的和、积仍是有限次数实系数多项式，故封闭。加法满足交换、结合，零多项式为加法单位，p的逆为−p，因此加法是阿贝尔群。乘法结合，且两侧对加法分配，均可按系数的有限和积展开并用实数运算律验证。因此A是环，记 $\\mathbb R[x]$，还是含1的交换整环。",
+    "explanation": [
+      "A中的次数没有统一上界，乘积次数增大仍属于A；这与固定次数上界的集合不同。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-034": {
+    "prompt": "判断下列集合在通常加法、乘法下是否为环、整环、域：(1)$\\{a+bi:a,b\\in\\mathbb Q,i^2=-1\\}$；(2)奇整数；(3)偶整数；(4)非负整数；(5)$\\{a+b\\sqrt[4]{5}:a,b\\in\\mathbb Q\\}$。",
+    "solution": "(1)是域，因非零 $a+bi$ 的逆为 $(a-bi)/(a^2+b^2)$，系数仍有理；故也是整环、环。\n(2)不是环，加法不封闭，$1+1=2$。\n(3)是交换环且无零因子，但没有乘法单位元；按教材“含幺无零因子的交换环”定义不是整环，也不是域。若采用不要求幺元的整环定义则可称整环，须注意定义。\n(4)不是环，1没有加法逆元。\n(5)不是环，乘法不封闭：$\\sqrt[4]5\\cdot\\sqrt[4]5=\\sqrt5$ 不能表示为 $a+b\\sqrt[4]5$（有理a,b）。",
+    "explanation": [
+      "第五项原图是四次根号，不是平方根。若平方根可如此表示，令t=四次根5就给出t满足非零二次有理多项式，与x⁴−5由艾森斯坦判别不可约矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-035": {
+    "prompt": "在域 $\\mathbb Z_5$ 中解：(1)$3x=2$；(2)$x+2z=1,z+2x=2,2x+y=1$。",
+    "solution": "(1)3在模5下的逆为2，所以 $x=2\\cdot2=4$。\n(2)第一式减去第二式的两倍得 $-3x=-3$，模5下−3可逆，故x=1；代入得z=0，y=1−2=4。因此唯一解为 $(x,y,z)=(1,4,0)$。",
+    "explanation": [
+      "高倍对照原扫描页确认域下标为5。模5代入：3×4=12≡2；方程组三式分别为1、2、6≡1，均成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-036": {
+    "prompt": "a、b是含幺环R的可逆元，证明：(1)−a可逆，且 $(-a)^{-1}=-a^{-1}$；(2)ab可逆，且 $(ab)^{-1}=b^{-1}a^{-1}$。",
+    "solution": "(1)$(-a)(-a^{-1})=aa^{-1}=1$，反序同样等于1，因此成立。(2)$(ab)(b^{-1}a^{-1})=a(bb^{-1})a^{-1}=1$，而 $(b^{-1}a^{-1})(ab)=b^{-1}(a^{-1}a)b=1$，故成立。",
+    "explanation": [
+      "非交换环也成立，但第二问逆元的顺序必须反转。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-037": {
+    "prompt": "R为环，$C=\\{x\\in R:\\forall a\\in R,xa=ax\\}$。证明中心C是R的子环。",
+    "solution": "$0\\in C$，故非空。若x,y∈C，则对任意a，$(x-y)a=xa-ya=ax-ay=a(x-y)$；$(xy)a=x(ya)=x(ay)=(xa)y=(ax)y=a(xy)$。因此C对作差及乘法封闭，按子环判别法是子环。",
+    "explanation": [
+      "只须保留“与R中每个a可交换”的性质，不要求R本身可交换。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E010-038": {
+    "prompt": "设R为环，证明任意a,b,c满足 $a(b-c)=ab-ac$，$(b-c)a=ba-ca$。",
+    "solution": "由 $a0=0$ 及分配律，$a(-c)+ac=a((-c)+c)=0$，所以 $a(-c)=-(ac)$；同理 $(-c)a=-(ca)$。于是 $a(b-c)=a(b+(-c))=ab+a(-c)=ab-ac$，$(b-c)a=ba+(-c)a=ba-ca$。",
+    "explanation": [
+      "先证明乘负元等于积的加法逆元，再展开减法；无需乘法交换。"
+    ],
+    "knowledge_ids": [
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第230页（书页219）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-001": {
+    "prompt": "图11.11给出六个偏序集的哈斯图，判断哪些是格；不是格则说明理由。图的标签沿用原教材。",
+    "solution": "(a)、(c)、(f)是格。(a)是四元链；(c)的两条链为 $a<b<e<f$ 和 $a<c<d<f$，不同支链的非端点交为a、并为f；(f)覆盖关系为 $a\\prec b,a\\prec c,b\\prec d,c\\prec d,c\\prec e,d\\prec f,e\\prec f$，每对均有交并。\n(b)不是格：d、e的共同下界有b、c而二者不可比，因而无最大下界；(d)不是格：b、c的共同上界d、e无最小者；(e)不是格：极小元a、b没有共同下界。",
+    "explanation": [
+      "已对照原图逐条读取覆盖边。哈斯图中线条的几何交叉不是顶点；(b)不能把b、c间不存在的边补上。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-002": {
+    "prompt": "以下集合在整除偏序下哪些为格？(1)$\\{1,2,3,4,5\\}$；(2)$\\{1,2,3,6,12\\}$；(3)$\\{1,2,3,4,6,9,12,18,36\\}$；(4)$\\{1,2,2^2,\\ldots\\}$。",
+    "solution": "(1)不是，2、3无共同上界。(2)是，任意两元素的最大公因数和最小公倍数都在集合内，分别为交、并。(3)是，这是36的全部正因子，交为gcd、并为lcm。(4)是链，$2^i\\wedge2^j=2^{\\min(i,j)}$，$2^i\\vee2^j=2^{\\max(i,j)}$。",
+    "explanation": [
+      "无限格不必有最大元；第四项虽无最大元素，但每个二元组都有交、并。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-003": {
+    "prompt": "(1)画出 $\\langle\\mathbb Z_{12},\\oplus\\rangle$ 的子群格；(2)画出三元对称群 $S_3$ 的子群格。",
+    "solution": "(1)子群按阶为 $H_1=\\{0\\},H_2=\\langle6\\rangle,H_3=\\langle4\\rangle,H_4=\\langle3\\rangle,H_6=\\langle2\\rangle,H_{12}=\\mathbb Z_{12}$。覆盖边为 $H_1\\prec H_2,H_1\\prec H_3,H_2\\prec H_4,H_2\\prec H_6,H_3\\prec H_6,H_4\\prec H_{12},H_6\\prec H_{12}$。\n(2)全部子群为 $\\{e\\}$、三个二阶群 $\\langle(12)\\rangle,\\langle(13)\\rangle,\\langle(23)\\rangle$、三阶群 $A_3=\\{e,(123),(132)\\}$、$S_3$。四个中间子群两两不可比，均覆盖 $\\{e\\}$ 并被 $S_3$ 覆盖；这些边给出完整哈斯图。",
+    "explanation": [
+      "第一项原图下标为12。循环群用因子列子群；S₃用元素的2阶、3阶和拉格朗日定理穷尽。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-004": {
+    "prompt": "设L为格，求对偶式：(1)$a\\wedge(a\\vee b)\\le a$；(2)$a\\vee(b\\wedge c)\\le(a\\vee b)\\wedge(a\\vee c)$；(3)$b\\vee(c\\wedge a)\\le(b\\vee c)\\wedge a$。",
+    "solution": "(1)$a\\vee(a\\wedge b)\\ge a$；(2)$a\\wedge(b\\vee c)\\ge(a\\wedge b)\\vee(a\\wedge c)$；(3)$b\\wedge(c\\vee a)\\ge(b\\wedge c)\\vee a$。",
+    "explanation": [
+      "对偶变换同时交换 ∧/∨ 并将 ≤ 反向为 ≥；题目要求写对偶式，不是判断原式是否恒真。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-005": {
+    "prompt": "设L为格，$a_1,\\ldots,a_n\\in L$。若 $a_1\\wedge\\cdots\\wedge a_n=a_1\\vee\\cdots\\vee a_n$，证明所有 $a_i$ 相等。",
+    "solution": "记相等的交、并为t。对每个i，按交、并的界性质，$t=\\bigwedge_j a_j\\le a_i\\le\\bigvee_j a_j=t$。由反对称性 $a_i=t$，因此全部相等。",
+    "explanation": [
+      "每个元素都夹在全体交与全体并之间；两端相同即得到结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-006": {
+    "prompt": "设L为格，$a\\le b\\le c$，证明 $a\\vee b=b\\wedge c$。",
+    "solution": "由 $a\\le b$ 得 $a\\vee b=b$；由 $b\\le c$ 得 $b\\wedge c=b$，所以两边相等。",
+    "explanation": [
+      "可比较的两个元素之并为较大者，交为较小者。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-007": {
+    "prompt": "针对图11.7的四元菱形格 $L_2=\\{a,b,c,d\\}$（a为底、d为顶，b、c不可比），求所有子格。",
+    "solution": "全部12个子格底集为：四个单点 $\\{a\\},\\{b\\},\\{c\\},\\{d\\}$；五个二元链 $\\{a,b\\},\\{a,c\\},\\{a,d\\},\\{b,d\\},\\{c,d\\}$；两个三元链 $\\{a,b,d\\},\\{a,c,d\\}$；整个 $\\{a,b,c,d\\}$。",
+    "explanation": [
+      "子格必须对原格的交、并封闭；任何同时含b、c的子格必须含 $b\\wedge c=a,b\\vee c=d$，所以除全集外不可同时含b、c。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243页（书页232）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-008": {
+    "prompt": "$\\langle L,\\le\\rangle$ 为格，固定 $a\\in L$，$S=\\{x\\in L:x\\le a\\}$。证明S为L的子格。",
+    "solution": "$a\\in S$，故非空。若x,y∈S，则 $x\\wedge y\\le x\\le a$；而a是x、y的共同上界，所以 $x\\vee y\\le a$。故交、并均在S中，S为子格。",
+    "explanation": [
+      "要证明子格须说明S内的交并与原格运算一致，直接验证原运算封闭即可。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第243,244页（书页232,233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-009": {
+    "prompt": "求图11.11中每个格内各元素的所有补元（标签沿用原图）。",
+    "solution": "图(a)：a与d互补，b、c均无补元。\n图(c)：底a与顶f互补；b的补元为c、d；e的补元为c、d；c的补元为b、e；d的补元为b、e。\n图(f)：a与f互补，b与e互补；c、d无补元。图(b)(d)(e)不是格，不讨论格的补元。",
+    "explanation": [
+      "逐对要求交等于底、并等于顶；图(c)为两条仅共享端点的三边链，因此不同链的内部元素全部互补。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-010": {
+    "prompt": "说明图11.11中每个格是否为分配格、有补格、布尔格并说明理由。",
+    "solution": "(a)四元链：是分配格；b、c无补元，故不是有补格，也不是布尔格。\n(c)六元双链：有补格；不是分配格，例如取b、c、d，$d\\wedge(b\\vee c)=d\\wedge f=d$，而 $(d\\wedge b)\\vee(d\\wedge c)=a\\vee c=c\\ne d$，故非布尔格。\n(f)同构于 $C_2\\times C_3$，是分配格；c、d无补元，故非有补格、非布尔格。其余三个不是格。",
+    "explanation": [
+      "有限链的积按坐标取min/max，分配律逐坐标成立；有界、有补、分配三条件同时成立才为布尔格。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-011": {
+    "prompt": "$\\langle L,\\wedge,\\vee,0,1\\rangle$ 为有界格，证明 $a\\wedge0=0,a\\vee0=a,a\\wedge1=a,a\\vee1=1$。",
+    "solution": "对任意a有 $0\\le a\\le1$。对于可比较的元素，交等于较小者、并等于较大者。分别对0≤a及a≤1应用即得四式。",
+    "explanation": [
+      "四式都是上下界的定义直接推论。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-012": {
+    "prompt": "判断以下给定集合和运算属于哪些代数系统：(1)$S_1=\\{1,1/2,2,1/3,3,1/4,4\\}$ 的普通乘法；(2)$S_2=\\{a_1,\\ldots,a_n\\},a_i*a_j=a_i,n\\ge2$；(3)$S_3=\\{0,1\\}$ 的普通乘法；(4)$S_4=\\{1,2,3,6\\}$ 的最小公倍数、最大公约数；(5)$S_5=\\{0,1\\}$ 的模2加法、模2乘法。",
+    "solution": "(1)乘法不封闭（$2\\cdot3=6\\notin S_1$），故不是半群或任何所列系统。\n(2)为左投影半群，结合但无双侧单位元，故不是独异点、群；单个所给运算也不是二元格运算系统。\n(3)为交换独异点（也为半群），单位元1；0不可逆，故非群。\n(4)为布尔格，底1、顶6，交=gcd，并=lcm，补对为1↔6、2↔3；因此补上此唯一补运算即是布尔代数。两种运算各自也是交换幂等独异点（lcm单位1，gcd单位6），并非环，因为没有相应加法群。\n(5)是二元域 $\\mathbb F_2$，故也是整环、环；模2加法为二阶群，模2乘法为独异点。给定的模2加法不幂等，故不能直接把它当作格的∨；若改用由域运算导出的∨、∧、补则可得到二元布尔代数。",
+    "explanation": [
+      "分类依赖给定运算，不能仅凭同一个底集合就宣称是格或布尔代数。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-01",
+      "DM-K11-02",
+      "DM-K10-01",
+      "DM-K10-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-013": {
+    "prompt": "布尔代数中 $f=(a\\wedge b)\\vee(a\\wedge b\\wedge c)\\vee(b\\wedge c)$。(1)化简f；(2)求其对偶式。",
+    "solution": "(1)由吸收律，$f=(a\\wedge b)\\vee(b\\wedge c)=b\\wedge(a\\vee c)$。\n(2)原式的对偶为 $f^*=(a\\vee b)\\wedge(a\\vee b\\vee c)\\wedge(b\\vee c)$，可化简为 $b\\vee(a\\wedge c)$。",
+    "explanation": [
+      "中间三项积被第一项吸收；对偶仅交换交并及界常数，本题没有界常数。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-014": {
+    "prompt": "B为布尔代数，证明 $a\\le b\\iff a\\wedge b\\prime=0\\iff a\\prime\\vee b=1$。",
+    "solution": "若a≤b，则 $a\\wedge b\\prime\\le b\\wedge b\\prime=0$，故为0。反之若 $a\\wedge b\\prime=0$，则 $a=a\\wedge(b\\vee b\\prime)=(a\\wedge b)\\vee(a\\wedge b\\prime)=a\\wedge b$，所以a≤b。最后对等式 $a\\wedge b\\prime=0$ 两侧取补，由德摩根律得 $a\\prime\\vee b=1$；取补是可逆的，故三者等价。",
+    "explanation": [
+      "证明需使用布尔代数的分配律及补元律；一般有补格未必满足这些等价。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-015": {
+    "prompt": "对n=1,2,3,4,5，给出所有不同构的n元格，说明哪些分配、有补、布尔。",
+    "solution": "n=1：单点格（若允许0=1则分配、有补且为退化布尔格）。\nn=2：二元链 $C_2$，分配、有补、布尔。\nn=3：三元链 $C_3$，分配，非有补、非布尔。\nn=4：四元链 $C_4$（分配、不有补）、四元菱形 $B_2$（分配、有补、布尔）。\nn=5：共五种：(i)五元链 $C_5$；(ii)在四元菱形下方增加一个新的底；(iii)在四元菱形上方增加一个新的顶；这三种均分配，但非有补、非布尔。(iv)菱形 $M_3$：底顶之间有三个互不可比的元素；(v)五边形 $N_5$：链 $0<p<q<1$ 及一个与p、q均不可比的中间元素r。后两者都有补而不分配，均非布尔。若教材要求0≠1，则单点不列为布尔代数，其余结论不变。",
+    "explanation": [
+      "有限格元数1至5的同构类型数依次为1、1、1、2、5；五元非分配格恰是M₃和N₅。链及在格两端添底/顶的分配性可直接检查。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-016": {
+    "prompt": "布尔代数B上定义 $x\\oplus y=(x\\wedge y\\prime)\\vee(x\\prime\\wedge y)$。它构成什么代数系统？",
+    "solution": "$\\langle B,\\oplus\\rangle$ 是阿贝尔群（故也为交换独异点、半群）。单位元0，因为 $x\\oplus0=x$；每个元素的逆元就是自身，因为 $x\\oplus x=0$；交换显然；结合律由分配、德摩根律展开，两种括号均为“x,y,z中恰有一个或三个取真”的表达式 $xy\\prime z\\prime\\vee x\\prime yz\\prime\\vee x\\prime y\\prime z\\vee xyz$（并列符号表示∧）。",
+    "explanation": [
+      "这是布尔对称差运算；它是指数2的群，不等于格的并运算。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-017": {
+    "prompt": "布尔代数B中，若 $a\\le c$，证明模律 $a\\vee(b\\wedge c)=(a\\vee b)\\wedge c$。",
+    "solution": "由分配律，$(a\\vee b)\\wedge c=(a\\wedge c)\\vee(b\\wedge c)$；a≤c使得a∧c=a，代入即得所求。",
+    "explanation": [
+      "任何分配格都满足模律，布尔代数是其中一种。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-018": {
+    "prompt": "布尔代数B中，证明广义德摩根律：(1)$(a_1\\vee\\cdots\\vee a_n)\\prime=a_1\\prime\\wedge\\cdots\\wedge a_n\\prime$；(2)$(a_1\\wedge\\cdots\\wedge a_n)\\prime=a_1\\prime\\vee\\cdots\\vee a_n\\prime$。",
+    "solution": "对n归纳。n=1显然，n=2为德摩根律。若第一式对n成立，则 $(\\bigvee_{i=1}^{n+1}a_i)\\prime=(\\bigvee_{i=1}^{n}a_i)\\prime\\wedge a_{n+1}\\prime=(\\bigwedge_{i=1}^{n}a_i\\prime)\\wedge a_{n+1}\\prime$，得n+1情形。第二式同样把二元德摩根律反复应用，或由第一式对 $a_i\\prime$ 使用后再取补得到。",
+    "explanation": [
+      "有限多个元素使用结合律消去括号；归纳步骤同时说明结论不限于三个元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244页（书页233）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E011-019": {
+    "prompt": "$B_1,B_2,B_3$ 为布尔代数，证明若 $B_1\\cong B_2,B_2\\cong B_3$，则 $B_1\\cong B_3$。",
+    "solution": "取同构 $f:B_1\\to B_2,g:B_2\\to B_3$，则 $h=g\\circ f$ 为双射。$h(x\\wedge y)=g(f(x)\\wedge f(y))=h(x)\\wedge h(y)$；∨同理；$h(x\\prime)=g(f(x)\\prime)=h(x)\\prime$，且h保0、1。因此h是布尔代数同构，结论成立。",
+    "explanation": [
+      "原图的关系符号为同构≅，不是集合相等；同构的复合仍保全部基本运算及双射性。"
+    ],
+    "knowledge_ids": [
+      "DM-K11-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第244,245,246,247页（书页233,234,235,236）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-001": {
+    "prompt": "从 $\\{1,2,\\ldots,1000\\}$ 中选3个不同数，使和为4的倍数，有多少种方法？",
+    "solution": "模4的四个余数类各250个。允许的无序余数组合为 $(0,0,0),(0,1,3),(0,2,2),(1,1,2),(2,3,3)$，故总数 $\\binom{250}3+250^3+3\\cdot250\\binom{250}2=41\\,541\\,750$。",
+    "explanation": [
+      "先按模4余数分类；同类选两个或三个时必须使用组合数，不能把同一个数重复选取。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 1 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.688,
+          "bottom": 0.714
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 1,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-002": {
+    "prompt": "以凸n边形顶点为顶点、全部三条边均为其内部对角线的三角形有多少个？",
+    "solution": "当 $n\\ge4$ 时为 $\\frac{n(n-4)(n-5)}6$（n=4、5均为0）；n=3也为0。总三角形数为 $\\binom n3$。选含至少一条多边形边的三角形，容斥为 $n(n-2)-n$：每条边配n−2个第三顶点，含两条边者恰为n个连续三顶点三角形，重复计一次。故合格数 $\\binom n3-n(n-2)+n=n(n-4)(n-5)/6$。",
+    "explanation": [
+      "三角形顶点不能在多边形圆周上相邻；上式容斥在n≥4成立，三边形单列。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 2 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.712,
+          "bottom": 0.739
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 2,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-003": {
+    "prompt": "有多少个十进制三位数恰含一个8和一个9？",
+    "solution": "第三个数字可为0至7中的8个。先把8、9放入不同位置有 $3\\cdot2=6$ 种，再填剩余数字，共48；其中0位于百位的两种不是三位数，故 $48-2=46$。",
+    "explanation": [
+      "恰含一个8和一个9排除了第三位再次取8或9。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 3 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.737,
+          "bottom": 0.762
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 3,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-004": {
+    "prompt": "由1、2、3、4这四种数字能构成多少个大于230的三位数？",
+    "solution": "允许数字重复。百位为3或4时有 $2\\cdot4^2=32$ 个；百位为2时十位须为3或4，共 $2\\cdot4=8$ 个；百位为1不合格。总数40。",
+    "explanation": [
+      "题干未要求数字不同，不能套用不重复排列；231已经大于230。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 4 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.761,
+          "bottom": 0.785
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 4,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-005": {
+    "prompt": "从1至9中选不同数字组成七位数，若5、6不相邻，有多少种方法？",
+    "solution": "全部为 $P(9,7)=181440$。5、6相邻时将它们捆成有内部顺序的块，另从剩余7个数字选5个，共 $2\\binom75 6!=30240$。相减得151200。",
+    "explanation": [
+      "不相邻允许只出现5、只出现6或两个都不出现；总数减去两者都在且相邻的情形最直接。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 5 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.784,
+          "bottom": 0.809
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 5,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-006": {
+    "prompt": "有n个不同整数，从中取出两个非空组，要求第一组最小数大于第二组最大数，有多少种方法？",
+    "solution": "选出总共m个数（m≥2）后按大小排好，在相邻两数间选分界线：下部全归第二组，上部全归第一组，共m−1种。因此总数 $\\sum_{m=2}^{n}(m-1)\\binom nm=n2^{n-1}-(2^n-1)=(n-2)2^{n-1}+1$（n≥1）。",
+    "explanation": [
+      "两组内部不计顺序，未选数可留在两组之外；非空条件使分界线只能位于所选序列内部。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 6 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 250,
+      "pdf_page": 261,
+      "segments": [
+        {
+          "page": 261,
+          "top": 0.807,
+          "bottom": 0.849
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 6,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E012-007": {
+    "prompt": "A为n元集合，n为正整数，求 $\\sum_{B\\subseteq A}|B|$。",
+    "solution": "$n2^{n-1}$。固定A中任意元素，它出现在恰好 $2^{n-1}$ 个子集中；把每个元素对所有子集的贡献相加得到结论。也可写 $\\sum_{k=0}^{n}k\\binom nk=n2^{n-1}$。",
+    "explanation": [
+      "这是对“子集及其中一个指定元素”进行双重计数。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-008": {
+    "prompt": "在1至1000（含两端）之间，有多少个整数的各位数字之和小于7？",
+    "solution": "84个。先在000至999中计数，三个数位满足 $x+y+z\\le6$，上界9不构成限制，补一个非负松弛变量后解数为 $\\binom{6+3}3=84$。去掉000，再加入数位和为1的1000，数量仍为84。",
+    "explanation": [
+      "将不足三位的数补前导零用于计数，不把000当作合法正整数。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-009": {
+    "prompt": "用0、1、2、3、4、5组成没有重复数字且大于34521的五位数，有多少个？",
+    "solution": "264个。按首个与34521不同的数位分类：首位4或5有 $2P(5,4)=240$；首位3、第二位5有 $P(4,3)=24$；前缀34后，第三位无法大于5；前缀345后第四位无法大于2；前缀3452后第五位无法大于1。因此共264。",
+    "explanation": [
+      "按第一个更大的数位分类确保不重不漏；计算也已对全部不重复五位排列枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261页（书页250）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-010": {
+    "prompt": "有多少个大于5400、不含2或7且各位数字不重复的整数？",
+    "solution": "94830个。可用数字为 $D=\\{0,1,3,4,5,6,8,9\\}$，最多8位。四位数按前缀计：首位6、8、9给 $3P(7,3)=630$；首位5且次位6、8、9给 $3P(6,2)=90$；前缀54给 $P(6,2)=30$，共750。5至8位时全大于5400，分别为 $7P(7,4)=5880$、$7P(7,5)=17640$、$7P(7,6)=35280$、$7P(7,7)=35280$。合计94830。",
+    "explanation": [
+      "题目没有限制为四位数；必须加上5至8位的全部可能。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第261,262页（书页250,251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-011": {
+    "prompt": "有k种明信片，各种数量不限，给n个不同朋友（k≥n）。(1)每人1张；(2)每人1张且各人种类不同；(3)每人2张不同种类，不同朋友允许相同。分别有多少种寄法？",
+    "solution": "(1)$k^n$；(2)$P(k,n)=k!/(k-n)!$；(3)$\\binom k2^n$。",
+    "explanation": [
+      "朋友彼此可区分；同一人收到的两张不计先后，因此第三项每人的选择是二元子集。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-012": {
+    "prompt": "有k类明信片，第i类有 $\\lambda_i$ 张，将全部送给n个不同朋友，有多少种方法？",
+    "solution": "$\\displaystyle\\prod_{i=1}^{k}\\binom{\\lambda_i+n-1}{n-1}$。每类单独分配，等价于 $x_{i1}+\\cdots+x_{in}=\\lambda_i$ 的非负整数解；各类独立相乘。",
+    "explanation": [
+      "同类明信片不可区分，朋友可区分；允许某位朋友得到0张。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-013": {
+    "prompt": "书架上24卷百科全书中选5卷，要求任意两卷编号不相继，有多少选法？",
+    "solution": "$\\binom{20}5=15504$。若编号 $1\\le x_1<\\cdots<x_5\\le24$ 且 $x_{i+1}\\ge x_i+2$，令 $y_i=x_i-(i-1)$，则 $1\\le y_1<\\cdots<y_5\\le20$，给出与20选5的一一对应。",
+    "explanation": [
+      "平移消除每一对相邻所选编号之间必须留下的一卷。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-014": {
+    "prompt": "用多重集 $\\{5\\cdot a,1\\cdot b,1\\cdot c,1\\cdot d,1\\cdot e\\}$ 的全部元素组成序列，求：(1)没有两个a相邻；(2)b、c、d、e任意两个均不相邻。",
+    "solution": "(1)$4!=24$。把b、c、d、e排好有4!种，五个a只能各占它们前后五个空隙，形成a字母a字母a字母a字母a。\n(2)$\\binom64 4!=360$。先排五个相同的a，产生六个空隙，选四个不同空隙放入b、c、d、e。",
+    "explanation": [
+      "第一问原图是“没有两个a相邻”，不是“没有四个a相邻”。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-015": {
+    "prompt": "S为3元集，求不同的二元运算、一元运算数，可交换二元运算数、幂等二元运算数、既不交换也不幂等的二元运算数；推广至n元集。",
+    "solution": "n元集上：二元运算共 $n^{n^2}$，一元运算共 $n^n$；交换二元运算 $n^{n(n+1)/2}$；幂等二元运算 $n^{n(n-1)}$；同时交换且幂等为 $n^{n(n-1)/2}$。由容斥，既不交换也不幂等数为 $n^{n^2}-n^{n(n+1)/2}-n^{n(n-1)}+n^{n(n-1)/2}$。\nn=3时依次为19683、27、729、729、18252。",
+    "explanation": [
+      "运算表每格有n种选择；交换表只自由填写上三角含对角；幂等固定对角；同时满足时仅严格上三角自由。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-016": {
+    "prompt": "$S=\\{1,2,\\ldots,n+1\\}$，取有序三元组(x,y,z)满足z>x且z>y（允许x=y）。(1)若z=k+1，证明恰有k²个；(2)按x=y、x<y、x>y分为A、B、C，证明 $|A|=\\binom{n+1}2,|B|=|C|=\\binom{n+1}3$；(3)证明 $\\sum_{k=1}^{n}k^2=\\binom{n+1}2+2\\binom{n+1}3$。",
+    "solution": "(1)x、y各可独立取1至k，故k²。(2)A中任选两个不同数，较小者同时作x、y，较大者作z，与二元子集一一对应。B中任选三个不同数，按递增依次作x、y、z，故为三选；C同理交换x、y。(3)第一问按z计数给出左边，第二问按x与y的大小计数给出右边，两者是同一组对象的总数，故恒等。进一步化简为 $n(n+1)(2n+1)/6$。",
+    "explanation": [
+      "“选3个数”在这里是有序三元组，不能擅自禁止重复x=y；题目第二问已明确包含该情况。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-017": {
+    "prompt": "每个登录密码长4至6字符，每位为大写英文字母或数字，且至少含一个数字，有多少个密码？",
+    "solution": "$\\sum_{k=4}^{6}(36^k-26^k)=1\\,917\\,674\\,000$。",
+    "explanation": [
+      "长度k的全部密码36^k，减掉26^k个全字母密码；各长度互斥再相加。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-018": {
+    "prompt": "求 $(2x-3y)^{25}$ 展开式中 $x^{12}y^{13}$ 的系数。",
+    "solution": "$\\binom{25}{13}2^{12}(-3)^{13}=-33\\,959\\,763\\,545\\,702\\,400$。",
+    "explanation": [
+      "从25个因子中选13个贡献−3y，余下12个贡献2x，负号由13为奇数决定。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-019": {
+    "prompt": "用数学归纳法证明二项式定理。",
+    "solution": "命题为 $(a+b)^n=\\sum_{k=0}^{n}\\binom nk a^{n-k}b^k$。n=0成立。假设对n成立，则乘(a+b)并分拆为两和，$b^k a^{n+1-k}$ 的系数为 $\\binom nk+\\binom n{k-1}=\\binom{n+1}k$；两端系数均为1。故得到n+1的展开式，归纳完成。",
+    "explanation": [
+      "组合数采用越界为0的约定，可以把边界项与中间项合并；核心是帕斯卡恒等式。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-020": {
+    "prompt": "求 $11^4$，并用二项式定理说明结果。",
+    "solution": "$11^4=(10+1)^4=10^4+4\\cdot10^3+6\\cdot10^2+4\\cdot10+1=14641$。",
+    "explanation": [
+      "二项式系数1、4、6、4、1依次恰为十进制各位，无需进位。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-021": {
+    "prompt": "给定正整数n，哪些k使 $\\binom nk$ 最大？证明。",
+    "solution": "n为偶数时唯一最大为k=n/2；n为奇数时k=(n−1)/2与(n+1)/2并列最大。因为 $\\binom n{k+1}/\\binom nk=(n-k)/(k+1)$，该比值在 $k<(n-1)/2$ 时大于1，等于该中点时等于1，之后小于1，所以组合数先增后减，结论成立。",
+    "explanation": [
+      "限定0≤k≤n，比较相邻项的比值即可准确识别中间的一个或两个峰值。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-022": {
+    "prompt": "证明：(1)$\\sum_{k=0}^n(-1)^k\\binom nk2^{n-k}=1$；(2)$\\sum_{k=0}^n(-1)^k\\binom nk3^{n-k}=2^n$；(3)$\\sum_{k=1}^{n+1}\\frac1k\\binom n{k-1}=\\frac{2^{n+1}-1}{n+1}$。",
+    "solution": "(1)由二项式定理为 $(2-1)^n=1$。(2)同理为 $(3-1)^n=2^n$。(3)用 $\\frac1k\\binom n{k-1}=\\frac1{n+1}\\binom{n+1}k$，因此左边 $=\\frac1{n+1}\\sum_{k=1}^{n+1}\\binom{n+1}k=\\frac{2^{n+1}-1}{n+1}$。",
+    "explanation": [
+      "第三问必须从1开始，避免1/k在k=0无定义，并扣去组合数总和中的k=0项。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262页（书页251）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-023": {
+    "prompt": "求和：(1)$\\sum_{k=0}^{m}\\binom{n-k}{m-k}$；(2)$\\sum_{k=0}^{n}\\binom{r+k}k\\binom{m-k}{n-k}$；(3)$\\sum_{k=0}^{n}\\binom{2n}{2k}$。",
+    "solution": "(1)$\\binom{n+1}m$（0≤m≤n），把组合数写成 $\\binom{n-k}{n-m}$ 后用曲棍球杆恒等式。\n(2)$\\binom{m+r+1}n$（0≤n≤m，r≥0）。用生成函数：$\\sum_{k\\ge0}\\binom{r+k}k x^k(1+x)^{m-k}=(1+x)^m(1-\\frac{x}{1+x})^{-r-1}=(1+x)^{m+r+1}$，取x^n系数即得。\n(3)当n≥1为 $2^{2n-1}$，因为 $(1+1)^{2n}+(1-1)^{2n}=2\\sum_k\\binom{2n}{2k}$；n=0时为1。",
+    "explanation": [
+      "第二问的系数提取按形式幂级数进行，仅k≤n项对x^n有贡献；这也与第24题(6)同型。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第262,263页（书页251,252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-024": {
+    "prompt": "证明组合恒等式：(1)$\\sum_{k=2}^{n-1}(n-k)^2\\binom{n-1}{n-k}=n(n-1)2^{n-3}-(n-1)^2$；(2)$\\sum_{k=r}^{n}(-1)^k\\binom nk\\binom kr=0$（0≤r<n）；(3)$\\sum_{k=0}^{n-1}\\binom nk\\binom n{k+1}=\\frac{(2n)!}{(n-1)!(n+1)!}$；(4)$\\sum_{k=0}^{n}\\frac{(-1)^k}{k+1}\\binom nk=\\frac1{n+1}$；(5)$\\sum_{k=1}^{n}\\frac{(-1)^{k-1}}k\\binom nk=1+\\frac12+\\cdots+\\frac1n$；(6)$\\sum_{k=0}^{m}\\binom{n-k}{m-k}\\binom{r+k}k=\\binom{n+r+1}m$（0≤m≤n，r≥0）。",
+    "solution": "(1)令j=n−k，和为 $\\sum_{j=1}^{n-2}j^2\\binom{n-1}j$。对m=n−1有 $\\sum_{j=0}^{m}j^2\\binom mj=m(m-1)2^{m-2}+m2^{m-1}=m(m+1)2^{m-2}$，扣去j=m项m²即得。\n(2)用 $\\binom nk\\binom kr=\\binom nr\\binom{n-r}{k-r}$，左边为 $(-1)^r\\binom nr(1-1)^{n-r}=0$。若n=r，则原书省略条件下左边为 $(-1)^n$，须排除此边界。\n(3)把第二项写成 $\\binom n{n-1-k}$，由范德蒙德恒等式得 $\\binom{2n}{n-1}$，即右边。\n(4)左边为 $\\int_0^1(1-x)^n\\,dx=1/(n+1)$。\n(5)左边为 $\\int_0^1[1-(1-x)^n]/x\\,dx$。令t=1−x，积分变成 $\\int_0^1(1+t+\\cdots+t^{n-1})\\,dt=\\sum_{j=1}^{n}1/j$。\n(6)取 $\\sum_{k\\ge0}\\binom{r+k}k x^k(1+x)^{n-k}=(1+x)^{n+r+1}$ 的x^m系数即得。",
+    "explanation": [
+      "第(1)式通常取n≥3；二阶矩由j²=j(j−1)+j及二项式求导得到。所有其余式已按各自的合法非负整数参数范围验证。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-025": {
+    "prompt": "从多重集 $S=\\{\\infty\\cdot0,\\infty\\cdot1,\\infty\\cdot2\\}$ 取n个数排列，相邻数字不得相同，有多少排法？",
+    "solution": "n≥1时为 $3\\cdot2^{n-1}$。第一位三选，之后每位从不同于前一位的两个数字中选，独立乘法计数；n=0时空排列为1种。",
+    "explanation": [
+      "每种数字数量无限，不存在总配额；唯一限制来自前一位置。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-026": {
+    "prompt": "给出多重集 $\\{2\\cdot a,1\\cdot b,3\\cdot c\\}$ 的全部3排列与3组合。",
+    "solution": "3排列共19个：aab、aac、aba、abc、aca、acb、acc、baa、bac、bca、bcc、caa、cab、cac、cba、cbc、cca、ccb、ccc。\n3组合共6个：aab、aac、abc、acc、bcc、ccc（字母排列顺序不计）。",
+    "explanation": [
+      "枚举时a最多2个、b最多1个、c最多3个；组合按各字母个数计，同一组合的不同顺序产生排列。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-027": {
+    "prompt": "3只蓝球、2只红球、2只黄球排成一列，黄球不相邻，有多少种方法？",
+    "solution": "$\\frac{5!}{3!2!}\\binom62=10\\cdot15=150$。先排蓝红五球，再在六个空隙中选两个放相同黄球。",
+    "explanation": [
+      "同色球不可区分；每个空隙至多一个黄球确保不相邻。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-028": {
+    "prompt": "$S=\\{n_1\\cdot a_1,n_2\\cdot a_2,\\ldots,n_k\\cdot a_k\\}$，求其各种大小的子多重集总数。",
+    "solution": "$\\prod_{i=1}^{k}(n_i+1)$。对每个a_i，可取0、1、…、n_i个，共n_i+1种，所有种类独立选择；包括空子多重集。",
+    "explanation": [
+      "若题意另外排除空集，则在结果上减1；原题未排除。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。"
+  },
+  "SRC-DM2T-E012-029": {
+    "prompt": "$S=\\{1\\cdot a_1,\\ldots,1\\cdot a_t,\\infty\\cdot a_{t+1},\\ldots,\\infty\\cdot a_k\\}$，求r组合数。",
+    "solution": "若k>t，答案为 $\\displaystyle\\sum_{j=0}^{\\min(t,r)}\\binom tj\\binom{k-t+r-j-1}{r-j}$。其中先从前t种有限元素中选j种，再把剩余r−j个分配给k−t种无限元素。等价地为生成函数 $(1+x)^t/(1-x)^{k-t}$ 的x^r系数。若k=t，则仅为 $\\binom tr$（r>t时为0）。",
+    "explanation": [
+      "组合不计排列次序，有限的前t种每种至多选一次，后面的种类可任意重复。"
+    ],
+    "knowledge_ids": [
+      "DM-K12-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第263页（书页252）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E012-029",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 12 · 第 29 题",
+      "chapter": 12,
+      "section_id": "DM-C12-S2",
+      "printed_page": 252,
+      "pdf_page": 263,
+      "segments": [
+        {
+          "page": 263,
+          "top": 0.547,
+          "bottom": 0.58
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 29,
+      "group_title": "习题 12",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K12-02"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E007-018": {
+    "prompt": "证明定理7.4的(1)(2)(4)：(1)$F\\circ(G\\cup H)=(F\\circ G)\\cup(F\\circ H)$；(2)$(G\\cup H)\\circ F=(G\\circ F)\\cup(H\\circ F)$；(4)$(G\\cap H)\\circ F\\subseteq(G\\circ F)\\cap(H\\circ F)$。",
+    "solution": "按本书先左后右的关系复合。\n(1)$(x,y)\\in F\\circ(G\\cup H)\\iff\\exists t[xFt\\land(tGy\\lor tHy)]\\iff(\\exists t[xFt\\land tGy])\\lor(\\exists t[xFt\\land tHy])$，即属于右边。\n(2)同理，$(x,y)\\in(G\\cup H)\\circ F\\iff\\exists t[(xGt\\lor xHt)\\land tFy]\\iff(x,y)\\in(G\\circ F)\\cup(H\\circ F)$。\n(4)若$(x,y)$在左边，则存在同一个t使xGt、xHt、tFy，故它同时在G∘F及H∘F中，从而属于右边。反向不一定成立，因为右边两次存在量词的见证可不同。",
+    "explanation": [
+      "定理原文PDF128（书页117），习题PDF151。对并的存在量词可分配；交的两个见证不必相同，只能推出包含。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第151页（书页140）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第128页。"
+  },
+  "SRC-DM2T-E007-019": {
+    "prompt": "证明定理7.5的(2)(3)：(2)$F[A\\cup B]=F[A]\\cup F[B]$；(3)$F\\upharpoonright(A\\cap B)=(F\\upharpoonright A)\\cap(F\\upharpoonright B)$。",
+    "solution": "(2)$y\\in F[A\\cup B]\\iff\\exists x[(xFy)\\land(x\\in A\\lor x\\in B)]\\iff y\\in F[A]\\lor y\\in F[B]$，得像的并式。\n(3)$(x,y)\\in F\\upharpoonright(A\\cap B)\\iff xFy\\land x\\in A\\land x\\in B$，当且仅当同时属于两种限制，故等式成立。",
+    "explanation": [
+      "定理原文PDF128—129（书页117—118），习题PDF151。方括号F[A]表示集合像，限制符号表示保留第一坐标落在A内的有序对，两者不可混同。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第151页（书页140）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第128、129页。"
+  },
+  "SRC-DM2T-E007-023": {
+    "prompt": "$A=\\{1,2,3\\}$，对图7.11的十二个关系(a)—(l)，写出关系矩阵并判断自反、反自反、对称、反对称、传递性。",
+    "solution": "矩阵行列顺序均为1、2、3，五种性质逐列列出：\n\n|图|矩阵|自反|反自反|对称|反对称|传递|\n|---|---|---|---|---|---|---|\n|(a)|$\\begin{pmatrix}1&1&0\\\\1&1&1\\\\1&0&1\\end{pmatrix}$|是|否|否|否|否|\n|(b)|$\\begin{pmatrix}1&1&0\\\\1&0&1\\\\1&0&0\\end{pmatrix}$|否|否|否|否|否|\n|(c)|$\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}$|是|否|是|否|是|\n|(d)|$\\begin{pmatrix}1&1&1\\\\0&1&1\\\\0&1&1\\end{pmatrix}$|是|否|否|否|是|\n|(e)|$\\begin{pmatrix}0&1&1\\\\1&1&0\\\\1&1&0\\end{pmatrix}$|否|否|否|否|否|\n|(f)|$\\begin{pmatrix}1&1&1\\\\1&0&0\\\\1&0&0\\end{pmatrix}$|否|否|是|否|否|\n|(g)|$\\begin{pmatrix}1&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$|是|否|否|是|否|\n|(h)|$\\begin{pmatrix}1&1&0\\\\1&1&1\\\\0&1&1\\end{pmatrix}$|是|否|是|否|否|\n|(i)|$\\begin{pmatrix}0&1&1\\\\1&0&1\\\\1&1&1\\end{pmatrix}$|否|否|是|否|否|\n|(j)|$\\begin{pmatrix}1&0&1\\\\1&0&0\\\\0&1&0\\end{pmatrix}$|否|否|否|是|否|\n|(k)|$\\begin{pmatrix}1&0&0\\\\1&1&0\\\\1&0&1\\end{pmatrix}$|是|否|否|是|是|\n|(l)|$\\begin{pmatrix}0&0&1\\\\1&1&0\\\\0&1&1\\end{pmatrix}$|否|否|否|是|否|",
+    "explanation": [
+      "图位于PDF152（书页141），题干在PDF151。关系矩阵按“行顶点→列顶点”记1；已逐条对图并对全部27个三元组检查传递性。注意线条相交不代表顶点；有环但不全有环时，自反和反自反都不成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第151页（书页140）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第151、152页。",
+    "source": {
+      "id": "SRC-DM2T-E007-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 7 · 第 23 题",
+      "chapter": 7,
+      "section_id": "DM-C07-S4",
+      "printed_page": 140,
+      "pdf_page": 151,
+      "segments": [
+        {
+          "page": 151,
+          "top": 0.75085,
+          "bottom": 0.79575
+        },
+        {
+          "page": 152,
+          "top": 0.06,
+          "bottom": 0.698
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 23,
+      "group_title": "习题 7",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": true,
+      "knowledge_ids": [
+        "DM-K07-03",
+        "DM-K07-04"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E007-024": {
+    "prompt": "对表7.2每个标√的性质给出保持性的证明，对每个标×者给反例。表列为自反、反自反、对称、反对称、传递，行是逆、交、并、差、复合。",
+    "solution": "完整表为：\n\n|运算|自反|反自反|对称|反对称|传递|\n|---|---|---|---|---|---|\n|$R_1^{-1}$|√|√|√|√|√|\n|$R_1\\cap R_2$|√|√|√|√|√|\n|$R_1\\cup R_2$|√|√|√|×|×|\n|$R_1-R_2$|×|√|√|√|×|\n|$R_1\\circ R_2$|√|×|×|×|×|\n\n√的证明：逆关系交换有序对坐标，所以对角线是否存在不变、对称和反对称条件不变；若xR⁻¹y、yR⁻¹z，则zRy、yRx，由R传递得zRx，即xR⁻¹z。交关系中每条边同时属于两者，各定义直接保持；传递时两段路径在两关系内各自推出同一首尾边。并关系的自反性因两者都含恒等关系、反自反性因都不含对角边、对称性因每条边在其原关系内已有反向边。差关系的反自反、反对称性由它是R₁的子关系保持；若两关系均对称，xR₁y且非xR₂y当且仅当yR₁x且非yR₂x，所以差也对称。复合的自反性：每个x有xR₁x、xR₂x，用x作见证即有x(R₁∘R₂)x。\n\n×的全部反例（未列的有序对不属于关系，复合先左后右）：\n1.并不保反对称：A={1,2}，R₁={(1,2)}、R₂={(2,1)}，二者反对称，并却含双向边。\n2.并不保传递：A={1,2,3}，R₁={(1,2)}、R₂={(2,3)}，均传递，并缺(1,3)。\n3.差不保自反：非空A，R₁=R₂=I_A，差为空。\n4.差不保传递：A={1,2,3}，R₁=A²，R₂={(1,3)}，均传递，差含(1,2),(2,3)却无(1,3)。\n5.复合不保反自反：R₁={(1,2)}、R₂={(2,1)}，复合含(1,1)。\n6.复合不保对称：R₁={(1,2),(2,1)}、R₂={(2,3),(3,2)}，均对称，复合含(1,3)却无(3,1)。\n7.复合不保反对称：A={1,2}，R₁={(1,2),(2,2)}、R₂={(2,1),(2,2)}，均反对称，复合=A²。\n8.复合不保传递：A={1,2,3}，R₁={(1,3),(2,2)}、R₂={(3,1),(3,2),(2,1)}，二者均传递，复合={(1,1),(1,2),(2,1)}，含(2,1),(1,2)却无(2,2)。",
+    "explanation": [
+      "对照PDF137（书页126）原表，共17个√、8个×；所有反例的前提性质及复合结果均已有限枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第151页（书页140）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第137页。"
+  },
+  "SRC-DM2T-E007-027": {
+    "prompt": "证明定理7.10(2)：关系R的对称闭包为 $s(R)=R\\cup R^{-1}$。",
+    "solution": "令S=R∪R⁻¹。它包含R，且S⁻¹=R⁻¹∪R=S，所以S对称。若T是任意含R的对称关系，则R⊆T且R⁻¹⊆T⁻¹=T，所以S⊆T。S满足包含R、对称、在此条件下最小这三项，故是对称闭包。",
+    "explanation": [
+      "原定理PDF138（书页127），对称闭包的最小性必须证明，不能只检查对称。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第152页（书页141）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第138页。"
+  },
+  "SRC-DM2T-E007-028": {
+    "prompt": "证明定理7.11的(2)(3)：R对称当且仅当s(R)=R；R传递当且仅当t(R)=R。",
+    "solution": "(2)若R对称，则R本身是含R的对称关系，按闭包最小性s(R)⊆R；反向包含总成立，故相等。若s(R)=R，则s(R)本来对称，所以R对称。\n(3)若R传递，则R本身是含R的传递关系，最小性得t(R)⊆R；又R⊆t(R)，得相等。反之若t(R)=R，因t(R)传递，R也传递。",
+    "explanation": [
+      "定理原文PDF140—141（书页129—130）；这两条都是闭包的不动点性质。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第152页（书页141）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第140、141页。"
+  },
+  "SRC-DM2T-E007-029": {
+    "prompt": "证明定理7.12：非空集合A上，若 $R_1\\subseteq R_2$，则 $r(R_1)\\subseteq r(R_2)$、$s(R_1)\\subseteq s(R_2)$、$t(R_1)\\subseteq t(R_2)$。",
+    "solution": "由R₁⊆R₂可得R₁∪I_A⊆R₂∪I_A，即第一式；且R₁⁻¹⊆R₂⁻¹，所以R₁∪R₁⁻¹⊆R₂∪R₂⁻¹，即第二式。对每个n≥1，R₁中每条长n路径也是R₂中路径，故R₁ⁿ⊆R₂ⁿ。取所有n的并，得t(R₁)=⋃ₙR₁ⁿ⊆⋃ₙR₂ⁿ=t(R₂)。",
+    "explanation": [
+      "原定理PDF141（书页130）；闭包公式见PDF138，先保边再保任意长度路径。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第152页（书页141）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第141页。"
+  },
+  "SRC-DM2T-E007-030": {
+    "prompt": "证明定理7.13的(1)(3)：(1)若R自反，则s(R)、t(R)自反；(3)若R传递，则r(R)传递。",
+    "solution": "(1)若R自反，I_A⊆R；所有闭包都含R，故I_A⊆s(R)、I_A⊆t(R)，两者自反。\n(3)r(R)=R∪I_A。任取(x,y),(y,z)∈r(R)：若两条边都在R，由传递性得(x,z)∈R；若第一条属于I_A，x=y，故(x,z)等于第二条边；若第二条属于I_A，y=z，故(x,z)等于第一条边。各种情况都落在r(R)，故传递。",
+    "explanation": [
+      "原定理PDF141（书页130）；添加自环不会制造缺失首尾边的新路径。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第152页（书页141）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理/图表另核对PDF第141页。"
+  },
+  "SRC-DM2T-E007-047": {
+    "prompt": "$A=\\{1,2,\\ldots,12\\}$，$\\preceq$ 为整除关系，$B=\\{x\\in A:2\\preceq x\\preceq4\\}$。求B的上界、下界、最小上界及最大下界。",
+    "solution": "条件表示 $2\\mid x$ 且 $x\\mid4$，故B={2,4}。共同上界为A内4的倍数 $\\{4,8,12\\}$；共同下界为A内2的正因子 $\\{1,2\\}$；最小上界为4，最大下界为2。",
+    "explanation": [
+      "原图PDF154（书页143）在B定义中使用与“整除关系”相同的偏序符号，不能换成通常数值大小；边界按整除偏序取。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-08"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第154页（书页143）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。",
+    "source": {
+      "id": "SRC-DM2T-E007-047",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 7 · 第 47 题",
+      "chapter": 7,
+      "section_id": "DM-C07-S7",
+      "printed_page": 143,
+      "pdf_page": 154,
+      "segments": [
+        {
+          "page": 154,
+          "top": 0.706,
+          "bottom": 0.766
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "source_number": 47,
+      "group_title": "习题 7",
+      "mapping_basis": "对照校订后的实际题干与本章知识点映射",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K07-08"
+      ],
+      "mapping_status": "visually_reviewed_topics",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E008-032": {
+    "prompt": "证明定理8.6：任意集合A、B、C满足等势的自反性、对称性、传递性：(1)A≈A；(2)A≈B则B≈A；(3)A≈B且B≈C则A≈C。",
+    "solution": "(1)恒等函数I_A:A→A是双射，故A≈A。(2)若f:A→B是双射，逆函数f⁻¹:B→A也是双射，故B≈A。(3)若f:A→B、g:B→C均双射，则h(x)=g(f(x))也是双射：g、f单射使h单射；对c∈C先取g(b)=c，再取f(a)=b，使h(a)=c，故满。于是A≈C。",
+    "explanation": [
+      "定理原文PDF170（书页159），习题PDF185；按本书复合符号第三项h=f∘g，直接写h(x)可避免记号混淆。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03",
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第185页（书页174）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理另核对PDF第170页。"
+  },
+  "SRC-DM2T-E008-033": {
+    "prompt": "证明定理8.8的(1)(3)：以 $A\\preccurlyeq B$ 表示存在单射A→B，则(1)$A\\preccurlyeq A$；(3)$A\\preccurlyeq B$ 且 $B\\preccurlyeq C$ 蕴含 $A\\preccurlyeq C$。",
+    "solution": "(1)恒等函数I_A是单射，故A≼A。(3)取单射f:A→B、g:B→C，定义h(x)=g(f(x))。若h(x₁)=h(x₂)，由g单射得f(x₁)=f(x₂)，再由f单射得x₁=x₂，所以h为A→C的单射，故A≼C。",
+    "explanation": [
+      "原文PDF171（书页160），这里只证明题目要求的自反与传递，不需使用较深的康托尔—伯恩斯坦定理。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03",
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材扫描习题的补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材扫描PDF第185页（书页174）校订题干、公式及图表；解答按定义、代数计算或有限枚举复核。 定理另核对PDF第171页。"
+  }
+}

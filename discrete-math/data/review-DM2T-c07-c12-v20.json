@@ -1,0 +1,1351 @@
+{
+  "SRC-DM2T-E007-001": {
+    "prompt": "已知 $A=\\{\\varnothing,\\{\\varnothing\\}\\}$，求 $A\\times P(A)$。",
+    "solution": "记 $u=\\varnothing,v=\\{\\varnothing\\}$。$P(A)=\\{\\varnothing,\\{u\\},\\{v\\},\\{u,v\\}\\}$；$A\\times P(A)=\\{(u,\\varnothing),(u,\\{u\\}),(u,\\{v\\}),(u,\\{u,v\\}),(v,\\varnothing),(v,\\{u\\}),(v,\\{v\\}),(v,\\{u,v\\})\\}$。",
+    "explanation": [
+      "先列出二元集合的四个子集，再将 A 的每个元素与四个子集分别配对，共 8 个有序对。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-002": {
+    "prompt": "对于任意集合 $A,B,C$，若 $A\\times B\\subseteq A\\times C$，是否一定有 $B\\subseteq C$ 成立？为什么？",
+    "solution": "不一定。反例：$A=\\varnothing,B=\\{1\\},C=\\varnothing$，两笛卡儿积均为空而 $B\\nsubseteq C$。若附加 $A\\ne\\varnothing$，结论成立。",
+    "explanation": [
+      "在非空情形取固定 $a\\in A$；对任意 $b\\in B$，$(a,b)\\in A\\times B\\subseteq A\\times C$，所以 $b\\in C$。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-003": {
+    "prompt": "设 $A,B,C,D$ 是任意集合。(1)证明 $(A\\cap B)\\times(C\\cap D)=(A\\times C)\\cap(B\\times D)$；(2)判断 $(A\\cup B)\\times(C\\cup D)=(A\\times C)\\cup(B\\times D)$ 和 $(A-B)\\times(C-D)=(A\\times C)-(B\\times D)$，真则证明，假则举反例。",
+    "solution": "(1)成立。(2)两个等式均不恒成立。第一个取 $A=C=\\{1\\},B=D=\\{2\\}$，左边多出 $(1,2),(2,1)$。第二个取 $A=B=\\{1\\},C=\\{1\\},D=\\varnothing$，左边为空、右边为 $\\{(1,1)\\}$。",
+    "explanation": [
+      "(1)任取 $(x,y)$，其属于左边当且仅当 $x\\in A\\land x\\in B\\land y\\in C\\land y\\in D$，也当且仅当同时属于 $A\\times C$ 和 $B\\times D$。",
+      "并集会产生交叉配对；差集的右边只要求“并非同时落入 B 和 D”，左边却要求两个坐标分别避开 B 和 D。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-004": {
+    "prompt": "判断并证明或举反例：(1)$A\\cup(B\\times C)=(A\\cup B)\\times(A\\cup C)$；(2)$A\\times(B\\cap C)=(A\\times B)\\cap(A\\times C)$；(3)存在集合 $A$ 使 $A\\subseteq A\\times A$；(4)$P(A)\\times P(A)=P(A\\times A)$。",
+    "solution": "(1)假，取 $A=\\{1\\},B=C=\\varnothing$，左边为 $\\{1\\}$、右边为 $\\{(1,1)\\}$。(2)真。(3)真，$A=\\varnothing$ 即可。(4)假，取 $A=\\varnothing$，左边为 $\\{(\\varnothing,\\varnothing)\\}$，右边为 $\\{\\varnothing\\}$。",
+    "explanation": [
+      "(2)逐元素有 $(x,y)\\in A\\times(B\\cap C)\\iff x\\in A\\land y\\in B\\land y\\in C$，正是右边的成员条件。其余小题代入所给反例或例子直接检查。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-005": {
+    "prompt": "设 $A,B$ 为任意集合，证明：若 $A\\times A=B\\times B$，则 $A=B$。",
+    "solution": "任取 $a\\in A$，$(a,a)\\in A\\times A=B\\times B$，故 $a\\in B$，所以 $A\\subseteq B$。对称地 $B\\subseteq A$，从而 $A=B$。",
+    "explanation": [
+      "用对角有序对同时检查两个坐标；证明同样覆盖空集情形。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-006": {
+    "prompt": "列出从集合 $A=\\{1,2\\}$ 到 $B=\\{1\\}$ 的所有二元关系。",
+    "solution": "$\\varnothing,\\{(1,1)\\},\\{(2,1)\\},\\{(1,1),(2,1)\\}$。",
+    "explanation": [
+      "$A\\times B$ 有两个元素；每个二元关系是该集合的一个子集，因此恰有 $2^2=4$ 个。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-02",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-007": {
+    "prompt": "列出集合 $A=\\{2,3,4\\}$ 上的恒等关系 $I_A$、全域关系 $E_A$、小于等于关系 $L_A$、整除关系 $D_A$。",
+    "solution": "$I_A=\\{(2,2),(3,3),(4,4)\\}$；$E_A=A\\times A$（9 对）；$L_A=\\{(2,2),(2,3),(2,4),(3,3),(3,4),(4,4)\\}$；$D_A=\\{(2,2),(2,4),(3,3),(4,4)\\}$。",
+    "explanation": [
+      "按相等、任意配对、小于等于、整除四种判定条件分别检查 9 个候选有序对。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-008": {
+    "prompt": "列出集合 $A=\\{\\varnothing,\\{\\varnothing\\},\\{\\varnothing,\\{\\varnothing\\}\\},\\{\\varnothing,\\{\\varnothing\\},\\{\\varnothing,\\{\\varnothing\\}\\}\\}\\}$ 上的包含关系。",
+    "solution": "依次记题中的四个集合为 $a_0,a_1,a_2,a_3$。包含关系为 $\\{(a_i,a_j):0\\le i\\le j\\le3\\}$，即四个对角有序对及 $(a_0,a_1),(a_0,a_2),(a_0,a_3),(a_1,a_2),(a_1,a_3),(a_2,a_3)$。",
+    "explanation": [
+      "这些集合按包含关系构成链 $a_0\\subset a_1\\subset a_2\\subset a_3$；包含关系还应列出每个集合与自身。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-009": {
+    "prompt": "设 $A=\\{1,2,4,6\\}$，列出关系：(1)$R=\\{(x,y):x,y\\in A\\land x+y\\ne2\\}$；(2)$|x-y|=1$；(3)$x/y\\in A$；(4)$y$ 为素数。",
+    "solution": "(1) $R=\\{\\langle 1,2\\rangle,\\langle 1,4\\rangle,\\langle 1,6\\rangle,\\langle 2,1\\rangle,\\langle 2,2\\rangle,\\langle 2,4\\rangle,\\langle 2,6\\rangle,\\langle 4,1\\rangle,\\langle 4,2\\rangle,\\langle 4,4\\rangle,\\langle 4,6\\rangle,\\langle 6,1\\rangle,\\langle 6,2\\rangle,\\langle 6,4\\rangle,\\langle 6,6\\rangle\\}$。\n\n(2) $R=\\{\\langle 1,2\\rangle,\\langle 2,1\\rangle\\}$。\n\n(3) $R=\\{\\langle 1,1\\rangle,\\langle 2,1\\rangle,\\langle 2,2\\rangle,\\langle 4,1\\rangle,\\langle 4,2\\rangle,\\langle 4,4\\rangle,\\langle 6,1\\rangle,\\langle 6,6\\rangle\\}$。\n\n(4) $R=\\{\\langle 1,2\\rangle,\\langle 2,2\\rangle,\\langle 4,2\\rangle,\\langle 6,2\\rangle\\}$。",
+    "explanation": [
+      "(1)只有 (1,1) 不符合；(2)检查差的绝对值；(3)逐个计算商；(4)A 中只有 2 是素数。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-010": {
+    "prompt": "在 $\\mathbb Z^+$ 上定义 $xRy\\iff x\\mid y$，$xSy\\iff5x\\le y$。判断：(1)$R\\cup S$ 中的 $(2,6),(3,17),(2,1),(0,0)$；(2)$R\\cap S$ 中的 $(3,6),(1,2),(2,12)$；(3)$\\neg R$ 中的 $(1,5),(2,8),(3,15)$（以全域关系为全集）。",
+    "solution": "(1)属于的为 $(2,6),(3,17)$；$(2,1)$ 不属于，$(0,0)$ 不在载体 $\\mathbb Z^+\\times\\mathbb Z^+$ 中。(2)仅 $(2,12)$ 属于。(3)三个有序对均不属于。",
+    "explanation": [
+      "并集要求整除或 $5x\\le y$ 至少一个成立；交集要求同时成立。补关系要求“不整除”，但 1 整除 5、2 整除 8、3 整除 15。题中给了 0，须先按原书的正整数载体排除。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-011": {
+    "prompt": "$R_i(x)=\\{y:xR_i y\\}$。设 $X=\\{-4,-3,-2,-1,0,1,2,3,4\\}$，$R_1=\\{(x,y)\\in X^2:x<y\\}$，$R_2=\\{(x,y)\\in X^2:y-1<x<y+2\\}$，$R_3=\\{(x,y)\\in X^2:x^2\\le y\\}$。求 $R_1(0),R_1(1),R_2(0),R_2(-1),R_3(3)$。",
+    "solution": "$R_1(0)=\\{1,2,3,4\\}$，$R_1(1)=\\{2,3,4\\}$，$R_2(0)=\\{-1,0\\}$，$R_2(-1)=\\{-2,-1\\}$，$R_3(3)=\\varnothing$。",
+    "explanation": [
+      "固定首坐标。第二个不等式化为 $x-2<y<x+1$，故整数 y 只有 x−1、x；最后因 $3^2=9>4$，不存在满足条件的 y。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-02",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-012": {
+    "prompt": "设 $A=\\{0,1,2,3\\}$，$R=\\{(0,0),(0,3),(2,0),(2,1),(2,3),(3,2)\\}$，给出关系矩阵和关系图。",
+    "solution": "按 $0,1,2,3$ 排列，$M_R=\\begin{pmatrix}1&0&0&1\\\\0&0&0&0\\\\1&1&0&1\\\\0&0&1&0\\end{pmatrix}$。关系图顶点为 0、1、2、3，有向边为 $0\\to0,0\\to3,2\\to0,2\\to1,2\\to3,3\\to2$。",
+    "explanation": [
+      "矩阵第 i 行第 j 列记录从第 i 个顶点指向第 j 个顶点的边；(0,0) 在图上画成自环。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-03",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-013": {
+    "prompt": "$A=\\{(1,2),(2,4),(3,3)\\}$，$B=\\{(1,3),(2,4),(4,2)\\}$。求 $A\\cup B,A\\cap B,\\operatorname{dom}A,\\operatorname{dom}B,\\operatorname{dom}(A\\cup B),\\operatorname{ran}A,\\operatorname{ran}B,\\operatorname{ran}(A\\cap B),\\operatorname{fld}(A-B)$。",
+    "solution": "$A\\cup B=\\{(1,2),(2,4),(3,3),(1,3),(4,2)\\}$；$A\\cap B=\\{(2,4)\\}$；$\\operatorname{dom}A=\\{1,2,3\\}$；$\\operatorname{dom}B=\\{1,2,4\\}$；$\\operatorname{dom}(A\\cup B)=\\{1,2,3,4\\}$；$\\operatorname{ran}A=\\operatorname{ran}B=\\{2,3,4\\}$；$\\operatorname{ran}(A\\cap B)=\\{4\\}$；$\\operatorname{fld}(A-B)=\\{1,2,3\\}$。",
+    "explanation": [
+      "定义域取首坐标、值域取次坐标；域 fld 是首坐标与次坐标的并集。先计算 A−B={(1,2),(3,3)} 再求域。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-014": {
+    "prompt": "$R=\\{(0,1),(0,2),(0,3),(1,2),(1,3),(2,3)\\}$。求 $R\\circ R,R^{-1},R\\upharpoonright\\{0,1\\},R[\\{1,2\\}]$。",
+    "solution": "$R\\circ R=\\{(0,2),(0,3),(1,3)\\}$；$R^{-1}=\\{(1,0),(2,0),(3,0),(2,1),(3,1),(3,2)\\}$；$R\\upharpoonright\\{0,1\\}=\\{(0,1),(0,2),(0,3),(1,2),(1,3)\\}$；$R[\\{1,2\\}]=\\{2,3\\}$。",
+    "explanation": [
+      "平方关系寻找长度恰为 2 的路径；逆关系交换每对坐标；限制只保留首坐标在指定集合内的有序对；关系像收集这些对的次坐标。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-015": {
+    "prompt": "设 $A=\\{(\\varnothing,\\{\\varnothing\\}),(\\{\\varnothing\\},\\varnothing)\\}$。求 $A^{-1},A^2,A^3,A\\upharpoonright\\{\\varnothing\\},A[\\varnothing],A\\upharpoonright\\varnothing,A[\\{\\varnothing\\}]$。",
+    "solution": "记 $u=\\varnothing,v=\\{\\varnothing\\}$。$A^{-1}=A$，$A^2=\\{(u,u),(v,v)\\}$，$A^3=A$，$A\\upharpoonright\\{u\\}=\\{(u,v)\\}$，$A[\\varnothing]=\\varnothing$，$A\\upharpoonright\\varnothing=\\varnothing$，$A[\\{u\\}]=\\{v\\}=\\{\\{\\varnothing\\}\\}$。",
+    "explanation": [
+      "交换一次得到逆，走两步回到原点、三步到另一个点。空集作输入集合时没有可用首坐标；{空集} 则含一个元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-016": {
+    "prompt": "$A=\\{a,b,c,d\\}$，$R_1=\\{(a,a),(a,b),(b,d)\\}$，$R_2=\\{(a,d),(b,c),(b,d),(c,b)\\}$。求 $R_1\\circ R_2,R_2\\circ R_1,R_1^2,R_2^2$。",
+    "solution": "$R_1\\circ R_2=\\{\\langle a,c\\rangle,\\langle a,d\\rangle\\}$。\n\n$R_2\\circ R_1=\\{\\langle c,d\\rangle\\}$。\n\n$R_1^2=\\{\\langle a,a\\rangle,\\langle a,b\\rangle,\\langle a,d\\rangle\\}$。\n\n$R_2^2=\\{\\langle b,b\\rangle,\\langle c,c\\rangle,\\langle c,d\\rangle\\}$。",
+    "explanation": [
+      "本书关系复合 $R\\circ S$ 的定义为先沿 R 后沿 S：$(x,z)\\in R\\circ S\\iff\\exists y((x,y)\\in R\\land(y,z)\\in S)$。按共同中间坐标连接并去重。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-017": {
+    "prompt": "设 $A=\\{1,2,3\\}$，给出两个不同关系 $R_1,R_2$ 使 $R_1^2=R_1,R_2^2=R_2$。",
+    "solution": "可取 $R_1=\\varnothing$，$R_2=I_A=\\{(1,1),(2,2),(3,3)\\}$。",
+    "explanation": [
+      "空关系不存在两步路径，平方仍空；恒等关系走两步仍只能停在原元素，平方仍为恒等关系。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-020": {
+    "prompt": "设 $R_1,R_2$ 为 $A$ 上关系，证明：(1)$(R_1\\cup R_2)^{-1}=R_1^{-1}\\cup R_2^{-1}$；(2)$(R_1\\cap R_2)^{-1}=R_1^{-1}\\cap R_2^{-1}$。",
+    "solution": "(1)$(x,y)\\in(R_1\\cup R_2)^{-1}\\iff(y,x)\\in R_1\\lor(y,x)\\in R_2\\iff(x,y)\\in R_1^{-1}\\cup R_2^{-1}$。(2)将上述的“或”全部替换为“且”，得到同样的双向等价证明。",
+    "explanation": [
+      "关系取逆只交换坐标，不改变该有序对满足并集或交集的布尔条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01",
+      "DM-K07-02",
+      "DM-K07-03",
+      "DM-K07-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-021": {
+    "prompt": "$A=\\{1,2,\\ldots,10\\}$，$R=\\{(x,y):x,y\\in A\\land x+y=10\\}$。说明其具有哪些性质并说明理由。",
+    "solution": "对称；不自反、不反自反、不反对称、不传递。",
+    "explanation": [
+      "交换 x、y 不改变和，故对称。(5,5) 属于 R，而 (1,1) 不属于，分别否定反自反和自反；(1,9),(9,1) 都属于而 1≠9，否定反对称；两对连接需要 (1,1) 却不存在，否定传递。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-022": {
+    "prompt": "$A=\\{1,2,3,4\\}$，$R=\\{(1,3),(1,4),(2,3),(2,4),(3,4)\\}$。(1)画出关系图；(2)说明性质。",
+    "solution": "关系图有向边 $1\\to3,1\\to4,2\\to3,2\\to4,3\\to4$。R 反自反、反对称、传递；不自反、不对称。",
+    "explanation": [
+      "无自环且每条边从小数指向大数，所以反自反、反对称。长度为 2 的路径只有 1→3→4 与 2→3→4，所需捷径 1→4、2→4 均已包含，故传递。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-025": {
+    "prompt": "关系 $R$ 的关系图见图 7.12：顶点 $a,b,c,d,e$，边 $a\\to b,b\\to c,c\\to d,d\\to c,b\\to e,e\\to e$。求自反闭包 $r(R)$、对称闭包 $s(R)$、传递闭包 $t(R)$ 的关系图。",
+    "solution": "$r(R)=R\\cup\\{(a,a),(b,b),(c,c),(d,d)\\}$；$s(R)=R\\cup\\{(b,a),(c,b),(e,b)\\}$；$t(R)=R\\cup\\{(a,c),(a,d),(a,e),(b,d),(c,c),(d,d)\\}$。各集合中的有序对即所求关系图的边。",
+    "explanation": [
+      "自反闭包补缺失自环；对称闭包补每条边的反向边；传递闭包补所有长度至少为 1 的可达路径。c、d 互达，因此两者各产生自环。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-03",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-026": {
+    "prompt": "$A=\\{1,2,3,4,5,6\\}$，关系图 7.13 的边为 $1\\to5,1\\to3,2\\to5,5\\to4,3\\to3$，6 为孤立点。(1)求 $R^2,R^3$；(2)求 $r(R),s(R),t(R)$。",
+    "solution": "$R^2=\\{(1,4),(1,3),(2,4),(3,3)\\}$；$R^3=\\{(1,3),(3,3)\\}$。$r(R)=R\\cup I_A$；$s(R)=R\\cup\\{(5,1),(3,1),(5,2),(4,5)\\}$；$t(R)=R\\cup\\{(1,4),(2,4)\\}$。",
+    "explanation": [
+      "分别枚举恰好 2 步、3 步路径。传递闭包中 1 和 2 都能经 5 到 4；3 的循环不会增加新的有序对。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-031": {
+    "prompt": "$A=\\{1,2,3,4\\}$，等价关系 R 的等价类是 $\\{1\\},\\{2,3,4\\}$。(1)求 R；(2)求 $R\\circ R^{-1}$；(3)求传递闭包。",
+    "solution": "$R=\\{(1,1)\\}\\cup(\\{2,3,4\\}\\times\\{2,3,4\\})$；$R\\circ R^{-1}=R$；$t(R)=R$。",
+    "explanation": [
+      "同一等价类内任意两个元素都相关，不同类不相关。等价关系对称，故逆关系等于自身；自反及传递又保证平方等于自身。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-032": {
+    "prompt": "判断是否为等价关系：(1)$A=\\mathbb R,xRy\\iff x-y=2$；(2)$A=\\{1,2,3\\},xRy\\iff x+y\\ne3$；(3)$A=\\mathbb Z^+,xRy\\iff xy$ 是奇数；(4)$A=P(X),|X|\\ge2,xRy\\iff x\\subseteq y\\lor y\\subseteq x$；(5)$A=P(X),C\\subseteq X,xRy\\iff x\\oplus y\\subseteq C$。",
+    "solution": "(1)—(4)都不是；(5)是等价关系。",
+    "explanation": [
+      "(1)x−x=0，故不自反。(2)(1,3),(3,2) 属于而 (1,2) 不属于，故不传递。(3)偶数 x 的 x² 是偶数，故不自反。(4)取不同元素 p、q：{p} 与空集可比、空集与 {q} 可比，而 {p} 与 {q} 不可比，故不传递。",
+      "(5)$x\\oplus y\\subseteq C$ 等价于 $x-C=y-C$，即按集合差的结果分组；结果相等具有自反、对称、传递性。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-033": {
+    "prompt": "$A=\\{a,b,c,d\\}$，$R=\\{(a,b),(b,a),(c,d),(d,c)\\}\\cup I_A$，画关系图并求各等价类。",
+    "solution": "每个顶点有自环，此外 $a\\leftrightarrow b,c\\leftrightarrow d$。$[a]=[b]=\\{a,b\\}$，$[c]=[d]=\\{c,d\\}$。",
+    "explanation": [
+      "找与给定元素相关的所有元素；关系图分成两个互不相连的完整小块。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-07",
+      "DM-K07-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-034": {
+    "prompt": "判断是否为 $\\mathbb Z^+$ 的划分：(1)$S_1=\\{x\\in\\mathbb Z^+:x\\text{为素数}\\},S_2=\\mathbb Z^+-S_1,\\pi=\\{S_1,S_2\\}$；(2)$\\pi=\\{\\{x\\}:x\\in\\mathbb Z^+\\}$。",
+    "solution": "两者都是划分。",
+    "explanation": [
+      "(1)S₁ 含 2，S₂ 含 1，均非空；二者互不相交、并集为正整数集。(2)每个块是非空单点集，不同块不相交，所有块覆盖正整数集。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-035": {
+    "prompt": "对任意非空集合 $A$，$P(A)-\\{\\varnothing\\}$ 是否构成 $A$ 的划分？",
+    "solution": "当且仅当 $|A|=1$ 时构成划分。若 $A=\\{a\\}$，只有一个块 $\\{a\\}$。若 A 至少有两个元素 a、b，则不同块 $\\{a\\}$ 与 $\\{a,b\\}$ 相交，不能构成划分。",
+    "explanation": [
+      "非空与覆盖总能满足；关键在不同块是否不相交。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-036": {
+    "prompt": "$A=\\{1,2,3,4\\}$，在 $A\\times A$ 上定义 $(u,v)R(x,y)\\iff u+y=x+v$。(1)证明等价；(2)确定诱导划分。",
+    "solution": "条件等价于 $u-v=x-y$，所以 R 为等价关系。划分为 $\\{\\{(1,4)\\},\\{(1,3),(2,4)\\},\\{(1,2),(2,3),(3,4)\\},\\{(1,1),(2,2),(3,3),(4,4)\\},\\{(2,1),(3,2),(4,3)\\},\\{(3,1),(4,2)\\},\\{(4,1)\\}\\}$。",
+    "explanation": [
+      "两个有序对相关当且仅当坐标差相等，实数相等关系具有自反、对称和传递性。依次按差 −3、−2、−1、0、1、2、3 分组。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07",
+      "DM-K07-02",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-037": {
+    "prompt": "$A=\\{a,b,c,d,e,f\\}$，$R=\\{(a,b),(a,c),(e,f)\\}$，$R^*=tsr(R)$ 是包含 R 的最小等价关系。(1)给出 $R^*$ 矩阵；(2)写商集。",
+    "solution": "依 $a,b,c,d,e,f$ 排列，矩阵为 $\\begin{pmatrix}1&1&1&0&0&0\\\\1&1&1&0&0&0\\\\1&1&1&0&0&0\\\\0&0&0&1&0&0\\\\0&0&0&0&1&1\\\\0&0&0&0&1&1\\end{pmatrix}$；$A/R^*=\\{\\{a,b,c\\},\\{d\\},\\{e,f\\}\\}$。",
+    "explanation": [
+      "先补自环和反向边，再把无向连通块内任意两个顶点连通；每个连通块成为一个等价类。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-03",
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-038": {
+    "prompt": "设 R 为 A 上的自反和传递关系，证明 $R\\cap R^{-1}$ 是等价关系。",
+    "solution": "$T=R\\cap R^{-1}$。R 自反，故 $(x,x)\\in T$；若 $(x,y)\\in T$，则 xRy 且 yRx，交换后仍成立，故对称；若 xTy、yTz，由 R 的传递性得 xRz 和 zRx，所以 xTz。",
+    "explanation": [
+      "逐一验证自反、对称、传递三条定义；传递性要分别处理两个方向。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-039": {
+    "prompt": "设 R 为 A 上自反关系。证明 R 等价当且仅当：若 $(a,b)\\in R$ 且 $(a,c)\\in R$，则 $(b,c)\\in R$。",
+    "solution": "必要性：aRb、aRc，由对称性 bRa，再由传递性得 bRc。充分性：已知自反；若 aRb，与 aRa 合用题设得 bRa，故对称；若 aRb、bRc，先得 bRa，再将 bRa、bRc 合用题设得 aRc，故传递。",
+    "explanation": [
+      "题设是在相同首坐标下导出两个次坐标相关。先配合自环推出对称性，再利用对称性接通传递链。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-040": {
+    "prompt": "在 $\\mathbb N\\times\\mathbb N$ 上定义 $(a,b)R(c,d)\\iff b=d$。(1)证明等价；(2)求商集。",
+    "solution": "相等关系保证自反、对称、传递，所以 R 等价。$[(a,b)]=\\mathbb N\\times\\{b\\}$，商集为 $\\{\\mathbb N\\times\\{b\\}:b\\in\\mathbb N\\}$。",
+    "explanation": [
+      "关系只检查第二坐标；固定第二坐标后，首坐标可以取任意自然数。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-02",
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-041": {
+    "prompt": "$A=\\{1,2,3,4\\}$，在 $A\\times A$ 上定义 $(a,b)R(c,d)\\iff a+b=c+d$。(1)证明等价；(2)求划分。",
+    "solution": "按坐标和分组即得等价关系。划分为 $\\{\\{(1,1)\\},\\{(1,2),(2,1)\\},\\{(1,3),(2,2),(3,1)\\},\\{(1,4),(2,3),(3,2),(4,1)\\},\\{(2,4),(3,3),(4,2)\\},\\{(3,4),(4,3)\\},\\{(4,4)\\}\\}$。",
+    "explanation": [
+      "函数 h(a,b)=a+b 的值相等具有自反、对称、传递性；依次列出和为 2 到 8 的所有有序对。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-07",
+      "DM-K07-02",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-042": {
+    "prompt": "设 R 为 A 上自反和传递关系，定义 $(x,y)\\in T\\iff(x,y)\\in R\\land(y,x)\\in R$。证明 T 为等价关系。",
+    "solution": "$T=R\\cap R^{-1}$。R 自反，故 $(x,x)\\in T$；若 $(x,y)\\in T$，则 xRy 且 yRx，交换后仍成立，故对称；若 xTy、yTz，由 R 的传递性得 xRz 和 zRx，所以 xTz。",
+    "explanation": [
+      "题设的 T 正是 R 与其逆关系的交，按三条定义分别验证。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-07"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-043": {
+    "prompt": "对以下集合及整除关系画哈斯图：(1)$\\{1,2,3,4,6,8,12,24\\}$；(2)$\\{1,2,3,4,5,6,7,8,9,10,11,12\\}$。",
+    "solution": "哈斯图用下述覆盖边唯一确定（由下向上）：(1)$1-2,1-3,2-4,2-6,3-6,4-8,4-12,6-12,8-24,12-24$；(2)$1-2,1-3,1-5,1-7,1-11,2-4,2-6,2-10,3-6,3-9,4-8,4-12,5-10,6-12$。",
+    "explanation": [
+      "先列整除对 a|b（a≠b）；若所列集合中还有 c 满足 a|c|b 且三个数互异，就删去 a 到 b 的边。哈斯图不画自环和传递边。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-08",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-044": {
+    "prompt": "针对图 7.14 的每个哈斯图，写出集合及偏序关系集合表达式。(a)覆盖边 $1<3<5,2<4<5$；(b)$a<b,c<d,e<f$；(c)$1<2<4<5,1<3<4<5$。",
+    "solution": "(a)$A=\\{1,2,3,4,5\\},R=I_A\\cup\\{(1,3),(3,5),(1,5),(2,4),(4,5),(2,5)\\}$；(b)$A=\\{a,b,c,d,e,f\\},R=I_A\\cup\\{(a,b),(c,d),(e,f)\\}$；(c)$A=\\{1,2,3,4,5\\},R=I_A\\cup\\{(1,2),(1,3),(1,4),(1,5),(2,4),(2,5),(3,4),(3,5),(4,5)\\}$。",
+    "explanation": [
+      "哈斯图表示关系时，除了覆盖边，还必须加上所有自环以及沿向上路径得到的传递对。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-08",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-045": {
+    "prompt": "分别写出图 7.15 两个偏序集的 A 和偏序关系。(a)覆盖边 $a<b,a<c,b<d,b<e,c<f,c<g$；(b)覆盖边 $a<b,a<c,a<d,a<e,d<f,e<f$，g 孤立。",
+    "solution": "(a)$A=\\{a,b,c,d,e,f,g\\},R=I_A\\cup\\{(a,b),(a,c),(b,d),(b,e),(c,f),(c,g),(a,d),(a,e),(a,f),(a,g)\\}$。(b)同一 A，$R=I_A\\cup\\{(a,b),(a,c),(a,d),(a,e),(d,f),(e,f),(a,f)\\}$。",
+    "explanation": [
+      "从扫描图读取相邻的上下两点，然后补自反对及长度大于 1 的向上路径；孤立点 g 仍有 (g,g)。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-08",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-046": {
+    "prompt": "画哈斯图并求极大元、极小元、最大元、最小元：(1)$A=\\{a,b,c,d,e,f\\},R=\\{(a,d),(a,c),(a,b),(a,e),(b,e),(c,e),(d,e)\\}\\cup I_A$；(2)$A=\\{a,b,c,d,e\\},R=\\{(c,d)\\}\\cup I_A$。",
+    "solution": "(1)覆盖边 $a-b,a-c,a-d,b-e,c-e,d-e$，f 孤立；极大元 $\\{e,f\\}$，极小元 $\\{a,f\\}$，无最大元、最小元。(2)只有覆盖边 $c-d$；极大元 $\\{a,b,d,e\\}$，极小元 $\\{a,b,c,e\\}$，无最大元、最小元。",
+    "explanation": [
+      "极大或极小只排除上方或下方另有元素；最大或最小还要求与所有元素可比。孤立点既极大又极小，通常会阻止最大、最小元存在。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-08",
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-047": {
+    "prompt": "$A=\\{1,2,\\ldots,12\\}$，偏序为整除，$B=\\{x\\in A:2\\le x\\le4\\}=\\{2,3,4\\}$（此处 B 内不等号为通常大小）。求 B 的上界、下界、最小上界、最大下界。",
+    "solution": "上界为 $\\{12\\}$，下界为 $\\{1\\}$，最小上界为 12，最大下界为 1。",
+    "explanation": [
+      "整除偏序的共同上界须同时被 2、3、4 整除，即为 lcm=12 的倍数；载体中只有 12。共同下界为 gcd=1 的正因子，只有 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-048": {
+    "prompt": "设 $(A,R),(B,S)$ 是偏序集，在 $A\\times B$ 上定义 $(a_1,b_1)T(a_2,b_2)\\iff a_1Ra_2\\land b_1Sb_2$。证明 T 是偏序关系。",
+    "solution": "自反：aRa 且 bSb。反对称：两有序对双向 T 相关时，由 R、S 的反对称性分别得两个坐标相等。传递：若第一对 T 第二对、第二对 T 第三对，由 R、S 的传递性分别连接两个坐标，得第一对 T 第三对。",
+    "explanation": [
+      "把三条偏序公理逐坐标验证，两个坐标都成立才得到乘积中的结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-08"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-049": {
+    "prompt": "$(A,R)$ 为偏序集，定义对偶关系 $xSy\\iff yRx$。(1)证明 S 是偏序；(2)若 R 分别为整数集上的 ≤ 与正整数上的整除，S 是什么；(3)两偏序集极大、极小、最大、最小元有何关系？",
+    "solution": "(1)取逆后，自反性不变；双向相关仍由 R 的反对称性推出相等；xSy、ySz 意味 zRyRx，故 zRx，即 xSz。(2)分别为 ≥ 与“被整除”：xSy 当且仅当 y|x。(3)R 中的极大元变为 S 中极小元、极小元变为极大元；最大元与最小元互换。",
+    "explanation": [
+      "对偶关系把所有有向比较反过来，因此上下位置整体反转，存在性及元素身份依此互换。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05",
+      "DM-K07-08"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E007-050": {
+    "prompt": "项目 P 的 12 个任务的先后关系见图 7.16；边 $i\\to j$ 表示任务 i 必须先于 j 完成。给出一个拓扑排序。",
+    "solution": "一个可行排序是 $a,b,c,d,e,f,g,i,h,k,j,l$。",
+    "explanation": [
+      "按图中箭头逐一检查：a 位于 d、e、f、g 前；d 位于 h 前；e、f 位于 i 前；g、i 位于 k 前；i 位于 h 前；h、k 位于 j 前；b、c、j 均位于 l 前。所有边都从序列前部指向后部。"
+    ],
+    "knowledge_ids": [
+      "DM-K07-04",
+      "DM-K07-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第7章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-001": {
+    "prompt": "$f:\\mathbb N\\to\\mathbb N$，当 x 为奇数时 $f(x)=1$，为偶数时 $f(x)=x/2$。求 $f(0),f(\\{0\\}),f(1),f(\\{1\\}),f(\\{0,2,4,6,\\ldots\\}),f(\\{4,6,8\\}),f(\\{1,3,5,7\\})$。",
+    "solution": "依次为 $0,\\{0\\},1,\\{1\\},\\mathbb N,\\{2,3,4\\},\\{1\\}$。",
+    "explanation": [
+      "单个数求函数值，集合求其所有元素的函数值组成的像集。所有非负偶数除以 2 遍历自然数；所有奇数都映到 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-002": {
+    "prompt": "$A=\\{1,2\\},B=\\{a,b,c\\}$，求 $B^A$。",
+    "solution": "$B^A=\\{\\{(1,u),(2,v)\\}:u,v\\in\\{a,b,c\\}\\}$，即 (u,v) 可分别为 $(a,a),(a,b),(a,c),(b,a),(b,b),(b,c),(c,a),(c,b),(c,c)$ 的 9 个函数。",
+    "explanation": [
+      "$B^A$ 表示从 A 到 B 的全部函数；在两个自变量处各有 3 种独立选择，所以共有 $3^2=9$ 个。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-003": {
+    "prompt": "分别判断函数是否单射、满射、双射（双射则求逆），并求 $f(A),f^{-1}(B)$：(1)$f:\\mathbb R\\to\\mathbb R,f(x)=x,A=\\{8\\},B=\\{4\\}$；(2)$f:\\mathbb R\\to\\mathbb R^+,f(x)=2^x,A=\\{1\\},B=\\{1,2\\}$；(3)$f:\\mathbb N\\to\\mathbb N^2,f(x)=(x,x+1),A=\\{5\\},B=\\{(2,3)\\}$；(4)$f:\\mathbb N\\to\\mathbb N,f(x)=2x+1,A=\\{2,3\\},B=\\{1,3\\}$；(5)$f:\\mathbb Z\\to\\mathbb N,f(x)=|x|,A=\\{-1,2\\},B=\\{1\\}$；(6)$S=[0,1],f:S\\to S,f(x)=x/2+1/4,A=(0,1),B=[1/4,1/2]$；(7)$S=[0,\\infty),f:S\\to\\mathbb R,f(x)=1/(x+1),A=\\{0,1/2\\},B=\\{1/2\\}$；(8)$S=(0,1),f:S\\to\\mathbb R^+,f(x)=1/x,A=S,B=\\{2,3\\}$。",
+    "solution": "(1)双射，逆为 x；像 $\\{8\\}$，原像 $\\{4\\}$。(2)双射，逆为 $\\log_2x$；像 $\\{2\\}$，原像 $\\{0,1\\}$。(3)单射、不满射；像 $\\{(5,6)\\}$，原像 $\\{2\\}$。(4)单射、不满射；像 $\\{5,7\\}$，原像 $\\{0,1\\}$。(5)满射、不单射；像 $\\{1,2\\}$，原像 $\\{-1,1\\}$。(6)单射、不满射；像 $(1/4,3/4)$，原像 $[0,1/2]$。(7)单射、不满射；像 $\\{1,2/3\\}$，原像 $\\{1\\}$。(8)单射、不满射；像 $(1,\\infty)$，原像 $\\{1/2,1/3\\}$。",
+    "explanation": [
+      "单射检查函数值相等能否推出输入相等；满射比较值域与题给陪域。求集合原像时解 f(x)∈B，并与定义域相交；双射的逆函数须定义在整个陪域。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-01",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-004": {
+    "prompt": "判断单射、满射、双射：(1)$f:\\mathbb N\\to\\mathbb N,f(x)=x^2+2$；(2)$f:\\mathbb N\\to\\mathbb N,f(x)=x\\bmod3$；(3)$f:\\mathbb N\\to\\mathbb N$，奇数映到 1、偶数映到 0；(4)$f:\\mathbb N\\to\\{0,1\\}$，奇数映到 0、偶数映到 1；(5)$f:\\mathbb N-\\{0\\}\\to\\mathbb R,f(x)=\\lg x$；(6)$f:\\mathbb R\\to\\mathbb R,f(x)=x^2-2x-15$。",
+    "solution": "(1)单射非满射；(2)(3)都既非单射也非满射；(4)满射非单射；(5)单射非满射；(6)既非单射也非满射。无双射。",
+    "explanation": [
+      "(1)自然数上的平方严格递增但遗漏 0、1；(2)(3)值域有限且周期重复；(4)两种值均达到但有重复；(5)严格递增，但值域可数且不含负实数；(6)配方为 $(x-1)^2-16$，值域为 $[-16,\\infty)$，且 f(0)=f(2)。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-005": {
+    "prompt": "$X=\\{a,b,c,d\\},Y=\\{1,2,3\\},f=\\{(a,1),(b,2),(c,3)\\}$。判断：(1)f 是 X 到 Y 的关系但不是函数；(2)f 是函数但不是满射也不是单射；(3)f 是满射但不是单射；(4)f 是双射。",
+    "solution": "(1)真；(2)(3)(4)假。",
+    "explanation": [
+      "d 在 X 中却没有函数值，所以 f 不满足全域定义的函数条件；不能因其在已有三个输入上一一对应，就称其为 X 到 Y 的函数。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-006": {
+    "prompt": "判断是否为 $f:A\\to B$，若是则判断单射、满射、双射：(1)$A=\\mathbb Z,B=\\mathbb N,f(x)=x^2+1$；(2)$A=\\mathbb N,B=\\mathbb Q,f(x)=1/x$；(3)$A=\\mathbb Z\\times\\mathbb N,B=\\mathbb Q,f(x,y)=x/(y+1)$；(4)$A=\\{1,2,3\\},B=\\{p,q,r\\},f=\\{(1,q),(2,q),(3,q)\\}$；(5)$A=B=\\mathbb N,f(x)=2^x$；(6)$A=B=\\mathbb R^2,f(x,y)=(y+1,x+1)$；(7)$A=\\mathbb Z^2,B=\\mathbb Z,f(x,y)=x^2+2y^2$；(8)$A=B=\\mathbb R,f(x)=1/\\sqrt{x+1}$；(9)$A=\\mathbb N^3,B=\\mathbb N,f(x,y,z)=x+y-z$。",
+    "solution": "(1)是，既非单射也非满射；(2)不是，0 处无定义；(3)是，满射非单射；(4)是，既非单射也非满射；(5)是，单射非满射；(6)是，双射，逆为 $(u,v)\\mapsto(v-1,u-1)$；(7)是，既非单射也非满射；(8)不是，x≤−1 处不满足实数值定义；(9)不是，如 (0,0,1) 映到 −1，不属于 B。",
+    "explanation": [
+      "(3)任意有理数 p/q（q>0）可由 (p,q−1) 得到，但 (1,0)、(2,1) 同值；(1)(7)都因正负输入平方相同而非单射，且不能取得负数或 0 等陪域中的部分值。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-007": {
+    "prompt": "$A=\\{a,b,c,d\\},B=\\{0,1,2\\}$。(1)给既非单射也非满射的函数；(2)给满射非单射；(3)能给单射非满射吗；(4)当 $|A|=m,|B|=n$ 时说明单射、满射、双射存在条件。",
+    "solution": "(1)取恒为 0 的函数。(2)取 a→0、b→1、c→2、d→2。(3)不能，4 个输入无法一一放入 3 个输出。(4)有限集：单射存在当且仅当 m≤n；满射存在当且仅当 n≤m 且 n>0，或 m=n=0；双射存在当且仅当 m=n。",
+    "explanation": [
+      "单射要使每个输入占不同输出位置；满射要覆盖每个输出。空陪域仅在定义域也为空时才有函数，故满射条件需单独保留空集边界。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-008": {
+    "prompt": "给出 $\\mathbb N$ 上函数：(1)单射非满射；(2)满射非单射。",
+    "solution": "(1)$f(n)=n+1$；(2)$g(n)=\\lfloor n/2\\rfloor$。",
+    "explanation": [
+      "(1)值相等推出输入相等，但没有输入映到 0。(2)任意 k 有原像 2k，而 2k 与 2k+1 同映到 k。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-009": {
+    "prompt": "A 为 n 元集（n≥1），A 到 A 的函数中有多少双射？多少单射？",
+    "solution": "双射和单射均为 $n!$ 个。",
+    "explanation": [
+      "有限等势集合间，单射必为满射。依次为 n 个输入选择互不相同的输出，有 n(n−1)…1 种。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02",
+      "DM-K08-02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-010": {
+    "prompt": "$f:\\mathbb N^2\\to\\mathbb N,f(x,y)=x+y+1$。(1)判断单射、满射、双射；(2)求 $A=\\{(x,y)\\in\\mathbb N^2:f(x,y)=3\\}$；(3)求 $B=\\{f(x,y):x,y\\in\\{1,2,3\\},x=y\\}$。",
+    "solution": "(1)既非单射也非满射；(2)$A=\\{(0,2),(1,1),(2,0)\\}$；(3)$B=\\{3,5,7\\}$。",
+    "explanation": [
+      "f(0,1)=f(1,0)=2，且最小值为 1，0 没有原像。(2)解 x+y=2；(3)令 x=y 分别为 1、2、3。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-011": {
+    "prompt": "确定是否为 X 到 Y 的函数并判断单射、满射、双射：(1)$X=Y=\\mathbb R,f(x)=x^2-x$；(2)$X=Y=\\mathbb R,f(x)=\\sqrt{x}$；(3)$X=Y=\\mathbb R,f(x)=1/x$；(4)$X=Y=\\mathbb Z^+,f(x)=x+1$；(5)$X=Y=\\mathbb Z$，x=1 时 f(x)=x，x>1 时 f(x)=x−1。",
+    "solution": "(1)是函数，既非单射也非满射；(2)(3)不是所给载体间的函数；(4)单射非满射；(5)按原书写明的 $X=\\mathbb Z$，在非正整数处无定义，因此不是函数。",
+    "explanation": [
+      "(1)f(0)=f(1)，值域为 [−1/4,∞)；(2)负实数没有实平方根；(3)0 处无定义；(4)遗漏 1；(5)须按题面整数载体判定，不能擅自将其改成正整数集；若定义域改为正整数才会是满射非单射。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03",
+      "DM-K08-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-012": {
+    "prompt": "$f:S\\to T$，$A,B\\subseteq S$。(1)证明 $f(A\\cap B)\\subseteq f(A)\\cap f(B)$；(2)举不等反例；(3)说明什么函数使等式总为真。",
+    "solution": "(1)若 y=f(x)，x∈A∩B，则 y 同时属于 f(A)、f(B)。(2)取 S={1,2}、f 恒为 0、A={1}、B={2}，左边为空，右边为 {0}。(3)对任意 A、B 等式都成立当且仅当 f 为单射。",
+    "explanation": [
+      "单射时若 y=f(a)=f(b)，a∈A、b∈B，则 a=b∈A∩B，得到反向包含。若非单射，取不同同像点的单点集就得到 (2) 型反例。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-013": {
+    "prompt": "A 非空，R 为等价关系，$g:A\\to A/R$ 为自然映射。(1)R 为整数上的模 k 同余，求 g(2)、g(0)；(2)判断映射性质；(3)何时双射。",
+    "solution": "(1)$g(2)=[2]_k=\\{2+tk:t\\in\\mathbb Z\\}$，$g(0)=[0]_k=k\\mathbb Z$（k>0）。(2)g 总是满射；一般非单射。(3)当且仅当 $R=I_A$，即每个等价类都是单点集，g 为双射。",
+    "explanation": [
+      "自然映射把元素送到所属的等价类；每个等价类非空所以有原像。单射要求一个类内不能有两个不同元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-S03",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-014": {
+    "prompt": "$\\chi_A=\\{(a,1),(b,1),(c,0),(d,0)\\}$，$\\chi_B=\\{(a,0),(b,1),(c,0),(d,1)\\}$。求 $\\chi_{A\\cap B}$。",
+    "solution": "$\\chi_{A\\cap B}=\\{(a,0),(b,1),(c,0),(d,0)\\}$。",
+    "explanation": [
+      "交集特征值等于两个特征值相乘；只有 b 的两个特征值同时为 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-015": {
+    "prompt": "$A=\\{1,2,3,4\\}$，$A_1=\\{1,2\\},A_2=\\{1\\},A_3=\\varnothing$。求它们及 A 的特征函数。",
+    "solution": "按 1、2、3、4 排列，$\\chi_{A_1}=(1,1,0,0)$，$\\chi_{A_2}=(1,0,0,0)$，$\\chi_{A_3}=(0,0,0,0)$，$\\chi_A=(1,1,1,1)$。",
+    "explanation": [
+      "在子集中的元素取 1，其余取 0；特征函数的定义域始终是全集 A。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-016": {
+    "prompt": "$A=\\{a,b,c\\},R=\\{(a,b),(b,a)\\}\\cup I_A$。求自然映射 $g:A\\to A/R$。",
+    "solution": "$A/R=\\{\\{a,b\\},\\{c\\}\\}$，$g=\\{(a,\\{a,b\\}),(b,\\{a,b\\}),(c,\\{c\\})\\}$。",
+    "explanation": [
+      "先由关系求等价类，再将每个元素映到自身所在的类。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-017": {
+    "prompt": "$f,g,h\\in\\mathbb R^{\\mathbb R}$，$f(x)=x+3,g(x)=2x+1,h(x)=x/2$。求 $f\\circ g,g\\circ f,f\\circ f,g\\circ g,h\\circ f,g\\circ h,f\\circ h,g\\circ h\\circ f$。",
+    "solution": "按本书“从左到右”的复合约定，依次为 $2x+7,2x+4,x+6,4x+3,x/2+3,x+1/2,(x+3)/2,x+7/2$。",
+    "explanation": [
+      "本书 $(f\\circ g)(x)=g(f(x))$，与部分资料的记号约定相反。逐层代入，例如 $(g\\circ h\\circ f)(x)=f(h(g(x)))=(2x+1)/2+3$。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-018": {
+    "prompt": "$f,g,h\\in\\mathbb N^{\\mathbb N}$，$f(n)=n+1,g(n)=2n$，h 在偶数取 0、奇数取 1。求 $f\\circ f,g\\circ f,f\\circ g,h\\circ g,g\\circ h,h\\circ g\\circ f$。",
+    "solution": "按本书复合约定，依次为 $n+2,2n+1,2n+2,2(n\\bmod2),0,1$。",
+    "explanation": [
+      "从左到右代入：h∘g 先取奇偶值再乘 2；g∘h 对 2n 取奇偶值所以恒 0；h∘g∘f 再把该 0 加 1，所以恒 1。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-019": {
+    "prompt": "$f,g,h:\\mathbb R\\to\\mathbb R$，$f(x)=x^2-2,g(x)=x+4,h(x)=x^3-1$。(1)求 $g\\circ f,f\\circ g$；(2)判断两复合函数性质；(3)哪些有逆函数并求逆。",
+    "solution": "(1)按本书约定，$g\\circ f=(x+4)^2-2$，$f\\circ g=x^2+2$。(2)两者都既非单射也非满射。(3)f 无逆函数；$g^{-1}(x)=x-4$，$h^{-1}(x)=\\sqrt[3]{x+1}$。",
+    "explanation": [
+      "两个二次函数都关于顶点对称且有下界，故不单射也不满射到实数集。g、h 在实数上严格递增且值域为全部实数，故双射。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S02",
+      "DM-K08-01",
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-020": {
+    "prompt": "$f,g:\\mathbb N\\to\\mathbb N$，$f(x)=x+1$（x=0,1,2,3），$f(4)=0$，$f(x)=x$（x≥5）；$g(x)=x/2$（偶数），$g(x)=3$（奇数）。(1)求 $f\\circ g$；(2)判断性质。",
+    "solution": "按本书约定 $f\\circ g=g(f(x))$，其在 x=0,1,2,3,4 时依次为 3,1,3,2,0；在 x≥5 时，偶数取 x/2、奇数取 3。该函数满射但非单射，故非双射。",
+    "explanation": [
+      "0、1、2 分别由 4、1、3 得到；任意 k≥3 可由 x=2k≥6 得到，故满射。0 和 2 等多个输入同映到 3，故不单射。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02",
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-021": {
+    "prompt": "$f:\\mathbb N\\to\\mathbb N^2,f(x)=(x,x+1)$。(1)判断单射、满射；(2)逆函数是否存在；(3)求值域。",
+    "solution": "单射、非满射；作为 $\\mathbb N\\to\\mathbb N^2$ 的函数无逆函数。$\\operatorname{ran}f=\\{(n,n+1):n\\in\\mathbb N\\}$。若把陪域限制为这个值域，则逆为 $(n,n+1)\\mapsto n$。",
+    "explanation": [
+      "输出第一坐标即可恢复输入，故单射；例如 (0,0) 没有原像，故不满射。逆函数是否存在必须结合原题给定的整个陪域。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S02",
+      "DM-K08-01",
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-022": {
+    "prompt": "$f:\\mathbb Z\\to\\mathbb Z,f(x)=x\\bmod n$，定义 $xRy\\iff f(x)=f(y)$。(1)求 $f(\\mathbb Z)$；(2)求 $\\mathbb Z/R$。",
+    "solution": "(n>0)$f(\\mathbb Z)=\\{0,1,\\ldots,n-1\\}$，$\\mathbb Z/R=\\{[0]_n,[1]_n,\\ldots,[n-1]_n\\}$，其中 $[r]_n=\\{r+kn:k\\in\\mathbb Z\\}$。",
+    "explanation": [
+      "每个整数有唯一余数，两个整数余数相同当且仅当差为 n 的倍数。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-023": {
+    "prompt": "$f_i:\\mathbb R\\to\\mathbb R$：(1)非负 x 取 1、负 x 取 −1；(2)$f_2(x)=x$；(3)整数 x 取 −1、其余取 1；(4)$f_4(x)=1$。令 $xE_i y\\iff f_i(x)=f_i(y)$。求各商集。",
+    "solution": "$\\mathbb R/E_1=\\{(-\\infty,0),[0,\\infty)\\}$；$\\mathbb R/E_2=\\{\\{x\\}:x\\in\\mathbb R\\}$；$\\mathbb R/E_3=\\{\\mathbb Z,\\mathbb R-\\mathbb Z\\}$；$\\mathbb R/E_4=\\{\\mathbb R\\}$。",
+    "explanation": [
+      "每个等价类是同一个函数值的全部原像：按符号、按精确实数值、按是否为整数以及全体同值分别分组。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-024": {
+    "prompt": "构造双射：(1)$A=\\{1,2,3\\},B=\\{a,b,c\\}$；(2)$A=(0,1),B=(0,2)$；(3)$A=\\{x\\in\\mathbb Z:x<0\\},B=\\mathbb N$；(4)$A=\\mathbb R,B=\\mathbb R^+$。",
+    "solution": "(1)1→a、2→b、3→c；(2)f(x)=2x；(3)f(x)=−x−1；(4)f(x)=e^x。",
+    "explanation": [
+      "对应逆函数分别为反向配对、y/2、−y−1、ln y；每个逆都在目标集合全部元素上有定义，故确为双射。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03",
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-025": {
+    "prompt": "$f:\\mathbb R^2\\to\\mathbb R^2,f(x,y)=((x+y)/2,(x-y)/2)$，证明双射。",
+    "solution": "任给 (u,v)，方程 u=(x+y)/2、v=(x−y)/2 的唯一解为 x=u+v、y=u−v。因此逆函数为 $f^{-1}(u,v)=(u+v,u-v)$，f 双射。",
+    "explanation": [
+      "用两个方程的和与差求出唯一原像；存在性给出满射，唯一性给出单射。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-026": {
+    "prompt": "$f:A\\to B,g:B\\to C$，且本书记号下 $f\\circ g:A\\to C$ 双射。证明 f 单射、g 满射。",
+    "solution": "若 f(a₁)=f(a₂)，则 g(f(a₁))=g(f(a₂))，由复合函数单射得 a₁=a₂，故 f 单射。任取 c∈C，由复合函数满射，存在 a∈A 使 g(f(a))=c；取 b=f(a) 得 g(b)=c，故 g 满射。",
+    "explanation": [
+      "复合按先 f 后 g 理解；单射从输入端推出，满射从输出端推出，不能交换结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-027": {
+    "prompt": "按阶由低到高排列：$n,\\sqrt n,\\log n,n^3,n\\log n,2n^3+n,2^n,(\\log n)^2,\\lg n,x^3+\\log x$，同阶者标 Θ。",
+    "solution": "$\\log n=\\Theta(\\lg n)\\prec(\\log n)^2\\prec\\sqrt n\\prec n\\prec n\\log n\\prec n^3=\\Theta(2n^3+n)=\\Theta(n^3+\\log n)\\prec2^n$。题目最后一项把自变量 x 统一记为 n。",
+    "explanation": [
+      "不同固定底对数只差常系数；任意固定次对数低于正次幂；多项式由最高次项决定阶；指数 2ⁿ 高于任意固定次数多项式。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-S02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-028": {
+    "prompt": "n>1，证明（log 以 2 为底）：$(\\log n)^{\\log n}=n^{\\log\\log n}$；$4^{\\log n}=n^2$；$2=n^{1/\\log n}$；$2^{\\sqrt{2\\log n}}=n^{\\sqrt{2/\\log n}}$。",
+    "solution": "令 t=log₂n>0，n=2ᵗ。第一个等式两边取 log₂ 都得到 t log₂t；第二个为 (2²)ᵗ=(2ᵗ)²；第三个为 (2ᵗ)^(1/t)=2；第四个右边为 2^(t√(2/t))=2^√(2t)，等于左边。",
+    "explanation": [
+      "统一用 n=2ᵗ 改写所有底数，再用幂的运算法则；n>1 保证 t>0，分母与根式合法。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-029": {
+    "prompt": "$A=\\{a,b,c\\},B=2^A$，由定义证明 $P(A)\\approx2^A$。",
+    "solution": "定义 Φ:P(A)→2ᴬ，Φ(S)=χS。若 χS=χT，每个元素对 S、T 的隶属相同，故 S=T；任意 f:A→{0,1} 都是集合 S={x∈A:f(x)=1} 的特征函数，故 Φ 满射。于是 Φ 双射。",
+    "explanation": [
+      "2ᴬ 是全部 0、1 值函数的集合；用子集与其特征函数一一配对，而不是仅比较它们都含 8 个元素。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-030": {
+    "prompt": "由定义证明实数区间 $[1,2]\\approx[0,1]$。",
+    "solution": "取 f:[1,2]→[0,1]，f(x)=x−1；逆为 g(y)=y+1。两者互逆，故等势。",
+    "explanation": [
+      "检查两个端点分别映为 0、1，且平移保持一一对应。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-031": {
+    "prompt": "$A=\\{2x:x\\in\\mathbb N\\}$，证明 $A\\approx\\mathbb N$。",
+    "solution": "映射 f:ℕ→A，f(n)=2n 是双射，逆为 a↦a/2。",
+    "explanation": [
+      "像属于 A 且遍历 A；2n=2m 推出 n=m。无穷集合可以和其真子集等势。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-034": {
+    "prompt": "$A,B,C,D$ 为集合且 $A\\approx C,B\\approx D$，证明 $A\\times B\\approx C\\times D$。",
+    "solution": "取双射 f:A→C、g:B→D，定义 h(a,b)=(f(a),g(b))。其逆为 (c,d)↦(f⁻¹(c),g⁻¹(d))，故 h 双射。",
+    "explanation": [
+      "两个坐标独立使用已有双射；写出逆映射同时给出单射与满射的验证。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-035": {
+    "prompt": "找出 3 个不同的 ℕ 的真子集，使它们都与 ℕ 等势。",
+    "solution": "取偶数集 E={2n:n∈ℕ}、奇数集 O={2n+1:n∈ℕ}、正整数集 P={n+1:n∈ℕ}。对应双射分别为 n↦2n、n↦2n+1、n↦n+1。",
+    "explanation": [
+      "三个集合均为 ℕ 真子集且互不相同；每个所给公式都在相应集合上有唯一的整数逆像。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-036": {
+    "prompt": "找出 3 个不同的 ℕ 的真子集 A、B、C，使 $A\\prec\\mathbb N,B\\prec\\mathbb N,C\\prec\\mathbb N$。",
+    "solution": "可取 A=∅、B={0}、C={0,1}。均能单射到 ℕ，但有限集不可能与无限集 ℕ 双射，故基数严格较小。",
+    "explanation": [
+      "这里比较的是基数；真子集未必基数较小，须选确实有限的例子。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-037": {
+    "prompt": "按自然数的集合定义计算：(1)$3\\cup6,2\\cap5$；(2)$4-3,3\\oplus1$；(3)$\\bigcup4,\\bigcap1$；(4)$1\\times4,2^2$。",
+    "solution": "按 n={0,…,n−1}：(1)6、2；(2){3}、{1,2}；(3)3、∅（即 0）；(4)$\\{(0,0),(0,1),(0,2),(0,3)\\}$；$2^2=\\{\\{(0,u),(1,v)\\}:u,v\\in\\{0,1\\}\\}$，含 4 个函数。",
+    "explanation": [
+      "集合自然数按包含构成链；并、交、差、对称差均按集合运算。∩1=∩{∅}=∅；函数集 2² 不能直接当作序数 4 的集合表达式。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-038": {
+    "prompt": "计算基数：(1)A={x,y,z}；(2)$B=\\{n^2:n\\in\\mathbb N\\}$；(3)$C=\\{n^{109}:n\\in\\mathbb N\\}$；(4)B∩C；(5)B∪C；(6)平面上所有圆心在 x 轴上的单位圆组成的集合。",
+    "solution": "(1)3（x、y、z 互异）；(2)(3)(4)(5)均为 ℵ₀；(6)为连续统基数 $|\\mathbb R|$。",
+    "explanation": [
+      "n↦n² 与 n↦n¹⁰⁹ 均单射。B∩C 恰为 {n²¹⁸:n∈ℕ}：质因数指数须同时是 2 和 109 的倍数；B∪C 是 ℕ 的无限子集。每个单位圆由圆心 (t,0) 唯一确定，与实数 t 一一对应。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  },
+  "SRC-DM2T-E008-039": {
+    "prompt": "A、B 为可数集。证明：(1)A∪B 可数；(2)A×B 可数。",
+    "solution": "(1)把 A、B 各按自然数顺序列出，交错为 a₀,b₀,a₁,b₁,… 并删去重复，即列出 A∪B。(2)把 (aᵢ,bⱼ) 按 i+j=0,1,2,… 分层列出，每层按 i 递增；这样每个有序对都在有限位置出现。",
+    "explanation": [
+      "有限或空集可直接处理；对无限情形，交错枚举与对角线枚举分别给出与自然数的对应，因此并集与乘积至多可数。"
+    ],
+    "knowledge_ids": [
+      "DM-K08-01",
+      "DM-K08-02",
+      "DM-K08-S02",
+      "DM-K08-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照用户原教材第8章习题扫描页逐题校订题干、公式；按定义及直接运算复核解答。"
+  }
+}

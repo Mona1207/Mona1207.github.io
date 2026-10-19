@@ -1,0 +1,1534 @@
+{
+  "SRC-DM2T-E019-001": {
+    "prompt": "判断下列命题是否为真：$3\\mid7,\\ 5\\mid-35,\\ -7\\mid-21,\\ 12\\mid4,\\ 2\\mid0,\\ 0\\mid2,\\ 0\\mid0$。",
+    "solution": "依次为：假、真、真、假、真、假、真。",
+    "explanation": [
+      "用定义：$a\\mid b$ 当且仅当存在整数 $k$ 使 $b=ak$。",
+      "$0=2\\times0=0\\times0$，而 $2=0k$ 无整数解；最后一个判断按本书整除定义。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-002": {
+    "prompt": "给出24的全部因子。",
+    "solution": "全部整数因子为 $\\pm1,\\pm2,\\pm3,\\pm4,\\pm6,\\pm8,\\pm12,\\pm24$。若仅列正因子，则去掉负号。",
+    "explanation": [
+      "$24=2^3\\cdot3$，正因子为 $2^i3^j\\ (0\\le i\\le3,0\\le j\\le1)$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-003": {
+    "prompt": "对每一对数做带余除法（前数为被除数，后数为除数）：(1)35,4；(2)5,8；(3)12,3；(4)−4,3；(5)−28,7；(6)−6,−4。",
+    "solution": "(1)$35=4\\cdot8+3$；(2)$5=8\\cdot0+5$；(3)$12=3\\cdot4+0$；(4)$-4=3(-2)+2$；(5)$-28=7(-4)+0$；(6)$-6=(-4)\\cdot2+2$。",
+    "explanation": [
+      "余数一律满足 $0\\le r<|b|$，负被除数也不能直接保留负余数。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-004": {
+    "prompt": "设$a,b,c,d$均为整数。判断，真则证明，假则举反例：(1)若$a\\mid c,b\\mid c$，则$ab\\mid c$；(2)若$a\\mid c,b\\mid d$，则$ab\\mid cd$；(3)若$ab\\mid c$，则$a\\mid c$；(4)若$a\\mid bc$，则$a\\mid b$或$a\\mid c$。",
+    "solution": "(1)假：$a=b=c=2$，但$4\\nmid2$。(2)真：写$c=ar,d=bs$，则$cd=ab(rs)$。(3)真：$c=abk=a(bk)$。(4)假：$a=6,b=2,c=3$。",
+    "explanation": [
+      "注意(1)缺少互素条件；(4)只有把$a$限制为素数等情形才可直接使用素数整除积的性质。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-005": {
+    "prompt": "给出126、256、1092、6325、20!的素因子分解。",
+    "solution": "$126=2\\cdot3^2\\cdot7$；$256=2^8$；$1092=2^2\\cdot3\\cdot7\\cdot13$；$6325=5^2\\cdot11\\cdot23$；$20!=2^{18}3^85^47^2\\cdot11\\cdot13\\cdot17\\cdot19$。",
+    "explanation": [
+      "阶乘中素数$p$的指数为$\\sum_{j\\ge1}\\lfloor20/p^j\\rfloor$。例如2的指数为$10+5+2+1=18$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-006": {
+    "prompt": "判断113、221、527、$2^{13}-1$是素数还是合数。",
+    "solution": "113和$8191=2^{13}-1$是素数；$221=13\\cdot17$和$527=17\\cdot31$是合数。",
+    "explanation": [
+      "只需试除不超过平方根的素数。113试除2、3、5、7；8191试除不超过90的全部素数，均不能整除。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-007": {
+    "prompt": "设计用埃拉托斯特尼筛法求正整数N以内所有素数的算法。",
+    "solution": "建立长度N+1的真假数组，初始把2到N标为真，0和1标为假。对p从2到⌊√N⌋循环：若p仍为真，把p²,p²+p,…≤N全部标为假。最后输出仍为真的下标。",
+    "explanation": [
+      "每个合数至少有一个不超过其平方根的素因子。$p^2$以前的$p$的倍数已经被更小素因子筛去。时间复杂度$O(N\\log\\log N)$，空间$O(N)$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-008": {
+    "prompt": "证明对任意整数$n$：(1)$6\\mid n(n+1)(n+2)$；(2)$\\frac15n^5+\\frac13n^3+\\frac7{15}n$是整数。",
+    "solution": "(1)三个连续整数中至少一个为偶数，且恰有一个为3的倍数，故积能被6整除。(2)分子为$3n^5+5n^3+7n$。模3它同余$2n^3+n\\equiv0$；模5它同余$3n^5+2n\\equiv0$，故能被15整除。",
+    "explanation": [
+      "模3用$n^3\\equiv n$，模5用$n^5\\equiv n$。3与5互素，分别整除即推出15整除。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-009": {
+    "prompt": "证明对任意整数$n>1$，$1+\\frac12+\\cdots+\\frac1n$不是整数。",
+    "solution": "取唯一满足$2^k\\le n<2^{k+1}$的$k\\ge1$，令$L=\\operatorname{lcm}(1,2,\\ldots,n)$。$L$恰含因子$2^k$；在所有$L/j$中，仅$j=2^k$时为奇数，其余全为偶数。因此$L(1+1/2+\\cdots+1/n)$为奇数，而$L$为偶数；若原和是整数则这个积应为偶数，矛盾。",
+    "explanation": [
+      "关键不是粗略估计大小，而是观察各分母中最大的2的幂仅出现一次。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-010": {
+    "prompt": "(1)将素数依次写成$p_1=2,p_2=3,\\ldots$，证明$p_n\\le2^{2^{n-1}}$；(2)证明当$x\\ge2$时$\\pi(x)>\\log_2\\log_2x$。",
+    "solution": "(1)归纳。$n=1$成立。$p_1\\cdots p_n+1$有一个素因子不在前$n$个素数中，故$p_{n+1}\\le p_1\\cdots p_n+1\\le2^{1+2+\\cdots+2^{n-1}}+1\\le2^{2^n}$。(2)设$k=\\pi(x)$，则$x<p_{k+1}\\le2^{2^k}$；连续取两次以2为底的对数得到$\\log_2\\log_2x<k$。",
+    "explanation": [
+      "欧几里得构造保证出现一个新的素因子，不要求“前n个素数的积加1”本身是素数。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-011": {
+    "prompt": "若整系数方程$a_0x^n+a_1x^{n-1}+\\cdots+a_{n-1}x+a_n=0$有非零整数解$u$，证明$u\\mid a_n$。",
+    "solution": "代入$u$，得$a_n=-u(a_0u^{n-1}+a_1u^{n-2}+\\cdots+a_{n-1})$。括号内为整数，故$u\\mid a_n$。",
+    "explanation": [
+      "将常数项单独移到右边，再从其他各项提出u。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-012": {
+    "prompt": "判断是否有整数解，若有则求全部整数解：(1)$x^2-x+1=0$；(2)$x^3+x^2-4x-4=0$；(3)$x^4+5x^3-2x^2+7x+2=0$；(4)$2x^4+5x^3+9x=0$。",
+    "solution": "(1)无整数解。(2)$x=-2,-1,2$。(3)无整数解。(4)$x=0,-3$。",
+    "explanation": [
+      "(1)判别式$-3<0$。(2)因式分解为$(x+1)(x-2)(x+2)$。(3)整数根只能为$\\pm1,\\pm2$，代入均不为0。(4)分解为$x(x+3)(2x^2-x+3)$，二次因子的判别式为$-23$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-013": {
+    "prompt": "用素因子分解求每一对数的最大公约数和最小公倍数：(1)175,140；(2)72,108；(3)315,2200。",
+    "solution": "(1)gcd=35，lcm=700；(2)gcd=36，lcm=216；(3)gcd=5，lcm=138600。",
+    "explanation": [
+      "$175=5^2\\cdot7,140=2^2\\cdot5\\cdot7$；$72=2^33^2,108=2^23^3$；$315=3^25\\cdot7,2200=2^35^2\\cdot11$。gcd取各素因子指数的最小值，lcm取最大值。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-014": {
+    "prompt": "求满足$\\gcd(a,b)=10$且$\\operatorname{lcm}(a,b)=100$的所有正整数对$(a,b)$。",
+    "solution": "$(a,b)=(10,100),(100,10),(20,50),(50,20)$。",
+    "explanation": [
+      "令$a=10x,b=10y$，则$\\gcd(x,y)=1,xy=10$。互素的有序正因子对是$(1,10),(10,1),(2,5),(5,2)$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-015": {
+    "prompt": "设$p$是素数，$a$是整数，证明：若$p\\mid a$则$\\gcd(p,a)=p$；若$p\\nmid a$则$\\gcd(p,a)=1$。",
+    "solution": "p的正因子只有1和p，故p与a的最大公约数只能为1或p。p整除a时为p，否则只能为1。",
+    "explanation": [
+      "最大公约数本身也是p的正因子。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-016": {
+    "prompt": "证明：对任意整数$x,y,u,v$，$\\gcd(a,b)\\le\\gcd(xa+yb,ua+vb)$。",
+    "solution": "设$d=\\gcd(a,b)$，则$d$整除$xa+yb$和$ua+vb$，因而$d\\mid\\gcd(xa+yb,ua+vb)$。当右侧为正数时自然有$d\\le\\gcd(xa+yb,ua+vb)$。严格说题面若允许两线性组合同时为0并约定$\\gcd(0,0)=0$，则不等式并非无条件成立，例如$a=b=1,x=y=u=v=0$。应补充两组合不同时为0；无须补充条件而恒真的结论是前述整除关系。",
+    "explanation": [
+      "区分“d整除g”与“d≤g”：当g=0时前者仍成立，但后者对正d不成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-017": {
+    "prompt": "用辗转相除法求gcd：(1)85,125；(2)231,72；(3)45,56；(4)154,64。",
+    "solution": "依次为5、3、1、2。",
+    "explanation": [
+      "(1)125=85+40，85=2·40+5，40=8·5。(2)231=3·72+15，72=4·15+12，15=12+3。(3)56=45+11，45=4·11+1。(4)154=2·64+26，64=2·26+12，26=2·12+2。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-018": {
+    "prompt": "判断各对$a,b$是否互素；若互素，给出整数$x,y$使$xa+yb=1$：(1)24,35；(2)63,91；(3)450,539；(4)1024,729。",
+    "solution": "(1)互素，$-16\\cdot24+11\\cdot35=1$。(2)不互素，gcd=7。(3)互素，$109\\cdot450-91\\cdot539=1$。(4)互素，$-257\\cdot1024+361\\cdot729=1$。",
+    "explanation": [
+      "用扩展欧几里得算法求系数，代回等式即可检验；不互素的一组不可能给出值为1的整数线性组合。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-019": {
+    "prompt": "求gcd，其中$n$是整数，$k$是正整数：(1)$2n-1,2n+1$；(2)$2n,2(n+1)$；(3)$kn,k(n+2)$。",
+    "solution": "(1)1；(2)2；(3)$k\\gcd(n,2)$，即n为奇数时k，n为偶数时2k。",
+    "explanation": [
+      "用$\\gcd(a,b)=\\gcd(a,b-a)$；相邻整数互素，两个相邻奇数的公因子只能整除2且为奇数。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-020": {
+    "prompt": "设$a,b$为非零整数，$d>0$。证明$d=\\gcd(a,b)$当且仅当存在互素整数$x,y$使$a=dx,b=dy$。",
+    "solution": "正向：取$x=a/d,y=b/d$。若有公因子$g>1$，则dg同时整除a,b，与d最大矛盾。反向：若x,y互素，贝祖等式给出$rx+sy=1$，乘d得$ra+sb=d$。任一公因子都整除d，而d又整除a,b，故d为最大公约数。",
+    "explanation": [
+      "证明反向不能只说d是公因子，还需说明任何公因子都不大于d。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-021": {
+    "prompt": "证明：任意正整数$a,b$均满足$ab=\\gcd(a,b)\\operatorname{lcm}(a,b)$。",
+    "solution": "写$a=\\prod p^{\\alpha_p},b=\\prod p^{\\beta_p}$。右侧各素数的指数是$\\min(\\alpha_p,\\beta_p)+\\max(\\alpha_p,\\beta_p)=\\alpha_p+\\beta_p$，恰等于ab中的指数。",
+    "explanation": [
+      "由素因子分解唯一性得到两数相等。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-022": {
+    "prompt": "证明：若$a\\mid bc$且$a,b$互素，则$a\\mid c$。",
+    "solution": "由贝祖等式存在$x,y$使$ax+by=1$。乘c得$c=acx+bcy$，右侧两项都被a整除，所以$a\\mid c$。",
+    "explanation": [
+      "互素条件使b可以从整除关系中消去。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-023": {
+    "prompt": "设$a,b$互素。证明：(1)任意整数$m$均有$\\gcd(m,ab)=\\gcd(m,a)\\gcd(m,b)$；(2)对$d>0$，$d\\mid ab$当且仅当存在正整数$d_1,d_2$使$d=d_1d_2,d_1\\mid a,d_2\\mid b$，且此表示唯一。",
+    "solution": "(1)对每个素数p，a与b中至少有一个的p指数为0，故$\\min(v_p(m),v_p(a)+v_p(b))=\\min(v_p(m),v_p(a))+\\min(v_p(m),v_p(b))$，逐个素数比较即得。(2)把d的各素幂按其素数属于a还是b分配到$d_1,d_2$，便得到分解；因a,b没有共同素因子，分配是唯一的。反向由整除乘法立得。",
+    "explanation": [
+      "若a或b有负号，分配正因子时对其绝对值作素因子分解。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-024": {
+    "prompt": "设$a,b$为整数，证明：$11\\mid a^2+5b^2$当且仅当$11\\mid a$且$11\\mid b$。",
+    "solution": "反向显然。正向若$11\\nmid b$，可在模11下乘$b^{-2}$，得$(ab^{-1})^2\\equiv-5\\equiv6\\pmod{11}$。但模11的平方剩余仅有0,1,3,4,5,9，矛盾。因此$11\\mid b$，继而$11\\mid a^2$，素数性质推出$11\\mid a$。",
+    "explanation": [
+      "平方剩余可将0到5逐一平方取模得到，其余数与它们互为相反数，平方相同。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-025": {
+    "prompt": "判断：(1)$758\\equiv246\\pmod{18}$；(2)$365\\equiv-3\\pmod7$；(3)$-29\\equiv1\\pmod5$；(4)$352\\equiv0\\pmod{11}$。",
+    "solution": "依次为假、假、真、真。",
+    "explanation": [
+      "两个整数同余当且仅当其差被模数整除。四个差分别为512、368、−30、352；前两者不被相应模数整除，后两者可以。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-026": {
+    "prompt": "给出使同余式成立的所有正整数$m$：(1)$35\\equiv14\\pmod m$；(2)$10\\equiv-1\\pmod m$；(3)$-7\\equiv21\\pmod m$；(4)$37^2\\equiv30^2\\pmod m$；(5)$8\\equiv2\\pmod m$且$7\\equiv-2\\pmod m$。",
+    "solution": "(1)1,3,7,21；(2)1,11；(3)1,2,4,7,14,28；(4)1,7,67,469；(5)1,3。",
+    "explanation": [
+      "分别求21、11、28、$37^2-30^2=469=7\\cdot67$的正因子；(5)要求m同时整除6和9，即m整除3。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-027": {
+    "prompt": "写出$\\mathbb{Z}_7$的全部元素以及加法表和乘法表。",
+    "solution": "$\\mathbb{Z}_7=\\{[0],[1],\\ldots,[6]\\}$。以下用代表元简写剩余类。\n\n加法表：\n\n|运算|0|1|2|3|4|5|6|\n|---|---|---|---|---|---|---|---|\n|0|0|1|2|3|4|5|6|\n|1|1|2|3|4|5|6|0|\n|2|2|3|4|5|6|0|1|\n|3|3|4|5|6|0|1|2|\n|4|4|5|6|0|1|2|3|\n|5|5|6|0|1|2|3|4|\n|6|6|0|1|2|3|4|5|\n\n乘法表：\n\n|运算|0|1|2|3|4|5|6|\n|---|---|---|---|---|---|---|---|\n|0|0|0|0|0|0|0|0|\n|1|0|1|2|3|4|5|6|\n|2|0|2|4|6|1|3|5|\n|3|0|3|6|2|5|1|4|\n|4|0|4|1|5|2|6|3|\n|5|0|5|3|1|6|4|2|\n|6|0|6|5|4|3|2|1|",
+    "explanation": [
+      "先按普通整数运算，再取除以7的非负余数；每个表格条目仍代表一个剩余类。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-028": {
+    "prompt": "写出$\\mathbb{Z}_6$的全部元素以及加法表和乘法表。",
+    "solution": "$\\mathbb{Z}_6=\\{[0],[1],\\ldots,[5]\\}$。以下用代表元简写剩余类。\n\n加法表：\n\n|运算|0|1|2|3|4|5|\n|---|---|---|---|---|---|---|\n|0|0|1|2|3|4|5|\n|1|1|2|3|4|5|0|\n|2|2|3|4|5|0|1|\n|3|3|4|5|0|1|2|\n|4|4|5|0|1|2|3|\n|5|5|0|1|2|3|4|\n\n乘法表：\n\n|运算|0|1|2|3|4|5|\n|---|---|---|---|---|---|---|\n|0|0|0|0|0|0|0|\n|1|0|1|2|3|4|5|\n|2|0|2|4|0|2|4|\n|3|0|3|0|3|0|3|\n|4|0|4|2|0|4|2|\n|5|0|5|4|3|2|1|",
+    "explanation": [
+      "先按普通整数运算，再取除以6的非负余数；每个表格条目仍代表一个剩余类。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-029": {
+    "prompt": "利用例19.8中的公式计算1941年12月7日（珍珠港日）是星期几。",
+    "solution": "星期日。取$M=10,Y=1941,C=19,X=41,d=7$，得到$w\\equiv2-38+41+10+4+23+7=49\\equiv0\\pmod7$，其中0表示星期日。",
+    "explanation": [
+      "按教材公式将3月至次年2月编号为M=1至12，所以12月对应M=10。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-030": {
+    "prompt": "验证M月1日的星期数与同年3月1日的星期数相差$\\lfloor(13M-11)/5\\rfloor\\pmod7$，并导出$w=2-2C+X+\\lfloor X/4\\rfloor+\\lfloor C/4\\rfloor+\\lfloor(13M-11)/5\\rfloor+d\\pmod7$，其中$M=(m-3)\\bmod12+1,Y=y-\\lfloor M/11\\rfloor=100C+X$。",
+    "solution": "从3月起各月1日相隔天数模7依次为$0,3,5,1,3,6,2,4,0,2,5,1$。对$M=1,\\ldots,12$计算$\\lfloor(13M-11)/5\\rfloor$得$0,3,5,8,10,13,16,18,21,23,26,29$，模7完全相同。把这个月偏移和$d-1$加到3月1日的星期数$3-2C+X+\\lfloor X/4\\rfloor+\\lfloor C/4\\rfloor$上，恰得所列公式。",
+    "explanation": [
+      "以3月为年首，可把闰日统一放到年末；原来的1、2月需视作上一年的第11、12月。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-031": {
+    "prompt": "证明模$m$同余关系的自反性、传递性和对称性。",
+    "solution": "自反：$a-a=0$被m整除。传递：若$m\\mid a-b$且$m\\mid b-c$，则$m\\mid(a-b)+(b-c)=a-c$。对称：若$m\\mid a-b$，则$m\\mid-(a-b)=b-a$。",
+    "explanation": [
+      "三种性质均直接归结为整除关系对零、加法和相反数的封闭性。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-032": {
+    "prompt": "若$a\\equiv b\\pmod m,c\\equiv d\\pmod m$，证明$a+c\\equiv b+d\\pmod m$且$ac\\equiv bd\\pmod m$。",
+    "solution": "写$a-b=mk,c-d=ml$。和的差为$m(k+l)$；积的差为$ac-bd=c(a-b)+b(c-d)=m(ck+bl)$。两差均能被m整除。",
+    "explanation": [
+      "乘法证明可先加减中间项bc。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-033": {
+    "prompt": "证明：(1)$d\\ge1,d\\mid m$时，$a\\equiv b\\pmod m\\Rightarrow a\\equiv b\\pmod d$；(2)$d\\ge1$时，$a\\equiv b\\pmod m\\Leftrightarrow da\\equiv db\\pmod{dm}$；(3)$c,m$互素时，$a\\equiv b\\pmod m\\Leftrightarrow ca\\equiv cb\\pmod m$。",
+    "solution": "(1)$m\\mid a-b$且$d\\mid m$，传递即得。(2)$a-b=mk$等价于$d(a-b)=dmk$。(3)正向可直接乘c；反向由$m\\mid c(a-b)$与$\\gcd(c,m)=1$，消去c，得$m\\mid a-b$。",
+    "explanation": [
+      "(2)中模数也要同乘d；(3)的消去必须有互素条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-034": {
+    "prompt": "判断，真则证明，假则举反例：(1)$a^2\\equiv b^2\\pmod m$推出$a\\equiv b$或$a\\equiv-b\\pmod m$；(2)$a\\equiv b\\pmod m$推出$a^2\\equiv b^2\\pmod m$；(3)$a^2\\equiv b^2\\pmod m$推出$a\\equiv b\\pmod m$；(4)$a\\equiv b\\pmod{mn}$推出分别模m、n同余；(5)分别模m、n同余推出模mn同余。",
+    "solution": "(1)假：$a=1,b=4,m=15$，平方同余，但$1\\not\\equiv\\pm4$。(2)真：$a^2-b^2=(a-b)(a+b)$。(3)假：$a=1,b=-1,m=3$。(4)真：m,n都是mn的因子。(5)假：$a=0,b=2,m=n=2$，模2同余而模4不同余。",
+    "explanation": [
+      "(5)若加上gcd(m,n)=1即可成立；一般只能推出模lcm(m,n)同余。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-035": {
+    "prompt": "求全部解或说明无解：(1)$9x\\equiv3\\pmod6$；(2)$4x\\equiv3\\pmod6$；(3)$3x\\equiv-1\\pmod5$；(4)$8x\\equiv2\\pmod4$；(5)$20x\\equiv12\\pmod8$。",
+    "solution": "(1)$x\\equiv1,3,5\\pmod6$（即所有奇数）。(2)无解。(3)$x\\equiv3\\pmod5$。(4)无解。(5)$x\\equiv1,3,5,7\\pmod8$（即所有奇数）。",
+    "explanation": [
+      "$ax\\equiv c\\pmod m$有解当且仅当$\\gcd(a,m)\\mid c$；有解时约去gcd后在新的模数下求解，再展开成原模数的全部剩余类。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-S04",
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-036": {
+    "prompt": "对各组$a,b,m$验证b是a的模m逆：(1)5,3,7；(2)8,7,11；(3)11,11,12；(4)6,11,13。",
+    "solution": "$5\\cdot3=15\\equiv1\\pmod7$；$8\\cdot7=56\\equiv1\\pmod{11}$；$11^2=121\\equiv1\\pmod{12}$；$6\\cdot11=66\\equiv1\\pmod{13}$。",
+    "explanation": [
+      "逆元的定义就是乘积与1同余。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-037": {
+    "prompt": "判断a是否有模m逆，若有给出：(1)2,3；(2)8,12；(3)18,7；(4)12,21；(5)5,9；(6)−1,9。",
+    "solution": "(1)逆为2；(2)无逆；(3)逆为2；(4)无逆；(5)逆为2；(6)逆为8（也可写−1）。",
+    "explanation": [
+      "模逆存在当且仅当gcd(a,m)=1；例如$18\\cdot2\\equiv1\\pmod7$、$5\\cdot2\\equiv1\\pmod9$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-038": {
+    "prompt": "判断并求全部整数解：(1)$3x+2y=6$；(2)$12x-9y=8$。",
+    "solution": "(1)$x=2t,y=3-3t,t\\in\\mathbb Z$。(2)无整数解，因为gcd(12,9)=3不能整除8。",
+    "explanation": [
+      "(1)模2得x为偶数，令x=2t后直接解出y；也说明已枚举全部解。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-039": {
+    "prompt": "设$m>0,d=\\gcd(a,m)$且$d\\mid c$，证明$ax\\equiv c\\pmod m$在模m下恰有d个解。",
+    "solution": "除以d后得$(a/d)x\\equiv c/d\\pmod{m/d}$，其中a/d与m/d互素，故有唯一解$x_0$模m/d。原模m下恰为$x_0+j(m/d),j=0,\\ldots,d-1$，它们两两不同，且囊括全部解。",
+    "explanation": [
+      "约去公因子后模数也应除以d。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-S04",
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-040": {
+    "prompt": "设$m>1,ac\\equiv bc\\pmod m,d=\\gcd(c,m)$，证明$a\\equiv b\\pmod{m/d}$。",
+    "solution": "由$m\\mid c(a-b)$得$m/d\\mid(c/d)(a-b)$。c/d与m/d互素，可消去c/d，所以$m/d\\mid a-b$。",
+    "explanation": [
+      "未必能在原来的模m下消去c，正确的新模数为m/d。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-041": {
+    "prompt": "设p为素数，若$x^2\\equiv1\\pmod p$，证明$x\\equiv1$或$x\\equiv-1\\pmod p$。",
+    "solution": "$p\\mid(x-1)(x+1)$。素数整除乘积必整除至少一个因子，故$p\\mid x-1$或$p\\mid x+1$。",
+    "explanation": [
+      "素数条件是关键，一般合数模数下可能出现其他平方根。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-042": {
+    "prompt": "设$F_n=2^{2^n}+1,n=0,1,2,\\ldots$。证明任意不同的$F_m,F_n$互素。",
+    "solution": "先证$F_0F_1\\cdots F_{n-1}=F_n-2$：n=1时$3=5-2$；归纳时用$(2^{2^n}-1)(2^{2^n}+1)=2^{2^{n+1}}-1$。若m<n，公因子d同时整除$F_n$及$F_m\\mid F_n-2$，故$d\\mid2$。各F都是奇数，所以d=1。",
+    "explanation": [
+      "费马数不必全是素数，但它们确实两两互素。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-043": {
+    "prompt": "证明存在无穷多个n使$\\varphi(n)>\\varphi(n+1)$。",
+    "solution": "对每个奇素数$p>3$取n=p。$\\varphi(p)=p-1$；p+1为偶数，所以$\\varphi(p+1)\\le(p+1)/2<p-1$。由于这样的素数有无穷多个，结论成立。",
+    "explanation": [
+      "偶数N的所有互素剩余类必须是奇数，因此φ(N)≤N/2。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-044": {
+    "prompt": "若m,n互素，证明$\\varphi(mn)=\\varphi(m)\\varphi(n)$。",
+    "solution": "中国剩余定理给出模mn剩余类与模m、模n剩余类对之间的双射。一个类与mn互素，当且仅当它的两个分量分别与m、n互素。因此可逆类的个数为$\\varphi(m)\\varphi(n)$。",
+    "explanation": [
+      "也可用素因子公式：互素的m,n拥有互不相交的素因子集合。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-045": {
+    "prompt": "用费马小定理计算：(1)$2^{325}\\bmod5$；(2)$3^{516}\\bmod7$；(3)$8^{1003}\\bmod11$。",
+    "solution": "(1)2；(2)1；(3)6。",
+    "explanation": [
+      "$325\\equiv1\\pmod4$，$516\\equiv0\\pmod6$，$1003\\equiv3\\pmod{10}$；故第三项为$8^3=512\\equiv6\\pmod{11}$。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-046": {
+    "prompt": "设m,n为互素正整数，证明$m^{\\varphi(n)}+n^{\\varphi(m)}\\equiv1\\pmod{mn}$。",
+    "solution": "模m时第一项为0，第二项由欧拉定理为1；模n时相反。因此和减1同时被m,n整除；由于互素，它被mn整除。",
+    "explanation": [
+      "若m或n为1，按φ(1)=1直接核验同样成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-047": {
+    "prompt": "设f(x)为整系数多项式，p为素数。证明$(f(x))^p\\equiv f(x^p)\\pmod p$。",
+    "solution": "模p下由二项式系数$\\binom pj$（1≤j≤p−1）均被p整除，得$(u+v)^p\\equiv u^p+v^p$。故若$f(x)=\\sum a_ix^i$，则$f(x)^p\\equiv\\sum a_i^px^{ip}\\equiv\\sum a_ix^{ip}=f(x^p)$，最后一步用整数形式的费马小定理。",
+    "explanation": [
+      "这是系数逐项模p的多项式同余，负系数也适用。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-048": {
+    "prompt": "设a,b,m为整数且$m\\ge2$。证明$E(i)=(ai+b)\\bmod m$是$\\{0,1,\\ldots,m-1\\}$上的双射当且仅当a与m互素。",
+    "solution": "若互素，$E(i)=E(j)$推出$a(i-j)\\equiv0\\pmod m$，消去a得$i=j$，有限集合上的单射即双射。若$d=\\gcd(a,m)>1$，则$E(0)=E(m/d)$，两个输入不同，故非单射。",
+    "explanation": [
+      "b只作平移，不影响双射性。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-049": {
+    "prompt": "用$x_{n+1}=(ax_n+c)\\bmod m$给出伪随机序列及周期：(1)m=16,a=7,c=1,x₀=0；(2)m=9,a=7,c=4,x₀=3；(3)m=15,a=3,c=0,x₀=1；(4)m=17,a=2,c=0,x₀=4；(5)m=17,a=5,c=0,x₀=1。",
+    "solution": "(1)(0,1,8,9)循环，周期4。(2)(3,7,8,6,1,2,0,4,5)循环，周期9。(3)先出现1，之后(3,9,12,6)循环，最终周期4，前周期长度1。(4)(4,8,16,15,13,9,1,2)循环，周期8。(5)(1,5,8,6,13,14,2,10,16,12,9,11,4,3,15,7)循环，周期16。",
+    "explanation": [
+      "逐项递推，首次重复状态后即完全重复；(3)应区分最终循环与初始的非循环前段。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-050": {
+    "prompt": "用0至25表示A至Z，将XINGDONGZAIZIYE加密：(1)$E(i)=(i+3)\\bmod26$；(2)$E(i)=7i\\bmod26$；(3)$E(i)=(5i-2)\\bmod26$。",
+    "solution": "(1)ALQJGRQJCDLCLBH；(2)FENQVUNQTAETEMC；(3)JMLCNQLCTYMTMOS。",
+    "explanation": [
+      "每个字母先减去A的编号变成0至25，应用公式取余后再转回字母。例如X=23，在(3)中得到113 mod26=9，即J。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-051": {
+    "prompt": "用维吉利亚密码将XINGDONGZAIZIYE加密，每字段3字母，密钥k₁=3,k₂=−2,k₃=7。",
+    "solution": "密文为AGUJBVQEGDGGLWL。分组可写为AGU JBV QEG DGG LWL。",
+    "explanation": [
+      "按字母位置循环加3、−2、7并模26；原文XIN变为AGU。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04",
+      "DM-K19-S05",
+      "DM-K19-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-052": {
+    "prompt": "写出第50题的3个解密算法，并将对应密文还原。",
+    "solution": "(1)$D(j)=(j-3)\\bmod26$；(2)$D(j)=15j\\bmod26$；(3)$D(j)=21(j+2)\\bmod26$。分别作用于ALQJGRQJCDLCLBH、FENQVUNQTAETEMC、JMLCNQLCTYMTMOS，都得到XINGDONGZAIZIYE。",
+    "explanation": [
+      "$7^{-1}\\equiv15\\pmod{26}$，$5^{-1}\\equiv21\\pmod{26}$。仿射加密要先撤销平移，再乘逆元。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E019-053": {
+    "prompt": "RSA取p=5,q=7,n=35,φ(n)=24,w=7；用00至25表示A至Z，每字符2位数字。(1)把STOP译成密文；(2)把收到的密文32 14 32译成明文。",
+    "solution": "解密指数$d=7$，因为$7\\cdot7\\equiv1\\pmod{24}$。(1)STOP的数字为18 19 14 15，分别求$m^7\\bmod35$得密文32 19 14 15。(2)分别求$32^7,14^7,32^7\\bmod35$得到18 14 18，即SOS。",
+    "explanation": [
+      "每个字母独立分块；不要把整串数字连成一个大整数后做模运算。"
+    ],
+    "knowledge_ids": [
+      "DM-K19-01",
+      "DM-K19-02",
+      "DM-K19-S01",
+      "DM-K19-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题19扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-001": {
+    "prompt": "证明蜜蜂家族中一只雄蜂的第n代祖先个数是Fibonacci数$f_n$。",
+    "solution": "采用本章约定$f_0=f_1=1$。设雄蜂第n代祖先数为$a_n$。雄蜂只有母亲，雌蜂有父母，因而雄蜂的第n代祖先由母亲的上一代与外祖父的上两代合成，满足$a_n=a_{n-1}+a_{n-2}$，且$a_0=a_1=1$。由相同初值及递推关系，$a_n=f_n$。",
+    "explanation": [
+      "这里只按家谱位置计数，采用题目通常隐含的无祖先重合模型；第0代为自身，第1代为母亲。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-002": {
+    "prompt": "设$f_n$为Fibonacci数（$f_0=f_1=1$），求$f_0-f_1+f_2-\\cdots+(-1)^nf_n$。",
+    "solution": "对$n\\ge1$，结果为$1+(-1)^nf_{n-1}$；n=0时为1。",
+    "explanation": [
+      "n=1时为0。若结论对n成立，加上$(-1)^{n+1}f_{n+1}$后得到$1+(-1)^{n+1}(f_{n+1}-f_{n-1})=1+(-1)^{n+1}f_n$，归纳完成。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-003": {
+    "prompt": "证明Fibonacci恒等式（$f_0=f_1=1$）：(1)$f_{n-1}^2+f_n^2=f_{2n}$；(2)$f_nf_{n+1}-f_{n-1}f_{n-2}=f_{2n}$。",
+    "solution": "(1)Fibonacci加法公式$f_{r+s}=f_rf_s+f_{r-1}f_{s-1}$（r,s≥1）令r=s=n即得。(2)$f_nf_{n+1}-f_{n-1}f_{n-2}=f_n(f_n+f_{n-1})-f_{n-1}(f_n-f_{n-1})=f_n^2+f_{n-1}^2=f_{2n}$，其中n≥2。",
+    "explanation": [
+      "加法公式可固定r，对s归纳：s=1由递推式成立；两边都对s满足Fibonacci递推，故恒等。注意本章的f_n比常见F_0=0约定向前移一位。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-004": {
+    "prompt": "设$f_n$为Fibonacci数（$f_0=f_1=1$）。(1)证明$f_nf_{n+2}-f_{n+1}^2=\\pm1$；(2)何时为1，何时为−1？",
+    "solution": "$f_nf_{n+2}-f_{n+1}^2=(-1)^n$。故n为偶数时为1，n为奇数时为−1。",
+    "explanation": [
+      "令$D_n=f_nf_{n+2}-f_{n+1}^2$，由递推关系可化为$D_{n+1}=-D_n$；$D_0=1\\cdot2-1=1$，归纳得结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-005": {
+    "prompt": "设$L_n=L_{n-1}+L_{n-2}\\ (n\\ge2),L_0=2,L_1=1$，求$L_{2n+2}-(L_1+L_3+\\cdots+L_{2n+1})$。",
+    "solution": "结果为2。",
+    "explanation": [
+      "由$L_{2j+1}=L_{2j+2}-L_{2j}$，对j=0至n求和得$L_1+L_3+\\cdots+L_{2n+1}=L_{2n+2}-L_0=L_{2n+2}-2$。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-006": {
+    "prompt": "解递推方程：(1)$a_n-7a_{n-1}+12a_{n-2}=0,a_0=4,a_1=6$；(2)$a_n+6a_{n-1}+9a_{n-2}=3,a_0=0,a_1=1$；(3)$a_n-3a_{n-1}+2a_{n-2}=1,a_0=4,a_1=6$；(4)$a_n-7a_{n-1}+10a_{n-2}=3^n,a_0=0,a_1=1$；(5)$a_n-na_{n-1}=n!\\ (n\\ge1),a_0=2$。",
+    "solution": "(1)$a_n=10\\cdot3^n-6\\cdot4^n$。(2)$a_n=\\frac3{16}+(-\\frac3{16}-\\frac n{12})(-3)^n$。(3)$a_n=3\\cdot2^n-n+1$。(4)$a_n=\\frac83\\,2^n-\\frac92\\,3^n+\\frac{11}6\\,5^n$。(5)$a_n=(n+2)n!$。",
+    "explanation": [
+      "(1)特征根3、4。(2)重根−3，齐次解$(A+Bn)(-3)^n$，常数特解3/16。(3)根1、2，常数右端与根1重合，取特解−n。(4)根2、5，取特解$-9\\cdot3^n/2$。(5)两边除n!，令$b_n=a_n/n!$得$b_n=b_{n-1}+1,b_0=2$。各式再用初值确定常数。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-007": {
+    "prompt": "已知$C_0H_n+C_1H_{n-1}+C_2H_{n-2}=6$的解为$H_n=3^n+4^n+2$，求常数$C_0,C_1,C_2$。",
+    "solution": "$C_0=1,C_1=-7,C_2=12$。",
+    "explanation": [
+      "分别比较$3^{n-2}$、$4^{n-2}$及常数项：$9C_0+3C_1+C_2=0$，$16C_0+4C_1+C_2=0$，$2(C_0+C_1+C_2)=6$，解此三元方程组即可。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-008": {
+    "prompt": "有n条封闭曲线，两两相交于两点且任意3条不交于一点，求把平面划分成的区域数。",
+    "solution": "对n≥1，区域数$R_n=n^2-n+2$；n=0时为1。",
+    "explanation": [
+      "按通常的简单封闭曲线模型，第一条形成2区。第n条被前n−1条曲线上的2(n−1)个交点分成同样多段，每段新增一个区域，所以$R_n=R_{n-1}+2(n-1)$，累加即得。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-009": {
+    "prompt": "双Hanoi塔有2n个盘，分成n对，每对盘完全相同；初始从大到小放A柱，移至C柱，规则同Hanoi。(1)给出算法；(2)计算移动次数。",
+    "solution": "把n−1对小盘从A移至B；把最大的一对先后从A移至C（2步）；再把n−1对小盘从B移至C。递归执行。设次数Tₙ，则$T_0=0,T_n=2T_{n-1}+2$，所以$T_n=2^{n+1}-2$。",
+    "explanation": [
+      "相同尺寸盘允许相叠是本题推广的含义；移动最大一对之前，所有较小盘必须先移开。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-010": {
+    "prompt": "长方形ABDC满足$AC/AB=(1+\\sqrt5)/2$，截去正方形ABFE后，证明余下长方形EFDC与ACDB相似；重复截取时每步都相似（图13.9）。",
+    "solution": "令$\\phi=(1+\\sqrt5)/2$，原短边为a，长边为φa。截去边长a的正方形后，余下长边为a、短边为$(\\phi-1)a$，它们之比为$1/(\\phi-1)=\\phi$。因此转90°后与原矩形相似。每一次余下矩形仍具有同一长短边比，可归纳重复。",
+    "explanation": [
+      "使用黄金比恒等式φ²=φ+1；图中E、F在长边上截出左侧正方形。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-011": {
+    "prompt": "某公司有n千万元，每年投资一个项目：a项目1000万元，或b项目2000万元，或c项目2000万元。用完n千万元有多少种不同方案？",
+    "solution": "按各年投资次序区分方案时，$A_n=A_{n-1}+2A_{n-2}$，$A_0=1,A_1=1$，故$A_n=(2^{n+1}+(-1)^n)/3$。",
+    "explanation": [
+      "按第一年的选择分类：a花1单位且后续有Aₙ₋₁种；b、c各花2单位，各有Aₙ₋₂种。特征根为2、−1。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-012": {
+    "prompt": "求n位0-1串中相邻两位不出现11的串的个数。",
+    "solution": "$A_0=1,A_1=2,A_n=A_{n-1}+A_{n-2}$，所以$A_n=f_{n+1}$（本章$f_0=f_1=1$）。",
+    "explanation": [
+      "以0结尾的串来自任意合法n−1位串；以1结尾且n≥2时末两位只能01，来自合法n−2位串。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-013": {
+    "prompt": "质点沿水平方向运动，每秒走过距离是前一秒的2倍；初始位置3，第一步走1单位。求第k秒末位置。",
+    "solution": "若始终沿正方向运动，则$x_k=3+(1+2+\\cdots+2^{k-1})=2^k+2$，k≥0。",
+    "explanation": [
+      "每步位移为$2^{j-1}$。题面只给距离，默认运动方向不变；若允许反向，则仅凭各秒距离不能唯一确定位置。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-014": {
+    "prompt": "1×n方格用红、蓝两色涂色，每格一种，不允许两个红格相邻，求方案数。",
+    "solution": "$A_n=f_{n+1}$，其中$f_0=f_1=1$；等价地$A_0=1,A_1=2,A_n=A_{n-1}+A_{n-2}$。",
+    "explanation": [
+      "把蓝格记0、红格记1，恰好化为禁止相邻11的0-1串。按最后一格为蓝或最后两格为蓝红分类。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-015": {
+    "prompt": "两个不同信号分别需2μs与3μs，连续发送信息。(1)建立nμs中可发送信息数的递推；(2)给初值；(3)求12μs的数量。",
+    "solution": "若“nμs中”指总时长恰为n，令$A_0=1,A_1=0,A_2=1$，则$A_n=A_{n-2}+A_{n-3}$（n≥3），$A_{12}=12$。若解释成总时长不超过12且不计空信息，则数量为$\\sum_{j=1}^{12}A_j=47$。",
+    "explanation": [
+      "按最后一个信号需2或3μs分类。n=0的1代表递推使用的空串；n=1无可用信号。逐项得到1,0,1,1,1,2,2,3,4,5,7,9,12。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-016": {
+    "prompt": "已知数列的生成函数$A(x)=(1+x-x^2)/(1-x)$，求$a_n$。",
+    "solution": "$a_0=1,a_1=2$，且所有$n\\ge2$有$a_n=1$。",
+    "explanation": [
+      "展开$(1+x-x^2)\\sum_{n\\ge0}x^n$，取系数；n≥2时系数为1+1−1=1。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-017": {
+    "prompt": "数列的生成函数分别为A(x),B(x),C(x)，已知$a_0=1,a_1=3,a_2=2,a_n=0(n\\ge3)$，$c_n=5^n$。若$A(x)B(x)=C(x)$，求$b_n$。",
+    "solution": "$b_n=\\frac{25}{42}5^n-\\frac16(-1)^n+\\frac47(-2)^n$。",
+    "explanation": [
+      "$A(x)=1+3x+2x^2=(1+x)(1+2x)$，$C(x)=1/(1-5x)$。部分分式分解$B(x)=25/[42(1-5x)]-1/[6(1+x)]+4/[7(1+2x)]$，逐项取系数。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-018": {
+    "prompt": "求普通生成函数：(1)$a_n=(-1)^n(n+1)$；(2)$a_n=(-1)^n2^n$；(3)$a_n=n+5$。",
+    "solution": "(1)$1/(1+x)^2$；(2)$1/(1+2x)$；(3)$x/(1-x)^2+5/(1-x)=(5-4x)/(1-x)^2$。",
+    "explanation": [
+      "用$\\sum r^nx^n=1/(1-rx)$和$\\sum(n+1)x^n=1/(1-x)^2$，必要时替换x为−x。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-019": {
+    "prompt": "普通生成函数A(x),B(x),C(x)对应aₙ,bₙ,cₙ。证明：(1)bₙ=αaₙ的数乘；(2)cₙ=aₙ+bₙ的和；(3)cₙ=Σᵢ₌₀ⁿaᵢbₙ₋ᵢ的卷积；(4)延后l位补零；(5)bₙ=aₙ₊ₗ的提前；(6)bₙ=Σᵢ₌₀ⁿaᵢ的部分和；(7)bₙ=Σᵢ₌ₙ∞aᵢ的尾和（A(1)收敛）；(8)bₙ=αⁿaₙ；(9)bₙ=naₙ；(10)bₙ=aₙ/(n+1)的生成函数公式。",
+    "solution": "(1)$B=\\alpha A$；(2)$C=A+B$；(3)$C=AB$；(4)$B=x^lA$；(5)$B=(A-\\sum_{i=0}^{l-1}a_ix^i)/x^l$；(6)$B=A/(1-x)$；(7)$B=[A(1)-xA(x)]/(1-x)$；(8)$B=A(\\alpha x)$；(9)$B=xA^\\prime(x)$；(10)$B=x^{-1}\\int_0^xA(t)dt$。",
+    "explanation": [
+      "(1)(2)(8)把数列定义代入级数即得。(3)乘积中xⁿ项由i+j=n的项相加。(4)(5)改变求和下标。(6)交换双重和得$\\sum_i a_ix^i\\sum_{j\\ge0}x^j$。(7)用尾和=A(1)−到n−1的部分和再求和。(9)(10)逐项求导或积分；第10式在x=0处作可去延拓。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-020": {
+    "prompt": "用生成函数解$a_k=3a_{k-1},k=1,2,\\ldots$，$a_0=2$。",
+    "solution": "$A(x)-2=3xA(x)$，所以$A(x)=2/(1-3x)$，故$a_k=2\\cdot3^k$。",
+    "explanation": [
+      "先乘xᵏ并从k=1求和，左边须减去初始项2。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-021": {
+    "prompt": "多重集$S=\\{\\infty\\cdot a_1,\\infty\\cdot a_2,\\infty\\cdot a_3,\\infty\\cdot a_4\\}$，cₙ为满足条件的n组合数，求生成函数C(x)：(1)每个aᵢ出现奇数次；(2)a₁不出现，a₂至多出现1次；(3)每个aᵢ至少出现10次。",
+    "solution": "(1)$C(x)=x^4/(1-x^2)^4$；(2)$C(x)=(1+x)/(1-x)^2$；(3)$C(x)=x^{40}/(1-x)^4$。",
+    "explanation": [
+      "每类元素的出现次数独立，相应幂级数相乘。奇数次数对应$x+x^3+\\cdots$；至少10次对应$x^{10}/(1-x)$。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-022": {
+    "prompt": "aₙ为用3元、4元、20元邮票贴满n元的方式数，求生成函数：(1)不考虑贴票次序；(2)贴成一行且考虑次序。",
+    "solution": "(1)$A(x)=1/[(1-x^3)(1-x^4)(1-x^{20})]$。(2)$A(x)=1/(1-x^3-x^4-x^{20})$。",
+    "explanation": [
+      "无序时分别选择各面额的张数，三个几何级数相乘。有序时每个位置可贡献x³、x⁴或x²⁰，对字符串长度求几何级数。两式均将n=0空方案计为1。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-023": {
+    "prompt": "把n个苹果（n为奇数）恰好分给3个孩子，第一、第二个孩子所得数不同，求分法数。",
+    "solution": "允许某个孩子得到0个时，方案数为$(n+1)^2/2$。若要求每人至少1个，则为$(n-1)(n-3)/2$（n≥3）。",
+    "explanation": [
+      "非负解$x+y+z=n$共有$\\binom{n+2}2$个。因n奇，相等情形$x=y=t$有t=0至(n−1)/2，共(n+1)/2个。相减即得主答案。正数版先各给一个，再把剩余n−3按同法处理。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-024": {
+    "prompt": "信号A需1μs，信号B、C各需2μs；信息为非空有限字符串。求nμs内可传送的不同信息数。",
+    "solution": "总时长恰为n（n≥1）时，$A_n=(2^{n+1}+(-1)^n)/3$。若“内”指时长不超过n，则非空信息数为$\\sum_{j=1}^nA_j=[2^{n+3}-9+(-1)^n]/6$。",
+    "explanation": [
+      "恰时长数满足$A_0=1,A_1=1,A_n=A_{n-1}+2A_{n-2}$：按最后信号为A或为B/C分类。第一式来自根2、−1；第二式对第一式求和且去除空串。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-025": {
+    "prompt": "三角形ABC的边长均为正整数，且$AB+BC+AC=2n+1$，n为给定正整数，问有多少个这样的三角形。",
+    "solution": "按全等三角形只计一次，数量为$\\left\\lfloor((n+2)^2+3)/12\\right\\rfloor$。若明确将AB、BC、CA三条有标签的边分别计为有序解，则为$n(n+1)/2$。",
+    "explanation": [
+      "奇数周长时可唯一写$a=y+z+1,b=x+z+1,c=x+y+1$，其中x,y,z非负且x+y+z=n−1；三角不等式与非负条件等价。无标签计数是把n−1分成至多3部分，其数为$\\lfloor((n+2)^2+3)/12\\rfloor$；也可写为$\\sum_{x=0}^{\\lfloor(n-1)/3\\rfloor}(\\lfloor(n-1-x)/2\\rfloor-x+1)$，直接按x≤y≤z枚举。有标签计数为$\\binom{n+1}2$。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-026": {
+    "prompt": "求指数生成函数：(1)$a_n=n!$；(2)$a_n=2^n n!$；(3)$a_n=(-1)^n$。",
+    "solution": "(1)$A_e(x)=1/(1-x)$；(2)$A_e(x)=1/(1-2x)$；(3)$A_e(x)=e^{-x}$。",
+    "explanation": [
+      "指数生成函数定义为$\\sum a_nx^n/n!$；前两问的阶乘刚好消去。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-027": {
+    "prompt": "设Aₑ(x),Bₑ(x)为aₙ,bₙ的指数生成函数，证明其乘积为$\\sum_{n\\ge0}c_nx^n/n!$，其中$c_n=\\sum_{k=0}^n\\binom nk a_kb_{n-k}$。",
+    "solution": "乘积中$x^n$的系数为$\\sum_{k=0}^na_kb_{n-k}/[k!(n-k)!]=\\frac1{n!}\\sum_{k=0}^n\\binom nk a_kb_{n-k}$，所以恰为所给指数生成函数。",
+    "explanation": [
+      "与普通生成函数的卷积相比，多出的二项式系数来自两个阶乘分母合并。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03",
+      "DM-K13-S05",
+      "DM-K13-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-028": {
+    "prompt": "1×n方格用红、蓝、绿、橙4色涂色，红格数与绿格数都为偶数，求方案数。",
+    "solution": "n≥1时方案数为$(4^n+2\\cdot2^n)/4=4^{n-1}+2^{n-1}$；n=0时为1。",
+    "explanation": [
+      "用偶数投影：将红、绿分别附权±1，对4种符号组合平均，得$[4^n+2^n+2^n+0^n]/4$。n=0时四项均按空串权1，须单独处理0⁰。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-029": {
+    "prompt": "求由n个奇数字组成，且数字1、3各出现偶数次的数的个数。",
+    "solution": "n≥1时为$(5^n+2\\cdot3^n+1)/4$。",
+    "explanation": [
+      "可用数字1、3、5、7、9；对1与3的出现次数分别作偶数筛选，四种权和为5、3、3、1，对其n次方取平均。没有前导0问题。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-030": {
+    "prompt": "字母表Σ有n>1个字母，a,b为其中不同字母，求a,b都出现的长度为k>1的字符串数。",
+    "solution": "$n^k-2(n-1)^k+(n-2)^k$。",
+    "explanation": [
+      "总数nᵏ，分别减掉不含a、不含b的字符串，再加回两者都不含的字符串；由容斥原理得到。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-031": {
+    "prompt": "证明$\\sum_{k=1}^n\\left\\{\\begin{smallmatrix}n\\\\k\\end{smallmatrix}\\right\\}x(x-1)\\cdots(x-k+1)=x^n$。",
+    "solution": "对正整数x，右边计n个有标签元素到x个有标签盒的所有映射。按非空盒数k分类：先把n个元素划分成k个非空无标号块，有第二类Stirling数S(n,k)种，再把k块单射地分配到盒子，有x(x−1)…(x−k+1)种。求和即得。两边是次数至多n的多项式，在无穷多个正整数x上相等，故为恒等式。",
+    "explanation": [
+      "不应再乘k!：下降阶乘已经包括把无标号块分派给不同盒子的全部次序。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-032": {
+    "prompt": "把5项不同任务分给4个人，每个人至少得到1项，求方式数。",
+    "solution": "$4!\\,S(5,4)=24\\cdot\\binom52=240$。",
+    "explanation": [
+      "恰有一个人得到2项，另3人各1项；也可选得到2项的人4种、他的任务C(5,2)种，剩下任务分派3!种，共4·10·6=240。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-033": {
+    "prompt": "A含n>1个不同正整数，n=2ᵏ。算法MaxMin：n=2时比较一次；否则平分成两部分，各自递归找最大最小，再比较两个最大值和两个最小值。(1)写伪码；(2)求最坏比较次数。",
+    "solution": "伪码：MaxMin(A)：若|A|=2，比较两元素并返回(小,大)；否则将A平分为L,R，递归得(lmin,lmax),(rmin,rmax)，返回(min(lmin,rmin),max(lmax,rmax))。比较次数满足$T(2)=1,T(n)=2T(n/2)+2$，解得$T(n)=3n/2-2$。",
+    "explanation": [
+      "有n/2个规模2的叶子，每个比较1次；合并树有n/2−1个内部结点，每个比较2次，总计n/2+2(n/2−1)。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  },
+  "SRC-DM2T-E013-034": {
+    "prompt": "用归并排序计算排列逆序数：递归计算左右半段逆序数，在合并时计算跨左右两段的逆序数。(1)写伪码；(2)n为2的幂时求比较次数。",
+    "solution": "CountInv(A)：若长度≤1，返回(A,0)；将A平分为L,R，分别递归得到已排序的L,R及计数u,v；用双指针合并。若L[i]≤R[j]，取L[i]；否则取R[j]并给计数增加|L|−i。合并完成后返回(排序结果,u+v+跨段计数)。最坏比较次数$C(1)=0,C(n)=2C(n/2)+n-1$，故$C(n)=n\\log_2n-n+1$；总时间$O(n\\log n)$。",
+    "explanation": [
+      "R[j]先于L[i]被取出时，它与左段从i至末尾的每个元素都构成逆序。具体输入的比较数可小于最坏值，不能把上式说成对所有排列都相同。例如已按大小分离的两半合并只用n/2次比较。"
+    ],
+    "knowledge_ids": [
+      "DM-K13-01",
+      "DM-K13-02",
+      "DM-K13-S01",
+      "DM-K13-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "对照教材PDF习题13扫描页校订；补充解答作数学推导与计算复核"
+  }
+}

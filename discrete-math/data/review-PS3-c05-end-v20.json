@@ -1,0 +1,1203 @@
+{
+  "SRC-PS3-E018-001": {
+    "prompt": "二维随机变量 (X,Y) 只能取 (0,0)、(-1,1)、(-1,1/3)、(0,1)，对应概率依次为 1/6、1/3、1/12、5/12。求联合分布律。",
+    "solution": "联合分布表（行 X，列 Y）：\n\n|X\\Y|0|1/3|1|\n|---|---|---|---|\n|-1|0|1/12|1/3|\n|0|1/6|0|5/12|",
+    "explanation": [
+      "将每一对取值放到对应行列；未列出的组合概率为0。",
+      "表内概率之和为 1/6+1/12+1/3+5/12=1。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第74页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E018-002": {
+    "prompt": "口袋中四个球分别标有数字1、2、2、3。依次无放回任取两球，X、Y分别为第一次、第二次球上的数字。求联合分布律及 P(X=Y)。",
+    "solution": "\n|X\\Y|1|2|3|\n|---|---|---|---|\n|1|0|1/6|1/12|\n|2|1/6|1/6|1/6|\n|3|1/12|1/6|0|\n\nP(X=Y)=1/6。",
+    "explanation": [
+      "把两个标2的球视为不同球，共4×3=12个等可能的有序取球结果。",
+      "只有两次都取到标2的球才能相等，共2种顺序，概率2/12=1/6。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第74页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E018-003": {
+    "prompt": "从3名数据处理经理、2名高级系统分析师和2名质量控制工程师中随机选4人成立委员会。X、Y分别为选出的经理人数和高级系统分析师人数。求：(1) 联合分布律；(2) P(X≥Y)。",
+    "solution": "(1) P(X=x,Y=y)=C(3,x)C(2,y)C(2,4-x-y)/C(7,4)，其中0≤x≤3，0≤y≤2，0≤4-x-y≤2，均为整数；其余为0。\n\n|X\\Y|0|1|2|\n|---|---|---|---|\n|0|0|0|1/35|\n|1|0|6/35|6/35|\n|2|3/35|12/35|3/35|\n|3|2/35|2/35|0|\n\n(2) P(X≥Y)=4/5。",
+    "explanation": [
+      "分母C(7,4)=35，分子分别从三种岗位中选出x、y、4-x-y人。",
+      "将表中x≥y的单元格相加：(6+3+12+3+2+2)/35=28/35。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第74页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E018-004": {
+    "prompt": "盒中4个红球、4个黑球，无放回抽4次，每次1球。X为前2次红球数，Y为4次总红球数。求：(1) 联合分布律；(2) P(X=Y)。",
+    "solution": "(1) P(X=x,Y=y)=[C(4,x)C(4,2-x)/C(8,2)]·[C(4-x,y-x)C(2+x,2-y+x)/C(6,2)]，其中x=0,1,2且0≤y-x≤2；不合法组合概率为0。\n(2) P(X=Y)=3/14。",
+    "explanation": [
+      "第一因子是前两次红球数的超几何概率；剩下6球含4-x红球、2+x黑球，第二因子给出后两次红球数y-x。",
+      "X=Y等价于后两次都为黑球。由抽取位置的对称性，概率C(4,2)/C(8,2)=6/28=3/14。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第74页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E018-005": {
+    "prompt": "X₁、X₂同分布，P(X₁X₂=0)=1；P(X₁=-1)=P(X₁=1)=1/8，P(X₁=0)=3/4。求：(1) 联合分布律；(2) P(X₁=X₂)。",
+    "solution": "\n|X₁\\X₂|-1|0|1|\n|---|---|---|---|\n|-1|0|1/8|0|\n|0|1/8|1/2|1/8|\n|1|0|1/8|0|\n\nP(X₁=X₂)=1/2。",
+    "explanation": [
+      "乘积恒为0，因此两者不能同时取非零值，四角概率全为0。",
+      "用同分布给出的行和与列和求其余格子，中央概率=3/4-1/8-1/8=1/2。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第74页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E019-001": {
+    "prompt": "在[-1,1]上任取两个数，分别记为X、Y。求：(1) P(-0.25<X<0.25,-0.25<Y<0.25)；(2) P(X=Y)；(3) P(X≠Y)；(4) P(X>Y)；(5) P(X≥Y)。",
+    "solution": "(1) 1/16；(2) 0；(3) 1；(4) 1/2；(5) 1/2。",
+    "explanation": [
+      "在边长2、面积4的正方形上均匀取点。(1)事件面积为0.5²=1/4，概率为(1/4)/4=1/16。",
+      "对角线X=Y面积为0，故等号概率为0；对角线两侧由对称性各占一半。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第76页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E019-002": {
+    "prompt": "二维随机变量的联合密度为 f(x,y)=c（x²+y²≤1），其他为0。求：(1) c；(2) P(X²+Y²≤1/2)。",
+    "solution": "(1) c=1/π；(2) 概率=1/2。",
+    "explanation": [
+      "单位圆盘面积π，归一化给出cπ=1。",
+      "事件圆盘半径1/√2、面积π/2，乘以密度1/π得1/2。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第76页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E019-003": {
+    "prompt": "联合分布函数 F(x,y)=c-2^(-x)-2^(-y)+2^(-x-y)（x≥0且y≥0），其他为0。求：(1) c；(2) 联合密度；(3) P(X≤1,Y≤2)。",
+    "solution": "(1) c=1。\n(2) f(x,y)=(ln2)²·2^(-x-y)，x>0,y>0；其余为0。\n(3) F(1,2)=(1-1/2)(1-1/4)=3/8。",
+    "explanation": [
+      "令x、y同时趋向正无穷，F趋于1，故c=1。此时F=(1-2^(-x))(1-2^(-y))。",
+      "对x、y各求一次偏导得到密度，再直接代入分布函数求矩形事件概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第76,77页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E019-004": {
+    "prompt": "(X,Y)在由x轴、y轴与直线y=2x+1围成的三角形D上均匀分布。求：(1) 联合密度；(2) P(-1/4<X<0,0<Y<1/4)。",
+    "solution": "(1) f(x,y)=4，-1/2<x<0且0<y<2x+1；其余为0。\n(2) 概率=1/4。",
+    "explanation": [
+      "三角形顶点为(-1/2,0)、(0,0)、(0,1)，面积1/4，密度为4。",
+      "所求矩形完全位于三角形内，面积(1/4)(1/4)=1/16，故概率4/16=1/4。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第77页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E020-001": {
+    "prompt": "盒中3红、4黑、5白球，无放回抽3球。X、Y分别为红球、黑球数。求：(1) 联合分布律；(2) X与Y的边缘分布律。",
+    "solution": "(1) P(X=x,Y=y)=C(3,x)C(4,y)C(5,3-x-y)/220，x,y为非负整数且x+y≤3（其余为0）。\n(2) X=0,1,2,3时概率依次为84/220、108/220、27/220、1/220；Y=0,1,2,3时概率依次为56/220、112/220、48/220、4/220。",
+    "explanation": [
+      "总选法C(12,3)=220，按颜色独立计数后相乘得到联合概率。",
+      "X边缘为超几何C(3,x)C(9,3-x)/220；Y边缘为C(4,y)C(8,3-y)/220。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第81页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E020-002": {
+    "prompt": "箱中10件产品，其中2件次品，依次任取2件。X、Y分别指示第一次、第二次是否为正品（正品为1，次品为0）。分别在(i)放回抽样、(ii)不放回抽样下求：(1) 联合分布律；(2) 边缘分布律。",
+    "solution": "(i) 行X=0,1，列Y=0,1，联合概率矩阵为 [[1/25,4/25],[4/25,16/25]]。\n(ii) 同样行列顺序，联合概率矩阵为 [[1/45,8/45],[8/45,28/45]]。\n两种情形均有P(X=0)=P(Y=0)=1/5，P(X=1)=P(Y=1)=4/5。",
+    "explanation": [
+      "放回时两次独立，按各次正品概率4/5、次品概率1/5相乘。",
+      "不放回时，如P(X=1,Y=1)=(8/10)(7/9)=28/45，其他格同理；边缘由行和、列和求出。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第81页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E020-003": {
+    "prompt": "联合密度 f(x,y)=1/(4√(xy))（0<x<1,0<y<1），其余为0。求X与Y的边缘密度。",
+    "solution": "f_X(x)=1/(2√x)，0<x<1；其余为0。\nf_Y(y)=1/(2√y)，0<y<1；其余为0。",
+    "explanation": [
+      "固定x，对y从0到1积分：∫[1/(4√x)]y^(-1/2)dy=1/(2√x)。",
+      "对称地对x积分得到Y边缘；各自从0到1积分均为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第81页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E020-004": {
+    "prompt": "(习题5.3第4题续) (X,Y)在由x轴、y轴与y=2x+1围成的三角形内均匀分布。求两者的边缘密度。",
+    "solution": "f_X(x)=4(2x+1)，-1/2<x<0；其余为0。\nf_Y(y)=2(1-y)，0<y<1；其余为0。",
+    "explanation": [
+      "联合密度为4。固定x，纵截线长2x+1；固定y，横截线从(y-1)/2到0、长(1-y)/2。",
+      "密度4乘相应截线长度，即得边缘密度。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第81页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E020-005": {
+    "prompt": "已知联合密度 f(x,y)=k(1-x)y（0<x<1,0<y<x），其余为0。求：(1) k；(2) 两个边缘密度。",
+    "solution": "(1) k=24。\n(2) f_X(x)=12x²(1-x)，0<x<1；f_Y(y)=12y(1-y)²，0<y<1；各自在其他处为0。",
+    "explanation": [
+      "1=k∫₀¹(1-x)[∫₀ˣy dy]dx=k/24。",
+      "X边缘对0<y<x积分；Y边缘固定y后对y<x<1积分，不能使用矩形区域的上下限。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第81页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-001": {
+    "prompt": "X、Y独立。X取-2、-1、0、1/2，概率依次为1/4、1/3、1/12、1/3；Y取-1/2、1、3，概率依次为1/2、1/4、1/4。求联合分布律。",
+    "solution": "\n|X\\Y|-1/2|1|3|\n|---|---|---|---|\n|-2|1/8|1/16|1/16|\n|-1|1/6|1/12|1/12|\n|0|1/24|1/48|1/48|\n|1/2|1/6|1/12|1/12|",
+    "explanation": [
+      "独立性给出P(X=x,Y=y)=P(X=x)P(Y=y)，逐格相乘。",
+      "每行和分别恢复X的概率，每列和恢复Y的概率，合计为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-002": {
+    "prompt": "X、Y独立，联合分布表（行X=1,2，列Y=1,2,3）为 [[a,1/9,c],[1/9,b,1/3]]。求a、b、c。",
+    "solution": "(a,b,c)=(1/18,2/9,1/6)。",
+    "explanation": [
+      "独立使两行成比例。令第一行是第二行的r倍，r>0，则a=r/9、b=1/(9r)、c=r/3。",
+      "归一化给出4r/9+5/9+1/(9r)=1，即(2r-1)²=0，故r=1/2；代入即得各值，全部单元格之和为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-003": {
+    "prompt": "(习题5.4第2题续) 箱中10件产品有2件次品，任取2次，X、Y分别为第一次、第二次正品指示变量。分别讨论放回、不放回时X与Y是否独立并说明理由。",
+    "solution": "放回时独立；不放回时不独立。",
+    "explanation": [
+      "放回时每次正品概率均为4/5，联合概率为两个边缘概率的乘积。",
+      "不放回时P(X=1,Y=1)=28/45，而P(X=1)P(Y=1)=16/25，两者不相等。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-004": {
+    "prompt": "X、Y独立。X取0、1、2、3的概率为1/2、1/4、1/8、1/8；Y取-1、0、1的概率均为1/3。求P(X+Y=2)。",
+    "solution": "P(X+Y=2)=1/6。",
+    "explanation": [
+      "和为2的组合是(1,1)、(2,0)、(3,-1)。",
+      "利用独立性相加：(1/4+1/8+1/8)×1/3=1/6。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-005": {
+    "prompt": "X、Y独立，X在[0,0.2]均匀分布，Y服从参数为5的指数分布。求联合密度及P(X≥Y)。",
+    "solution": "f(x,y)=25e^(-5y)，0<x<0.2、y>0；其余为0。P(X≥Y)=e^(-1)≈0.367879。",
+    "explanation": [
+      "X密度为5，Y密度为5e^(-5y)，独立后相乘。",
+      "P(X≥Y)=∫₀^0.2 5(1-e^(-5x))dx=1-(1-e^(-1))=e^(-1)。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-006": {
+    "prompt": "联合密度 f(x,y)=k e^(-(3x+4y))（x>0,y>0），其余为0。证明X、Y独立。",
+    "solution": "归一化得k=12。f_X(x)=3e^(-3x)（x>0），f_Y(y)=4e^(-4y)（y>0），其他为0；f=f_Xf_Y，所以X、Y独立。",
+    "explanation": [
+      "二重积分为k·(1/3)·(1/4)=1。",
+      "支撑集是两个正半轴的笛卡儿积，且密度等于两个边缘密度之积，满足独立充要条件。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-007": {
+    "prompt": "(习题5.4第5题续) f(x,y)=k(1-x)y（0<x<1,0<y<x），其余为0。讨论X、Y是否独立。",
+    "solution": "X、Y不独立（k=24）。",
+    "explanation": [
+      "边缘密度分别为12x²(1-x)、12y(1-y)²，在0<x<1、0<y<1都为正。",
+      "但当0<x<y<1时联合密度为0，而两个边缘密度之积为正，故不独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第84,85页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-008": {
+    "source": {
+      "id": "SRC-PS3-E021-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题5.5 · 第 8 题",
+      "chapter": 5,
+      "section_id": "PS-C05-S5",
+      "printed_page": 75,
+      "pdf_page": 85,
+      "segments": [
+        {
+          "page": 85,
+          "top": 0.08,
+          "bottom": 0.34
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "ocr_located",
+      "source_number": 8,
+      "group_title": "习题5.5",
+      "mapping_basis": "原书所在小节及题面关键词；边界可回看前后页核对",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K05-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E021-008",
+    "title": "习题5.5 · 第 8 题",
+    "kind": "exercise",
+    "source_pages": [
+      85
+    ],
+    "answer_pages": [],
+    "text_origin": "uploaded_textbook_scan_ocr",
+    "prompt": "(X,Y)服从二维正态分布N(0,1,2,4,0)。求：(1) 两个边缘密度；(2) 联合密度；(3) P(-√2≤X≤√2,-√2≤Y≤√2)。",
+    "solution": "(1) X~N(0,2)，f_X(x)=e^(-x²/4)/(2√π)；Y~N(1,4)，f_Y(y)=e^(-(y-1)²/8)/(2√(2π))。\n(2) f(x,y)=e^(-x²/4-(y-1)²/8)/(4π√2)，x,y∈ℝ。\n(3) [Φ(1)-Φ(-1)]·[Φ((√2-1)/2)-Φ((-√2-1)/2)]≈0.319732。",
+    "explanation": [
+      "按本书参数顺序(μ₁,μ₂,σ₁²,σ₂²,ρ)读出两边缘正态分布。",
+      "二维正态ρ=0意味着独立；矩形概率可分解，再把各边缘标准化计算。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第85页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E021-009": {
+    "source": {
+      "id": "SRC-PS3-E021-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题5.5 · 第 9 题",
+      "chapter": 5,
+      "section_id": "PS-C05-S5",
+      "printed_page": 75,
+      "pdf_page": 85,
+      "segments": [
+        {
+          "page": 85,
+          "top": 0.08,
+          "bottom": 0.34
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "ocr_located",
+      "source_number": 9,
+      "group_title": "习题5.5",
+      "mapping_basis": "原书所在小节及题面关键词；边界可回看前后页核对",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K05-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E021-009",
+    "title": "习题5.5 · 第 9 题",
+    "kind": "exercise",
+    "source_pages": [
+      85
+    ],
+    "answer_pages": [],
+    "text_origin": "uploaded_textbook_scan_ocr",
+    "prompt": "进入邮局的人数服从参数λ的泊松分布，每个人为男性的概率为p（0<p<1）。X、Y分别为男性、女性人数。求：(1) 两个边缘分布律；(2) 是否独立并说明理由。",
+    "solution": "X~Poisson(λp)，Y~Poisson(λ(1-p))，并且相互独立。\nP(X=i,Y=j)=e^(-λ)(λp)^i[λ(1-p)]^j/(i!j!)，i,j=0,1,…。",
+    "explanation": [
+      "给定总人数i+j，男性人数为二项分布，所以联合概率=P(N=i+j)C(i+j,i)p^i(1-p)^j。",
+      "化简后恰好为两个泊松概率的乘积，既得边缘分布也证明独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第85页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E022-001": {
+    "prompt": "(习题5.2第2题续) 四球标1、2、2、3，无放回依次取两球，数字为X、Y。求：(1) P(Y=2|X=2)；(2) X=2时Y的条件分布律。",
+    "solution": "(1) 1/3。\n(2) P(Y=1|X=2)=P(Y=2|X=2)=P(Y=3|X=2)=1/3。",
+    "explanation": [
+      "第一次取走一个标2球后，剩下三个球分别标1、2、3，各有相同机会。",
+      "也可由条件概率公式把联合概率1/6除以P(X=2)=1/2，得1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第88页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E022-002": {
+    "prompt": "(习题5.2第3题续) 从3经理、2高级系统分析师、2质量工程师中选4人，X为经理数，Y为分析师数。求给定Y=1时X的条件分布律。",
+    "solution": "给定Y=1，X=1、2、3的条件概率依次为3/10、3/5、1/10；其他为0。",
+    "explanation": [
+      "已知分析师恰好1人，其余3人从3经理、2工程师中选，故P(X=x|Y=1)=C(3,x)C(2,3-x)/C(5,3)。",
+      "代入x=1,2,3，分子依次3、6、1，分母10。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第88页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E022-003": {
+    "prompt": "(习题5.2第4题续) 4红4黑，无放回抽4球。X为前2球红球数，Y为4球总红球数。求给定X=1时Y的条件分布律。",
+    "solution": "P(Y=1|X=1)=1/5，P(Y=2|X=1)=3/5，P(Y=3|X=1)=1/5；其他为0。",
+    "explanation": [
+      "前2球取走1红1黑，剩下3红3黑，从中再取2球。",
+      "Y=1+Z，Z~超几何(6,3,2)，概率为C(3,z)C(3,2-z)/C(6,2)，对应3/15、9/15、3/15。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第88页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-001": {
+    "prompt": "P(A)=1/3，P(B|A)=P(A|B)=0.5。定义X=1_A，Y=1_B。求：(1) 联合分布律；(2) 两个边缘分布律；(3) 是否独立及理由；(4) P(X≥Y)。",
+    "solution": "(1) 行X=0,1、列Y=0,1的联合表为 [[1/2,1/6],[1/6,1/6]]。\n(2) P(X=1)=P(Y=1)=1/3，取0概率均2/3。\n(3) 不独立。(4) P(X≥Y)=5/6。",
+    "explanation": [
+      "P(AB)=P(A)P(B|A)=1/6，再由P(A|B)=1/2得P(B)=1/3。",
+      "交集概率1/6不等于(1/3)²，故不独立；X<Y只可能(0,1)，概率1/6。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第89页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-002": {
+    "prompt": "联合表行X=0,1,2、列Y=0,1为 [[2/25,b],[a,3/25],[1/25,2/25]]，且P(Y=1|X=0)=3/5。求：(1) a、b；(2) 此时是否独立及理由。",
+    "solution": "(1) b=3/25，a=14/25。\n(2) 不独立。",
+    "explanation": [
+      "b/(2/25+b)=3/5，解得b=3/25；总和为1给出a=14/25。",
+      "P(X=0,Y=0)=2/25，但P(X=0)P(Y=0)=(1/5)(17/25)=17/125，与2/25不等。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第89页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-003": {
+    "prompt": "X取0、1的概率为1/3、2/3，Y取-1、0、1的概率均1/3，且P(X²=Y²)=1。求联合分布律。",
+    "solution": "行X=0,1，列Y=-1,0,1的联合表为 [[0,1/3,0],[1/3,0,1/3]]。",
+    "explanation": [
+      "由平方相等，X=0必有Y=0，X=1时Y只能±1。",
+      "将给定边缘概率填入仅有的三个可能位置，恰好满足全部行和、列和。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第89,90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-004": {
+    "prompt": "P(X=1)=P(X=2)=1/2，给定X=i时Y在(0,i)上均匀分布（i=1,2）。求Y的分布函数。",
+    "solution": "F_Y(y)=0（y≤0）；3y/4（0<y≤1）；1/2+y/4（1<y<2）；1（y≥2）。",
+    "explanation": [
+      "按X=1、X=2分组：F_Y(y)=(1/2)F_{U(0,1)}(y)+(1/2)F_{U(0,2)}(y)。",
+      "在0<y≤1两项均线性；在1<y<2第一项已为1/2，第二项继续以斜率1/4增加。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-005": {
+    "prompt": "(X,Y)在由x+y=±1、x-y=±1围成的区域D上均匀分布。求：(1) 两个边缘密度；(2) P(|X|≤Y)；(3) 是否独立及理由。",
+    "solution": "(1) f_X(x)=1-|x|（|x|<1），f_Y(y)=1-|y|（|y|<1），其余为0。\n(2) 1/4。\n(3) 不独立。",
+    "explanation": [
+      "D为|x|+|y|≤1的菱形，面积2，联合密度1/2；固定x截线长2(1-|x|)。",
+      "菱形由y=±x分成4个等面积三角形，|X|≤Y对应上方一个，故概率1/4。",
+      "例如x=y=3/4附近位于D外，联合密度0，而两个边缘密度均为正，因此不独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-006": {
+    "prompt": "联合密度f(x,y)=a e^(-(x+2y))（x>0且y>0），其余为0。求：(1) a；(2) 边缘密度；(3) 独立性及理由。",
+    "solution": "a=2；f_X(x)=e^(-x)（x>0），f_Y(y)=2e^(-2y)（y>0），其余为0。X与Y独立。",
+    "explanation": [
+      "归一化：a∫₀∞e^(-x)dx∫₀∞e^(-2y)dy=a/2=1。",
+      "对另一变量积分得到两个边缘，它们的乘积与联合密度处处相同。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-007": {
+    "source": {
+      "id": "SRC-PS3-E023-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第五章综合题 · 第 7 题",
+      "chapter": 5,
+      "section_id": "PS-C05-S6",
+      "printed_page": 80,
+      "pdf_page": 90,
+      "segments": [
+        {
+          "page": 90,
+          "top": 0.08,
+          "bottom": 0.34
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "ocr_located",
+      "source_number": 7,
+      "group_title": "第五章综合题",
+      "mapping_basis": "原书所在小节及题面关键词；边界可回看前后页核对",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K05-04"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E023-007",
+    "title": "第五章综合题 · 第 7 题",
+    "kind": "exercise",
+    "source_pages": [
+      90
+    ],
+    "answer_pages": [],
+    "text_origin": "uploaded_textbook_scan_ocr",
+    "prompt": "(X,Y)在由x-y=0、x+y=2与y=0围成的三角形G上均匀分布。求：(1) X的边缘密度；(2) 条件密度f_{X|Y}(x|y)。",
+    "solution": "(1) f_X(x)=x（0<x≤1）；2-x（1<x<2）；其他为0。\n(2) f_{X|Y}(x|y)=1/[2(1-y)]，0<y<1且y<x<2-y；在该条件支撑外为0。",
+    "explanation": [
+      "三角形面积1，联合密度为1；纵截线长min(x,2-x)，即为f_X。",
+      "给定y时横截线为(y,2-y)，长2(1-y)；f_Y(y)=2(1-y)，故条件密度为联合密度除以此边缘。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-008": {
+    "prompt": "X的边缘密度为3x²（0<x<1），其他为0；给定X=x时Y的条件密度为3y²/x³（0<y<x），其他为0。求：(1) 联合密度；(2) Y的边缘密度。",
+    "solution": "(1) f(x,y)=9y²/x，0<y<x<1；其余为0。\n(2) f_Y(y)=-9y² ln y，0<y<1；其余为0。",
+    "explanation": [
+      "联合密度=f_X(x)f_{Y|X}(y|x)=3x²·3y²/x³。",
+      "固定y，x须满足y<x<1，因此f_Y(y)=∫ᵧ¹9y²/x dx=-9y²ln y。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-009": {
+    "prompt": "联合密度 f(x,y)=(1/(2π))e^(-(x²+y²)/2)[1+sin x sin y]，x,y∈ℝ。求：(1) 两边缘密度；(2) 独立性并说明理由。",
+    "solution": "(1) f_X(x)=e^(-x²/2)/√(2π)，f_Y(y)=e^(-y²/2)/√(2π)，都是标准正态密度。\n(2) 不独立。",
+    "explanation": [
+      "标准正态密度为偶函数，sin为奇函数，∫ℝφ(t)sin t dt=0；对另一变量积分即只剩φ。",
+      "联合密度为φ(x)φ(y)[1+sin x sin y]，在sin x sin y≠0处不等于边缘密度之积，因此不独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E023-010": {
+    "prompt": "设(X,Y)为二维连续型随机变量，证明对任何x都有 P(X≤x)=∫_{-∞}^{∞}P(X≤x|Y=y)f_Y(y)dy。",
+    "solution": "由条件密度关系，对f_Y(y)>0的y，P(X≤x|Y=y)f_Y(y)=∫_{-∞}^x f(u,y)du。因此右侧=∫ℝ∫_{-∞}^x f(u,y)du dy=∫_{-∞}^x f_X(u)du=P(X≤x)，得证。",
+    "explanation": [
+      "在f_Y(y)=0处条件概率可任意定义，不改变加权积分。",
+      "使用非负函数的积分换序，把条件分布的加权平均化为联合密度在半平面{u≤x}上的积分。"
+    ],
+    "knowledge_ids": [
+      "PS-K05-01",
+      "PS-K05-02",
+      "PS-K05-03",
+      "PS-K05-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第90页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-001": {
+    "prompt": "X取-2、-1/2、0、2、4，对应概率1/8、1/4、1/8、1/6、1/3。求：(1) X+2；(2) -X+1；(3) X²的分布律。",
+    "solution": "(1) 取0、3/2、2、4、6，概率依次1/8、1/4、1/8、1/6、1/3。\n(2) 取3、3/2、1、-1、-3，概率依次1/8、1/4、1/8、1/6、1/3。\n(3) 取0、1/4、4、16，概率依次1/8、1/4、7/24、1/3。",
+    "explanation": [
+      "逐一把X的值代入对应函数，再把映到同一新值的概率相加。",
+      "前两个函数为一一映射；平方时X=-2和X=2都映到4，概率合并成1/8+1/6=7/24。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-002": {
+    "prompt": "X服从参数λ=1的泊松分布。定义Y=0（X≤1），Y=1（X>1）。求Y的分布律。",
+    "solution": "P(Y=0)=2/e，P(Y=1)=1-2/e。",
+    "explanation": [
+      "P(X=0)=e^(-1)，P(X=1)=e^(-1)，所以P(X≤1)=2/e。",
+      "Y只有0和1两个取值，其余概率由补事件求出。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-003": {
+    "prompt": "X的密度为f(x)=2x（0<x<1），其余为0。求：(1) Z=2X；(2) Z=-X+1；(3) Z=X²的密度。",
+    "solution": "(1) f_Z(z)=z/2，0<z<2。\n(2) f_Z(z)=2(1-z)，0<z<1。\n(3) f_Z(z)=1，0<z<1。上述密度各自在其余处为0。",
+    "explanation": [
+      "(1)反函数x=z/2，导数绝对值1/2；(2)反函数x=1-z，导数绝对值1。",
+      "(3)X>0，反函数x=√z，密度2√z·1/(2√z)=1。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-004": {
+    "prompt": "圆片直径测量值X在(5,6)均匀分布。求圆片面积Y的密度。",
+    "solution": "Y=πX²/4，f_Y(y)=1/√(πy)，25π/4<y<9π；其余为0。",
+    "explanation": [
+      "反函数X=2√(y/π)，导数为1/√(πy)。",
+      "X在长度1区间上密度为1；代入变换公式并将直径端点映为面积端点。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-005": {
+    "prompt": "X的密度为e^(-x)（x>0），其他为0。求：(1) Y=2X+1；(2) Z=e^X的密度。",
+    "solution": "(1) f_Y(y)=(1/2)e^(-(y-1)/2)，y>1；其余0。\n(2) f_Z(z)=1/z²，z>1；其余0。",
+    "explanation": [
+      "(1)x=(y-1)/2，乘反函数导数1/2。",
+      "(2)x=ln z，乘导数1/z，得到e^(-ln z)/z=1/z²。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-006": {
+    "prompt": "X~N(0,1)。求Y=X²的密度。",
+    "solution": "f_Y(y)=e^(-y/2)/√(2πy)，y>0；其余为0，即χ²(1)分布。",
+    "explanation": [
+      "y>0时，平方有两个原像±√y，每支雅可比绝对值都是1/(2√y)。",
+      "两支标准正态密度相同，相加得到2φ(√y)/(2√y)。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-007": {
+    "prompt": "X~N(0,1)，Y=|X|。求Y的密度。",
+    "solution": "f_Y(y)=√(2/π)e^(-y²/2)，y>0；其余为0。",
+    "explanation": [
+      "y>0时F_Y(y)=P(-y≤X≤y)=2Φ(y)-1。",
+      "求导得到2φ(y)，是标准半正态分布；Y=0的点概率仍为0。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-008": {
+    "prompt": "X~N(0,1)，a、σ为常数且σ>0。证明σX+a服从N(a,σ²)。",
+    "solution": "设Y=σX+a，则f_Y(y)=[1/(σ√(2π))]exp(-(y-a)²/(2σ²))（y∈ℝ），正是N(a,σ²)的密度，得证。",
+    "explanation": [
+      "反函数x=(y-a)/σ，导数为1/σ。",
+      "将反函数代入标准正态密度并乘1/σ，即得结论。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E024-009": {
+    "prompt": "X在[-1,2]上均匀分布。Y=-1（X<0），0（X=0），1（X>0）。求Y的分布律。",
+    "solution": "P(Y=-1)=1/3，P(Y=0)=0，P(Y=1)=2/3。",
+    "explanation": [
+      "连续均匀变量在单点X=0的概率为0。",
+      "负半段长度1，正半段长度2，总长度3，所以对应概率分别1/3、2/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第97页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-001": {
+    "prompt": "联合表行X=1,2,3，列Y=1,2,3为 [[1/4,1/4,1/8],[1/8,0,0],[1/8,1/8,0]]。求：(1) X+Y；(2) X-Y；(3) 2X；(4) XY的分布律。",
+    "solution": "(1) P(取值=2)=1/4；P(取值=3)=3/8；P(取值=4)=1/4；P(取值=5)=1/8。\n(2) P(取值=-2)=1/8；P(取值=-1)=1/4；P(取值=0)=1/4；P(取值=1)=1/4；P(取值=2)=1/8。\n(3) P(取值=2)=5/8；P(取值=4)=1/8；P(取值=6)=1/4。\n(4) P(取值=1)=1/4；P(取值=2)=3/8；P(取值=3)=1/4；P(取值=6)=1/8。 其余取值概率为0。",
+    "explanation": [
+      "对每个非零联合概率的(x,y)，分别计算四个函数值。",
+      "同一函数值可能有多个原像，须把这些格子的概率相加；每问所得概率总和均为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第103,104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-002": {
+    "prompt": "X、Y相互独立，且均服从B(1,1/4)。(1) Z=X+Y的分布律；(2) U=2X的分布律；说明两者未必同分布。",
+    "solution": "(1) Z取0、1、2的概率为9/16、3/8、1/16。\n(2) U取0、2的概率为3/4、1/4。\n故即使X、Y同分布，X+Y与2X的分布仍不同。",
+    "explanation": [
+      "独立伯努利之和Z~B(2,1/4)，按二项公式计算。",
+      "U只是把X的0、1映为0、2，且P(U=1)=0，而P(Z=1)=3/8。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-003": {
+    "prompt": "X₁、X₂独立同分布，均服从Poisson(2)，Z=X₁+X₂。求：(1) Z的分布律；(2) (X₁,Z)联合分布律；(3) P(X₁=2|Z=3)。",
+    "solution": "(1) Z~Poisson(4)，P(Z=n)=e^(-4)4^n/n!。\n(2) P(X₁=k,Z=n)=e^(-4)2^n/[k!(n-k)!]，n=0,1,…、k=0,…,n；其余0。\n(3) P(X₁=2|Z=3)=3/8。",
+    "explanation": [
+      "Z=n且X₁=k等价于X₁=k、X₂=n-k，用独立性相乘并求和可得Poisson(4)。",
+      "条件于Z=n，X₁~B(n,1/2)；n=3、k=2给出C(3,2)/8=3/8。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-004": {
+    "prompt": "联合表行X=1,2,3，列Y=1,2,3为 [[1/9,0,0],[2/9,1/9,0],[2/9,2/9,1/9]]。求：(1) U=max(X,Y)分布；(2) V=min(X,Y)分布；(3) (U,V)联合分布。",
+    "solution": "(1) U取1、2、3的概率为1/9、1/3、5/9。\n(2) V取1、2、3的概率为5/9、1/3、1/9。\n(3) 行U=1,2,3，列V=1,2,3，联合表仍为 [[1/9,0,0],[2/9,1/9,0],[2/9,2/9,1/9]]。",
+    "explanation": [
+      "原表只在X≥Y处有非零概率，所以以概率1有U=X、V=Y。",
+      "对原表按行、按列求和，分别得到U和V的边缘分布，联合表无需交换数值。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-005": {
+    "prompt": "(X,Y)在顶点(0,2)、(2,0)、(0,0)的三角形G上均匀分布。Z=X+Y，求Z的密度。",
+    "solution": "f_Z(z)=z/2，0<z<2；其余为0。",
+    "explanation": [
+      "G面积2，联合密度1/2；当0<z<2时，x+y≤z的子三角形面积为z²/2。",
+      "F_Z(z)=(z²/2)/2=z²/4，求导得z/2。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-006": {
+    "prompt": "联合密度f(x,y)=2-x-y（0<x<1,0<y<1），其余为0。求：(1) P(X+Y>1)；(2) Z=X+Y的密度。",
+    "solution": "(1) 1/3。\n(2) f_Z(z)=z(2-z)，0<z<1；(2-z)²，1≤z<2；其余为0。",
+    "explanation": [
+      "沿直线y=z-x积分，被积函数恒为2-z；当z<1时x∈(0,z)，当z>1时x∈(z-1,1)。",
+      "故密度为(2-z)乘对应区间长。P(Z>1)=∫₁²(2-z)²dz=1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-007": {
+    "prompt": "(X,Y)在由x=0、y=0、x=2、y=2围成的正方形上均匀分布。求Z=X-Y的分布函数及密度。",
+    "solution": "F_Z(z)=0（z≤-2）；(z+2)²/8（-2<z≤0）；1-(2-z)²/8（0<z<2）；1（z≥2）。\nf_Z(z)=(2-|z|)/4（|z|<2），其余为0。",
+    "explanation": [
+      "联合密度1/4，差为z的截线对应x区间长2-|z|，因而密度为此长度除4。",
+      "分段积分密度并使分布函数在-2、0、2处连续，得到所列F_Z。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-008": {
+    "prompt": "(X,Y)的联合密度为f(x,y)。用f表示随机变量Z=X+Y的密度。",
+    "solution": "f_Z(z)=∫_{-∞}^{∞}f(x,z-x)dx（几乎处处成立）。",
+    "explanation": [
+      "作变换u=x、z=x+y，其反变换为x=u、y=z-u，雅可比绝对值为1。",
+      "(U,Z)的联合密度为f(u,z-u)，对u积分消去U，得到和的边缘密度。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-009": {
+    "prompt": "X~N(a,σ²)，Y~N(b,τ²)，且X、Y独立，Z=X+Y。求给定X=x时Z的条件密度。",
+    "solution": "Z|X=x ~ N(x+b,τ²)，条件密度为 exp(-(z-x-b)²/(2τ²))/(τ√(2π))，z∈ℝ。",
+    "explanation": [
+      "独立性使给定X=x后Y的分布仍为N(b,τ²)。",
+      "此时Z=x+Y，只是将Y平移x，均值增加x而方差不变。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-010": {
+    "prompt": "X、Y独立，分别服从N(μ₁,σ²)和N(μ₂,2σ²)。Z=X-Y，求密度。",
+    "solution": "Z~N(μ₁-μ₂,3σ²)，f_Z(z)=exp(-(z-μ₁+μ₂)²/(6σ²))/(σ√(6π))，z∈ℝ。",
+    "explanation": [
+      "独立正态变量的线性组合仍为正态。",
+      "均值为μ₁-μ₂；方差为σ²+(-1)²·2σ²=3σ²。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-011": {
+    "prompt": "两个保险丝寿命X、Y独立，均为参数λ=0.2的指数分布。(1) 一个备用，前一个失效后再启用，求总寿命Z=X+Y的密度；(2) 同时独立使用，求U=max(X,Y)的密度。",
+    "solution": "(1) f_Z(z)=0.04z e^(-0.2z)，z>0；其余0。\n(2) f_U(u)=0.4e^(-0.2u)(1-e^(-0.2u))，u>0；其余0。",
+    "explanation": [
+      "(1)卷积：∫₀ᶻ0.2e^(-0.2x)·0.2e^(-0.2(z-x))dx=0.04ze^(-0.2z)。",
+      "(2)最大值分布函数为P(X≤u,Y≤u)=(1-e^(-0.2u))²，对u求导。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第104,105页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-012": {
+    "prompt": "X、Y独立，均在(0,1)均匀分布。Z=XY为以X、Y作边长的矩形面积，求Z的密度。",
+    "solution": "f_Z(z)=-ln z，0<z<1；其余为0。",
+    "explanation": [
+      "0<z<1时F_Z(z)=∫₀ᶻ1dx+∫ᶻ¹(z/x)dx=z-z ln z。",
+      "对z求导得-ln z；该密度从0到1积分为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第105页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E025-013": {
+    "prompt": "X、Y独立，均在(0,1)均匀分布，Z=X/Y。求Z的密度。",
+    "solution": "f_Z(z)=1/2（0<z<1）；1/(2z²)（z≥1）；其他为0。",
+    "explanation": [
+      "由Y>0，F_Z(z)=∫₀¹P(X≤zy)dy。0<z<1时为∫₀¹zy dy=z/2。",
+      "z≥1时拆分y=1/z：F_Z(z)=∫₀^(1/z)zy dy+∫_(1/z)^1 1dy=1-1/(2z)，分段求导即得。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第105页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-001": {
+    "prompt": "从{1,2,3}中任取一整数X，再从{1,2,…,X}中任取一整数Y。求：(1) 联合分布律；(2) Z=X+Y的分布律。",
+    "solution": "(1) P(X=x,Y=y)=1/(3x)，1≤y≤x≤3（整数），其余0。\n(2) Z=2、3、4、5、6的概率依次为1/3、1/6、5/18、1/9、1/9。",
+    "explanation": [
+      "X均匀取三个值；给定X=x，Y均匀取x个值，故联合概率1/(3x)。",
+      "按相同和归并：Z=4来自(2,2)与(3,1)，概率1/6+1/9=5/18，其余和各只有一个原像。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-002": {
+    "prompt": "X~Poisson(λ)，给定X=k时Y~B(k,p)，0<p<1。求：(1) Y的分布；(2) X-Y的分布；(3) 证明Y与X-Y独立。",
+    "solution": "Y~Poisson(λp)，X-Y~Poisson(λ(1-p))，两者独立。联合概率P(Y=i,X-Y=j)=e^(-λ)(λp)^i[λ(1-p)]^j/(i!j!)，i,j≥0。",
+    "explanation": [
+      "令X=i+j，联合概率=P(X=i+j)P(Y=i|X=i+j)，代入泊松和二项公式化简。",
+      "结果可分解为e^(-λp)(λp)^i/i!与e^(-λ(1-p))[λ(1-p)]^j/j!之积，直接识别两边缘并证明独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-01",
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-003": {
+    "prompt": "P(X≥0,Y≥0)=3/7，P(X≥0)=P(Y≥0)=4/7。求：(1) P(min(X,Y)<0)；(2) P(max(X,Y)≥0)。",
+    "solution": "(1) 4/7；(2) 5/7。",
+    "explanation": [
+      "最小值非负等价于两者都非负，所以(1)=1-3/7。",
+      "最大值非负等价于至少一个非负，用并事件公式：(4+4-3)/7=5/7。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-004": {
+    "prompt": "X在(-1,1)均匀分布，Y=1-X。求Y的密度。",
+    "solution": "f_Y(y)=1/2，0<y<2；其余为0，即Y~U(0,2)。",
+    "explanation": [
+      "反函数x=1-y，雅可比绝对值为1。",
+      "X的密度1/2保持不变，端点-1、1经变换后为2、0。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02",
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-005": {
+    "prompt": "(X,Y)在D={(x,y):0<x<1,|y|<x}上均匀分布。求：(1) 两边缘密度；(2) 是否独立及理由；(3) Z=X+Y的密度。",
+    "solution": "(1) f_X(x)=2x（0<x<1），f_Y(y)=1-|y|（|y|<1）；其余均0。\n(2) 不独立。\n(3) f_Z(z)=1-z/2（0<z<2），其余0。",
+    "explanation": [
+      "D面积1，联合密度为1。纵截长2x、横截长1-|y|，得到边缘；三角形支撑不等于两边缘支撑的乘积，故不独立。",
+      "沿y=z-x积分，约束-x<z-x<x化为z>0及x>z/2，再有x<1，长度1-z/2即为和的密度。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02",
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-006": {
+    "prompt": "X₁,…,Xₙ独立，均为U(0,1)。Y=min(X₁,…,Xₙ)，求密度。",
+    "solution": "f_Y(y)=n(1-y)^(n-1)，0<y<1；其余0。",
+    "explanation": [
+      "P(Y>y)=P(X₁>y,…,Xₙ>y)=(1-y)^n。",
+      "故F_Y(y)=1-(1-y)^n，对y求导得到密度。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02",
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-007": {
+    "prompt": "X、Y独立且都为N(0,1)，U=X-Y，V=|X-Y|。求：(1) U密度；(2) V密度。",
+    "solution": "(1) f_U(u)=e^(-u²/4)/(2√π)，u∈ℝ。\n(2) f_V(v)=e^(-v²/4)/√π，v>0；其余0。",
+    "explanation": [
+      "U为正态线性组合，均值0、方差1+1=2。",
+      "U的密度关于0对称，取绝对值后在正半轴把±v两支密度相加。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02",
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  },
+  "SRC-PS3-E026-008": {
+    "prompt": "(X,Y)服从二维正态N(1,0,1,1,0)，求P(XY-Y<0)。",
+    "solution": "P(XY-Y<0)=1/2。",
+    "explanation": [
+      "ρ=0的二维正态变量独立，X-1与Y又都是独立标准正态。",
+      "XY-Y=(X-1)Y<0要求两者异号；各自正、负概率均1/2，所以概率2×(1/2)²=1/2。"
+    ],
+    "knowledge_ids": [
+      "PS-K06-02",
+      "PS-K06-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐页核对上传教材扫描图（PDF第106页），恢复公式及表格；按题中全部子问独立推导并校验。"
+  }
+}

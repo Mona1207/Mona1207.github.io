@@ -1,3 +1,32 @@
+## v20 · 习题与笔记工作区
+
+GitHub Pages：<https://mona1207.github.io/discrete-math/?v=20#home>
+
+已校订 520 条例题和 1,141 道课后题（离散数学 634、线性代数 147、概率统计 360），均有题干、解答和讲解；课后题附 53 幅必要题图或数据图。物理教材尚未提供，未加入无来源题目。
+
+- 首页并列“习题练习（例题 + 课后题）”和“知识点讲解”，续练直接恢复上次题目；可选择章节范围直接开始。
+- 所有例题与课后题使用校订文字，保留公式、表格和必要的原图。课后题的原书简答与补充推导明确区分；原题条件不足或互相矛盾时保留说明。
+- 答题右栏先显示相关知识、方法和易错点，答完切换解答与自评。可拖动至隐藏或点击收起；查看答案时重新展开。自评成功保存草稿后自动下一题。
+- 草稿使用固定纸张坐标，调整分栏只改变可见范围。支持双指缩放、移动，柔绘笔/铅笔/钢笔，黑/红/蓝色，可调粗细，擦除与套索删除，撤销/重做。
+- 保存笔记版本同时保留图片和可编辑笔迹，可叠加图片至当前草稿或恢复该手写版本；两种导入都可撤销。图片笔记支持双指缩放。
+- 星标题目、文字笔记和图片笔记显示所属章节。保留原有按教材独立的学习记录、图片、草稿及完整备份恢复格式，新增纸张、笔具、图片层与手写版本一并备份。
+- 校正离散教材关系/函数复合讲解，统一采用教材“先左后右”的约定。
+
+构建与检查：
+
+```sh
+python discrete-math/scripts/merge-reviews-v20.py
+python discrete-math/scripts/build-ui-v20.py
+node discrete-math/scripts/test-workspace-v20.mjs
+node discrete-math/scripts/test-ink-v20.mjs
+node discrete-math/scripts/test-backup-v20.mjs
+node discrete-math/scripts/test-reader-stable-v19.mjs
+node discrete-math/scripts/audit-content-v20.mjs
+python discrete-math/scripts/test-release-v20.py
+```
+
+测试依赖：`@napi-rs/canvas`、`fake-indexeddb`、`katex`。可用 `V17_FAKE_INDEXEDDB`、`V20_KATEX` 指向依赖。交互组件、实际 Canvas 像素、备份的异设备模拟和全部教材分段读取已验证；当前环境没有可用的浏览器控制技能，尚未做平板浏览器实机验证。
+
 ## 原书读取稳定性修复（reader v19.1）
 
 本次优先修复教材与习题原页读取，未发布进行中的习题 OCR 和答题右栏改版。

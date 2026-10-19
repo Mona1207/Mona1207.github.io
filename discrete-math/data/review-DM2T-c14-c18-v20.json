@@ -1,0 +1,6216 @@
+{
+  "SRC-DM2T-E018-001": {
+    "prompt": "求图18.9的两个极小支配集、一个最小支配集及支配数。原图18.9边集为{v1v2,v1v3,v2v6,v6v3,v3v4,v4v5,v5v3}。",
+    "solution": "极小支配集可取{v2,v3}、{v1,v4,v6}；最小支配集{v2,v3}，γ=2。",
+    "explanation": [
+      "无顶点独自支配全图，故γ≥2；第一组覆盖全部顶点。第二组删除任一顶点便分别漏掉v2、v5或v6中的顶点。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 1 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.3391,
+          "bottom": 0.36113
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.235,
+          0.433,
+          0.478,
+          0.576
+        ],
+        "caption": "图18.9，含v1—v6标号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-002": {
+    "prompt": "求图18.9的两个极大点独立集、一个最大点独立集及点独立数。原图18.9边集为{v1v2,v1v3,v2v6,v6v3,v3v4,v4v5,v5v3}。",
+    "solution": "极大独立集可取{v2,v3}与{v1,v4,v6}；后一组是最大独立集，β₀=3。",
+    "explanation": [
+      "三角形{v3,v4,v5}至多取1点；其余{v1,v2,v6}至多取2点，故总数≤3。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 2 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.35913,
+          "bottom": 0.38309
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.235,
+          0.433,
+          0.478,
+          0.576
+        ],
+        "caption": "图18.9，含v1—v6标号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-003": {
+    "prompt": "求图18.9的两个极小点覆盖集、一个最小点覆盖集及点覆盖数。原图18.9边集为{v1v2,v1v3,v2v6,v6v3,v3v4,v4v5,v5v3}。",
+    "solution": "极小点覆盖集可取{v1,v4,v5,v6}、{v2,v3,v5}；后一组最小，α₀=3。",
+    "explanation": [
+      "点覆盖集的补集为独立集；极小点覆盖集对应极大独立集，α₀=6−β₀=3。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 3 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.38109,
+          "bottom": 0.40454
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.235,
+          0.433,
+          0.478,
+          0.576
+        ],
+        "caption": "图18.9，含v1—v6标号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-004": {
+    "prompt": "求图18.10的两个极小边覆盖集、一个最小边覆盖集及边覆盖数。图18.10按上、左、下、中、右五顶点依次标A,B,C,D,E；a=AB,b=AD,c=CD,d=BC,e=AE,f=CE。",
+    "solution": "极小边覆盖集可取{a,c,e}与{b,d,f}，两者均为最小；α₁=3。",
+    "explanation": [
+      "每条边至多覆盖2点，5个顶点至少需3条边；所列两组均覆盖全部顶点。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 4 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.40254,
+          "bottom": 0.58533
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.513,
+          0.443,
+          0.806,
+          0.573
+        ],
+        "caption": "图18.10，含a—f边号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-005": {
+    "prompt": "求图18.10的两个极大匹配、一个最大匹配及匹配数。图18.10按上、左、下、中、右五顶点依次标A,B,C,D,E；a=AB,b=AD,c=CD,d=BC,e=AE,f=CE。",
+    "solution": "极大匹配可取{a,c}与{c,e}，均为最大匹配，β₁=2。",
+    "explanation": [
+      "5点图的匹配最多2条边，所列匹配达到上界。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 5 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.58333,
+          "bottom": 0.60781
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.513,
+          0.443,
+          0.806,
+          0.573
+        ],
+        "caption": "图18.10，含a—f边号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-006": {
+    "prompt": "图18.10有完美匹配吗？图18.10按上、左、下、中、右五顶点依次标A,B,C,D,E；a=AB,b=AD,c=CD,d=BC,e=AE,f=CE。",
+    "solution": "没有。",
+    "explanation": [
+      "图有5个顶点；完美匹配覆盖偶数个顶点。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 6 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.60581,
+          "bottom": 0.62977
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.513,
+          0.443,
+          0.806,
+          0.573
+        ],
+        "caption": "图18.10，含a—f边号"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-007": {
+    "prompt": "求彼得松图的最大点独立集、最小点覆盖集及β₀、α₀。采用标准彼得松图编号：外圈u0u1u2u3u4u0，辐条ui vi，内圈边vi v(i+2)，下标模5。",
+    "solution": "最大独立集可取{u0,u2,v3,v4}；其补集{u1,u3,u4,v0,v1,v2}为最小点覆盖集。β₀=4，α₀=6。",
+    "explanation": [
+      "外圈和内星形各为5圈，独立集各至多2点，所以总数≤4；所列集合达到4。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-007",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 7 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.62777,
+          "bottom": 0.65122
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-008": {
+    "prompt": "给出彼得松图一个边子集，使它既是最小边覆盖集，又是最大匹配，并求β₁、α₁。采用标准彼得松图编号：外圈u0u1u2u3u4u0，辐条ui vi，内圈边vi v(i+2)，下标模5。",
+    "solution": "取5条辐条{u0v0,u1v1,u2v2,u3v3,u4v4}，β₁=α₁=5。",
+    "explanation": [
+      "该集合是完美匹配，既达到匹配上界10/2，也达到边覆盖下界10/2。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-008",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 8 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.64922,
+          "bottom": 0.67369
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-009": {
+    "prompt": "图18.11轮图W6中，找出含边e1的所有完美匹配。按五边形顺时针标a,b,c,d,e，中心o；e1=ea,e2=ab,e3=bc,e4=cd,e5=de,e6=ao,e7=bo,e8=co,e9=do,e10=eo。",
+    "solution": "恰有两组：{e1,e3,e9}与{e1,e4,e7}。",
+    "explanation": [
+      "固定ea后，余下b,c,d,o；若o配d则配bc，若o配b则配cd，若o配c则b,d不能相配。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-009",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 9 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.67169,
+          "bottom": 0.69514
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 377,
+        "bbox": [
+          0.709,
+          0.699,
+          0.943,
+          0.846
+        ],
+        "caption": "图18.11轮图W6，含e1—e10"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-010": {
+    "prompt": "举例说明：(1)极小支配集不一定独立；(2)极小支配集不一定最小；(3)极大独立集不一定最大；(4)极大匹配不一定最大。",
+    "solution": "(1)路径1−2−3−4中{2,3}极小支配且2、3相邻。(2)星K1,3的全部3片叶构成极小支配集，最小支配集只有中心1点。(3)K1,3的中心单点集极大独立，全部叶构成3点最大独立集。(4)路径1−2−3−4中{23}极大，{12,34}才是最大匹配。",
+    "explanation": [
+      "“极小/极大”按包含关系判定，“最小/最大”按元素个数判定。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-010",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 10 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.69314,
+          "bottom": 0.80392
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-011": {
+    "prompt": "举例说明满足相异性条件的二部图，不一定存在正整数t使其满足t条件。",
+    "solution": "取V1={a,b},V2={x,y},E={ax,bx,by}。有完备匹配{ax,by}，故满足Hall相异性条件；但V1最小度为1，V2最大度为2，要求2≤t≤1不可能。",
+    "explanation": [
+      "本书t条件为V1每点至少关联t边、V2每点至多关联t边；它只是充分条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 11 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.80192,
+          "bottom": 0.83457
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-012": {
+    "prompt": "证明：完全图Kn(n≥3)中β₁<α₀，β₀<α₁。",
+    "solution": "β₁=⌊n/2⌋<n−1=α₀；β₀=1<⌈n/2⌉=α₁。",
+    "explanation": [
+      "完全图独立集最多1点；覆盖全部边须至少n−1点，最大匹配为⌊n/2⌋条，利用α₁+β₁=n。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 12 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.83257,
+          "bottom": 0.8516
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-013": {
+    "prompt": "证明：完全二部图Kr,s中β₁=α₀，β₀=α₁。",
+    "solution": "不妨r≤s。β₁=α₀=r，β₀=α₁=s。",
+    "explanation": [
+      "最大匹配可把较小部全部匹配；全部r个小部顶点覆盖所有边，且r条不相邻匹配边要求至少r个覆盖顶点。独立数为s，再由α₁+β₁=r+s。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-013",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 13 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.8496,
+          "bottom": 0.8733
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-014": {
+    "prompt": "证明：任意无向简单图G均满足α₀≥δ。",
+    "solution": "取最小点覆盖集S。若图非空，则V−S非空，任选v∉S，其全部邻点属于S，故δ≤d(v)≤|S|=α₀；零边图两者都是0。",
+    "explanation": [
+      "使用简单图条件，d(v)等于不同邻点个数。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-014",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 14 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.8713,
+          "bottom": 0.895
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-015": {
+    "prompt": "证明：8×8国际象棋棋盘的一条主对角线上移去两端方格后，不能用1×2长方形不重叠地填满。",
+    "solution": "黑白交错染色。原有黑白各32格；主对角线两端同色，移去后两色格数为30与32。每块1×2骨牌恰覆盖一黑一白，所以不能铺满。",
+    "explanation": [
+      "等价于该二部棋盘图不存在完美匹配。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第377页（印刷页366）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-015",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 15 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 366,
+      "pdf_page": 377,
+      "segments": [
+        {
+          "page": 377,
+          "top": 0.893,
+          "bottom": 0.963
+        },
+        {
+          "page": 378,
+          "top": 0.055,
+          "bottom": 0.10934
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-016": {
+    "prompt": "设二部图G=⟨V1,V2,E⟩为k正则图，k≥1。证明G存在完美匹配。",
+    "solution": "由k|V1|=|E|=k|V2|得两部等大。对任意S⊆V1，k|S|条关联边全部通向N(S)，而N(S)最多容纳k|N(S)|条，故|N(S)|≥|S|。Hall定理给出完备匹配，因两部等大即完美匹配。",
+    "explanation": [
+      "k≥1使两边可约去k。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-016",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 16 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.10734,
+          "bottom": 0.13079
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-017": {
+    "prompt": "n位教员教n门课，每位至少能教2门，每门至多有2位教员能教。能否每位恰教1门且全部课程有人教？",
+    "solution": "能。教员—课程二部图满足t=2条件，故有从教员到课程的完备匹配；两部同为n点，因此为完美匹配。",
+    "explanation": [
+      "亦可由2n≤总边数≤2n知各点均恰为2度，再用第16题。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-017",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 17 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.12879,
+          "bottom": 0.17471
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-018": {
+    "prompt": "张、王、李、赵、陈5人报名物理、化学、生物。第一种：张报物化，王报物理，李赵报化生，陈报生物；第二种：张报物化，其余四人只报生物。各能否选3人分别任3组组长？",
+    "solution": "第一种能，如物理选王、化学选张、生物选陈。第二种不能：物理和化学两组的候选人合起来只有张1人，违反Hall条件。",
+    "explanation": [
+      "组长须为3名不同学生。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-018",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 18 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.17271,
+          "bottom": 0.26153
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 18,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-019": {
+    "prompt": "张能教数学、计算机；王能教物理、电工；李能教数学、物理、电工；赵只教电工。4人各教1门且4门各有1人，列所有方案。",
+    "solution": "唯一方案：张—计算机，王—物理，李—数学，赵—电工。",
+    "explanation": [
+      "计算机只有张可教，电工由赵承担，王只剩物理，李只剩数学。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-019",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 19 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.25953,
+          "bottom": 0.3264
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 19,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-020": {
+    "prompt": "求N5、C5、C6、K6、W6、W7、K3,4的最少顶点着色数（Wn表示n阶轮图）。",
+    "solution": "依次为1、3、2、6、4、3、2。",
+    "explanation": [
+      "偶圈交替2色，奇圈需3色；轮图中心要增加一种颜色；完全图两两相邻；非空二部图为2色。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-020",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 20 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.3244,
+          "bottom": 0.50106
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 20,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-021": {
+    "prompt": "求图18.12(a)(b)(c)的点色数。(a)四角顺时针a,b,c,d，内点沿左上至右下对角线依次e,f,g；边为ab,bc,cd,da,ae,ef,fg,gc,be,bf,bg,de,df,dg。(b)顶点为a左上,b上中,c右上,d左中,e右中,f左下,g下左内,h下右内,i右下；外框边ab,bc,ce,ei,ih,hg,gf,fd,da，另加de,bd,be,bg,bh,dg,dh,eg,eh。(c)两对角点之间有6条长度2的内部不交路径（即K2,6）。",
+    "solution": "依次为3、5、2。",
+    "explanation": [
+      "(a)四角顺时针a,b,c,d，三内点自左上至右下为e,f,g：三色组{b,d},{e,g},{a,f,c}；存在三角形故恰为3。(b)上中顶点、左右中顶点、下边两内点形成K5，故至少5色；其余四角度2，均可沿用5色。(c)两对角顶点之间有6条长度2的内部不交路径，是K2,6，故为2。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-021",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 21 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.49906,
+          "bottom": 0.67011
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 21,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 378,
+        "bbox": [
+          0.264,
+          0.525,
+          0.745,
+          0.642
+        ],
+        "caption": "图18.12(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-022": {
+    "prompt": "设T是非平凡无向树，证明χ(T)=2。",
+    "solution": "任选根，按到根的距离奇偶染两色。树中每条边连接相邻层，故合法。非平凡树有边，不能1色，所以χ=2。",
+    "explanation": [
+      "若边两端同奇偶，会与根路径形成圈，与树无圈矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-022",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 22 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.66811,
+          "bottom": 0.69514
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 22,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-023": {
+    "prompt": "设G是n阶k正则图，证明χ(G)≥n/(n−k)。",
+    "solution": "任一独立集I中任选v，v的k个邻点均在V−I中，故|I|≤n−k。设χ种颜色，每个色类为独立集，则n≤χ(n−k)，得到结论。",
+    "explanation": [
+      "简单图k≤n−1，分母正；整数色数还可向上取整。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 23 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.69314,
+          "bottom": 0.75592
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 23,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-024": {
+    "prompt": "证明：任何无环平面图都是6可着色的。",
+    "solution": "先合并重边得到同样着色约束的简单平面图。欧拉公式推出每个非空子图都有度≤5的顶点。对顶点数归纳：删去这样的顶点，用6色染余图，再为该顶点选其至多5个邻点未使用的一色。",
+    "explanation": [
+      "无环指无自环；允许重边，重边不改变顶点着色约束。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-024",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 24 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.75392,
+          "bottom": 0.77941
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "keywords": [],
+      "knowledge_ids": [
+        "DM-K18-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 24,
+      "group_title": "习题 18",
+      "context_needed": false
+    }
+  },
+  "SRC-DM2T-E018-025": {
+    "prompt": "用尽量少的颜色给图18.13(a)(b)(c)的地图面着色。(a)方形左上顶点接一自环，方形右侧边外附一三角形；(b)五边形内一点连全部5个边界点，即标准嵌入轮图W6；(c)正六边形内一点连全部6个边界点，即标准嵌入轮图W7。外部面同样需要着色。",
+    "solution": "面色数依次为2、4、3（均计外部面）。(a)三个有界面同色、外部另色；(b)五个内三角形绕圈用3色，外部第4色；(c)六个内三角形交替2色，外部第3色。",
+    "explanation": [
+      "(b)(c)对偶图分别为W6、W7；奇轮需4色，偶轮需3色。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第378页（印刷页367）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-025",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 25 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 367,
+      "pdf_page": 378,
+      "segments": [
+        {
+          "page": 378,
+          "top": 0.77741,
+          "bottom": 0.963
+        },
+        {
+          "page": 379,
+          "top": 0.055,
+          "bottom": 0.08176
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 25,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 378,
+        "bbox": [
+          0.244,
+          0.801,
+          0.745,
+          0.905
+        ],
+        "caption": "图18.13(a)(b)(c)地图嵌入"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-026": {
+    "prompt": "通过图18.13(a)(b)(c)各地图对偶图的点色数，求其面色数。三图结构及嵌入同第25题：带左上自环及右附三角形的方形、五边形轮W6、六边形轮W7；均含外部面。",
+    "solution": "对偶图依次为K1,3、W6、W7；故面色数依次2、4、3。",
+    "explanation": [
+      "每个面对应一个对偶顶点，共边的面相邻；(a)三个有界面仅与外部面共边。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-026",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 26 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.07976,
+          "bottom": 0.10423
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 26,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 378,
+        "bbox": [
+          0.244,
+          0.801,
+          0.745,
+          0.905
+        ],
+        "caption": "图18.13(a)(b)(c)地图嵌入"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-027": {
+    "prompt": "求轮图W2k和W(2k+1)(k≥2)对应地图的面色数。",
+    "solution": "χ*(W2k)=4；χ*(W(2k+1))=3。",
+    "explanation": [
+      "轮图按标准平面嵌入自对偶；前者的圈有2k−1个顶点为奇圈，后者圈长2k为偶圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-027",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 27 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.10223,
+          "bottom": 0.1267
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 27,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-028": {
+    "prompt": "设G*是图18.14平面图G的对偶图，画出G*，由χ(G*)求χ*(G)。原图为带中心交点x的四边形abcd（a左上,b左下,c右上,d右下），另在左右各附三角形alb和crd。",
+    "solution": "记四个中央三角面为T,R,B,L，左、右外附三角面为P,Q，外部为O。对偶边为TR,RB,BL,LT,LP,RQ,OT,OB，并有两条OP、两条OQ。二部染色组{O,L,R}、{T,B,P,Q}，故χ(G*)=χ*(G)=2。",
+    "explanation": [
+      "七个对偶顶点对应7个面。原图所有顶点度数均为偶数，亦可验证其对偶为二部图。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-028",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 28 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.1247,
+          "bottom": 0.17063
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 28,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S05"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 379,
+        "bbox": [
+          0.692,
+          0.104,
+          0.925,
+          0.22
+        ],
+        "caption": "图18.14"
+      }
+    ]
+  },
+  "SRC-DM2T-E018-029": {
+    "prompt": "用尽可能少的颜色给完全图K4、K5的边着色。",
+    "solution": "K4用3色：{12,34},{13,24},{14,23}。K5用5色：顶点标0,1,2,3,4，边ij染(i+j) mod5。",
+    "explanation": [
+      "同一顶点关联的边颜色不同；K4最少Δ=3，K5每色最多2边而总10边，至少5色。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-029",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 29 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.16863,
+          "bottom": 0.19259
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 29,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S06"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-030": {
+    "prompt": "用尽可能少的颜色给K3,3的边着色。",
+    "solution": "用3色。两部分为a0,a1,a2和b0,b1,b2，边ai bj染(i+j) mod3。",
+    "explanation": [
+      "每个顶点的3条关联边颜色互异；Δ=3给出最少3色。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-030",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 30 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.19059,
+          "bottom": 0.21455
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 30,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S06"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-031": {
+    "prompt": "证明彼得松图的边色数χ′=4。采用标准彼得松图编号：外圈u0u1u2u3u4u0，辐条ui vi，内圈边vi v(i+2)，下标模5。",
+    "solution": "若有3边着色，则每色为完美匹配，删除任一色后余边是由两色交替的偶圈并。彼得松图任一完美匹配的补图均为两个5圈，矛盾，故χ′≥4；Vizing定理给出χ′≤Δ+1=4。",
+    "explanation": [
+      "补图结论可分类核对：完美匹配或含5条辐条，或恰含1条辐条（共5种）；两类删除后均为两个5圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-031",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 31 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.21255,
+          "bottom": 0.23549
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 31,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S06"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-032": {
+    "prompt": "5门选修课冲突对为12、13、14、24、25、34、35，考试至少需几个时间段？",
+    "solution": "3个。可排{1,5}、{2,3}、{4}。",
+    "explanation": [
+      "1、2、4两两冲突，构成三角形，至少3时段；给定安排满足全部冲突。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-032",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 32 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.23349,
+          "bottom": 0.27839
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 32,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-033": {
+    "prompt": "4名教师A,B,C,D为5班授课。各班节数依次：A=(1,0,1,0,0)，B=(1,0,1,1,0)，C=(0,1,1,1,1)，D=(0,0,0,1,2)。周一至少排几节课，需要几间教室？",
+    "solution": "至少4个时段，最少3间教室。四时段安排依次为：①A教1班、B教3班、C教5班；②B教1班、C教4班、D教5班；③A教3班、C教2班、D教4班；④B教4班、C教3班、D教5班。",
+    "explanation": [
+      "教师C有4课，至少4时段。可行四时段三教室安排：①A1、B3、C5；②B1、C4、D5；③A3、C2、D4；④B4、C3、D5。每教师每时段至多1班，每班每时段至多1教师；总12课、4时段，少于3间不够。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-S06"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-033",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 33 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.27639,
+          "bottom": 0.51996
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 33,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-S06"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-034": {
+    "prompt": "6台无线设备距离小于200km不得同频。距离上三角依次为12=120,13=250,14=345,15=160,16=180,23=125,24=240,25=150,26=210,34=160,35=320,36=380,45=288,46=321,56=100。至少需几个频率？",
+    "solution": "3个。频率分组可取{1,3}、{2,4,6}、{5}。",
+    "explanation": [
+      "设备1、2、5两两冲突，故至少3频；所列每组内部距离均≥200km。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-034",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 34 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.51796,
+          "bottom": 0.56337
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 34,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E018-035": {
+    "prompt": "6名博士生答辩委员会为A1={张,李,王},A2={李,赵,刘},A3={张,刘,王},A4={赵,刘,王},A5={张,李,孙},A6={李,刘,王}。至少安排几个不同时段？",
+    "solution": "5个时段。A4与A5可同时，其余A1、A2、A3、A6各占1时段。",
+    "explanation": [
+      "唯一互不相交的委员会对是A4、A5，其余任意两委员会都共享教授；冲突图为K6删去一条边，色数5。"
+    ],
+    "knowledge_ids": [
+      "DM-K18-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第379页（印刷页368）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E018-035",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 18 · 第 35 题",
+      "chapter": 18,
+      "section_id": "DM-C18-S6",
+      "printed_page": 368,
+      "pdf_page": 379,
+      "segments": [
+        {
+          "page": 379,
+          "top": 0.567,
+          "bottom": 0.634
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 35,
+      "group_title": "习题 18",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K18-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-001": {
+    "prompt": "画出所有5阶和7阶非同构无向树。",
+    "solution": "5阶共3棵，7阶共11棵。以下给出完整边集，顶点分别为1…5或1…7，按边集连线即为所求。",
+    "explanation": [
+      "5阶：{14,21,23,45}；{14,15,21,23}；{13,14,15,21}。7阶：{15,21,23,34,56,67}；{15,21,23,34,56,57}；{15,17,21,23,34,56}；{16,21,23,24,25,67}；{15,21,23,24,56,57}；{15,17,21,23,24,56}；{15,16,17,21,23,24}；{14,16,21,23,45,67}；{14,16,17,21,23,45}；{14,15,16,17,21,23}；{13,14,15,16,17,21}。这些树经无标号树枚举和同构检验互不相同。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 1 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.63849,
+          "bottom": 0.66194
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-002": {
+    "prompt": "无向树T有5片树叶、3个2度分支点，其余分支点都是3度顶点。T有几个顶点？",
+    "solution": "11个。",
+    "explanation": [
+      "设3度点数x。握手定理5+2·3+3x=2(5+3+x−1)，得x=3；总点数5+3+3=11。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 2 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.65994,
+          "bottom": 0.68441
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-003": {
+    "prompt": "无向树T有8片树叶、2个3度分支点，其余分支点都是4度顶点。T有几个4度分支点？画4棵非同构的此类树。",
+    "solution": "4度分支点有2个。用4个内点组成路径，依次指定度数为(3,3,4,4)、(3,4,3,4)、(3,4,4,3)、(4,3,3,4)，各点再添足叶子至指定度数，即得到4棵非同构树。",
+    "explanation": [
+      "树叶数恒等式L=2+Σ(d−2)给出8=2+2+2x，x=2。四条内部路径的度数序列在反向下仍互异，故树非同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 3 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.68241,
+          "bottom": 0.72834
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-004": {
+    "prompt": "无向树T有ni个i度分支点(i=2,…,k)，其余点为树叶。求树叶数。",
+    "solution": "L=2+Σ(i−2)ni（i=2,…,k）。",
+    "explanation": [
+      "将L+Σini=2(L+Σni−1)整理即可。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 4 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.72634,
+          "bottom": 0.75081
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-005": {
+    "prompt": "n(n≥3)阶无向树的最大度Δ最少和最多为多少？",
+    "solution": "最少2（路径Pn达到）；最多n−1（星K1,n−1达到）。",
+    "explanation": [
+      "树有n−1条边，n≥3不能全部度≤1；简单图最大度≤n−1。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 5 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.74881,
+          "bottom": 0.77277
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-006": {
+    "prompt": "n(n≥3)阶无向树T满足Δ(T)=2，最长路径长度多少？",
+    "solution": "n−1。",
+    "explanation": [
+      "连通无圈且最大度2的图恰为路径Pn。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 6 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.77077,
+          "bottom": 0.79422
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-007": {
+    "prompt": "证明n(n≥2)阶无向树不是欧拉图。",
+    "solution": "树至少有两片叶，叶度1为奇数；连通无向欧拉图所有顶点度必须为偶数，所以不是。",
+    "explanation": [
+      "亦可用树中所有边均为桥，而欧拉回路中的边不能为桥。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-007",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 7 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.79222,
+          "bottom": 0.81618
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-008": {
+    "prompt": "证明n(n≥2)阶无向树不是哈密顿图。",
+    "solution": "树无圈，不能含经过全部顶点的哈密顿圈。",
+    "explanation": [
+      "哈密顿图必须有哈密顿圈；n=2的单边亦不能反复使用构成圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-008",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 8 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.81418,
+          "bottom": 0.83865
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-009": {
+    "prompt": "证明任意无向树T都是二部图。",
+    "solution": "任选根，将到根距离为偶数与奇数的顶点分别放入两部分。每条边两端距离差为1，因此没有同部边。",
+    "explanation": [
+      "若同部存在边，根路径与此边会形成圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-009",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 9 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.83665,
+          "bottom": 0.8601
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-010": {
+    "prompt": "什么样的无向树既是欧拉图，又是哈密顿图？",
+    "solution": "仅平凡树K1（按本书把平凡图视为欧拉图及哈密顿图的约定）。",
+    "explanation": [
+      "任何n≥2的树既无哈密顿圈又有奇度叶，均不符合；K1需依本书平凡图约定处理。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-010",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 10 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.8581,
+          "bottom": 0.88207
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-011": {
+    "prompt": "什么条件下无向树T为半欧拉图？",
+    "solution": "当且仅当T为至少2个顶点的路径Pn。",
+    "explanation": [
+      "半欧拉树恰有两个奇度点；若有度≥3分支点，由L=2+Σ(d−2)至少3片叶，而奇度点总数为偶数，至少4个；因此无分支点。路径恰有两片奇度叶。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 11 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.88007,
+          "bottom": 0.90454
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-012": {
+    "prompt": "什么条件下无向树T为半哈密顿图？",
+    "solution": "当且仅当T为至少2个顶点的路径Pn。",
+    "explanation": [
+      "哈密顿通路包含n−1条边，恰等于树的全部边，因此整棵树就是这条路径；树本身没有哈密顿圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第351页（印刷页340）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 12 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 340,
+      "pdf_page": 351,
+      "segments": [
+        {
+          "page": 351,
+          "top": 0.90254,
+          "bottom": 0.963
+        },
+        {
+          "page": 352,
+          "top": 0.055,
+          "bottom": 0.08329
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-013": {
+    "prompt": "下列正整数列哪些能作无向树的度数列？若能，画3棵非同构树：(1)(1,1,1,1,2,3,3,4)；(2)(1,1,1,1,2,2,3,3)。",
+    "solution": "(1)不能，和为16≠2(8−1)。(2)能，以下给出3个非同构的边集：{16,21,23,34,35,67,68}；{16,21,23,25,34,67,68}；{16,18,21,23,25,34,67}。",
+    "explanation": [
+      "正整数列作为n阶树度数列的充要条件为总和2(n−1)。所列边集经同构检验互不相同。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-013",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 13 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.08129,
+          "bottom": 0.14917
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-014": {
+    "prompt": "连通无向图G的边e在每棵生成树中，e有什么性质？",
+    "solution": "e是桥。",
+    "explanation": [
+      "若不是桥，则删去e仍连通，有一棵生成树不含e；反之桥连接两个分量，任何生成树必须含它。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-014",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 14 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.14717,
+          "bottom": 0.17114
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-015": {
+    "prompt": "连通无向图G的边e不在任何生成树中，e有什么性质？",
+    "solution": "e是环（自环）。",
+    "explanation": [
+      "自环不能在无圈的树中。若e非环，则以e为初始森林，可不断补边扩展为生成树，矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-015",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 15 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.16914,
+          "bottom": 0.19361
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-016": {
+    "prompt": "连通无向图G的边e既非环也非桥，证明存在生成树以e为树枝，也存在生成树以e为弦。",
+    "solution": "非环边e组成森林，可扩展为含e的生成树；e非桥使G−e连通，取G−e的任意生成树便是不含e的生成树，此时e为弦。",
+    "explanation": [
+      "两种生成树分别由森林扩展与删非桥边构造。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-016",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 16 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.19161,
+          "bottom": 0.23855
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-017": {
+    "prompt": "T是无向图G的生成树，余树T̄由G中非树边组成。证明T̄不含G的割集。",
+    "solution": "若割集S⊆E(T̄)，则T与S无公共边，T是G−S的连通生成子图；但删除割集后图应不连通，矛盾。",
+    "explanation": [
+      "割集必须与任何连通生成子图相交。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-017",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 17 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.23655,
+          "bottom": 0.26358
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-018": {
+    "prompt": "S为无向连通图G的一个边割集，证明G−S不含G的生成树。",
+    "solution": "假设存在，则该生成树连通所有原顶点，从而G−S连通，与S是边割集矛盾。",
+    "explanation": [
+      "即第17题的等价表述。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-018",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 18 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.26158,
+          "bottom": 0.28554
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 18,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-019": {
+    "prompt": "图16.14中，含e1,e2,e3作为树枝的非同构生成树有几棵？原图顶点按左上A、左下B、右上C、右下D、最右E；e1=AB（两平行边之一），e2=CD,e3=CE，另有AC、BD、DE。",
+    "solution": "有2棵：边集{AB,CD,CE,AC}与{AB,CD,CE,BD}。",
+    "explanation": [
+      "固定三边形成两个分量{A,B}与{C,D,E}，只能再选AC或BD相连；前者度数列(1,1,1,2,3)，后者为路径P5，非同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-019",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 19 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.28354,
+          "bottom": 0.45203
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 19,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 352,
+        "bbox": [
+          0.278,
+          0.308,
+          0.742,
+          0.435
+        ],
+        "caption": "图16.14与图16.15"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-020": {
+    "prompt": "图16.15有几棵非同构生成树？原图从最左点起顺时针标0,1,2,3,4,5，边为01,12,23,34,45,50,03,04,25,24。",
+    "solution": "共5棵，即6阶全部6种树中除星K1,5以外的5种。可按以下独立编号边集画出：{15,21,23,34,56}；{15,21,23,24,56}；{15,16,21,23,24}；{14,16,21,23,45}；{14,15,16,21,23}。",
+    "explanation": [
+      "原图最大度4，不可能含K1,5；其余5种通过生成子图同构枚举逐一存在。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-020",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 20 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.45003,
+          "bottom": 0.47349
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 20,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 352,
+        "bbox": [
+          0.278,
+          0.308,
+          0.742,
+          0.435
+        ],
+        "caption": "图16.14与图16.15"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-021": {
+    "prompt": "Kn(1≤n≤7)各有多少棵非同构生成树？",
+    "solution": "n=1,2,3,4,5,6,7时依次为1,1,1,2,3,6,11。",
+    "explanation": [
+      "完全图包含每一种同阶树，故等于相应阶数无标号树的数量。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-021",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 21 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.47149,
+          "bottom": 0.49596
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 21,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-022": {
+    "prompt": "T为k+1阶无向树，k≥1；G为简单图且δ(G)≥k。证明G含与T同构的子图。",
+    "solution": "对k归纳。删除T的叶u，余树T′有k点。由归纳嵌入T′；设u的邻点v映到w。w至少k个邻点，而已嵌入的其他点最多k−1个，故w尚有未使用邻点，可作为u的像，完成嵌入。",
+    "explanation": [
+      "基例k=1：最小度至少1保证有一条边。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-022",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 22 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.49396,
+          "bottom": 0.51741
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 22,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-023": {
+    "prompt": "n阶m边无向图G是由k(k≥2)棵树组成的森林，证明m=n−k。",
+    "solution": "第i棵树有ni点、ni−1边，故m=Σ(ni−1)=Σni−k=n−k。",
+    "explanation": [
+      "各分量的顶点边互不相交。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 23 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.51541,
+          "bottom": 0.53937
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 23,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-024": {
+    "prompt": "图16.16中实边构成生成树T。分别指出弦、基本回路系统、树枝及基本割集系统。(a)顶点上A、左B、下C、中D、右E，a=AB,b=BC,c=AC,d=AD,e=AE,f=CD,g=DE,h=CE；(b)顶点外左L、左上A、左下B、右上C、右下D、外右R，a=LR,b=AC,c=BC,d=BD,e=LA,f=AB,g=LB,h=CD,i=CR,j=DR。指定实边生成树：(a)T={a,b,e,f}；(b)T={a,b,e,f,j}。",
+    "solution": "(a)树枝a,b,e,f，弦c,d,g,h。基本回路：c:{a,b,c}；d:{a,b,d,f}；g:{a,b,e,f,g}；h:{a,b,e,h}；基本割集：a:{a,c,d,g,h}；b:{b,c,d,g,h}；e:{e,g,h}；f:{d,f,g}。(b)树枝a,b,e,f,j，弦c,d,g,h,i。基本回路：c:{b,c,f}；d:{a,d,e,f,j}；g:{e,f,g}；h:{a,b,e,h,j}；i:{a,b,e,i}；基本割集：a:{a,d,h,i}；b:{b,c,h,i}；e:{d,e,g,h,i}；f:{c,d,f,g}；j:{d,h,j}。",
+    "explanation": [
+      "每条弦与树中两端点的唯一通路组成基本回路；删除一树枝所得两分量之间的全部原图边组成对应基本割集。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-024",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 24 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.53737,
+          "bottom": 0.737
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 24,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 352,
+        "bbox": [
+          0.23,
+          0.602,
+          0.785,
+          0.736
+        ],
+        "caption": "图16.16(a)(b)，实边指定生成树"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-025": {
+    "prompt": "求图16.17两带权图的最小生成树。(a)顶点上A、左上B、右上C、左下D、右下E，权AB=AC=5,BC=8,BD=9,CE=8,DE=9,BE=11,CD=10,AD=12,AE=14。(b)外六边形顺时针A左上,B右上,C右,D右下,E左下,F左，中心O，边权AB=5,BC=5,CD=1,DE=2,EF=4,FA=1,OA=4,OB=5,OC=4,OD=2,OE=3,OF=3。",
+    "solution": "(a)可取{AB,AC,CE,BD}，总权27；也可把BD换DE。(b)可取{CD,FA,DE,OD,OF,AB}，总权14。",
+    "explanation": [
+      "按Kruskal从小到大选不成圈的边。(a)必须以5、5、8连接A,B,C,E，再以9接D；(b)权1、1、2、2、3接通除B外的6点，B的关联边最小权5。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第352页（印刷页341）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-025",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 25 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 341,
+      "pdf_page": 352,
+      "segments": [
+        {
+          "page": 352,
+          "top": 0.735,
+          "bottom": 0.963
+        },
+        {
+          "page": 353,
+          "top": 0.055,
+          "bottom": 0.08431
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 25,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 352,
+        "bbox": [
+          0.282,
+          0.768,
+          0.765,
+          0.917
+        ],
+        "caption": "图16.17(a)(b)，含边权"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-026": {
+    "prompt": "非平凡无向树T满足Δ(T)=k，证明至少有k片树叶。",
+    "solution": "若k=1，T=K2有2片叶≥1。若k≥2，取k度顶点v，删去v后有k个非空分支，每个分支内离v最远的点在原树中为叶，彼此不同。",
+    "explanation": [
+      "也可由L=2+Σ(d−2)≥2+(k−2)=k。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-026",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 26 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.08231,
+          "bottom": 0.10525
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 26,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-027": {
+    "prompt": "C为无向图G中的一个圈，e1,e2∈E(C)。证明G存在含e1,e2的割集。",
+    "solution": "先在C所在连通分量中，将C−e1扩展为生成树T。删除树枝e2分成两部分，其基本割集包含e2；因C−e1中连接e1两端的唯一路径经过e2，e1也跨越该分割，故同属此割集。",
+    "explanation": [
+      "若G还有其他分量，只需在此分量完成构造。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-027",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 27 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.10325,
+          "bottom": 0.12721
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 27,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-028": {
+    "prompt": "T1,T2都是同一无向树T的树子图，且E(T1)∩E(T2)非空。证明以公共边为边集的导出子图仍为树。",
+    "solution": "公共边子图无圈，因为它是T的子图。任取其中两点，T1和T2内连接它们的路径都必须等于T中的唯一通路，所以该通路的边全部公共，故公共边子图连通。",
+    "explanation": [
+      "公共边非空排除空图的约定问题。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-028",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 28 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.12521,
+          "bottom": 0.17369
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 28,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-029": {
+    "prompt": "n(n≥5)阶简单图G，证明G或其补图必含圈。",
+    "solution": "若两者都无圈，则各至多n−1条边，故n(n−1)/2=m(G)+m(Ḡ)≤2(n−1)，推出n≤4，与n≥5矛盾。",
+    "explanation": [
+      "森林的边数不超过n−1。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-029",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 29 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.17169,
+          "bottom": 0.1982
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 29,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-030": {
+    "prompt": "T1,T2为连通图G的两棵生成树，e1是T1树枝而为T2弦。证明存在e2既为T1弦又为T2树枝，使两树交换e1,e2后仍是生成树。",
+    "solution": "删去T1的e1得到两部分A,B。T2中连接e1两端的唯一路径必有跨A,B的边e2。此边不能属于T1，否则T1−e1已连接A,B。故T1−e1+e2成树；e2在T2+e1的唯一圈上，故T2−e2+e1也成树。",
+    "explanation": [
+      "这给出同一对边的双向交换，而非分别寻找两条边。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-030",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 30 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.1962,
+          "bottom": 0.24264
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 30,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-031": {
+    "prompt": "图16.18根树：根r有4子女l,a,b,c；a有子女d,e，e有子女f,g，g有子女h；b有子女i；c有子女j,k；其余为叶。求叉数、树高、内点数、分支点数。",
+    "solution": "4叉树；树高4；内点5个（a,b,c,e,g）；分支点6个（r,a,b,c,e,g）。",
+    "explanation": [
+      "最长根叶路径r−a−e−g−h有4条边。本书定义：内点入度1、出度非0，故不计根；内点与根统称分支点，故单子女点b,g也属于分支点。已对照第335印刷页定义16.6核定。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-031",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 31 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.24064,
+          "bottom": 0.35091
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 31,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 353,
+        "bbox": [
+          0.688,
+          0.239,
+          0.949,
+          0.389
+        ],
+        "caption": "图16.18根树"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-032": {
+    "prompt": "画3棵树高3且基图非同构的正则2叉树。",
+    "solution": "用●表叶，(A,B)表根的两子树，可取(●,(●,(●,●)))、(●,((●,●),(●,●)))、(((●,●),(●,●)),((●,●),(●,●)))。",
+    "explanation": [
+      "三者树高均3，每个内点恰有2子女；阶数分别7、9、15，基图必非同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-032",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 32 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.34891,
+          "bottom": 0.37287
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 32,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-033": {
+    "prompt": "画树高3的完全正则2叉树。",
+    "solution": "取(((●,●),(●,●)),((●,●),(●,●)))，共15顶点、8叶。",
+    "explanation": [
+      "根为第0层，每层顶点数1,2,4,8；所有叶都在第3层。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-033",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 33 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.37087,
+          "bottom": 0.39483
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 33,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-034": {
+    "prompt": "图16.19的有向图存在根树生成子图吗？几棵非同构？标左上A、右上B、左下C、右下D，弧为A→B,B→A,C→A,C→B,D→B,D→C。",
+    "solution": "存在，恰3种非同构根树，根均为D。代表边集：{D→C,C→A,A→B}；{D→C,C→A,C→B}；{D→B,D→C,C→A}。",
+    "explanation": [
+      "D入度0，必须为根。固定D→C后，给A、B各选一条入弧并排除A↔B二圈，共5个带标号生成根树，按根结构归为链、根下分叉、根有两子女且一支延长三种。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-034",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 34 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.39283,
+          "bottom": 0.43825
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 34,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 353,
+        "bbox": [
+          0.797,
+          0.396,
+          0.942,
+          0.511
+        ],
+        "caption": "图16.19有向图"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-035": {
+    "prompt": "画出所有非同构的n(1≤n≤5)阶根树。",
+    "solution": "数量依次1、1、2、4、9。用[]表示叶，[A…]表示以括号内各根树为子树的新根，完整列表见解析。",
+    "explanation": [
+      "1阶：[]",
+      "2阶：[[]]",
+      "3阶：[[[]]], [[][]]",
+      "4阶：[[[[]]]], [[[][]]], [[[]][]], [[][][]]",
+      "5阶：[[[[[]]]]], [[[[][]]]], [[[[]][]]], [[[[]]][]], [[[][][]]], [[[][]][]], [[[]][[]]], [[[]][][]], [[][][][]]"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-035",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 35 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.43625,
+          "bottom": 0.46021
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 35,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-036": {
+    "prompt": "T是有t片叶的2叉正则树，证明T有2t−1个顶点。",
+    "solution": "设内点i。每内点贡献2条父子边，故2i=i+t−1，得i=t−1，总顶点i+t=2t−1。",
+    "explanation": [
+      "树的边数等于顶点数减1。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-036",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 36 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.45821,
+          "bottom": 0.48217
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 36,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-037": {
+    "prompt": "画一棵叶权3,4,5,6,7,8,9的最优2叉树，求其权。",
+    "solution": "Huffman合并：3+4=7, 5+6=11, 7+7=14, 8+9=17, 11+14=25, 17+25=42；最优带权路径长为116。",
+    "explanation": [
+      "可用根至叶编码画树：3:1110, 4:1111, 5:100, 6:101, 7:110, 8:00, 9:01；各叶权乘编码长度后求和。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-037",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 37 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.48017,
+          "bottom": 0.50362
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 37,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-038": {
+    "prompt": "判断哪些为前缀码：A1={0,10,110,1111}；A2={1,01,001,000}；A3={1,11,101,001,0011}；A4={b,c,dd,dc,aba,abb,abc}；A5={b,c,a,aa,ac,abc,abb,aba}。",
+    "solution": "A1、A2、A4是前缀码；A3、A5不是。",
+    "explanation": [
+      "A3中1是11和101的前缀，001是0011前缀；A5中a是aa、ac、abc等的前缀；其他组没有一个码字是另一不同码字的前缀。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-038",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 38 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.50162,
+          "bottom": 0.64662
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 38,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-039": {
+    "prompt": "用图16.20的2叉树产生一个2元前缀码。原树以●表叶、(A,B)表左右子树，可完整表示为((((●,●),●),●),(●,(●,●)))；每次向左记0、向右记1。",
+    "solution": "左枝标0、右枝标1，依叶从左到右得到{0000,0001,001,01,10,110,111}。",
+    "explanation": [
+      "原图左子树为(((●,●),●),●)，右子树为(●,(●,●))；根至叶路径码没有前缀包含关系。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-039",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 39 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.64462,
+          "bottom": 0.8369
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 39,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 353,
+        "bbox": [
+          0.35,
+          0.669,
+          0.661,
+          0.835
+        ],
+        "caption": "图16.20二叉树"
+      }
+    ]
+  },
+  "SRC-DM2T-E016-040": {
+    "prompt": "哪些2叉树能产生等长前缀码？",
+    "solution": "当且仅当全部叶处于同一深度。若还要求正则2叉树，则恰为完全正则2叉树。",
+    "explanation": [
+      "码长等于叶的深度；一般2叉树允许缺少子女，故不必强加每内点有2子女。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-040",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 40 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.8349,
+          "bottom": 0.8601
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 40,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-041": {
+    "prompt": "字母频率a35%,b20%,c15%,d10%,e10%,f5%,g5%。用Huffman求最佳前缀码，画最优树，并求传输10^n(n≥2)个按该频率出现的字母所需二进制位数。",
+    "solution": "一个最佳编码为a:11, b:00, c:101, d:010, e:011, f:1000, g:1001。平均码长2.55位，传输总位数为255·10^(n−2)。",
+    "explanation": [
+      "Huffman合并权重：5+5=10, 10+10=20, 10+15=25, 20+20=40, 25+35=60, 40+60=100。编码对应树即所求；同权时交换子树可得其他等优编码。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第353页（印刷页342）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-041",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 41 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 342,
+      "pdf_page": 353,
+      "segments": [
+        {
+          "page": 353,
+          "top": 0.8581,
+          "bottom": 0.963
+        },
+        {
+          "page": 354,
+          "top": 0.055,
+          "bottom": 0.17471
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 41,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E016-042": {
+    "prompt": "图16.21算式树：根+；左子树为*，其左为÷、右为g；该÷左为−（左为a*b、右c），右为+（左d、右e*f）；根的右子树为÷（左h*i，右j*(k−l)）。求中序、前序波兰式、后序逆波兰式。",
+    "solution": "中序：((a*b−c)/(d+e*f))*g+(h*i)/(j*(k−l))。前序：+ * / − * a b c + d * e f g / * h i * j − k l。后序：a b * c − d e f * + / g * h i * j k l − * / +。",
+    "explanation": [
+      "中序在每个运算结点两子树之间写符号并补必要括号；前序先根后左后右，后序先左后右最后根。"
+    ],
+    "knowledge_ids": [
+      "DM-K16-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第354页（印刷页343）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E016-042",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 16 · 第 42 题",
+      "chapter": 16,
+      "section_id": "DM-C16-S3",
+      "printed_page": 343,
+      "pdf_page": 354,
+      "segments": [
+        {
+          "page": 354,
+          "top": 0.17271,
+          "bottom": 0.96
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 42,
+      "group_title": "习题 16",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K16-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 354,
+        "bbox": [
+          0.322,
+          0.263,
+          0.704,
+          0.48
+        ],
+        "caption": "图16.21算式树"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-001": {
+    "prompt": "证明图17.11各图均为平面图。图17.11(a)上排左中右A,B,C，下排左中右D,E,F，边为AD,AE,AF,BD,BE,CD,CE,CF；(b)上排a,b,c，下排d,e，边为ab,bc,ac,ad,ae,bd,be,ce,de；(c)从正上方顺时针为a,b,c,d,e,f，边为ac,ce,ea,bd,df,fb,ad,be,cf。",
+    "solution": "三图均为平面图。可按解析所列面边界拼接成无交叉的球面嵌入，再任选一面作外部面。",
+    "explanation": [
+      "(a)各面边界AEBDA,AFCEA,ADCFA,DBECD；(b)各面边界acba,aeca,adea,abda,bceb,bedb；(c)各面边界aeca,adbea,acfda,cebfc,bdfb。每条边恰出现在两个面的边界中，面数分别4、6、5，均满足n−m+r=2；这些组合嵌入经平面性算法核验。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 1 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.22736,
+          "bottom": 0.24979
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.278,
+          0.27,
+          0.733,
+          0.397
+        ],
+        "caption": "图17.11(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-002": {
+    "prompt": "给出图17.11各图一个平面嵌入，验证各面次数和等于2m。图17.11(a)上排左中右A,B,C，下排左中右D,E,F，边为AD,AE,AF,BD,BE,CD,CE,CF；(b)上排a,b,c，下排d,e，边为ab,bc,ac,ad,ae,bd,be,ce,de；(c)从正上方顺时针为a,b,c,d,e,f，边为ac,ce,ea,bd,df,fb,ad,be,cf。",
+    "solution": "(a)各面边界AEBDA,AFCEA,ADCFA,DBECD；(b)各面边界acba,aeca,adea,abda,bceb,bedb；(c)各面边界aeca,adbea,acfda,cebfc,bdfb。",
+    "explanation": [
+      "(a)n=6,m=8,r=4，次数4,4,4,4，总和16；(b)n=5,m=9,r=6，各面次数3，总和18；(c)n=6,m=9,r=5，次数3,3,4,4,4，总和18。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 2 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.24779,
+          "bottom": 0.44386
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.278,
+          0.27,
+          0.733,
+          0.397
+        ],
+        "caption": "图17.11(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-003": {
+    "prompt": "图17.12各图都是平面嵌入，给边标号并求各面边界与次数。",
+    "solution": "(a)方形ABCD，AB上附屋顶E，BC右附F：面ABE次数3、BCF次数3、ABCD次数4，外部AEBFCDA次数6。(b)方形ABCD，顶点B有环ℓ，内部对角DB，C外附路径C−E−F：内面ABD、BCD各3，环面ℓ为1，外面ABℓBCEFECD A为9。(c)一分量为路径A−B−C且A有环ℓ，另一分量为方形DEFG且E外附EH：环面次数1，方形面次数4，外部面由ABCB Aℓ及DEHEFGD两条闭迹组成，次数11。",
+    "explanation": [
+      "(a)2m=16=3+3+4+6；(b)2m=16=3+3+1+9；(c)2m=16=1+4+11。桥在同一面边界中计两次。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 3 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.44186,
+          "bottom": 0.62823
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.237,
+          0.463,
+          0.785,
+          0.571
+        ],
+        "caption": "图17.12(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-004": {
+    "prompt": "对图17.12(a)另找两个平面嵌入，使外部面次数分别为3和4。",
+    "solution": "在第3题编号下，先把三角形ABE作为外部面，外部次数3；再把方形ABCD作为外部面，外部次数4。",
+    "explanation": [
+      "将原嵌入视为球面图，从所选面内一点作球面投影即可；顶点和边的邻接关系不变。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 4 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.62623,
+          "bottom": 0.64713
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.237,
+          0.463,
+          0.785,
+          0.571
+        ],
+        "caption": "图17.12(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-005": {
+    "prompt": "求图17.13的面边界和次数。原图边为ab,bc,cd,ce,ef,eg。",
+    "solution": "仅有外部面，边界闭迹为a−b−c−d−c−e−f−e−g−e−c−b−a，次数12。",
+    "explanation": [
+      "原图为7点6边的树，无有界面；每条桥在外部边界往返出现两次。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 5 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.64513,
+          "bottom": 0.66756
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.177,
+          0.728,
+          0.407,
+          0.855
+        ],
+        "caption": "图17.13"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-006": {
+    "prompt": "证明定理17.4：极大平面图连通，且当阶数≥3时无割点。",
+    "solution": "若不连通，可把两个分量放在同一外部面并添边连接而不破坏平面性，矛盾。若有割点v，在v周围的循环顺序中，取来自G−v不同分量的两个相邻邻点x,y；它们不相邻，可在两条关联边之间绕过v补边xy而不交叉，仍为简单平面图，矛盾。",
+    "explanation": [
+      "因此极大平面图连通，n≥3时点连通度至少2。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 6 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.66556,
+          "bottom": 0.69463
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-007": {
+    "prompt": "证明图17.14(a)(b)均为极大平面图。(a)从最左顶点顺时针标0…5；(b)外圈从左上顶点起顺时针标0…7，中心交点为8。",
+    "solution": "(a)边集为六边形圈加02,03,04,14,24,35，n=6,m=12；(b)边集为八边形圈、中心8到全部8个外点的边，再加02,03,06,35,36，n=9,m=21。两者均有全三角面的平面嵌入，达到m=3n−6，故均极大。",
+    "explanation": [
+      "(a)嵌入各面：0-2-1-0,0-3-2-0,0-5-3-0,0-4-5-0,0-1-4-0,1-2-4-1,2-3-4-2,3-5-4-3",
+      "(b)嵌入各面：0-2-1-0,0-3-2-0,0-6-3-0,0-7-6-0,0-8-7-0,0-1-8-0,1-2-8-1,2-3-8-2,3-4-8-3,3-5-4-3,3-6-5-3,4-5-8-4,5-6-8-5,6-7-8-6",
+      "任意再添一条简单边会超过平面简单图边数上界。图(b)中心为真实顶点，不能当作普通交叉略去。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-007",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 7 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.69263,
+          "bottom": 0.90198
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 364,
+        "bbox": [
+          0.438,
+          0.72,
+          0.846,
+          0.855
+        ],
+        "caption": "图17.14(a)(b)；(b)中心为真实顶点"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-008": {
+    "prompt": "验证K5和K3,3均为极小非平面图。",
+    "solution": "K5边数10>3·5−6，非平面；K3,3二部且边数9>2·6−4，非平面。删去任意一条边后分别同构K5−e、K3,3−e，前者可画成三角双锥，后者有四个四边面，均平面，所以为极小非平面图。",
+    "explanation": [
+      "K3,3−e的显式平面嵌入可采用第1、2题(a)所列面边界。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第364页（印刷页353）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-008",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 8 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 353,
+      "pdf_page": 364,
+      "segments": [
+        {
+          "page": 364,
+          "top": 0.89998,
+          "bottom": 0.963
+        },
+        {
+          "page": 365,
+          "top": 0.055,
+          "bottom": 0.08584
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-009": {
+    "prompt": "图17.15是极小非平面图吗？",
+    "solution": "不是。它包含K5，并在同一对顶点之间有平行边；删除其中一条平行边仍保留K5，因此仍非平面。",
+    "explanation": [
+      "把图中左、上、中、右、下五个真实顶点列出，可逐对核对相邻；右下顶点对的重复边破坏“任删一边即平面”。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-009",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 9 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.08384,
+          "bottom": 0.1073
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 365,
+        "bbox": [
+          0.222,
+          0.142,
+          0.411,
+          0.279
+        ],
+        "caption": "图17.15"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-010": {
+    "prompt": "验证图17.16(a)(b)满足欧拉公式。",
+    "solution": "(a)n=8,m=12,r=6，8−12+6=2。(b)n=6,m=12,r=8，6−12+8=2。",
+    "explanation": [
+      "(a)为立方体的平面嵌入；(b)有6个真实顶点，所有面为三角形，共8面。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-010",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 10 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.1053,
+          "bottom": 0.30801
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 365,
+        "bbox": [
+          0.442,
+          0.132,
+          0.813,
+          0.283
+        ],
+        "caption": "图17.16(a)(b)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-011": {
+    "prompt": "验证非连通图17.17满足欧拉公式推广。",
+    "solution": "n=9,m=9，连通分量k=3，面数r=4，因此n−m+r=9−9+4=4=1+k。",
+    "explanation": [
+      "三个分量分别为带一条悬挂边的三角形(4点4边)、3点路径(3点2边)、环加一对平行边(2点3边)。有界面3个，另加外部面。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 11 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.30601,
+          "bottom": 0.46531
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 365,
+        "bbox": [
+          0.347,
+          0.337,
+          0.726,
+          0.427
+        ],
+        "caption": "图17.17三个分量"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-012": {
+    "prompt": "利用定理17.10推论证明K5不是平面图。",
+    "solution": "K5有n=5,m=10；若为简单平面图，则m≤3n−6=9，矛盾。",
+    "explanation": [
+      "这是边数上界的直接必要条件检验。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 12 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.46331,
+          "bottom": 0.48625
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-013": {
+    "prompt": "说明m≤3n−6不能证明K3,3非平面，从而该条件必要而不充分。",
+    "solution": "K3,3有n=6,m=9，满足9≤12，但它非平面。因此不能从满足该不等式推出平面性。",
+    "explanation": [
+      "它无三角形，须改用更强条件m≤2n−4；9>8才得矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-013",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 13 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.48425,
+          "bottom": 0.53018
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-014": {
+    "prompt": "简单平面图G面数r<12且δ(G)≥3，证明有次数≤4的面；给r=12时反例。",
+    "solution": "设反面所有面次数≥5，则2m≥5r；δ≥3给n≤2m/3。设k为分量数，由n−m+r=1+k得m≤3r−3(1+k)。于是5r≤2m≤6r−6(1+k)，推出r≥6(1+k)≥12，矛盾。r=12反例为正十二面体图，所有面次数5且δ=3。",
+    "explanation": [
+      "证明同时覆盖非连通情形，不需另加连通假设。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-014",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 14 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.52818,
+          "bottom": 0.57461
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-015": {
+    "prompt": "n阶m边简单平面图G满足m<30，证明δ(G)≤4。",
+    "solution": "若δ≥5，则5n≤2m，且m≤3n−6；合并得m≤6m/5−6，即m≥30，矛盾。n≤2时结论显然。",
+    "explanation": [
+      "对于多个分量仍可用整体简单平面图上界m≤3n−6（n≥3）。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-015",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 15 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.57261,
+          "bottom": 0.59759
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-016": {
+    "prompt": "n(n≥11)阶简单图G，证明G或其补图必非平面。",
+    "solution": "若均平面，则n(n−1)/2=m(G)+m(Ḡ)≤6n−12，等价于n²−13n+24≤0。但n=11时左边2>0，且n≥11后严格递增，矛盾。",
+    "explanation": [
+      "上界只给出n≥11的充分范围；未声称这是最小可能阶数。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-016",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 16 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.59559,
+          "bottom": 0.62313
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-017": {
+    "prompt": "证明图17.18(a)(b)(c)均为非平面图。",
+    "solution": "(a)内侧5顶点诱导K5；(b)删除外框上边，压去其两端变成2度的顶点后得到K3,3；(c)取最外层上、左下、右下3点为一部，内侧3点为另一部，保留跨部边即得K3,3。故三图均非平面。",
+    "explanation": [
+      "(b)外框顺时针A,B,C,D，内框对应a,b,c,d，连接边为Aa,Bb,Cd,Dc；删AB后A、B分别位于a−D及b−C的细分路径上。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-017",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 17 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.62113,
+          "bottom": 0.81669
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 365,
+        "bbox": [
+          0.262,
+          0.637,
+          0.778,
+          0.749
+        ],
+        "caption": "图17.18(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-018": {
+    "prompt": "图17.18三个图哪些为极小非平面图？",
+    "solution": "三个都不是。",
+    "explanation": [
+      "(a)删外圈边仍含内K5；(b)删外框上边仍含K3,3细分；(c)删外部三角形任一边仍保留跨部的K3,3。各有删边后仍非平面的反例。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-018",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 18 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.81469,
+          "bottom": 0.8369
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 18,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 365,
+        "bbox": [
+          0.262,
+          0.637,
+          0.778,
+          0.749
+        ],
+        "caption": "图17.18(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-019": {
+    "prompt": "画出6阶所有非同构、连通、简单的非平面图。",
+    "solution": "共13种。以顶点1…6及以下13个边集给出完整清单，按边集连线即得图形。",
+    "explanation": [
+      "1. m=9，E={12,14,16,23,25,34,36,45,56}",
+      "2. m=10，E={13,14,16,23,24,26,34,35,45,56}",
+      "3. m=11，E={12,13,14,15,23,24,25,26,34,35,45}",
+      "4. m=11，E={12,13,14,15,23,24,25,34,35,46,56}",
+      "5. m=11，E={12,13,14,16,23,24,25,26,35,45,56}",
+      "6. m=11，E={12,14,16,23,25,26,34,35,36,45,56}",
+      "7. m=12，E={12,13,14,15,23,24,25,34,35,45,46,56}",
+      "8. m=12，E={12,13,14,15,16,23,24,25,26,34,35,36}",
+      "9. m=12，E={12,13,14,16,23,24,25,26,34,35,45,56}",
+      "10. m=13，E={12,13,14,15,16,23,24,25,26,34,35,45,56}",
+      "11. m=13，E={12,13,14,15,16,23,24,26,34,35,45,46,56}",
+      "12. m=14，E={12,13,15,16,23,24,25,26,34,35,36,45,46,56}",
+      "13. m=15，E={12,13,14,15,16,23,24,25,26,34,35,36,45,46,56}",
+      "枚举6点全部无标号简单连通图，并用平面嵌入检验筛选；13个边集经两两同构排除重复。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-019",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 19 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.8349,
+          "bottom": 0.86113
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 19,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-020": {
+    "prompt": "求图17.19(a)(b)(c)各平面图的对偶图。",
+    "solution": "(a)以方形内面P、环内面Q、外面O为点：OP有4条平行边，OQ有1边，O上有1自环。(b)以二边面P、方形面Q、外面O为点：OP、PQ各1边，OQ有3条平行边。(c)以三角面P、环内面Q、外面O为点：OP有3条平行边，OQ有1边，O上有2自环。",
+    "explanation": [
+      "原图桥对应对偶自环，原图自环对应对偶桥；同两面共几条边，对偶就有几条平行边。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-020",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 20 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.85913,
+          "bottom": 0.88309
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 20,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 366,
+        "bbox": [
+          0.213,
+          0.087,
+          0.794,
+          0.189
+        ],
+        "caption": "图17.19(a)(b)(c)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-021": {
+    "prompt": "图17.20(a)(b)两平面图同构，其对偶图也同构吗？",
+    "solution": "不同构。(a)对偶度数列为(4,6,6)；(b)为(4,4,8)。",
+    "explanation": [
+      "两图都有左、右方形面与外面；共享中边对应两内面间1边，两内面各与外面有3平行边。悬挂边在(a)对应左内面上的自环，在(b)对应外面上的自环，自环对度数贡献2。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-021",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 21 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.88109,
+          "bottom": 0.90709
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 21,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 366,
+        "bbox": [
+          0.31,
+          0.231,
+          0.694,
+          0.321
+        ],
+        "caption": "图17.20(a)(b)"
+      }
+    ]
+  },
+  "SRC-DM2T-E017-022": {
+    "prompt": "证明定理17.15：平面图G有k个分量，对偶G*的n*,m*,r*满足n*=r,m*=m,r*=n−k+1，且对偶点度数等于对应面次数。",
+    "solution": "每原面放1个对偶点，所以n*=r；每原边对应1条对偶边，所以m*=m。G*总连通，欧拉公式给r*=2−n*+m*=2−r+m；由G的n−m+r=1+k得r*=n−k+1。对应面边界每出现一次原边，就给对偶点贡献1次关联；原桥出现两次并对应自环贡献2，故度数相等。",
+    "explanation": [
+      "对偶图的连通性来自在各面之间选一条避开原顶点的曲线，跨过的边给出对偶通路。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第365页（印刷页354）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-022",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 22 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 354,
+      "pdf_page": 365,
+      "segments": [
+        {
+          "page": 365,
+          "top": 0.90509,
+          "bottom": 0.963
+        },
+        {
+          "page": 366,
+          "top": 0.055,
+          "bottom": 0.96
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 22,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-023": {
+    "prompt": "证明轮图W6和W7都是自对偶图。",
+    "solution": "更一般地Wn(n≥4)均自对偶。n−1个内部三角面在对偶中依次构成圈；外部面对应顶点与全部三角面顶点相邻，所以对偶正是同阶轮图Wn。",
+    "explanation": [
+      "因此分别取n=6、7即可。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第366页（印刷页355）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 23 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 355,
+      "pdf_page": 366,
+      "segments": [
+        {
+          "page": 366,
+          "top": 0.313,
+          "bottom": 0.338
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 23,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-024": {
+    "prompt": "n阶m边平面图为自对偶图，证明m=2n−2。",
+    "solution": "自对偶使n=r，且图与其连通的对偶同构，所以自身连通。欧拉公式n−m+r=2变为2n−m=2。",
+    "explanation": [
+      "不能在未说明连通时直接套用连通版欧拉公式；自对偶已保证连通。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第366页（印刷页355）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-024",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 24 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 355,
+      "pdf_page": 366,
+      "segments": [
+        {
+          "page": 366,
+          "top": 0.34,
+          "bottom": 0.365
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 24,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-025": {
+    "prompt": "G为n(n≥4)阶极大平面图，证明其对偶G*是2边连通的3正则图。",
+    "solution": "极大平面图每面均为三角形，故对偶每顶点度3。对偶总连通。若对偶有桥，其对应原边必须是自环；但G为简单图无自环，因此对偶无桥，为2边连通。",
+    "explanation": [
+      "使用原边为环当且仅当对应对偶边为桥这一对偶性质。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第366页（印刷页355）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-025",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 25 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 355,
+      "pdf_page": 366,
+      "segments": [
+        {
+          "page": 366,
+          "top": 0.369,
+          "bottom": 0.396
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 25,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-026": {
+    "prompt": "证明平面图G的对偶G*是欧拉图，当且仅当G每面次数为偶数。",
+    "solution": "G*总连通；对偶顶点的度正是对应原面的次数。因此每面次数偶等价于G*所有点偶度，再由无向欧拉图判定定理即得。",
+    "explanation": [
+      "桥与自环的重计已包含在面次数和顶点度的定义内。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第366页（印刷页355）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-026",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 26 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 355,
+      "pdf_page": 366,
+      "segments": [
+        {
+          "page": 366,
+          "top": 0.399,
+          "bottom": 0.427
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 26,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E017-027": {
+    "prompt": "G*为平面图G的对偶，G**为G*对偶。在何种情况下G与G**一定不同构？",
+    "solution": "当且仅当G非连通（分量数k≥2）时一定不同构。",
+    "explanation": [
+      "G**总连通且顶点数为n−k+1，非连通时小于G的n；若G连通，按给定嵌入构造的双对偶与G同构。"
+    ],
+    "knowledge_ids": [
+      "DM-K17-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第366页（印刷页355）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E017-027",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 17 · 第 27 题",
+      "chapter": 17,
+      "section_id": "DM-C17-S4",
+      "printed_page": 355,
+      "pdf_page": 366,
+      "segments": [
+        {
+          "page": 366,
+          "top": 0.431,
+          "bottom": 0.46
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 27,
+      "group_title": "习题 17",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K17-S04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-001": {
+    "prompt": "判断图15.14(a)(b)(c)(d)哪些是欧拉图；其余至少添几条边成为欧拉图？",
+    "solution": "(a)(c)是欧拉图；(b)(d)不是，均至少添2条边。",
+    "explanation": [
+      "(a)(c)连通且各顶点度均偶。(b)两个互不连通的三角形，需用2条跨分量边连接并保持偶度。(d)是两条分离的3点路径，跨分量配对它们的4个端点可添2边形成一圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第337页（印刷页326）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-001",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 1 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 326,
+      "pdf_page": 337,
+      "segments": [
+        {
+          "page": 337,
+          "top": 0.62726,
+          "bottom": 0.7943
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "keywords": [],
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 1,
+      "group_title": "习题 15",
+      "context_needed": false
+    },
+    "figures": [
+      {
+        "page": 337,
+        "bbox": [
+          0.235,
+          0.65,
+          0.795,
+          0.743
+        ],
+        "caption": "图15.14(a)—(d)"
+      }
+    ]
+  },
+  "SRC-DM2T-E015-002": {
+    "prompt": "判断：(1)Kn(n≥3)都是欧拉图；(2)n(n≥2)阶有向完全图是欧拉图；(3)r,s为正偶数时Kr,s是欧拉图。",
+    "solution": "(1)假，仅n奇数时为欧拉图。(2)真。(3)真。",
+    "explanation": [
+      "Kn每点度n−1；有向完全图各点入度=出度=n−1且强连通；Kr,s两部点度分别s,r，均偶且连通。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第337页（印刷页326）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-002",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 2 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 326,
+      "pdf_page": 337,
+      "segments": [
+        {
+          "page": 337,
+          "top": 0.7923,
+          "bottom": 0.88155
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-003": {
+    "prompt": "分别画无向欧拉图，具有：(1)偶点偶边；(2)奇点奇边；(3)偶点奇边；(4)奇点偶边。",
+    "solution": "(1)C4：4点4边。(2)C3：3点3边。(3)C3与C4共用一个顶点：6点7边。(4)两个C3共用一个顶点：5点6边。",
+    "explanation": [
+      "各例均连通；共用点度4，其余点度2，均为欧拉图。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第337页（印刷页326）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-003",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 3 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 326,
+      "pdf_page": 337,
+      "segments": [
+        {
+          "page": 337,
+          "top": 0.87955,
+          "bottom": 0.963
+        },
+        {
+          "page": 338,
+          "top": 0.055,
+          "bottom": 0.15479
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-004": {
+    "prompt": "分别画有向欧拉图，具有偶点偶边、奇点奇边、偶点奇边、奇点偶边四种组合。",
+    "solution": "把第3题的各个圈各自一致定向即可：有向C4；有向C3；有向C3与C4共一点；两个有向C3共一点。",
+    "explanation": [
+      "各点入度=出度；基图连通，故均有有向欧拉回路。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-004",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 4 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.15279,
+          "bottom": 0.17573
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-005": {
+    "prompt": "在k(k≥2)个彼此分离、长度≥3的圈之间最少添多少条新边，使全图欧拉？分别讨论全无向与全有向。",
+    "solution": "两种情况最少都添k条。每圈选一点，将所选点以k条新边接成环；有向时将新环一致定向。k=2无向时添两条平行跨圈边，有向时添相反的两弧。",
+    "explanation": [
+      "无向情形收缩原圈，每个收缩顶点要有正偶数度，故新边≥k；有向情形每个收缩点至少一入一出，故至少k弧。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-005",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 5 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.17373,
+          "bottom": 0.21914
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-006": {
+    "prompt": "证明有向欧拉图D必强连通。",
+    "solution": "任取u,v，在一条遍历全部边的欧拉回路上从u沿方向走至v，得到u→v通路；沿余下回路又有v→u通路。",
+    "explanation": [
+      "无孤立点的欧拉图所有顶点都出现在回路上；平凡图结论也成立。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-006",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 6 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.21714,
+          "bottom": 0.24059
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-007": {
+    "prompt": "连通无向图恰有2k(k≥1)个奇度顶点，证明所有边可划分为k条边不重的简单通路Γ1…Γk。",
+    "solution": "把奇度顶点任意配对添k条新边，得到连通偶度图。取欧拉回路并删去这k条新边，原边被分成k段边不重的通路，每条原边恰出现一次。",
+    "explanation": [
+      "每段非空：每个奇度顶点只关联1条新边，欧拉回路中两条新边不可能连续。这里“简单通路”按本书指不重边通路。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-007",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 7 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.23859,
+          "bottom": 0.304
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-008": {
+    "prompt": "完全图Kn(n≥1)都是哈密顿图吗？",
+    "solution": "不是。K1按本书规定是哈密顿图；K2不是；n≥3时Kn有回路v1v2…vnv1，是哈密顿图。",
+    "explanation": [
+      "无向K2只有1条边，不能形成不重复边的哈密顿回路。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-008",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 8 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.302,
+          "bottom": 0.32742
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-009": {
+    "prompt": "连通无向图G有桥或割点，证明G不是哈密顿图。",
+    "solution": "若有哈密顿圈，删除任一点后余下哈密顿路径仍连通所有其他点，故无割点。哈密顿圈每条边都在圈内；不在圈上的任意边删去也不影响该圈连通所有点，故无桥。",
+    "explanation": [
+      "所以有桥或割点均与哈密顿圈矛盾。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-009",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 9 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.32542,
+          "bottom": 0.35193
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-010": {
+    "prompt": "证明定理15.8：u,v是n阶简单图G中不相邻点，d(u)+d(v)≥n，则G哈密顿当且仅当G+uv哈密顿。",
+    "solution": "正向显然。反向若G+uv的哈密顿圈未用新边则已完成；否则删uv得G中哈密顿路径x1=u,x2,…,xn=v。若对每个i=1…n−1，都不能同时有ux(i+1)与vxi，则d(u)+d(v)≤n−1，矛盾。故某i两边皆有，回路u,x2,…,xi,v,x(n−1),…,x(i+1),u是G的哈密顿圈。",
+    "explanation": [
+      "这是沿哈密顿路径进行两段反接的构造；计数将u的右邻标号与v的左邻标号放在n−1个位置。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-010",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 10 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.34993,
+          "bottom": 0.37083
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-011": {
+    "prompt": "彼得松图至少添几条新边成为欧拉图？至少添几条成为哈密顿图？采用标准编号外圈0…4，内点5…9，辐条i−(i+5)，内点i+5连(i+2 mod5)+5。",
+    "solution": "欧拉化最少5条，可各重复一次5条辐条。哈密顿化最少1条：取哈密顿路径0−1−2−3−4−9−6−8−5−7，添边7−0即成哈密顿圈。",
+    "explanation": [
+      "10个3度点都为奇度，每新边最多修正2个奇点，故至少5；原图非哈密顿，至少1条，而给定路径证明1条足够。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 11 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.36883,
+          "bottom": 0.414
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-012": {
+    "prompt": "证明图15.15(a)非哈密顿但半哈密顿，(b)哈密顿。(a)外侧上T、左A、右B三点，内三角上M、左L、右R，中心O；(b)外五边形从上顺时针A,B,C,D,E；内点上中p、左q、右r、中s、右下t、左下u。",
+    "solution": "(a)T,A,B均度2，任何哈密顿圈必须同时使用TO、AO、BO，使O在圈内度至少3，矛盾；路径A−L−M−T−O−B−R遍历全部7点，所以半哈密顿。(b)哈密顿圈为A−B−p−E−u−C−r−s−t−D−q−A。",
+    "explanation": [
+      "(b)边可逐段对照原图；交叉而未画节点的地方不作为顶点。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 12 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.412,
+          "bottom": 0.6277
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 338,
+        "bbox": [
+          0.295,
+          0.435,
+          0.7,
+          0.579
+        ],
+        "caption": "图15.15(a)(b)"
+      }
+    ]
+  },
+  "SRC-DM2T-E015-013": {
+    "prompt": "有2k(k≥2)个人完成k项任务，每个人都能与另外k个人中的任何1人组成二人组完成共同熟悉的任务。能否分成k个二人组各完成1项？",
+    "solution": "能。把能合作的两人连边，得到2k阶简单图且δ≥k。由Dirac条件有哈密顿圈，沿圈隔边选取k条边即得完美匹配。",
+    "explanation": [
+      "每个人恰在一个二人组，所选边均表示可共同完成任务。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-013",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 13 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.6257,
+          "bottom": 0.67267
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-014": {
+    "prompt": "n个人中任意两人合起来认识其余n−2人。证明n≥3可排成相邻者认识的一列，n≥4可排成每人认识两旁的一圈。",
+    "solution": "每人至多有1个不认识的人：若w不认识u、v，则u、v合起来也不认识w，矛盾。因此认识图δ≥n−2。n≥4时n−2≥n/2，Dirac定理给哈密顿圈；删圈上一边得到所需一列。n=3时每点至少1邻点，简单图必连通且有3点路径。",
+    "explanation": [
+      "同一人的“不认识”关系对称，论证适用于无向认识图。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-014",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 14 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.67067,
+          "bottom": 0.71659
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-015": {
+    "prompt": "6种颜色织成双色布，每种颜色至少与另3种搭配。证明可选3种双色布，其用纱的6种颜色互不重复。",
+    "solution": "以颜色为6个顶点、出现的搭配为边。δ≥3=6/2，故有哈密顿圈；沿圈隔边取3条边，得到覆盖6顶点的完美匹配，对应所需3种布。",
+    "explanation": [
+      "本题是第13题k=3的实例。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-015",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 15 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.71459,
+          "bottom": 0.76051
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-016": {
+    "prompt": "完全图Kn(n≥3)顶点为v1,…,vn，有多少不同哈密顿回路？题中顶点排列顺序不同即认为回路不同。",
+    "solution": "按题目明确的“顶点排列顺序不同即不同”计数为n!。若固定起点v1，则为(n−1)!；若再把逆向视为同一回路，才为(n−1)!/2。",
+    "explanation": [
+      "本题采用排列计数，每个n顶点排列在Kn中均闭合为回路；说明不同常见计数约定，避免混用。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-016",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 16 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.75851,
+          "bottom": 0.80392
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-017": {
+    "prompt": "证明马在3×4棋盘存在周游，在3×3棋盘不存在周游；周游要求每格恰访问一次，不要求回起点。",
+    "solution": "3×4的一条周游为(1, 1)→(2, 3)→(3, 1)→(1, 2)→(2, 4)→(3, 2)→(1, 3)→(2, 1)→(3, 3)→(1, 4)→(2, 2)→(3, 4)。3×3不存在。",
+    "explanation": [
+      "按行列编号逐对差分别为(1,2)或(2,1)，可验证所列12格全不同。3×3的中心(2,2)不能跳到任何格，是马步图孤立点，故无遍历所有格的路径。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-017",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 17 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.80192,
+          "bottom": 0.89279
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-018": {
+    "prompt": "n(n≥3)阶简单图有m=(n−1)(n−2)/2+2条边，证明为哈密顿图；举m=(n−1)(n−2)/2+1时非哈密顿例。",
+    "solution": "任意不相邻u,v，剩余n−2点最多有(n−2)(n−3)/2边，故d(u)+d(v)≥m−(n−2)(n−3)/2=n。由Ore条件为哈密顿图。少1边的反例为K(n−1)再添一个只与原图某1点相连的新点。",
+    "explanation": [
+      "反例有度1点，不能在哈密顿圈中；边数恰为题设少1情形。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第338页（印刷页327）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-018",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 18 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 327,
+      "pdf_page": 338,
+      "segments": [
+        {
+          "page": 338,
+          "top": 0.89079,
+          "bottom": 0.963
+        },
+        {
+          "page": 339,
+          "top": 0.055,
+          "bottom": 0.12721
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 18,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-019": {
+    "prompt": "若无向图G对每个非空真顶点子集S都满足p(G−S)≤|S|，能否推出哈密顿图？",
+    "solution": "不能。彼得松图满足该条件，但不是哈密顿图。",
+    "explanation": [
+      "条件只是哈密顿图的必要条件（1韧性）。对标准10点彼得松图逐个枚举1≤|S|≤9的1022个非空真子集并数连通分量，均有p≤|S|；但穷举所有顶点简单圈不含10圈。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第339页（印刷页328）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-019",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 19 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 328,
+      "pdf_page": 339,
+      "segments": [
+        {
+          "page": 339,
+          "top": 0.12521,
+          "bottom": 0.19259
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 19,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-020": {
+    "prompt": "n(n≥3)阶简单哈密顿图，对任意不相邻u,v是否必有d(u)+d(v)≥n？",
+    "solution": "不成立。反例C5：它本身是哈密顿圈，但任意不相邻两点度和2+2=4<5。",
+    "explanation": [
+      "Ore度和条件是充分条件，不能反向当作必要条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第339页（印刷页328）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-020",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 20 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 328,
+      "pdf_page": 339,
+      "segments": [
+        {
+          "page": 339,
+          "top": 0.19059,
+          "bottom": 0.25796
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 20,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-021": {
+    "prompt": "用Dijkstra求图15.16(a)(b)从v1到其他各点的最短路径和距离。边权(a)：12=6,13=3,26=6,24=2,34=2,35=5,37=8,45=1,48=6,57=1,68=3,78=3；(b)：12=4,13=8,23=2,24=3,25=6,34=2,36=8,45=3,46=1,56=6。",
+    "solution": "(a)v2:距离6,路径v1−v2；v3:距离3,路径v1−v3；v4:距离5,路径v1−v3−v4；v5:距离6,路径v1−v3−v4−v5；v6:距离12,路径v1−v2−v6；v7:距离7,路径v1−v3−v4−v5−v7；v8:距离10,路径v1−v3−v4−v5−v7−v8。(b)v2:距离4,路径v1−v2；v3:距离6,路径v1−v2−v3；v4:距离7,路径v1−v2−v4；v5:距离10,路径v1−v2−v5；v6:距离8,路径v1−v2−v4−v6。",
+    "explanation": [
+      "按最小未确定标号依次确定并松弛相邻边；所有权非负，输出路径逐边累加与距离一致。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第339页（印刷页328）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-021",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 21 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 328,
+      "pdf_page": 339,
+      "segments": [
+        {
+          "page": 339,
+          "top": 0.25596,
+          "bottom": 0.45306
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 21,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 339,
+        "bbox": [
+          0.325,
+          0.273,
+          0.775,
+          0.401
+        ],
+        "caption": "图15.16(a)(b)，含全部边权"
+      }
+    ]
+  },
+  "SRC-DM2T-E015-022": {
+    "prompt": "设备第1年购买价11万元，以后每年涨1万元。使用第1…5年的年维修费5,6,8,11,18万元；使用1年残值4万元，此后每年减1万元。制定总支出最小的5年购修计划。",
+    "solution": "最小净支出49万元；可行最优计划：第1年初买入并使用至第2年末，第3年初买入并使用至第5年末，每段末按残值出售（最后一年末同样计残值）。",
+    "explanation": [
+      "设f(j)为到第j年初前完成用机的最小净支出，弧i→j成本=(10+i)+累计维修费M(j−i)−[5−(j−i)]。动态规划f(j)=min_i{f(i)+弧成本}，f(1)=0；f(2…6)依次为12,19,28,40,49。",
+      "若只统计5年内现金支出、末期设备保留而不扣第5年末残值，则同一最优更换计划的支出为51万元，末期还留有2万元残值；净成本仍为49万元。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第339页（印刷页328）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-022",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 22 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 328,
+      "pdf_page": 339,
+      "segments": [
+        {
+          "page": 339,
+          "top": 0.45106,
+          "bottom": 0.51843
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 22,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E015-023": {
+    "prompt": "图15.17街道边长（百米）：AB=1,BC=8,CD=9,EF=3,FG=7,GH=11,IJ=5,JK=8,KL=10,AE=2,EI=4,BF=6,FJ=7,CG=6,GK=6,DH=7,HL=9,CH=10,FK=12。派出所在C，巡逻每街至少一次并回C，求最短路线。",
+    "solution": "最短总长141百米。可行路线：C−H−L−K−J−F−K−G−H−D−C−G−F−J−I−E−A−E−F−B−A−B−C。",
+    "explanation": [
+      "原街道总长131百米，奇度点为B,E,F,J。三种配对的最短增量为(B,E)+(F,J)=3+7=10，(B,F)+(E,J)=6+9=15，(B,J)+(E,F)=12+3=15。重复BA、AE、FJ后图偶度，所列欧拉回路达到下界。"
+    ],
+    "knowledge_ids": [
+      "DM-K15-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "逐项对照教材扫描PDF第339页（印刷页328）题面及相关原图；解答经数学推导或枚举计算复核",
+    "source": {
+      "id": "SRC-DM2T-E015-023",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 15 · 第 23 题",
+      "chapter": 15,
+      "section_id": "DM-C15-S3",
+      "printed_page": 328,
+      "pdf_page": 339,
+      "segments": [
+        {
+          "page": 339,
+          "top": 0.51643,
+          "bottom": 0.96
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 23,
+      "group_title": "习题 15",
+      "mapping_basis": "对照原书题号、原图及主题逐题校订",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K15-S03"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_manually_reviewed",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "figures": [
+      {
+        "page": 339,
+        "bbox": [
+          0.388,
+          0.568,
+          0.652,
+          0.68
+        ],
+        "caption": "图15.17，含街道名称及长度"
+      }
+    ]
+  }
+}

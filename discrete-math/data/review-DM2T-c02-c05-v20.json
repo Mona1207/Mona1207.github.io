@@ -1,0 +1,1696 @@
+{
+  "SRC-DM2T-E002-001": {
+    "prompt": "设 $A=p\\to q$，$B=p\\land\\neg q$，用真值表验证德摩根律 $\\neg(A\\lor B)\\Leftrightarrow\\neg A\\land\\neg B$。",
+    "solution": "按 $pq=00,01,10,11$：\n\n| $pq$ | $A$ | $B$ | $\\neg(A\\lor B)$ | $\\neg A\\land\\neg B$ |\n|---|---|---|---|---|\n|00|1|0|0|0|\n|01|1|0|0|0|\n|10|0|1|0|0|\n|11|1|0|0|0|\n\n最后两列逐行相同，故等值式成立。",
+    "explanation": [
+      "先分别计算蕴涵和合取，再对复合式逐层取值。本题 B 恰好是 A 的否定。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 53 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-002": {
+    "prompt": "公式 $A=p\\to q$、$B=p\\land\\neg q$ 同第 1 题。用真值表验证 $A\\to B\\Leftrightarrow\\neg A\\lor B$。",
+    "solution": "|$pq$|$A$|$B$|$A\\to B$|$\\neg A\\lor B$|\n|---|---|---|---|---|\n|00|1|0|0|0|\n|01|1|0|0|0|\n|10|0|1|1|1|\n|11|1|0|0|0|\n\n最后两列相同，故成立。",
+    "explanation": [
+      "蕴涵仅在前件真、后件假时为假。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 53 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-003": {
+    "prompt": "用等值演算法判断公式类型；对不是重言式的可满足式，再用真值表法求成真赋值。\n(1) $\\neg((p\\land q)\\leftrightarrow q)$；(2) $(p\\to(p\\lor q))\\lor(p\\to r)$；(3) $(p\\lor q)\\to(p\\land r)$。",
+    "solution": "(1) $((p\\land q)\\leftrightarrow q)\\equiv(p\\lor\\neg q)$，故原式等值于 $\\neg p\\land q$，是非重言的可满足式；成真赋值 $pq=01$，其余三行假。\n\n(2) $p\\to(p\\lor q)\\equiv\\neg p\\lor p\\lor q\\equiv1$，所以原式为重言式。\n\n(3) $\\neg(p\\lor q)\\lor(p\\land r)\\equiv(\\neg p\\land\\neg q)\\lor(p\\land r)$，为非重言的可满足式。按 $pqr=000,001,010,011,100,101,110,111$，真值列为 $1,1,0,0,0,1,0,1$，成真赋值为 $000,001,101,111$。",
+    "explanation": [
+      "先消去蕴涵、等价，再用互补律和吸收律化简。类型判断以所有赋值为准。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 53 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-004": {
+    "prompt": "用等值演算法证明：\n(1) $p\\Leftrightarrow(p\\land q)\\lor(p\\land\\neg q)$；\n(2) $((p\\to q)\\land(p\\to r))\\Leftrightarrow(p\\to(q\\land r))$；\n(3) $\\neg(p\\leftrightarrow q)\\Leftrightarrow(p\\lor q)\\land\\neg(p\\land q)$；\n(4) $(p\\land\\neg q)\\lor(\\neg p\\land q)\\Leftrightarrow(p\\lor q)\\land\\neg(p\\land q)$。",
+    "solution": "(1) 右式 $=p\\land(q\\lor\\neg q)=p\\land1=p$。\n\n(2) 左式 $=(\\neg p\\lor q)\\land(\\neg p\\lor r)=\\neg p\\lor(q\\land r)=p\\to(q\\land r)$。\n\n(3) 左式 $=\\neg[(\\neg p\\lor q)\\land(\\neg q\\lor p)]=(p\\land\\neg q)\\lor(q\\land\\neg p)$。\n右式 $=(p\\lor q)\\land(\\neg p\\lor\\neg q)=(p\\land\\neg q)\\lor(q\\land\\neg p)$。\n\n(4) 由 (3) 右式的分配展开即得。",
+    "explanation": [
+      "等值证明可把两边化到同一式；中间每步分别使用蕴涵等值、德摩根律和分配律。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 53 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-005": {
+    "prompt": "求主析取范式并求成真赋值：\n(1) $(\\neg p\\to q)\\to(\\neg q\\lor p)$；(2) $(\\neg p\\to q)\\land(q\\land r)$；(3) $(p\\lor(q\\land r))\\to(p\\lor q\\lor r)$。",
+    "solution": "(1) 主析取范式： $m_{0}\\lor m_{2}\\lor m_{3}$；主合取范式： $M_{1}$。\n按二进制升序的真值列：1,0,1,1。成真赋值：00、10、11；成假赋值：01。\n\n(2) 主析取范式： $m_{3}\\lor m_{7}$；主合取范式： $M_{0}\\land M_{1}\\land M_{2}\\land M_{4}\\land M_{5}\\land M_{6}$。\n按二进制升序的真值列：0,0,0,1,0,0,0,1。成真赋值：011、111；成假赋值：000、001、010、100、101、110。\n\n(3) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{4}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $1$。\n按二进制升序的真值列：1,1,1,1,1,1,1,1。成真赋值：000、001、010、011、100、101、110、111；成假赋值：无。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02",
+      "DM-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 53, 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-006": {
+    "prompt": "求主合取范式并求成假赋值：\n(1) $\\neg(q\\to\\neg p)\\land\\neg p$；(2) $(p\\land q)\\lor(\\neg p\\lor r)$；(3) $(p\\to(p\\lor q))\\lor r$。",
+    "solution": "(1) 主析取范式： $0$；主合取范式： $M_{0}\\land M_{1}\\land M_{2}\\land M_{3}$。\n按二进制升序的真值列：0,0,0,0。成真赋值：无；成假赋值：00、01、10、11。\n\n(2) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $M_{4}$。\n按二进制升序的真值列：1,1,1,1,0,1,1,1。成真赋值：000、001、010、011、101、110、111；成假赋值：100。\n\n(3) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{4}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $1$。\n按二进制升序的真值列：1,1,1,1,1,1,1,1。成真赋值：000、001、010、011、100、101、110、111；成假赋值：无。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-007": {
+    "prompt": "先求主析取范式，再求主合取范式：\n(1) $(p\\land q)\\lor r$；(2) $(p\\to q)\\land(q\\to r)$。",
+    "solution": "(1) 主析取范式： $m_{1}\\lor m_{3}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $M_{0}\\land M_{2}\\land M_{4}$。\n按二进制升序的真值列：0,1,0,1,0,1,1,1。成真赋值：001、011、101、110、111；成假赋值：000、010、100。\n\n(2) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{3}\\lor m_{7}$；主合取范式： $M_{2}\\land M_{4}\\land M_{5}\\land M_{6}$。\n按二进制升序的真值列：1,1,0,1,0,0,0,1。成真赋值：000、001、011、111；成假赋值：010、100、101、110。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-008": {
+    "prompt": "先求主合取范式，再求主析取范式：\n(1) $(p\\land q)\\to q$；(2) $(p\\leftrightarrow q)\\to r$；(3) $\\neg(r\\to p)\\land p\\land q$。",
+    "solution": "(1) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{2}\\lor m_{3}$；主合取范式： $1$。\n按二进制升序的真值列：1,1,1,1。成真赋值：00、01、10、11；成假赋值：无。\n\n(2) 主析取范式： $m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{4}\\lor m_{5}\\lor m_{7}$；主合取范式： $M_{0}\\land M_{6}$。\n按二进制升序的真值列：0,1,1,1,1,1,0,1。成真赋值：001、010、011、100、101、111；成假赋值：000、110。\n\n(3) 主析取范式： $0$；主合取范式： $M_{0}\\land M_{1}\\land M_{2}\\land M_{3}\\land M_{4}\\land M_{5}\\land M_{6}\\land M_{7}$。\n按二进制升序的真值列：0,0,0,0,0,0,0,0。成真赋值：无；成假赋值：000、001、010、011、100、101、110、111。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-009": {
+    "prompt": "用真值表求主析取范式：\n(1) $(p\\lor q)\\lor(\\neg p\\land r)$；(2) $(p\\to q)\\to(p\\leftrightarrow\\neg q)$。",
+    "solution": "(1) 主析取范式： $m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{4}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $M_{0}$。\n按二进制升序的真值列：0,1,1,1,1,1,1,1。成真赋值：001、010、011、100、101、110、111；成假赋值：000。\n\n(2) 主析取范式： $m_{1}\\lor m_{2}$；主合取范式： $M_{0}\\land M_{3}$。\n按二进制升序的真值列：0,1,1,0。成真赋值：01、10；成假赋值：00、11。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-010": {
+    "prompt": "用真值表求主合取范式：\n(1) $(p\\land q)\\lor r$；(2) $(p\\to q)\\land(q\\to r)$。",
+    "solution": "(1) 主析取范式： $m_{1}\\lor m_{3}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $M_{0}\\land M_{2}\\land M_{4}$。\n按二进制升序的真值列：0,1,0,1,0,1,1,1。成真赋值：001、011、101、110、111；成假赋值：000、010、100。\n\n(2) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{3}\\lor m_{7}$；主合取范式： $M_{2}\\land M_{4}\\land M_{5}\\land M_{6}$。\n按二进制升序的真值列：1,1,0,1,0,0,0,1。成真赋值：000、001、011、111；成假赋值：010、100、101、110。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-011": {
+    "prompt": "用真值表求主析取范式和主合取范式：\n(1) $(p\\lor q)\\land r$；(2) $p\\to(p\\lor q\\lor r)$；(3) $\\neg(q\\to\\neg p)\\land\\neg p$。",
+    "solution": "(1) 主析取范式： $m_{3}\\lor m_{5}\\lor m_{7}$；主合取范式： $M_{0}\\land M_{1}\\land M_{2}\\land M_{4}\\land M_{6}$。\n按二进制升序的真值列：0,0,0,1,0,1,0,1。成真赋值：011、101、111；成假赋值：000、001、010、100、110。\n\n(2) 主析取范式： $m_{0}\\lor m_{1}\\lor m_{2}\\lor m_{3}\\lor m_{4}\\lor m_{5}\\lor m_{6}\\lor m_{7}$；主合取范式： $1$。\n按二进制升序的真值列：1,1,1,1,1,1,1,1。成真赋值：000、001、010、011、100、101、110、111；成假赋值：无。\n\n(3) 主析取范式： $0$；主合取范式： $M_{0}\\land M_{1}\\land M_{2}\\land M_{3}$。\n按二进制升序的真值列：0,0,0,0。成真赋值：无；成假赋值：00、01、10、11。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "对真值为 1 的行取极小项之析取，对真值为 0 的行取极大项之合取。空析取为 0，空合取为 1；所有下标均已枚举复核。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-012": {
+    "prompt": "已知公式 $A$ 含 3 个命题变项 $p,q,r$，成真赋值为 $000,011,110$。求主合取范式和主析取范式。",
+    "solution": "主析取范式： $m_{0}\\lor m_{3}\\lor m_{6}$；主合取范式： $M_{1}\\land M_{2}\\land M_{4}\\land M_{5}\\land M_{7}$。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "全集下标为 0–7；成假行是成真行的补集。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-013": {
+    "prompt": "已知公式 $A$ 含 3 个命题变项 $p,q,r$，成假赋值为 $010,011,110,111$。求主析取范式和主合取范式。",
+    "solution": "主析取范式： $m_{0}\\lor m_{1}\\lor m_{4}\\lor m_{5}$；主合取范式： $M_{2}\\land M_{3}\\land M_{6}\\land M_{7}$。 等值于 $\\neg q$。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "成假行取极大项，剩余行取极小项。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-014": {
+    "prompt": "已知公式 $A$ 含 $n$ 个命题变项 $p_1,\\ldots,p_n$，且无成假赋值。求主合取范式。",
+    "solution": "主合取范式为 $1$，即不含任何极大项的空合取。因为所有赋值都使 $A$ 为真，$A$ 是重言式。",
+    "explanation": [
+      "主合取范式由成假行确定；没有成假行时不能随意写一个极大项。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-015": {
+    "prompt": "用主析取范式判断是否等值：\n(1) $(p\\to q)\\to r$ 与 $q\\to(p\\to r)$；(2) $\\neg(p\\land q)$ 与 $\\neg(p\\lor q)$。",
+    "solution": "(1) 第一式成真下标为 $1,3,4,5,7$，PDNF 为 $m_1\\lor m_3\\lor m_4\\lor m_5\\lor m_7$；第二式成真下标为 $0,1,2,3,4,5,7$，PDNF 多 $m_0,m_2$，故不等值。例如 $000$ 时前式假、后式真。\n\n(2) 第一式 PDNF 为 $m_0\\lor m_1\\lor m_2$；第二式为 $m_0$（顺序 $pq$），故不等值。反例 $pq=01$。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "主析取范式唯一；比较极小项集合即可。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-016": {
+    "prompt": "用主合取范式判断是否等值：\n(1) $p\\to(q\\to r)$ 与 $\\neg(p\\land q)\\lor r$；\n(2) $p\\to(q\\to r)$ 与 $(p\\to q)\\to r$。",
+    "solution": "(1) 两式都仅在 $pqr=110$ 时假，主合取范式都是 $M_6=\\neg p\\lor\\neg q\\lor r$，故等值。\n\n(2) 第一式 PCNF 为 $M_6$；第二式 PCNF 为 $M_0\\land M_2\\land M_6$，故不等值。赋值 $000$ 使前式真、后式假。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "比较成假行对应的极大项集合。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-017": {
+    "prompt": "将下列公式化为仅含 $\\{\\neg,\\land,\\lor\\}$ 中联结词的等值公式：\n(1) $\\neg(p\\to(q\\leftrightarrow(q\\land r)))$；(2) $(p\\land q)\\lor\\neg r$；(3) $p\\leftrightarrow(q\\leftrightarrow r)$。",
+    "solution": "(1) 因 $q\\leftrightarrow(q\\land r)\\equiv\\neg q\\lor r$，原式 $\\equiv p\\land q\\land\\neg r$。\n\n(2) 原式已满足：$(p\\land q)\\lor\\neg r$。\n\n(3) $[p\\land((q\\land r)\\lor(\\neg q\\land\\neg r))]\\lor[\\neg p\\land((q\\land\\neg r)\\lor(\\neg q\\land r))]$。",
+    "explanation": [
+      "双条件展开为两边同真或同假，蕴涵展开为否定前件或后件；最后检查没有残留箭头。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-018": {
+    "prompt": "将公式化为仅含 $\\{\\neg,\\land\\}$ 的等值公式：\n(1) $p\\lor\\neg q\\lor\\neg r$；(2) $(p\\leftrightarrow r)\\land q$；(3) $(p\\to(q\\land r))\\lor p$。",
+    "solution": "(1) $\\neg(\\neg p\\land q\\land r)$。\n\n(2) $\\neg(p\\land\\neg r)\\land\\neg(r\\land\\neg p)\\land q$。\n\n(3) 原式 $=\\neg p\\lor(q\\land r)\\lor p=1$，可写 $\\neg(p\\land\\neg p)$。",
+    "explanation": [
+      "使用 $X\\lor Y=\\neg(\\neg X\\land\\neg Y)$，先化简能大幅缩短结果。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 54, 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-019": {
+    "prompt": "将公式化为仅含 $\\{\\neg,\\lor\\}$ 的等值公式：\n(1) $(\\neg p\\lor\\neg q)\\land r$；(2) $(p\\to(q\\land\\neg p))\\land q\\land r$；(3) $p\\land q\\land\\neg r$。",
+    "solution": "(1) $\\neg(\\neg(\\neg p\\lor\\neg q)\\lor\\neg r)$。\n\n(2) $p\\to(q\\land\\neg p)\\equiv\\neg p$，故为 $\\neg(p\\lor\\neg q\\lor\\neg r)$。\n\n(3) $\\neg(\\neg p\\lor\\neg q\\lor r)$。",
+    "explanation": [
+      "使用合取的德摩根等值式，结果中的合取必须全部消去。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-020": {
+    "prompt": "将公式化为仅含 $\\{\\neg,\\to\\}$ 的等值公式：\n(1) $(p\\land q)\\lor r$；(2) $(p\\to\\neg q)\\land r$；(3) $(p\\land q)\\leftrightarrow r$。",
+    "solution": "(1) $(p\\to\\neg q)\\to r$。\n\n(2) $\\neg((p\\to\\neg q)\\to\\neg r)$。\n\n(3) 令 $X=\\neg(p\\to\\neg q)$（此处只是代号），可写 $\\neg((X\\to r)\\to\\neg(r\\to X))$；完全展开为\n$\\neg((\\neg(p\\to\\neg q)\\to r)\\to\\neg(r\\to\\neg(p\\to\\neg q)))$。",
+    "explanation": [
+      "用 $X\\land Y=\\neg(X\\to\\neg Y)$，$X\\lor Y=(\\neg X\\to Y)$；双条件是两方向蕴涵的合取。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-021": {
+    "prompt": "证明：\n(1) $(p\\uparrow q)\\Leftrightarrow(q\\uparrow p)$，$(p\\downarrow q)\\Leftrightarrow(q\\downarrow p)$；\n(2) $((p\\uparrow q)\\uparrow r)\\not\\Leftrightarrow(p\\uparrow(q\\uparrow r))$，$((p\\downarrow q)\\downarrow r)\\not\\Leftrightarrow(p\\downarrow(q\\downarrow r))$。",
+    "solution": "(1) $p\\uparrow q=\\neg(p\\land q)=\\neg(q\\land p)=q\\uparrow p$；$p\\downarrow q=\\neg(p\\lor q)=\\neg(q\\lor p)=q\\downarrow p$。\n\n(2) 对 NAND 取 $pqr=001$，左式 $\\neg(\\neg(0\\land0)\\land1)=0$，右式 $\\neg(0\\land\\neg(0\\land1))=1$。\n对 NOR 取 $pqr=100$，左式 $\\neg(\\neg(1\\lor0)\\lor0)=1$，右式 $\\neg(1\\lor\\neg(0\\lor0))=0$。因此均不满足结合律。",
+    "explanation": [
+      "交换律来自原合取/析取的交换律；否定结合律只需一个左右真值不同的赋值。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-022": {
+    "prompt": "从表 2.8 找出下列公式等值的真值函数：\n(1) $p\\uparrow q$；(2) $p\\downarrow q$；(3) $(p\\land\\neg q)\\lor(\\neg p\\land q)$；(4) $\\neg(p\\to q)$。",
+    "solution": "按表 2.8 的行顺序 $pq=00,01,10,11$：\n(1) 输出 $1110$，对应 $F_{14}^{(2)}$；\n(2) 输出 $1000$，对应 $F_{8}^{(2)}$；\n(3) 输出 $0110$，对应 $F_{6}^{(2)}$；\n(4) 输出 $0010$，对应 $F_{2}^{(2)}$。",
+    "explanation": [
+      "表 2.8 位于 PDF 第 47 页、书内第 36 页。下标是按表中输出列从上至下组成二进制串的十进制值。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "对照 PDF 第 55 页题干及第 47 页表 2.8；真值列逐行复核"
+  },
+  "SRC-DM2T-E002-023": {
+    "prompt": "设 $A,B,C$ 为任意命题公式。证明等值关系的自反性、对称性和传递性。",
+    "solution": "对任意共同变项赋值 $v$：\n(1) $v(A)=v(A)$，故 $A\\Leftrightarrow A$。\n(2) 若 $A\\Leftrightarrow B$，则 $v(A)=v(B)$，对称地 $v(B)=v(A)$，故 $B\\Leftrightarrow A$。\n(3) 若 $A\\Leftrightarrow B$ 且 $B\\Leftrightarrow C$，则 $v(A)=v(B)=v(C)$，故 $A\\Leftrightarrow C$。",
+    "explanation": [
+      "等值定义是“每个赋值下真值相同”，不能只验证某一行。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-024": {
+    "prompt": "设 $A,B$ 为任意命题公式。证明：$\\neg A\\Leftrightarrow\\neg B$ 当且仅当 $A\\Leftrightarrow B$。",
+    "solution": "若 $A\\Leftrightarrow B$，则每个赋值下 $v(A)=v(B)$，取反得 $v(\\neg A)=1-v(A)=1-v(B)=v(\\neg B)$。\n反之，若否定式等值，两边再取反即得 $v(A)=v(B)$；亦可用双重否定律。",
+    "explanation": [
+      "分别证明充分性与必要性，取反操作对真值是可逆的。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-025": {
+    "prompt": "举例说明：\n(1) 由 $A\\lor C\\Leftrightarrow B\\lor C$ 不一定有 $A\\Leftrightarrow B$；\n(2) 由 $A\\land C\\Leftrightarrow B\\land C$ 不一定有 $A\\Leftrightarrow B$。",
+    "solution": "取 $A=p,B=\\neg p$，它们不等值。\n(1) 令 $C=p\\lor\\neg p=1$，则 $A\\lor C=B\\lor C=1$。\n(2) 令 $C=p\\land\\neg p=0$，则 $A\\land C=B\\land C=0$。\n因此析取、合取一般均无消去律。",
+    "explanation": [
+      "重言式会遮蔽析取另一项，矛盾式会遮蔽合取另一项。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-026": {
+    "prompt": "在第 25 题中，若已知 $A\\lor C\\Leftrightarrow B\\lor C$，在什么条件下 $A\\Leftrightarrow B$ 一定成立？若已知 $A\\land C\\Leftrightarrow B\\land C$ 呢？",
+    "solution": "第一种只要 $C$ 是矛盾式，就有 $A\\lor C\\equiv A$、$B\\lor C\\equiv B$，从而 $A\\Leftrightarrow B$。第二种只要 $C$ 是重言式，即可同理消去。\n\n若要求条件只约束 $C$，并对任意 $A,B$ 都保证可消去，这两个条件也必要：析取时若 $C$ 可真，取 $A=0,B=C$，两析取都等值于 $C$ 而 $A,B$ 不等值；合取时若 $C$ 可假，取 $A=1,B=C$，两合取都等值于 $C$ 而 $A,B$ 不等值。",
+    "explanation": [
+      "一般个别 A、B 也可能恰好等值；题中问的是保证消去成立的条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-027": {
+    "prompt": "用灯泡与三个开关 $A,B,C$ 设计电路，仅在以下状态灯亮：(1) 仅 C 向上；(2) 仅 A 向上；(3) B,C 向上而 A 向下；(4) A,B 向上而 C 向下。令 $p,q,r$ 表示 A,B,C 向上，$F=1$ 表示灯亮。\n(a) 求 $F$ 的主析取范式；(b) 在 $\\{\\neg,\\land\\}$ 上构造 $F$；(c) 在 $\\{\\neg,\\to\\}$ 上构造 $F$。",
+    "solution": "(a) $F=m_1\\lor m_3\\lor m_4\\lor m_6$，即\n$(\\neg p\\land\\neg q\\land r)\\lor(\\neg p\\land q\\land r)\\lor(p\\land\\neg q\\land\\neg r)\\lor(p\\land q\\land\\neg r)$。\n合并得 $F=(\\neg p\\land r)\\lor(p\\land\\neg r)$，与 q 无关。\n\n(b) $F=\\neg(\\neg(\\neg p\\land r)\\land\\neg(p\\land\\neg r))$。\n\n(c) $F=(\\neg p\\to\\neg r)\\to\\neg(p\\to r)$。因为 $\\neg p\\to\\neg r=\\neg(\\neg p\\land r)$、$\\neg(p\\to r)=p\\land\\neg r$，外层蕴涵即给出两项的析取。",
+    "explanation": [
+      "成真状态依次是 001、100、011、110；先在二进制顺序中定位。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03",
+      "DM-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 55, 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-028": {
+    "prompt": "排队线路输入为 $A,B,C$，输出为 $F_A,F_B,F_C$。同一时刻只能输出一个信号，多信号申请时按 A、B、C 优先顺序输出。写出仅含 $\\{\\neg,\\land\\}$ 的表达式。",
+    "solution": "把输入 A、B、C 的值 1 理解为对应信号申请输出，则\n$F_A=A$，$F_B=\\neg A\\land B$，$F_C=\\neg A\\land\\neg B\\land C$。\n无申请时全为 0；只要 A 申请，后两路必被抑制；A 不申请但 B 申请时只输出 B；仅当前两路都未申请才可能输出 C。",
+    "explanation": [
+      "输出互斥：任意两输出之合取都含一个变项及其否定，故恒为 0。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-029": {
+    "prompt": "王小红、李强、丁金生入选班委。甲说“王小红为班长，李强为生活委员”；乙说“丁金生为班长，王小红为生活委员”；丙说“李强为班长，王小红为学习委员”。三人均恰好说对一半，三职各一人。用等值演算求三人的职务。",
+    "solution": "令 $W_B,L_B,D_B$ 表示三人为班长，$W_S,L_S$ 表示王、李为生活委员，$W_X$ 表示王为学习委员。条件为\n$(W_B\\oplus L_S)\\land(D_B\\oplus W_S)\\land(L_B\\oplus W_X)$，另有职务一一对应约束。\n\n若王为班长，甲的后句必须假；王又不可能为生活或学习委员，于是乙要求丁为班长、丙要求李为班长，矛盾。\n若李为班长，则丙后句假，王非学习委员且非班长，只能是生活委员；乙前句因此假，丁只能为学习委员；甲两句此时都假，矛盾。\n故丁为班长。乙后句假，所以王非生活委员；王只能为学习委员，李为生活委员。代回三组恰一真，完全满足。\n\n答案：丁金生班长，李强生活委员，王小红学习委员。",
+    "explanation": [
+      "“恰好一半正确”是异或，不是普通析取；还必须使用三个职位不兼任且不重复的语境条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-030": {
+    "prompt": "从赵、钱、孙、李、周中选派人员出国，要求：(1) 赵去则钱去；(2) 李、周至少一人去；(3) 钱、孙恰好一人去；(4) 孙、李同去或同不去；(5) 周去则赵、钱同去。用等值演算求可行方案。",
+    "solution": "设 $z,q,s,l,w$ 分别表示五人去。条件合取为\n$(\\neg z\\lor q)\\land(l\\lor w)\\land(q\\leftrightarrow\\neg s)\\land(s\\leftrightarrow l)\\land(\\neg w\\lor(z\\land q))$。\n由 $l=s,q=\\neg s$ 分两类：\n若 $s=1$，则 $l=1,q=0$；$z\\to q$ 迫使 z=0，$w\\to(z\\land q)$ 迫使 w=0。因此只派孙、李。\n若 $s=0$，则 $l=0,q=1$；$l\\lor w$ 迫使 w=1，继而 z=1。因此只派赵、钱、周。\n\n全部可行方案：$\\{孙,李\\}$ 或 $\\{赵,钱,周\\}$。",
+    "explanation": [
+      "对孙是否去进行分类，剩余变项都被约束唯一确定；五元组按赵钱孙李周顺序是 00110、11001。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-031": {
+    "prompt": "给出每对子句的消解结果：\n(1) $C_1=\\neg p\\lor\\neg q\\lor r$，$C_2=\\neg q\\lor\\neg r\\lor s\\lor\\neg t$；\n(2) $C_1=p\\lor\\neg q\\lor r\\lor\\neg s$，$C_2=s$；\n(3) $C_1=\\neg p\\lor q\\lor r$，$C_2=p\\lor\\neg r\\lor\\neg s$。",
+    "solution": "(1) 对 $r,\\neg r$ 消解，得 $\\neg p\\lor\\neg q\\lor s\\lor\\neg t$。\n(2) 对 $\\neg s,s$ 消解，得 $p\\lor\\neg q\\lor r$。\n(3) 对 $\\neg p,p$ 消解，得 $q\\lor r\\lor\\neg r\\lor\\neg s$，是重言子句；对 $r,\\neg r$ 消解，得 $\\neg p\\lor q\\lor p\\lor\\neg s$，也是重言子句。",
+    "explanation": [
+      "一次消解只删除选定的一对互补文字；不能同时删除多对而错误推出 q∨¬s。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-032": {
+    "prompt": "用消解原理证明为矛盾式：\n(1) $(\\neg p\\lor q)\\land(\\neg p\\lor r)\\land(\\neg q\\lor\\neg r)\\land(p\\lor\\neg r)\\land r$；\n(2) $\\neg((p\\lor q)\\land\\neg p\\to q)$。",
+    "solution": "(1) 由 $r$ 与 $\\neg q\\lor\\neg r$ 消解得 $\\neg q$；由 $r$ 与 $p\\lor\\neg r$ 得 $p$；由 $p$ 与 $\\neg p\\lor q$ 得 $q$；最后 $q,\\neg q$ 消解得空子句。故不可满足。\n\n(2) 原式化为 $(p\\lor q)\\land\\neg p\\land\\neg q$。由 $p\\lor q$ 与 $\\neg p$ 得 q，再与 $\\neg q$ 得空子句。",
+    "explanation": [
+      "把否定蕴涵化成“前件合取后件否定”，再对 CNF 的子句做消解。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-033": {
+    "prompt": "用消解法判断是否可满足：\n(1) $p\\land(\\neg p\\lor\\neg q)\\land q$；\n(2) $(p\\lor q)\\land(p\\lor\\neg q)\\land(\\neg p\\lor r)$。",
+    "solution": "(1) $p$ 与 $\\neg p\\lor\\neg q$ 消解得 $\\neg q$，再与 $q$ 得空子句，因此不可满足。\n\n(2) 前两子句消解得 p，再与 $\\neg p\\lor r$ 得 r。可归结为约束 $p\\land r$，不出现空子句；赋值 $p=1,r=1$、q 任意均满足原式，故可满足。全部成真赋值 $101,111$。",
+    "explanation": [
+      "未得到空子句本身不足以草率结束；这里同时给出满足赋值作为正面证据。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-034": {
+    "prompt": "证明：如果 $C_1,C_2$ 可以对多对文字消解，则它们的消解结果都是等值的。",
+    "solution": "若至少有两对不同的互补文字 $l,\\neg l$ 与 $k,\\neg k$ 分居两子句，对第一对消解后，结果仍含 $k\\lor\\neg k$；故该结果是重言子句。对任意一对消解，总有另一对互补文字保留，结果也都是重言子句。所以任意两个消解结果等值（均等值于 1）。",
+    "explanation": [
+      "一次只消去一对互补文字；多对的情形不是把所有互补对一起删除。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-035": {
+    "prompt": "设文字 $l$ 在合取范式 $S$ 中出现，而其互补文字 $l^{\\complement}$ 不出现。删去 S 中所有含 l 的简单析取式，得 $S'$。证明 $S\\approx S'$（等可满足）。",
+    "solution": "若 S 可满足，取满足它的赋值；S′ 的每个子句均是 S 的子句，故 S′ 也被满足。\n反之，若赋值 v 满足 S′，把 l 的真值改为 1（即把对应变项设成使 l 为真的值），其他变项不变。S′ 不含 l，且由条件也不含它的互补文字，因此 S′ 的真值不变；所有删去的子句都因含真文字 l 而为真。修改后的赋值满足 S。故二者同时可满足或同时不可满足。\n\n这里是等可满足，不是逻辑等值；例如 S=p、S′=1 一般不等值。",
+    "explanation": [
+      "这是纯文字删除规则；必须检查互补文字未出现，才能保证改值不会破坏保留子句。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E002-036": {
+    "prompt": "设 S 为合取范式，U 为命题变项集合。$R_U(S)$ 是把 S 中底层变项属于 U 的每个文字全部换为其互补文字所得的式子。证明 $R_U(S)\\approx S$（等可满足）。",
+    "solution": "对任意赋值 v，构造赋值 v′：U 中的变项取 $v'(p)=1-v(p)$，其余取 $v'(p)=v(p)$。逐个文字检查可得 $v(R_U(S))=v'(S)$。翻转同一组变项两次恢复原赋值，因此这个对应是赋值集合上的双射。\n若 v′ 满足 S，对应 v 就满足 $R_U(S)$；反之亦然。因此两式等可满足。\n\n它们一般不等值：S=p、U={p} 时变成 ¬p，两式的成真赋值不同，但都可满足。",
+    "explanation": [
+      "这里翻转的是全部出现的对应文字，而不是只翻转某几次出现；赋值双射确保可满足性保留。"
+    ],
+    "knowledge_ids": [
+      "DM-K02-01",
+      "DM-K02-02",
+      "DM-K02-S03",
+      "DM-K02-S04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 56 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-001": {
+    "prompt": "从日常生活或数学推理中，构造两个满足附加律的推理，并符号化。",
+    "solution": "① 我读过这本书，所以我读过这本书或者看过同名电影。设 p：读过这本书，q：看过同名电影，式为 $p\\models p\\lor q$。\n② 6 是偶数，所以 6 是偶数或者 6 是素数。设 p：6 是偶数，q：6 是素数，式为 $p\\models p\\lor q$。",
+    "explanation": [
+      "附加律只要求前提为真时析取为真，附加的另一支不必为真。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 67, 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-002": {
+    "prompt": "构造两个满足化简律的推理，并符号化。",
+    "solution": "① 小张会英语而且会日语，所以小张会英语。设 p：会英语，q：会日语，则 $p\\land q\\models p$。\n② 12 大于 10 且 12 是偶数，所以 12 是偶数。设 p：12 大于 10，q：12 是偶数，则 $p\\land q\\models q$。",
+    "explanation": [
+      "合取为真必使每个合取支都真；可以保留任意一支。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-003": {
+    "prompt": "构造三个满足假言推理定律的推理，并符号化。",
+    "solution": "① 如果下雨，地面就湿；下雨了；所以地面湿。\n② 如果一个整数是 4 的倍数，它就是偶数；8 是 4 的倍数；所以 8 是偶数。\n③ 如果按时交作业，就能获得作业分；按时交作业了；所以能获得作业分。\n\n每例分别令 p 为“如果”后的条件，q 为对应结果，形式均为 $(p\\to q)\\land p\\models q$。",
+    "explanation": [
+      "假言推理肯定前件推出后件；不能反过来只由后件推出前件。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-004": {
+    "prompt": "各构造一个拒取式、析取三段论、假言三段论、等价三段论、构造性二难的实例，并符号化。",
+    "solution": "① 拒取式：若设备通电则指示灯亮；灯不亮；故未通电。$(p\\to q)\\land\\neg q\\models\\neg p$。\n② 析取三段论：小张在教室或图书馆；不在教室；故在图书馆。$(p\\lor q)\\land\\neg p\\models q$。\n③ 假言三段论：4 的倍数是偶数；偶数能被 2 整除；故 4 的倍数能被 2 整除。$(p\\to q)\\land(q\\to r)\\models p\\to r$。\n④ 等价三段论：整数 n 为偶数当且仅当 n 能被 2 整除；n 能被 2 整除当且仅当余数为 0；故 n 为偶数当且仅当余数为 0。$(p\\leftrightarrow q)\\land(q\\leftrightarrow r)\\models p\\leftrightarrow r$。\n⑤ 构造性二难：若下雨则带伞；若晴天则戴帽；下雨或晴天；故带伞或戴帽。$(p\\to r)\\land(q\\to s)\\land(p\\lor q)\\models r\\lor s$。",
+    "explanation": [
+      "每例中 p、q、r、s 按自然语言条件出现的顺序解释；形式证明只依赖前提结构。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-005": {
+    "prompt": "分别写出由德摩根律、吸收律产生的推理定律，每个等值式产生两条。",
+    "solution": "德摩根律：\n$\\neg(p\\land q)\\models\\neg p\\lor\\neg q$；$\\neg p\\lor\\neg q\\models\\neg(p\\land q)$；\n$\\neg(p\\lor q)\\models\\neg p\\land\\neg q$；$\\neg p\\land\\neg q\\models\\neg(p\\lor q)$。\n\n吸收律：\n$p\\lor(p\\land q)\\models p$；$p\\models p\\lor(p\\land q)$；\n$p\\land(p\\lor q)\\models p$；$p\\models p\\land(p\\lor q)$。",
+    "explanation": [
+      "A 与 B 等值说明 A→B 和 B→A 都是重言式，因此每个等值式给出两个方向的有效推理。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-006": {
+    "prompt": "判断下面推理是否正确。给出符号、前提、结论、蕴涵形式及至少两种判断方法：\n(1) 星期一则明天星期三；今天星期一；故明天星期三。\n(2) 星期一则明天星期二；明天星期二；故今天星期一。\n(3) 星期一则明天星期三；明天不是星期三；故今天不是星期一。\n(4) 星期一则明天星期二；今天不是星期一；故明天不是星期二。\n(5) 星期一则明天星期二或三；今天星期一；故明天星期二。\n(6) 今天星期一当且仅当明天星期三；今天不是星期一；故明天不是星期三。",
+    "solution": "令 p：今天星期一；各小题的 q 表示明天星期二或星期三（按原句）；第 (5) 题 q：明天星期二，r：明天星期三。\n\n(1) 前提 $p\\to q,p$，结论 q。形式 $I_1=((p\\to q)\\land p)\\to q$；正确，假言推理；等值化简为 $(\\neg p\\lor\\neg q)\\lor q=1$。\n(2) 前提 $p\\to q,q$，结论 p。$I_2=((p\\to q)\\land q)\\to p$；不正确，肯定后件；取 $pq=01$，前提全真、结论假；化简为 $p\\lor\\neg q$。\n(3) 前提 $p\\to q,\\neg q$，结论 ¬p。$I_3=((p\\to q)\\land\\neg q)\\to\\neg p$；正确，拒取式；前提化简为 $\\neg p\\land\\neg q$，蕴涵恒真。\n(4) 前提 $p\\to q,\\neg p$，结论 ¬q。$I_4=((p\\to q)\\land\\neg p)\\to\\neg q$；不正确，否定前件；$pq=01$ 是反例；化简为 $p\\lor\\neg q$。\n(5) 前提 $p\\to(q\\lor r),p$，结论 q。$I_5=((p\\to(q\\lor r))\\land p)\\to q\\equiv\\neg p\\lor\\neg r\\lor q$；不正确；$pqr=101$ 使前提全真、结论假。\n(6) 前提 $p\\leftrightarrow q,\\neg p$，结论 ¬q。$I_6=((p\\leftrightarrow q)\\land\\neg p)\\to\\neg q$；正确，双条件先取 $q\\to p$ 再用拒取式。\n\n第二种统一判断方法是真值表：按 $pq=00,01,10,11$，$I_1,I_3,I_6$ 均为 $1111$，$I_2,I_4$ 均为 $1011$；第 (5) 按 $pqr=000,001,010,011,100,101,110,111$，$I_5$ 为 $11111011$。",
+    "explanation": [
+      "推理正确性看“是否存在前提全真而结论假的赋值”，不是看句中所举星期是否符合常识。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-007": {
+    "prompt": "对每组前提给两个结论，一个有效、一个无效：\n(1) $p\\to q,q\\to r$；(2) $(p\\land q)\\to r,\\neg r,q$；(3) $p\\to(q\\to r),p,q$。",
+    "solution": "(1) 有效结论 $p\\to r$，由假言三段论。无效结论 p；反例 $p=q=r=0$，前提全真而 p 假。\n(2) 有效结论 ¬p：假设 p，结合 q 得 p∧q，继而 r，与 ¬r 矛盾。无效结论 r；反例 $pqr=010$。\n(3) 有效结论 r：先由 p 得 q→r，再由 q 得 r。无效结论 ¬r；$pqr=111$ 是反例。",
+    "explanation": [
+      "无效结论必须给出满足全部前提而否定结论的赋值。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-008": {
+    "prompt": "对每组前提给一个有效结论、一个无效结论：\n(1) 只有天气热，我才去游泳；我正在游泳。\n(2) 只要天气热，我就去游泳；我没去游泳。\n(3) 除非天气热并且我有时间，我才去游泳；天气不热或我没有时间。",
+    "solution": "令 h：天气热，t：有时间，s：去游泳。\n(1) 前提 $s\\to h,s$。有效结论 h；无效结论 ¬h，反例 s=h=1。\n(2) 前提 $h\\to s,\\neg s$。有效结论 ¬h；无效结论 h，反例 h=s=0。\n(3) 前提 $s\\to(h\\land t),\\neg h\\lor\\neg t$。第二前提即 ¬(h∧t)，拒取式得有效结论 ¬s；无效结论 s，反例 h=t=s=0。",
+    "explanation": [
+      "“只有/除非……才”把必要条件放在蕴涵后件，“只要……就”把充分条件放在前件。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-009": {
+    "prompt": "用真值表法、等值演算法、主析取范式法证明：若 a 为奇数则不能被 2 整除；若 a 为偶数则能被 2 整除；因此若 a 为偶数则 a 不是奇数。",
+    "solution": "设 p：a 为奇数，q：a 能被 2 整除，r：a 为偶数。前提 $P=(p\\to\\neg q)\\land(r\\to q)$，结论 $C=r\\to\\neg p$。\n\n① 真值表，按 $pqr=000,001,010,011,100,101,110,111$，P 列为 $1,0,1,1,1,0,0,0$，C 列为 $1,1,1,1,1,0,1,0$。P 为 1 的每行 C 都为 1，故 $P\\to C$ 全为 1。\n② 等值演算：$P\\land\\neg C=(\\neg p\\lor\\neg q)\\land(\\neg r\\lor q)\\land r\\land p$；由 p 化简第一项得 ¬q，由 r 化简第二项得 q，于是等值于 0，推理正确。\n③ PDNF：$P\\equiv m_0\\lor m_2\\lor m_3\\lor m_4$；$C\\equiv m_0\\lor m_1\\lor m_2\\lor m_3\\lor m_4\\lor m_6$。P 的极小项集合包含于 C 的，故有效。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "三种方法分别检查真值行、排除反模型、比较成真集合，得到同一结论。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-010": {
+    "prompt": "用真值表法和主析取范式法证明推理不正确：若 a 与 b 的积为负数，则 a、b 中恰有一个为负；a 与 b 的积不是负数；所以 a、b 都不是负数。",
+    "solution": "设 p：ab<0，q：a<0，r：b<0。前提合取 $P=(p\\to((q\\land\\neg r)\\lor(\\neg q\\land r)))\\land\\neg p\\equiv\\neg p$，结论 $C=\\neg q\\land\\neg r$。\n\n① 真值表按 $pqr=000,001,010,011,100,101,110,111$：P 为 $11110000$，C 为 $10001000$；$P\\to C$ 为 $10001111$。在 001、010、011 三行前提真而结论假，故无效。\n② P 的 PDNF 是 $m_0\\lor m_1\\lor m_2\\lor m_3$，C 的是 $m_0\\lor m_4$，前者成真集合不包含于后者，例如 $m_2$。\n具体数值反例：a=−1、b=0，积不是负数，却有一个负数。",
+    "explanation": [
+      "记 $m_i$ 为下标 $i$ 的二进制位指定的极小项，位为 1 写原变项、位为 0 写否定；$M_i$ 为同一赋值下为假的极大项，文字取反。变项顺序为 $(p,q)$ 或 $(p,q,r)$。例如 $m_2=\\neg p\\land q\\land\\neg r$、$M_2=p\\lor\\neg q\\lor r$（三变项）。",
+      "否定前件不能推出否定后件，更不能推出每个因子非负。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-011": {
+    "prompt": "填充证明中未写出的推理规则。前提：$\\neg p\\lor q,\\neg q\\lor r,r\\to s,p$；结论：s。\n证明：①p；②¬p∨q；③q；④¬q∨r；⑤r；⑥r→s；⑦s。①②④⑥为前提引入。",
+    "solution": "③ 由①②，析取三段论。\n⑤ 由③④，析取三段论。\n⑦ 由⑤⑥，假言推理。",
+    "explanation": [
+      "先把第 11 题与后页第 12 题分开；第 11 题的最后一步是 s。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 68, 69 页（书内页码减 11）；数学推演或枚举复核",
+    "source": {
+      "id": "SRC-DM2T-E003-011",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 3 · 第 11 题",
+      "chapter": 3,
+      "section_id": "DM-C03-S3",
+      "printed_page": 57,
+      "pdf_page": 68,
+      "segments": [
+        {
+          "page": 68,
+          "top": 0.7721,
+          "bottom": 0.963
+        },
+        {
+          "page": 69,
+          "top": 0.055,
+          "bottom": 0.176
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题 3",
+      "mapping_basis": "原书所在小节及题面关键词；边界可回看前后页核对",
+      "context_needed": false,
+      "knowledge_ids": [
+        "DM-K03-01",
+        "DM-K03-02",
+        "DM-K03-S03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    }
+  },
+  "SRC-DM2T-E003-012": {
+    "prompt": "填充证明中未写出的规则。前提：$p\\to(q\\to r),q\\to(r\\to s)$；结论：$(p\\land q)\\to s$。\n证明：①p∧q；②p；③q；④p→(q→r)（前提）；⑤q→r；⑥r；⑦q→(r→s)（前提）；⑧r→s；⑨s。",
+    "solution": "① 附加前提引入。\n② 由①化简；③由①化简。\n⑤ 由②④假言推理。\n⑥ 由③⑤假言推理。\n⑧ 由③⑦假言推理。\n⑨ 由⑥⑧假言推理。\n最后解除附加前提①，得 $(p\\land q)\\to s$。",
+    "explanation": [
+      "附加前提法先假设蕴涵前件，推得后件后解除假设。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "对照 PDF 第 69 页（书内第 58 页），恢复旧 OCR 漏分的第 12 题及完整证明步骤",
+    "source": {
+      "id": "SRC-DM2T-E003-012",
+      "book_id": "DM2T",
+      "kind": "exercise",
+      "title": "习题 3 · 第 12 题",
+      "chapter": 3,
+      "section_id": "DM-C03-S3",
+      "printed_page": 58,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.177,
+          "bottom": 0.463
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "原书习题组所在章；待逐题细分",
+      "keywords": [],
+      "knowledge_ids": [
+        "DM-K03-01",
+        "DM-K03-02",
+        "DM-K03-S03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "source_location",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 12,
+      "group_title": "习题 3",
+      "context_needed": false
+    }
+  },
+  "SRC-DM2T-E003-013": {
+    "prompt": "前提 $\\neg(p\\to q)\\land q,p\\lor q,r\\to s$。结论分别为 r、s、r∨s。\n(1) 证明三个推理均正确；(2) 证明可以推出任何结论。",
+    "solution": "第一前提 $\\neg(p\\to q)\\land q\\equiv p\\land\\neg q\\land q\\equiv0$，所以前提不可能同时为真。\n在自然推理中，先由第一前提化简得 q 和 ¬(p→q)，再把后者等值为 p∧¬q 并化简得 ¬q。\n对任意公式 A，由 q 附加得 q∨A，再和 ¬q 用析取三段论得 A。分别取 A=r、s、r∨s 即证 (1)，A 任意即证 (2)。",
+    "explanation": [
+      "这是矛盾前提的爆炸原理；不意味着任何结论在没有这些前提时都真。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 69 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-014": {
+    "prompt": "在自然推理系统 P 中证明：\n(1) $p\\to(q\\to r),p,q\\models r\\lor s$；\n(2) $p\\to q,\\neg(q\\land r),r\\models\\neg p$；\n(3) $p\\to q\\models p\\to(p\\land q)$；\n(4) $q\\to p,q\\leftrightarrow s,s\\leftrightarrow t,t\\land r\\models p\\land q$；\n(5) $p\\to r,q\\to s,p\\land q\\models r\\land s$；\n(6) $\\neg p\\lor r,\\neg q\\lor s,p\\land q\\models t\\to(r\\land s)$。",
+    "solution": "(1) 由 p 和 p→(q→r) 得 q→r；与 q 得 r；附加得 r∨s。\n(2) ¬(q∧r) 等值于 ¬q∨¬r，与 r 用析取三段论得 ¬q；再由 p→q 用拒取式得 ¬p。\n(3) 附加假设 p；由 p→q 得 q，合取得 p∧q；解除假设得 p→(p∧q)。\n(4) 由 t∧r 得 t，由 s↔t 得 t→s，故得 s；由 q↔s 得 s→q，故得 q；由 q→p 得 p；合取得 p∧q。\n(5) 化简 p∧q 得 p、q；分别用两个蕴涵得 r、s，合取。\n(6) 化简得 p、q；分别与 ¬p∨r、¬q∨s 得 r、s，合取得 r∧s；附加假设 t，保留已得 r∧s，解除 t 得 t→(r∧s)。",
+    "explanation": [
+      "第 (6) 题原书结论没有否定号，旧 OCR 错读成 ¬(r∧s)，已对照扫描恢复。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 69 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-015": {
+    "prompt": "用附加前提法证明：\n(1) $p\\to(q\\to r),s\\to p,q\\models s\\to r$；\n(2) $(p\\lor q)\\to(r\\land s),(s\\lor t)\\to u\\models p\\to u$。",
+    "solution": "(1) 假设 s；由 s→p 得 p；由 p→(q→r) 得 q→r；与前提 q 得 r；解除 s 得 s→r。\n(2) 假设 p；附加得 p∨q；由第一前提得 r∧s，化简得 s；附加得 s∨t；由第二前提得 u；解除 p 得 p→u。",
+    "explanation": [
+      "每个证明的附加假设只在该子证明内部使用，末尾用蕴涵引入解除。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 69, 70 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-016": {
+    "prompt": "用归谬法证明：\n(1) $p\\to\\neg q,\\neg r\\lor q,r\\land\\neg s\\models\\neg p$；\n(2) $p\\lor q,p\\to r,q\\to s\\models r\\lor s$。",
+    "solution": "(1) 假设结论之否定 p；由 p→¬q 得 ¬q。由 r∧¬s 得 r，与 ¬r∨q 得 q。q∧¬q 矛盾，所以 ¬p。\n(2) 假设 ¬(r∨s)，得 ¬r、¬s。由 p→r 和 ¬r 得 ¬p；由 q→s 和 ¬s 得 ¬q；由 p∨q、¬p 得 q，与 ¬q 矛盾。因此 r∨s。",
+    "explanation": [
+      "归谬法加入的是否定整个结论，否定析取时要同时得到两个否定。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 70 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-017": {
+    "prompt": "证明：只要 A 曾到过受害者房间并且 11 点前没离开，A 就是谋杀嫌犯。A 到过受害者房间。若 A 在 11 点前离开，看门人就会看见他。看门人没看见他。所以 A 是谋杀嫌犯。",
+    "solution": "令 p：A 到过房间，q：A 在 11 点前离开，r：看门人看见他，s：A 是谋杀嫌犯。\n前提为 $(p\\land\\neg q)\\to s,p,q\\to r,\\neg r$。\n由 q→r、¬r 拒取，得 ¬q；与 p 合取得 p∧¬q；再由第一前提假言推理得 s。",
+    "explanation": [
+      "根据前提中给定的条件作形式推理；“没被看到”能推出“没离开”依赖题面 q→r 的假设。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 70 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-018": {
+    "prompt": "在自然推理系统 P 中证明：\n(1) 星期六则去颐和园或圆明园；颐和园人多则不去颐和园；今天星期六且颐和园人多；所以去圆明园。\n(2) 小王是理科生则数学好；小王非文科生则是理科生；数学不好；所以是文科生。",
+    "solution": "(1) 设 a：星期六，b：去颐和园，c：去圆明园，d：颐和园人多。前提 a→(b∨c)、d→¬b、a、d。由 a 得 b∨c，由 d 得 ¬b，析取三段论得 c。\n(2) 设 p：理科生，q：数学好，r：文科生。前提 p→q、¬r→p、¬q。先拒取得 ¬p，再由 ¬r→p 和 ¬p 得 ¬¬r，双重否定得 r。",
+    "explanation": [
+      "第 (2) 题连续使用两次拒取式，第二次得到的是 ¬¬r。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-01",
+      "DM-K03-02",
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 70 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E003-019": {
+    "prompt": "用消解证明法证明：\n(1) $p\\to(q\\to r),p,q\\models r\\lor s$；\n(2) $p\\to q\\models p\\to(p\\land q)$；\n(3) $q\\to p,q\\leftrightarrow s,s\\leftrightarrow t,t\\land r\\models p\\land q$；\n(4) $\\neg p\\lor r,\\neg q\\lor s,p\\land q\\models t\\to(r\\land s)$；\n(5) $p\\lor q,p\\to r,q\\to s\\models r\\lor s$。",
+    "solution": "各题均把“前提与结论否定”作为子句集。\n(1) 子句 ¬p∨¬q∨r、p、q、¬r、¬s。前两消解得 ¬q∨r，再与 q 得 r，与 ¬r 得空子句。\n(2) 否定结论得 p∧¬(p∧q)，即 p、¬p∨¬q；前提为 ¬p∨q。由 p 分别消解得 ¬q 和 q，归结空子句。\n(3) 前提子句 ¬q∨p、¬q∨s、¬s∨q、¬s∨t、¬t∨s、t、r；结论否定 ¬p∨¬q。由 t 得 s，再得 q，再得 p；p 与 ¬p∨¬q 得 ¬q，再与 q 得空子句。\n(4) 前提子句 ¬p∨r、¬q∨s、p、q；结论否定为 t、¬r∨¬s。前提推出 r 和 s；r 与 ¬r∨¬s 得 ¬s，再与 s 得空子句。\n(5) 子句 p∨q、¬p∨r、¬q∨s、¬r、¬s。由 ¬r 得 ¬p，由 ¬s 得 ¬q；p∨q 与 ¬p 得 q，再与 ¬q 得空子句。",
+    "explanation": [
+      "每步只消去一对互补文字；归结到空子句说明前提与否定结论不可能同时真。"
+    ],
+    "knowledge_ids": [
+      "DM-K03-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 70 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-001": {
+    "prompt": "用 0 元谓词将下列命题符号化：\n(1) 小王学过英语和法语；(2) 除非李健是东北人，否则他一定怕冷；(3) 2 大于 3 仅当 2 大于 4；(4) 3 不是偶数；(5) 2 或 3 是素数。",
+    "solution": "(1) 令 P：小王学过英语，Q：小王学过法语，式为 $P\\land Q$。\n(2) 令 P：李健是东北人，Q：李健怕冷，式为 $\\neg P\\to Q$（等值于 P∨Q）。\n(3) 令 P：2>3，Q：2>4，式为 $P\\to Q$。\n(4) 令 P：3 是偶数，式为 ¬P。\n(5) 令 P：2 是素数，Q：3 是素数，式为 P∨Q。",
+    "explanation": [
+      "0 元谓词无个体变元，相当于命题常量；题目要求保留句中联结结构。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 81 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-002": {
+    "prompt": "在一阶逻辑中符号化并讨论真值：(1) 凡整数都能被 2 整除；(2) 有的整数能被 2 整除。分别令个体域为 (a) 整数集；(b) 实数集。",
+    "solution": "令 E(x)：x 能被 2 整除。\n(a) D=Z：(1) $\\forall xE(x)$，假，反例 x=1；(2) $\\exists xE(x)$，真，见证 x=2。\n(b) D=R：再令 I(x)：x 是整数。(1) $\\forall x(I(x)\\to E(x))$，假，反例 x=1；(2) $\\exists x(I(x)\\land E(x))$，真，见证 x=2。",
+    "explanation": [
+      "在扩大个体域时，用特性谓词限制“整数”；全称限制用蕴涵，存在限制用合取。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 81 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-003": {
+    "prompt": "在一阶逻辑中符号化并讨论真值：\n(1) 对任意 x，$x^2-2=(x+\\sqrt2)(x-\\sqrt2)$；(2) 存在 x，x+5=9。\n分别令个体域为 (a) 自然数集；(b) 实数集。",
+    "solution": "设 F(x)：$x^2-2=(x+\\sqrt2)(x-\\sqrt2)$，G(x)：x+5=9。两种个体域下的式子分别均为 (1) ∀xF(x)，(2) ∃xG(x)。\n(a) D=N：两式都真。平方差恒等式对自然数仍成立；第二式见证 x=4。\n(b) D=R：两式也都真，理由相同。\nF 作为在所选域上的一元谓词解释；在 D=N 时，不把 √2 单独当成指向域内元素的个体常项。",
+    "explanation": [
+      "谓词内部可以用已解释的数学性质，而量词只扫描规定个体域。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 81, 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-004": {
+    "prompt": "在一阶逻辑中符号化：\n(1) 没有不能表示成分数的有理数；(2) 在北京卖菜的人不全是外地人；(3) 乌鸦都是黑色的；(4) 有的人天天锻炼身体。",
+    "solution": "(1) D=数，Q(x)：有理数，R(x)：可表示成分数。$\\neg\\exists x(Q(x)\\land\\neg R(x))$，等值于 ∀x(Q(x)→R(x))。\n(2) D=人，B(x)：在北京卖菜，W(x)：外地人。$\\exists x(B(x)\\land\\neg W(x))$。\n(3) D=物体，C(x)：乌鸦，H(x)：黑色。$\\forall x(C(x)\\to H(x))$。\n(4) D 取包含人和日期的域，P(x)：人，T(t)：日期，E(x,t)：x 在 t 锻炼。$\\exists x(P(x)\\land\\forall t(T(t)\\to E(x,t)))$。",
+    "explanation": [
+      "“不全”表示存在反例；“有的人天天”是同一个人对所有日期，而不是每天换一个人。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-005": {
+    "prompt": "在一阶逻辑中符号化：\n(1) 火车都比轮船快；(2) 有的火车比有的汽车快；(3) 不存在比所有火车都快的汽车；(4) 说凡是汽车就比火车慢是不对的。",
+    "solution": "令 T(x)：火车，S(x)：轮船，C(x)：汽车，F(x,y)：x 比 y 快；个体域为交通工具。\n(1) $\\forall x\\forall y((T(x)\\land S(y))\\to F(x,y))$。\n(2) $\\exists x\\exists y(T(x)\\land C(y)\\land F(x,y))$。\n(3) $\\neg\\exists x(C(x)\\land\\forall y(T(y)\\to F(x,y)))$。\n(4) $\\neg\\forall x\\forall y((C(x)\\land T(y))\\to F(y,x))$，等值于 $\\exists x\\exists y(C(x)\\land T(y)\\land\\neg F(y,x))$。",
+    "explanation": [
+      "第 (4) 中“不比火车慢”是 ¬F(火车,汽车)，不可擅自强化为严格比火车快，还可能一样快。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-006": {
+    "prompt": "个体域为 R，符号化并判断真假：\n(1) 对所有 x 存在 y 使 xy=0；(2) 存在 x 使所有 y 都有 xy=0；(3) 对所有 x 存在 y 使 y=x+1；(4) 对所有 x、y 有 xy=yx；(5) 对任意 x、y 有 xy=x+y；(6) 对任意 x 存在 y 使 $x^2+y^2<0$。",
+    "solution": "(1) ∀x∃y(xy=0)，真；对任意 x 选 y=0。\n(2) ∃x∀y(xy=0)，真；选固定 x=0。\n(3) ∀x∃y(y=x+1)，真；每个实数 x 都有对应实数 x+1。\n(4) ∀x∀y(xy=yx)，真；实数乘法交换律。\n(5) ∀x∀y(xy=x+y)，假；x=y=1 时 1≠2。\n(6) $\\forall x\\exists y(x^2+y^2<0)$，假；实数平方非负，任意 x,y 都不可能满足。",
+    "explanation": [
+      "量词次序决定见证是否能依赖前面的变元；此题 (1)(2) 恰好都能用 0。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-007": {
+    "prompt": "个体域为 Z，翻译成自然语言并判断真假：\n(1) $\\forall x\\forall y\\exists z(x-y=z)$；(2) $\\forall x\\exists y(xy=1)$；(3) $\\exists x\\forall y\\forall z(x+y=z)$。",
+    "solution": "(1) 任意两个整数之差仍有一个整数表示，真；取 z=x−y。\n(2) 每个整数都有整数乘法逆元，假；x=0（或 x=2）都找不到整数 y 使 xy=1。\n(3) 存在一个整数 x，使任意整数 y,z 都满足 x+y=z，假；固定 y=0，分别取 z=0 和 z=1 会同时要求 x=0、x=1。",
+    "explanation": [
+      "第 (3) 的同一个 x 必须适用于所有 y,z，不能见到 z 后再选择 x。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-008": {
+    "prompt": "指出指导变元、量词辖域、每个个体变项的自由及约束出现：\n(1) $\\forall x(F(x)\\to G(x,y))$；\n(2) $\\forall xF(x,y)\\to\\exists yG(x,y)$；\n(3) $\\forall x\\exists y(F(x,y)\\land G(y,z))\\lor\\exists xH(x,y,z)$。",
+    "solution": "(1) ∀x 的指导变元 x，辖域 F(x)→G(x,y)；两处 x 都约束，G 中 y 自由。\n(2) ∀x 辖域 F(x,y)，仅约束 F 中 x；∃y 辖域 G(x,y)，仅约束 G 中 y。F 中 y 自由，G 中 x 自由。\n(3) 左边 ∀x 的辖域为 ∃y(F(x,y)∧G(y,z))，左边 ∃y 的辖域为 F(x,y)∧G(y,z)；左 F 中 x、y 以及左 G 中 y 均约束，左 G 中 z 自由。\n右边 ∃x 的辖域为 H(x,y,z)，仅约束 H 中 x，右 H 中 y,z 自由。\n整式自由变项集合为 {y,z}，但 y 既有自由出现也有约束出现。",
+    "explanation": [
+      "判断的是每一次出现；同一字母可在一个支中受约束、在另一支自由。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-009": {
+    "prompt": "解释 I：D=R，常项 a=0，函数 f(x,y)=x−y，F(x,y)：x=y，G(x,y)：x<y。自由变项赋值 σ(x)=1、σ(y)=−1。解释并判断：\n(1) $\\forall x(G(x,y)\\to\\exists yF(x,y))$；\n(2) $\\forall y(F(f(x,y),a)\\to\\forall xG(x,y))$；\n(3) $\\exists xG(x,y)\\to\\forall yF(f(x,y),a)$；\n(4) $\\forall yG(f(x,y),a)\\to\\exists xF(x,y)$。",
+    "solution": "(1) “每个实数 x，若 x<−1，则存在实数 y 使 x=y。”真；后件恒有见证 y=x。内层 y 重新约束，不再取 −1。\n(2) “每个实数 y，若 1−y=0，则所有实数 x 都小于 y。”假；取 y=1，前件真而“所有实数小于 1”假。\n(3) “存在实数 x<−1，则所有实数 y 均有 1−y=0。”前件真（如 x=−2），后件假（y=0），所以假。\n(4) “所有实数 y 均使 1−y<0，则存在实数 x=−1。”前件假（y=0），后件真（x=−1），故蕴涵为真。",
+    "explanation": [
+      "只有自由出现使用 σ 的赋值；量词覆盖的同名字母按该量词重新解释。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 82, 83 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-010": {
+    "prompt": "解释 I：D=N，a=2，f(x,y)=x+y，g(x,y)=xy，F(x,y)：x=y；σ(x)=2、σ(y)=3、σ(z)=4。解释并判断：\n(1) $\\forall xF(g(x,a),y)$；\n(2) $\\exists xF(f(x,a),y)\\to\\exists yF(f(y,a),x)$；\n(3) $\\forall x\\forall y\\exists zF(f(x,y),z)$；\n(4) $\\exists xF(f(x,y),g(x,z))$。",
+    "solution": "本书 N 包含 0（PDF 第 102 页，书内第 91 页明确约定）。\n(1) “任意自然数 x 都有 2x=3”，假；例如 x=0 不满足。\n(2) “存在自然数 x 使 x+2=3，则存在自然数 y 使 y+2=2”，真；前件见证 x=1，后件见证 y=0。\n(3) “对任意自然数 x,y，存在自然数 z=x+y”，真；取 z=x+y。\n(4) “存在自然数 x，使 x+3=4x”，真；见证 x=1。",
+    "explanation": [
+      "自由出现的 x,y,z 分别取 2,3,4；已被量词约束的出现不再取 σ 的数值。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "对照 PDF 第 83 页题干；并核对 PDF 第 102 页自然数 N 包含 0 的原书约定；算术逐式复核"
+  },
+  "SRC-DM2T-E004-011": {
+    "prompt": "判断公式类型：\n(1) $F(x,y)\\to(G(x,y)\\to F(x,y))$；\n(2) $\\forall x(F(x)\\to F(x))\\to\\exists y(G(y)\\land\\neg G(y))$；\n(3) $\\forall x\\exists yF(x,y)\\to\\exists x\\forall yF(x,y)$；\n(4) $\\exists x\\forall yF(x,y)\\to\\forall y\\exists xF(x,y)$；\n(5) $\\forall x\\forall y(F(x,y)\\to F(y,x))$；\n(6) $\\neg(\\forall xF(x)\\to\\exists yG(y))\\land\\exists yG(y)$。",
+    "solution": "(1) 永真式，是 p→(q→p) 的代换实例。\n(2) 矛盾式：前件恒真，后件恒假。\n(3) 非永真的可满足式。成真：D={0}，F 全真。成假：D={0,1}，F(x,y) 当且仅当 x=y；每行有真值但没有全真行。\n(4) 永真式。若前件真，取其固定见证 c，对每个 y 都有 F(c,y)，于是每个 y 均可在后件选 x=c；前件假时蕴涵也真。\n(5) 非永真的可满足式。F 全真时真；D={0,1} 且 F 仅在 (0,1) 为真时假，因为 F(0,1) 真而 F(1,0) 假。\n(6) 矛盾式。令 A=∀xF(x)，B=∃yG(y)，原式 ¬(A→B)∧B≡A∧¬B∧B≡0。",
+    "explanation": [
+      "称非永真的可满足式时须同时提供成真与成假解释；一阶有效性不能仅按量词前后位置猜测。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 83 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-012": {
+    "prompt": "判断公式类型：\n(1) $F(x)\\to\\forall xF(x)$；(2) $\\exists xF(x)\\to F(x)$；\n(3) $\\forall x(F(x)\\to G(x))\\to(\\forall xF(x)\\to\\forall xG(x))$；\n(4) $(\\forall xF(x)\\to\\forall xG(x))\\to\\forall x(F(x)\\to G(x))$。",
+    "solution": "(1) 非永真的可满足式。成真取单元素域且 F 全真；成假取 D={0,1}、F={0}、自由 x=0，前件真而全称后件假。\n(2) 非永真的可满足式。成真同上；成假取 D={0,1}、F={0}、自由 x=1，存在前件真而 F(1) 假。\n(3) 永真式：若所有元素都满足 F→G，且所有元素都满足 F，则逐个得到 G；若其中任一蕴涵前件假，整式也真。\n(4) 非永真的可满足式。F、G 均全真时真；反例 D={0,1}、F={0}、G=∅，∀F 为假，故外层前件真；但 x=0 处 F→G 假，外层后件假。",
+    "explanation": [
+      "第 (1)(2) 中外侧 F(x) 的 x 是自由出现；与量词指导变元同名不代表自动被约束。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 83 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-013": {
+    "prompt": "给出一个成真解释和一个成假解释：\n(1) $\\forall x(F(x)\\lor G(x))$；\n(2) $\\exists x(F(x)\\land G(x)\\land H(x))$；\n(3) $\\exists x(F(x)\\land\\forall y(G(y)\\land H(x,y)))$。",
+    "solution": "统一取 D={a}。\n(1) 成真：F(a)=1、G(a)=0；成假：F(a)=G(a)=0。\n(2) 成真：F(a)=G(a)=H(a)=1；成假：F(a)=0、G(a)=H(a)=1。\n(3) 成真：F(a)=G(a)=H(a,a)=1；成假：F(a)=1、G(a)=0、H(a,a)=1。\n单元素域中全称和存在都直接检查 a，因此以上已给完整解释。",
+    "explanation": [
+      "解释必须明确域与所有出现的谓词；第 (3) 中 H 是二元谓词。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 83 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E004-014": {
+    "prompt": "证明不是永真式也不是矛盾式：\n(1) $\\forall x(F(x)\\to\\exists y(G(y)\\land H(x,y)))$；\n(2) $\\forall x\\forall y((F(x)\\land G(y))\\to H(x,y))$。",
+    "solution": "统一取非空域 D={a}。\n(1) 成真解释：F(a)=0，G(a)=H(a,a)=0，蕴涵前件假故全式真。成假解释：F(a)=1、G(a)=0、H(a,a)=0，存在后件假，全式假。\n(2) 成真解释：F(a)=0、G(a)=1、H(a,a)=0，唯一蕴涵前件假；成假解释：F(a)=G(a)=1、H(a,a)=0，唯一蕴涵前件真、后件假。\n每式均既有成真解释又有成假解释，故均为非永真的可满足式。",
+    "explanation": [
+      "“不是永真式”用一个反解释，“不是矛盾式”用一个满足解释即可证明。"
+    ],
+    "knowledge_ids": [
+      "DM-K04-01",
+      "DM-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 83 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-001": {
+    "prompt": "设 D={a,b,c}，消去 $\\forall x(F(x)\\land\\exists yG(y))$ 的量词。\n甲先把 ∃yG(y) 展开为 G(a)∨G(b)∨G(c)，再把外层 ∀x 展开，得三个形如 F(a)∧(G(a)∨G(b)∨G(c)) 的合取支。\n乙先写 $\\forall x(F(x)\\land\\exists yG(y))\\Leftrightarrow\\forall xF(x)\\land\\exists yG(y)$，再得 $(F(a)\\land F(b)\\land F(c))\\land(G(a)\\lor G(b)\\lor G(c))$。\n乙的演算更简洁，指出其关键步骤。",
+    "solution": "关键是第一步使用量词辖域收缩等值式：当 B 中没有 x 的自由出现时，$\\forall x(A(x)\\land B)\\equiv\\forall xA(x)\\land B$。\n此处 B=∃yG(y)，不含自由 x，因此可以先把它移出 ∀x 的辖域。\n最后量词消去结果为 $(F(a)\\land F(b)\\land F(c))\\land(G(a)\\lor G(b)\\lor G(c))$。\n甲、乙结果相等：令 Q=G(a)∨G(b)∨G(c)，甲结果是 (F(a)∧Q)∧(F(b)∧Q)∧(F(c)∧Q)，用结合律和幂等律恰化为乙的结果。",
+    "explanation": [
+      "不是可以无条件移动量词；不含该指导变元的自由出现是关键条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 95 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-002": {
+    "prompt": "设 D={a,b,c}，消去量词：\n(1) $\\forall x\\exists y(F(x)\\land G(y))$；\n(2) $\\forall x\\forall y(F(x)\\lor G(y))$；\n(3) $\\forall xF(x)\\to\\forall yG(y)$；\n(4) $\\forall x(F(x,y)\\to\\exists yG(y))$。",
+    "solution": "(1) $(F(a)\\land F(b)\\land F(c))\\land(G(a)\\lor G(b)\\lor G(c))$。\n(2) $(F(a)\\land F(b)\\land F(c))\\lor(G(a)\\land G(b)\\land G(c))$。也可写九个 $F(u)\\lor G(v)$（u,v∈{a,b,c}）的合取；两形式由分配律等值。\n(3) $(F(a)\\land F(b)\\land F(c))\\to(G(a)\\land G(b)\\land G(c))$。\n(4) 令 Q=G(a)∨G(b)∨G(c)，则结果为 $(F(a,y)\\to Q)\\land(F(b,y)\\to Q)\\land(F(c,y)\\to Q)$。这里 Q 只是便于展示的已展开无量词公式。",
+    "explanation": [
+      "第 (4) 的 F(x,y) 中 y 是自由的；∃y 只约束后件 G(y)，不能把 F 中 y 一同替换。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 95 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-003": {
+    "prompt": "D={1,2}。给出不同解释 I₁、I₂，使下面两个公式在 I₁ 下都真，在 I₂ 下都假：\n(1) $\\forall x(F(x)\\to G(x))$；(2) $\\exists x(F(x)\\land G(x))$。",
+    "solution": "I₁：F={1}、G={1}。在 1 处 F→G 为真，在 2 处前件假；故 (1) 真；见证 1 使 (2) 真。\nI₂：F={1}、G={2}。在 1 处 F 真而 G 假，故 (1) 假；两集合不交，无元素同时满足二者，故 (2) 假。\n写成真值表：I₁ 下 F(1)=G(1)=1、F(2)=G(2)=0；I₂ 下 F(1)=G(2)=1、F(2)=G(1)=0。",
+    "explanation": [
+      "两个公式需要在同一个 I₁ 中同时真、在同一个 I₂ 中同时假，不能给互不相容的分开解释。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 95 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-004": {
+    "prompt": "给定 $A=\\exists xF(x)\\to\\forall xF(x)$。\n(1) 若 D={a}，证明 A 在任意解释 I₁ 下真；(2) 若 D={a₁,…,aₙ}、n≥2，A 是否仍一定真？",
+    "solution": "(1) 单元素域中 ∃xF(x) 与 ∀xF(x) 都等值于 F(a)，所以 A 等值于 F(a)→F(a)=1。\n(2) 不一定。取 F(a₁)=1、F(a₂)=0，其余 F 值任意，则存在式为真而全称式为假，A 为假。\n若 F 对全域全真，或全假，则 A 仍真。因此 n≥2 时 A 的真值依赖具体解释。",
+    "explanation": [
+      "一个元素上的“有的”与“所有”相同，多元素域中这两种量词才可能分离。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 95 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-005": {
+    "prompt": "给定解释：D={3,4}，f(3)=4、f(4)=3；F(3,3)=F(4,4)=0，F(3,4)=F(4,3)=1。求真值：\n(1) $\\forall x\\exists yF(x,y)$；(2) $\\exists x\\forall yF(x,y)$；(3) $\\forall x\\forall y(F(x,y)\\to F(f(x),f(y)))$。",
+    "solution": "(1) 真。x=3 时选 y=4；x=4 时选 y=3。\n(2) 假。x=3 的一行含 F(3,3)=0，x=4 的一行含 F(4,4)=0，无一行全真。\n(3) 真。x=y 时前件为假；x≠y 时 f 交换 3、4，仍有 f(x)≠f(y)，后件为真。四个有序对上的蕴涵全真。",
+    "explanation": [
+      "F 表示这两个元素之间的“不相等”，同时交换两个参数会保持不相等。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 95, 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-006": {
+    "prompt": "甲作量词辖域收缩：$\\forall x(F(x)\\to G(x,y))\\Leftrightarrow\\exists xF(x)\\to G(x,y)$。乙说甲错了。乙是否正确，为什么？",
+    "solution": "乙正确。不能把含有自由 x 的 G(x,y) 移出 ∀x 的辖域；这样把原先受约束的 x 变成自由 x，改变公式含义。\n反例：D={0,1}，F 对所有元素都真，G(x,y) 仅依赖 x，规定 x=0 时真、x=1 时假；取右式自由 x=0（y 任意）。左式因 x=1 而假；右式的存在前件真且 G(0,y) 真，所以真。\n正确的 $\\forall x(A(x)\\to B)\\equiv(\\exists xA(x))\\to B$ 要求 B 中无 x 的自由出现。",
+    "explanation": [
+      "合法收缩规则的边界条件比量词符号本身更重要。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-007": {
+    "prompt": "指出下面等值演算的两处错误：\n$\\neg\\exists x\\forall y(F(x)\\land(G(y)\\to H(x,y)))$\n$\\Leftrightarrow\\forall x\\exists y(F(x)\\land(G(y)\\to H(x,y)))$\n$\\Leftrightarrow\\forall x\\exists y((F(x)\\land G(y))\\to H(x,y))$。",
+    "solution": "第一处：量词否定时虽然 ∃x∀y 变成 ∀x∃y，但矩阵外面的否定不能丢。应为 $\\forall x\\exists y\\neg(F(x)\\land(G(y)\\to H(x,y)))$。\n第二处：$F\\land(G\\to H)$ 不等值于 $(F\\land G)\\to H$；例如 F=0 时前者假，后者真。\n正确结果可继续化简为\n$\\forall x\\exists y(\\neg F(x)\\lor(G(y)\\land\\neg H(x,y)))$。",
+    "explanation": [
+      "先把否定准确送入矩阵，再消去蕴涵；不能在量词变换过程中遗失任何否定号。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-008": {
+    "prompt": "用两种不同但等值的一阶公式符号化：\n(1) 没有小于负数的正数；(2) 相等的两个角未必都是对顶角。",
+    "solution": "(1) D=R，P(x)：x>0，N(y)：y<0，L(x,y)：x<y。\n形式一：$\\neg\\exists x\\exists y(P(x)\\land N(y)\\land L(x,y))$。\n形式二：$\\forall x\\forall y((P(x)\\land N(y))\\to\\neg L(x,y))$。\n(2) D=角，E(x,y)：两角相等，V(x,y)：两角互为对顶角。\n形式一：$\\neg\\forall x\\forall y(E(x,y)\\to V(x,y))$。\n形式二：$\\exists x\\exists y(E(x,y)\\land\\neg V(x,y))$。",
+    "explanation": [
+      "“未必都是”是否定全称，不是全称否定。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-009": {
+    "prompt": "D=R，F(x)：x 是有理数，G(x)：x 是无理数。有人由 ∃xF(x) 与 ∃xG(x) 都真，并使用 $\\exists xF(x)\\land\\exists xG(x)\\Leftrightarrow\\exists x(F(x)\\land G(x))$，声称存在既有理又无理的实数。错误何在？",
+    "solution": "错误在所用等值式不成立。左边两个存在量词可有不同见证，例如 F 的见证 0 与 G 的见证 √2；右边要求同一个实数同时满足 F、G。\n正确变形是 $\\exists uF(u)\\land\\exists vG(v)\\equiv\\exists u\\exists v(F(u)\\land G(v))$，不能擅自把两个见证合并为一个。\n在本题左式真，右式假，因为有理数集与无理数集不相交。",
+    "explanation": [
+      "存在量词不能对合取作同一变元的分配。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-010": {
+    "prompt": "$\\neg\\exists x(F(x)\\land G(x))$ 是前束范式吗？为什么？",
+    "solution": "不是。前束范式要求全部量词位于公式最前面，前缀后是无量词矩阵；原式最外层是 ¬，量词还在否定号后。\n它等值的前束范式是 $\\forall x\\neg(F(x)\\land G(x))$，或 $\\forall x(\\neg F(x)\\lor\\neg G(x))$。",
+    "explanation": [
+      "“与某个前束范式等值”不等于“当前写法本身已经是前束范式”。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-011": {
+    "prompt": "有人称 $\\forall x(F(x)\\to G(x))\\to\\exists xG(x,y)$ 无法求前束范式，因为两个量词指导变元相同。他的理由对吗？",
+    "solution": "不对。先只把约束变元换名，不改变自由变元：\n$\\forall u(F(u)\\to G(u))\\to\\exists vG(v,y)$。\n消去外层蕴涵，得 $\\exists u\\neg(F(u)\\to G(u))\\lor\\exists vG(v,y)$。\n因此前束范式为 $\\exists u\\exists v((F(u)\\land\\neg G(u))\\lor G(v,y))$。\n自由变元 y 仍然自由；G 的一元、二元使用依原题谓词记号分别解释。",
+    "explanation": [
+      "遇到量词重名应先作约束变元换名，不能因字母重用而认定不存在前束范式。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-012": {
+    "prompt": "求前束范式：\n(1) $\\forall xF(x)\\to\\forall yG(x,y)$；\n(2) $\\forall x(F(x,y)\\to\\exists yG(x,y,z))$；\n(3) $\\forall xF(x,y)\\leftrightarrow\\exists xG(x,y)$；\n(4) $\\forall x_1(F(x_1)\\to G(x_1,x_2))\\to(\\exists x_2H(x_2)\\to\\exists x_3L(x_2,x_3))$；\n(5) $\\exists x_1F(x_1,x_2)\\to(F(x_1)\\to\\neg\\exists x_2G(x_1,x_2))$。",
+    "solution": "先将不同辖域的约束变元改名。以下每式的矩阵均无量词：\n(1) $\\exists u\\forall v(\\neg F(u)\\lor G(x,v))$；原式后件中的 x 保持自由。\n(2) $\\forall x\\exists u(\\neg F(x,y)\\lor G(x,u,z))$；原式 F 中 y 保持自由。\n(3) $\\exists u\\exists v\\forall s\\forall t[(\\neg F(u,y)\\lor G(v,y))\\land(\\neg G(s,y)\\lor F(t,y))]$。\n推导：设 A=∀xF(x,y)、B=∃xG(x,y)，先展开 (A→B)∧(B→A)；两个方向分别化为 ∃u∃v(¬F(u,y)∨G(v,y)) 与 ∀s∀t(¬G(s,y)∨F(t,y))，再外提。\n(4) $\\exists u\\forall v\\exists w[(F(u)\\land\\neg G(u,x_2))\\lor\\neg H(v)\\lor L(x_2,w)]$；x₂ 在 G、L 中保持自由，H 中的原约束 x₂ 改成 v。\n(5) $\\forall u\\forall v(\\neg F(u,x_2)\\lor\\neg F(x_1)\\lor\\neg G(x_1,v))$；x₁ 在后件中自由、x₂ 在原前件中自由，均不被新量词捕获。",
+    "explanation": [
+      "蕴涵前件的量词在越过否定时需要反向；双条件先展开，再分别换名。默认一阶个体域非空。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-013": {
+    "prompt": "符号化，要求为前束范式：\n(1) 有的汽车比有的火车快；(2) 有的火车比所有汽车快；(3) 不是所有火车都比所有汽车快；(4) 有的飞机比有的汽车慢是不对的。",
+    "solution": "令 C(x)：汽车，T(x)：火车，P(x)：飞机，R(x,y)：x 比 y 快；域为交通工具。\n(1) $\\exists x\\exists y(C(x)\\land T(y)\\land R(x,y))$。\n(2) $\\exists x\\forall y(T(x)\\land(\\neg C(y)\\lor R(x,y)))$。\n(3) $\\exists x\\exists y(T(x)\\land C(y)\\land\\neg R(x,y))$。\n(4) $\\forall x\\forall y(\\neg P(x)\\lor\\neg C(y)\\lor\\neg R(y,x))$。\n每式均为量词前缀加无量词矩阵。",
+    "explanation": [
+      "“飞机比汽车慢”写作 R(汽车,飞机)；否定整句后是“没有这样一对”，不是反过来断言所有飞机严格更快。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-014": {
+    "prompt": "举例说明：在一阶自然推理系统中使用存在量词引入 ∃+、存在量词消去 ∃−，若违反规则条件，可能证明错误推理。",
+    "solution": "① 违反 ∃+ 的可代入条件，造成变元捕获：从 $\\forall xR(x,c)$ 错误推出 $\\exists x\\forall xR(x,x)$。\n反例 D={0,1}、c=0、R={(0,0),(1,0)}。前提真；内层 ∀xR(x,x) 在 x=1 时假，外层 ∃x 是空约束，结论仍假。合法引入应取新变元 z，得到 $\\exists z\\forall xR(x,z)$。\n\n② 违反 ∃− 的新见证条件：从 ∃xF(x) 取一个已经指定的常项 c，错误地把 F(c) 当成最终结论。\n反例 D={0,1}、F={1}、c=0，前提真而 F(c) 假。存在见证必须用新的临时符号，最终结论与未解除前提不能依赖该符号。\n原书 PDF 第 92 页列出这两个规则的限制：代换须避免捕获；∃− 的临时常项不得在有关前提、矩阵或最终结论中原先出现。",
+    "explanation": [
+      "“存在某个”不等于“指定的这个”；存在引入也不能用同名字母跨越内层量词随意替换。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "对照 PDF 第 96 页题干及 PDF 第 92 页 ∃+、∃− 规则和限制；给出显式有限域反解释"
+  },
+  "SRC-DM2T-E005-015": {
+    "prompt": "在一阶自然推理系统中证明：\n(1) $\\exists xF(x)\\to\\forall y((F(y)\\lor G(y))\\to R(y)),\\exists xF(x)\\models\\exists xR(x)$；\n(2) $\\forall x(F(x)\\to(G(a)\\land R(x))),\\exists xF(x)\\models\\exists x(F(x)\\land R(x))$；\n(3) $\\forall x(F(x)\\lor G(x)),\\neg\\exists xG(x)\\models\\exists xF(x)$；\n(4) $\\forall x(F(x)\\lor G(x)),\\forall x(\\neg G(x)\\lor\\neg R(x)),\\forall xR(x)\\models\\forall xF(x)$。",
+    "solution": "(1) 由两个前提假言推理，得 ∀y((F(y)∨G(y))→R(y))。对存在前提用新临时见证 c，假设 F(c)；附加得 F(c)∨G(c)，全称消去得对应蕴涵，推出 R(c)，存在引入得 ∃xR(x)。结论不含 c，解除见证。\n(2) 对 ∃xF(x) 取新见证 c。全称消去得 F(c)→(G(a)∧R(c))，由 F(c) 得 R(c)，再合取得 F(c)∧R(c)，存在引入，解除 c。\n(3) ¬∃xG(x) 等值于 ∀x¬G(x)。取任意个体 c，全称消去得 F(c)∨G(c) 和 ¬G(c)，析取三段论得 F(c)，存在引入得 ∃xF(x)。非空域保证可取一个体。\n(4) 取任意 c：得到 F(c)∨G(c)、¬G(c)∨¬R(c)、R(c)。后两式推出 ¬G(c)，再推出 F(c)。c 任意且不在未解除前提中自由出现，全称引入得 ∀xF(x)。",
+    "explanation": [
+      "存在消去使用临时见证，最后的存在结论不含见证符号；全称引入使用真正任意的个体。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 96, 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-016": {
+    "prompt": "给出解释，使 $\\forall xF(x)\\to\\forall xG(x)$ 真，而 $\\forall x(F(x)\\to G(x))$ 假，说明二者不等值。",
+    "solution": "取 D={0,1}、F={0}、G=∅。\n∀xF(x) 为假，∀xG(x) 也假，因此第一式“假→假”为真。\n在 x=0 处 F(0)=1、G(0)=0，所以 F(0)→G(0) 假，第二式全称公式为假。\n该解释同时满足题目的两个要求。",
+    "explanation": [
+      "整体的全称蕴涵可以因全称前件假而真，却不保证逐个元素的蕴涵。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-017": {
+    "prompt": "前提 $\\forall x(F(x)\\to\\neg G(x)),\\forall x(H(x)\\to G(x))$，结论 $\\forall x(H(x)\\to\\neg F(x))$。\n有人证明：①附加前提 ∀xH(x)；②H(x)；③∀x(H(x)→G(x))；④H(x)→G(x)；⑤G(x)；⑥∀x(F(x)→¬G(x))；⑦F(x)→¬G(x)；⑧¬F(x)；⑨∀x¬F(x)。指出错误。",
+    "solution": "错误在附加前提的选取与解除：要证 ∀x(H(x)→¬F(x))，应取任意个体 c，仅在子证明中假设 H(c)，推得 ¬F(c)，解除该假设得到 H(c)→¬F(c)，然后全称化。\n原证却假设更强的 ∀xH(x)。在这个附加前提下得到 ∀x¬F(x) 只说明 $(\\forall xH(x))\\to\\forall x\\neg F(x)$，尚未证明所要的逐个条件式；也不能不解除附加前提就把⑨当成原前提的结论。\n注意：由于①是闭式，⑨的全称引入本身并不必然违规；真正问题是推理仍依赖额外假设，且其解除所得形式不同。",
+    "explanation": [
+      "区分“全体都满足 H 时，全体都不满足 F”和“每个满足 H 的个体都不满足 F”；后者要求局部、逐个个体的条件证明。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-018": {
+    "prompt": "给出第 17 题的正确证明：前提 $\\forall x(F(x)\\to\\neg G(x)),\\forall x(H(x)\\to G(x))$，结论 $\\forall x(H(x)\\to\\neg F(x))$。",
+    "solution": "① 取任意新个体 c，附加假设 H(c)。\n② 由第二前提全称消去，得 H(c)→G(c)。\n③ 由①②假言推理，得 G(c)。\n④ 由第一前提全称消去，得 F(c)→¬G(c)。\n⑤ 由③④拒取式及双重否定，得 ¬F(c)。\n⑥ 解除假设①，得 H(c)→¬F(c)。\n⑦ c 在原前提中未出现，且局部假设已解除，可全称引入得 ∀x(H(x)→¬F(x))。",
+    "explanation": [
+      "原前提是闭式，任意性条件在解除 H(c) 后满足；不能在仍依赖特定 c 的假设时提前全称化。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-019": {
+    "prompt": "证明：$\\exists xF(x)\\to\\forall xG(x)\\models\\forall x(F(x)\\to G(x))$。",
+    "solution": "取任意个体 c，假设 F(c)。存在引入得 ∃xF(x)；与原前提假言推理得 ∀xG(x)；全称消去得 G(c)。\n解除 F(c)，得到 F(c)→G(c)。c 任意，且原前提无自由 c，故全称引入得 ∀x(F(x)→G(x))。",
+    "explanation": [
+      "先以某个任意个体满足 F 为局部条件，才使用“若存在 F 则全体 G”的全局前提。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-020": {
+    "prompt": "证明（可以使用附加前提法）：\n(1) $\\forall x(F(x)\\to G(x))\\models\\forall xF(x)\\to\\forall xG(x)$；\n(2) $\\forall x(F(x)\\lor G(x))\\models\\neg\\forall xF(x)\\to\\exists xG(x)$。",
+    "solution": "(1) 假设 ∀xF(x)。取任意 c，分别全称消去得 F(c) 与 F(c)→G(c)，推出 G(c)。c 在假设和原前提中均无自由出现，全称引入得 ∀xG(x)；解除假设，得所求蕴涵。\n(2) 假设 ¬∀xF(x)，量词否定得 ∃x¬F(x)。用新临时见证 c，假设 ¬F(c)；由原前提得 F(c)∨G(c)，析取三段论得 G(c)，存在引入得 ∃xG(x)。结论不含 c，消去临时见证；再解除 ¬∀xF(x)，得结论。",
+    "explanation": [
+      "第 (2) 否定全称产生一个反例见证；它不需要、更不能指定为任何原有个体。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-021": {
+    "prompt": "在一阶自然推理系统中证明：没有白色的乌鸦。北京鸭是白色的。因此北京鸭不是乌鸦。",
+    "solution": "令 W(x)：白色，C(x)：乌鸦，B(x)：北京鸭。\n前提 $\\neg\\exists x(W(x)\\land C(x))$、$\\forall x(B(x)\\to W(x))$，结论 ∀x(B(x)→¬C(x))。\n第一前提等值于 ∀x(W(x)→¬C(x))。取任意 c，假设 B(c)；由第二前提得 W(c)，由第一前提得 ¬C(c)；解除 B(c)，得 B(c)→¬C(c)；全称引入即得结论。",
+    "explanation": [
+      "把“北京鸭”作为类谓词，使结论覆盖所有北京鸭；不是只证明一只指定鸭。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-022": {
+    "prompt": "构造证明：\n(1) 偶数都能被 2 整除；6 是偶数；所以 6 能被 2 整除。\n(2) 凡大学生都勤奋；王晓山不勤奋；所以王晓山不是大学生。",
+    "solution": "(1) D=整数，E(x)：偶数，T(x)：可被 2 整除。前提 ∀x(E(x)→T(x))、E(6)。全称消去得 E(6)→T(6)，假言推理得 T(6)。\n(2) D=人，U(x)：大学生，D(x)：勤奋，常项 w：王晓山。前提 ∀x(U(x)→D(x))、¬D(w)。全称消去得 U(w)→D(w)，拒取式得 ¬U(w)。",
+    "explanation": [
+      "全称命题先实例化到题中常项，再用命题推理规则。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-023": {
+    "prompt": "证明：\n(1) 每个有理数都是实数；有的有理数是整数；因此有的实数是整数。\n(2) 有理数和无理数都是实数；虚数不是实数；因此虚数既不是有理数也不是无理数。",
+    "solution": "(1) 令 Q、R、Z 分别表示有理数、实数、整数。前提 ∀x(Q(x)→R(x))、∃x(Q(x)∧Z(x))。对存在式取新见证 c，得 Q(c)、Z(c)；全称消去及假言推理得 R(c)；合取得 R(c)∧Z(c)，存在引入得 ∃x(R(x)∧Z(x))，消去见证。\n(2) 令 Q、S、R、I 分别表示有理数、无理数、实数、虚数。前提 ∀x(Q(x)→R(x))、∀x(S(x)→R(x))、∀x(I(x)→¬R(x))。任取 c，假设 I(c)，得 ¬R(c)；分别对前两前提全称消去、拒取，得 ¬Q(c)、¬S(c)；合取并解除假设得 I(c)→(¬Q(c)∧¬S(c))；全称引入得结论。",
+    "explanation": [
+      "存在结论只需一名共同见证；全称类包含结论要对任意个体作条件证明。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-024": {
+    "prompt": "个体域为人类集合。证明：每个喜欢步行的人都不喜欢骑自行车；每个人或者喜欢骑自行车或者喜欢乘汽车；有的人不喜欢乘汽车；所以有的人不喜欢步行。",
+    "solution": "令 W(x)：喜欢步行，B(x)：喜欢骑自行车，C(x)：喜欢乘汽车。\n前提 ∀x(W(x)→¬B(x))、∀x(B(x)∨C(x))、∃x¬C(x)，结论 ∃x¬W(x)。\n用新临时见证 c 满足 ¬C(c)。全称消去得 B(c)∨C(c)，析取三段论得 B(c)。再全称消去得 W(c)→¬B(c)，与 B(c) 用拒取式及双重否定得 ¬W(c)。存在引入得 ∃x¬W(x)，结论无 c，消去见证。",
+    "explanation": [
+      "不能把“不喜欢乘汽车”直接当作“不喜欢步行”；需要先得到喜欢骑自行车，再由第一前提拒取。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 97, 98 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E005-025": {
+    "prompt": "个体域为人类集合。证明：每个科学工作者都刻苦钻研；每个刻苦钻研且聪明的人在事业中都将成功；王大海是科学工作者且聪明；所以王大海将在事业中成功。",
+    "solution": "令 S(x)：科学工作者，H(x)：刻苦钻研，C(x)：聪明，R(x)：事业成功，w：王大海。\n前提 ∀x(S(x)→H(x))、∀x((H(x)∧C(x))→R(x))、S(w)∧C(w)。\n① 化简第三前提得 S(w)、C(w)。\n② 全称消去第一前提得 S(w)→H(w)，与 S(w) 假言推理得 H(w)。\n③ 合取得 H(w)∧C(w)。\n④ 全称消去第二前提得 (H(w)∧C(w))→R(w)，与③假言推理得 R(w)。",
+    "explanation": [
+      "先把第三前提拆开，再用科学工作者身份补齐第二条规则所要求的两个条件。"
+    ],
+    "knowledge_ids": [
+      "DM-K05-01",
+      "DM-K05-02",
+      "DM-K05-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "逐题对照用户上传 DM2T 扫描 PDF 第 98, 99, 100, 101 页（书内页码减 11）；数学推演或枚举复核"
+  },
+  "SRC-DM2T-E006-016": {
+    "prompt": "用集合运算公式表示原书图 6.5 中 (a)、(b) 阴影部分的集合。全集为 E，三个圆为 A、B、C。原图位置：PDF 第 117 页（书内第 106 页）图 6.5。",
+    "solution": "(a) 阴影是 C 中不属于 A 的部分，包括 C 独有区域和 (B∩C) 中不属于 A 的区域，所以为\n$C\\setminus A=C\\cap\\overline A$。\n\n(b) 阴影由三圆共同外部与三个集合的公共交集组成，所以为\n$\\overline{A\\cup B\\cup C}\\ \\cup\\ (A\\cap B\\cap C)$，等值于\n$(\\overline A\\cap\\overline B\\cap\\overline C)\\cup(A\\cap B\\cap C)$。\n所有补集均相对于 E。",
+    "explanation": [
+      "已对照原书图 6.5 的阴影纹理复核：(a) 三圆公共中心留白，C 与 B 的右侧重叠区和 C 的下部有阴影，而 C 与 A 的左侧重叠区留白。",
+      "(b) 三个圆的外部带阴影，中心三重交集也带阴影，其余六个圆内原子区域留白。不要把纸张噪点误当成某个原子区域的阴影。"
+    ],
+    "knowledge_ids": [
+      "DM-K06-01",
+      "DM-K06-02",
+      "DM-K06-03",
+      "DM-K06-S03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字",
+    "review_basis": "对照 DM2T PDF 第 117 页图 6.5；查看父任务原图裁图和从同一 PDF 重新高分辨率渲染的裁图，逐个原子区域核对阴影；非由 OCR 乱码推测",
+    "figure_source": {
+      "pdf_page": 117,
+      "figure_label": "图 6.5",
+      "local_preview": "/workspace/scratch/8457d390af90/dm6-q16-figure.png",
+      "normalized_crop": {
+        "left": 0.28,
+        "top": 0.72,
+        "right": 0.92,
+        "bottom": 0.88
+      }
+    },
+    "figures": [
+      {
+        "page": 117,
+        "bbox": [
+          0.28,
+          0.72,
+          0.92,
+          0.88
+        ],
+        "caption": "第6章第16题原书文氏图"
+      }
+    ]
+  }
+}

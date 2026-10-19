@@ -1,0 +1,1570 @@
+{
+  "SRC-LA7-E001-001": {
+    "prompt": "利用对角线法则计算下列三阶行列式：\n\n(1) $\\begin{vmatrix}2&0&1\\\\1&-4&-1\\\\-1&8&3\\end{vmatrix}$；\n\n(2) $\\begin{vmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{vmatrix}$；\n\n(3) $\\begin{vmatrix}1&1&1\\\\a&b&c\\\\a^2&b^2&c^2\\end{vmatrix}$；\n\n(4) $\\begin{vmatrix}x&y&x+y\\\\y&x+y&x\\\\x+y&x&y\\end{vmatrix}$。",
+    "solution": "(1) $-4$。\n\n(2) $3abc-a^3-b^3-c^3$。\n\n(3) $(a-b)(b-c)(c-a)$。\n\n(4) $-2(x^3+y^3)$。",
+    "explanation": [
+      "三阶行列式按 $aei+bfg+cdh-ceg-bdi-afh$ 展开；仅适用于三阶，不能直接推广到四阶。",
+      "(1) 得 $-24+0+8-4-0+16=-4$。(2) 正向三项共 $3abc$，反向三项分别为 $a^3,b^3,c^3$。",
+      "(3) 展开后为 $bc^2+ca^2+ab^2-cb^2-ac^2-ba^2$，因式分解得所示结果。",
+      "(4) 三个正项共 $3xy(x+y)$，减去 $x^3+y^3+(x+y)^3$，化简为 $-2(x^3+y^3)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导",
+    "source_pages": [
+      24,
+      25
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-002": {
+    "prompt": "按自然数从小到大为标准次序，求下列排列的逆序数：\n\n(1) 1234；(2) 4132；(3) 3421；(4) 2413；\n\n(5) $13\\cdots(2n-1)24\\cdots(2n)$；\n\n(6) $13\\cdots(2n-1)(2n)(2n-2)\\cdots2$。",
+    "solution": "依次为 $0,4,5,3,\\dfrac{n(n-1)}2,n(n-1)$。",
+    "explanation": [
+      "逆序对是满足位置 $i<j$ 但数值 $a_i>a_j$ 的一对。依次计数：(2) 为 $3+0+1=4$；(3) 为 $2+2+1=5$；(4) 为 $1+2=3$。",
+      "(5) 奇数段、偶数段各自递增，只有跨段逆序。第 $k$ 个奇数 $2k-1$ 大于后面的 $k-1$ 个偶数，求和为 $0+1+\\cdots+(n-1)$。",
+      "(6) 在 (5) 的跨段逆序之外，偶数段逆序排列又贡献 $n(n-1)/2$，总数为 $n(n-1)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导",
+    "source_pages": [
+      25
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-003": {
+    "prompt": "写出四阶行列式中含有因子 $a_{11}a_{23}$ 的项。",
+    "solution": "两项为\n\n$$-a_{11}a_{23}a_{32}a_{44},\\qquad +a_{11}a_{23}a_{34}a_{42}.$$",
+    "explanation": [
+      "行列式的一项从每行、每列各取一个元素。第 1、2 行已经选列 1、3，因此第 3、4 行只能分配列 2、4。",
+      "两种列排列为 $(1,3,2,4)$ 与 $(1,3,4,2)$，逆序数分别为 1 和 2，故符号分别为负、正。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导",
+    "source_pages": [
+      25
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-004": {
+    "prompt": "计算下列行列式：\n\n(1) $\\begin{vmatrix}4&1&2&4\\\\1&2&0&2\\\\10&5&2&0\\\\0&1&1&7\\end{vmatrix}$；\n\n(2) $\\begin{vmatrix}2&1&4&1\\\\3&-1&2&1\\\\1&2&3&2\\\\5&0&6&2\\end{vmatrix}$；\n\n(3) $\\begin{vmatrix}-ab&ac&ae\\\\bd&-cd&de\\\\bf&cf&-ef\\end{vmatrix}$；\n\n(4) $\\begin{vmatrix}1&1&1\\\\a&b&c\\\\b+c&c+a&a+b\\end{vmatrix}$；\n\n(5) $\\begin{vmatrix}a&1&0&0\\\\-1&b&1&0\\\\0&-1&c&1\\\\0&0&-1&d\\end{vmatrix}$；\n\n(6) $\\begin{vmatrix}1&2&3&4\\\\1&3&4&1\\\\1&4&1&2\\\\1&1&2&3\\end{vmatrix}$。",
+    "solution": "(1) $0$；(2) $0$；(3) $4abcdef$；(4) $0$；(5) $abcd+ab+cd+ad+1$；(6) $16$。",
+    "explanation": [
+      "(1) 四行满足 $-17r_1-22r_2+9r_3+16r_4=0$，故行相关、行列式为0。(2) 第三列恰等于第一列加第二列，故为0。",
+      "(3) 从三行提出 $a,d,f$，从三列提出 $b,c,e$，剩余 $\\begin{vmatrix}-1&1&1\\\\1&-1&1\\\\1&1&-1\\end{vmatrix}=4$；用多项式恒等式可包含参数为零情形。",
+      "(4) 第三行等于 $(a+b+c)$ 倍第一行减第二行，故三行相关。",
+      "(5) 对左上角各阶行列式记为 $D_k$，有 $D_1=a,D_2=ab+1,D_3=cD_2+D_1$，最后 $D_4=dD_3+D_2=abcd+ad+cd+ab+1$。",
+      "(6) 分别从后三行减第一行，按第一列展开，剩余三阶 $\\begin{vmatrix}1&1&-3\\\\2&-2&-2\\\\-1&-1&-1\\end{vmatrix}=16$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导",
+    "source_pages": [
+      25
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-005": {
+    "prompt": "求解下列方程：\n\n(1) $\\begin{vmatrix}x+1&2&-1\\\\2&x+1&1\\\\-1&1&x+1\\end{vmatrix}=0$；\n\n(2) $\\begin{vmatrix}1&1&1&1\\\\x&a&b&c\\\\x^2&a^2&b^2&c^2\\\\x^3&a^3&b^3&c^3\\end{vmatrix}=0$，其中 $a,b,c$ 互不相等。",
+    "solution": "(1) $x=-3,\\sqrt3,-\\sqrt3$。\n\n(2) $x=a,b,c$。",
+    "explanation": [
+      "(1) 令 $t=x+1$，按三阶公式展开得 $t^3-6t-4$，代回并因式分解为 $(x+3)(x^2-3)$，再令各因子为零。",
+      "(2) 这是范德蒙德行列式，等于 $(a-x)(b-x)(c-x)(b-a)(c-a)(c-b)$。",
+      "由 $a,b,c$ 互不相等，后三个因子非零，因此仅有 $x=a,b,c$；不能遗漏题设条件。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导",
+    "source_pages": [
+      25
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-006": {
+    "prompt": "证明：\n(1) $\\begin{vmatrix}a^2&ab&b^2\\\\2a&a+b&2b\\\\1&1&1\\end{vmatrix}=(a-b)^3$；\n(2) $\\begin{vmatrix}ax+by&ay+bz&az+bx\\\\ay+bz&az+bx&ax+by\\\\az+bx&ax+by&ay+bz\\end{vmatrix}=(a^3+b^3)\\begin{vmatrix}x&y&z\\\\y&z&x\\\\z&x&y\\end{vmatrix}$；\n(3) $\\begin{vmatrix}a^2&(a+1)^2&(a+2)^2&(a+3)^2\\\\b^2&(b+1)^2&(b+2)^2&(b+3)^2\\\\c^2&(c+1)^2&(c+2)^2&(c+3)^2\\\\d^2&(d+1)^2&(d+2)^2&(d+3)^2\\end{vmatrix}=0$；\n(4) $\\begin{vmatrix}1&1&1&1\\\\a&b&c&d\\\\a^2&b^2&c^2&d^2\\\\a^4&b^4&c^4&d^4\\end{vmatrix}=(a-b)(a-c)(a-d)(b-c)(b-d)(c-d)(a+b+c+d)$；\n(5) $\\begin{vmatrix}x&-1&0&0\\\\0&x&-1&0\\\\0&0&x&-1\\\\a_0&a_1&a_2&a_3\\end{vmatrix}=a_3x^3+a_2x^2+a_1x+a_0$。",
+    "solution": "五个恒等式均成立。",
+    "explanation": [
+      "(1) 作 $c_1\\leftarrow c_1-c_2,c_3\\leftarrow c_3-c_2$，第一、三列各提出 $a-b$。第三行变为 $(0,1,0)$；沿其展开得 $-(a-b)^2\\begin{vmatrix}a&-b\\\\1&-1\\end{vmatrix}=(a-b)^3$。",
+      "(2) 令右端三阶矩阵为 $C$，$P=\\begin{pmatrix}0&1&0\\\\0&0&1\\\\1&0&0\\end{pmatrix}$，则左端矩阵为 $(aE+bP)C$。因 $\\det(aE+bP)=a^3+b^3$，用乘积行列式公式即得。",
+      "(3) 四列都是向量 $(a^2,b^2,c^2,d^2)^T,(a,b,c,d)^T,(1,1,1,1)^T$ 的线性组合，列秩至多3，因此四阶行列式为0。",
+      "(4) 左端在任意两参数相等时为0，故含六个两两差因子。商为一次对称多项式，必为 $k(a+b+c+d)$；比较 $a^0b^1c^2d^4$ 项系数得 $k=1$。",
+      "(5) 沿最后一行展开，四个代数余子式依次为 $1,x,x^2,x^3$，故得指定多项式。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-03",
+      "LA-K01-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页25,26逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      25,
+      26
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E001-007": {
+    "prompt": "设 $D=\\det(a_{ij})$ 为 $n$ 阶行列式。把 $D$ 上下翻转、逆时针旋转 $90^\\circ$、依副对角线翻转，依次得到 $D_1,D_2,D_3$。证明 $D_1=D_2=(-1)^{n(n-1)/2}D$，$D_3=D$。",
+    "solution": "$D_1=D_2=(-1)^{n(n-1)/2}D,\\quad D_3=D$。",
+    "explanation": [
+      "上下翻转把行排列 $(1,2,\\ldots,n)$ 反向，逆序数为 $n(n-1)/2$，得 $D_1=(-1)^{n(n-1)/2}D$。",
+      "逆时针旋转后矩阵的第 $(i,j)$ 元为 $a_{j,n+1-i}$，即转置后反向排列各行。转置不改变行列式，故 $D_2$ 与 $D_1$ 相等。",
+      "副对角线翻转得到的元素为 $a_{n+1-j,n+1-i}$，相当于转置后同时反向排各行、各列；总符号为 $(-1)^{n(n-1)}=1$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页26逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      26
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E001-008": {
+    "prompt": "计算下列行列式：\n(1) $D_n$ 的主对角元均为 $a$，右上角、左下角为1，其他元素为0（$n\\ge2$）。\n(2) $D_n$ 的主对角元均为 $x$，其他元素均为 $a$。\n(3) $D_{n+1}=\\det((a-j)^{n-i})_{i,j=0}^n$。\n(4) $D_{2n}$ 的中心向外第 $i$ 对行、列构成块 $\\begin{pmatrix}a_i&b_i\\\\c_i&d_i\\end{pmatrix}$，未写出的元素均为0；即同时把行、列排成中心配对次序后为这些 $2\\times2$ 块组成的分块对角矩阵。\n(5) $D_n=\\det(E+u\\mathbf1^T)$，其中 $u=(a_1,\\ldots,a_n)^T$，即第 $i$ 行非对角元为 $a_i$，对角元为 $1+a_i$。\n(6) $D_n=\\det(a_{ij})$，$a_{ij}=|i-j|$。\n(7) $D_n$ 的对角元为 $1+a_i$，非对角元均为1，且 $a_1\\cdots a_n\\ne0$。",
+    "solution": "(1) $a^{n-2}(a^2-1)$；(2) $[x+(n-1)a](x-a)^{n-1}$；\n(3) $\\displaystyle\\prod_{n+1\\ge i>j\\ge1}(i-j)$；(4) $\\displaystyle\\prod_{i=1}^n(a_id_i-b_ic_i)$；\n(5) $1+\\sum_{i=1}^na_i$；(6) $(-1)^{n-1}(n-1)2^{n-2}$（$n\\ge2$，$n=1$ 时为0）；\n(7) $\\displaystyle\\left(\\prod_{i=1}^na_i\\right)\\left(1+\\sum_{i=1}^n\\frac1{a_i}\\right)$。",
+    "explanation": [
+      "(1) 把第1、n行与列同时移到一起，只有一个 $\\begin{pmatrix}a&1\\\\1&a\\end{pmatrix}$ 块，其余为 $aE_{n-2}$，故得 $a^{n-2}(a^2-1)$。",
+      "(2) 矩阵为 $(x-a)E+a\\mathbf1\\mathbf1^T$，在 $\\mathbf1$ 方向乘 $x+(n-1)a$，在分量和为0的 $(n-1)$ 维空间上乘 $x-a$，行列式是这些因子的积。",
+      "(3) 将各行反向排列成为范德蒙德行列式；节点每下降1，差为负整数，负号正好抵消反向排列各行的符号，结果为所有正整数差的乘积。",
+      "(4) 对行、列用同一个配对置换，两个置换的符号相乘为1，随后用分块对角行列式等于各块行列式之积。",
+      "(5) 由 $\\det(E+uv^T)=1+v^Tu$（亦可按列多重线性展开，两个以上替换列均平行而为0），取 $v=\\mathbf1$。",
+      "(6) 令 $T$ 第一行为 $e_1^T$，第 $i\\ge2$ 行为 $e_i^T-e_{i-1}^T$，$\\det T=1$。则 $TAT^T=\\begin{pmatrix}0&\\mathbf1^T\\\\\\mathbf1&-2E_{n-1}\\end{pmatrix}$。用右下角块消元，行列式为 $(-2)^{n-1}(n-1)/2=(-1)^{n-1}(n-1)2^{n-2}$。",
+      "(7) 矩阵为 $D+\\mathbf1\\mathbf1^T$，其中 $D=\\operatorname{diag}(a_i)$ 可逆。提出 $\\det D$ 后用 (5) 中的秩1更新公式。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-03",
+      "LA-K01-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页26,27逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      26,
+      27
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E001-009": {
+    "prompt": "设 $D=\\begin{vmatrix}3&1&-1&2\\\\-5&1&3&-4\\\\2&0&1&-1\\\\1&-5&3&-3\\end{vmatrix}$，其第 $(i,j)$ 元的代数余子式记为 $A_{ij}$。求 $A_{31}+3A_{32}-2A_{33}+2A_{34}$。",
+    "solution": "24。",
+    "explanation": [
+      "将第三行替换为 $(1,3,-2,2)$，其他行保持原值。代数余子式 $A_{3j}$ 与第三行元素无关，故所求就是新行列式。",
+      "新矩阵为 $\\begin{pmatrix}3&1&-1&2\\\\-5&1&3&-4\\\\1&3&-2&2\\\\1&-5&3&-3\\end{pmatrix}$，精确消元或按第三行展开得行列式24。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页27逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      27
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E002-001": {
+    "prompt": "计算下列乘积：\n(1) $\\begin{pmatrix}4&3&1\\\\1&-2&3\\\\5&7&0\\end{pmatrix}\\begin{pmatrix}7\\\\2\\\\1\\end{pmatrix}$；\n(2) $(1,2,3)\\begin{pmatrix}3\\\\2\\\\1\\end{pmatrix}$；\n(3) $\\begin{pmatrix}2\\\\1\\\\3\\end{pmatrix}(-1,2)$；\n(4) $\\begin{pmatrix}2&1&4&0\\\\1&-1&3&4\\end{pmatrix}\\begin{pmatrix}1&3&1\\\\0&-1&2\\\\1&-3&1\\\\4&0&-2\\end{pmatrix}$；\n(5) $(x_1,x_2,x_3)\\begin{pmatrix}a_{11}&a_{12}&a_{13}\\\\a_{12}&a_{22}&a_{23}\\\\a_{13}&a_{23}&a_{33}\\end{pmatrix}\\begin{pmatrix}x_1\\\\x_2\\\\x_3\\end{pmatrix}$。",
+    "solution": "(1) $\\begin{pmatrix}35\\\\6\\\\49\\end{pmatrix}$；(2) $10$；(3) $\\begin{pmatrix}-2&4\\\\-1&2\\\\-3&6\\end{pmatrix}$；(4) $\\begin{pmatrix}6 & -7 & 8\\\\20 & -5 & -6\\end{pmatrix}$；(5) $a_{11}x_1^2+a_{22}x_2^2+a_{33}x_3^2+2a_{12}x_1x_2+2a_{13}x_1x_3+2a_{23}x_2x_3$。",
+    "explanation": [
+      "(1) 三个行与列的内积分别是 $28+6+1=35,7-4+3=6,35+14=49$。(2) 为 $3+4+3=10$。",
+      "(3) 列向量乘行向量产生 $3\\times2$ 矩阵，第 $i$ 行是原行向量乘相应列元素。",
+      "(4) 第1行算得 $(2+4,6-1-12,2+2+4)=(6,-7,8)$；第2行为 $(1+3+16,3+1-9,1-2+3-8)=(20,-5,-6)$。",
+      "(5) 展开 $\\sum_{i,j}a_{ij}x_ix_j$；对称矩阵中两个交叉项系数相等，合并后出现2。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第164页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页56逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      56
+    ],
+    "answer_pages": [
+      164
+    ]
+  },
+  "SRC-LA7-E002-002": {
+    "prompt": "设 $A=\\begin{pmatrix}1 & 1 & 1\\\\1 & 1 & -1\\\\1 & -1 & 1\\end{pmatrix}$，$B=\\begin{pmatrix}1 & 2 & 3\\\\-1 & -2 & 4\\\\0 & 5 & 1\\end{pmatrix}$，求 $3AB-2A$ 及 $A^TB$。",
+    "solution": "$3AB-2A=\\begin{pmatrix}-2 & 13 & 22\\\\-2 & -17 & 20\\\\4 & 29 & -2\\end{pmatrix}$，$A^TB=\\begin{pmatrix}0 & 5 & 8\\\\0 & -5 & 6\\\\2 & 9 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "先逐行逐列计算 $AB=\\begin{pmatrix}0 & 5 & 8\\\\0 & -5 & 6\\\\2 & 9 & 0\\end{pmatrix}$。",
+      "将 $AB$ 各元乘3再减 $2A$，得到第一矩阵；转置只交换行列，再计算 $A^TB$ 得第二矩阵。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页56逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      56
+    ],
+    "answer_pages": [
+      165
+    ],
+    "source": {
+      "id": "SRC-LA7-E002-002",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 2 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 52,
+      "pdf_page": 56,
+      "source_number": 2,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 56,
+          "top": 0.562,
+          "bottom": 0.627
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-003": {
+    "prompt": "已知 $\\begin{cases}x_1=2y_1+y_3,\\\\x_2=-2y_1+3y_2+2y_3,\\\\x_3=4y_1+y_2+5y_3,\\end{cases}$ 和 $\\begin{cases}y_1=-3z_1+z_2,\\\\y_2=2z_1+z_3,\\\\y_3=-z_2+3z_3.\\end{cases}$ 求从 $z_1,z_2,z_3$ 到 $x_1,x_2,x_3$ 的线性变换。",
+    "solution": "$\\begin{cases}x_1=-6z_1+z_2+3z_3,\\\\x_2=12z_1-4z_2+9z_3,\\\\x_3=-10z_1-z_2+16z_3.\\end{cases}$",
+    "explanation": [
+      "把两个变换写为 $x=Ay,y=Bz$，则 $x=ABz$。",
+      "相乘得 $AB=\\begin{pmatrix}-6 & 1 & 3\\\\12 & -4 & 9\\\\-10 & -1 & 16\\end{pmatrix}$；其每行分别给出一个 $x_i$ 的系数。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页56逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      56
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-004": {
+    "prompt": "设 $A=\\begin{pmatrix}1 & 2\\\\1 & 3\\end{pmatrix}$，$B=\\begin{pmatrix}1 & 0\\\\1 & 2\\end{pmatrix}$。问：(1) $AB=BA$ 吗？(2) $(A+B)^2=A^2+2AB+B^2$ 吗？(3) $(A+B)(A-B)=A^2-B^2$ 吗？",
+    "solution": "三个等式均不成立。",
+    "explanation": [
+      "计算 $AB=\\begin{pmatrix}3 & 4\\\\4 & 6\\end{pmatrix}$，$BA=\\begin{pmatrix}1 & 2\\\\3 & 8\\end{pmatrix}$，两者不相等。",
+      "$(A+B)^2-(A^2+2AB+B^2)=BA-AB=\\begin{pmatrix}-2 & -2\\\\-1 & 2\\end{pmatrix}\\ne O$。",
+      "$(A+B)(A-B)-(A^2-B^2)=BA-AB\\ne O$。上述数值同时提供了后两个等式的反例。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页56逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      56
+    ],
+    "answer_pages": [],
+    "source": {
+      "id": "SRC-LA7-E002-004",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 4 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 52,
+      "pdf_page": 56,
+      "source_number": 4,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 56,
+          "top": 0.755,
+          "bottom": 0.853
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-005": {
+    "prompt": "举反例说明下列命题错误：(1) 若 $A^2=O$，则 $A=O$；(2) 若 $A^2=A$，则 $A=O$ 或 $A=E$；(3) 若 $AX=AY$ 且 $A\\ne O$，则 $X=Y$。",
+    "solution": "(1) 取 $A=\\begin{pmatrix}1&1\\\\-1&-1\\end{pmatrix}$；(2) 取 $A=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$；(3) 取 $A=X=\\begin{pmatrix}1&0\\\\0&0\\end{pmatrix}$，$Y=E_2$。",
+    "explanation": [
+      "(1) 该非零矩阵的每个乘积元素为 $1-1$ 或 $-1+1$，故 $A^2=O$。",
+      "(2) 直接相乘有 $A^2=A$，但它既不是零阵也不是单位阵。",
+      "(3) $AX=A^2=A=AY$，而 $X\\ne Y$。矩阵消去律需要额外的满秩或可逆条件，仅 $A\\ne O$ 不够。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页56,57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      56,
+      57
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-006": {
+    "prompt": "(1) 设 $A=\\begin{pmatrix}1&0\\\\\\lambda&1\\end{pmatrix}$，求 $A^2,A^3,\\ldots,A^k$；(2) 设 $A=\\begin{pmatrix}\\lambda&1&0\\\\0&\\lambda&1\\\\0&0&\\lambda\\end{pmatrix}$，求 $A^4$。",
+    "solution": "(1) $A^j=\\begin{pmatrix}1&0\\\\j\\lambda&1\\end{pmatrix}$（$j=2,3,\\ldots,k$）；(2) $A^4=\\begin{pmatrix}\\lambda^4&4\\lambda^3&6\\lambda^2\\\\0&\\lambda^4&4\\lambda^3\\\\0&0&\\lambda^4\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 写成 $A=E+N$，$N^2=O$；二项式展开只有 $E+jN$ 两项。",
+      "(2) 写成 $A=\\lambda E+N$，其中 $N$ 在上一条副对角线为1，$N^3=O$；故 $A^4=\\lambda^4E+4\\lambda^3N+6\\lambda^2N^2$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": [
+      165
+    ],
+    "source": {
+      "id": "SRC-LA7-E002-006",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 6 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 53,
+      "pdf_page": 57,
+      "source_number": 6,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.142,
+          "bottom": 0.205
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-007": {
+    "prompt": "(1) 设 $A=\\begin{pmatrix}3&1\\\\1&-3\\end{pmatrix}$，求 $A^{50}$ 和 $A^{51}$；(2) 设 $a=(2,1,-3)^T,b=(1,2,4)^T,A=ab^T$，求 $A^{100}$。",
+    "solution": "(1) $A^{50}=10^{25}E_2$，$A^{51}=10^{25}\\begin{pmatrix}3&1\\\\1&-3\\end{pmatrix}$；(2) $A^{100}=(-8)^{99}\\begin{pmatrix}2&4&8\\\\1&2&4\\\\-3&-6&-12\\end{pmatrix}$。",
+    "explanation": [
+      "(1) $A^2=10E$，故 $A^{50}=(A^2)^{25}$，$A^{51}=A^{50}A$。",
+      "(2) $b^Ta=2+2-12=-8$，所以 $A^2=a(b^Ta)b^T=-8A$；归纳有 $A^k=(-8)^{k-1}A$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-008": {
+    "prompt": "(1) 设 $A,B$ 为 $n$ 阶矩阵，$A$ 为对称矩阵。证明 $B^TAB$ 也为对称矩阵。(2) 设 $A,B$ 均为 $n$ 阶对称矩阵。证明 $AB$ 对称的充要条件是 $AB=BA$。(3) 若 $A^T=-A$，称 $A$ 为反对称矩阵。设 $A,B$ 均为 $n$ 阶反对称矩阵。证明 $AB$ 反对称的充要条件是 $AB=-BA$。",
+    "solution": "三个命题均成立。",
+    "explanation": [
+      "(1) $(B^TAB)^T=B^TA^TB=B^TAB$，正好满足对称定义。",
+      "(2) $(AB)^T=B^TA^T=BA$，故 $(AB)^T=AB\\iff BA=AB$。",
+      "(3) $(AB)^T=B^TA^T=(-B)(-A)=BA$，故 $(AB)^T=-AB\\iff BA=-AB$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E002-009": {
+    "prompt": "求下列矩阵的逆矩阵：(1) $\\begin{pmatrix}1&2\\\\2&5\\end{pmatrix}$；(2) $\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\\\sin\\theta&\\cos\\theta\\end{pmatrix}$；(3) $\\begin{pmatrix}1&2&-1\\\\3&4&-2\\\\5&-4&1\\end{pmatrix}$；(4) $\\operatorname{diag}(a_1,\\ldots,a_n)$，$a_1\\cdots a_n\\ne0$。",
+    "solution": "(1) $\\begin{pmatrix}5 & -2\\\\-2 & 1\\end{pmatrix}$；(2) $\\begin{pmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{pmatrix}$；(3) $\\begin{pmatrix}-2 & 1 & 0\\\\- \\frac{13}{2} & 3 & - \\frac{1}{2}\\\\-16 & 7 & -1\\end{pmatrix}$；(4) $\\operatorname{diag}(1/a_1,\\ldots,1/a_n)$。",
+    "explanation": [
+      "(1) 行列式为1，用二阶逆矩阵公式交换对角元、改变非对角元符号。",
+      "(2) 旋转矩阵满足 $A^TA=E$，故其逆等于转置。",
+      "(3) 行列式为 2，对增广矩阵 $(A\\mid E)$ 作行消元可得 $(E\\mid A^{-1})$；结果乘回原矩阵为单位阵。",
+      "(4) 对角矩阵相乘时各对角元相乘，各 $a_i\\ne0$，逐项取倒数即可。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-010": {
+    "prompt": "已知 $\\begin{cases}x_1=2y_1+2y_2+y_3,\\\\x_2=3y_1+y_2+5y_3,\\\\x_3=3y_1+2y_2+3y_3.\\end{cases}$ 求从 $x_1,x_2,x_3$ 到 $y_1,y_2,y_3$ 的线性变换。",
+    "solution": "$\\begin{cases}y_1=-7x_1-4x_2+9x_3,\\\\y_2=6x_1+3x_2-7x_3,\\\\y_3=3x_1+2x_2-4x_3.\\end{cases}$",
+    "explanation": [
+      "写成 $x=Ay$，其中 $A=\\begin{pmatrix}2 & 2 & 1\\\\3 & 1 & 5\\\\3 & 2 & 3\\end{pmatrix}$，且 $\\det A=1\\ne0$。",
+      "计算 $A^{-1}=\\begin{pmatrix}-7 & -4 & 9\\\\6 & 3 & -7\\\\3 & 2 & -4\\end{pmatrix}$，所以 $y=A^{-1}x$；三个行给出所求变换。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-011": {
+    "prompt": "设 $J$ 是元素全为1的 $n$（$n\\ge2$）阶方阵。证明 $E-J$ 可逆，且 $(E-J)^{-1}=E-\\dfrac1{n-1}J$。",
+    "solution": "$(E-J)^{-1}=E-\\dfrac1{n-1}J$。",
+    "explanation": [
+      "$J^2=nJ$，因为乘积每个元素是 $n$ 个1之和。",
+      "$(E-J)(E-J/(n-1))=E-[1+1/(n-1)]J+J^2/(n-1)=E$；反向相乘相同，故右式就是逆矩阵。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E002-012": {
+    "prompt": "设 $A^k=O$（$k$ 为正整数），证明 $(E-A)^{-1}=E+A+A^2+\\cdots+A^{k-1}$。",
+    "solution": "$(E-A)^{-1}=\\sum_{j=0}^{k-1}A^j$。",
+    "explanation": [
+      "设 $B=E+A+\\cdots+A^{k-1}$。展开 $(E-A)B$，中间幂次相消，得 $E-A^k=E$。",
+      "$B$ 是 $A$ 的多项式，故与 $A$ 可交换，同样 $B(E-A)=E$；因此 $E-A$ 可逆，且逆为 $B$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E002-013": {
+    "prompt": "设方阵 $A$ 满足 $A^2-A-2E=O$。证明 $A$ 及 $A+2E$ 都可逆，并求 $A^{-1}$、$(A+2E)^{-1}$。",
+    "solution": "$A^{-1}=\\dfrac12(A-E)$，$(A+2E)^{-1}=\\dfrac14(3E-A)$。",
+    "explanation": [
+      "$A(A-E)=A^2-A=2E$，故 $A\\cdot(A-E)/2=E$，同次多项式可交换，因此它是双侧逆。",
+      "$(A+2E)(3E-A)=A+6E-A^2=4E$，故第二个逆为 $(3E-A)/4$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-014": {
+    "prompt": "解下列矩阵方程：\n(1) $\\begin{pmatrix}2&5\\\\1&3\\end{pmatrix}X=\\begin{pmatrix}4&-6\\\\2&1\\end{pmatrix}$；\n(2) $X\\begin{pmatrix}2&1&-1\\\\2&1&0\\\\1&-1&1\\end{pmatrix}=\\begin{pmatrix}1&-1&3\\\\4&3&2\\end{pmatrix}$；\n(3) $\\begin{pmatrix}1&4\\\\-1&2\\end{pmatrix}X\\begin{pmatrix}2&0\\\\-1&1\\end{pmatrix}=\\begin{pmatrix}3&1\\\\0&-1\\end{pmatrix}$；\n(4) $AXB=C$，其中 $A=\\begin{pmatrix}2&1\\\\5&4\\end{pmatrix}$，$B=\\begin{pmatrix}1&3&3\\\\1&4&3\\\\1&3&4\\end{pmatrix}$，$C=\\begin{pmatrix}1&0&-1\\\\1&-2&0\\end{pmatrix}$。",
+    "solution": "(1) $X=\\begin{pmatrix}2 & -23\\\\0 & 8\\end{pmatrix}$；(2) $X=\\begin{pmatrix}-2 & 2 & 1\\\\- \\frac{8}{3} & 5 & - \\frac{2}{3}\\end{pmatrix}$；(3) $X=\\begin{pmatrix}1 & 1\\\\\\frac{1}{4} & 0\\end{pmatrix}$；(4) $X=\\begin{pmatrix}\\frac{23}{3} & - \\frac{7}{3} & - \\frac{13}{3}\\\\- \\frac{22}{3} & \\frac{5}{3} & \\frac{14}{3}\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 左乘系数矩阵的逆，$X=A^{-1}D$；(2) 未知量在左侧，须右乘逆，$X=FB^{-1}$。",
+      "(3) 从 $GXH=I_0$ 得 $X=G^{-1}I_0H^{-1}$；(4) 同理 $X=A^{-1}CB^{-1}$。次序不能颠倒。",
+      "对四个矩阵结果分别代回原式，左右两边逐元相同。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第165页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页57,58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      57,
+      58
+    ],
+    "answer_pages": [
+      165
+    ]
+  },
+  "SRC-LA7-E002-015": {
+    "prompt": "分别应用克拉默法则和逆矩阵解方程组：(1) $\\begin{cases}x_1+2x_2+3x_3=1,\\\\2x_1+2x_2+5x_3=2,\\\\3x_1+5x_2+x_3=3;\\end{cases}$ (2) $\\begin{cases}x_1+x_2+x_3=2,\\\\x_1+2x_2+4x_3=3,\\\\x_1+3x_2+9x_3=5.\\end{cases}$",
+    "solution": "(1) $x=\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix}$；(2) $x=\\begin{pmatrix}2\\\\- \\frac{1}{2}\\\\\\frac{1}{2}\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 克拉默法则中 $D=15$，$(D_1,D_2,D_3)=(15,0,0)$，故 $x_i=D_i/D$。逆矩阵法用 $A^{-1}=\\begin{pmatrix}- \\frac{23}{15} & \\frac{13}{15} & \\frac{4}{15}\\\\\\frac{13}{15} & - \\frac{8}{15} & \\frac{1}{15}\\\\\\frac{4}{15} & \\frac{1}{15} & - \\frac{2}{15}\\end{pmatrix}$，乘右端向量得同一解 $x=\\begin{pmatrix}1\\\\0\\\\0\\end{pmatrix}$。",
+      "(2) 克拉默法则中 $D=2$，$(D_1,D_2,D_3)=(4,-1,1)$，故 $x_i=D_i/D$。逆矩阵法用 $A^{-1}=\\begin{pmatrix}3 & -3 & 1\\\\- \\frac{5}{2} & 4 & - \\frac{3}{2}\\\\\\frac{1}{2} & -1 & \\frac{1}{2}\\end{pmatrix}$，乘右端向量得同一解 $x=\\begin{pmatrix}2\\\\- \\frac{1}{2}\\\\\\frac{1}{2}\\end{pmatrix}$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-05",
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-016": {
+    "prompt": "设 $A$ 为3阶矩阵，$|A|=\\dfrac12$，求 $|(2A)^{-1}-5A^*|$，其中 $A^*$ 为伴随矩阵。",
+    "solution": "$-16$。",
+    "explanation": [
+      "$A^*=|A|A^{-1}=\\frac12A^{-1}$，$(2A)^{-1}=\\frac12A^{-1}$，相减得到 $-2A^{-1}$。",
+      "三阶矩阵的行列式中，$|-2A^{-1}|=(-2)^3|A|^{-1}=-8\\times2=-16$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-017": {
+    "prompt": "设 $A=\\begin{pmatrix}0 & 3 & 3\\\\1 & 1 & 0\\\\-1 & 2 & 3\\end{pmatrix}$，$AB=A+2B$，求 $B$。",
+    "solution": "$B=\\begin{pmatrix}0 & 3 & 3\\\\-1 & 2 & 3\\\\1 & 1 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "移项得到 $(A-2E)B=A$。",
+      "计算 $\\det(A-2E)=2\\ne0$，故 $B=(A-2E)^{-1}A=\\begin{pmatrix}0 & 3 & 3\\\\-1 & 2 & 3\\\\1 & 1 & 0\\end{pmatrix}$；代回得 $AB-A-2B=O$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-018": {
+    "prompt": "设 $A=\\begin{pmatrix}1 & 0 & 1\\\\0 & 2 & 0\\\\1 & 0 & 1\\end{pmatrix}$，$AB+E=A^2+B$，求 $B$。",
+    "solution": "$B=A+E=\\begin{pmatrix}2 & 0 & 1\\\\0 & 3 & 0\\\\1 & 0 & 2\\end{pmatrix}$。",
+    "explanation": [
+      "移项得 $(A-E)B=A^2-E=(A-E)(A+E)$。",
+      "这里 $\\det(A-E)=-1\\ne0$，可左乘其逆消去，得 $B=A+E$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ],
+    "source": {
+      "id": "SRC-LA7-E002-018",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 18 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 54,
+      "pdf_page": 58,
+      "source_number": 18,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.413,
+          "bottom": 0.475
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-019": {
+    "prompt": "设 $A=\\operatorname{diag}(1,-2,1)$，$A^*BA=2BA-8E$，求 $B$。",
+    "solution": "$B=2A=\\operatorname{diag}(2,-4,2)$。",
+    "explanation": [
+      "$|A|=-2$，故 $A^*=\\operatorname{diag}(-2,1,-2)$。原式改写为 $(A^*-2E)BA=-8E$。",
+      "$A^*-2E=\\operatorname{diag}(-4,-1,-4)$ 可逆，故 $B=-8(A^*-2E)^{-1}A^{-1}=\\operatorname{diag}(2,-4,2)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-020": {
+    "prompt": "已知矩阵 $A$ 的伴随矩阵 $A^*=\\operatorname{diag}(1,1,1,8)$，且 $ABA^{-1}=BA^{-1}+3E$，求 $B$。",
+    "solution": "$B=\\operatorname{diag}(6,6,6,-1)$。",
+    "explanation": [
+      "四阶情形有 $|A^*|=|A|^3=8$，实数范围 $|A|=2$，故 $A=|A|(A^*)^{-1}=\\operatorname{diag}(2,2,2,1/4)$。",
+      "右乘 $A$ 得 $AB=B+3A$，所以 $(A-E)B=3A$。各对角元 $a_i\\ne1$，故 $B=3(A-E)^{-1}A$，逐项为 $6,6,6,-1$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-021": {
+    "prompt": "设 $P^{-1}AP=\\Lambda$，其中 $P=\\begin{pmatrix}-1 & -4\\\\1 & 1\\end{pmatrix}$，$\\Lambda=\\operatorname{diag}(-1,2)$，求 $A^{11}$。",
+    "solution": "$A^{11}=\\begin{pmatrix}2731 & 2732\\\\-683 & -684\\end{pmatrix}$。",
+    "explanation": [
+      "$A=P\\Lambda P^{-1}$，连乘时相邻的 $P^{-1}P$ 消去，故 $A^{11}=P\\Lambda^{11}P^{-1}$。",
+      "$\\Lambda^{11}=\\operatorname{diag}(-1,2048)$，$P^{-1}=\\begin{pmatrix}\\frac{1}{3} & \\frac{4}{3}\\\\- \\frac{1}{3} & - \\frac{1}{3}\\end{pmatrix}$，相乘得到所列矩阵。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-022": {
+    "prompt": "设 $AP=P\\Lambda$，其中 $P=\\begin{pmatrix}1 & 1 & 1\\\\1 & 0 & -2\\\\1 & -1 & 1\\end{pmatrix}$，$\\Lambda=\\operatorname{diag}(-1,1,5)$，求 $\\varphi(A)=A^8(5E-6A+A^2)$。",
+    "solution": "$\\varphi(A)=\\begin{pmatrix}4 & 4 & 4\\\\4 & 4 & 4\\\\4 & 4 & 4\\end{pmatrix}$。",
+    "explanation": [
+      "$\\det P=-6\\ne0$，故 $A=P\\Lambda P^{-1}$。对任意多项式有 $\\varphi(A)=P\\varphi(\\Lambda)P^{-1}$。",
+      "$\\varphi(-1)=12,\\varphi(1)=\\varphi(5)=0$；相乘得到 $4\\mathbf1\\mathbf1^T$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ],
+    "source": {
+      "id": "SRC-LA7-E002-022",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 22 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 54,
+      "pdf_page": 58,
+      "source_number": 22,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.546,
+          "bottom": 0.614
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-023": {
+    "prompt": "设矩阵 $A$ 可逆，证明其伴随矩阵 $A^*$ 也可逆，且 $(A^*)^{-1}=(A^{-1})^*$。",
+    "solution": "$(A^*)^{-1}=(A^{-1})^*=A/|A|$。",
+    "explanation": [
+      "$A^*=|A|A^{-1}$，其中 $|A|\\ne0$，故 $A^*$ 可逆且逆为 $A/|A|$。",
+      "又 $(A^{-1})^*=|A^{-1}|(A^{-1})^{-1}=A/|A|$，与前式一致。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E002-024": {
+    "prompt": "设 $n$ 阶矩阵 $A$ 的伴随矩阵为 $A^*$。证明：(1) 若 $|A|=0$，则 $|A^*|=0$；(2) $|A^*|=|A|^{n-1}$。（第(1)项按通常伴随矩阵结论取 $n\\ge2$。）",
+    "solution": "$|A^*|=|A|^{n-1}$；$n\\ge2$ 时 $|A|=0\\Rightarrow|A^*|=0$。",
+    "explanation": [
+      "当 $A$ 可逆时，$A^*=|A|A^{-1}$，取行列式得 $|A^*|=|A|^n/|A|=|A|^{n-1}$。",
+      "两边都是各元素的多项式恒等式，因此由可逆矩阵成立可延拓到奇异矩阵（亦可令 $A+tE$，除有限多个 $t$ 外可逆，再令 $t\\to0$）。",
+      "当 $n\\ge2$ 且 $|A|=0$，右式为0。$n=1$ 的伴随矩阵为 $(1)$，所以第(1)项必须有 $n\\ge2$ 这一通常隐含条件。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E002-025": {
+    "prompt": "计算 $\\begin{pmatrix}1 & 2 & 1 & 0\\\\0 & 1 & 0 & 1\\\\0 & 0 & 2 & 1\\\\0 & 0 & 0 & 3\\end{pmatrix}\\begin{pmatrix}1 & 0 & 3 & 1\\\\0 & 1 & 2 & -1\\\\0 & 0 & -2 & 3\\\\0 & 0 & 0 & -3\\end{pmatrix}$。",
+    "solution": "$\\begin{pmatrix}1 & 2 & 5 & 2\\\\0 & 1 & 2 & -4\\\\0 & 0 & -4 & 3\\\\0 & 0 & 0 & -9\\end{pmatrix}$",
+    "explanation": [
+      "两个矩阵均为上三角阵，乘积也为上三角阵。",
+      "按行与列相乘，第一行为 $(1,2,3+4-2,1-2+3)=(1,2,5,2)$；第二行为 $(0,1,2,-4)$；第三行为 $(0,0,-4,3)$；第四行为 $(0,0,0,-9)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-026": {
+    "prompt": "设 $A=\\begin{pmatrix}3 & 4 & 0 & 0\\\\4 & -3 & 0 & 0\\\\0 & 0 & 2 & 0\\\\0 & 0 & 2 & 2\\end{pmatrix}$，求 $|A^8|$ 及 $A^4$。",
+    "solution": "$|A^8|=10^{16}$，$A^4=\\begin{pmatrix}625 & 0 & 0 & 0\\\\0 & 625 & 0 & 0\\\\0 & 0 & 16 & 0\\\\0 & 0 & 64 & 16\\end{pmatrix}$。",
+    "explanation": [
+      "分为两个二阶对角块 $B=\\begin{pmatrix}3&4\\\\4&-3\\end{pmatrix}$ 与 $C=\\begin{pmatrix}2&0\\\\2&2\\end{pmatrix}$。$|A|=|B||C|=(-25)\\cdot4=-100$，故 $|A^8|=(-100)^8=10^{16}$。",
+      "$B^2=25E$，所以 $B^4=625E$；$C=2(E+N)$、$N^2=O$，故 $C^4=16(E+4N)=\\begin{pmatrix}16&0\\\\64&16\\end{pmatrix}$。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E002-027": {
+    "prompt": "设 $n$ 阶矩阵 $A$ 及 $s$ 阶矩阵 $B$ 均可逆，求 $\\begin{pmatrix}O&A\\\\B&O\\end{pmatrix}^{-1}$。",
+    "solution": "$\\begin{pmatrix}O&B^{-1}\\\\A^{-1}&O\\end{pmatrix}$。",
+    "explanation": [
+      "原矩阵的分块行高为 $n,s$，列宽为 $s,n$；逆矩阵的对应分块必须交换。",
+      "分块相乘得 $\\begin{pmatrix}AA^{-1}&O\\\\O&BB^{-1}\\end{pmatrix}=E_{n+s}$；反向相乘也为单位阵，故公式成立。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页58逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      58
+    ],
+    "answer_pages": [
+      166
+    ],
+    "source": {
+      "id": "SRC-LA7-E002-027",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题二 · 第 27 题",
+      "chapter": 2,
+      "section_id": "LA-C02-S5",
+      "printed_page": 54,
+      "pdf_page": 58,
+      "source_number": 27,
+      "group_title": "习题二",
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.843,
+          "bottom": 0.89
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K02-04"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E002-028": {
+    "prompt": "求下列矩阵的逆矩阵：(1) $\\begin{pmatrix}5 & 2 & 0 & 0\\\\2 & 1 & 0 & 0\\\\0 & 0 & 8 & 3\\\\0 & 0 & 5 & 2\\end{pmatrix}$；(2) $\\begin{pmatrix}0 & 0 & \\frac{1}{5}\\\\2 & 1 & 0\\\\4 & 3 & 0\\end{pmatrix}$。",
+    "solution": "(1) $\\begin{pmatrix}1 & -2 & 0 & 0\\\\-2 & 5 & 0 & 0\\\\0 & 0 & 2 & -3\\\\0 & 0 & -5 & 8\\end{pmatrix}$；(2) $\\begin{pmatrix}0 & \\frac{3}{2} & - \\frac{1}{2}\\\\0 & -2 & 1\\\\5 & 0 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 为两个二阶块的分块对角矩阵，各块行列式均为1，因此分别求逆后放回对应位置。",
+      "(2) 解 $Bx=y$：$x_3=5y_1$；由 $2x_1+x_2=y_2,4x_1+3x_2=y_3$ 得 $x_1=(3y_2-y_3)/2,x_2=-2y_2+y_3$，所以各系数构成所列逆矩阵。"
+    ],
+    "knowledge_ids": [
+      "LA-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第166页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页59逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      59
+    ],
+    "answer_pages": [
+      166
+    ]
+  },
+  "SRC-LA7-E003-001": {
+    "prompt": "用初等行变换把下列矩阵化为行最简形：(1) $\\begin{pmatrix}1 & 0 & 2 & -1\\\\2 & 0 & 3 & 1\\\\3 & 0 & 4 & 3\\end{pmatrix}$；(2) $\\begin{pmatrix}0 & 2 & -3 & 1\\\\0 & 3 & -4 & 3\\\\0 & 4 & -7 & -1\\end{pmatrix}$；(3) $\\begin{pmatrix}1 & -1 & 3 & -4 & 3\\\\3 & -3 & 5 & -4 & 1\\\\2 & -2 & 3 & -2 & 0\\\\3 & -3 & 4 & -2 & -1\\end{pmatrix}$；(4) $\\begin{pmatrix}2 & 3 & 1 & -3 & -7\\\\1 & 2 & 0 & -2 & -4\\\\3 & -2 & 8 & 3 & 0\\\\2 & -3 & 7 & 4 & 3\\end{pmatrix}$；",
+    "solution": "(1) $\\begin{pmatrix}1 & 0 & 0 & 5\\\\0 & 0 & 1 & -3\\\\0 & 0 & 0 & 0\\end{pmatrix}$；(2) $\\begin{pmatrix}0 & 1 & 0 & 5\\\\0 & 0 & 1 & 3\\\\0 & 0 & 0 & 0\\end{pmatrix}$；(3) $\\begin{pmatrix}1 & -1 & 0 & 2 & -3\\\\0 & 0 & 1 & -2 & 2\\\\0 & 0 & 0 & 0 & 0\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$；(4) $\\begin{pmatrix}1 & 0 & 2 & 0 & -2\\\\0 & 1 & -1 & 0 & 3\\\\0 & 0 & 0 & 1 & 4\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$；",
+    "explanation": [
+      "(1) 精确行消元的主元列是第1,3列；各主元归一，并消去主元列其余元素，得到所列行最简形。 非零行数为2，其余行为零行。",
+      "(2) 精确行消元的主元列是第2,3列；各主元归一，并消去主元列其余元素，得到所列行最简形。 非零行数为2，其余行为零行。",
+      "(3) 精确行消元的主元列是第1,3列；各主元归一，并消去主元列其余元素，得到所列行最简形。 非零行数为2，其余行为零行。",
+      "(4) 精确行消元的主元列是第1,2,4列；各主元归一，并消去主元列其余元素，得到所列行最简形。 非零行数为3，其余行为零行。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页82逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      82
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-002": {
+    "prompt": "设 $A=\\begin{pmatrix}1 & 2 & 3 & 4\\\\2 & 3 & 4 & 5\\\\5 & 4 & 3 & 2\\end{pmatrix}$，求一个可逆矩阵 $P$，使 $PA$ 为行最简形矩阵。",
+    "solution": "$P=\\begin{pmatrix}-3 & 2 & 0\\\\2 & -1 & 0\\\\7 & -6 & 1\\end{pmatrix}$，$PA=\\begin{pmatrix}1 & 0 & -1 & -2\\\\0 & 1 & 2 & 3\\\\0 & 0 & 0 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "对 $A$ 作行消元，同时把完全相同的行操作施加在单位矩阵上。等价于消元增广矩阵 $(A\\mid E_3)$。",
+      "$P$ 的行分别表示新行为 $-3r_1+2r_2,2r_1-r_2,7r_1-6r_2+r_3$；且 $\\det P=-1\\ne0$，所以 $P$ 可逆。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页82逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      82
+    ],
+    "answer_pages": [
+      167
+    ],
+    "source": {
+      "id": "SRC-LA7-E003-002",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题三 · 第 2 题",
+      "chapter": 3,
+      "section_id": "LA-C03-S5",
+      "printed_page": 78,
+      "pdf_page": 82,
+      "source_number": 2,
+      "group_title": "习题三",
+      "segments": [
+        {
+          "page": 82,
+          "top": 0.591,
+          "bottom": 0.646
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K03-01"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E003-003": {
+    "prompt": "设 $A=\\begin{pmatrix}-5 & 3 & 1\\\\2 & -1 & 1\\end{pmatrix}$，求：(1) 可逆矩阵 $P$，使 $PA$ 为行最简形；(2) 可逆矩阵 $Q$，使 $QA^T$ 为行最简形。",
+    "solution": "$P=\\begin{pmatrix}1 & 3\\\\2 & 5\\end{pmatrix}$，$PA=\\begin{pmatrix}1 & 0 & 4\\\\0 & 1 & 7\\end{pmatrix}$；$Q=\\begin{pmatrix}1 & 2 & 0\\\\3 & 5 & 0\\\\-4 & -7 & 1\\end{pmatrix}$，$QA^T=\\begin{pmatrix}1 & 0\\\\0 & 1\\\\0 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 新行为 $r_1+3r_2,2r_1+5r_2$；$\\det P=-1$，故可逆。",
+      "(2) 对 $A^T$ 的三行作 $r_1+2r_2,3r_1+5r_2,-4r_1-7r_2+r_3$，得到 $E_2$ 下接零行；$\\det Q=-1$，故可逆。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页82逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      82
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-004": {
+    "prompt": "用矩阵的初等变换求下列方阵的逆矩阵：(1) $\\begin{pmatrix}3 & 2 & 1\\\\3 & 1 & 5\\\\3 & 2 & 3\\end{pmatrix}$；(2) $\\begin{pmatrix}3 & -2 & 0 & -1\\\\0 & 2 & 2 & 1\\\\1 & -2 & -3 & -2\\\\0 & 1 & 2 & 1\\end{pmatrix}$；",
+    "solution": "(1) $\\begin{pmatrix}\\frac{7}{6} & \\frac{2}{3} & - \\frac{3}{2}\\\\-1 & -1 & 2\\\\- \\frac{1}{2} & 0 & \\frac{1}{2}\\end{pmatrix}$；(2) $\\begin{pmatrix}1 & 1 & -2 & -4\\\\0 & 1 & 0 & -1\\\\-1 & -1 & 3 & 6\\\\2 & 1 & -6 & -10\\end{pmatrix}$；",
+    "explanation": [
+      "(1) 对 $(A\\mid E)$ 作初等行变换得到 $(E\\mid B)$，其中 $B=\\begin{pmatrix}\\frac{7}{6} & \\frac{2}{3} & - \\frac{3}{2}\\\\-1 & -1 & 2\\\\- \\frac{1}{2} & 0 & \\frac{1}{2}\\end{pmatrix}$；检查 $AB=BA=E$。原矩阵行列式为 $-6$，保证可逆。",
+      "(2) 对 $(A\\mid E)$ 作初等行变换得到 $(E\\mid B)$，其中 $B=\\begin{pmatrix}1 & 1 & -2 & -4\\\\0 & 1 & 0 & -1\\\\-1 & -1 & 3 & 6\\\\2 & 1 & -6 & -10\\end{pmatrix}$；检查 $AB=BA=E$。原矩阵行列式为 $1$，保证可逆。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页82逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      82
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-005": {
+    "prompt": "用矩阵的初等行变换求解第2章习题二第15题(2)：$\\begin{cases}x_1+x_2+x_3=2,\\\\x_1+2x_2+4x_3=3,\\\\x_1+3x_2+9x_3=5.\\end{cases}$",
+    "solution": "$x=\\begin{pmatrix}2\\\\- \\frac{1}{2}\\\\\\frac{1}{2}\\end{pmatrix}$。",
+    "explanation": [
+      "增广矩阵先作 $r_2\\leftarrow r_2-r_1,r_3\\leftarrow r_3-r_1$，得到后两行 $(0,1,3\\mid1),(0,2,8\\mid3)$。",
+      "$r_3\\leftarrow r_3-2r_2$ 得 $(0,0,2\\mid1)$，故 $x_3=1/2$；回代得 $x_2=-1/2,x_1=2$。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页82逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      82
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-006": {
+    "prompt": "(1) 设 $A=\\begin{pmatrix}4 & 1 & -2\\\\2 & 2 & 1\\\\3 & 1 & -1\\end{pmatrix}$，$B=\\begin{pmatrix}1 & -3\\\\2 & 2\\\\3 & -1\\end{pmatrix}$，求 $X$ 使 $AX=B$；(2) 设 $A=\\begin{pmatrix}0 & 2 & 1\\\\2 & -1 & 3\\\\-3 & 3 & -4\\end{pmatrix}$，$B=\\begin{pmatrix}1 & 2 & 3\\\\2 & -3 & 1\\end{pmatrix}$，求 $X$ 使 $XA=B$；(3) 设 $A=\\begin{pmatrix}1 & -1 & 0\\\\0 & 1 & -1\\\\-1 & 0 & 1\\end{pmatrix}$，$AX=2X+A$，求 $X$。",
+    "solution": "(1) $X=\\begin{pmatrix}10 & 2\\\\-15 & -3\\\\12 & 4\\end{pmatrix}$；(2) $X=\\begin{pmatrix}2 & -1 & -1\\\\-4 & 7 & 4\\end{pmatrix}$；(3) $X=\\begin{pmatrix}0 & 1 & -1\\\\-1 & 0 & 1\\\\1 & -1 & 0\\end{pmatrix}$。",
+    "explanation": [
+      "(1) 消元 $(A\\mid B)$ 到 $(E\\mid X)$，即求 $A^{-1}B$。",
+      "(2) 转置后是 $A^TX^T=B^T$，可对 $(A^T\\mid B^T)$ 作行消元；相当于 $X=BA^{-1}$。",
+      "(3) 先移项成 $(A-2E)X=A$，消元 $(A-2E\\mid A)$；三个结果分别乘回系数矩阵，可逐元验证原式。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      167
+    ],
+    "source": {
+      "id": "SRC-LA7-E003-006",
+      "book_id": "LA7",
+      "kind": "exercise",
+      "title": "习题三 · 第 6 题",
+      "chapter": 3,
+      "section_id": "LA-C03-S5",
+      "printed_page": 79,
+      "pdf_page": 83,
+      "source_number": 6,
+      "group_title": "习题三",
+      "segments": [
+        {
+          "page": 83,
+          "top": 0.086,
+          "bottom": 0.298
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "visually_reviewed",
+      "knowledge_ids": [
+        "LA-K03-02"
+      ],
+      "mapping_status": "reviewed",
+      "verification": "scan_and_math_review"
+    }
+  },
+  "SRC-LA7-E003-007": {
+    "prompt": "在秩为 $r$ 的矩阵中，有没有等于0的 $r-1$ 阶子式？有没有等于0的 $r$ 阶子式？",
+    "solution": "都可能有。",
+    "explanation": [
+      "以 $A=\\operatorname{diag}(1,1,0)$ 为例，$r=2$。元素 $a_{33}=0$ 就是零的 $r-1=1$ 阶子式；取第1、3行和第1、3列的二阶子式也为0。",
+      "秩为 $r$ 只要求至少有一个非零 $r$ 阶子式，并要求所有高于 $r$ 阶的子式均为0；不会要求所有低阶或同阶子式都非零。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-008": {
+    "prompt": "从矩阵 $A$ 中划去一行得到矩阵 $B$，问 $A,B$ 的秩的关系怎样？",
+    "solution": "$R(A)-1\\le R(B)\\le R(A)$。",
+    "explanation": [
+      "$B$ 的各行来自 $A$，其行空间是 $A$ 行空间的子空间，所以 $R(B)\\le R(A)$。",
+      "把删去的那一行加回来，最多使行空间维数增加1，因此 $R(A)\\le R(B)+1$。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第167页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      167
+    ]
+  },
+  "SRC-LA7-E003-009": {
+    "prompt": "求作一个秩为4的方阵，它有两行为 $(1,0,1,0,0)$ 和 $(1,-1,0,0,0)$。",
+    "solution": "$\\begin{pmatrix}1 & 0 & 1 & 0 & 0\\\\1 & -1 & 0 & 0 & 0\\\\0 & 0 & 1 & 0 & 0\\\\0 & 0 & 0 & 1 & 0\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$",
+    "explanation": [
+      "所列 $5\\times5$ 矩阵满足指定两行。其左上角四阶子式为 $-1\\ne0$，故秩至少4。",
+      "第五行为零行，秩至多4。因此秩恰为4。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第168页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      168
+    ]
+  },
+  "SRC-LA7-E003-010": {
+    "prompt": "求下列矩阵的秩：(1) $\\begin{pmatrix}3 & 1 & 0 & 2\\\\1 & -1 & 2 & -1\\\\1 & 3 & -4 & 4\\end{pmatrix}$；(2) $\\begin{pmatrix}3 & 2 & -1 & -3 & -1\\\\2 & -1 & 3 & 1 & -3\\\\7 & 0 & 5 & -1 & -8\\end{pmatrix}$；(3) $\\begin{pmatrix}2 & 1 & 8 & 3 & 7\\\\2 & -3 & 0 & 7 & -5\\\\3 & -2 & 5 & 8 & 0\\\\1 & 0 & 3 & 2 & 0\\end{pmatrix}$；",
+    "solution": "(1) 2；(2) 3；(3) 3。",
+    "explanation": [
+      "(1) 初等行变换得到 $\\begin{pmatrix}1 & 0 & \\frac{1}{2} & \\frac{1}{4}\\\\0 & 1 & - \\frac{3}{2} & \\frac{5}{4}\\\\0 & 0 & 0 & 0\\end{pmatrix}$，非零行数为 2，即为秩。",
+      "(2) 初等行变换得到 $\\begin{pmatrix}1 & 0 & \\frac{5}{7} & - \\frac{1}{7} & 0\\\\0 & 1 & - \\frac{11}{7} & - \\frac{9}{7} & 0\\\\0 & 0 & 0 & 0 & 1\\end{pmatrix}$，非零行数为 3，即为秩。",
+      "(3) 初等行变换得到 $\\begin{pmatrix}1 & 0 & 3 & 2 & 0\\\\0 & 1 & 2 & -1 & 0\\\\0 & 0 & 0 & 0 & 1\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$，非零行数为 3，即为秩。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第168页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      168
+    ]
+  },
+  "SRC-LA7-E003-011": {
+    "prompt": "设 $A,B$ 都是 $m\\times n$ 矩阵。证明 $A\\sim B$ 的充要条件是 $R(A)=R(B)$。（$\\sim$ 表示可用初等行、列变换互相得到。）",
+    "solution": "$A\\sim B\\iff R(A)=R(B)$。",
+    "explanation": [
+      "初等行、列变换均保持矩阵的秩，故必要性成立。",
+      "若两者的秩均为 $r$，则分别可通过初等行、列变换化为同一标准形 $\\begin{pmatrix}E_r&O\\\\O&O\\end{pmatrix}$。逆向执行 $B$ 的变换，再接在 $A$ 的变换之后，即可把 $A$ 变为 $B$。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E003-012": {
+    "prompt": "设 $A=\\begin{pmatrix}1 & -2 & 3 k\\\\-1 & 2 k & -3\\\\k & -2 & 3\\end{pmatrix}$，问 $k$ 为何值时可使：(1) $R(A)=1$；(2) $R(A)=2$；(3) $R(A)=3$。",
+    "solution": "(1) $k=1$；(2) $k=-2$；(3) $k\\ne1$ 且 $k\\ne-2$。",
+    "explanation": [
+      "$\\det A=- 6 \\left(k - 1\\right)^{2} \\left(k + 2\\right)$，当且仅当 $k=1,-2$ 时为0。",
+      "$k=1$ 时各行为第一行的正负倍数，且第一行非零，所以秩为1。",
+      "$k=-2$ 时，左上角二阶子式为 $-6\\ne0$，又三阶行列式为0，所以秩为2。其余情况三阶行列式非零，秩为3。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第168页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      168
+    ]
+  },
+  "SRC-LA7-E003-013": {
+    "prompt": "讨论 $n$ 阶（$n\\ge2$）方阵 $A$ 的秩，其中主对角元均为 $a$，非对角元均为 $b$。",
+    "solution": "$R(A)=\\begin{cases}n,&a\\ne b,\\ a+(n-1)b\\ne0;\\\\n-1,&a\\ne b,\\ a+(n-1)b=0;\\\\1,&a=b\\ne0;\\\\0,&a=b=0.\\end{cases}$",
+    "explanation": [
+      "$A=(a-b)E+b\\mathbf1\\mathbf1^T$。在分量和为0的 $(n-1)$ 维空间上，$Ax=(a-b)x$；在 $\\mathbf1$ 的方向上，$A\\mathbf1=[a+(n-1)b]\\mathbf1$。",
+      "两个空间直和为整个实空间，分别检查上述乘数是否为0，即得到四种秩。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E003-014": {
+    "prompt": "求解下列齐次线性方程组（按原书顺序列出系数矩阵，各式均为 $Ax=0$）：(1) $A=\\begin{pmatrix}1 & 1 & 2 & -1\\\\2 & 1 & 1 & -1\\\\2 & 2 & 1 & 2\\end{pmatrix}$；(2) $A=\\begin{pmatrix}1 & 2 & 1 & -1\\\\3 & 6 & -1 & -3\\\\5 & 10 & 1 & -5\\end{pmatrix}$；(3) $A=\\begin{pmatrix}2 & 3 & -1 & -7\\\\3 & 1 & 2 & -7\\\\4 & 1 & -3 & 6\\\\1 & -2 & 5 & -5\\end{pmatrix}$；(4) $A=\\begin{pmatrix}3 & 4 & -5 & 7\\\\2 & -3 & 3 & -2\\\\4 & 11 & -13 & 16\\\\7 & -2 & 1 & 3\\end{pmatrix}$；",
+    "solution": "(1) $x=c_{1}\\begin{pmatrix}\\frac{4}{3}\\\\-3\\\\\\frac{4}{3}\\\\1\\end{pmatrix}$；(2) $x=c_{1}\\begin{pmatrix}-2\\\\1\\\\0\\\\0\\end{pmatrix}+c_{2}\\begin{pmatrix}1\\\\0\\\\0\\\\1\\end{pmatrix}$；(3) $x=c_{1}\\begin{pmatrix}- \\frac{1}{2}\\\\\\frac{7}{2}\\\\\\frac{5}{2}\\\\1\\end{pmatrix}$；(4) $x=c_{1}\\begin{pmatrix}\\frac{3}{17}\\\\\\frac{19}{17}\\\\1\\\\0\\end{pmatrix}+c_{2}\\begin{pmatrix}- \\frac{13}{17}\\\\- \\frac{20}{17}\\\\0\\\\1\\end{pmatrix}$；各 $c_i\\in\\mathbb R$。",
+    "explanation": [
+      "(1) 行最简形为 $\\begin{pmatrix}1 & 0 & 0 & - \\frac{4}{3}\\\\0 & 1 & 0 & 3\\\\0 & 0 & 1 & - \\frac{4}{3}\\end{pmatrix}$。取非主元变量为自由变量，依次只令一个自由变量为1、其余为0，得到所列向量，它们构成零空间的基。",
+      "(2) 行最简形为 $\\begin{pmatrix}1 & 2 & 0 & -1\\\\0 & 0 & 1 & 0\\\\0 & 0 & 0 & 0\\end{pmatrix}$。取非主元变量为自由变量，依次只令一个自由变量为1、其余为0，得到所列向量，它们构成零空间的基。",
+      "(3) 行最简形为 $\\begin{pmatrix}1 & 0 & 0 & \\frac{1}{2}\\\\0 & 1 & 0 & - \\frac{7}{2}\\\\0 & 0 & 1 & - \\frac{5}{2}\\\\0 & 0 & 0 & 0\\end{pmatrix}$。取非主元变量为自由变量，依次只令一个自由变量为1、其余为0，得到所列向量，它们构成零空间的基。",
+      "(4) 行最简形为 $\\begin{pmatrix}1 & 0 & - \\frac{3}{17} & \\frac{13}{17}\\\\0 & 1 & - \\frac{19}{17} & \\frac{20}{17}\\\\0 & 0 & 0 & 0\\\\0 & 0 & 0 & 0\\end{pmatrix}$。取非主元变量为自由变量，依次只令一个自由变量为1、其余为0，得到所列向量，它们构成零空间的基。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第168页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页83逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      83
+    ],
+    "answer_pages": [
+      168
+    ]
+  },
+  "SRC-LA7-E003-015": {
+    "prompt": "求解下列非齐次线性方程组，系数矩阵、右端按原书顺序为：(1) $A=\\begin{pmatrix}4 & 2 & -1\\\\3 & -1 & 2\\\\11 & 3 & 0\\end{pmatrix},\\ b=\\begin{pmatrix}2\\\\10\\\\8\\end{pmatrix}$；(2) $A=\\begin{pmatrix}2 & 3 & 1\\\\1 & -2 & 4\\\\3 & 8 & -2\\\\4 & -1 & 9\\end{pmatrix},\\ b=\\begin{pmatrix}4\\\\-5\\\\13\\\\-6\\end{pmatrix}$；(3) $A=\\begin{pmatrix}2 & 1 & -1 & 1\\\\4 & 2 & -2 & 1\\\\2 & 1 & -1 & -1\\end{pmatrix},\\ b=\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$；(4) $A=\\begin{pmatrix}2 & 1 & -1 & 1\\\\3 & -2 & 1 & -3\\\\1 & 4 & -3 & 5\\end{pmatrix},\\ b=\\begin{pmatrix}1\\\\4\\\\-2\\end{pmatrix}$；",
+    "solution": "(1) 无解；(2) $x=\\begin{pmatrix}- 2 c_{1} - 1\\\\c_{1} + 2\\\\c_{1}\\end{pmatrix}$；(3) $x=\\begin{pmatrix}- \\frac{c_{1}}{2} + \\frac{c_{2}}{2} + \\frac{1}{2}\\\\c_{1}\\\\c_{2}\\\\0\\end{pmatrix}$；(4) $x=\\begin{pmatrix}\\frac{c_{1}}{7} + \\frac{c_{2}}{7} + \\frac{6}{7}\\\\\\frac{5 c_{1}}{7} - \\frac{9 c_{2}}{7} - \\frac{5}{7}\\\\c_{1}\\\\c_{2}\\end{pmatrix}$（参数任取实数）。",
+    "explanation": [
+      "(1) 增广矩阵的行最简形为 $\\begin{pmatrix}1 & 0 & \\frac{3}{10} & 0\\\\0 & 1 & - \\frac{11}{10} & 0\\\\0 & 0 & 0 & 1\\end{pmatrix}$。出现左端全0、右端非0的一行，故矛盾。",
+      "(2) 增广矩阵的行最简形为 $\\begin{pmatrix}1 & 0 & 2 & -1\\\\0 & 1 & -1 & 2\\\\0 & 0 & 0 & 0\\\\0 & 0 & 0 & 0\\end{pmatrix}$。非主元变量任取，主元变量由上述方程回代。",
+      "(3) 增广矩阵的行最简形为 $\\begin{pmatrix}1 & \\frac{1}{2} & - \\frac{1}{2} & 0 & \\frac{1}{2}\\\\0 & 0 & 0 & 1 & 0\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$。非主元变量任取，主元变量由上述方程回代。",
+      "(4) 增广矩阵的行最简形为 $\\begin{pmatrix}1 & 0 & - \\frac{1}{7} & - \\frac{1}{7} & \\frac{6}{7}\\\\0 & 1 & - \\frac{5}{7} & \\frac{9}{7} & - \\frac{5}{7}\\\\0 & 0 & 0 & 0 & 0\\end{pmatrix}$。非主元变量任取，主元变量由上述方程回代。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第168页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      168
+    ]
+  },
+  "SRC-LA7-E003-016": {
+    "prompt": "写出一个以 $x=c_1(2,-3,1,0)^T+c_2(-2,4,0,1)^T$ 为通解的齐次线性方程组。",
+    "solution": "$\\begin{cases}x_1-2x_3+2x_4=0,\\\\x_2+3x_3-4x_4=0.\\end{cases}$",
+    "explanation": [
+      "由给定通解有 $x_3=c_1,x_4=c_2$，消去参数得到两条等式。",
+      "反过来，令 $x_3=c_1,x_4=c_2$，这两条等式解出 $x_1=2c_1-2c_2,x_2=-3c_1+4c_2$，正好恢复给定通解，故无多余或遗漏的解。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第169页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      169
+    ]
+  },
+  "SRC-LA7-E003-017": {
+    "prompt": "设 $\\begin{pmatrix}1&\\lambda-1&-2\\\\0&\\lambda-2&\\lambda+1\\\\0&0&2\\lambda+1\\end{pmatrix}\\begin{pmatrix}x_1\\\\x_2\\\\x_3\\end{pmatrix}=\\begin{pmatrix}1\\\\3\\\\5\\end{pmatrix}$。问 $\\lambda$ 为何值时：(1) 有唯一解；(2) 无解；(3) 有无穷多解？并在有无穷多解时求通解。",
+    "solution": "(1) $\\lambda\\ne-1/2,2$；(2) $\\lambda=-1/2$；(3) $\\lambda=2$，$x=(3,0,1)^T+c(-1,1,0)^T$，$c\\in\\mathbb R$。",
+    "explanation": [
+      "系数矩阵为上三角，行列式为 $(\\lambda-2)(2\\lambda+1)$；非零时有唯一解。",
+      "$\\lambda=-1/2$ 时末行成为 $0=5$，所以无解。$\\lambda=2$ 时第三行给 $x_3=1$，第二行重复此约束，第一行为 $x_1+x_2=3$，令 $x_2=c$ 即得通解。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第169页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      169
+    ]
+  },
+  "SRC-LA7-E003-018": {
+    "prompt": "$\\lambda$ 取何值时，$\\begin{cases}\\lambda x_1+x_2+x_3=1,\\\\x_1+\\lambda x_2+x_3=\\lambda,\\\\x_1+x_2+\\lambda x_3=\\lambda^2\\end{cases}$ (1) 有唯一解；(2) 无解；(3) 有无穷多解？在有无穷多解时求通解。",
+    "solution": "(1) $\\lambda\\ne1,-2$；(2) $\\lambda=-2$；(3) $\\lambda=1$，$x=(1,0,0)^T+c_1(-1,1,0)^T+c_2(-1,0,1)^T$。",
+    "explanation": [
+      "系数行列式为 $(\\lambda-1)^2(\\lambda+2)$，其非零时有唯一解。",
+      "$\\lambda=-2$ 时，三个左端之和恒为0，而右端之和为 $1-2+4=3$，故无解。",
+      "$\\lambda=1$ 时三式均为 $x_1+x_2+x_3=1$，取 $x_2=c_1,x_3=c_2$ 即得通解。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第169页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      169
+    ]
+  },
+  "SRC-LA7-E003-019": {
+    "prompt": "非齐次线性方程组 $\\begin{cases}-2x_1+x_2+x_3=-2,\\\\x_1-2x_2+x_3=\\lambda,\\\\x_1+x_2-2x_3=\\lambda^2\\end{cases}$ 当 $\\lambda$ 取何值时有解？并求其通解。",
+    "solution": "$\\lambda=1$ 时 $x=(1,0,0)^T+c(1,1,1)^T$；$\\lambda=-2$ 时 $x=(2,2,0)^T+c(1,1,1)^T$；其余值无解。",
+    "explanation": [
+      "三个系数行相加为0，故必要条件是 $-2+\\lambda+\\lambda^2=0$，即 $(\\lambda-1)(\\lambda+2)=0$。",
+      "系数矩阵的秩为2，零空间为 $\\operatorname{span}\\{(1,1,1)^T\\}$；分别代入两个 $\\lambda$，列出的特解满足原方程，故上述条件也充分。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第169页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      169
+    ]
+  },
+  "SRC-LA7-E003-020": {
+    "prompt": "设 $\\begin{cases}(2-\\lambda)x_1+2x_2-2x_3=1,\\\\2x_1+(5-\\lambda)x_2-4x_3=2,\\\\-2x_1-4x_2+(5-\\lambda)x_3=-\\lambda-1.\\end{cases}$ 问何时有唯一解、无解或无穷多解？在无穷多解时求通解。",
+    "solution": "$\\lambda\\ne1,10$ 时有唯一解；$\\lambda=10$ 时无解；$\\lambda=1$ 时 $x=(1,0,0)^T+c_1(-2,1,0)^T+c_2(2,0,1)^T$。",
+    "explanation": [
+      "行列式为 $(1-\\lambda)^2(10-\\lambda)$，故只有 $1,10$ 需要另行讨论。",
+      "$\\lambda=10$ 时取三行按 $(1,2,-2)$ 加权，左端为0，右端为 $1+4+22=27\\ne0$，故矛盾。",
+      "$\\lambda=1$ 时三式等价于 $x_1+2x_2-2x_3=1$，取 $x_2=c_1,x_3=c_2$ 即得通解。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "原书书后部分习题参考答案（PDF第169页）校订；explanation为补充推导，非原书逐字讲解",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": [
+      169
+    ]
+  },
+  "SRC-LA7-E003-021": {
+    "prompt": "证明 $R(A)=1$ 的充要条件是存在非零列向量 $a$ 及非零行向量 $b^T$，使 $A=ab^T$。",
+    "solution": "$R(A)=1\\iff A=ab^T$，其中 $a,b$ 非零。",
+    "explanation": [
+      "若 $R(A)=1$，选一个非零列 $a$。所有列都能写成 $b_ja$，于是 $A=a(b_1,\\ldots,b_n)=ab^T$，且至少一个 $b_j\\ne0$。",
+      "若 $A=ab^T$ 且二者非零，则各列均为 $a$ 的倍数，秩至多1；选取非零的 $b_j$，其对应列非零，秩至少1。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E003-022": {
+    "prompt": "证明秩为 $r$（$r\\ge1$）的矩阵 $A$ 可表示为 $r$ 个秩为1的矩阵之和。",
+    "solution": "$A=\\sum_{i=1}^ra_ib_i^T$，其中每个 $a_ib_i^T$ 的秩为1。",
+    "explanation": [
+      "取 $A$ 的 $r$ 个线性无关列组成 $C=(a_1,\\ldots,a_r)$。把每列在这组列下的系数列放在 $D$ 中，则 $A=CD$。",
+      "$R(C)=R(D)=r$，所以 $C$ 的各列 $a_i$ 非零，$D$ 的各行 $b_i^T$ 也非零。按矩阵乘法展开 $CD=\\sum a_ib_i^T$，每项由上题的结论秩为1。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E003-023": {
+    "prompt": "设 $A$ 为列满秩矩阵，$AB=C$。证明线性方程 $Bx=0$ 与 $Cx=0$ 同解。",
+    "solution": "两方程的解集相同。",
+    "explanation": [
+      "若 $Bx=0$，则 $Cx=ABx=0$。",
+      "若 $Cx=0$，令 $y=Bx$，则 $Ay=0$。$A$ 列满秩，齐次方程 $Ay=0$ 只有零解，故 $y=0$，也就是 $Bx=0$。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03",
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页84逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      84
+    ],
+    "answer_pages": []
+  },
+  "SRC-LA7-E003-024": {
+    "prompt": "设 $A$ 为 $m\\times n$ 矩阵。证明方程 $AX=E_m$ 有解的充要条件是 $R(A)=m$。",
+    "solution": "$AX=E_m$ 有解 $\\iff R(A)=m$。",
+    "explanation": [
+      "若有解，则 $m=R(E_m)=R(AX)\\le R(A)\\le m$，故 $R(A)=m$。",
+      "反之，$R(A)=m$ 时列空间为 $\\mathbb R^m$。对每个单位列向量 $e_j$ 都能选 $x_j$ 使 $Ax_j=e_j$；把这些 $x_j$ 依次拼成 $X$，就有 $AX=E_m$。"
+    ],
+    "knowledge_ids": [
+      "LA-K03-03",
+      "LA-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "根据原书题干独立补充的完整解答；原书书后未提供本题答案",
+    "review_basis": "对照用户上传原书扫描页85逐式校订；数值矩阵计算用SymPy精确运算复核；证明逐步核查",
+    "source_pages": [
+      85
+    ],
+    "answer_pages": []
+  }
+}

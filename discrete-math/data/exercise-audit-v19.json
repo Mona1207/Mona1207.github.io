@@ -1,0 +1,41 @@
+[
+  {
+    "book": "DM2T",
+    "indexed_numbered_before": 558,
+    "ocr_numbered": 568,
+    "ocr_groups": 19,
+    "ocr_pages": 87,
+    "reviewed_prompts": 9,
+    "reviewed_answers": 9,
+    "ocr_answer_drafts": 0,
+    "missing_answers": 559,
+    "empty_prompts": [],
+    "statement": "OCR覆盖已定位的习题及整组入口；OCR初稿不等于数学内容已校订，无完整答案的题明确留空，不宣称全书解析已完成。"
+  },
+  {
+    "book": "LA7",
+    "indexed_numbered_before": 128,
+    "ocr_numbered": 134,
+    "ocr_groups": 6,
+    "ocr_pages": 24,
+    "reviewed_prompts": 5,
+    "reviewed_answers": 5,
+    "ocr_answer_drafts": 61,
+    "missing_answers": 68,
+    "empty_prompts": [],
+    "statement": "OCR覆盖已定位的习题及整组入口；OCR初稿不等于数学内容已校订，无完整答案的题明确留空，不宣称全书解析已完成。"
+  },
+  {
+    "book": "PS3",
+    "indexed_numbered_before": 312,
+    "ocr_numbered": 330,
+    "ocr_groups": 50,
+    "ocr_pages": 87,
+    "reviewed_prompts": 0,
+    "reviewed_answers": 0,
+    "ocr_answer_drafts": 0,
+    "missing_answers": 330,
+    "empty_prompts": [],
+    "statement": "OCR覆盖已定位的习题及整组入口；OCR初稿不等于数学内容已校订，无完整答案的题明确留空，不宣称全书解析已完成。"
+  }
+]

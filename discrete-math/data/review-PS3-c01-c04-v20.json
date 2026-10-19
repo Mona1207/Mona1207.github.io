@@ -1,0 +1,6372 @@
+{
+  "SRC-PS3-E001-001": {
+    "prompt": "1. 一个盒子里装有50张卡片，分别标有数字1,2,…,50。从中随机取一张，用集合形式写出样本空间Ω与事件：(1) A=｛数字是一位数｝；(2) B=｛数字是两位数｝；(3) C=｛数字不超过20｝；(4) D=｛数字是3的倍数｝。",
+    "solution": "Ω={1,2,…,50}；A={1,2,…,9}；B={10,11,…,50}；C={1,2,…,20}；D={3,6,9,…,48}。",
+    "explanation": [
+      "把卡片上的数字作为样本点；事件是Ω内满足指定条件的数字集合。注意卡片不含0，50以内最大的3的倍数是48。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第13页（原书第3页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E001-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.1 · 第 1 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S1",
+      "printed_page": 3,
+      "pdf_page": 13,
+      "segments": [
+        {
+          "page": 13,
+          "top": 0.15899,
+          "bottom": 0.27759
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题1.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      13
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E001-002": {
+    "prompt": "2. 用集合形式写出下列试验的Ω与事件A：(1) 观察新生儿性别，A=｛男孩｝；(2) 抛一枚硬币两次，观察出现的面，A=｛两次面相同｝；(3) 记录电话总机一分钟内的呼叫次数，A=｛次数不超过3｝；(4) 随机抽一只灯泡测试寿命，A=｛寿命在2000小时到2500小时之间｝。",
+    "solution": "(1) Ω={男,女}，A={男}。(2) Ω={(正,正),(正,反),(反,正),(反,反)}，A={(正,正),(反,反)}。(3) Ω={0,1,2,…}，A={0,1,2,3}。(4) Ω=[0,+∞)，A=[2000,2500]。",
+    "explanation": [
+      "硬币结果按先后次序记录；呼叫次数可以为0；寿命以非负实数表示。寿命端点按“之间”含端点书写，连续型概率下是否包含端点不改变概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第13页（原书第3页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E001-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.1 · 第 2 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S1",
+      "printed_page": 3,
+      "pdf_page": 13,
+      "segments": [
+        {
+          "page": 13,
+          "top": 0.27559,
+          "bottom": 0.39464
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题1.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      13
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E001-003": {
+    "prompt": "3. 抛三枚大小相同的均匀硬币，观察其出现的面。(1) 写出Ω；(2) 写出A=｛至少一个正面｝，B=｛一正二反｝，C=｛不多于一个正面｝所含样本点；(3) 记Aᵢ=｛第i个硬币出现正面｝，i=1,2,3，用A₁,A₂,A₃表示A,B,C。",
+    "solution": "记正为H、反为T。(1) Ω={HHH,HHT,HTH,THH,HTT,THT,TTH,TTT}。(2) A=Ω\\{TTT}；B={HTT,THT,TTH}；C={TTT,HTT,THT,TTH}。(3) A=A₁∪A₂∪A₃；B=A₁Ā₂Ā₃∪Ā₁A₂Ā₃∪Ā₁Ā₂A₃；C=B∪Ā₁Ā₂Ā₃。",
+    "explanation": [
+      "给三枚硬币编号后，用三位有序串记录。至少一个正面排除全反；不多于一个正面包括0个及1个正面。并表示“或”，交（连写）表示“且”。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第13页（原书第3页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E001-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.1 · 第 3 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S1",
+      "printed_page": 3,
+      "pdf_page": 13,
+      "segments": [
+        {
+          "page": 13,
+          "top": 0.39264,
+          "bottom": 0.49137
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题1.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      13
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E001-004": {
+    "prompt": "4. 盒中有红、黑、白三个形状相同的珠子。随机取一个观察颜色后放回，再取一个观察颜色。(1) 写出Ω；(2) 写出A=｛两次中有红珠｝，B=｛两次颜色相同｝，C=｛两次中没有白珠｝所含样本点；(3) 第一次取后不放回时，写出Ω′。",
+    "solution": "(1) Ω={(红,红),(红,黑),(红,白),(黑,红),(黑,黑),(黑,白),(白,红),(白,黑),(白,白)}。(2) A={(红,红),(红,黑),(红,白),(黑,红),(白,红)}；B={(红,红),(黑,黑),(白,白)}；C={(红,红),(红,黑),(黑,红),(黑,黑)}。(3) Ω′={(红,黑),(红,白),(黑,红),(黑,白),(白,红),(白,黑)}。",
+    "explanation": [
+      "两次观察区分先后，放回时有3×3=9个结果。不放回且每种颜色只有一个珠子，因此排除颜色相同的三个结果，剩6个。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第13页（原书第3页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E001-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.1 · 第 4 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S1",
+      "printed_page": 3,
+      "pdf_page": 13,
+      "segments": [
+        {
+          "page": 13,
+          "top": 0.48937,
+          "bottom": 0.6387
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题1.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      13
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-001": {
+    "prompt": "1. 袋中10个球编号1,…,10，任取1球。A=｛号码为偶数｝，B=｛号码为奇数｝，C=｛号码小于5｝。说明：(1) A∪B；(2) AB；(3) AC；(4) (AC)的补；(5) A的补与C的补的交；(6) (B∪C)的补；(7) A−C。",
+    "solution": "(1) Ω={1,…,10}，必然事件。(2) ∅，不可能事件。(3) {2,4}。(4) {1,3,5,6,7,8,9,10}。(5) {5,7,9}。(6) {6,8,10}。(7) {6,8,10}。",
+    "explanation": [
+      "先写A={2,4,6,8,10}、B={1,3,5,7,9}、C={1,2,3,4}。注意(AC)的补是“并非同时属于A和C”，并不等于A的补与C的补的交。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15页（原书第5页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 1 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.33375,
+          "bottom": 0.40242
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      15
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-002": {
+    "prompt": "2. 在[0,2]上任取一数。A={x|1/2<x≤1}，B={x|1/4≤x≤3/2}。求：(1) A∪B；(2) ĀB；(3) AB̄；(4) A∪B̄。",
+    "solution": "(1) [1/4,3/2]；(2) [1/4,1/2]∪(1,3/2]；(3) ∅；(4) [0,1/4)∪(1/2,1]∪(3/2,2]。",
+    "explanation": [
+      "A⊂B。所有补集相对于Ω=[0,2]；B̄=[0,1/4)∪(3/2,2]，Ā=[0,1/2]∪(1,2]。端点由原题的严格或非严格不等号决定。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15页（原书第5页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 2 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.40042,
+          "bottom": 0.4554
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      15
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-003": {
+    "prompt": "3. 投掷两枚均匀骰子，记录朝上点数。A=｛点数和为奇数｝，B=｛至少一个点数为1｝，C=｛点数和为5｝。写出：(1) AB；(2) A∪B；(3) AB̄；(4) BC；(5) ABC。",
+    "solution": "令Ω={(i,j)|i,j∈{1,…,6}}。(1) AB={(1,2),(1,4),(1,6),(2,1),(4,1),(6,1)}。(2) A∪B={(i,j)∈Ω|i+j为奇数，或i=1，或j=1}。(3) AB̄={(i,j)∈Ω|i+j为奇数且i,j≥2}。(4) BC={(1,4),(4,1)}。(5) ABC={(1,4),(4,1)}。",
+    "explanation": [
+      "按有序对记录骰子。奇数和要求一奇一偶；C⊂A，因此ABC=BC。集合条件表达式与逐个列举是等价的完整表示。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15页（原书第5页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 3 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.4534,
+          "bottom": 0.51411
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      15
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-004": {
+    "prompt": "4. 用A,B,C的运算表示：(1) 仅A出现；(2) A,B出现而C不出现；(3) 三个都出现；(4) 至少一个出现；(5) 三个都不出现；(6) 不多于一个出现；(7) 不多于两个出现；(8) 至少两个出现。",
+    "solution": "(1) AB̄C̄；(2) ABC̄；(3) ABC；(4) A∪B∪C；(5) ĀB̄C̄；(6) ĀB̄C̄∪AB̄C̄∪ĀBC̄∪ĀB̄C；(7) (ABC)的补；(8) AB∪AC∪BC。",
+    "explanation": [
+      "“不多于一个”包括0或1个；“不多于两个”只排除三个同时出现；“至少两个”允许三个都出现，所以AB∪AC∪BC无需再排除ABC。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15页（原书第5页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 4 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.51211,
+          "bottom": 0.69116
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 4,
+      "group_title": "习题1.2",
+      "context_needed": false
+    },
+    "source_pages": [
+      15
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-005": {
+    "prompt": "5. 一批产品有正品和次品，有放回抽三次。Aᵢ=｛第i次取到次品｝。表示：(1) 前两次至少一次次品；(2) 仅第一次次品；(3) 三次都次品；(4) 至少一次正品；(5) 恰有两次次品。",
+    "solution": "(1) A₁∪A₂；(2) A₁Ā₂Ā₃；(3) A₁A₂A₃；(4) (A₁A₂A₃)的补=Ā₁∪Ā₂∪Ā₃；(5) A₁A₂Ā₃∪A₁Ā₂A₃∪Ā₁A₂A₃。",
+    "explanation": [
+      "恰有两次次品有三个互斥位置组合。至少一次正品的对立事件是三次全为次品。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15页（原书第5页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 5 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.68916,
+          "bottom": 0.82758
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      15
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-006": {
+    "prompt": "6. 接连射击三次，Aᵢ=｛第i次命中｝，表示：(1) 前两次至少一次命中；(2) 三次恰命中两次；(3) 至少命中两次；(4) 三次都未命中。",
+    "solution": "(1) A₁∪A₂；(2) A₁A₂Ā₃∪A₁Ā₂A₃∪Ā₁A₂A₃；(3) A₁A₂∪A₁A₃∪A₂A₃；(4) Ā₁Ā₂Ā₃。",
+    "explanation": [
+      "恰好两次需要一次未命中；至少两次包含三次全命中的情况。这里只做事件运算，无须假设三次射击独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第15,16页（原书第5,6页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 6 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 5,
+      "pdf_page": 15,
+      "segments": [
+        {
+          "page": 15,
+          "top": 0.82558,
+          "bottom": 0.963
+        },
+        {
+          "page": 16,
+          "top": 0.055,
+          "bottom": 0.13557
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 6,
+      "group_title": "习题1.2",
+      "context_needed": false
+    },
+    "source_pages": [
+      15,
+      16
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-007": {
+    "prompt": "7. 盒中a个白球、b个黑球，有放回抽r次，每次一个。Aᵢ=｛第i次取白球｝，用Aᵢ表示：(1) 首个白球在第k次；(2) 抽到的r个球同色。其中1≤k≤r。",
+    "solution": "(1) Ā₁Ā₂⋯Āₖ₋₁Aₖ（k=1时为A₁）。(2) (A₁A₂⋯Aᵣ)∪(Ā₁Ā₂⋯Āᵣ)。",
+    "explanation": [
+      "“首次在第k次”只约束前k次，k以后的颜色任意；同色有全白、全黑两种互斥情形。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第16页（原书第6页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 7 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 6,
+      "pdf_page": 16,
+      "segments": [
+        {
+          "page": 16,
+          "top": 0.13357,
+          "bottom": 0.23433
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      16
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E002-008": {
+    "prompt": "8. 证明B=AB∪ĀB。",
+    "solution": "AB∪ĀB=(A∪Ā)B=ΩB=B，故等式成立。",
+    "explanation": [
+      "对任意样本点，属于B时必定在A或Ā中，故B按A是否发生分成互斥的AB和ĀB。这是全概率公式中常用的事件分解。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第16页（原书第6页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E002-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题1.2 · 第 8 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 6,
+      "pdf_page": 16,
+      "segments": [
+        {
+          "page": 16,
+          "top": 0.23233,
+          "bottom": 0.5492
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题1.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      16
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E003-001": {
+    "prompt": "1. 城市道路分为快速路、主干路、次干路、支路；事故损失分为轻微、一般、重大、特大。(1) 写出所有城市道路交通事故的样本空间Ω；(2) 写出A=｛快速路事故｝、B=｛损失不小于重大事故｝所含样本点。",
+    "solution": "令R={快速路,主干路,次干路,支路}，L={轻微,一般,重大,特大}。(1) Ω=R×L（共16种有序对）。(2) A={快速路}×L；B=R×{重大,特大}。",
+    "explanation": [
+      "以“道路类型、损失等级”的有序对描述一个结果。笛卡儿积完整列出全部组合；不小于重大包括重大和特大。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第16页（原书第6页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E003-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第一章综合题 · 第 1 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 6,
+      "pdf_page": 16,
+      "segments": [
+        {
+          "page": 16,
+          "top": 0.54847,
+          "bottom": 0.64615
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 1,
+      "group_title": "第一章综合题",
+      "context_needed": false
+    },
+    "source_pages": [
+      16
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E003-002": {
+    "prompt": "2. 在D={(x,y)|x²+y²≤1}内任取一点。A={(x,y)∈D||x|≤0.5}，B={(x,y)∈D|0.25≤x²+y²≤1}。求：(1) A∪B；(2) AB̄；(3) ĀB̄。",
+    "solution": "(1) A∪B=D；(2) AB̄={(x,y)|x²+y²<0.25}；(3) ĀB̄=∅。",
+    "explanation": [
+      "B̄是半径小于0.5的内圆，完全包含在竖带A内，故AB̄=B̄而ĀB̄为空。放大核对原页，第(3)中A和B均有补集横线。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01",
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第16页（原书第6页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E003-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第一章综合题 · 第 2 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 6,
+      "pdf_page": 16,
+      "segments": [
+        {
+          "page": 16,
+          "top": 0.64415,
+          "bottom": 0.6829
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "第一章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01",
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      16
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E003-003": {
+    "prompt": "3. 说明何时下列等式成立：(1) ABC=A；(2) A∪B∪C=A。",
+    "solution": "(1) 当且仅当A⊂B且A⊂C，即A⊂B∩C。(2) 当且仅当B⊂A且C⊂A，即B∪C⊂A。",
+    "explanation": [
+      "交集总是包含于A，要等于A就要求A的每个样本点同时在B,C内；并集总是包含A，要等于A就要求B,C均不能增加A以外的点。"
+    ],
+    "knowledge_ids": [
+      "PS-K01-01",
+      "PS-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第16,17页（原书第6,7页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E003-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第一章综合题 · 第 3 题",
+      "chapter": 1,
+      "section_id": "PS-C01-S2",
+      "printed_page": 6,
+      "pdf_page": 16,
+      "segments": [
+        {
+          "page": 16,
+          "top": 0.6809,
+          "bottom": 0.963
+        },
+        {
+          "page": 17,
+          "top": 0.055,
+          "bottom": 0.96
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "第一章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K01-01",
+        "PS-K01-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      16,
+      17
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-001": {
+    "prompt": "1. 从45件正品、5件次品构成的一批产品中任取3件，求恰有1件次品的概率。",
+    "solution": "P=C(5,1)C(45,2)/C(50,3)=99/392≈0.252551。",
+    "explanation": [
+      "不放回无序取样共有C(50,3)个等可能组合。取1件次品有5种，另2件正品有C(45,2)种。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第21页（原书第11页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 1 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 11,
+      "pdf_page": 21,
+      "segments": [
+        {
+          "page": 21,
+          "top": 0.7288,
+          "bottom": 0.75133
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      21
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-002": {
+    "prompt": "2. 袋中5红球、2白球。有放回随机取两次，每次一球。求：(1) 两次红；(2) 先红后白；(3) 一红一白；(4) 第二次红。",
+    "solution": "(1) 25/49；(2) 10/49；(3) 20/49；(4) 5/7。",
+    "explanation": [
+      "有放回使每次红球概率均为5/7且两次独立。一红一白含红白、白红两个互斥次序，因此为2×(5/7)(2/7)。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第21页（原书第11页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 2 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 11,
+      "pdf_page": 21,
+      "segments": [
+        {
+          "page": 21,
+          "top": 0.74933,
+          "bottom": 0.86623
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      21
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-003": {
+    "prompt": "3. 袋中6球编号1,…,6，随机取2球。求：(1) 最小号码3；(2) 最大号码3的概率。",
+    "solution": "(1) 3/C(6,2)=1/5；(2) 2/C(6,2)=2/15。",
+    "explanation": [
+      "最小为3的组合是{3,4},{3,5},{3,6}；最大为3的组合是{1,3},{2,3}。全部无序组合15个等可能。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第21,22页（原书第11,12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 3 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 11,
+      "pdf_page": 21,
+      "segments": [
+        {
+          "page": 21,
+          "top": 0.86423,
+          "bottom": 0.963
+        },
+        {
+          "page": 22,
+          "top": 0.055,
+          "bottom": 0.1096
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      21,
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-004": {
+    "prompt": "4. 6件产品中2件不合格，不放回接连取2件。求：(1) 全合格；(2) 一合格一不合格；(3) 至少一件合格。",
+    "solution": "(1) C(4,2)/C(6,2)=2/5；(2) C(4,1)C(2,1)/C(6,2)=8/15；(3) 1−C(2,2)/C(6,2)=14/15。",
+    "explanation": [
+      "三种合格件数2,1,0互斥完备，概率分别6/15、8/15、1/15，可相加检查总和为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 4 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.1076,
+          "bottom": 0.20571
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-005": {
+    "prompt": "5. 从装配线产品选10件检查，假定选到有缺陷和无缺陷产品等可能。求至少发现一件缺陷产品的概率，并结合“实际推断原理”解释。",
+    "solution": "按各次独立、每次缺陷概率1/2的抽样模型，P(至少一件缺陷)=1−(1/2)¹⁰=1023/1024≈0.999023。若10件全无缺陷，则在该模型下概率仅1/1024，可据小概率原理质疑“缺陷与无缺陷等可能”的假设。",
+    "explanation": [
+      "先计算对立事件“10件全无缺陷”。乘积公式需要独立抽样（或可视为大批量独立抽样）；若仅知每件边际缺陷概率1/2而不知依赖关系，原题信息不足以唯一确定数值。小概率事件仍可能发生，因此推断并非逻辑上绝对否定。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 5 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.20371,
+          "bottom": 0.26372
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 5,
+      "group_title": "习题2.2",
+      "context_needed": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-006": {
+    "prompt": "6. 某人忘记银行卡密码最后一位，从0,…,9随机尝试，求3次之内解开密码的概率。",
+    "solution": "若已试错的数字不再重复（通常的试密码方式），P=3/10。若每次仍从10个数字中独立随机选取并允许重复，则P=1−(9/10)³=271/1000。",
+    "explanation": [
+      "不重复尝试相当于把10个数字随机排列，正确数字等可能位于任一位置，落在前三位的概率3/10。题面未明说是否重复，故列出两种模型及其结果。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 6 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.26172,
+          "bottom": 0.30269
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-007": {
+    "prompt": "7. 掷两枚均匀骰子，求：(1) 点数和7；(2) 点数和不超过5；(3) 点数和为偶数的概率。",
+    "solution": "(1) 6/36=1/6；(2) (1+2+3+4)/36=5/18；(3) 18/36=1/2。",
+    "explanation": [
+      "有序点数对共36个。和2,3,4,5的结果数依次1,2,3,4。偶数和要求同奇偶，结果数3×3+3×3=18。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 7 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.30069,
+          "bottom": 0.37975
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-008": {
+    "prompt": "8. 甲乙丙三名学生随机分到5间空宿舍，每间最多住8人，求三人住在不同宿舍的概率。",
+    "solution": "P=(5×4×3)/5³=12/25。",
+    "explanation": [
+      "每位学生独立选择5间之一，共125种等可能分配。依次给三人选择不同宿舍有5×4×3=60种。容量8对三人没有额外限制。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 8 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.37775,
+          "bottom": 0.41873
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-009": {
+    "prompt": "9. 五位秘书中两位精通英语，随机遇到其中三位。求：(1) 恰一位精通；(2) 恰两位精通；(3) 有人精通的概率。",
+    "solution": "(1) C(2,1)C(3,2)/C(5,3)=3/5；(2) C(2,2)C(3,1)/C(5,3)=3/10；(3) 1−C(3,3)/C(5,3)=9/10。",
+    "explanation": [
+      "不放回无序选三人用超几何计数。“有人精通”是1人或2人精通，也可排除3人均不精通。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 9 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.41673,
+          "bottom": 0.49579
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 9,
+      "group_title": "习题2.2",
+      "context_needed": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E004-010": {
+    "prompt": "10. 甲袋3白球、7红球、15黑球；乙袋10白球、6红球、9黑球。各取一球，求颜色相同的概率。",
+    "solution": "P=(3/25)(10/25)+(7/25)(6/25)+(15/25)(9/25)=207/625=0.3312。",
+    "explanation": [
+      "分别计算同白、同红、同黑三个互斥事件。两个袋子独立取样，每一颜色的联合概率为两袋该色比例的乘积。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第22页（原书第12页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E004-010",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.2 · 第 10 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S2",
+      "printed_page": 12,
+      "pdf_page": 22,
+      "segments": [
+        {
+          "page": 22,
+          "top": 0.49379,
+          "bottom": 0.5692
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题2.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      22
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E005-001": {
+    "prompt": "1. 在[0,1]上随机取数，求：(1) 落在(0,0.25)；(2) 落在中点；(3) 落在(0,1)的概率。",
+    "solution": "(1) 1/4；(2) 0；(3) 1。",
+    "explanation": [
+      "几何概型按长度之比计算。单点长度为0，但不代表单点事件不可能；排除有限个端点不改变连续均匀分布的概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第24页（原书第14页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E005-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.3 · 第 1 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S3",
+      "printed_page": 14,
+      "pdf_page": 24,
+      "segments": [
+        {
+          "page": 24,
+          "top": 0.1555,
+          "bottom": 0.381
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 1,
+      "group_title": "习题2.3",
+      "context_needed": false
+    },
+    "source_pages": [
+      24
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E005-002": {
+    "prompt": "2. 单位圆上有定点M，在圆周上均匀随机取N，连接MN，求弦MN长不超过1的概率。",
+    "solution": "P=1/3。",
+    "explanation": [
+      "设较小圆心角θ∈[0,π]，弦长=2sin(θ/2)。弦长≤1等价于θ≤π/3。N可落在M两侧各π/3的圆弧内，有利弧长2π/3，圆周长2π，比例1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第24页（原书第14页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E005-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.3 · 第 2 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S3",
+      "printed_page": 14,
+      "pdf_page": 24,
+      "segments": [
+        {
+          "page": 24,
+          "top": 0.237,
+          "bottom": 0.256
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 2,
+      "group_title": "习题2.3",
+      "context_needed": false
+    },
+    "id": "SRC-PS3-E005-002",
+    "kind": "exercise",
+    "title": "习题2.3 · 第 2 题",
+    "source_pages": [
+      24
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E005-003": {
+    "prompt": "3. 100 km高速公路上有50 km路段装连续测速系统，一辆车经过时发生一次超速，求超速被测到的概率。",
+    "solution": "若超速位置在全路段上均匀随机分布，则P=50/100=1/2。",
+    "explanation": [
+      "几何概型把长度作为测度。必须使用“超速位置均匀分布且测速覆盖段内能检出”的模型；仅知道覆盖长度而超速位置有偏时，实际检出概率未必是1/2。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第24页（原书第14页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E005-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.3 · 第 3 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S3",
+      "printed_page": 14,
+      "pdf_page": 24,
+      "segments": [
+        {
+          "page": 24,
+          "top": 0.257,
+          "bottom": 0.294
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 3,
+      "group_title": "习题2.3",
+      "context_needed": false
+    },
+    "id": "SRC-PS3-E005-003",
+    "kind": "exercise",
+    "title": "习题2.3 · 第 3 题",
+    "source_pages": [
+      24
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E005-004": {
+    "prompt": "4. 质点均匀落在x轴、y轴及x+y=1围成的三角形内，求落在直线x=1/3左边的概率。",
+    "solution": "P=1−(2/3)²=5/9。",
+    "explanation": [
+      "全三角形面积1/2。x>1/3部分是直角边均为2/3的小三角形，面积2/9；左侧面积为1/2−2/9=5/18，除以1/2得到5/9。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第24页（原书第14页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E005-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.3 · 第 4 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S3",
+      "printed_page": 14,
+      "pdf_page": 24,
+      "segments": [
+        {
+          "page": 24,
+          "top": 0.295,
+          "bottom": 0.343
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K02-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 4,
+      "group_title": "习题2.3",
+      "context_needed": false
+    },
+    "id": "SRC-PS3-E005-004",
+    "kind": "exercise",
+    "title": "习题2.3 · 第 4 题",
+    "source_pages": [
+      24
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-001": {
+    "prompt": "1. 已知A⊂B，P(A)=0.4，P(B)=0.6。求：(1) P(Ā),P(B̄)；(2) P(A∪B)；(3) P(AB)；(4) P(B̄A),P(ĀB̄)；(5) P(ĀB)。",
+    "solution": "(1) 0.6,0.4；(2) 0.6；(3) 0.4；(4) 0,0.4；(5) 0.2。",
+    "explanation": [
+      "由A⊂B，AB=A、A∪B=B、AB̄=∅、ĀB̄=B̄、ĀB=B−A，逐项代入即可。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第25页（原书第15页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 1 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 15,
+      "pdf_page": 25,
+      "segments": [
+        {
+          "page": 25,
+          "top": 0.8067,
+          "bottom": 0.84674
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      25
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-002": {
+    "prompt": "2. 数学协会100人，今年数学竞赛36人、数学建模28人、统计建模18人；两两同时参加人数依次22、12、9；三项都参加4人。求随机会员至少参加一项的概率。",
+    "solution": "P=(36+28+18−22−12−9+4)/100=43/100。",
+    "explanation": [
+      "用三事件容斥公式：先加三个单项人数，再减重复计算的两两交，最后加回被多减一次的三重交。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第25,26页（原书第15,16页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 2 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 15,
+      "pdf_page": 25,
+      "segments": [
+        {
+          "page": 25,
+          "top": 0.84474,
+          "bottom": 0.963
+        },
+        {
+          "page": 26,
+          "top": 0.055,
+          "bottom": 0.11182
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      25,
+      26
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-003": {
+    "prompt": "3. P(A)=0.5，P(B)=0.7，P(A∪B)=0.8，求P(A−B)、P(B−A)。",
+    "solution": "P(AB)=0.5+0.7−0.8=0.4；P(A−B)=0.1，P(B−A)=0.3。",
+    "explanation": [
+      "A−B与AB把A分成互斥两部分，故P(A−B)=P(A)−P(AB)；对B同理。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第26页（原书第16页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 3 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 16,
+      "pdf_page": 26,
+      "segments": [
+        {
+          "page": 26,
+          "top": 0.10982,
+          "bottom": 0.1313
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      26
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-004": {
+    "prompt": "4. 新生中28%会钢琴，7%会小提琴，5%两种都会。随机选一人求：(1) 两种都不会；(2) 会钢琴但不会小提琴的概率。",
+    "solution": "(1) 1−(0.28+0.07−0.05)=0.70；(2) 0.28−0.05=0.23。",
+    "explanation": [
+      "先用容斥算至少会一种的概率0.30，其对立事件为都不会。只会钢琴要从会钢琴的人中扣掉两种都会的人。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第26页（原书第16页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 4 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 16,
+      "pdf_page": 26,
+      "segments": [
+        {
+          "page": 26,
+          "top": 0.1293,
+          "bottom": 0.34388
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      26
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-005": {
+    "prompt": "5. 外语选修中德语28%、法语26%、西班牙语16%；德法12%、德西6%、法西4%；三门都修2%。求：(1) 一位学生三门均未修；(2) 只修一门；(3) 随机选两位学生，至少一位修第二外语的概率。",
+    "solution": "(1) 1−(0.28+0.26+0.16−0.12−0.06−0.04+0.02)=0.50。(2) 0.28+0.26+0.16−2(0.12+0.06+0.04)+3×0.02=0.32。(3) 按两次独立随机选取模型，1−0.5²=0.75。",
+    "explanation": [
+      "只修德、法、西的概率分别0.12、0.12、0.08。第(3)若实际为N名学生中不放回取2名（N/2名未修），精确结果为1−[(N/2)(N/2−1)]/[N(N−1)]；题目未给N，通常按独立抽样计算0.75。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第26页（原书第16页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 5 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 16,
+      "pdf_page": 26,
+      "segments": [
+        {
+          "page": 26,
+          "top": 0.206,
+          "bottom": 0.342
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E006-005",
+    "kind": "exercise",
+    "title": "习题2.4 · 第 5 题",
+    "source_pages": [
+      26
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E006-006": {
+    "prompt": "6. 一次聚会至少多少人，才能使至少两个人生肖相同的概率达到50%？",
+    "solution": "至少5人。n=4时概率1−12×11×10×9/12⁴≈0.427083；n=5时1−12×11×10×9×8/12⁵≈0.618056。",
+    "explanation": [
+      "按12生肖独立、等可能模型，n≤12时无重复概率为12!/(12−n)!/12ⁿ。有重复概率随n递增，比较4人与5人即可确定最小值。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第26,27页（原书第16,17页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E006-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题2.4 · 第 6 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 16,
+      "pdf_page": 26,
+      "segments": [
+        {
+          "page": 26,
+          "top": 0.34188,
+          "bottom": 0.963
+        },
+        {
+          "page": 27,
+          "top": 0.055,
+          "bottom": 0.965
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题2.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      26,
+      27
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-001": {
+    "prompt": "1. 盒中n颗形状相同的珠子，恰1颗彩色，其余单色，一次取k颗，求包含彩色珠子的概率。",
+    "solution": "P=C(n−1,k−1)/C(n,k)=k/n（0≤k≤n）。",
+    "explanation": [
+      "包含彩珠时先固定它，再从n−1颗普通珠中选k−1颗；全部k颗组合等可能。k=0和k=n分别给0和1，符合直观。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第28,29页（原书第18,19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 1 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 18,
+      "pdf_page": 28,
+      "segments": [
+        {
+          "page": 28,
+          "top": 0.8819,
+          "bottom": 0.963
+        },
+        {
+          "page": 29,
+          "top": 0.055,
+          "bottom": 0.11461
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      28,
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-002": {
+    "prompt": "2. 等分为10段的轮盘标0,…,9。0涂绿，奇数红，非零偶数黑。A=｛奇数｝，B=｛黑色｝，求P(A),P(B),P(A∪B),P(AB)。",
+    "solution": "依次为1/2、2/5、9/10、0。",
+    "explanation": [
+      "A={1,3,5,7,9}有5个结果；B={2,4,6,8}有4个；两者互斥，剩0为绿色。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第29页（原书第19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 2 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 19,
+      "pdf_page": 29,
+      "segments": [
+        {
+          "page": 29,
+          "top": 0.11261,
+          "bottom": 0.1919
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-003": {
+    "prompt": "3. 手机支付方式A,B,C使用比例依次10%、30%、5%；AB=8%、AC=2%、BC=4%、ABC=1%。求：(1) 仅一种；(2) 至少两种；(3) A,B有返利，C无返利，至少使用一种返利方式；(4) 使用一种返利方式和一种无返利方式；(5) 不使用手机支付的概率。",
+    "solution": "(1) 0.20；(2) 0.12；(3) 0.32；(4) 若“一种”指恰好一种返利方式，则0.04；若只要求至少一种返利且使用C，则0.05；(5) 0.68。",
+    "explanation": [
+      "仅A=.01、仅B=.19、仅C=0，合计.20。至少两种=.08+.02+.04−2×.01=.12；A∪B=.10+.30−.08=.32。第(4)恰用A,C而不用B为.01，恰用B,C而不用A为.03，合计.04；若不排除三者都用，再加.01。全部并集=.45−.14+.01=.32。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第29页（原书第19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 3 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 19,
+      "pdf_page": 29,
+      "segments": [
+        {
+          "page": 29,
+          "top": 0.1899,
+          "bottom": 0.36902
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-004": {
+    "prompt": "4. A,B,C为随机事件，P(A)=P(B)=P(C)=1/4，P(AB)=0，P(AC)=P(BC)=1/16。求P(A∪B)、P(A∪B∪C)、P(ĀB̄C̄)。",
+    "solution": "P(A∪B)=1/2；P(A∪B∪C)=5/8；P(ĀB̄C̄)=3/8。",
+    "explanation": [
+      "ABC⊂AB，故P(ABC)=0。容斥得P(A∪B∪C)=3/4−0−1/16−1/16=5/8。由德摩根律，ĀB̄C̄=(A∪B∪C)的补，概率为1−5/8。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01",
+      "PS-K02-02",
+      "PS-K02-03",
+      "PS-K02-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第29页（原书第19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 4 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 19,
+      "pdf_page": 29,
+      "segments": [
+        {
+          "page": 29,
+          "top": 0.36702,
+          "bottom": 0.4139
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01",
+        "PS-K02-02",
+        "PS-K02-03",
+        "PS-K02-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-005": {
+    "prompt": "5. n人各持编号1,…,n的票，随机坐入n个同号座位，求至少一人票号与座位号一致的概率。",
+    "solution": "P=Σₖ₌₁ⁿ(−1)ᵏ⁺¹/k!=1−1/2!+1/3!−⋯+(−1)ⁿ⁺¹/n!。",
+    "explanation": [
+      "令Aᵢ表示第i人坐对。指定k人全坐对时，余下(n−k)!种排列，共n!种，所以P(指定k人坐对)=(n−k)!/n!。容斥中同阶有C(n,k)项，乘积化为1/k!。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第29页（原书第19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 5 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 19,
+      "pdf_page": 29,
+      "segments": [
+        {
+          "page": 29,
+          "top": 0.4119,
+          "bottom": 0.5546
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E007-006": {
+    "prompt": "6. 盒中r球标1,…,r，随机抽n球记录号码后全部放回，再抽n球并记录，求两次样本恰有k个相同号码的概率。",
+    "solution": "P=C(n,k)C(r−n,n−k)/C(r,n)，max(0,2n−r)≤k≤n，其余为0（两次各为不放回抽n个，n≤r）。",
+    "explanation": [
+      "固定第一份样本的n个号码。第二次要从该n个中取k个、从余r−n个中取n−k个。第二份样本全部C(r,n)种等可能，条件概率与第一份具体样本无关，因此也是无条件概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K02-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第29页（原书第19页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E007-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第二章综合题 · 第 6 题",
+      "chapter": 2,
+      "section_id": "PS-C02-S4",
+      "printed_page": 19,
+      "pdf_page": 29,
+      "segments": [
+        {
+          "page": 29,
+          "top": 0.5526,
+          "bottom": 0.649
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "第二章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K02-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      29
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-001": {
+    "prompt": "1. 已知P(A)=0.5，P(B)=0.6，P(B|A)=0.8，求P(AB)及P(ĀB̄)。",
+    "solution": "P(AB)=0.4；P(ĀB̄)=0.3。",
+    "explanation": [
+      "乘法公式得P(AB)=P(A)P(B|A)=0.5×0.8=0.4。容斥得P(A∪B)=0.5+0.6−0.4=0.7，再用德摩根律得P(ĀB̄)=1−0.7。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第32页（原书第22页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 22,
+      "pdf_page": 32,
+      "segments": [
+        {
+          "page": 32,
+          "top": 0.78787,
+          "bottom": 0.83538
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      32
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-002": {
+    "prompt": "2. 某人投入基金的概率0.58、购买股票的概率0.28，两种投资都做的概率0.19。(1) 已投入基金，再买股票的概率；(2) 已买股票，再投入基金的概率。",
+    "solution": "(1) 19/58≈0.327586；(2) 19/28≈0.678571。",
+    "explanation": [
+      "令A为基金投资，B为股票投资。分别计算P(B|A)=P(AB)/P(A)，P(A|B)=P(AB)/P(B)。条件不同，分母不同。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第32页（原书第22页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 22,
+      "pdf_page": 32,
+      "segments": [
+        {
+          "page": 32,
+          "top": 0.834,
+          "bottom": 0.921
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      32
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-003": {
+    "prompt": "3. 某大学新生男女比例3∶2，电信学院新生占全校新生10%，其中女生占5%。随机抽取一名新生，已知为女生，求来自电信学院的概率。",
+    "solution": "P(电信|女生)=0.1×0.05/0.4=0.0125。",
+    "explanation": [
+      "全校女生比例2/(3+2)=0.4；同时属于电信学院且为女生的比例为0.1×0.05=0.005。条件概率为交集除以女生比例。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第33页（原书第23页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 23,
+      "pdf_page": 33,
+      "segments": [
+        {
+          "page": 33,
+          "top": 0.09914,
+          "bottom": 0.15958
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      33
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-004": {
+    "prompt": "4. 假设男女出生概率均0.5，一对夫妻有两个孩子。(1) 已知老大为姐姐，求老二为弟弟的概率；(2) 已知有一个是女孩，求另一个是男孩的概率。",
+    "solution": "(1) 1/2；(2) 2/3。",
+    "explanation": [
+      "按两胎性别独立，四个等可能有序结果为男男、男女、女男、女女。(1) 条件下剩女男、女女。(2) “有一个”按至少一个女孩理解，剩男女、女男、女女，其中恰一男一女有两种。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第33页（原书第23页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 23,
+      "pdf_page": 33,
+      "segments": [
+        {
+          "page": 33,
+          "top": 0.15758,
+          "bottom": 0.21845
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      33
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-005": {
+    "prompt": "5. 100个零件中次品率10%，每次任取一个且不放回，求第三次才取得正品的概率。",
+    "solution": "P=(10/100)(9/99)(90/98)=9/1078≈0.008349。",
+    "explanation": [
+      "第三次才取得正品要求前两次均次品、第三次正品。取走两个次品后，正品仍90个、总数剩98。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第33页（原书第23页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 23,
+      "pdf_page": 33,
+      "segments": [
+        {
+          "page": 33,
+          "top": 0.21645,
+          "bottom": 0.25741
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      33
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-006": {
+    "prompt": "6. 驾驶证四科依次考试，通过概率依次0.95、0.6、0.5、0.9，前科通过方可考下一科。(1) 求拿到证的概率；(2) 已知未拿到证，求科目二场地考试未通过的概率。",
+    "solution": "(1) 0.95×0.6×0.5×0.9=0.2565；(2) 0.95×0.4/(1−0.2565)=760/1487≈0.511096。",
+    "explanation": [
+      "四个通过率分别是在已具备参加资格条件下的通过率，用连乘公式。(2) 将“科目二没有通过”理解为参加科目二后失败，其概率0.95×0.4，且必然没有拿到证。若把因科目一失败未参加也算作“科目二未通过”，分子应为1−0.95×0.6=0.43；两种口径应区分。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第33页（原书第23页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 6 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 23,
+      "pdf_page": 33,
+      "segments": [
+        {
+          "page": 33,
+          "top": 0.25541,
+          "bottom": 0.37472
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      33
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E008-007": {
+    "prompt": "7. 给定P(A)=0.5，P(B)=0.3，P(AB)=0.15。验证P(A|B)=P(A)、P(A|B̄)=P(A)、P(B|A)=P(B)、P(B|Ā)=P(B)。",
+    "solution": "P(A|B)=0.15/0.3=0.5；P(A|B̄)=(0.5−0.15)/0.7=0.5；P(B|A)=0.15/0.5=0.3；P(B|Ā)=(0.3−0.15)/0.5=0.3，四式均成立。",
+    "explanation": [
+      "各条件事件概率均大于0，条件概率有定义。P(AB)=P(A)P(B)，所以A,B独立，取补后仍独立；这里逐式代入也给出了直接验证。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第33页（原书第23页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E008-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.1 · 第 7 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S1",
+      "printed_page": 23,
+      "pdf_page": 33,
+      "segments": [
+        {
+          "page": 33,
+          "top": 0.37272,
+          "bottom": 0.4506
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题3.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      33
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E009-001": {
+    "prompt": "1. 甲袋6红4白，乙袋8红6白。求：(1) 等可能取一袋再任取一球，球为红色；(2) 合并两袋后任取一球，球为红色的概率。",
+    "solution": "(1) (1/2)(6/10)+(1/2)(8/14)=41/70≈0.585714；(2) 14/24=7/12≈0.583333。",
+    "explanation": [
+      "先等概率选袋时以1/2为权重；合袋取球时，每个球等可能，而两袋球数不同，不能仍以1/2加权。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第36页（原书第26页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E009-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.2 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S2",
+      "printed_page": 26,
+      "pdf_page": 36,
+      "segments": [
+        {
+          "page": 36,
+          "top": 0.78752,
+          "bottom": 0.84915
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题3.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      36
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E009-002": {
+    "prompt": "2. 飞机等可能坠毁在三个区域，各区域内黑匣子被发现的概率分别0.4、0.5、0.6。求黑匣子被发现的概率。",
+    "solution": "P=(0.4+0.5+0.6)/3=0.5。",
+    "explanation": [
+      "以坠毁位置为完备事件组，用全概率公式，三个区域的先验概率均为1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第36页（原书第26页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E009-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.2 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S2",
+      "printed_page": 26,
+      "pdf_page": 36,
+      "segments": [
+        {
+          "page": 36,
+          "top": 0.84715,
+          "bottom": 0.8889
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题3.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      36
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E009-003": {
+    "prompt": "3. 某课程期中及格率90%；期中及格者期末及格概率0.8，期中不及格者期末及格概率0.6。求期末及格的概率。",
+    "solution": "P=0.9×0.8+0.1×0.6=0.78。",
+    "explanation": [
+      "按期中是否及格分成互斥完备两组，分别乘条件期末及格率后相加。已从次页恢复完整题面，删除混入的第4题内容。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第36,37页（原书第26,27页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E009-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.2 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S2",
+      "printed_page": 26,
+      "pdf_page": 36,
+      "segments": [
+        {
+          "page": 36,
+          "top": 0.887,
+          "bottom": 0.925
+        },
+        {
+          "page": 37,
+          "top": 0.099,
+          "bottom": 0.138
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题3.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      36,
+      37
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E009-004": {
+    "prompt": "4. 甲袋4白6黑，乙袋4白2黑。先从甲袋任取2球放入乙袋，再从乙袋任取2球，求乙袋取出的2球均为黑球的概率。",
+    "solution": "P=[C(4,2)C(2,2)+C(6,1)C(4,1)C(3,2)+C(6,2)C(4,2)]/[C(10,2)C(8,2)]=2/15。",
+    "explanation": [
+      "设移入黑球数K为0,1,2，其概率依次6/45、24/45、15/45；乙袋随后有8球，黑球数2+K。全概率得(6×1+24×3+15×6)/(45×28)=2/15。源页第27页题号4因手写遮挡被自动OCR漏掉，现逐页核对补录。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第37页（原书第27页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E009-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.2 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S2",
+      "printed_page": 27,
+      "pdf_page": 37,
+      "segments": [
+        {
+          "page": 37,
+          "top": 0.14,
+          "bottom": 0.18
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题3.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E009-004",
+    "kind": "exercise",
+    "title": "习题3.2 · 第 4 题",
+    "source_pages": [
+      37
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E009-005": {
+    "prompt": "5. 盒中m白n黑，任取一球。若不是白球则放回，再抽一球；若是白球则不放回，直接第二次抽取。求第二次取黑球的概率。",
+    "solution": "P=n²/(m+n)²+mn/[(m+n)(m+n−1)]（m+n>1）。",
+    "explanation": [
+      "第一次为黑的概率n/(m+n)，放回后第二次黑的条件概率仍n/(m+n)。第一次为白的概率m/(m+n)，不放回后第二次黑的条件概率n/(m+n−1)。两条互斥路径相加。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第37页（原书第27页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E009-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.2 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S2",
+      "printed_page": 27,
+      "pdf_page": 37,
+      "segments": [
+        {
+          "page": 37,
+          "top": 0.165,
+          "bottom": 0.219
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题3.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      37
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-001": {
+    "prompt": "1. 一道4选1题，80%学生掌握知识点会正确作答，20%未掌握只能随机猜。已知某学生答对，求其已掌握知识点的概率。",
+    "solution": "P=0.8/[0.8+0.2×(1/4)]=16/17≈0.941176。",
+    "explanation": [
+      "答对可能源于会做或猜对。全概率得答对率0.85，再用贝叶斯公式计算掌握且答对占全部答对者的比例。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.34938,
+          "bottom": 0.39827
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-002": {
+    "prompt": "2. 三张牌分别两面红、两面白、一红一白。随机取一张并随机放一面朝上，已知朝上为白色，求另一面也是白色的概率。",
+    "solution": "P=2/3。",
+    "explanation": [
+      "白白牌有两个可朝上的白面，红白牌只有一个；白面朝上的三种等可能基本结果中，两种属于白白牌。也可用贝叶斯：(1/3)×1/[(1/3)×1+(1/3)×1/2]=2/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.39627,
+          "bottom": 0.4685
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-003": {
+    "prompt": "3. 食品处理机投诉按原因和是否在质保期内分类：质保内机械18%、电路13%、外观32%；质保后机械12%、电路22%、外观3%。已知投诉在质保内，求因为外观问题投诉的概率。",
+    "solution": "P=32/(18+13+32)=32/63≈0.507937。",
+    "explanation": [
+      "表中六格是联合比例，总和100%。条件“质保内”把分母限定为第一行总计63%，分子为该行的外观32%。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.4665,
+          "bottom": 0.63312
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-004": {
+    "prompt": "4. A,B,C车间产量分别占25%、35%、40%，各自次品率5%、4%、2%。从全厂任取一件：(1) 求为次品的概率；(2) 已知为次品，分别求来自A,B,C的概率。",
+    "solution": "(1) 0.25×0.05+0.35×0.04+0.4×0.02=0.0345；(2) A为25/69≈0.362319，B为28/69≈0.405797，C为16/69≈0.231884。",
+    "explanation": [
+      "三个车间是完备事件组。其次品贡献分别0.0125、0.014、0.008；将每一贡献除以总次品率0.0345得到后验，三项相加为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.63112,
+          "bottom": 0.71007
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-005": {
+    "prompt": "5. 1000名运动员中100人使用违禁药；使用者90人检出阳性，未使用者5人检出阳性。已知某运动员阳性，求实际使用违禁药的概率。",
+    "solution": "P=90/(90+5)=18/19≈0.947368。",
+    "explanation": [
+      "所有阳性者95名，其中实际使用者90名。原题“5人”是人数，并非5%的假阳性率。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.70807,
+          "bottom": 0.76846
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E010-006": {
+    "prompt": "6. 发报台以0.6、0.4的概率发出点“·”、划“−”。发点后以0.8收到点、0.2收到划；发划后以0.9收到划、0.1收到点。(1) 求收到点的概率；(2) 已知收到点，求确实发点的概率。",
+    "solution": "(1) 0.6×0.8+0.4×0.1=0.52；(2) 0.48/0.52=12/13≈0.923077。",
+    "explanation": [
+      "先以实际发送内容分组，用全概率求接收点的概率；再用贝叶斯，将“发点且收点”概率0.48除以所有收点概率0.52。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第39页（原书第29页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E010-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.3 · 第 6 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S3",
+      "printed_page": 29,
+      "pdf_page": 39,
+      "segments": [
+        {
+          "page": 39,
+          "top": 0.767,
+          "bottom": 0.844
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题3.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      39
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-001": {
+    "prompt": "1. 设A与B相互独立，证明A与B̄相互独立、Ā与B̄相互独立。",
+    "solution": "P(AB̄)=P(A)−P(AB)=P(A)[1−P(B)]=P(A)P(B̄)；P(ĀB̄)=1−P(A∪B)=1−P(A)−P(B)+P(A)P(B)=P(Ā)P(B̄)，故两组均独立。",
+    "explanation": [
+      "用独立的乘积定义证明，不需要除以任何事件概率，所以即使某事件概率0或1也成立。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.36873,
+          "bottom": 0.39198
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-002": {
+    "prompt": "2. 设P(A)>0，证明P(AB|A)≥P(AB|A∪B)。",
+    "solution": "P(AB|A)=P(AB)/P(A)，P(AB|A∪B)=P(AB)/P(A∪B)。因P(A∪B)≥P(A)>0且分子非负，前者≥后者。",
+    "explanation": [
+      "两个交集分别为ABA=AB和AB(A∪B)=AB，故分子相同。原页为大于等于号，自动OCR误作等号，已校正。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.38998,
+          "bottom": 0.41234
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-003": {
+    "prompt": "3. A与B相互独立，P(A)=p，P(B)=q。求P(A∪B)、P(A∪B̄)、P(Ā∪B̄)。",
+    "solution": "依次为p+q−pq、1−q+pq、1−pq。",
+    "explanation": [
+      "第一个用容斥；第二个的补为ĀB，独立得概率(1−p)q；第三个的补为AB，概率pq。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.41034,
+          "bottom": 0.46856
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-004": {
+    "prompt": "4. A与B相互独立，且P(ĀB̄)=1/9，P(AB̄)=P(ĀB)。求P(A)、P(B)。",
+    "solution": "P(A)=P(B)=2/3。",
+    "explanation": [
+      "令p=P(A),q=P(B)。p(1−q)=(1−p)q化简为p=q，且(1−p)(1−q)=1/9。因此(1−p)²=1/9，结合0≤p≤1，只能1−p=1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.46656,
+          "bottom": 0.49911
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-005": {
+    "prompt": "5. 三人独立破译密码，成功概率分别0.25、0.35、0.4，求密码被译出的概率。",
+    "solution": "P=1−(1−0.25)(1−0.35)(1−0.4)=0.7075。",
+    "explanation": [
+      "只要至少一人成功就算译出。对立事件为三人全失败，独立使失败概率可相乘，0.75×0.65×0.6=0.2925。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.49711,
+          "bottom": 0.53275
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E011-006": {
+    "prompt": "6. 六个相同元件接成三条并联支路，每条支路由两个元件串联。每个元件故障概率p，故障相互独立，求装置正常工作概率。",
+    "solution": "P=1−[1−(1−p)²]³。",
+    "explanation": [
+      "一条串联支路须两个元件均正常，其正常概率(1−p)²；三条支路只要有一条正常即可。三支路使用互不重叠元件，独立，故全部失效概率[1−(1−p)²]³。原图3.3的连接关系已转写进题面。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第43页（原书第33页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E011-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.4 · 第 6 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S4",
+      "printed_page": 33,
+      "pdf_page": 43,
+      "segments": [
+        {
+          "page": 43,
+          "top": 0.53075,
+          "bottom": 0.6333
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题3.4",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      43
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-001": {
+    "prompt": "1. 机器一天内故障概率0.2，故障当天停工；一周5个工作日的故障相互独立。求一周恰故障3天的概率。",
+    "solution": "P=C(5,3)0.2³0.8²=0.0512。",
+    "explanation": [
+      "每日故障为成功概率0.2的伯努利试验。选出3个故障日有C(5,3)种，乘固定日序的概率0.2³0.8²。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第44页（原书第34页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 34,
+      "pdf_page": 44,
+      "segments": [
+        {
+          "page": 44,
+          "top": 0.84178,
+          "bottom": 0.88443
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      44
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-002": {
+    "prompt": "2. 飞机起飞准点率0.8，8:00至8:05有5架飞机起飞，求只有一架误点的概率。",
+    "solution": "在各架是否准点独立的模型下，P=C(5,1)0.2×0.8⁴=0.4096。",
+    "explanation": [
+      "误点概率是1−0.8=0.2；“只有一架”是恰一次误点的二项事件。共同天气等依赖情形不由该题模型描述。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第44页（原书第34页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 34,
+      "pdf_page": 44,
+      "segments": [
+        {
+          "page": 44,
+          "top": 0.88243,
+          "bottom": 0.965
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      44
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-003": {
+    "prompt": "3. 灯泡寿命超过1000小时的概率0.2。求三个灯泡使用1000小时后最多只有一个坏了的概率。",
+    "solution": "假设三个寿命独立，P=0.2³+C(3,1)0.8×0.2²=0.104。",
+    "explanation": [
+      "存活概率0.2、损坏概率0.8。最多一个坏包括全未坏和恰一个坏，分别0.008与0.096，合计0.104。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第45页（原书第35页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 35,
+      "pdf_page": 45,
+      "segments": [
+        {
+          "page": 45,
+          "top": 0.111,
+          "bottom": 0.151
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E012-003",
+    "kind": "exercise",
+    "title": "习题3.5 · 第 3 题",
+    "source_pages": [
+      45
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-004": {
+    "prompt": "4. 宾馆有4部电梯，某时刻每部正在运行的概率0.75。求：(1) 至少1部运行；(2) 恰有一半运行；(3) 全部运行的概率。",
+    "solution": "各电梯运行状态独立时：(1) 1−0.25⁴=255/256；(2) C(4,2)0.75²0.25²=27/128；(3) 0.75⁴=81/256。",
+    "explanation": [
+      "把运行台数记为X，则X~B(4,0.75)。第(1)排除0部运行；第(2)一半即2部；第(3)为4部运行。独立性是本节二项模型的使用条件。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第45页（原书第35页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 35,
+      "pdf_page": 45,
+      "segments": [
+        {
+          "page": 45,
+          "top": 0.154,
+          "bottom": 0.23
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E012-004",
+    "kind": "exercise",
+    "title": "习题3.5 · 第 4 题",
+    "source_pages": [
+      45
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-005": {
+    "prompt": "5. 三次独立试验中A每次发生概率相等，已知至少发生一次的概率19/27，求单次P(A)。",
+    "solution": "P(A)=1/3。",
+    "explanation": [
+      "令单次概率p。至少一次的概率1−(1−p)³=19/27，所以(1−p)³=8/27，1−p=2/3，p=1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第45页（原书第35页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 35,
+      "pdf_page": 45,
+      "segments": [
+        {
+          "page": 45,
+          "top": 0.234,
+          "bottom": 0.281
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E012-005",
+    "kind": "exercise",
+    "title": "习题3.5 · 第 5 题",
+    "source_pages": [
+      45
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E012-006": {
+    "prompt": "6. 抛一枚均匀骰子，至少抛多少次才能使出现过6的概率不低于0.9？",
+    "solution": "至少13次。",
+    "explanation": [
+      "独立抛n次，至少一次6的概率1−(5/6)ⁿ≥0.9，等价n≥ln(0.1)/ln(5/6)≈12.6293，取最小整数13。n=12概率约0.887843，n=13约0.906536。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-05"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第45页（原书第35页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E012-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题3.5 · 第 6 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S5",
+      "printed_page": 35,
+      "pdf_page": 45,
+      "segments": [
+        {
+          "page": 45,
+          "top": 0.287,
+          "bottom": 0.306
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题3.5",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-05"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E012-006",
+    "kind": "exercise",
+    "title": "习题3.5 · 第 6 题",
+    "source_pages": [
+      45
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-001": {
+    "prompt": "1. 某人晚上外出自修概率0.9，外出时等可能去图书馆、通宵教室、咖啡店。朋友在咖啡店和通宵教室均未找到他，求在图书馆的概率。",
+    "solution": "P=0.3/(0.3+0.1)=3/4。",
+    "explanation": [
+      "未在另外两处意味着处于图书馆或未外出。图书馆概率0.9/3=0.3，未外出0.1，条件概率0.3/0.4。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第46页（原书第36页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 1 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 36,
+      "pdf_page": 46,
+      "segments": [
+        {
+          "page": 46,
+          "top": 0.63469,
+          "bottom": 0.67733
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      46
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-002": {
+    "prompt": "2. 袋中2白3黑，不放回依次取两球。求：(1) 两球均白；(2) 第二次白；(3) 已知第二次白，第一次也白的概率。",
+    "solution": "(1) (2/5)(1/4)=1/10；(2) 2/5；(3) (1/10)/(2/5)=1/4。",
+    "explanation": [
+      "第二次白也可全概率算为(2/5)(1/4)+(3/5)(2/4)=2/5；由于取样位置对称，其边际白球概率与第一次相同。第三问须用条件概率，不能直接用2/5。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第46页（原书第36页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 2 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 36,
+      "pdf_page": 46,
+      "segments": [
+        {
+          "page": 46,
+          "top": 0.67533,
+          "bottom": 0.75904
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      46
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-003": {
+    "prompt": "3. 双胞胎均为男孩、均为女孩的概率分别为a、b。已知其中一个是男孩，求另一个也为男孩的概率。",
+    "solution": "按“至少有一个男孩”的条件，P=a/(1−b)，其中b<1。",
+    "explanation": [
+      "“至少一个男孩”排除双女孩，概率1−b；其中两男孩概率a。若信息来自随机指定一名孩子后得知为男孩，则条件机制不同，结果为2a/(1+a−b)，原题通常采用至少一个的解释。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第46页（原书第36页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 3 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 36,
+      "pdf_page": 46,
+      "segments": [
+        {
+          "page": 46,
+          "top": 0.75704,
+          "bottom": 0.79968
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      46
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-004": {
+    "prompt": "4. 袋中2n−1个白球、2n个黑球，不放回任取n个，发现它们同色，求为黑色的概率。",
+    "solution": "P=C(2n,n)/[C(2n,n)+C(2n−1,n)]=2/3（n≥1）。",
+    "explanation": [
+      "同色只分全黑与全白。C(2n−1,n)=C(2n,n)/2，因此条件比值恒为2/3，与n无关。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第46页（原书第36页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 4 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 36,
+      "pdf_page": 46,
+      "segments": [
+        {
+          "page": 46,
+          "top": 0.79768,
+          "bottom": 0.84076
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      46
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-005": {
+    "prompt": "5. 甲乙轮流射击，首射者等可能。甲乙各自第一次命中概率分别0.4、0.5，以后各人每次命中率在上次基础上增加0.05。已知第3次射击首次命中，求甲先射的概率。",
+    "solution": "P=[0.5×0.6×0.5×0.45]/[0.5×0.6×0.5×0.45+0.5×0.5×0.6×0.55]=0.45。",
+    "explanation": [
+      "甲先射时三枪顺序甲乙甲，前两枪失败概率0.6×0.5，第三枪甲的第二次命中率0.45。乙先射时第三枪乙命中率0.55。两种先验均为1/2，用贝叶斯求比。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第46,47页（原书第36,37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 5 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 36,
+      "pdf_page": 46,
+      "segments": [
+        {
+          "page": 46,
+          "top": 0.83876,
+          "bottom": 0.963
+        },
+        {
+          "page": 47,
+          "top": 0.055,
+          "bottom": 0.0945
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      46,
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-006": {
+    "prompt": "6. A,B,C为随机事件，A与C互不相容，P(AB)=1/3，P(C)=1/4。求P(AB|C̄)。",
+    "solution": "P=(1/3)/(3/4)=4/9。",
+    "explanation": [
+      "A与C互斥推出AB⊂C̄，故P(ABC̄)=P(AB)=1/3。条件C̄的概率为3/4。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 6 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.0925,
+          "bottom": 0.1294
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-007": {
+    "prompt": "7. A与B相互独立，P(B)=0.7，P(A−B)=0.2，求P(B−A)。",
+    "solution": "P(A)=2/3；P(B−A)=7/30≈0.233333。",
+    "explanation": [
+      "独立给出P(A−B)=P(AB̄)=P(A)×0.3=0.2。再算P(BĀ)=0.7×(1−2/3)。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 7 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.1274,
+          "bottom": 0.1488
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-008": {
+    "prompt": "8. A与B独立，A与C独立，BC=∅，P(A)=P(B)=1/2，P(AC|AB∪C)=1/4。求P(C)。",
+    "solution": "P(C)=1/4。",
+    "explanation": [
+      "令c=P(C)。P(AC)=c/2；AB与C互斥，因此P(AB∪C)=1/4+c。且AC⊂AB∪C，条件概率为(c/2)/(1/4+c)=1/4，解得c=1/4。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 8 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.1468,
+          "bottom": 0.2205
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-009": {
+    "prompt": "9. 甲乙各自独立抛一枚均匀硬币n次，求两人正面次数相等的概率。",
+    "solution": "P=Σₖ₌₀ⁿ C(n,k)²/4ⁿ=C(2n,n)/4ⁿ。",
+    "explanation": [
+      "两人都恰k次正面的概率为[C(n,k)/2ⁿ]²，不同k互斥相加。用范德蒙德恒等式ΣC(n,k)C(n,n−k)=C(2n,n)化简。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 9 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.2185,
+          "bottom": 0.24137
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-010": {
+    "prompt": "10. 盒中2颗A型骰子、1颗B型骰子。A型2面红4面白，B型3面红3面白。随机取2颗掷出，求：(1) 均红；(2) 颜色相同的概率。",
+    "solution": "(1) (1/3)(1/3)²+(2/3)(1/3)(1/2)=4/27；(2) (1/3)[(1/3)²+(2/3)²]+(2/3)[(1/3)(1/2)+(2/3)(1/2)]=14/27。",
+    "explanation": [
+      "两颗取为AA的概率1/3、AB的概率2/3。注意A型红面为2/6=1/3，不能误用4/6。分别对AA、AB求条件概率后加权；均白为10/27，加上均红4/27得14/27。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-01",
+      "PS-K03-02",
+      "PS-K03-03",
+      "PS-K03-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-010",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 10 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.23937,
+          "bottom": 0.2983
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-01",
+        "PS-K03-02",
+        "PS-K03-03",
+        "PS-K03-04"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E013-011": {
+    "prompt": "11. Pólya罐：起初a白b黑，每次随机取一球，观察颜色后与c颗同色球一并放回。用归纳法证明第k次取白的概率恒为a/(a+b)。",
+    "solution": "k=1显然。假设任意初始白黑球数下第k−1次取白概率等于初始白球比例。条件于第一次颜色，第k次白球概率=[a/(a+b)]×[(a+c)/(a+b+c)]+[b/(a+b)]×[a/(a+b+c)]=a/(a+b)，故对任意正整数k成立。",
+    "explanation": [
+      "关键是把归纳命题对任意初始球数同时提出。第一次白后，余下过程是初始(a+c,b)的同类罐；第一次黑后是(a,b+c)。两项合并分子a(a+c)+ab=a(a+b+c)，约去分母得到结论。要求a,b为非负整数、a+b>0，c为可加入的非负整数。"
+    ],
+    "knowledge_ids": [
+      "PS-K03-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第47页（原书第37页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E013-011",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第三章综合题 · 第 11 题",
+      "chapter": 3,
+      "section_id": "PS-C03-S6",
+      "printed_page": 37,
+      "pdf_page": 47,
+      "segments": [
+        {
+          "page": 47,
+          "top": 0.2963,
+          "bottom": 0.96
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "第三章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K03-02"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      47
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E014-001": {
+    "prompt": "1. 一次抛三枚均匀硬币，X为正面数，求分布律与分布函数。",
+    "solution": "P(X=k)=C(3,k)/8，k=0,1,2,3，概率依次1/8、3/8、3/8、1/8。F(x)=0(x<0)；1/8(0≤x<1)；1/2(1≤x<2)；7/8(2≤x<3)；1(x≥3)。",
+    "explanation": [
+      "三枚硬币结果独立，各正面率1/2，因此X~B(3,1/2)。分布函数F(x)=P(X≤x)，在每个整数取值处跳跃该点的概率，必须取右连续区间。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第50页（原书第40页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E014-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.1 · 第 1 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S1",
+      "printed_page": 40,
+      "pdf_page": 50,
+      "segments": [
+        {
+          "page": 50,
+          "top": 0.78238,
+          "bottom": 0.80472
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题4.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      50
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E014-002": {
+    "prompt": "2. 4000名新生选课，选1、2、3、4门的人数分别500、1000、2000、500。X为随机一名学生选课门数，求分布律与分布函数。",
+    "solution": "X=1,2,3,4的概率依次1/8、1/4、1/2、1/8。F(x)=0(x<1)；1/8(1≤x<2)；3/8(2≤x<3)；7/8(3≤x<4)；1(x≥4)。",
+    "explanation": [
+      "用各组人数除以总人数4000得到分布律；从小到大累加得到F，概率总和为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第50页（原书第40页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E014-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.1 · 第 2 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S1",
+      "printed_page": 40,
+      "pdf_page": 50,
+      "segments": [
+        {
+          "page": 50,
+          "top": 0.80272,
+          "bottom": 0.86532
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题4.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      50
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E014-003": {
+    "prompt": "3. 袋中6球标数−3,−3,1,1,1,2，任取一球且各球等可能。X为球上数字，求分布律与分布函数。",
+    "solution": "P(X=−3)=1/3，P(X=1)=1/2，P(X=2)=1/6。F(x)=0(x<−3)；1/3(−3≤x<1)；5/6(1≤x<2)；1(x≥2)。",
+    "explanation": [
+      "数字相同的球合并成同一个随机变量取值，其概率等于对应球数/6。不要把6个球当作6个不同X值。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第50,51页（原书第40,41页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E014-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.1 · 第 3 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S1",
+      "printed_page": 40,
+      "pdf_page": 50,
+      "segments": [
+        {
+          "page": 50,
+          "top": 0.86332,
+          "bottom": 0.963
+        },
+        {
+          "page": 51,
+          "top": 0.055,
+          "bottom": 0.09149
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题4.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      50,
+      51
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E014-004": {
+    "prompt": "4. 袋中5球编号1,2,3,4,5，随机取3球，X为最大号码，求分布律与分布函数。",
+    "solution": "P(X=3)=1/10，P(X=4)=3/10，P(X=5)=3/5。F(x)=0(x<3)；1/10(3≤x<4)；2/5(4≤x<5)；1(x≥5)。",
+    "explanation": [
+      "最大为k时必须取k号，并从1,…,k−1中选2球，故P(X=k)=C(k−1,2)/C(5,3)，k=3,4,5。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第51页（原书第41页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E014-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.1 · 第 4 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S1",
+      "printed_page": 41,
+      "pdf_page": 51,
+      "segments": [
+        {
+          "page": 51,
+          "top": 0.08949,
+          "bottom": 0.1648
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题4.1",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      51
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-001": {
+    "prompt": "1. 判断哪些数列可作分布律并说明：(1) pᵢ=i/15，i=0,1,2,3,4,5；(2) pᵢ=(5−i²)/6，i=0,1,2,3；(3) pᵢ=(i+1)/25，i=1,2,3,4,5。",
+    "solution": "只有(1)可以。(1) 非负且Σpᵢ=(0+1+2+3+4+5)/15=1；(2) p₃=−2/3<0，不可以；(3) Σpᵢ=(2+3+4+5+6)/25=4/5≠1，不可以。",
+    "explanation": [
+      "分布律必须同时满足非负性、归一性。第(2)虽然总和(20−14)/6=1，但出现负概率仍不合法。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 1 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.15664,
+          "bottom": 0.28794
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-002": {
+    "prompt": "2. 确定C使P(X=i)=C/2ⁱ，i=0,1,2,3,4为分布律，并求：(1) P(X>2)；(2) P(1/2<X<5/2)；(3) F(3)。",
+    "solution": "C=16/31；(1) 3/31；(2) 12/31；(3) 30/31。",
+    "explanation": [
+      "Σᵢ₌₀⁴2⁻ⁱ=31/16，故C=16/31。五个概率依次16/31、8/31、4/31、2/31、1/31。(1) 取3,4；(2) 取1,2；(3) 累加0到3。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 2 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.28594,
+          "bottom": 0.36075
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-003": {
+    "prompt": "3. 离散型随机变量Y满足P(Y=y)=(y+2)²/c，y=−1,0,1,2。(1) 求c；(2) 求Y取正值的概率；(3) 已知Y取正值，求Y=2的概率。",
+    "solution": "(1) c=30；(2) P(Y>0)=5/6；(3) P(Y=2|Y>0)=16/25。",
+    "explanation": [
+      "四个权重为1、4、9、16，和30。Y>0包含取值1、2，所以概率(9+16)/30=5/6；条件Y>0下，Y=2的权重为16，条件总权重25，故为16/25。已放大核对原书“正值”两处，不能误读为“最小值”或“偶数”。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 3 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.35875,
+          "bottom": 0.41592
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-004": {
+    "prompt": "4. 独立射击5次，每次命中概率0.6，X为命中次数，求分布律。",
+    "solution": "X~B(5,0.6)，P(X=k)=C(5,k)0.6ᵏ0.4⁵⁻ᵏ，k=0,…,5。六个概率依次0.01024、0.0768、0.2304、0.3456、0.2592、0.07776。",
+    "explanation": [
+      "每次命中/未中是同成功率的独立伯努利试验。固定k次命中位置概率0.6ᵏ0.4⁵⁻ᵏ，共C(5,k)个互斥位置组合；六项相加为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 4 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.41392,
+          "bottom": 0.45475
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-005": {
+    "prompt": "5. 一批10正品3次品，逐件抽取直到取得正品，X为抽取次数。分别求：(1) 每次放回；(2) 每次不放回；(3) 每取一件后总放回一件正品时X的分布律。",
+    "solution": "(1) P(X=k)=(3/13)ᵏ⁻¹(10/13)，k=1,2,…。(2) k=1,2,3,4的概率依次10/13、5/26、5/143、1/286，其他为0。(3) k=1,2,3,4的概率依次10/13、33/169、72/2197、6/2197，其他为0。",
+    "explanation": [
+      "(1) 每次正品率固定10/13，是几何分布。(2) 首次正品在k次要求前k−1个均次品：P=∏ⱼ₌₀ᵏ⁻²[(3−j)/(13−j)]×10/(14−k)。(3) 每取次品后换成正品，总数仍13、次品依次3,2,1,0，所以P=∏ⱼ₌₀ᵏ⁻²[(3−j)/13]×(9+k)/13。两个有限分布均可验算总和为1。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 5 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.45275,
+          "bottom": 0.55228
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-006": {
+    "prompt": "6. X~B(6,p)，已知P(X=1)=P(X=5)，求p与P(X=2)。",
+    "solution": "若0<p<1，则p=1/2，P(X=2)=15/64。若允许退化参数p=0或1，它们也满足给定等式，此时P(X=2)=0。",
+    "explanation": [
+      "等式为6p(1−p)⁵=6p⁵(1−p)。在0<p<1时约去6p(1−p)，得(1−p)⁴=p⁴，再由非负得1−p=p。原题未显式排除0、1，完整解须保留这两个边界情况。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 6 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.55028,
+          "bottom": 0.5717
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-007": {
+    "prompt": "7. 10道四选一题，每题只有一个正确选项。学生每题都独立随机猜，求：(1) 恰答对1题；(2) 至少答对9题的概率。",
+    "solution": "(1) C(10,1)(1/4)(3/4)⁹=98415/524288≈0.187712；(2) C(10,9)(1/4)⁹(3/4)+(1/4)¹⁰=31/1048576≈0.0000295639。",
+    "explanation": [
+      "答对数X~B(10,1/4)；至少9题包括恰9题和全10题，两项互斥相加。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 7 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.5697,
+          "bottom": 0.63039
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-008": {
+    "prompt": "8. 120接呼中心在长度t小时内接到的紧急呼救次数X~Poisson(0.5t)，只与时长有关。求：(1) 12:00至15:00没有呼救；(2) 12:00至17:00至少一次呼救的概率。",
+    "solution": "(1) e⁻¹·⁵≈0.223130；(2) 1−e⁻²·⁵≈0.917915。",
+    "explanation": [
+      "分别代入t=3、5，泊松参数为1.5、2.5。零次概率e⁻λ，至少一次用1减零次。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 8 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.62839,
+          "bottom": 0.7085
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-009": {
+    "prompt": "9. 一天垃圾电话数X~Poisson(3)。(1) 求至少6个的概率；(2) 收到不超过2个称为“清静日”，求其概率；(3) 求未来一周有4个清静日的概率。",
+    "solution": "(1) 1−e⁻³Σₖ₌₀⁵3ᵏ/k!≈0.0839179；(2) q=e⁻³(1+3+9/2)=8.5e⁻³≈0.423190；(3) 在各天独立模型下，C(7,4)q⁴(1−q)³≈0.215431。",
+    "explanation": [
+      "泊松概率P(X=k)=e⁻³3ᵏ/k!；(1) 排除0至5次。(3) 清静天数按B(7,q)处理，需要各天相互独立。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 9 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.7065,
+          "bottom": 0.7672
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-010": {
+    "prompt": "10. 每月某商品销量X~Poisson(4)，月初至少进货多少才能以99%的概率满足需求？",
+    "solution": "至少进货9件。",
+    "explanation": [
+      "需最小整数m使P(X≤m)≥0.99。逐项累加泊松概率得P(X≤8)≈0.9786366<0.99，P(X≤9)≈0.9918678≥0.99，故最小m=9。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-010",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 10 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.7652,
+          "bottom": 0.84443
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-011": {
+    "prompt": "11. 某汽车站有大量汽车通过，每辆汽车在某日某段时间出事故的概率0.0001。某日该时段有1000辆车通过，求事故次数不少于2的概率。",
+    "solution": "假设各车独立，精确概率1−0.9999¹⁰⁰⁰−1000×0.0001×0.9999⁹⁹⁹≈0.004674768；泊松近似1−e⁻⁰·¹(1+0.1)≈0.004678840。",
+    "explanation": [
+      "事故数为B(1000,0.0001)，其np=0.1，n大p小，可用Poisson(0.1)近似。不少于2指2次及以上，应排除0次和1次。已放大核对原书“不少于”并同时验算精确二项与泊松结果，误差约4.07×10⁻⁶。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-011",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 11 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.806,
+          "bottom": 0.848
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E015-011",
+    "kind": "exercise",
+    "title": "习题4.2 · 第 11 题",
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-012": {
+    "prompt": "12. 某村10000人，百岁以上者比例0.05%，求百岁以上人数超过10人的概率。",
+    "solution": "按每人独立且概率0.0005的模型，精确概率1−Σₖ₌₀¹⁰C(10000,k)0.0005ᵏ0.9995¹⁰⁰⁰⁰⁻ᵏ≈0.013672607；泊松近似1−e⁻⁵Σₖ₌₀¹⁰5ᵏ/k!≈0.013695269。",
+    "explanation": [
+      "百分数0.05%=0.0005，np=5。超过10指11人或以上，所以对立事件累计到10。题目所给总体比例用于建立随机人数模型，非断言村中必定已有固定5名百岁者。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57页（原书第47页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-012",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 12 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.84243,
+          "bottom": 0.88414
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-013": {
+    "prompt": "13. 鸡下蛋数X~Poisson(λ)，封闭鸡舍只能观察到X>0时输出的鸡蛋数Y。已知Y分布等于X在X>0下的条件分布，求Y的分布律。",
+    "solution": "P(Y=k)=e⁻λλᵏ/[k!(1−e⁻λ)]=λᵏ/[k!(e^λ−1)]，k=1,2,…，λ>0。",
+    "explanation": [
+      "P(Y=k)=P(X=k|X>0)=P(X=k)/P(X>0)。分母1−e⁻λ排除了零次，是零截断泊松分布；对k≥1求和等于1。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第57,58页（原书第47,48页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-013",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 13 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 47,
+      "pdf_page": 57,
+      "segments": [
+        {
+          "page": 57,
+          "top": 0.88214,
+          "bottom": 0.963
+        },
+        {
+          "page": 58,
+          "top": 0.055,
+          "bottom": 0.15008
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      57,
+      58
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-014": {
+    "prompt": "14. n把钥匙中只有一把可开门，每次随机取一把尝试，X为首次开门时试过的钥匙数。求：(1) 有放回；(2) 不放回的分布律。",
+    "solution": "(1) P(X=k)=(1−1/n)ᵏ⁻¹/n，k≥1。(2) P(X=k)=1/n，k=1,…,n。n=1时两者均P(X=1)=1。",
+    "explanation": [
+      "有放回每次成功概率1/n且独立，为几何分布。不放回相当于将钥匙随机排序，唯一正确钥匙等可能处于n个位置，因此首开门位置均匀。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第58页（原书第48页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-014",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 14 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 48,
+      "pdf_page": 58,
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.14808,
+          "bottom": 0.18854
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 14,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      58
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-015": {
+    "prompt": "15. 袋中a白b黑，有放回每次取一球，首次取到白球时停止，X为抽取次数。求P(X≥n)。",
+    "solution": "P(X≥n)=[b/(a+b)]ⁿ⁻¹，n=1,2,…（a>0,b≥0）。",
+    "explanation": [
+      "X≥n表示前n−1次均未抽到白球，恰为n−1次全黑。n=1为必然事件，概率1；不要把它与X>n混淆，后者为[b/(a+b)]ⁿ。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第58页（原书第48页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-015",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 15 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 48,
+      "pdf_page": 58,
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.18654,
+          "bottom": 0.227
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 15,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      58
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-016": {
+    "prompt": "16. 6000名世博会学生志愿者中女生2500名，随机抽100名到地铁站作引导员。X为其中女生数，求分布律。",
+    "solution": "X服从超几何分布：P(X=k)=C(2500,k)C(3500,100−k)/C(6000,100)，k=0,…,100。",
+    "explanation": [
+      "无放回取样，全部100人组合等可能。选k名女生、100−k名男生的组合数为分子；题中两类人数均超过100，所以所有整数0至100均可取。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第58页（原书第48页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-016",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 16 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 48,
+      "pdf_page": 58,
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.225,
+          "bottom": 0.26546
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 16,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      58
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E015-017": {
+    "prompt": "17. X服从成功概率p的几何分布，证明正整数m,n满足P(X>m+n|X>m)=P(X>n)。",
+    "solution": "P(X>m+n|X>m)=(1−p)ᵐ⁺ⁿ/(1−p)ᵐ=(1−p)ⁿ=P(X>n)。",
+    "explanation": [
+      "几何分布取值1,2,…，X>r表示前r次全失败。因{X>m+n}⊂{X>m}，条件概率化为尾概率之比，体现无记忆性。条件须有P(X>m)>0，即通常0<p<1；p=1时该条件事件概率0而条件概率无定义。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第58页（原书第48页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E015-017",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.2 · 第 17 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S2",
+      "printed_page": 48,
+      "pdf_page": 58,
+      "segments": [
+        {
+          "page": 58,
+          "top": 0.26346,
+          "bottom": 0.3353
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 17,
+      "group_title": "习题4.2",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      58
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-001": {
+    "prompt": "1. X的密度f(x)=c(1−x)，0<x<1，其他为0。求：(1) c；(2) P(X≤1/2)；(3) P(X≤1/3)。",
+    "solution": "(1) c=2；(2) 3/4；(3) 5/9。",
+    "explanation": [
+      "归一性给c∫₀¹(1−x)dx=c/2=1。0≤t≤1时F(t)=∫₀ᵗ2(1−x)dx=2t−t²，分别代入t=1/2、1/3。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 1 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.1586,
+          "bottom": 0.2366
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-002": {
+    "prompt": "2. X的密度f(x)=2x，0<x<A，其他为0。求：(1) A；(2) P(0<X<0.5)；(3) 分布函数。",
+    "solution": "(1) A=1；(2) 1/4；(3) F(x)=0(x≤0)，x²(0<x<1)，1(x≥1)。",
+    "explanation": [
+      "密度非负且支持区间非空，A>0。积分∫₀ᴬ2x dx=A²=1，所以A=1而不是−1；其后对密度积分即可。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 2 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.2346,
+          "bottom": 0.29796
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-003": {
+    "prompt": "3. X的分布函数F(x)=0(x≤0)，1−(1+x)e⁻ˣ(x>0)。求密度及P(X≤1)、P(X>2)。",
+    "solution": "f(x)=xe⁻ˣ(x>0)，其他为0；P(X≤1)=1−2/e≈0.264241；P(X>2)=3e⁻²≈0.406006。",
+    "explanation": [
+      "对x>0求导：−[(1+x)e⁻ˣ]′=xe⁻ˣ。F在0处连续，没有单点质量；两个概率分别为F(1)及1−F(2)。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 3 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.29596,
+          "bottom": 0.35157
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-004": {
+    "prompt": "4. X的分布函数F(x)=A+B arctan x，−∞<x<∞。求：(1) A,B；(2) P(|X|<1)；(3) 密度。",
+    "solution": "(1) A=1/2，B=1/π；(2) 1/2；(3) f(x)=1/[π(1+x²)]，x∈ℝ。",
+    "explanation": [
+      "利用F(−∞)=A−Bπ/2=0、F(+∞)=A+Bπ/2=1解常数。P(−1<X<1)=F(1)−F(−1)=(arctan1−arctan(−1))/π=1/2。求导得密度。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 4 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.34957,
+          "bottom": 0.39853
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-005": {
+    "prompt": "5. 证明f(x)=(x/c)e⁻ˣ²ᐟ⁽²ᶜ⁾，x≥0；x<0时为0，其中c>0，可以作密度函数。",
+    "solution": "f(x)≥0，且∫₋∞⁺∞f(x)dx=∫₀∞(x/c)e⁻ˣ²ᐟ⁽²ᶜ⁾dx=[−e⁻ˣ²ᐟ⁽²ᶜ⁾]₀∞=1，故可作密度。",
+    "explanation": [
+      "密度判定只需非负与积分为1。这里原式指数是−x²/(2c)，常数c在分母而不是方差的平方；取u=x²/(2c)也可直接把积分化为∫₀∞e⁻ᵘdu。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 5 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.39653,
+          "bottom": 0.44638
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 5,
+      "group_title": "习题4.3",
+      "context_needed": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-006": {
+    "prompt": "6. 火车晚点时间X（分钟，负值表示早到）的密度f(x)=(3/500)(25−x²)，−5<x<5，其他为0。求至少晚点2分钟的概率。",
+    "solution": "P(X≥2)=∫₂⁵(3/500)(25−x²)dx=27/125=0.216。",
+    "explanation": [
+      "至少晚点2分钟对应X≥2，不能把早到2分钟也计入。原函数为(3/500)(25x−x³/3)，在2、5处相减为108/500。连续分布下≥和>的端点无概率差异。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 6 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.44438,
+          "bottom": 0.54076
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-007": {
+    "prompt": "7. X~U(1,6)，求关于t的方程t²+Xt+1=0有实根的概率。",
+    "solution": "P=4/5。",
+    "explanation": [
+      "实根条件判别式X²−4≥0，即X≤−2或X≥2。与X∈(1,6)相交仅X≥2，区间长度4除以全长5。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 7 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.53876,
+          "bottom": 0.5598
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-008": {
+    "prompt": "8. X~U(0,1)。原书写道：对于a≥0、b≥0、a+b≤1，证明P(a≤X≤b)=b−a，并解释。",
+    "solution": "原命题所列条件不足，若a>b则右边为负而左边为0；如a=0.6,b=0.3满足a+b≤1却不成立。补充a≤b后，P(a≤X≤b)=∫ₐᵇ1 dx=b−a。原条件下的一般正确式为P(a≤X≤b)=max(b−a,0)。",
+    "explanation": [
+      "逐页核对后保留了原书a+b≤1的条件，并明确其缺少a≤b，避免擅自把教材中的逻辑缺口当成OCR错误。均匀分布意味着概率只取决于区间长度，同长子区间有相同概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 8 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.5578,
+          "bottom": 0.6019
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-009": {
+    "prompt": "9. 银行等待服务时间X服从参数λ=1/5的指数分布，密度(1/5)e⁻ˣᐟ⁵(x>0)。顾客若等超过10分钟就离开。(1) 求某次未等到服务便离开概率；(2) 一月去5次，求至多一次如此离开的概率。",
+    "solution": "(1) q=P(X>10)=e⁻²≈0.135335；(2) 在5次独立的模型下，(1−q)⁵+5q(1−q)⁴≈0.861568。",
+    "explanation": [
+      "指数分布尾概率P(X>t)=e⁻λᵗ。第二问离开次数为B(5,q)，至多1次包括0与1次；不可把平均等待时间5分钟误当成λ=5。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 9 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.5999,
+          "bottom": 0.73172
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-010": {
+    "prompt": "10. X~N(0,1)，求：(1) P(X<2.2)；(2) P(X>1.76)；(3) P(X<−0.78)；(4) P(|X|<1.55)；(5) P(|X|>2.5)；(6) P(X<a)=0.99时a。",
+    "solution": "(1) 0.986097；(2) 0.0392039；(3) 0.217695；(4) 0.878858；(5) 0.0124193；(6) a=Φ⁻¹(0.99)≈2.32635（查两位表约2.33）。",
+    "explanation": [
+      "记Φ为标准正态分布函数。六项分别为Φ(2.2)、1−Φ(1.76)、1−Φ(0.78)、2Φ(1.55)−1、2[1−Φ(2.5)]及0.99分位点。数值用独立正态函数验算；查表保留位数可能略有差异。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-010",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 10 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.72972,
+          "bottom": 0.79109
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 10,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-011": {
+    "prompt": "11. X~N(−1,16)，求：(1) P(X<2.44)；(2) P(X>−1.5)；(3) P(X<−2.8)；(4) P(|X|<4)；(5) P(−5<X<2)；(6) P(|X−1|>1)；(7) P(X<a)=P(X>a)时a。",
+    "solution": "(1) Φ(0.86)≈0.805105；(2) Φ(0.125)≈0.549738；(3) Φ(−0.45)≈0.326355；(4) Φ(1.25)−Φ(−0.75)≈0.667723；(5) Φ(0.75)−Φ(−1)≈0.614717；(6) Φ(0.25)+1−Φ(0.75)≈0.825334；(7) a=−1。",
+    "explanation": [
+      "方差16，所以标准差σ=4，统一作Z=(X+1)/4。(4) 原事件为−4<X<4；(6) |X−1|>1等价X<0或X>2，两区间互斥；(7) 正态分布的均值也是唯一中位数。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-011",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 11 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.78909,
+          "bottom": 0.85179
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 11,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-012": {
+    "prompt": "12. X~N(μ,σ²)，且P(X>2)=1/2，求μ。",
+    "solution": "μ=2。",
+    "explanation": [
+      "正态分布连续且关于μ对称，其超过μ的概率为1/2；分布函数严格递增，所以满足P(X>2)=1/2的点2就是唯一中位数μ。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67页（原书第57页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-012",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 12 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.84979,
+          "bottom": 0.88679
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 12,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-013": {
+    "prompt": "13. 滚珠直径X（毫米）服从N(2.05,0.01)，合格规格为2±0.2毫米，求合格率。",
+    "solution": "P(1.8≤X≤2.2)=Φ(1.5)−Φ(−2.5)≈0.926983，即约92.70%。",
+    "explanation": [
+      "标准差为√0.01=0.1。上界标准化为(2.2−2.05)/0.1=1.5，下界为(1.8−2.05)/0.1=−2.5；规格中心2与均值2.05不同，不能按对称区间2Φ(2)−1计算。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第67,68页（原书第57,58页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-013",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 13 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 57,
+      "pdf_page": 67,
+      "segments": [
+        {
+          "page": 67,
+          "top": 0.88479,
+          "bottom": 0.963
+        },
+        {
+          "page": 68,
+          "top": 0.055,
+          "bottom": 0.11476
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 13,
+      "group_title": "习题4.3",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      67,
+      68
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E016-014": {
+    "prompt": "14. 上班路程耗时X~N(30,100)分钟，8:30上班、每天7:50出门。求：(1) 某天迟到概率；(2) 一周5天至多迟到一次的概率。",
+    "solution": "(1) q=P(X>40)=1−Φ(1)≈0.158655；(2) 在各天独立模型下，(1−q)⁵+5q(1−q)⁴≈0.819055。",
+    "explanation": [
+      "出门到上班有40分钟，迟到对应耗时超过40；标准差为10分钟。第二问迟到次数按B(5,q)计算0次、1次之和。已删除自动OCR混入的章节小结。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第68页（原书第58页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E016-014",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "习题4.3 · 第 14 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 58,
+      "pdf_page": 68,
+      "segments": [
+        {
+          "page": 68,
+          "top": 0.112,
+          "bottom": 0.176
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "keywords": [],
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false,
+      "source_number": 14,
+      "group_title": "习题4.3",
+      "context_needed": false
+    },
+    "source_pages": [
+      68
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-001": {
+    "prompt": "1. 嘉年华游戏：先射击，命中得20元，命中率0.6；再做一道5选1题，答对另得40元，正确率0.2。X为总奖金，求分布律与分布函数。",
+    "solution": "按两部分独立，X=0,20,40,60的概率依次0.32、0.48、0.08、0.12。F(x)=0(x<0)；0.32(0≤x<20)；0.80(20≤x<40)；0.88(40≤x<60)；1(x≥60)。",
+    "explanation": [
+      "四种结果分别为两项皆失败、仅命中、仅答对、两项皆成功，概率依次0.4×0.8、0.6×0.8、0.4×0.2、0.6×0.2。若不假设两项独立，仅给边际概率无法唯一确定分布，此为通常采用的游戏模型。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-001",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 1 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.17846,
+          "bottom": 0.25752
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 1,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-002": {
+    "prompt": "2. 米乐、米多、米稻三兄弟看电影。米乐去概率0.7；米乐去时另两人都去概率0.8、都不去0.2；米乐不去时另两人都去概率0.2、仅米多去0.5、仅米稻去0.3。X为最终去的人数，求分布律。",
+    "solution": "P(X=1)=0.38，P(X=2)=0.06，P(X=3)=0.56，其他为0。",
+    "explanation": [
+      "米乐去且另两人不去产生1人，概率0.7×0.2=0.14；米乐不去且另两人中恰1人去也产生1人，概率0.3×(0.5+0.3)=0.24。2人来自0.3×0.2；3人来自0.7×0.8。总和0.38+0.06+0.56=1。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01",
+      "PS-K04-02",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-002",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 2 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.25552,
+          "bottom": 0.31598
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 2,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01",
+        "PS-K04-02",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-003": {
+    "prompt": "3. 盒中5红10蓝。(1) 不放回取7球，X为红球数，求分布律及P(X≥3)；(2) 有放回取7球，Y为蓝球数，求分布律及P(5≤Y≤7)；(3) 有放回逐球取至首个红球，Z为总次数，求分布律及至少第4次才取红球的概率。",
+    "solution": "(1) P(X=k)=C(5,k)C(10,7−k)/C(15,7)，k=0,…,5；P(X≥3)=61/143≈0.426573。(2) P(Y=k)=C(7,k)(2/3)ᵏ(1/3)⁷⁻ᵏ，k=0,…,7；P(5≤Y≤7)=416/729≈0.570645。(3) P(Z=k)=(2/3)ᵏ⁻¹/3，k≥1；P(Z≥4)=8/27≈0.296296。",
+    "explanation": [
+      "三种抽样依次对应超几何、二项、几何分布。(1) 累加k=3,4,5；(2) 累加k=5,6,7，分子为C(7,5)2⁵+C(7,6)2⁶+2⁷=1248，分母3⁷=2187，约为416/729；(3) 前3次均蓝即可，无须要求第4次必须红。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01",
+      "PS-K04-02",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-003",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 3 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.31398,
+          "bottom": 0.4546
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 3,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01",
+        "PS-K04-02",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_scope",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-004": {
+    "prompt": "4. X的密度f(x)=Ae⁻ˣᐟ²，x>0，其他为0。求：(1) A；(2) P(0<X<1)；(3) 分布函数。",
+    "solution": "(1) A=1/2；(2) 1−e⁻¹ᐟ²≈0.393469；(3) F(x)=0(x≤0)，1−e⁻ˣᐟ²(x>0)。",
+    "explanation": [
+      "∫₀∞Ae⁻ˣᐟ²dx=2A=1。归一化后是速率1/2的指数分布，对密度从0积分到x得F。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-004",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 4 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.4526,
+          "bottom": 0.52457
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 4,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-005": {
+    "prompt": "5. X的分布函数F(x)=A+Be⁻ˣ²ᐟ²(x>0)，x≤0时为0。求：(1) A,B；(2) 密度；(3) P(1<X<2)。",
+    "solution": "(1) A=1，B=−1；(2) f(x)=xe⁻ˣ²ᐟ²(x>0)，其他为0；(3) e⁻¹ᐟ²−e⁻²≈0.471195。",
+    "explanation": [
+      "令x→∞，F→A=1；在0处右连续要求A+B=F(0)=0，所以B=−1。对x>0求导，再用F(2)−F(1)。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-005",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 5 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.52257,
+          "bottom": 0.58436
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 5,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-006": {
+    "prompt": "6. X为商店开门至首位顾客到达的等待分钟数，F(x)=1−e⁻⁰·²ˣ(x>0)，其他为0。求：(1) 密度；(2) 至多等2分钟；(3) 至少等4分钟；(4) 至少2且至多4分钟；(5) 至多2或至少4分钟的概率。",
+    "solution": "(1) f(x)=0.2e⁻⁰·²ˣ(x>0)，其他为0；(2) 1−e⁻⁰·⁴≈0.329680；(3) e⁻⁰·⁸≈0.449329；(4) e⁻⁰·⁴−e⁻⁰·⁸≈0.220991；(5) 1−e⁻⁰·⁴+e⁻⁰·⁸≈0.779009。",
+    "explanation": [
+      "(1) 对F求导。(2)(3) 分别为F(2)、1−F(4)；(4) 为F(4)−F(2)；(5) 两段不相交，概率相加，也等于1减第(4)概率。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-006",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 6 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.58236,
+          "bottom": 0.6803
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 6,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-007": {
+    "prompt": "7. Y服从参数1的指数分布，a>0，求P(Y≤a+1|Y>a)。",
+    "solution": "P=1−e⁻¹≈0.632121。",
+    "explanation": [
+      "条件事件下分子为P(a<Y≤a+1)=e⁻ᵃ−e⁻⁽ᵃ⁺¹⁾，除以P(Y>a)=e⁻ᵃ得到1−e⁻¹。指数分布的无记忆性也直接给出此结果，与a无关。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-007",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 7 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.6783,
+          "bottom": 0.70261
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 7,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-008": {
+    "prompt": "8. X~N(2,σ²)，已知P(2<X<4)=0.3，求P(X<0)。",
+    "solution": "P(X<0)=0.2。",
+    "explanation": [
+      "正态分布关于2对称，区间(0,2)与(2,4)等概率0.3。P(X<2)=0.5，因此P(X<0)=0.5−0.3=0.2，无须先求σ。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-008",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 8 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.701,
+          "bottom": 0.726
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 8,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-01"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  },
+  "SRC-PS3-E017-009": {
+    "prompt": "9. X的密度为f(x)=2⁻ˣln2(x>0)，x≤0时为0。独立重复观察X，直到出现第2个大于3的观测值，Y为总观测次数，求Y的分布律。",
+    "solution": "P(Y=k)=(k−1)(1/8)²(7/8)ᵏ⁻²，k=2,3,…，其他为0。",
+    "explanation": [
+      "每次“大于3”为成功，p=∫₃∞2⁻ˣln2 dx=2⁻³=1/8。第k次为第2次成功要求前k−1次恰1次成功且第k次成功，有C(k−1,1)种位置，概率为C(k−1,1)p²(1−p)ᵏ⁻²，是等到第2次成功的负二项分布。原第9题被OCR并入第8题，已独立补录。"
+    ],
+    "knowledge_ids": [
+      "PS-K04-02",
+      "PS-K04-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "solution_origin": "教材习题补充解答（非原书逐字答案）",
+    "review_basis": "核对上传教材扫描PDF第69页（原书第59页）的原题号、题面、图表、分式与补集符号；答案为依据题面独立推导并验算的补充解答。",
+    "source": {
+      "id": "SRC-PS3-E017-009",
+      "book_id": "PS3",
+      "kind": "exercise",
+      "title": "第四章综合题 · 第 9 题",
+      "chapter": 4,
+      "section_id": "PS-C04-S3",
+      "printed_page": 59,
+      "pdf_page": 69,
+      "segments": [
+        {
+          "page": 69,
+          "top": 0.727,
+          "bottom": 0.786
+        }
+      ],
+      "answer_segments": [],
+      "boundary_status": "reviewed",
+      "source_number": 9,
+      "group_title": "第四章综合题",
+      "mapping_basis": "按上传扫描教材原页、原题号及题面逐项视觉核对，非生成题；解答另列补充来源。",
+      "context_needed": false,
+      "knowledge_ids": [
+        "PS-K04-02",
+        "PS-K04-03"
+      ],
+      "mapping_status": "section_and_keywords",
+      "verification": "reviewed_scan",
+      "scoring": "reference_only",
+      "counted_as_mastery": false
+    },
+    "id": "SRC-PS3-E017-009",
+    "kind": "exercise",
+    "title": "第四章综合题 · 第 9 题",
+    "source_pages": [
+      69
+    ],
+    "text_origin": "uploaded_textbook_scan_ocr_reviewed"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "SRC-LA7-E001-001": {
+    "prompt": "利用对角线法则计算下列三阶行列式：\n\n(1) $\\begin{vmatrix}2&0&1\\\\1&-4&-1\\\\-1&8&3\\end{vmatrix}$；\n\n(2) $\\begin{vmatrix}a&b&c\\\\b&c&a\\\\c&a&b\\end{vmatrix}$；\n\n(3) $\\begin{vmatrix}1&1&1\\\\a&b&c\\\\a^2&b^2&c^2\\end{vmatrix}$；\n\n(4) $\\begin{vmatrix}x&y&x+y\\\\y&x+y&x\\\\x+y&x&y\\end{vmatrix}$。",
+    "solution": "(1) $-4$。\n\n(2) $3abc-a^3-b^3-c^3$。\n\n(3) $(a-b)(b-c)(c-a)$。\n\n(4) $-2(x^3+y^3)$。",
+    "explanation": [
+      "三阶行列式按 $aei+bfg+cdh-ceg-bdi-afh$ 展开；仅适用于三阶，不能直接推广到四阶。",
+      "(1) 得 $-24+0+8-4-0+16=-4$。(2) 正向三项共 $3abc$，反向三项分别为 $a^3,b^3,c^3$。",
+      "(3) 展开后为 $bc^2+ca^2+ab^2-cb^2-ac^2-ba^2$，因式分解得所示结果。",
+      "(4) 三个正项共 $3xy(x+y)$，减去 $x^3+y^3+(x+y)^3$，化简为 $-2(x^3+y^3)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-01"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字"
+  },
+  "SRC-LA7-E001-002": {
+    "prompt": "按自然数从小到大为标准次序，求下列排列的逆序数：\n\n(1) 1234；(2) 4132；(3) 3421；(4) 2413；\n\n(5) $13\\cdots(2n-1)24\\cdots(2n)$；\n\n(6) $13\\cdots(2n-1)(2n)(2n-2)\\cdots2$。",
+    "solution": "依次为 $0,4,5,3,\\dfrac{n(n-1)}2,n(n-1)$。",
+    "explanation": [
+      "逆序对是满足位置 $i<j$ 但数值 $a_i>a_j$ 的一对。依次计数：(2) 为 $3+0+1=4$；(3) 为 $2+2+1=5$；(4) 为 $1+2=3$。",
+      "(5) 奇数段、偶数段各自递增，只有跨段逆序。第 $k$ 个奇数 $2k-1$ 大于后面的 $k-1$ 个偶数，求和为 $0+1+\\cdots+(n-1)$。",
+      "(6) 在 (5) 的跨段逆序之外，偶数段逆序排列又贡献 $n(n-1)/2$，总数为 $n(n-1)$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字"
+  },
+  "SRC-LA7-E001-003": {
+    "prompt": "写出四阶行列式中含有因子 $a_{11}a_{23}$ 的项。",
+    "solution": "两项为\n\n$$-a_{11}a_{23}a_{32}a_{44},\\qquad +a_{11}a_{23}a_{34}a_{42}.$$",
+    "explanation": [
+      "行列式的一项从每行、每列各取一个元素。第 1、2 行已经选列 1、3，因此第 3、4 行只能分配列 2、4。",
+      "两种列排列为 $(1,3,2,4)$ 与 $(1,3,4,2)$，逆序数分别为 1 和 2，故符号分别为负、正。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-02"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字"
+  },
+  "SRC-LA7-E001-004": {
+    "prompt": "计算下列行列式：\n\n(1) $\\begin{vmatrix}4&1&2&4\\\\1&2&0&2\\\\10&5&2&0\\\\0&1&1&7\\end{vmatrix}$；\n\n(2) $\\begin{vmatrix}2&1&4&1\\\\3&-1&2&1\\\\1&2&3&2\\\\5&0&6&2\\end{vmatrix}$；\n\n(3) $\\begin{vmatrix}-ab&ac&ae\\\\bd&-cd&de\\\\bf&cf&-ef\\end{vmatrix}$；\n\n(4) $\\begin{vmatrix}1&1&1\\\\a&b&c\\\\b+c&c+a&a+b\\end{vmatrix}$；\n\n(5) $\\begin{vmatrix}a&1&0&0\\\\-1&b&1&0\\\\0&-1&c&1\\\\0&0&-1&d\\end{vmatrix}$；\n\n(6) $\\begin{vmatrix}1&2&3&4\\\\1&3&4&1\\\\1&4&1&2\\\\1&1&2&3\\end{vmatrix}$。",
+    "solution": "(1) $0$；(2) $0$；(3) $4abcdef$；(4) $0$；(5) $abcd+ab+cd+ad+1$；(6) $16$。",
+    "explanation": [
+      "(1) 第三列等于第一列减第二列再乘 $2/3$？此类猜测须先逐行检查。可靠做法是行消元，化得一个零行，因此行列式为 0。(2) 第三列恰等于第一列加第二列，故为 0。",
+      "(3) 从三行提出 $a,d,f$，从三列提出 $b,c,e$，剩余 $\\begin{vmatrix}-1&1&1\\\\1&-1&1\\\\1&1&-1\\end{vmatrix}=4$；用多项式恒等式可包含参数为零情形。",
+      "(4) 第三行等于 $(a+b+c)$ 倍第一行减第二行，故三行相关。",
+      "(5) 对左上角各阶行列式记为 $D_k$，有 $D_1=a,D_2=ab+1,D_3=cD_2+D_1$，最后 $D_4=dD_3+D_2=abcd+ad+cd+ab+1$。",
+      "(6) 分别从后三行减第一行，按第一列展开，剩余三阶 $\\begin{vmatrix}1&1&-3\\\\2&-2&-2\\\\-1&-1&-1\\end{vmatrix}=16$。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-03"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字"
+  },
+  "SRC-LA7-E001-005": {
+    "prompt": "求解下列方程：\n\n(1) $\\begin{vmatrix}x+1&2&-1\\\\2&x+1&1\\\\-1&1&x+1\\end{vmatrix}=0$；\n\n(2) $\\begin{vmatrix}1&1&1&1\\\\x&a&b&c\\\\x^2&a^2&b^2&c^2\\\\x^3&a^3&b^3&c^3\\end{vmatrix}=0$，其中 $a,b,c$ 互不相等。",
+    "solution": "(1) $x=-3,\\sqrt3,-\\sqrt3$。\n\n(2) $x=a,b,c$。",
+    "explanation": [
+      "(1) 令 $t=x+1$，按三阶公式展开得 $t^3-6t-4$，代回并因式分解为 $(x+3)(x^2-3)$，再令各因子为零。",
+      "(2) 这是范德蒙德行列式，等于 $(a-x)(b-x)(c-x)(b-a)(c-a)(c-b)$。",
+      "由 $a,b,c$ 互不相等，后三个因子非零，因此仅有 $x=a,b,c$；不能遗漏题设条件。"
+    ],
+    "knowledge_ids": [
+      "LA-K01-04"
+    ],
+    "status": "reviewed",
+    "answer_status": "reviewed",
+    "issues": [],
+    "review_basis": "对照用户上传教材扫描页逐题校订；解答作数学复核",
+    "solution_origin": "教材习题的补充解答（非原书逐字答案）；题干为扫描校订文字"
+  }
+}
