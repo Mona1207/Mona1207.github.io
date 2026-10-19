@@ -1,9 +1,9 @@
 {
   "book": {
     "id": "PHYS",
-    "title": "大学物理 · 上传习题选题",
-    "short_title": "物理",
-    "edition": "上传题图 · 19 道指定习题",
+    "title": "物理学（下册）精选习题",
+    "short_title": "物理学（下册）精选习题",
+    "edition": "物理学（下册）· 19 道精选习题",
     "meta": {
       "source": "user_supplied_images",
       "source_scope": "selected_questions_only",
@@ -58,9 +58,9 @@
     },
     {
       "id": "PHYS",
-      "title": "大学物理 · 上传习题选题",
-      "short_title": "物理",
-      "edition": "上传题图 · 19 道指定习题",
+      "title": "物理学（下册）精选习题",
+      "short_title": "物理学（下册）精选习题",
+      "edition": "物理学（下册）· 19 道精选习题",
       "meta": {
         "source": "user_supplied_images",
         "source_scope": "selected_questions_only",

@@ -9,7 +9,7 @@ def save(name,value):(D/name).write_text(json.dumps(value,ensure_ascii=False,ind
 EXPECTED={9:[13,14,15,17,28,30],10:[10,15,16,27,28,29],11:[15,16,24,25,27,34,35]}
 TOPICS={9:['shm_phase','vertical_spring','shm_phase','contact_loss','shm_energy','shm_energy'],10:['traveling_wave','traveling_wave','traveling_wave','standing_wave','standing_wave','doppler'],11:['double_slit','thin_film','newton_rings','thin_film','single_slit','grating','grating']}
 names={9:'九',10:'十',11:'十一'};subjects={9:'振动',10:'波动',11:'光的干涉与衍射'}
-book={'id':'PHYS','title':'大学物理 · 上传习题选题','short_title':'物理','edition':'上传题图 · 19 道指定习题','meta':{'source':'user_supplied_images','source_scope':'selected_questions_only','image_count':10,'question_count':19,'numbering_rule':'11-12 表示习题十一第12题','full_textbook_available':False}}
+book={'id':'PHYS','title':'物理学（下册）精选习题','short_title':'物理学（下册）精选习题','edition':'物理学（下册）· 19 道精选习题','meta':{'source':'user_supplied_images','source_scope':'selected_questions_only','image_count':10,'question_count':19,'numbering_rule':'11-12 表示习题十一第12题','full_textbook_available':False}}
 books=[b for b in read('books-v15.json') if b['id']!='PHYS'];books.insert(next((i for i,b in enumerate(books) if b.get('legacy')),len(books)),book);save('books-v15.json',books)
 chapters=[]
 for n,nums in EXPECTED.items():

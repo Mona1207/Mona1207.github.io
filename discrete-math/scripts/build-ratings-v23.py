@@ -196,6 +196,9 @@ for book in ['DM2T','LA7','PS3','PHYS']:
   if len(selected)<3:choose([q for q in related if q['id'] not in selected and ratings[q['id']]['level']>=3],'完成基础后尝试进阶迁移')
  for q in singles:
   r=ratings[q['id']]
+  if book=='PHYS':
+   r['recommended']=True
+   r['recommendation_reasons']=['物理学（下册）已由用户筛选为精选题目，19 道均推荐完成；难度独立评定']
   if not r['recommended']:r['recommendation_reasons']=['同一知识点已有代表题，本题用于继续巩固或拓展；并非不重要']
   all_rows.append({'book':book,'id':q['id'],'title':q['title'],'prompt':q['prompt'],'solution':q.get('solution',''),'knowledge_ids':q['knowledge_ids'],**r})
  for q in groups:
