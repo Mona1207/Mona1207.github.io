@@ -17,14 +17,19 @@ mapping=mapping.replace(needle,ratings+",v10('div',{className:'v27-map-actions'}
 needle="'适合宽度'))),"
 assert needle in mapping
 mapping=mapping.replace(needle,"'适合宽度')))),")
-app=app.replace('function V18Tree(','function V18TreeBeforeV27(',1).replace('function V25Select(','function V25SelectBeforeV27(',1)
+browser=extract('V24PracticeBrowser')
+browser=browser.replace("current=roots.find(c=>c.id===chapter)||roots[0]","current=chapter==='all'?{id:'all',title:'全部章节'}:roots.find(c=>c.id===chapter)||roots[0]")
+browser=browser.replace("points=s.knowledge.filter(k=>De(s,k.id)?.id===current?.id&&","points=s.knowledge.filter(k=>(chapter==='all'||De(s,k.id)?.id===current?.id)&&")
+browser=browser.replace("'aria-label':'完整章节树'},roots.filter","'aria-label':'完整章节树'},v10('button',{'aria-pressed':chapter==='all',onClick:()=>{setChapter('all');setSection('all');setQuery('')}},'全部章节'),roots.filter")
+app=app.replace("chapter:chapter==='all'?roots[0]?.id||'':chapter","chapter:chosen?(De(s,chosen.id)?.id||chapter):chapter",1)
+app=app.replace('function V18Tree(','function V18TreeBeforeV27(',1).replace('function V25Select(','function V25SelectBeforeV27(',1).replace('function V24PracticeBrowser(','function V24PracticeBrowserBeforeV27(',1)
 needle="window.addEventListener('popstate',receive);window.addEventListener('hashchange',receive);return()=>{window.removeEventListener('popstate',receive);window.removeEventListener('hashchange',receive)}"
 assert needle in app
 app=app.replace(needle,"window.monaNativeBack=back;window.monaGoHome=()=>goRoot('home');"+needle.replace("window.removeEventListener('popstate',receive)","delete window.monaNativeBack;delete window.monaGoHome;window.removeEventListener('popstate',receive)"),1)
 needle="e.jsx(V24ModuleTitle,{title:'设置',tag:'h1',scene:'settings'}))"
 assert needle in app
 app=app.replace(needle,"e.jsx(V24ModuleTitle,{title:'设置',tag:'h1',scene:'settings'}),v10('div',{className:'v27-settings-actions'},v10('button',{className:'quiet',onClick:()=>window.dispatchEvent(new Event('mona-check-update'))},'检查更新'),v10('a',{className:'quiet',href:'/discrete-math/download/'},'Android App')))",1)
-app=app.replace('const Ys=',(R/'scripts/selection-v27.js').read_text()+'\n'+mapping+'\nwindow.monaPrepareUpdate=()=>v20FlushInk();\nconst Ys=',1)
+app=app.replace('const Ys=',(R/'scripts/selection-v27.js').read_text()+'\n'+mapping+'\n'+browser+'\nwindow.monaPrepareUpdate=()=>v20FlushInk();\nconst Ys=',1)
 (R/'assets/app-ui-v27.js').write_text(app)
 index=(R/'index.html').read_text()
 index=re.sub(r'app-ui-v(?:26|27)\.js\?v=[\d.]+','app-ui-v27.js?v=27',index)
