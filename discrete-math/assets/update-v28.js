@@ -39,7 +39,7 @@
   dialog.replaceChildren(title,content,actions);if(s.checking)dialog.querySelector('[data-action="check"]').disabled=true;if(active)dialog.querySelector('[data-action="'+active+'"]')?.focus({preventScroll:true});
  }
  function open(){previousFocus=document.activeElement;if(!dialog){dialog=node('dialog',{class:'v28-release-dialog','aria-labelledby':'mona-release-title'});dialog.addEventListener('cancel',event=>{event.preventDefault();close();markRead()});dialog.addEventListener('close',()=>previousFocus?.isConnected&&previousFocus.focus({preventScroll:true}));document.body.append(dialog)}renderDialog();if(!dialog.open)dialog.showModal();markRead();check(true)}
- function mount(){const header=document.querySelector('.v18-app-header');if(header&&!header.querySelector('.v28-update-button'))header.append(button('版本更新',open,'v28-update-button','updates'));}
+ function mount(){const header=document.querySelector('.v18-app-header');if(header){const control=header.querySelector('.v28-update-button')||button('版本更新',open,'v28-update-button','updates');if(header.lastElementChild!==control)header.append(control);}}
  document.documentElement.dataset.uiRevision=String(CURRENT);document.addEventListener('DOMContentLoaded',mount);const observer=new MutationObserver(mount);observer.observe(document.getElementById('root')||document.body,{childList:true,subtree:true});mount();
  window.addEventListener('mona-check-update',open);window.addEventListener('mona-native-release',()=>{check(false)});document.addEventListener('visibilitychange',()=>{if(!document.hidden)check()});window.addEventListener('focus',()=>check());window.addEventListener('online',()=>check());
  setTimeout(()=>check(),5000);setInterval(()=>{if(!document.hidden)check()},POLL);
