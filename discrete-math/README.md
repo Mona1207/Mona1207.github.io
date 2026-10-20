@@ -1,3 +1,18 @@
+## v28 · 统一学习界面与版本中心
+
+入口：<https://mona1207.github.io/discrete-math/?v=28#home>
+
+- 按 Product Design 的现有产品精修流程核对真实页面，结合 Impeccable 的一致性与状态要求、Huashu 的中文排版原则和 UIverse 的控件交互参考；设计约定保存在 `DESIGN.md`。
+- 保留蒙娜丽莎场景头像、教材名称、首页三块模块、四列设置与知识脑图；统一绿色按钮、字号、间距、边框和焦点，修正深色变量覆盖，手机导航分两行展示。
+- 新增“版本与更新”：更新内容、当前网页和 App 版本、应用内提醒开关、24小时稍后提醒、离线重试；每2分钟前台检查，更新网页或下载安装包前等待草稿保存。
+- Android **1.1.0 (2)** 使用首版相同签名，支持覆盖安装保留本机记录；版本桥接让旧 App 和新 App 都能识别 APK 更新。安装由系统确认，应用关闭后不发送系统通知。
+
+下载：<https://mona1207.github.io/discrete-math/download/>。
+
+验证：已在云浏览器核对桌面首页、设置、脑图、答题页、版本中心与390px手机框架，检查浅色/深色主题；HTTP本地预览仅对 Web Crypto UUID 作兼容适配，发布源保持 HTTPS。组件回归覆盖1,680题筛选、脑图手势与返回栈。`node discrete-math/scripts/test-update-v28.mjs` 验证版本与下载来源、并发检查、断网重试、稍后提醒、更新前保存和APK实际哈希；Android通过编译、版本策略测试及签名校验。尚未做实体 Android 设备/触屏验收。
+
+v28 是加载在已验证 v27 行为代码后的独立样式与更新脚本；日常修改 `assets/ui-v28.css`、`assets/update-v28.js`，无需重跑教材数据或旧版构建。
+
 ## v27 · 场景头像、紧凑选择与 Android App
 
 入口：<https://mona1207.github.io/discrete-math/?v=27#home>

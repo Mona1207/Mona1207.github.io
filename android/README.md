@@ -1,8 +1,9 @@
 # 莫那刷题站 Android
 
-Android 8.0+，包名 `io.github.mona1207.study`，首版 `1.0.0 (1)`。应用通过同一 HTTPS 源加载最新版网站，保留独立 WebView 的 IndexedDB/本机笔记。浏览器与 App 数据各自独立，首次使用请通过网页备份导出、App 导入迁移。
+Android 8.0+，包名 `io.github.mona1207.study`，当前版 `1.1.0 (2)`。应用通过同一 HTTPS 源加载最新版网站，保留独立 WebView 的 IndexedDB/本机笔记。浏览器与 App 数据各自独立，首次使用请通过网页备份导出、App 导入迁移。
 
-- 启动、回到前台时自动检查 `discrete-math/version.json`，前台间隔至少 5 分钟；设置内可手动检查。发现更高的 `android.version_code` 后提示打开安装包下载地址，由 Android 系统确认覆盖安装。
+- 启动、回到前台时自动检查 `discrete-math/version.json`，前台每 2 分钟检查一次；设置内可手动检查。发现更高的 `android.version_code` 后通过网页版本中心提醒，旧网页保留原生弹窗兜底；打开下载地址后由 Android 系统确认覆盖安装。
+- 版本中心显示网页与 App 版本、更新内容，可关闭应用内提醒或选择 24 小时后提醒。应用关闭后不发系统通知。
 - 网页更新脚本检查 `web_version`；更新前等待草稿保存，记录不清空。
 - 支持系统文件选择、图片/JSON 备份导入；blob/data 图片与备份导出走系统“另存为”，单个导出上限 48MB。较大备份可在浏览器导出。
 - 返回键先关闭选择菜单/选题目录，再走网页同层历史；主页面保存草稿后退出。主源以外链接交给系统浏览器。

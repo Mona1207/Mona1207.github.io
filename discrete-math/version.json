@@ -1,17 +1,24 @@
 {
-  "web_version": 27,
-  "web_name": "v27",
-  "updated_at": "2026-10-19",
+  "web_version": 28,
+  "web_name": "v28",
+  "updated_at": "2026-10-20",
   "android": {
-    "version_code": 1,
-    "version_name": "1.0.0",
-    "download_url": "https://mona1207.github.io/discrete-math/download/mona-study-1.0.0.apk",
-    "notes": "首次 Android 版：教材头像、栏内选择、脑图缩放、草稿与笔记、自动检查更新。",
-    "alternate_url": "https://raw.githubusercontent.com/Mona1207/Mona1207.github.io/main/discrete-math/download/mona-study-1.0.0.apk",
-    "sha256": "559f4945e8ec6585e14a6e1157181986027c49ae121b534c696de7a4303045a0",
+    "version_code": 2,
+    "version_name": "1.1.0",
+    "download_url": "https://mona1207.github.io/discrete-math/download/mona-study-1.1.0.apk",
+    "notes": "统一学习界面；版本中心显示更新内容、稍后提醒；前台每2分钟检查新版本，覆盖安装保留本机记录。",
+    "alternate_url": "https://raw.githubusercontent.com/Mona1207/Mona1207.github.io/main/discrete-math/download/mona-study-1.1.0.apk",
+    "sha256": "b13fb8c2c866ef1056772d0d0db2332fa12784254026bfe11cc46fe6088bbc6a",
     "size_bytes": 78299,
     "package_id": "io.github.mona1207.study",
     "minimum_android": "8.0",
     "certificate_sha256": "866b6387171740b4df57a53c07d0fba62a3e53f6e53339be9be95be04f51f7bb"
-  }
+  },
+  "release_title": "更清晰的学习界面，更及时的版本提醒",
+  "release_notes": [
+    "统一绿色主色、中文字号和控件间距，首页与设置页更清爽。",
+    "优化手机导航、答题阅读和深色模式，保留教材头像与粒子进度。",
+    "新增版本与更新中心，支持应用内新版本提醒、稍后提醒和手动检查。",
+    "更新网页前保存手写草稿，Android 1.1.0 支持前台定时检查。"
+  ]
 }

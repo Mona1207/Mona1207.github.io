@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.SystemClock;
 import android.util.Base64;
 import android.view.View;
@@ -44,7 +46,9 @@ public class MainActivity extends Activity {
     private ValueCallback<Uri[]> fileCallback;
     private byte[] pendingExport;
     private long lastCheck = -1, promptedVersion = 0;
-    private boolean checking;
+    private boolean checking, inForeground;
+    private final Handler foreground = new Handler(Looper.getMainLooper());
+    private final Runnable updateTick = new Runnable(){public void run(){checkUpdate(false);foreground.postDelayed(this,120000);}};
     private static final int FILE_PICK = 31, SAVE_EXPORT = 32;
     private final String exportScript = "(function(){if(window.__monaExportPatched)return;window.__monaExportPatched=true;"
         + "function save(a){if(!a||!a.hasAttribute('download')||!(/^(blob:|data:)/.test(a.href)))return false;"
@@ -57,7 +61,7 @@ public class MainActivity extends Activity {
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
         FrameLayout root = new FrameLayout(this);
-        root.setBackgroundColor(Color.rgb(247,248,243));
+        root.setBackgroundColor(Color.rgb(245,247,243));
         root.setOnApplyWindowInsetsListener((v,insets)->{if(android.os.Build.VERSION.SDK_INT>=30){android.graphics.Insets bars=insets.getInsets(android.view.WindowInsets.Type.systemBars());v.setPadding(bars.left,bars.top,bars.right,bars.bottom);}else v.setPadding(insets.getSystemWindowInsetLeft(),insets.getSystemWindowInsetTop(),insets.getSystemWindowInsetRight(),insets.getSystemWindowInsetBottom());return insets;});
         web = new WebView(this);
         root.addView(web,new FrameLayout.LayoutParams(-1,-1));
@@ -65,7 +69,7 @@ public class MainActivity extends Activity {
         progress.setMax(100);
         root.addView(progress,new FrameLayout.LayoutParams(-1,dp(3)));
         errorPanel = new LinearLayout(this);
-        errorPanel.setOrientation(LinearLayout.VERTICAL);errorPanel.setGravity(android.view.Gravity.CENTER);errorPanel.setPadding(dp(28),dp(28),dp(28),dp(28));errorPanel.setBackgroundColor(Color.rgb(247,248,243));
+        errorPanel.setOrientation(LinearLayout.VERTICAL);errorPanel.setGravity(android.view.Gravity.CENTER);errorPanel.setPadding(dp(28),dp(28),dp(28),dp(28));errorPanel.setBackgroundColor(Color.rgb(245,247,243));
         TextView title=new TextView(this);title.setText("暂时无法连接教材");title.setTextSize(22);title.setTextColor(Color.rgb(50,80,59));errorPanel.addView(title);
         TextView copy=new TextView(this);copy.setText("请检查网络后重试，已保存的学习记录仍保留在本机。");copy.setTextSize(14);copy.setPadding(0,dp(16),0,dp(20));errorPanel.addView(copy);
         Button retry=new Button(this);retry.setText("重新连接");retry.setOnClickListener(v->{errorPanel.setVisibility(View.GONE);web.loadUrl(UpdatePolicy.HOME+"?app=android&t="+System.currentTimeMillis()+"#home");});errorPanel.addView(retry);
@@ -91,12 +95,15 @@ public class MainActivity extends Activity {
     }
 
     private int dp(int n){return Math.round(n*getResources().getDisplayMetrics().density);}
-    private String appVersion(){try{return getPackageManager().getPackageInfo(getPackageName(),0).versionName;}catch(Exception e){return "1.0.0";}}
+    private String appVersion(){try{return getPackageManager().getPackageInfo(getPackageName(),0).versionName;}catch(Exception e){return "1.1.0";}}
     private void toast(String message){Toast.makeText(this,message,Toast.LENGTH_LONG).show();}
     private void openExternal(String url){try{Uri uri=Uri.parse(url);if("https".equalsIgnoreCase(uri.getScheme())||"http".equalsIgnoreCase(uri.getScheme())||"mailto".equalsIgnoreCase(uri.getScheme()))startActivity(new Intent(Intent.ACTION_VIEW,uri));else toast("无法打开此链接");}catch(Exception e){toast("没有可打开此链接的应用");}}
     private boolean trusted(){return web!=null&&UpdatePolicy.trustedPage(web.getUrl());}
 
     private class Bridge {
+        @JavascriptInterface public String getVersionName(){return appVersion();}
+        @JavascriptInterface public int getVersionCode(){try{return getPackageManager().getPackageInfo(getPackageName(),0).versionCode;}catch(Exception e){return 0;}}
+        @JavascriptInterface public void openUpdateDownload(String url){runOnUiThread(()->{if(trusted()&&url!=null&&url.equals(UpdatePolicy.safeDownload(url)))openExternal(url);});}
         @JavascriptInterface public void checkForUpdates(){runOnUiThread(()->{if(trusted())checkUpdate(true);});}
         @JavascriptInterface public void finishHome(){runOnUiThread(()->{if(trusted())finish();});}
         @JavascriptInterface public void exportFile(String name,String mime,String content){
@@ -108,14 +115,19 @@ public class MainActivity extends Activity {
     }
 
     private void checkUpdate(boolean manual){
-        if(checking||(!manual&&lastCheck>=0&&SystemClock.elapsedRealtime()-lastCheck<300000))return;
+        if(checking||(!manual&&lastCheck>=0&&SystemClock.elapsedRealtime()-lastCheck<120000))return;
         checking=true;lastCheck=SystemClock.elapsedRealtime();worker.execute(()->{
             try{
                 HttpURLConnection connection=(HttpURLConnection)new URL(UpdatePolicy.MANIFEST+"?t="+System.currentTimeMillis()).openConnection();connection.setConnectTimeout(12000);connection.setReadTimeout(12000);connection.setUseCaches(false);connection.setInstanceFollowRedirects(false);connection.setRequestProperty("Cache-Control","no-cache");
                 JSONObject android;
                 try{if(connection.getResponseCode()!=200)throw new Exception("版本服务暂不可用");try(InputStream input=connection.getInputStream();ByteArrayOutputStream out=new ByteArrayOutputStream()){byte[] buffer=new byte[4096];int n;while((n=input.read(buffer))!=-1){if(out.size()+n>65536)throw new Exception("版本信息无效");out.write(buffer,0,n);}android=new JSONObject(new String(out.toByteArray(),StandardCharsets.UTF_8)).getJSONObject("android");}}finally{connection.disconnect();}
                 long offered=android.optLong("version_code",0),installed=getPackageManager().getPackageInfo(getPackageName(),0).versionCode;String label=android.optString("version_name"),notes=android.optString("notes","更新功能和体验"),download=UpdatePolicy.safeDownload(android.optString("download_url"));
-                runOnUiThread(()->{checking=false;if(isFinishing())return;if(UpdatePolicy.newVersion(installed,offered)&&(manual||promptedVersion!=offered)){promptedVersion=offered;new AlertDialog.Builder(this).setTitle("发现新版本 "+label).setMessage(notes+"\n\n将打开下载地址，安装时由 Android 确认；请覆盖安装以保留本机记录。").setPositiveButton("下载更新",(d,w)->openExternal(download)).setNegativeButton("稍后",null).show();}else if(manual)toast("当前 App 已是最新版本 "+appVersion());});
+                runOnUiThread(()->{checking=false;if(isFinishing()||!inForeground)return;if(UpdatePolicy.newVersion(installed,offered)&&(manual||promptedVersion!=offered)){promptedVersion=offered;
+                    web.evaluateJavascript("Boolean(window.MonaUpdates)",present->{
+                        if(isFinishing()||!inForeground)return;
+                        if("true".equals(present)){web.evaluateJavascript("window.dispatchEvent(new Event('mona-native-release'));"+(manual?"window.MonaUpdates.open();":""),null);}
+                        else new AlertDialog.Builder(this).setTitle("发现新版本 "+label).setMessage(notes+"\n\n将打开下载地址，安装时由 Android 确认；请覆盖安装以保留本机记录。").setPositiveButton("下载更新",(d,w)->openExternal(download)).setNegativeButton("稍后",null).show();
+                    });}else if(manual)toast("当前 App 已是最新版本 "+appVersion());});
             }catch(Exception e){runOnUiThread(()->{checking=false;if(manual)toast("暂时无法检查更新，请稍后重试");});}
         });
     }
@@ -125,9 +137,9 @@ public class MainActivity extends Activity {
         if(!trusted()){if(web.canGoBack())web.goBack();else finish();return;}
         web.evaluateJavascript("(async()=>{try{if(document.querySelector('.v27-select-menu')){window.dispatchEvent(new Event('mona-close-menu',{cancelable:true}));return}var dialog=document.querySelector('dialog[open]');if(dialog){dialog.dispatchEvent(new Event('cancel',{cancelable:true}));return}if(!location.hash||location.hash==='#home'){await window.monaPrepareUpdate?.();MonaApp.finishHome()}else if(/^#(settings|graph)$/.test(location.hash)&&window.monaGoHome)window.monaGoHome();else if(window.monaNativeBack)window.monaNativeBack();else history.back()}catch(e){alert('草稿尚未保存，请稍后再返回。')}})()",null);
     }
-    @Override protected void onResume(){super.onResume();if(web!=null)web.onResume();checkUpdate(false);}
-    @Override protected void onPause(){if(web!=null){web.evaluateJavascript("window.dispatchEvent(new Event('zhixu-flush-ink'));",null);web.onPause();}super.onPause();}
+    @Override protected void onResume(){super.onResume();inForeground=true;if(web!=null)web.onResume();foreground.removeCallbacks(updateTick);updateTick.run();}
+    @Override protected void onPause(){inForeground=false;foreground.removeCallbacks(updateTick);if(web!=null){web.evaluateJavascript("window.dispatchEvent(new Event('zhixu-flush-ink'));",null);web.onPause();}super.onPause();}
     @Override protected void onSaveInstanceState(Bundle out){if(web!=null)web.saveState(out);super.onSaveInstanceState(out);}
     @Override protected void onActivityResult(int request,int result,Intent data){super.onActivityResult(request,result,data);if(request==FILE_PICK){if(fileCallback!=null){fileCallback.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(result,data));fileCallback=null;}}else if(request==SAVE_EXPORT){byte[] bytes=pendingExport;pendingExport=null;if(result==RESULT_OK&&data!=null&&data.getData()!=null&&bytes!=null){Uri uri=data.getData();worker.execute(()->{try(OutputStream out=getContentResolver().openOutputStream(uri)){if(out==null)throw new Exception();out.write(bytes);runOnUiThread(()->toast("文件已保存"));}catch(Exception e){runOnUiThread(()->toast("保存未完成，请重试"));}});}}}
-    @Override protected void onDestroy(){if(fileCallback!=null)fileCallback.onReceiveValue(null);worker.shutdown();if(web!=null){((ViewGroup)web.getParent()).removeView(web);web.destroy();}super.onDestroy();}
+    @Override protected void onDestroy(){foreground.removeCallbacks(updateTick);if(fileCallback!=null)fileCallback.onReceiveValue(null);worker.shutdown();if(web!=null){((ViewGroup)web.getParent()).removeView(web);web.destroy();}super.onDestroy();}
 }
