@@ -43,16 +43,17 @@
   },
   {
     "id": "PHYS",
-    "title": "物理学（下册）精选习题",
-    "short_title": "物理学（下册）精选习题",
-    "edition": "物理学（下册）· 19 道精选习题",
+    "title": "物理学（第七版）下册",
+    "short_title": "物理学（下册）",
+    "edition": "第七版 · 第九至十六章",
     "meta": {
-      "source": "user_supplied_images",
-      "source_scope": "selected_questions_only",
-      "image_count": 10,
-      "question_count": 19,
+      "source": "user_uploaded_pdf_and_selected_images",
+      "full_textbook_available": true,
+      "knowledge_sections": 75,
+      "knowledge_topics": 78,
       "numbering_rule": "11-12 表示习题十一第12题",
-      "full_textbook_available": false
+      "source_note": "上传扫描包含正文第1—437页；目录列出的书后答案与索引页未包含，解析由系统独立编写。",
+      "question_count": 63
     }
   },
   {

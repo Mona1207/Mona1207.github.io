@@ -1,0 +1,70 @@
+{
+  "version": 29,
+  "book": "PHYS",
+  "questions": 63,
+  "preserved_question_ids": 19,
+  "added_questions": 44,
+  "choice_questions": 25,
+  "requested_numbers": {
+    "11": [
+      15,
+      16,
+      24,
+      25,
+      27,
+      34,
+      35,
+      38
+    ],
+    "12": [
+      10,
+      19,
+      20,
+      22,
+      25,
+      27
+    ],
+    "13": [
+      22,
+      24,
+      27,
+      29,
+      32,
+      38
+    ],
+    "14": [
+      17,
+      23,
+      24,
+      27,
+      28,
+      29
+    ]
+  },
+  "reviewed_questions": 63,
+  "chapters": 8,
+  "textbook_sections": 75,
+  "knowledge_topics": 78,
+  "original_pdf_sha256": "b67d52e0fa7250bfe9bab522d47e091b685ab0ae3945e391cec024f47f904d96",
+  "source_pages": [
+    179,
+    180,
+    183,
+    223,
+    224,
+    225,
+    274,
+    275,
+    277,
+    278,
+    280,
+    320,
+    321,
+    322
+  ],
+  "notes": [
+    "保留全部旧题ID与学习记录键。",
+    "第11-27、11-34、11-35等原题条件及解释按旧版校核结果保留，不擅自补成唯一解。",
+    "教材扫描没有书后答案和索引页，解析为独立编写。"
+  ]
+}
