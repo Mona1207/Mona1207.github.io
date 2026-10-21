@@ -60,6 +60,7 @@ client=(R/'assets/client-v29.js').read_text().replace('pages-worker-v29.js','pag
 (R/'assets/client-v32.js').write_text(client)
 (R/'assets/pages-worker-v32.js').write_text((R/'assets/pages-worker-v29.js').read_text().replace('?v=29','?v=32'))
 index=(R/'index.html').read_text().replace('app-ui-v31.js?v=31','app-ui-v32.js?v=32').replace('mona-soft-v31','mona-lessons-v32').replace('update-v31.js?v=31','update-v32.js?v=32')
+index=index.replace('app-ui-v32.js?v=32"','app-ui-v32.js?v=32.1"')
 if 'ui-v32.css' not in index:index=index.replace('</head>','<link rel="stylesheet" href="/discrete-math/assets/ui-v32.css?v=32">\n</head>')
 (R/'index.html').write_text(index)
 (R/'assets/update-v32.js').write_text((R/'assets/update-v31.js').read_text().replace('const CURRENT=31','const CURRENT=32'))

@@ -1,6 +1,6 @@
 """Add source-located teaching sequences without changing any historical IDs."""
 from pathlib import Path
-import json,hashlib
+import json,hashlib,re
 ROOT=Path(__file__).resolve().parents[1]
 guides={}
 for line in (ROOT/'scripts/lesson-guide-v32.txt').read_text().splitlines():
@@ -26,7 +26,7 @@ for book in ['DM2T','LA7','PS3','PHYS','DM2']:
             page=point['source']['pdf_page']
             point['content']['lesson_source_image']=f'/discrete-math/textbooks/v32/lesson-pages/{book}-p{page}.webp'
         # Source-book examples precede supplementary exercises in the guided page.
-        point['content']['worked_examples']=sorted(point['content'].get('worked_examples',[]),key=lambda x:0 if any(t in x.get('label','') for t in ['教材','用户提供']) else 1)
+        point['content']['worked_examples']=sorted(point['content'].get('worked_examples',[]),key=lambda x:0 if re.search('教材|用户提供',x.get('label','')) and not re.search('非教材|非本书原题|系统补充|改编',x.get('label','')) else 1)
     path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
     stats.append({'book':book,'topics':len(data['knowledge']),'guides':sum('lesson_guide' in k['content'] for k in data['knowledge'])})
 assert len(guides)==233,len(guides)
