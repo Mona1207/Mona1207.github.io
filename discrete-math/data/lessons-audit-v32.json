@@ -1,0 +1,2147 @@
+{
+  "version": 32,
+  "topics": [
+    {
+      "book": "DM2T",
+      "topics": 80,
+      "guides": 80
+    },
+    {
+      "book": "LA7",
+      "topics": 32,
+      "guides": 32
+    },
+    {
+      "book": "PS3",
+      "topics": 43,
+      "guides": 43
+    },
+    {
+      "book": "PHYS",
+      "topics": 78,
+      "guides": 78
+    },
+    {
+      "book": "DM2",
+      "topics": 46,
+      "guides": 46
+    }
+  ],
+  "original_examples_first": true,
+  "source_policy": "保留教材页码定位；导学和推导独立撰写，教材例题与补充例题分别标识。物理仅提供知识点定位页图像，不上传整本PDF。",
+  "source_pages": {
+    "DM2T": {
+      "pages": [
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p14.webp",
+          "sha256": "d6c9c24d344940c04f515a1f670ca7153d74029e34beb8530502aa4de5c34078",
+          "bytes": 69484,
+          "pdf_page": 14,
+          "printed_page": 3
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p20.webp",
+          "sha256": "f9deaa648a27430acbce8273533016fdc8a73b931cc5988785c67c95f2b76dd5",
+          "bytes": 92802,
+          "pdf_page": 20,
+          "printed_page": 9
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p30.webp",
+          "sha256": "e53c02d56192d3749de4dcb952fef3e866596ff0abd7d91445343d8a263998ba",
+          "bytes": 53766,
+          "pdf_page": 30,
+          "printed_page": 19
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p37.webp",
+          "sha256": "68e14b729a3c8457a6028b3517353555a41033d4226047f03c236db184019d7d",
+          "bytes": 87604,
+          "pdf_page": 37,
+          "printed_page": 26
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p47.webp",
+          "sha256": "9e5fb5a1f1826a6a19ee4d659b21f46a6922756c74837bcabfff08d4f928860f",
+          "bytes": 62138,
+          "pdf_page": 47,
+          "printed_page": 36
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p49.webp",
+          "sha256": "bd0af31ee2db1f7630b88aeade6a852efd429fd87444ab633d83a7d93f369a4f",
+          "bytes": 78326,
+          "pdf_page": 49,
+          "printed_page": 38
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p57.webp",
+          "sha256": "52dbc7392d637e132b75a75057400c8f3d1d0d51bffd8827902460b043891ca0",
+          "bytes": 67530,
+          "pdf_page": 57,
+          "printed_page": 46
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p61.webp",
+          "sha256": "3920b0685ff0795f5051ddd527645870cf3380916ff6aec1860dfc0fb5df0cbe",
+          "bytes": 85734,
+          "pdf_page": 61,
+          "printed_page": 50
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p67.webp",
+          "sha256": "55d12ea122de464afa34eddaf26b5a41246d2eda112673e02d2d546c792abff8",
+          "bytes": 62284,
+          "pdf_page": 67,
+          "printed_page": 56
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p71.webp",
+          "sha256": "7865fa30174a6f07c6babd4ddf07ca62a6ec01fb15dc15d98255c4698bc77202",
+          "bytes": 75416,
+          "pdf_page": 71,
+          "printed_page": 60
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p76.webp",
+          "sha256": "9abffcc81126ae4a2e2abd0a5f91b0a673d39334f5647bb8afeb3df8cf746228",
+          "bytes": 93402,
+          "pdf_page": 76,
+          "printed_page": 65
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p84.webp",
+          "sha256": "1838a4b26596d7b19de44b951befc50eaf4b95f1fe75b9d3f106b925d947c420",
+          "bytes": 60360,
+          "pdf_page": 84,
+          "printed_page": 73
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p88.webp",
+          "sha256": "0f4b41c011a249781561c0badc147b3d0804af975b5b573f5ed5f6b7da6e19ae",
+          "bytes": 72136,
+          "pdf_page": 88,
+          "printed_page": 77
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p90.webp",
+          "sha256": "f996ab41b15b25b0342a2b1faf2844dd09ac52a7c5c98e0a67091ffcab9fbd7c",
+          "bytes": 69378,
+          "pdf_page": 90,
+          "printed_page": 79
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p102.webp",
+          "sha256": "cfe0f0135d33ad5ff1e1cb520a2e9feaa7157a46664b2283866bf11b521a5896",
+          "bytes": 54882,
+          "pdf_page": 102,
+          "printed_page": 91
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p105.webp",
+          "sha256": "771557759b9c2793cdbd39f287d265e314df63f114e7bfb4a1bdf9628985cc72",
+          "bytes": 60886,
+          "pdf_page": 105,
+          "printed_page": 94
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p107.webp",
+          "sha256": "be9d6b513e7c536de67b38868359301f1982668083421e34cd0edaa5579f27fa",
+          "bytes": 77488,
+          "pdf_page": 107,
+          "printed_page": 96
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p111.webp",
+          "sha256": "55be509a823f583e2a2d30e87efe46b490223b2c5c72bb464bcb8d846f3950fe",
+          "bytes": 65934,
+          "pdf_page": 111,
+          "printed_page": 100
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p121.webp",
+          "sha256": "a6d317799978db1cc988e4392b111359b848105fa17051cab4897c9a61fc4b75",
+          "bytes": 48524,
+          "pdf_page": 121,
+          "printed_page": 110
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p123.webp",
+          "sha256": "5ef16cc34e7987b969d612f206196b182b20ad67346e3b6f4825e6241ed73e15",
+          "bytes": 74606,
+          "pdf_page": 123,
+          "printed_page": 112
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p125.webp",
+          "sha256": "0c924f060dee78b7fd840c5083fc041ec73dc8bb7c3fb1b7b3f51e6acf8d42a9",
+          "bytes": 53998,
+          "pdf_page": 125,
+          "printed_page": 114
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p132.webp",
+          "sha256": "b9f95b52c4f856846cce4adbfe7140ddf1a4be4333f5f21180c5421ad3ea41fb",
+          "bytes": 73860,
+          "pdf_page": 132,
+          "printed_page": 121
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p137.webp",
+          "sha256": "77ca790c36b6c918f3ee630247c8dd18b4f92d83d6089e5c431838aada9213a4",
+          "bytes": 102776,
+          "pdf_page": 137,
+          "printed_page": 126
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p142.webp",
+          "sha256": "e6fca5fae66e6521c55a99fcacd43790f0ea325c5d5ec1c075749205d92cdada",
+          "bytes": 92250,
+          "pdf_page": 142,
+          "printed_page": 131
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p146.webp",
+          "sha256": "73bfdffa74824c934ccf172b086df6257b9a0b03a79b0d1d0f4726484af92ce4",
+          "bytes": 103518,
+          "pdf_page": 146,
+          "printed_page": 135
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p156.webp",
+          "sha256": "68d0ff84f34853666f113b110bd3c5be1ad4c5c12ff5e09542327762e73f852b",
+          "bytes": 46652,
+          "pdf_page": 156,
+          "printed_page": 145
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p163.webp",
+          "sha256": "cf61fac2f7d762ecda5dba6188610282d4d53da370ca7e439ffcb385c5b54625",
+          "bytes": 68548,
+          "pdf_page": 163,
+          "printed_page": 152
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p167.webp",
+          "sha256": "c3e3e2d1d762d9c7bf9ceecf3c438607d9026d4b423f0b9f9d4cf2dacf29b8c3",
+          "bytes": 65900,
+          "pdf_page": 167,
+          "printed_page": 156
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p175.webp",
+          "sha256": "fe3440b33bc838332826ae06db91219ff4479702e427300f2f0220d3071be455",
+          "bytes": 107340,
+          "pdf_page": 175,
+          "printed_page": 164
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p188.webp",
+          "sha256": "83fd1ca6ca45a9b212ab6239107e82029b5117f7cf03640f721b18834654a61b",
+          "bytes": 67564,
+          "pdf_page": 188,
+          "printed_page": 177
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p196.webp",
+          "sha256": "c1bb3f399c1b765694a84ba442d589e1212b261786aa7d2e41cca83bde015959",
+          "bytes": 107724,
+          "pdf_page": 196,
+          "printed_page": 185
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p199.webp",
+          "sha256": "48433d5ec39528291362713da2cc6322aed323dfce2d915ae99161d5e11e5f2f",
+          "bytes": 85896,
+          "pdf_page": 199,
+          "printed_page": 188
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p205.webp",
+          "sha256": "dd4da72d82d68d9a342b9a6156302af9f998f022aebdc8a0a4d7383fcf394b6e",
+          "bytes": 62210,
+          "pdf_page": 205,
+          "printed_page": 194
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p209.webp",
+          "sha256": "53ba94c8dd838a5a25e0adb241817fc52e10b5f72dd4a2a987b0e01515ba81c2",
+          "bytes": 63678,
+          "pdf_page": 209,
+          "printed_page": 198
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p216.webp",
+          "sha256": "d8c461c5f8a420e62b83a20c15d5c5056dba11240b19972a8f58f6f25d9536ef",
+          "bytes": 73980,
+          "pdf_page": 216,
+          "printed_page": 205
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p221.webp",
+          "sha256": "54fd98cd061aa27e8687ee5f329587de1fdaa89281fb6c6a8d19b213e7bbd567",
+          "bytes": 93364,
+          "pdf_page": 221,
+          "printed_page": 210
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p231.webp",
+          "sha256": "92d27c4b6042b2932ee410760ec82f802e751109443413de11eaa1f3a9a00003",
+          "bytes": 69070,
+          "pdf_page": 231,
+          "printed_page": 220
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p238.webp",
+          "sha256": "f857337ce768fa688a07cb2001290fcb22e90aadd38d89fb679dee854fba4cfb",
+          "bytes": 52912,
+          "pdf_page": 238,
+          "printed_page": 227
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p248.webp",
+          "sha256": "bc68ee0d2e64aaa125707be071965cdcd3e11da761f1021ae25a91b0675874d7",
+          "bytes": 65780,
+          "pdf_page": 248,
+          "printed_page": 237
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p250.webp",
+          "sha256": "97e30de9e75804cc21924344b05e2cd6e93d15a874ffda2b862bbf2c8730f896",
+          "bytes": 100026,
+          "pdf_page": 250,
+          "printed_page": 239
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p254.webp",
+          "sha256": "2f3b047e716ee94523e14d03d5d1ae83b847023ed94235117376737cad03510c",
+          "bytes": 111006,
+          "pdf_page": 254,
+          "printed_page": 243
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p259.webp",
+          "sha256": "7fadc706c0ddd81d06157b851ba1eab8e5bc8b52bd41a0fd46a94e3b2787bbe9",
+          "bytes": 110676,
+          "pdf_page": 259,
+          "printed_page": 248
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p264.webp",
+          "sha256": "e195c15ae8c6dbb089aaba6d52113e9aa97ce51d9dcb31cbc99d0ea0fb587b33",
+          "bytes": 56592,
+          "pdf_page": 264,
+          "printed_page": 253
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p266.webp",
+          "sha256": "b02b94bd166f37d889d13c018e56e02a8f6208eebf57c2b3139c3828b9089020",
+          "bytes": 116648,
+          "pdf_page": 266,
+          "printed_page": 255
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p271.webp",
+          "sha256": "e0b77f09f5cd6f521b992ea29e1d6cb808cca7c004cdd0e07ffb40fb0ef1bab9",
+          "bytes": 103756,
+          "pdf_page": 271,
+          "printed_page": 260
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p279.webp",
+          "sha256": "38d459a1a63bc95a349eb49776ea01a5c1a4942395f0683f4044854ce9273be9",
+          "bytes": 70822,
+          "pdf_page": 279,
+          "printed_page": 268
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p288.webp",
+          "sha256": "1b3f77298440a2f1f96f9cd270920cef4ec1701e52bf4e908708dc9a2ae6da5a",
+          "bytes": 74654,
+          "pdf_page": 288,
+          "printed_page": 277
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p290.webp",
+          "sha256": "b32f122678ddf849b5e9593cb5d206ce065683e7b7dca3699763c734b0f7519c",
+          "bytes": 87170,
+          "pdf_page": 290,
+          "printed_page": 279
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p304.webp",
+          "sha256": "3b2e7a9112fa1023d73483455703b8966b15a6c556c6db27738e6b2bfe9211a3",
+          "bytes": 59262,
+          "pdf_page": 304,
+          "printed_page": 293
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p312.webp",
+          "sha256": "ab0ee9f8edbee90ad946980e9843181a18355a073cefb06396a4b4ec4c5c5a10",
+          "bytes": 82644,
+          "pdf_page": 312,
+          "printed_page": 301
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p313.webp",
+          "sha256": "bf997a1d77c7a2847b303bfe35037da126637ecd1ac82e7939416cb3f3f0e6c5",
+          "bytes": 107166,
+          "pdf_page": 313,
+          "printed_page": 302
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p319.webp",
+          "sha256": "75103dbb9da5343ddac75ea168460d5ab3b28bd9cd0fc610907d4826fd038b36",
+          "bytes": 79554,
+          "pdf_page": 319,
+          "printed_page": 308
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p322.webp",
+          "sha256": "3ee5145fbc02360a79a2a3aa3a2e9e15fd2749307a331f78bbf1ac5cacbdbfa3",
+          "bytes": 83394,
+          "pdf_page": 322,
+          "printed_page": 311
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p327.webp",
+          "sha256": "918ddb75a8bbd58846f69ead7a994ae85660cb568e3680729cdfd4029255c4b8",
+          "bytes": 73288,
+          "pdf_page": 327,
+          "printed_page": 316
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p331.webp",
+          "sha256": "ad7276a7fc67fb0975fc8cb3a0d9f30488e8e8ddc820cd9f7665db1d6651d6a6",
+          "bytes": 118590,
+          "pdf_page": 331,
+          "printed_page": 320
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p334.webp",
+          "sha256": "785e5c21a856f5bc8166877ade2ce382f75c5bcd49fa04d37702f145a77ea201",
+          "bytes": 81010,
+          "pdf_page": 334,
+          "printed_page": 323
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p340.webp",
+          "sha256": "ac142fd7a3c794f562ff618b7e14180b35a0cf659b982ce9614061c78a739a6a",
+          "bytes": 59470,
+          "pdf_page": 340,
+          "printed_page": 329
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p342.webp",
+          "sha256": "7d100cfeb2ed851f181015fffe9d36ade47f6b42583773ccd6098438b4ec4cae",
+          "bytes": 74898,
+          "pdf_page": 342,
+          "printed_page": 331
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p346.webp",
+          "sha256": "49db05ef0821797d2db19a90f76d280769413db2143576ec77da6c38ac1cbb3a",
+          "bytes": 113480,
+          "pdf_page": 346,
+          "printed_page": 335
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p355.webp",
+          "sha256": "2802956844f17512153ad807bcb3147e9cc8bef8ebae117565522cc5ebaad681",
+          "bytes": 73210,
+          "pdf_page": 355,
+          "printed_page": 344
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p357.webp",
+          "sha256": "55c8da4c628e4c1b1ec5544cdb892a8c702ef64b3ceb7bf140e8e1b05d5a435e",
+          "bytes": 93500,
+          "pdf_page": 357,
+          "printed_page": 346
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p360.webp",
+          "sha256": "045f7cf48767083187c4aee06b97aa35ca66ed9783b1f03b421bd697bf94ad51",
+          "bytes": 58184,
+          "pdf_page": 360,
+          "printed_page": 349
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p362.webp",
+          "sha256": "ee5127c1dc772dd776e2e00ab110ba4f1c0b66f199adaf12df1878ab2c5b7b09",
+          "bytes": 60290,
+          "pdf_page": 362,
+          "printed_page": 351
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p367.webp",
+          "sha256": "71b76daf7c5a7709a6e8537e46d90c98464461b988bde6bc3d784a0c0ce9cee9",
+          "bytes": 86592,
+          "pdf_page": 367,
+          "printed_page": 356
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p369.webp",
+          "sha256": "e7f90ab4c56f9b3170093e099b18c405a981f2f40ac78526b857be5ad3498af6",
+          "bytes": 85328,
+          "pdf_page": 369,
+          "printed_page": 358
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p371.webp",
+          "sha256": "29ee6dcb0e5f391e8cb184bed2a79d7a28a1f2422dbfbe5f73e8cba19f530c06",
+          "bytes": 98834,
+          "pdf_page": 371,
+          "printed_page": 360
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p373.webp",
+          "sha256": "2d13dda64705534140deb6b93fa6c699ce5f0c81512c7056ebfcae3f6646b36f",
+          "bytes": 101902,
+          "pdf_page": 373,
+          "printed_page": 362
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p375.webp",
+          "sha256": "9684c73fc33d630aa075bf1bd726e63b7fd20976535db5ca69ef66f4fd156aa2",
+          "bytes": 119802,
+          "pdf_page": 375,
+          "printed_page": 364
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p376.webp",
+          "sha256": "a2fd9f577372bca00e7c0f272d2a63ad525e928208966dc5888a93ee28423c3d",
+          "bytes": 82900,
+          "pdf_page": 376,
+          "printed_page": 365
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p382.webp",
+          "sha256": "87d861ecac464b99ef5c994a484ad94874259a7ddae422934d10ff57470f7090",
+          "bytes": 69836,
+          "pdf_page": 382,
+          "printed_page": 371
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p386.webp",
+          "sha256": "5a979dee682d9839e8e2956c5738a42a7ecd4c4ca75c88c02565bdd62828d1e4",
+          "bytes": 85292,
+          "pdf_page": 386,
+          "printed_page": 375
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p388.webp",
+          "sha256": "92ba4b86f009455e767ca0b4dcff1a006b536836b019bb22f36b8114ae4ef663",
+          "bytes": 64702,
+          "pdf_page": 388,
+          "printed_page": 377
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p391.webp",
+          "sha256": "17a48d1f27fadbfc5509ad055d141500b650bb30c0d1e148115d08e276f6760a",
+          "bytes": 59222,
+          "pdf_page": 391,
+          "printed_page": 380
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p393.webp",
+          "sha256": "b3fbf3d4ed584136ef71d4b5a39a8c56c266fe337f38fd5315d283284f9589cd",
+          "bytes": 81012,
+          "pdf_page": 393,
+          "printed_page": 382
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/DM2T-p394.webp",
+          "sha256": "d6711b362530a119223addc6a64bec824f2b04e276ec159dca55e505868cc92e",
+          "bytes": 120128,
+          "pdf_page": 394,
+          "printed_page": 383
+        }
+      ],
+      "scope": "知识点教材定位页节选，非逐字转录讲义"
+    },
+    "LA7": {
+      "pages": [
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p5.webp",
+          "sha256": "576d481deef7933d8e948e6f357b046a0d1a3e5e01b1e0512c279b8da893b4b4",
+          "bytes": 49332,
+          "pdf_page": 5,
+          "printed_page": 1
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p8.webp",
+          "sha256": "c91b497c20e5387de8339345c00078ef5bd01c8c66902018bb990b18dab1e851",
+          "bytes": 90180,
+          "pdf_page": 8,
+          "printed_page": 4
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p10.webp",
+          "sha256": "a36922dd96d42fa9ab244c8e5fbf7e46c822df02a36902a4ca5ddc57c6f50c58",
+          "bytes": 67906,
+          "pdf_page": 10,
+          "printed_page": 6
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p11.webp",
+          "sha256": "ae57a76e34cd4c55056fe67a71d1439f0591266b1ab1b5853d5af29e51e93100",
+          "bytes": 62316,
+          "pdf_page": 11,
+          "printed_page": 7
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p19.webp",
+          "sha256": "b40e61a118b26e253bd0b87f62cd6f6e7e87aa488591b268716641d2f55972da",
+          "bytes": 49788,
+          "pdf_page": 19,
+          "printed_page": 15
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p28.webp",
+          "sha256": "2fdcc6bcee7e8b441003512b7b25d15eed027b060a3792767c696ecdbe7f4b75",
+          "bytes": 50912,
+          "pdf_page": 28,
+          "printed_page": 24
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p33.webp",
+          "sha256": "2175cb62d39a50ea95a5678ac46c6b7864d6a270393448762f99d61253c5c45d",
+          "bytes": 55066,
+          "pdf_page": 33,
+          "printed_page": 29
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p43.webp",
+          "sha256": "2f465d22df09a0b2a5fd0505326a8c0439687c74ae49cfeda2ea27e93089c4b3",
+          "bytes": 64514,
+          "pdf_page": 43,
+          "printed_page": 39
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p48.webp",
+          "sha256": "df6743d5fc1f6ae4e8ee0265c2749962bc6bb255c7fa9e446c770e5e4529be6b",
+          "bytes": 55862,
+          "pdf_page": 48,
+          "printed_page": 44
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p50.webp",
+          "sha256": "859222b7e8e4d5491067808560b5fcea70f4cd98d0795af2cb7a1839324f745a",
+          "bytes": 67414,
+          "pdf_page": 50,
+          "printed_page": 46
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p60.webp",
+          "sha256": "c37fb542dd811fd837e4989455f79c93ab7135b1fecd89298aa343851d76a51f",
+          "bytes": 51198,
+          "pdf_page": 60,
+          "printed_page": 56
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p70.webp",
+          "sha256": "f1aef5cc135248585eabb0bf63344d0966cd817428f99ec702247ba4d85f0c8d",
+          "bytes": 78110,
+          "pdf_page": 70,
+          "printed_page": 66
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p75.webp",
+          "sha256": "af0cb5fdfde55658b6598ecc242c17f58d16cd201e8b8f1b7c33ad3d2144ff8b",
+          "bytes": 69784,
+          "pdf_page": 75,
+          "printed_page": 71
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p86.webp",
+          "sha256": "132cf8de6915d954e66cce9798d20c16e773c59cebf10b126a619ee8b69ee72a",
+          "bytes": 66542,
+          "pdf_page": 86,
+          "printed_page": 82
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p91.webp",
+          "sha256": "1ad85ef41cc1a83f34dd0a50bd8d2f433bc60c6a901f54827b70636a6a6abc0a",
+          "bytes": 92270,
+          "pdf_page": 91,
+          "printed_page": 87
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p95.webp",
+          "sha256": "61d50e4196120fe8e5df580d7052d599ace6bba321310dec2e50c9f749825760",
+          "bytes": 97588,
+          "pdf_page": 95,
+          "printed_page": 91
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p99.webp",
+          "sha256": "5a8c08261771a5fb1ca6b3dd37fa6c08a3fad53b45e5aaec582c784c040dc33c",
+          "bytes": 96172,
+          "pdf_page": 99,
+          "printed_page": 95
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p105.webp",
+          "sha256": "e543ab6062f0275dbd4f0afd21b2185f3a3167049b5e23da9e655809d418c096",
+          "bytes": 65832,
+          "pdf_page": 105,
+          "printed_page": 101
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p118.webp",
+          "sha256": "bb88b99645a115f308be8eb631918e7d46fc398a5d4e952dbc45a040a18917d5",
+          "bytes": 43446,
+          "pdf_page": 118,
+          "printed_page": 114
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p124.webp",
+          "sha256": "a2eac8f642b447fdef527154e2ffc5ca0800dfba0674a32d5cb253c26abd8536",
+          "bytes": 85818,
+          "pdf_page": 124,
+          "printed_page": 120
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p128.webp",
+          "sha256": "9fb23dbaea961c20bb484c60ab7da9db8fb84eeb968cc29bf82bafba235afb47",
+          "bytes": 64434,
+          "pdf_page": 128,
+          "printed_page": 124
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p131.webp",
+          "sha256": "5e633ea25e0e0717bccb245ce17204d21e190dfd9a17ae9fb85b52af3fefbbc0",
+          "bytes": 65762,
+          "pdf_page": 131,
+          "printed_page": 127
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p135.webp",
+          "sha256": "1bb23bc104b8e3560efdffc5da43c1c60bcddb9440c17b875ee21f83d1fead35",
+          "bytes": 72046,
+          "pdf_page": 135,
+          "printed_page": 131
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p139.webp",
+          "sha256": "87195c3c26932dee72698968e4dca289c9ceee46a73fb48b64d55136c7087638",
+          "bytes": 56480,
+          "pdf_page": 139,
+          "printed_page": 135
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p140.webp",
+          "sha256": "10e92d55354d216378a68f917225f828af78cf73400b8b456b0b5c6d53b484e4",
+          "bytes": 46702,
+          "pdf_page": 140,
+          "printed_page": 136
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p146.webp",
+          "sha256": "db1013aa8152948a0f1ee0320a16466bf55bae6d7ec19a2f715bcc327c43ca79",
+          "bytes": 76980,
+          "pdf_page": 146,
+          "printed_page": 142
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p150.webp",
+          "sha256": "b734a6923686af87a06ce61605feacef0c457caf21183784cf880f025a285131",
+          "bytes": 100944,
+          "pdf_page": 150,
+          "printed_page": 146
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p152.webp",
+          "sha256": "563545402e6e767fb3b2f8892f3e3d1588c1bee77e7bd1db498e20fdfaf0b122",
+          "bytes": 90832,
+          "pdf_page": 152,
+          "printed_page": 148
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p154.webp",
+          "sha256": "913e192b821fc07883886741901464c05dad03739b4bfb8a0255fed44b311b03",
+          "bytes": 34482,
+          "pdf_page": 154,
+          "printed_page": 150
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/LA7-p157.webp",
+          "sha256": "47192eae994050c7983e1d825fca4abd30eaf0a75258303fcd8b1265ab6ff5b7",
+          "bytes": 52890,
+          "pdf_page": 157,
+          "printed_page": 153
+        }
+      ],
+      "scope": "知识点教材定位页节选，非逐字转录讲义"
+    },
+    "PS3": {
+      "pages": [
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p11.webp",
+          "sha256": "38b2066bbdbfdee454c45c984514ee56c9843e557a9ebe10383ce417ab3c4364",
+          "bytes": 178042,
+          "pdf_page": 11,
+          "printed_page": 1
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p13.webp",
+          "sha256": "e5b498b253fc92d4b931a46439a46d0da46c270d0951ec23072e5b978690eb71",
+          "bytes": 112056,
+          "pdf_page": 13,
+          "printed_page": 3
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p18.webp",
+          "sha256": "25300a1d58582ed8e222d2d69ce079d02ae00f682d6f9f360f60598bac0cff9c",
+          "bytes": 157678,
+          "pdf_page": 18,
+          "printed_page": 8
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p19.webp",
+          "sha256": "d3d038c1d04b74982e485cff0b853c9e26ece35c22ec1aaa80eeb47523c0f35e",
+          "bytes": 117878,
+          "pdf_page": 19,
+          "printed_page": 9
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p22.webp",
+          "sha256": "1e27c29d1d9c6e66f81720883e65f29d878dc333d62e09772d17a30b6056b867",
+          "bytes": 115588,
+          "pdf_page": 22,
+          "printed_page": 12
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p24.webp",
+          "sha256": "384c71ec6c460a20595b4fc508a9d7c6c73e25e49d7fb3bfc33ef3fd3edc94a6",
+          "bytes": 89416,
+          "pdf_page": 24,
+          "printed_page": 14
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p31.webp",
+          "sha256": "3e0cf840d894d3a50d5d63ec0a06d81c7559c9b8e10a7f81f05658f52f78dfaf",
+          "bytes": 132344,
+          "pdf_page": 31,
+          "printed_page": 21
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p33.webp",
+          "sha256": "a751690dbe5bb74fc4f166273d2557f4daf1950eea3232509e6699fd50070fd7",
+          "bytes": 114666,
+          "pdf_page": 33,
+          "printed_page": 23
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p37.webp",
+          "sha256": "4debf3c66b5b4ad234f0aed4e1e3c4e5edd092ca5810cc2950588cf7af11a6bb",
+          "bytes": 127724,
+          "pdf_page": 37,
+          "printed_page": 27
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p40.webp",
+          "sha256": "652d30642a3124a8b068c7abb3c1bbe51de662302957d8b04d0cc3f73fd33873",
+          "bytes": 113182,
+          "pdf_page": 40,
+          "printed_page": 30
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p43.webp",
+          "sha256": "4d913434d09fe4f13d7e27edf5b3e346995d2e8e70f7036465bde7cb875a384e",
+          "bytes": 104292,
+          "pdf_page": 43,
+          "printed_page": 33
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p45.webp",
+          "sha256": "f6c321e8feed8d43da19a4214bc5e2c70e3621d175d878ef09711b3d43f3862d",
+          "bytes": 138190,
+          "pdf_page": 45,
+          "printed_page": 35
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p48.webp",
+          "sha256": "5fa2ca85c93c8952110459d3a7b604856191b151102d59d954258ddd579da465",
+          "bytes": 140268,
+          "pdf_page": 48,
+          "printed_page": 38
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p51.webp",
+          "sha256": "89681ada0d3e3df826a0e995688315605561fabb3a5327f5379e872d7e8f5c86",
+          "bytes": 89778,
+          "pdf_page": 51,
+          "printed_page": 41
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p58.webp",
+          "sha256": "2a24c6f3280b36c467e6512594b1a1c78fb73866dfc9d5bd05751a32567e7060",
+          "bytes": 88374,
+          "pdf_page": 58,
+          "printed_page": 48
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p71.webp",
+          "sha256": "66fe6081d5369655b31ab586e225c384d6a58e5f285ef3128b7d1e1c417a9405",
+          "bytes": 148320,
+          "pdf_page": 71,
+          "printed_page": 61
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p72.webp",
+          "sha256": "ab486435e0c4feeaadd45be8088e717b9100a932ab07c319f01eeb7ce6bfbacd",
+          "bytes": 66370,
+          "pdf_page": 72,
+          "printed_page": 62
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p74.webp",
+          "sha256": "8983998d3f4f917eea06a0b3c468ef5f32957b594c8eadd028f09a71e50494b5",
+          "bytes": 81992,
+          "pdf_page": 74,
+          "printed_page": 64
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p77.webp",
+          "sha256": "fd6ea0a9a98e7918328fc3ff883555d7c337338132588d488e2f256cda5b1fe9",
+          "bytes": 73034,
+          "pdf_page": 77,
+          "printed_page": 67
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p81.webp",
+          "sha256": "3fe9978ef56886e4271d9461b82b221d50d1e028947a57e82e69f60657c44716",
+          "bytes": 91852,
+          "pdf_page": 81,
+          "printed_page": 71
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p85.webp",
+          "sha256": "96997bb952f173b23e9800b4454aa7269242181d2dfb2f2f9792e128f22a163f",
+          "bytes": 77888,
+          "pdf_page": 85,
+          "printed_page": 75
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p92.webp",
+          "sha256": "9d942abe601a1c349c9af2d980008abab4080d45e0c117dc47726707f8332d00",
+          "bytes": 130810,
+          "pdf_page": 92,
+          "printed_page": 82
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p97.webp",
+          "sha256": "f8e2e8c4a443a43edda4c50785f77e0b96c8e15ecacac5948fe6f78b165aa66f",
+          "bytes": 84514,
+          "pdf_page": 97,
+          "printed_page": 87
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p107.webp",
+          "sha256": "c9f1e3a1b5135ed55b3e90a0edb53bd41c849efa3b6231eaad15fb617a81abe7",
+          "bytes": 118210,
+          "pdf_page": 107,
+          "printed_page": 97
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p116.webp",
+          "sha256": "92fb36fd69cd4e28bbe5b470d061bff94f7d8bdea588d8f7533f91c2751114cc",
+          "bytes": 86366,
+          "pdf_page": 116,
+          "printed_page": 106
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p120.webp",
+          "sha256": "39e0bd3930c98951ddf2b005def0929ffcb2059d13ab3309af86caa192ead698",
+          "bytes": 75420,
+          "pdf_page": 120,
+          "printed_page": 110
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p124.webp",
+          "sha256": "d347d523f94e42ca690d22d7e0ba5dfb9118cdaa114fd63bd8258c9350a90c4f",
+          "bytes": 100344,
+          "pdf_page": 124,
+          "printed_page": 114
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p126.webp",
+          "sha256": "5c45a32fd4d6b5d8b28c4c57f4d23174c68d4480c6a3927ff538e649171886d0",
+          "bytes": 119012,
+          "pdf_page": 126,
+          "printed_page": 116
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p136.webp",
+          "sha256": "e3ac443ec4646721729bd6016587cc9fb892948e1bb04c74c4bb152d3b5338be",
+          "bytes": 161790,
+          "pdf_page": 136,
+          "printed_page": 126
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p141.webp",
+          "sha256": "51ff7b4e41b9db4d96db4e22510a680c2590788bc37833d7df634a6f3e8eff2a",
+          "bytes": 109458,
+          "pdf_page": 141,
+          "printed_page": 131
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p146.webp",
+          "sha256": "bcee495f07a7359c948e92f254424effcda009717de8a7f2f9e9c676293477fa",
+          "bytes": 88156,
+          "pdf_page": 146,
+          "printed_page": 136
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p154.webp",
+          "sha256": "328e22cce8db0ade9f15e141a5a3102198bf2f02d49b7928d80b40e0368192b4",
+          "bytes": 138962,
+          "pdf_page": 154,
+          "printed_page": 144
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p156.webp",
+          "sha256": "4c3a4ddbf391039527dbcfdcd99033e2913140976dd79452c645e7f01ae58ee4",
+          "bytes": 97416,
+          "pdf_page": 156,
+          "printed_page": 146
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p161.webp",
+          "sha256": "cbc7a41b776aeea59127aa65a00234ad3f2e2c396e546ac28cf91089c8b853f1",
+          "bytes": 106654,
+          "pdf_page": 161,
+          "printed_page": 151
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p167.webp",
+          "sha256": "1d4e5826ccaa0ec21a3f6ff95e0f3e63e28afc77800e751ec4f1a907fa03435f",
+          "bytes": 141864,
+          "pdf_page": 167,
+          "printed_page": 157
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p169.webp",
+          "sha256": "82682fae359116b60e7dbaeb40fc599deac508a5d52506ae6714fc9493e98184",
+          "bytes": 79154,
+          "pdf_page": 169,
+          "printed_page": 159
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p173.webp",
+          "sha256": "f6e87552b01866fe7871ae5b133609afe3a77855d6c46535ecb961e05e0c3da8",
+          "bytes": 109342,
+          "pdf_page": 173,
+          "printed_page": 163
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p179.webp",
+          "sha256": "29445358bfd82ebbfb089c62dfcd6a7fbfa952cd91616c972909cbc1935f47d1",
+          "bytes": 158218,
+          "pdf_page": 179,
+          "printed_page": 169
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p183.webp",
+          "sha256": "4f7740ee402fe13b211012d7f4c589768dbcae5253e111708998061eaea7b755",
+          "bytes": 113686,
+          "pdf_page": 183,
+          "printed_page": 173
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p189.webp",
+          "sha256": "067e55472d239f2d68ef058d035e1d4640383482adb70ebcc524bc59dcebc661",
+          "bytes": 115456,
+          "pdf_page": 189,
+          "printed_page": 179
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p197.webp",
+          "sha256": "b6ede75ef776e084e762fcdd90edf37b7682215770ab69dec320e41376fc4a90",
+          "bytes": 134382,
+          "pdf_page": 197,
+          "printed_page": 187
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p206.webp",
+          "sha256": "7133b38320dad5ddaae3ff4f347ab38935351820199a61b208f7dc8daf465e6e",
+          "bytes": 107316,
+          "pdf_page": 206,
+          "printed_page": 196
+        },
+        {
+          "file": "/discrete-math/textbooks/v32/lesson-pages/PS3-p214.webp",
+          "sha256": "c1af1b5f057d243e965818a4dc5efd8d05e1fd555601f379e158b235b8418bff",
+          "bytes": 120718,
+          "pdf_page": 214,
+          "printed_page": 204
+        }
+      ],
+      "scope": "知识点教材定位页节选，非逐字转录讲义"
+    },
+    "PHYS": {
+      "pages": [
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p1.webp",
+          "sha256": "9911fee9c7c68cceb12a0fe55d49e1814af7c26b745402a1161e13a17e26ee46",
+          "bytes": 109588,
+          "pdf_page": 16,
+          "printed_page": 1
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p6.webp",
+          "sha256": "a910469b05ca808ddbdecfd09c375b47e0fee1922d55dade251f001301b1dd87",
+          "bytes": 82216,
+          "pdf_page": 21,
+          "printed_page": 6
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p10.webp",
+          "sha256": "5cbe7f6197022756cb73fb6bc5fed7408978ecdb41af91b32e2aa74328b52f6f",
+          "bytes": 61274,
+          "pdf_page": 25,
+          "printed_page": 10
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p13.webp",
+          "sha256": "6f3aaf49b6df655b875e0ab8ffabf654b375cded8474b5c30b5aaf5fdc99efa4",
+          "bytes": 67662,
+          "pdf_page": 28,
+          "printed_page": 13
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p16.webp",
+          "sha256": "ba6765933ccd68acb5e402fc183f3e4cf5ea9438e3ce071cef4ff6769f0002fe",
+          "bytes": 93348,
+          "pdf_page": 31,
+          "printed_page": 16
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p23.webp",
+          "sha256": "5ddaddbb7b04e9d0dc8e11dbbf0e4935c26812a3a16a6042ea520fd083ea8a20",
+          "bytes": 83474,
+          "pdf_page": 38,
+          "printed_page": 23
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p29.webp",
+          "sha256": "37b560aa2e2d5681715d5eec2befd651675304aece674190bc405f4868619f10",
+          "bytes": 97846,
+          "pdf_page": 44,
+          "printed_page": 29
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p33.webp",
+          "sha256": "00c36fa2c7803dcdf7f85c96efd69759560e5570484bf10526598d3441b6fe7a",
+          "bytes": 69176,
+          "pdf_page": 48,
+          "printed_page": 33
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p44.webp",
+          "sha256": "6ec6ea39ee4cd9069d64700ab0dedd5ea4184a919b0b0ffe2276cb9ce6b37735",
+          "bytes": 85498,
+          "pdf_page": 59,
+          "printed_page": 44
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p49.webp",
+          "sha256": "8836ab7f5dae179bf7ec3235c217eddecc87c49818572ccd0bbecdc7881bde54",
+          "bytes": 99662,
+          "pdf_page": 64,
+          "printed_page": 49
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p55.webp",
+          "sha256": "692e729f2fb1b7a78ec5fcf6514167b0bc126ab2577b2fd4a18d20cc08c6cb07",
+          "bytes": 87684,
+          "pdf_page": 70,
+          "printed_page": 55
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p58.webp",
+          "sha256": "2965d8d91d71ffa40388b3210d51eb47dbadc5e5c54a7d42224c09b22e41259e",
+          "bytes": 79946,
+          "pdf_page": 73,
+          "printed_page": 58
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p65.webp",
+          "sha256": "57c1afd67af41952a466da8c1befecb6126b47189b3332aace9437e440b8cc2e",
+          "bytes": 73248,
+          "pdf_page": 80,
+          "printed_page": 65
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p72.webp",
+          "sha256": "6f2952b844fcef57406da785be9d6eb1b320d476cd7bd5134beb4368268da2e9",
+          "bytes": 97952,
+          "pdf_page": 87,
+          "printed_page": 72
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p78.webp",
+          "sha256": "54ace9b243fec316e84808a2d38bab9e934934aa5e399ea5043d7b6290813b16",
+          "bytes": 99226,
+          "pdf_page": 93,
+          "printed_page": 78
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p85.webp",
+          "sha256": "87191b1c88ce02f2dfd05cf238d6cd2e94b27fc10f60263bd9dea94d28add2c0",
+          "bytes": 114884,
+          "pdf_page": 100,
+          "printed_page": 85
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p97.webp",
+          "sha256": "027b4297168be4d71ca4304258ee2ddbec0d42ada683214c2832ca2ff540a34d",
+          "bytes": 138538,
+          "pdf_page": 112,
+          "printed_page": 97
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p100.webp",
+          "sha256": "1589d233f975c9951a4b960ab8d95c26dafb8caca01a541cea6db35f29d2829c",
+          "bytes": 79120,
+          "pdf_page": 115,
+          "printed_page": 100
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p108.webp",
+          "sha256": "8611ded35fbb48549dfed1aa8184fcfa199ceed5c603624eab67982cef5c0268",
+          "bytes": 81252,
+          "pdf_page": 123,
+          "printed_page": 108
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p114.webp",
+          "sha256": "b2c92bc5efd52804222f2a18b61e16cf8a419c3437797b29c8660f27b06c35c9",
+          "bytes": 106950,
+          "pdf_page": 129,
+          "printed_page": 114
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p123.webp",
+          "sha256": "88c08637761d1751c38d971ef339ffd3a912f5241394ba4faed9e960769f81f4",
+          "bytes": 91174,
+          "pdf_page": 138,
+          "printed_page": 123
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p126.webp",
+          "sha256": "150efe6ed8145f95e838762b9669a67df2a00b335d455d7bbe9626f1b4d1fc97",
+          "bytes": 89610,
+          "pdf_page": 141,
+          "printed_page": 126
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p130.webp",
+          "sha256": "aaa5a749af1bcdbf0ba2448123425eb852487003a1a04c2f4a2d59d1faf086a3",
+          "bytes": 80052,
+          "pdf_page": 145,
+          "printed_page": 130
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p134.webp",
+          "sha256": "3af733af99f44371357f3644650b0c74c1a093ef6fc1bb5973b7d3a502cd5d3a",
+          "bytes": 97518,
+          "pdf_page": 149,
+          "printed_page": 134
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p144.webp",
+          "sha256": "b99ecb2154a744295434d0c3fa5e9f53a266cf45332470da2955eb291bb2cf51",
+          "bytes": 106148,
+          "pdf_page": 159,
+          "printed_page": 144
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p149.webp",
+          "sha256": "a2f6a2d4d9e31aa8dafaa168cbdf6cea0f71068640e2c0c1dc7e25a659909d31",
+          "bytes": 72512,
+          "pdf_page": 164,
+          "printed_page": 149
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p152.webp",
+          "sha256": "d5051b8eddf80c9688c3807c46777bba5c24281f7ea49ee8665a9d0578de0eb1",
+          "bytes": 68516,
+          "pdf_page": 167,
+          "printed_page": 152
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p157.webp",
+          "sha256": "aab8afe414cef7fd080b39d75e08f87a6fc4f7fe5f20b20d364a65d235b519bf",
+          "bytes": 105976,
+          "pdf_page": 172,
+          "printed_page": 157
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p160.webp",
+          "sha256": "9bf32adbe5c7c825b946ca56875ebb9a9a21c3f24d62a11368257e836bbc4dfb",
+          "bytes": 94914,
+          "pdf_page": 175,
+          "printed_page": 160
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p164.webp",
+          "sha256": "f953ec70892691ea0e721ae28466f783244bbfcb2de8a39e1cbbe1cbffd0a6af",
+          "bytes": 97128,
+          "pdf_page": 179,
+          "printed_page": 164
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p185.webp",
+          "sha256": "31c4caeb17d0941dbac5d87ec99893c98ac3a943a887e71112f4cc6e0e153ddf",
+          "bytes": 100908,
+          "pdf_page": 200,
+          "printed_page": 185
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p189.webp",
+          "sha256": "daf3aff014c7b1204c48a190928d317232f992b35d55af26be775157f190a240",
+          "bytes": 85508,
+          "pdf_page": 204,
+          "printed_page": 189
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p192.webp",
+          "sha256": "b800b0780b63d4bbe979966d73b3c495983ddbf828f2b2e3ced9a9032b779bef",
+          "bytes": 104648,
+          "pdf_page": 207,
+          "printed_page": 192
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p195.webp",
+          "sha256": "5a3e53227a200a453284a31fb1a09bd835f8f97f75e9fb5da182553848aa0fef",
+          "bytes": 83804,
+          "pdf_page": 210,
+          "printed_page": 195
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p198.webp",
+          "sha256": "3bddd9d0384f5fe1337de83ebd4b2b4255bec69f7135e9814170278f7894ec97",
+          "bytes": 92070,
+          "pdf_page": 213,
+          "printed_page": 198
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p202.webp",
+          "sha256": "126fe7595fb442ca7d70b5eaf28b84fe1473dd6315b1433350127c973032fb5d",
+          "bytes": 86184,
+          "pdf_page": 217,
+          "printed_page": 202
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p209.webp",
+          "sha256": "665d91604ac008bac3470d012d648b39196b40bafe6028f770bdd66e71852c16",
+          "bytes": 98950,
+          "pdf_page": 224,
+          "printed_page": 209
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p212.webp",
+          "sha256": "e3ff1f6afcb56e8a8b99b201346c5d3e1b916257e46470eee3da9791834f1196",
+          "bytes": 102374,
+          "pdf_page": 227,
+          "printed_page": 212
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p215.webp",
+          "sha256": "665ad63dbc4012394a63749f840a8fa6693d11526e22c54c181535c65cbd3d4c",
+          "bytes": 93710,
+          "pdf_page": 230,
+          "printed_page": 215
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p220.webp",
+          "sha256": "cbde2b72a2c1bd4eebbfd4c62cd140283e665d954bd0a32e96c94f283d0a10d7",
+          "bytes": 100930,
+          "pdf_page": 235,
+          "printed_page": 220
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p227.webp",
+          "sha256": "7b67a0df33251f6953923800866b4be425f1d79daf160c868ca45df8fed656db",
+          "bytes": 87960,
+          "pdf_page": 242,
+          "printed_page": 227
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p230.webp",
+          "sha256": "a1485867e07ed188c34fce4ad1ded982c3cdbcd347d5b839b4ab5a786cc22d3c",
+          "bytes": 114714,
+          "pdf_page": 245,
+          "printed_page": 230
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p231.webp",
+          "sha256": "b2a91b4fbde93977b8abd71ce5a84a6088e9bd2379da40f4c9dd85a1cd748f45",
+          "bytes": 90206,
+          "pdf_page": 246,
+          "printed_page": 231
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p238.webp",
+          "sha256": "a661d7a59d229ff020b1f938707e8e78179c1843fe355c39dadfe4f3b398391e",
+          "bytes": 85718,
+          "pdf_page": 253,
+          "printed_page": 238
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p246.webp",
+          "sha256": "60ffdc79eb7eba87bb56e1dee515ffd601cd63122d55d93633a8ea9a94aeef12",
+          "bytes": 81600,
+          "pdf_page": 261,
+          "printed_page": 246
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p253.webp",
+          "sha256": "ae471c49f064474ec880135d990c54f9bb03edc297fe9ce73858cbcb5adff99c",
+          "bytes": 80704,
+          "pdf_page": 268,
+          "printed_page": 253
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p258.webp",
+          "sha256": "11bbe04044c4fe1742e23b692f9d12d63dc492f788e143d31e3936becb9e8e9f",
+          "bytes": 90462,
+          "pdf_page": 273,
+          "printed_page": 258
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p266.webp",
+          "sha256": "7c27c38861ad13e037848b0fe1207f34bde105038197d8e9ed60045fead25ddf",
+          "bytes": 116514,
+          "pdf_page": 281,
+          "printed_page": 266
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p270.webp",
+          "sha256": "3302ef503d95aad6b608dc651a0498b4f3bfd68a88e81e026c398490cee1bae7",
+          "bytes": 96714,
+          "pdf_page": 285,
+          "printed_page": 270
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p282.webp",
+          "sha256": "4654c3a91097300fc931d8d6b666c9ff04f7f433517ff4ee589443c3b6abea60",
+          "bytes": 84032,
+          "pdf_page": 297,
+          "printed_page": 282
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p284.webp",
+          "sha256": "677964a58955c6b1bc389c7e8f0a6685e7e448f7be598cf4dd84b827788e0d61",
+          "bytes": 114358,
+          "pdf_page": 299,
+          "printed_page": 284
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p287.webp",
+          "sha256": "c486947c2c00348bdc8c7f4057ea2e2de313b2b5a32643a214bbbc18ec6e2f62",
+          "bytes": 96934,
+          "pdf_page": 302,
+          "printed_page": 287
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p291.webp",
+          "sha256": "4f874b604f95a76eab54c60f5ed4566b44372194e41f190f482409c56403b028",
+          "bytes": 75386,
+          "pdf_page": 306,
+          "printed_page": 291
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p298.webp",
+          "sha256": "ddb842c06424dde26251ae2ee521d974179bcef81e72a4f5511951311e0836ed",
+          "bytes": 84528,
+          "pdf_page": 313,
+          "printed_page": 298
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p301.webp",
+          "sha256": "2e96b971324793e2e7312142d9be0c62694134e028fb72d5c57643d99428204d",
+          "bytes": 85850,
+          "pdf_page": 316,
+          "printed_page": 301
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p310.webp",
+          "sha256": "1593ee255eb2ea9c2b65e04babfcc3360e68ecfb75432bf10ab3d5bbc01b59d2",
+          "bytes": 71808,
+          "pdf_page": 325,
+          "printed_page": 310
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p314.webp",
+          "sha256": "6954657306638bb43b9bcbd47473d3b95a5231d5994b67fe025f008b34f122dd",
+          "bytes": 82488,
+          "pdf_page": 329,
+          "printed_page": 314
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p324.webp",
+          "sha256": "0363c052225b1e280ff69270625e84b6a42c28f1163ca3254dfc771893d5e6a3",
+          "bytes": 123702,
+          "pdf_page": 339,
+          "printed_page": 324
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p335.webp",
+          "sha256": "8a36949aa58f000e6654b7bc0a5d043e48e8241bd059d02966eed9eb2056081f",
+          "bytes": 97034,
+          "pdf_page": 350,
+          "printed_page": 335
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p342.webp",
+          "sha256": "57281a62dbfd9256878b2b4488c0ea3861cffe028cb24ca5d36410f86755fe15",
+          "bytes": 90732,
+          "pdf_page": 357,
+          "printed_page": 342
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p347.webp",
+          "sha256": "e791c024272df81a335d2820a991aa6c24edb8098a3f5fb2e076b01ea262aede",
+          "bytes": 86794,
+          "pdf_page": 362,
+          "printed_page": 347
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p355.webp",
+          "sha256": "2fc32d1e10d64745a81bfe518808596e948f673e9ca40a8ffd73fdcbf6817f12",
+          "bytes": 97890,
+          "pdf_page": 370,
+          "printed_page": 355
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p356.webp",
+          "sha256": "61d50fd993c6ed01829e4a9258ae56b2ac2e24abaab7b896d043bfee7ae24512",
+          "bytes": 87100,
+          "pdf_page": 371,
+          "printed_page": 356
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p363.webp",
+          "sha256": "4e115d84d73886c6d3e280380f695f6d3f4c69dd28a0474644e51f669142f7c0",
+          "bytes": 126834,
+          "pdf_page": 378,
+          "printed_page": 363
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p366.webp",
+          "sha256": "afe99c3b518d9a689b1e95f637294ab7fedc69ebb18040109f553bfe486e0e34",
+          "bytes": 79860,
+          "pdf_page": 381,
+          "printed_page": 366
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p377.webp",
+          "sha256": "8b04acaccaa6f3a93d5d9735d964b3b4d3e9255e0328619524348284f1440741",
+          "bytes": 89158,
+          "pdf_page": 392,
+          "printed_page": 377
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p384.webp",
+          "sha256": "55624f97c01fea96eb8c6cbcd41a1347624ea4f19a874a60f5be6f7182799490",
+          "bytes": 60432,
+          "pdf_page": 399,
+          "printed_page": 384
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p390.webp",
+          "sha256": "3fdf43cd003d4c450c58e9a860cb6a719c1932e68532aa98c62d667bbeabc400",
+          "bytes": 78546,
+          "pdf_page": 405,
+          "printed_page": 390
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p396.webp",
+          "sha256": "88143adcdba73f95e7dff0fbc6216bf4972d6c495bc0fb6800d93bf6949f5c24",
+          "bytes": 62610,
+          "pdf_page": 411,
+          "printed_page": 396
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p402.webp",
+          "sha256": "91b7da65d05fe260cf9a0f020c1b9cd3332977b1da7e87a1d076f2eaa7f67bff",
+          "bytes": 117052,
+          "pdf_page": 417,
+          "printed_page": 402
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p406.webp",
+          "sha256": "86ae7e5f069071a046be84d4a3ec8451a6defcd8dd55aa8020796d29d67b7ccc",
+          "bytes": 115590,
+          "pdf_page": 421,
+          "printed_page": 406
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p411.webp",
+          "sha256": "f87d0e484855ec5cff43eb81209f979e2dc09bde69a151edbdad078bcf2ccd71",
+          "bytes": 77040,
+          "pdf_page": 426,
+          "printed_page": 411
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p421.webp",
+          "sha256": "739a4d3ffec0121af1e10ea0d5a3236cf1061baf47fb9c1d81cab202105af09e",
+          "bytes": 94452,
+          "pdf_page": 436,
+          "printed_page": 421
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p430.webp",
+          "sha256": "56a7e3d2a495509ff230dd6b211357d156372c0c51a8cbad04d98decf45857ce",
+          "bytes": 109152,
+          "pdf_page": 445,
+          "printed_page": 430
+        },
+        {
+          "file": "/discrete-math/physics/v32/lesson-pages/p434.webp",
+          "sha256": "efb288ca21aac208cb7fdc4c84e7e8da66bcbaa1856699bcb1f2b4326b1c23d3",
+          "bytes": 96268,
+          "pdf_page": 449,
+          "printed_page": 434
+        }
+      ],
+      "scope": "知识点教材定位页节选，非逐字转录讲义",
+      "pdf_sha256": "b67d52e0fa7250bfe9bab522d47e091b685ab0ae3945e391cec024f47f904d96"
+    }
+  },
+  "physics_source": {
+    "pages": [
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p1.webp",
+        "sha256": "9911fee9c7c68cceb12a0fe55d49e1814af7c26b745402a1161e13a17e26ee46",
+        "bytes": 109588,
+        "pdf_page": 16,
+        "printed_page": 1
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p6.webp",
+        "sha256": "a910469b05ca808ddbdecfd09c375b47e0fee1922d55dade251f001301b1dd87",
+        "bytes": 82216,
+        "pdf_page": 21,
+        "printed_page": 6
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p10.webp",
+        "sha256": "5cbe7f6197022756cb73fb6bc5fed7408978ecdb41af91b32e2aa74328b52f6f",
+        "bytes": 61274,
+        "pdf_page": 25,
+        "printed_page": 10
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p13.webp",
+        "sha256": "6f3aaf49b6df655b875e0ab8ffabf654b375cded8474b5c30b5aaf5fdc99efa4",
+        "bytes": 67662,
+        "pdf_page": 28,
+        "printed_page": 13
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p16.webp",
+        "sha256": "ba6765933ccd68acb5e402fc183f3e4cf5ea9438e3ce071cef4ff6769f0002fe",
+        "bytes": 93348,
+        "pdf_page": 31,
+        "printed_page": 16
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p23.webp",
+        "sha256": "5ddaddbb7b04e9d0dc8e11dbbf0e4935c26812a3a16a6042ea520fd083ea8a20",
+        "bytes": 83474,
+        "pdf_page": 38,
+        "printed_page": 23
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p29.webp",
+        "sha256": "37b560aa2e2d5681715d5eec2befd651675304aece674190bc405f4868619f10",
+        "bytes": 97846,
+        "pdf_page": 44,
+        "printed_page": 29
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p33.webp",
+        "sha256": "00c36fa2c7803dcdf7f85c96efd69759560e5570484bf10526598d3441b6fe7a",
+        "bytes": 69176,
+        "pdf_page": 48,
+        "printed_page": 33
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p44.webp",
+        "sha256": "6ec6ea39ee4cd9069d64700ab0dedd5ea4184a919b0b0ffe2276cb9ce6b37735",
+        "bytes": 85498,
+        "pdf_page": 59,
+        "printed_page": 44
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p49.webp",
+        "sha256": "8836ab7f5dae179bf7ec3235c217eddecc87c49818572ccd0bbecdc7881bde54",
+        "bytes": 99662,
+        "pdf_page": 64,
+        "printed_page": 49
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p55.webp",
+        "sha256": "692e729f2fb1b7a78ec5fcf6514167b0bc126ab2577b2fd4a18d20cc08c6cb07",
+        "bytes": 87684,
+        "pdf_page": 70,
+        "printed_page": 55
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p58.webp",
+        "sha256": "2965d8d91d71ffa40388b3210d51eb47dbadc5e5c54a7d42224c09b22e41259e",
+        "bytes": 79946,
+        "pdf_page": 73,
+        "printed_page": 58
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p65.webp",
+        "sha256": "57c1afd67af41952a466da8c1befecb6126b47189b3332aace9437e440b8cc2e",
+        "bytes": 73248,
+        "pdf_page": 80,
+        "printed_page": 65
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p72.webp",
+        "sha256": "6f2952b844fcef57406da785be9d6eb1b320d476cd7bd5134beb4368268da2e9",
+        "bytes": 97952,
+        "pdf_page": 87,
+        "printed_page": 72
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p78.webp",
+        "sha256": "54ace9b243fec316e84808a2d38bab9e934934aa5e399ea5043d7b6290813b16",
+        "bytes": 99226,
+        "pdf_page": 93,
+        "printed_page": 78
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p85.webp",
+        "sha256": "87191b1c88ce02f2dfd05cf238d6cd2e94b27fc10f60263bd9dea94d28add2c0",
+        "bytes": 114884,
+        "pdf_page": 100,
+        "printed_page": 85
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p97.webp",
+        "sha256": "027b4297168be4d71ca4304258ee2ddbec0d42ada683214c2832ca2ff540a34d",
+        "bytes": 138538,
+        "pdf_page": 112,
+        "printed_page": 97
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p100.webp",
+        "sha256": "1589d233f975c9951a4b960ab8d95c26dafb8caca01a541cea6db35f29d2829c",
+        "bytes": 79120,
+        "pdf_page": 115,
+        "printed_page": 100
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p108.webp",
+        "sha256": "8611ded35fbb48549dfed1aa8184fcfa199ceed5c603624eab67982cef5c0268",
+        "bytes": 81252,
+        "pdf_page": 123,
+        "printed_page": 108
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p114.webp",
+        "sha256": "b2c92bc5efd52804222f2a18b61e16cf8a419c3437797b29c8660f27b06c35c9",
+        "bytes": 106950,
+        "pdf_page": 129,
+        "printed_page": 114
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p123.webp",
+        "sha256": "88c08637761d1751c38d971ef339ffd3a912f5241394ba4faed9e960769f81f4",
+        "bytes": 91174,
+        "pdf_page": 138,
+        "printed_page": 123
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p126.webp",
+        "sha256": "150efe6ed8145f95e838762b9669a67df2a00b335d455d7bbe9626f1b4d1fc97",
+        "bytes": 89610,
+        "pdf_page": 141,
+        "printed_page": 126
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p130.webp",
+        "sha256": "aaa5a749af1bcdbf0ba2448123425eb852487003a1a04c2f4a2d59d1faf086a3",
+        "bytes": 80052,
+        "pdf_page": 145,
+        "printed_page": 130
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p134.webp",
+        "sha256": "3af733af99f44371357f3644650b0c74c1a093ef6fc1bb5973b7d3a502cd5d3a",
+        "bytes": 97518,
+        "pdf_page": 149,
+        "printed_page": 134
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p144.webp",
+        "sha256": "b99ecb2154a744295434d0c3fa5e9f53a266cf45332470da2955eb291bb2cf51",
+        "bytes": 106148,
+        "pdf_page": 159,
+        "printed_page": 144
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p149.webp",
+        "sha256": "a2f6a2d4d9e31aa8dafaa168cbdf6cea0f71068640e2c0c1dc7e25a659909d31",
+        "bytes": 72512,
+        "pdf_page": 164,
+        "printed_page": 149
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p152.webp",
+        "sha256": "d5051b8eddf80c9688c3807c46777bba5c24281f7ea49ee8665a9d0578de0eb1",
+        "bytes": 68516,
+        "pdf_page": 167,
+        "printed_page": 152
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p157.webp",
+        "sha256": "aab8afe414cef7fd080b39d75e08f87a6fc4f7fe5f20b20d364a65d235b519bf",
+        "bytes": 105976,
+        "pdf_page": 172,
+        "printed_page": 157
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p160.webp",
+        "sha256": "9bf32adbe5c7c825b946ca56875ebb9a9a21c3f24d62a11368257e836bbc4dfb",
+        "bytes": 94914,
+        "pdf_page": 175,
+        "printed_page": 160
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p164.webp",
+        "sha256": "f953ec70892691ea0e721ae28466f783244bbfcb2de8a39e1cbbe1cbffd0a6af",
+        "bytes": 97128,
+        "pdf_page": 179,
+        "printed_page": 164
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p185.webp",
+        "sha256": "31c4caeb17d0941dbac5d87ec99893c98ac3a943a887e71112f4cc6e0e153ddf",
+        "bytes": 100908,
+        "pdf_page": 200,
+        "printed_page": 185
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p189.webp",
+        "sha256": "daf3aff014c7b1204c48a190928d317232f992b35d55af26be775157f190a240",
+        "bytes": 85508,
+        "pdf_page": 204,
+        "printed_page": 189
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p192.webp",
+        "sha256": "b800b0780b63d4bbe979966d73b3c495983ddbf828f2b2e3ced9a9032b779bef",
+        "bytes": 104648,
+        "pdf_page": 207,
+        "printed_page": 192
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p195.webp",
+        "sha256": "5a3e53227a200a453284a31fb1a09bd835f8f97f75e9fb5da182553848aa0fef",
+        "bytes": 83804,
+        "pdf_page": 210,
+        "printed_page": 195
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p198.webp",
+        "sha256": "3bddd9d0384f5fe1337de83ebd4b2b4255bec69f7135e9814170278f7894ec97",
+        "bytes": 92070,
+        "pdf_page": 213,
+        "printed_page": 198
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p202.webp",
+        "sha256": "126fe7595fb442ca7d70b5eaf28b84fe1473dd6315b1433350127c973032fb5d",
+        "bytes": 86184,
+        "pdf_page": 217,
+        "printed_page": 202
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p209.webp",
+        "sha256": "665d91604ac008bac3470d012d648b39196b40bafe6028f770bdd66e71852c16",
+        "bytes": 98950,
+        "pdf_page": 224,
+        "printed_page": 209
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p212.webp",
+        "sha256": "e3ff1f6afcb56e8a8b99b201346c5d3e1b916257e46470eee3da9791834f1196",
+        "bytes": 102374,
+        "pdf_page": 227,
+        "printed_page": 212
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p215.webp",
+        "sha256": "665ad63dbc4012394a63749f840a8fa6693d11526e22c54c181535c65cbd3d4c",
+        "bytes": 93710,
+        "pdf_page": 230,
+        "printed_page": 215
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p220.webp",
+        "sha256": "cbde2b72a2c1bd4eebbfd4c62cd140283e665d954bd0a32e96c94f283d0a10d7",
+        "bytes": 100930,
+        "pdf_page": 235,
+        "printed_page": 220
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p227.webp",
+        "sha256": "7b67a0df33251f6953923800866b4be425f1d79daf160c868ca45df8fed656db",
+        "bytes": 87960,
+        "pdf_page": 242,
+        "printed_page": 227
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p230.webp",
+        "sha256": "a1485867e07ed188c34fce4ad1ded982c3cdbcd347d5b839b4ab5a786cc22d3c",
+        "bytes": 114714,
+        "pdf_page": 245,
+        "printed_page": 230
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p231.webp",
+        "sha256": "b2a91b4fbde93977b8abd71ce5a84a6088e9bd2379da40f4c9dd85a1cd748f45",
+        "bytes": 90206,
+        "pdf_page": 246,
+        "printed_page": 231
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p238.webp",
+        "sha256": "a661d7a59d229ff020b1f938707e8e78179c1843fe355c39dadfe4f3b398391e",
+        "bytes": 85718,
+        "pdf_page": 253,
+        "printed_page": 238
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p246.webp",
+        "sha256": "60ffdc79eb7eba87bb56e1dee515ffd601cd63122d55d93633a8ea9a94aeef12",
+        "bytes": 81600,
+        "pdf_page": 261,
+        "printed_page": 246
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p253.webp",
+        "sha256": "ae471c49f064474ec880135d990c54f9bb03edc297fe9ce73858cbcb5adff99c",
+        "bytes": 80704,
+        "pdf_page": 268,
+        "printed_page": 253
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p258.webp",
+        "sha256": "11bbe04044c4fe1742e23b692f9d12d63dc492f788e143d31e3936becb9e8e9f",
+        "bytes": 90462,
+        "pdf_page": 273,
+        "printed_page": 258
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p266.webp",
+        "sha256": "7c27c38861ad13e037848b0fe1207f34bde105038197d8e9ed60045fead25ddf",
+        "bytes": 116514,
+        "pdf_page": 281,
+        "printed_page": 266
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p270.webp",
+        "sha256": "3302ef503d95aad6b608dc651a0498b4f3bfd68a88e81e026c398490cee1bae7",
+        "bytes": 96714,
+        "pdf_page": 285,
+        "printed_page": 270
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p282.webp",
+        "sha256": "4654c3a91097300fc931d8d6b666c9ff04f7f433517ff4ee589443c3b6abea60",
+        "bytes": 84032,
+        "pdf_page": 297,
+        "printed_page": 282
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p284.webp",
+        "sha256": "677964a58955c6b1bc389c7e8f0a6685e7e448f7be598cf4dd84b827788e0d61",
+        "bytes": 114358,
+        "pdf_page": 299,
+        "printed_page": 284
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p287.webp",
+        "sha256": "c486947c2c00348bdc8c7f4057ea2e2de313b2b5a32643a214bbbc18ec6e2f62",
+        "bytes": 96934,
+        "pdf_page": 302,
+        "printed_page": 287
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p291.webp",
+        "sha256": "4f874b604f95a76eab54c60f5ed4566b44372194e41f190f482409c56403b028",
+        "bytes": 75386,
+        "pdf_page": 306,
+        "printed_page": 291
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p298.webp",
+        "sha256": "ddb842c06424dde26251ae2ee521d974179bcef81e72a4f5511951311e0836ed",
+        "bytes": 84528,
+        "pdf_page": 313,
+        "printed_page": 298
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p301.webp",
+        "sha256": "2e96b971324793e2e7312142d9be0c62694134e028fb72d5c57643d99428204d",
+        "bytes": 85850,
+        "pdf_page": 316,
+        "printed_page": 301
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p310.webp",
+        "sha256": "1593ee255eb2ea9c2b65e04babfcc3360e68ecfb75432bf10ab3d5bbc01b59d2",
+        "bytes": 71808,
+        "pdf_page": 325,
+        "printed_page": 310
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p314.webp",
+        "sha256": "6954657306638bb43b9bcbd47473d3b95a5231d5994b67fe025f008b34f122dd",
+        "bytes": 82488,
+        "pdf_page": 329,
+        "printed_page": 314
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p324.webp",
+        "sha256": "0363c052225b1e280ff69270625e84b6a42c28f1163ca3254dfc771893d5e6a3",
+        "bytes": 123702,
+        "pdf_page": 339,
+        "printed_page": 324
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p335.webp",
+        "sha256": "8a36949aa58f000e6654b7bc0a5d043e48e8241bd059d02966eed9eb2056081f",
+        "bytes": 97034,
+        "pdf_page": 350,
+        "printed_page": 335
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p342.webp",
+        "sha256": "57281a62dbfd9256878b2b4488c0ea3861cffe028cb24ca5d36410f86755fe15",
+        "bytes": 90732,
+        "pdf_page": 357,
+        "printed_page": 342
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p347.webp",
+        "sha256": "e791c024272df81a335d2820a991aa6c24edb8098a3f5fb2e076b01ea262aede",
+        "bytes": 86794,
+        "pdf_page": 362,
+        "printed_page": 347
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p355.webp",
+        "sha256": "2fc32d1e10d64745a81bfe518808596e948f673e9ca40a8ffd73fdcbf6817f12",
+        "bytes": 97890,
+        "pdf_page": 370,
+        "printed_page": 355
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p356.webp",
+        "sha256": "61d50fd993c6ed01829e4a9258ae56b2ac2e24abaab7b896d043bfee7ae24512",
+        "bytes": 87100,
+        "pdf_page": 371,
+        "printed_page": 356
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p363.webp",
+        "sha256": "4e115d84d73886c6d3e280380f695f6d3f4c69dd28a0474644e51f669142f7c0",
+        "bytes": 126834,
+        "pdf_page": 378,
+        "printed_page": 363
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p366.webp",
+        "sha256": "afe99c3b518d9a689b1e95f637294ab7fedc69ebb18040109f553bfe486e0e34",
+        "bytes": 79860,
+        "pdf_page": 381,
+        "printed_page": 366
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p377.webp",
+        "sha256": "8b04acaccaa6f3a93d5d9735d964b3b4d3e9255e0328619524348284f1440741",
+        "bytes": 89158,
+        "pdf_page": 392,
+        "printed_page": 377
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p384.webp",
+        "sha256": "55624f97c01fea96eb8c6cbcd41a1347624ea4f19a874a60f5be6f7182799490",
+        "bytes": 60432,
+        "pdf_page": 399,
+        "printed_page": 384
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p390.webp",
+        "sha256": "3fdf43cd003d4c450c58e9a860cb6a719c1932e68532aa98c62d667bbeabc400",
+        "bytes": 78546,
+        "pdf_page": 405,
+        "printed_page": 390
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p396.webp",
+        "sha256": "88143adcdba73f95e7dff0fbc6216bf4972d6c495bc0fb6800d93bf6949f5c24",
+        "bytes": 62610,
+        "pdf_page": 411,
+        "printed_page": 396
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p402.webp",
+        "sha256": "91b7da65d05fe260cf9a0f020c1b9cd3332977b1da7e87a1d076f2eaa7f67bff",
+        "bytes": 117052,
+        "pdf_page": 417,
+        "printed_page": 402
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p406.webp",
+        "sha256": "86ae7e5f069071a046be84d4a3ec8451a6defcd8dd55aa8020796d29d67b7ccc",
+        "bytes": 115590,
+        "pdf_page": 421,
+        "printed_page": 406
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p411.webp",
+        "sha256": "f87d0e484855ec5cff43eb81209f979e2dc09bde69a151edbdad078bcf2ccd71",
+        "bytes": 77040,
+        "pdf_page": 426,
+        "printed_page": 411
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p421.webp",
+        "sha256": "739a4d3ffec0121af1e10ea0d5a3236cf1061baf47fb9c1d81cab202105af09e",
+        "bytes": 94452,
+        "pdf_page": 436,
+        "printed_page": 421
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p430.webp",
+        "sha256": "56a7e3d2a495509ff230dd6b211357d156372c0c51a8cbad04d98decf45857ce",
+        "bytes": 109152,
+        "pdf_page": 445,
+        "printed_page": 430
+      },
+      {
+        "file": "/discrete-math/physics/v32/lesson-pages/p434.webp",
+        "sha256": "efb288ca21aac208cb7fdc4c84e7e8da66bcbaa1856699bcb1f2b4326b1c23d3",
+        "bytes": 96268,
+        "pdf_page": 449,
+        "printed_page": 434
+      }
+    ],
+    "scope": "知识点教材定位页节选，非逐字转录讲义",
+    "pdf_sha256": "b67d52e0fa7250bfe9bab522d47e091b685ab0ae3945e391cec024f47f904d96"
+  }
+}
