@@ -1148,7 +1148,7 @@ function V18Study({state:s,item,example,items,records,pick,back,fail,readSource,
 function useV23Ratings(book){
  const [state,setState]=m.useState({book,items:{},loading:true,error:''});
  m.useEffect(()=>{let live=true;setState({book,items:{},loading:book!=='DM2',error:''});if(book==='DM2')return;
-  if(!v23RatingCache.has(book))v23RatingCache.set(book,fetch('/discrete-math/data/ratings-'+book+'-v23.json?v=24').then(r=>{if(!r.ok)throw Error('题目评级暂未加载，请刷新重试');return r.json()}).then(d=>{if(d.book!==book||d.version!==23||!d.items)throw Error('题目评级与当前教材不匹配');return d}).catch(err=>{v23RatingCache.delete(book);throw err}));
+  if(!v23RatingCache.has(book))v23RatingCache.set(book,fetch('/discrete-math/data/ratings-'+book+'-v23.json?v=29').then(r=>{if(!r.ok)throw Error('题目评级暂未加载，请刷新重试');return r.json()}).then(d=>{if(d.book!==book||d.version!==23||!d.items)throw Error('题目评级与当前教材不匹配');return d}).catch(err=>{v23RatingCache.delete(book);throw err}));
   v23RatingCache.get(book).then(data=>live&&setState({...data,loading:false,error:''})).catch(err=>live&&setState({book,items:{},loading:false,error:err.message}));return()=>{live=false};
  },[book]);return state.book===book?state:{book,items:{},loading:true,error:''};
 }

@@ -6,6 +6,7 @@ for name in ['V19KnowledgeSupport','V18Concept','As']:
  needle='function '+name+'(';assert app.count(needle)==1,(name,app.count(needle));app=app.replace(needle,'function '+name+'BeforeV29(',1)
 needle='function B({text:s}){return e.jsx(gs,{remarkPlugins:[Ns],rehypePlugins:[bs],children:s})}'
 assert needle in app;app=app.replace(needle,needle.replace('children:s','children:v29MathText(s)'))
+app=app.replace('-v23.json?v=24','-v23.json?v=29')
 app=app.replace('./client-v24.js?v=24','./client-v29.js?v=29').replace("'-v21.json?v=21'","'-v29.json?v=29'").replace('exercises-PHYS-v21.json?v=21','exercises-PHYS-v29.json?v=29')
 app=app.replace('仅收录用户本次上传的19道物理习题。','包含原有19题、习题十一至十四的全部选择题及用户指定题，共63道；下册第九至十六章知识讲解。')
 app=app.replace('按原题号练习，本次仅收录上传的19道题。','按原题号练习，含新增选择题和指定习题，共 63 道。')
