@@ -1,0 +1,29 @@
+name: Publish v33 APK to Pages
+on:
+  push:
+    branches: [release/v33]
+    paths: [.github/workflows/publish-v33-apk.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/v33
+      - name: Fetch and verify the original signed APK
+        run: |
+          mkdir -p discrete-math/download
+          curl --fail --location --retry 3 --output discrete-math/download/mona-study-1.2.0.apk https://github.com/Mona1207/Mona1207.github.io/releases/download/v33/mona-study-1.2.0.apk
+          echo '06dd9b6c01cd4187a99c3a84e54f69ba1f352712e2061dd11930dc774851b705  discrete-math/download/mona-study-1.2.0.apk' | sha256sum --check
+          test "$(stat -c %s discrete-math/download/mona-study-1.2.0.apk)" = 103051448
+      - name: Preserve the verified APK at the existing update URL
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f discrete-math/download/mona-study-1.2.0.apk
+          git diff --cached --quiet && exit 0
+          git commit -m "Publish original signed Android 1.2.0 offline APK for v33"
+          git push origin HEAD:release/v33
