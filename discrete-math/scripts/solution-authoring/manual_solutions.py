@@ -206,7 +206,7 @@ def main():
    for item in d['items']:
     patch=PATCHES.get(item['id'])
     if not patch:continue
-    supplemental=[s for s in item.get('explanation',[]) if s.startswith('**演算补充：') or s.startswith('**公式 ')]
+    supplemental=[] if patch.get('supersedes_computed_supplement') else [s for s in item.get('explanation',[]) if s.startswith('**演算补充：') or s.startswith('**公式 ')]
     item['explanation']=patch['steps']+supplemental
     item['common_mistakes']=patch['errors']
     item['detail_review']={'status':'question_specific_checked','scope':'all_stated_subquestions','prompt_sha256':hashlib.sha256(item['prompt'].encode()).hexdigest(),'check':patch['check'],'source_revision':'7959c4f6f254284cfde52e43b42cdb69f6e0d425'}

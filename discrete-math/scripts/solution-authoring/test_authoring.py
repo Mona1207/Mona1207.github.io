@@ -75,6 +75,22 @@ class DerivationTests(unittest.TestCase):
   A=mat.matrices(example['prompt'])[0][2]
   self.assertEqual([A.cofactor(0,j) for j in range(4)],[-5,-5,16,-2])
   self.assertEqual(sum(A.minor_submatrix(i,0).det() for i in range(4)),0)
+ def test_chapter_two_matrix_equations_against_source_answers(self):
+  root=HERE.parents[1];sp=mat.sp
+  doc=json.loads((root/'data/exercises-LA7-v20.json').read_text());Q={q['id']:q for q in doc['items']}
+  def values(n,field='prompt'):return [A for _,_,A in mat.matrices(Q[f'SRC-LA7-E002-{n:03}'][field])]
+  M=values(14);X=values(14,'solution');self.assertEqual(len(X),4)
+  for A,B,C,x in [(M[0],sp.eye(2),M[1],X[0]),(sp.eye(2),M[2],M[3],X[1]),(M[4],M[5],M[6],X[2]),(M[7],M[8],M[9],X[3])]:
+   self.assertEqual(A*x*B,C)
+  A=values(17)[0];B=values(17,'solution')[0];self.assertEqual(A*B,A+2*B)
+  A=values(18)[0];B=values(18,'solution')[0];self.assertEqual(A*B+sp.eye(3),A*A+B)
+  A=values(26)[0];self.assertEqual(A**4,values(26,'solution')[0]);self.assertEqual(A.det()**8,10**16)
+  M=values(1);answers=values(1,'solution')
+  self.assertEqual(M[0]*M[1],answers[0]);self.assertEqual(M[3]*sp.Matrix([[-1,2]]),answers[1]);self.assertEqual(M[4]*M[5],answers[2])
+  examples=json.loads((root/'data/examples-LA7-ready-v17.json').read_text());E={q['id']:q for q in examples['items']}
+  q=E['SRC-LA7-X046-0751'];P,D=[A for _,_,A in mat.matrices(q['prompt'])]
+  answer=mat.matrices(q['solution'])[-1][2]
+  for power in range(7):self.assertEqual(P*D**power*P.inv(),answer.subs({v:power for v in answer.free_symbols}))
  def test_probability_counts_by_independent_enumeration(self):
   from fractions import Fraction
   dice=list(itertools.product(range(1,7),repeat=2))
@@ -130,7 +146,7 @@ class DerivationTests(unittest.TestCase):
   self.assertEqual(d['reviewed_count']+d['remaining_count'],d['total'])
   self.assertEqual(d['reviewed_count'],len(d['complete']))
   self.assertEqual(d['remaining_count'],len(d['remaining']))
-  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('LA7',1,23),('PS3',1,27),('PS3',2,38)]:
+  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('LA7',1,23),('LA7',2,48),('PS3',1,27),('PS3',2,38)]:
    rows=[x for x in d['items'] if x['book_id']==book and x['chapter']==chapter]
    self.assertEqual(len(rows),count)
    self.assertTrue(all(x['status'] in ['question_specific_checked','previous_detailed_review'] for x in rows))
