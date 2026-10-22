@@ -1,0 +1,138 @@
+[
+  {
+    "id": "SRC-DM2T-G001",
+    "fields": [
+      "prompt",
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-010",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-012",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-014",
+    "fields": [
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-015",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-016",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-020",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E001-021",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-G006",
+    "fields": [
+      "prompt",
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-002",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-003",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-005",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-006",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-007",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-008",
+    "fields": [
+      "prompt",
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-011",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-012",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-030",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-048",
+    "fields": [
+      "prompt",
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-049",
+    "fields": [
+      "prompt"
+    ]
+  },
+  {
+    "id": "SRC-DM2T-E006-050",
+    "fields": [
+      "solution"
+    ]
+  },
+  {
+    "id": "SRC-PS3-X185-6271",
+    "fields": [
+      "prompt"
+    ]
+  }
+]

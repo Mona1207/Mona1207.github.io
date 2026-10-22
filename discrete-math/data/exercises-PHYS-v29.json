@@ -64,7 +64,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29922.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29922.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "初位移只确定余弦值，不能唯一确定相位；第（3）问用负速度选第一象限，第（4）问用正速度选第三象限。",
+        "对 $x=A\\cos(\\omega t+\\varphi)$ 求导必须带负号；把所得方程同时代回 $x(0)$、$v(0)$ 核对。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-013",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "78a7c95ff4e77955b76d33c1f7b364e0c9f688bd135b86b5deea75bde80cca84",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "9-14",
@@ -127,7 +145,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29922.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29922.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "静伸长 $0.098\\,\\mathrm m$ 用来求 $k/m=g/\\Delta l$，不能当成两问的振幅。",
+        "向下为正时，“平衡位置上方”给负位移，“向上运动”给负速度；重力已在静平衡关系中消去。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-014",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "7eced5b3c12bd3f09b0a53c7fd250ab19bd18a11ec4428f5a759eb8907c14e5e",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "9-15",
@@ -201,6 +237,24 @@
           0.9452380952380952,
           0.19023569023569023
         ]
+      },
+      "common_mistakes": [
+        "图示的 $4.0\\,\\mathrm s$ 不是半周期；它对应相位从 $-\\pi/3$ 增至 $\\pi/2$，相位差为 $5\\pi/6$。",
+        "点 $P$ 的相位是到达正端点时的相位，不是初相位；只根据 $x_0=A/2$ 取 $+\\pi/3$ 会把初速度反向。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-015",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "95c69cca911eeabb302a504bb687694b7a1c9b16526c873e5f4e79b12aaa0400",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
       }
     },
     {
@@ -265,7 +319,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29923.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29923.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "最低点速度虽为零，加速度却向上且大小为 $\\omega^2A$，支持力应为 $mg+m\\omega^2A$。",
+        "离板由最高点附近的最小支持力决定；$\\omega^2A=g$ 是临界，严格超过才存在分离时段。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-017",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "34f685f08f263031e6ef422fd44d68b970135393ee6152fbad2f30eef2967d16",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "9-28",
@@ -328,7 +400,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29924.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29924.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "动能与势能各占一半时 $x^2/A^2=1/2$，位置是 $\\pm A/\\sqrt2$，不是 $\\pm A/2$。",
+        "$|x|=A/2$ 时势能只占 $1/4$、动能占 $3/4$；势能与位移平方成正比。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-028",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "7c031b3af1d0a93dd524ee875889f674ed5dbc35d887e723e437ee4d4b78186b",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "9-30",
@@ -391,7 +481,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29924.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29924.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "原方程的振幅是 $0.5\\,\\mathrm{cm}=0.005\\,\\mathrm m$，质量是 $0.010\\,\\mathrm{kg}$；力、能量运算前应统一单位。",
+        "通过平衡位置的速率为 $A\\omega$，而初速度还要乘 $-\\sin(\\pi/3)$；不要把两者混用。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E009-030",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "063bc3472e28592d476814b477eb23f97c2d41d9afe19d635a2a51625ba5eaf2",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "10-10",
@@ -453,7 +561,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29926.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29926.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "从源振动式读出的是角频率 $240\\pi$，频率需除以 $2\\pi$，得到 $120\\,\\mathrm{Hz}$。",
+        "距离造成的相位差是 $kx=2\\pi x/\\lambda$；传播方向与空间相位项的符号必须一致。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-010",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "0560190d8d4fc8ab83b795f6c071124605f2403e5f038de1dafa91b1a4a875e7",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "10-15",
@@ -526,6 +652,24 @@
           0.913,
           0.629
         ]
+      },
+      "common_mistakes": [
+        "图中的 $10.0\\,\\mathrm m$ 跨过一峰、连接相反方向的过零点，只是半波长；全波长为 $20.0\\,\\mathrm m$。",
+        "质点振动速度为 $\\partial y/\\partial t$，与波速 $\\lambda f$ 不同；初相位还须与原点处的空间斜率一致。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-015",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "d04f73cb487eaad71e27ac1dfe0b780f7f0b12795a2a5c01bfda755c2eb67a44",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
       }
     },
     {
@@ -598,6 +742,24 @@
           0.961,
           0.218
         ]
+      },
+      "common_mistakes": [
+        "$P$ 位于 $x=0.20\\,\\mathrm m$，不能误取下一个过零点 $0.40\\,\\mathrm m$。",
+        "正向传播式的余弦初相位应为 $-\\pi/2$；写成 $+\\pi/2$ 会将图上的波峰与波谷倒置。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-016",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "756007439210302c75f15749b92b7781ea39c7c960d305aa6227e8fe820e6706",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
       }
     },
     {
@@ -661,7 +823,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29925.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29925.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "驻波波腹振幅 $0.03\\,\\mathrm m$ 是单列行波振幅的两倍；相邻波节距离是半波长。",
+        "$x=0.625\\,\\mathrm m$ 处 $kx=\\pi$，是波腹而非波节；代入时刻后的相位是 $1.65\\pi$，不是 $1.6\\pi$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-027",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "ef0ba690dcc296c16c5d562d6c9c9c121e0073c9eb57ff76961789e5f4ead78b",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "10-28",
@@ -725,7 +905,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29928.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29928.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "合振幅为 $0.12|\\cos(0.01\\pi x)|$；绝对值不能省掉，否则会丢失一半位置分支。",
+        "$x=100n\\pm100/3$ 是两组位置的合并；正半轴的解不构成间距恒为 $100/3$ 的等差数列。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-028",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "7c804d25a555d4eee328382ac6a592156eaac3fd5779d44b09827ed1cc0d7446",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "10-29",
@@ -791,7 +989,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29928.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29928.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "原图印刷题干的声速条件被裁断；$u=330\\,\\mathrm{m/s}$ 仅据手写代入，未补原图前应保留含 $u$ 的通式。",
+        "声源速度与听者速度都应相对空气计算；不能只把两车相对速度 $10\\,\\mathrm{m/s}$ 代进静止听者公式。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E010-029",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "cb969b8e24014930deb521bfd609b7dba363f2ee7abb03e5542cef7ecc514e88",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": true,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-001",
@@ -844,9 +1060,11 @@
       "prompt": "在双缝干涉实验中，若单色光源 $S$ 到两缝 $S_1,S_2$ 距离相等，则观察屏上中央明纹位于图中 $O$ 处。现将光源 $S$ 向下移动到示意图中的 $S\\prime$ 位置，则（　）。\n\n**A.** 中央明纹向上移动，且条纹间距增大\n\n**B.** 中央明纹向上移动，且条纹间距不变\n\n**C.** 中央明纹向下移动，且条纹间距增大\n\n**D.** 中央明纹向下移动，且条纹间距不变\n\n![教材原题 11-1 图](/discrete-math/physics/v29/figures/11-1.png)",
       "solution": "正确答案：**B**。\n\n中央明纹向上移动，且条纹间距不变",
       "explanation": [
-        "光源下移后，到下缝 $S_2$ 更近，到上缝 $S_1$ 更远；入射到两缝的光已经存在光程差。",
-        "中央明纹要求从源经过两缝到屏的总光程相等。要补偿较长的上路入射光程，屏上的新位置必须使上缝到屏距离更短，所以中央明纹上移。",
-        "小角度下条纹间距仍为 $\\Delta x=\\lambda D/d$。光源位置改变只引入附加相位差，不改变波长、缝距或缝屏距，故间距不变。"
+        "**明确研究的光程。** 干涉由同一光源经上缝、下缝到同一观察点的两条完整光路决定。把上缝记作 $S_1$、下缝记作 $S_2$，屏上向上为 $x$ 的正方向；缝距为 $d$，缝屏距为 $D$。题中光源移动没有改变 $d,D$ 或光的波长 $\\lambda$。",
+        "**先看入射部分的变化。** 光源向下移动后，上缝离光源更远、下缝更近，故 $SS_1-SS_2=\\delta_s>0$。原先两缝入射光同相，现在上路比下路多走了 $\\delta_s$。不能继续把两缝当成初相完全相同的次级光源。",
+        "**再求出射部分如何补偿。** 对屏上向上的观察点，上缝到它的距离较短。小角度近似下，$S_1P-S_2P\\simeq-dx/D$，所以总光程差为 $\\delta(x)=\\delta_s-dx/D$。这里的负号来自上移后上路出射光程减小。",
+        "**求中央明纹的方向。** 零级明纹满足两条完整光路光程相等，即 $\\delta(x_0)=0$，因此 $x_0=D\\delta_s/d>0$。中央明纹向上移动，也就是与光源移动方向相反。若向下找补偿，两段光程差反而会同号相加。",
+        "**说明间距为何不变并选项。** 相邻明纹的总光程差改变一个 $\\lambda$，由 $|d\\delta/dx|=d/D$ 得 $\\Delta x=\\lambda D/d$。附加的 $\\delta_s$ 只整体平移条纹，不改变间距；A、C 的“间距增大”均错，D 的方向错，因此选 **B**。这一结论使用双缝实验的傍轴近似。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -861,7 +1079,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "移动光源改变两缝入射光的初始光程差；中央明纹要按总光程差为零重新确定。",
+        "光源移动并未改变 $\\lambda,D,d$，条纹间距 $\\lambda D/d$ 不变；不能把整体平移误判为条纹变宽。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-001",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "624e09fda6ff2acb38a6bc99588eb476d8bd57c7f36bb12c6d3743572fde4840",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-002",
@@ -914,9 +1150,11 @@
       "prompt": "如图，折射率为 $n_2$、厚度为 $e$ 的透明介质薄膜上方和下方介质的折射率分别为 $n_1,n_3$，且 $n_1<n_2$、$n_2>n_3$。若波长为 $\\lambda$ 的单色平行光垂直入射到薄膜，则从薄膜上下两表面反射的光束的光程差为（　）。\n\n**A.** $2n_2e$\n\n**B.** $2n_2e-\\lambda/2$\n\n**C.** $2n_2e-\\lambda$\n\n**D.** $2n_2e-\\lambda/(2n_2)$\n\n![教材原题 11-2 图](/discrete-math/physics/v29/figures/11-2.png)",
       "solution": "正确答案：**B**。\n\n$2n_2e-\\lambda/2$",
       "explanation": [
-        "下表面反射的光多走一次膜内往返路程，传播光程增加 $2n_2e$。",
-        "上表面是低折射率到高折射率反射，有相位反转；下表面为高到低反射，无相位反转。两束间额外相位差为 $\\pi$。",
-        "按题中相减次序，可写等效光程差 $2n_2e-\\lambda/2$。写成加 $\\lambda/2$ 与其相差一个整波长，给出相同明暗条件；选项 B 符合。"
+        "**分清两束反射光。** 第一束在 $n_1\\to n_2$ 的上表面反射；第二束先进入膜，在 $n_2\\to n_3$ 的下表面反射，再穿过上表面返回。比较的是它们重新回到膜上方同一波面后的相位。题中 $\\lambda$ 取真空或近似空气中的波长。",
+        "**计算传播产生的光程差。** 垂直入射时，第二束在膜内多走厚度为 $e$ 的下行和上行各一次。几何路程为 $2e$，乘膜折射率后，传播光程差为 $2n_2e$；相应传播相位差是 $2\\pi(2n_2e)/\\lambda$。",
+        "**逐个检查反射相变。** 因 $n_1<n_2$，上表面反射是从光疏射向光密，反射电场发生 $\\pi$ 的相位反转。因 $n_2>n_3$，下表面反射是从光密射向光疏，没有这次反转。两束中恰有一束多了 $\\pi$，所以必须计入半波损失。",
+        "**按统一的相减次序写结果。** 若用第二束减第一束，$\\Delta\\varphi=(2\\pi/\\lambda)2n_2e-\\pi=(2\\pi/\\lambda)(2n_2e-\\lambda/2)$。故等效光程差为 $\\boxed{2n_2e-\\lambda/2}$，选 **B**。",
+        "**核对其他选项。** A 漏掉相对反射相变；C 减去整波长，相位只改变 $2\\pi$，不能代替本题的半波损失；D 把相位对应的光程补偿和膜内几何长度混淆。写成 $2n_2e+\\lambda/2$ 与答案只差一个整波长，明暗判断等价，但题给选项采用减号形式。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -931,7 +1169,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "第一界面低折射率向高折射率反射有半波损失，第二界面高到低反射没有；反射相位差必须计入。",
+        "膜内往返光程是 $2n_2e$，不是 $2e$；附加的 $\\lambda/2$ 与正负整波长的等价性要和明暗条件配套使用。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-002",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "4c8c6bd7adb317d2413dffe138d89673921e0ee441173ae7d8508e17e1981bbb",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-003",
@@ -984,9 +1240,11 @@
       "prompt": "两个直径有微小差别、彼此平行的滚柱之间的距离为 $L$，夹在两块平面晶体中间形成空气劈尖。单色光垂直入射，产生等厚干涉条纹。如果滚柱间距 $L$ 变小，那么在 $L$ 范围内干涉条纹的（　）。\n\n**A.** 数目减小，间距变大\n\n**B.** 数目减小，间距不变\n\n**C.** 数目不变，间距变小\n\n**D.** 数目增加，间距变小\n\n![教材原题 11-3 图](/discrete-math/physics/v29/figures/11-3.png)",
       "solution": "正确答案：**C**。\n\n数目不变，间距变小",
       "explanation": [
-        "两滚柱直径差固定，空气层在两支承位置的厚度差 $\\Delta e$ 固定。",
-        "在这段范围内经历的干涉级数变化为 $2\\Delta e/\\lambda$，因此条纹总数不随 $L$ 改变。",
-        "劈尖角近似 $\\theta=\\Delta e/L$。$L$ 减小时角度增大，条纹间距 $\\Delta x=\\lambda/(2\\theta)$ 减小。"
+        "**找出保持不变的量。** 两滚柱的直径差固定，因此它们支承处空气层的厚度差 $\\Delta e$ 固定。改变滚柱的水平间距 $L$，改变的是劈尖倾斜程度，并没有改变这段空气层从起点到终点总共增加的厚度。",
+        "**把厚度转换成干涉级数。** 在空气劈尖反射干涉中，两束光存在一次相对半波损失，但相邻同类条纹所对应的膜厚差恒为 $\\lambda/2$。所以厚度每增加 $\\lambda/2$，就跨过一个条纹间隔。",
+        "**判断条纹数。** 在两滚柱之间，条纹级数变化量为 $\\Delta k=\\Delta e/(\\lambda/2)=2\\Delta e/\\lambda$。它由直径差与波长决定，和 $L$ 无关。端点取舍可能影响如何计数，但缩短 $L$ 不改变两端的干涉级数，因此这段范围内的条纹总数保持不变。",
+        "**判断条纹间距。** 小劈尖角下 $\\theta\\simeq\\Delta e/L$，厚度随位置满足 $e(x)=e(0)+\\theta x$。相邻条纹间距 $\\Delta x=(\\lambda/2)/\\theta=\\lambda L/(2\\Delta e)$。当 $L$ 减小、其余量固定，$\\Delta x$ 按相同比例减小。",
+        "**合并判断。** 同样多的条纹被压缩到更短的区间内，正好对应“数目不变，间距变小”，选 **C**。A、B 错在认为厚度范围减小，D 错在把空间条纹变密误认为在整个支承范围内级数增多。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1001,7 +1259,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "两滚柱直径差固定时，劈尖厚度差固定；$L$ 变小使劈尖角增大、条纹间距变小。",
+        "条纹总数由固定厚度差决定，并不因滚柱水平距离缩短而减少。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-003",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "a86af0deb6ff075678fec1cfcec9e24340b91f94d24ef1d479904f351a56e038",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-004",
@@ -1054,9 +1330,11 @@
       "prompt": "迈克耳孙干涉仪的一条光路中放入一片折射率 $n=1.4$ 的透明薄膜后，发生了 $7.0$ 条干涉条纹的移动。若入射光波长为 $589.0\\,\\mathrm{nm}$，薄膜厚度为（　）。\n\n**A.** $10307.5\\,\\mathrm{nm}$\n\n**B.** $1472.5\\,\\mathrm{nm}$\n\n**C.** $5153.8\\,\\mathrm{nm}$\n\n**D.** $2945.0\\,\\mathrm{nm}$",
       "solution": "正确答案：**C**。\n\n$5153.8\\,\\mathrm{nm}$",
       "explanation": [
-        "光在该光臂中往返两次通过薄膜，用折射率 $n$ 的薄膜替代空气会增加光程 $2(n-1)e$。",
-        "每增加一个波长的光程差，移动一条条纹，所以 $2(n-1)e=N\\lambda$。",
-        "$e=7\\times589/[2(1.4-1)]\\,\\mathrm{nm}=5153.75\\,\\mathrm{nm}$，对应 C。漏掉往返因子二会得到错误选项 A。"
+        "**识别光路中的往返。** 迈克耳孙干涉仪的一条光臂从分光镜出发到反射镜后再返回，所以放入薄膜后，同一束光两次通过这片薄膜。已知 $n=1.4$、移动条纹数 $N=7.0$、真空波长 $\\lambda=589.0\\,\\mathrm{nm}$，求几何厚度 $e$。",
+        "**计算一次通过的附加光程。** 厚度 $e$ 的空气原来贡献约 $e$ 的光程，换成薄膜后贡献 $ne$。增加的是二者的差 $(n-1)e$，而不是全部膜光程 $ne$。返回时再增加同样的一项，总光程差变化为 $\\Delta\\delta=2(n-1)e$。",
+        "**联系条纹移动数。** 固定观察点处，光程差每改变一个波长，干涉级数改变 1，相当于移动一条条纹。因此 $N=\\Delta\\delta/\\lambda$，即 $2(n-1)e=N\\lambda$，整理得 $e=N\\lambda/[2(n-1)]$。",
+        "**逐项代入并保留单位。** $e=7.0\\times589.0\\,\\mathrm{nm}/[2(1.4-1)]=4123.0\\,\\mathrm{nm}/0.8=5153.75\\,\\mathrm{nm}\\approx5153.8\\,\\mathrm{nm}=5.154\\,\\mu\\mathrm m$，所以选 **C**。",
+        "**反代检验并排错。** $2\\times0.4\\times5153.75=4123.0\\,\\mathrm{nm}=7\\times589.0\\,\\mathrm{nm}$，正好移动 7 条。若漏掉往返因子 2，会算出 $10307.5\\,\\mathrm{nm}$，这是 A 所设的常见错误；若用 $n$ 代替 $n-1$，则误把替换前已有的空气光程也算为新增光程。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1071,7 +1349,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "迈克耳孙光路往返通过薄膜，增加的光程为 $2(n-1)e$，漏掉因子2会使厚度翻倍。",
+        "条纹移动数满足 $N\\lambda=2(n-1)e$；$589.0\\,\\mathrm{nm}$ 与最终厚度需使用相同长度单位。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-004",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "889fc3e1bfe47489c976cf454b3862f9100de9992c0eb13b5f6f6dbf1059cc99",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-005",
@@ -1124,9 +1420,11 @@
       "prompt": "单缝夫琅禾费衍射实验中，波长为 $\\lambda$ 的单色光垂直入射在宽度为 $3\\lambda$ 的单缝上。对应衍射角 $30^\\circ$ 的方向，缝处波阵面可分成的半波带数目为（　）。\n\n**A.** 2 个\n\n**B.** 3 个\n\n**C.** 4 个\n\n**D.** 6 个",
       "solution": "正确答案：**B**。\n\n3 个",
       "explanation": [
-        "缝两端对观察方向的程差为 $a\\sin\\theta$。",
-        "代入 $a=3\\lambda$ 和 $\\sin30^\\circ=1/2$，得程差 $3\\lambda/2$。",
-        "每条半波带相差 $\\lambda/2$，所以带数为 $(3\\lambda/2)/(\\lambda/2)=3$。不能把程差直接除以整波长当作半波带数。"
+        "**明确半波带的含义。** 对给定观察方向，把单缝处的波面分成若干窄带，使相邻带到远处观察点的光程差等于 $\\lambda/2$，就称为半波带。题目问这种分带的数目，不是干涉级次，也不是整波长的个数。",
+        "**求整个缝宽对应的最大光程差。** 单缝宽度 $a=3\\lambda$，观察方向与光轴夹角 $\\theta=30^\\circ$。在夫琅禾费条件下，缝两端到同一观察方向的光程差为 $\\delta=a\\sin\\theta$。这是把缝宽投影到传播方向所得到的几何关系。",
+        "**代入题中数据。** 因 $\\sin30^\\circ=1/2$，所以 $\\delta=3\\lambda\\times1/2=3\\lambda/2$。这一结果表示从缝的一端到另一端，传播相位总共改变 $2\\pi\\delta/\\lambda=3\\pi$。",
+        "**用半波长作除数。** 每一带的光程跨度为 $\\lambda/2$，故带数 $N=\\delta/(\\lambda/2)=2a\\sin\\theta/\\lambda=3$，选 **B**。也可把缝宽分为三份，每份的投影光程差均为 $\\lambda/2$。",
+        "**检查物理意义。** 偶数个完整半波带可两两近似相消，形成暗纹；这里为奇数 3 带，不能把它判成相邻暗纹条件。A、C、D 均不符合上述光程分带；直接用 $\\delta/\\lambda=1.5$ 会得到整波周期数，不能回答半波带数目。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1141,7 +1439,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "半波带数为总程差除以 $\\lambda/2$，即 $N=2b\\sin\\theta/\\lambda$；不能除以整波长。",
+        "缝宽 $b=3\\lambda$、角度 $30^\\circ$ 时 $N=3$；半波带数与暗纹级数不是同一个量。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-005",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "2ec177913a6ce3b2f028b96b1b9eacf9cbc1c9f447cc70b97e3a2556794c49f2",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-006",
@@ -1194,9 +1510,11 @@
       "prompt": "波长 $\\lambda=550\\,\\mathrm{nm}$ 的单色光垂直入射于光栅常量 $d=1.0\\times10^{-4}\\,\\mathrm{cm}$ 的光栅，可能观察到的光谱线最大级次为（　）。\n\n**A.** 4\n\n**B.** 3\n\n**C.** 2\n\n**D.** 1",
       "solution": "正确答案：**D**。\n\n1",
       "explanation": [
-        "先换单位：$1.0\\times10^{-4}\\,\\mathrm{cm}=1.0\\times10^{-6}\\,\\mathrm m=1000\\,\\mathrm{nm}$。",
-        "光栅主极大条件 $d\\sin\\theta=m\\lambda$，必须有 $\\lvert m\\rvert\\le d/\\lambda=1000/550\\approx1.818$。",
-        "允许的最大整数级次为一，选 D。题问级次，不是总共有几条谱线。"
+        "**先统一单位。** 光栅常量 $d=1.0\\times10^{-4}\\,\\mathrm{cm}=1.0\\times10^{-6}\\,\\mathrm m=1000\\,\\mathrm{nm}$；入射光波长 $\\lambda=550\\,\\mathrm{nm}$。二者都是长度，求比值时必须用同一单位，不能直接拿厘米数值除以纳米数值。",
+        "**写主极大条件。** 垂直入射时，相邻缝在衍射角 $\\theta$ 方向的光程差为 $d\\sin\\theta$。各缝相长干涉要求 $d\\sin\\theta=m\\lambda$，其中 $m=0,\\pm1,\\pm2,\\ldots$ 为整数光谱级次。",
+        "**使用几何可达条件。** 任何实际方向都满足 $|\\sin\\theta|\\le1$，因此 $|m|\\le d/\\lambda=1000/550\\approx1.818$。级次只能取整数，不能将 1.818 四舍五入成 2；应找不超过它的最大允许整数。",
+        "**逐级验证。** 一级有 $\\sin\\theta_1=550/1000=0.55$，故 $\\theta_1\\approx33.4^\\circ$，能观察。二级要求 $\\sin\\theta_2=1100/1000=1.10>1$，不存在对应方向，更高级同样不可能。因此最高级次 $m_{\\max}=1$，选 **D**。",
+        "**区分级次和谱线条数。** 如果没有单缝包络造成缺级，允许的位置是 $m=-1,0,+1$，共三个方向；但“最高级次”只报 1。把三个允许方向的总数当成最大级次会误选 B。题中没有给缝宽，不能再额外推断缺级。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1211,7 +1529,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "光栅常量 $10^{-4}\\,\\mathrm{cm}=10^{-6}\\,\\mathrm m$，必须先换算单位，再与 $550\\,\\mathrm{nm}$ 相比。",
+        "最大整数级次由 $|k\\lambda/d|\\le1$ 决定，不能四舍五入到不允许的更高级次。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-006",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "6b3cc7e9b57113b726127b1dc0e956bc3217f8b48d83f32008bab85b207d978f",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-007",
@@ -1264,9 +1600,11 @@
       "prompt": "三个偏振片 $P_1,P_2,P_3$ 堆叠，$P_1$ 与 $P_3$ 的偏振化方向垂直，$P_2$ 与 $P_1$ 的夹角为 $45^\\circ$。强度为 $I_0$ 的自然光依次透过三片，最后光强为（　）。\n\n**A.** $I_0/16$\n\n**B.** $3I_0/8$\n\n**C.** $I_0/8$\n\n**D.** $I_0/4$",
       "solution": "正确答案：**C**。\n\n$I_0/8$",
       "explanation": [
-        "自然光经过 $P_1$ 后，光强为 $I_0/2$，并沿 $P_1$ 方向线偏振。",
-        "$P_2$ 与 $P_1$ 相差 $45^\\circ$，再乘 $\\cos^245^\\circ=1/2$。",
-        "由于 $P_1,P_3$ 正交，$P_2,P_3$ 也相差 $45^\\circ$，再乘 $1/2$，得 $I_0/8$。"
+        "**逐片跟踪光的状态。** 初始光是强度为 $I_0$ 的自然光，电场在垂直传播方向的各方向等概率振动。经过理想偏振片 $P_1$ 后，只有沿其透振轴的分量通过，平均强度变成 $I_a=I_0/2$，并成为沿 $P_1$ 方向的线偏振光。",
+        "**明确何时使用马吕斯定律。** 对已经线偏振的入射光，透过下一偏振片后 $I_{\\mathrm{out}}=I_{\\mathrm{in}}\\cos^2\\alpha$，其中 $\\alpha$ 必须是入射偏振方向与当前透振轴的夹角。不能把初始自然光直接用一个固定夹角代入这个公式。",
+        "**计算第二片后的强度。** $P_2$ 与 $P_1$ 相差 $45^\\circ$，故 $I_b=(I_0/2)\\cos^245^\\circ=(I_0/2)(1/2)=I_0/4$。通过第二片后，光的偏振方向已变为 $P_2$ 的透振轴方向。",
+        "**计算第三片后的强度。** $P_1$ 与 $P_3$ 正交，且 $P_2$ 在二者之间，所以 $P_2$ 与 $P_3$ 的夹角也是 $45^\\circ$。于是 $I_c=(I_0/4)\\cos^245^\\circ=I_0/8$，选 **C**。",
+        "**解释为什么没有完全消光。** 若只有 $P_1,P_3$，两轴垂直会完全消光；插入 $P_2$ 后，最后一片接收到的是沿中间方向偏振的光，它在 $P_3$ 方向有非零分量。A 多乘了一次 $1/2$，D 漏掉第三片的衰减；这类题必须跟随每片之后的新偏振方向计算。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1281,7 +1619,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "自然光通过第一片后先减为 $I_0/2$，之后两次再分别乘 $\\cos^245^\\circ$。",
+        "第一片与第三片正交不代表加了中间片仍全暗；马吕斯定律应逐片使用。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-007",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "579e29b65eb09f4f72c281694fcee71b1b1dee8564cba9cd3da07604cebacf44",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-008",
@@ -1334,9 +1690,11 @@
       "prompt": "一束自然光自空气射向一块平板玻璃，如图，入射角等于布儒斯特角 $i_B$，则在界面 2 的反射光（　）。\n\n**A.** 是自然光\n\n**B.** 是线偏振光且光矢量振动方向垂直于入射面\n\n**C.** 是线偏振光且光矢量振动方向平行于入射面\n\n**D.** 是部分偏振光\n\n![教材原题 11-8 图](/discrete-math/physics/v29/figures/11-8.png)",
       "solution": "正确答案：**B**。\n\n是线偏振光且光矢量振动方向垂直于入射面",
       "explanation": [
-        "第一界面满足 $\\tan i_B=n$，折射角 $r=90^\\circ-i_B$。平板两表面平行，光在第二面的入射角也是 $r$。",
-        "由 $\\tan r=1/\\tan i_B=1/n$ 可知，$r$ 恰为玻璃射向空气的布儒斯特角。",
-        "在布儒斯特角，平行入射面的反射分量为零，只剩垂直入射面的分量，所以第二面反射光为垂直入射面的线偏振光。"
+        "**先给两个界面编号。** 光从空气进入折射率为 $n$ 的玻璃，在界面 1 的入射角为 $i_B$，折射角为 $r$；再到达与第一面平行的界面 2，由玻璃射向空气。两面的法线平行，故第二次入射角正好是 $r$。",
+        "**使用第一面的布儒斯特条件。** 从空气到玻璃有 $\\tan i_B=n$，此时反射光与折射光相互垂直，因此 $r+i_B=90^\\circ$。这也可由折射定律与布儒斯特条件联合验证。",
+        "**判断第二面是否也满足条件。** 玻璃到空气的布儒斯特角记为 $j_B$，满足 $\\tan j_B=1/n$。而 $\\tan r=\\cot i_B=1/n$，所以 $r=j_B$。因此不能因为到达第二面的光已部分偏振，就把第二面反射光也直接判为部分偏振光。",
+        "**判定反射电场方向。** 布儒斯特角入射时，平行入射面振动的反射分量为零，垂直入射面振动的分量仍能反射。第二面反射光因此为线偏振光，电场振动方向垂直于入射面，选 **B**。",
+        "**逐项核对。** A 忽略了界面对偏振分量的选择；C 把被消除的平行分量误认为保留下来的分量；D 适用于一般入射角，但本题恰好在特殊的布儒斯特角。这里默认透明、各向同性、非吸收的理想平板玻璃。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1351,7 +1709,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "平行玻璃两界面应分别用折射定律判断角度；第一界面满足布儒斯特条件时，第二界面也要按反向折射率比核对。",
+        "布儒斯特反射光的电矢量垂直入射面；不要把“垂直于传播方向”与“垂直入射面”混为一谈。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-008",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "21517eec3b71c4d4959d5b4daa3ca33950b21cef323074ceed7b4f3481550c1e",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-009",
@@ -1404,9 +1780,11 @@
       "prompt": "在水中的鱼看来，水面上和岸上的所有景物都出现在一倒立圆锥中，其顶角为（　）。\n\n**A.** $48.8^\\circ$\n\n**B.** $41.2^\\circ$\n\n**C.** $97.6^\\circ$\n\n**D.** $82.4^\\circ$",
       "solution": "正确答案：**C**。\n\n$97.6^\\circ$",
       "explanation": [
-        "空气中的光从掠射极限 $i=90^\\circ$ 进入水中时，水内折射角达到最大。",
-        "取水的折射率约 $1.33$，由 $\\sin r_{\\max}=1/1.33$ 得 $r_{\\max}\\approx48.8^\\circ$。",
-        "这只是圆锥半顶角，完整顶角是两倍，约 $97.6^\\circ$。"
+        "**明确圆锥的轴与半角。** 岸上或空气中的景物发出的光，经水平水面折射进入鱼眼。把水面向下的法线作为锥轴，水中光线与这条轴的夹角记作折射角 $r$。鱼所能接收到的全部空气来光被压缩到这一锥形角域内。",
+        "**写折射定律。** 设空气折射率约为 1，水的折射率约为 $n=1.33$，有 $\\sin i=n\\sin r$。于是 $\\sin r=\\sin i/n$。空气来光的入射角 $i$ 从 0 增至接近 $90^\\circ$，水中的折射角也逐渐增大。",
+        "**找到允许的最大折射角。** 极限来自几乎贴着水面的掠射光，即 $i\\to90^\\circ$。这时 $\\sin r_{\\max}=1/n$，所以 $r_{\\max}=\\arcsin(1/1.33)\\approx48.8^\\circ$。这个数值是从锥轴到锥面的一侧夹角。",
+        "**由半角得到顶角。** 圆锥顶角由两侧锥面夹成，等于 $2r_{\\max}$，故 $\\Theta\\approx2\\times48.8^\\circ=97.6^\\circ$，选 **C**。若使用水折射率 $4/3$，会得到很接近的结果，属于折射率近似差异。",
+        "**解释干扰选项。** A 只是半顶角；B 是 $90^\\circ-r_{\\max}$，为锥面与水平面的夹角；D 是这个余角的两倍。也可从水向空气的临界角理解边界：$r_{\\max}$ 正好等于水射向空气的全反射临界角，但本题实际追踪的是空气进入水中的光路。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -1421,7 +1799,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "水面景物进入水中的最大折射角由空气侧掠入射确定：$\\sin r_{\\max}=n_{\\rm air}/n_{\\rm water}$。",
+        "题目求的是圆锥顶角 $2r_{\\max}$，不是半顶角，也不是与水面夹角。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-009",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "226b585c3ce172c36b017b4be502ea8f2a8365cc0bc2686d500540f444acc727",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "11-15",
@@ -1483,7 +1879,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29927.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29927.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "两条光路都增加光程，应相减得到 $(1.70-1.40)d$，不能把两个增加量相加。",
+        "原中央位置成为第五级明纹意味着附加程差的大小为 $5\\lambda$；这里不是往返光路，不额外乘2。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-015",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "299990ca3211aa58ff9a350071a20566d78953bf9017d46a18e640c85d1f5222",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "11-16",
@@ -1546,7 +1960,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29927.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29927.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "肥皂膜反射只有一束发生半波损失，反射增强满足 $2ne=(k+1/2)\\lambda$；透射增强条件与之相反。",
+        "求出所有满足条件的波长后再筛选可见光范围；膜的正面反射色与背面透射色不能直接写成同一种颜色。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-016",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "27f6ccaf6a3e1f26b52c853675faf8a0ed19dc11a51448c7d36b21e789e0d609",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "11-24",
@@ -1608,7 +2040,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29929.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29929.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "比较同级亮环时半径平方与 $1/n$ 成正比，因此折射率是直径比的平方，不是直径比。",
+        "同一级的级次因子与曲率半径在比值中消去；要保证比较的是同级同类条纹。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-024",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "4560b647b807f30cef6322496702a9b0694e51d40e4aa05a1e569f489cdd94bd",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "11-25",
@@ -1679,6 +2129,24 @@
           0.3,
           0.4235690235690236
         ]
+      },
+      "common_mistakes": [
+        "空气到油、油到玻璃两次都是低折射率到高折射率，两个反射半波损失相互抵消；不能照搬空气劈尖的单次半波损失条件。",
+        "膜周边厚度趋于0与中心最大厚度不同，先分别判断明暗，再数实际出现的环，避免端点级次多计一次。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-025",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "abb8b038f8d3782cbba511f274ca51c3549126c7c02f11e11ba41434a3ce781b",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
       }
     },
     {
@@ -1756,6 +2224,24 @@
           0.9923809523809524,
           0.22895622895622897
         ]
+      },
+      "common_mistakes": [
+        "仅说 $P$ 是“衍射明条纹”未给级次时，波长存在级次分支；不能擅自假定它就是第一级次极大。",
+        "次极大的精确位置由 $\\tan\\beta=\\beta$ 确定，常用半波带位置只是近似；应注明采用哪一种近似。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-027",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "13db3127de73021b6d9378da226b8809016bedc805c171e0e83df42e5923072f",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": true,
+        "original_source_retranscribed_in_this_pass": false
       }
     },
     {
@@ -1823,7 +2309,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29930.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29930.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "斜入射的光栅方程含入射角，正负两侧可见的最大级次一般不同。",
+        "焦平面坐标按 $x=f\\tan\\theta$；大角度时不能把 $\\tan\\theta$ 不加说明地替换成 $\\sin\\theta$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-034",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "bdcaffa013c357122ddf6a05d1290ea5d99cb26d4a030084d7bd9107441c901f",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": true,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "number": "11-35",
@@ -1890,7 +2394,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_supplied_image_ocr",
       "solution_origin": "根据上传题图独立核对的补充解答；原图手写结果有误时已订正",
-      "review_basis": "逐项对照 29931.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。"
+      "review_basis": "逐项对照 29931.png 的印刷题干、题号和必要图形，独立推导并核对初始条件、单位和数值。",
+      "common_mistakes": [
+        "光栅主极大条件使用光栅常量 $d$，单缝暗纹条件使用缝宽 $b$；缺级须两条件同时满足。",
+        "“第四级缺级”若未明确为首个缺级，缝宽可能有多个允许分支；数谱线时需检查缺级及 $\\pm90^\\circ$ 是否被题目排除。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-035",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "3b3abc5b80e4bfda26fb490b3bd9d1d76d258d8358027cc2f0763cdc49e9fa89",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": true,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E011-038",
@@ -1943,10 +2465,11 @@
       "prompt": "使自然光通过两个偏振化方向相交 $60^\\circ$ 的偏振片，透射光强为 $I_1$。今在这两个偏振片之间插入另一偏振片，它的偏振化方向与前两个偏振片均成 $30^\\circ$ 角，则透射光强为多少？",
       "solution": "$I_2=\\dfrac94I_1$。",
       "explanation": [
-        "设原自然光强为 $I_0$。自然光通过首片后成为线偏振光，光强为 $I_0/2$。",
-        "原来的两片夹角为 $60^\\circ$，因此 $I_1=(I_0/2)\\cos^260^\\circ=I_0/8$。",
-        "插入中间片后，两次相邻夹角都为 $30^\\circ$，逐片使用马吕斯定律：$I_2=(I_0/2)\\cos^230^\\circ\\cos^230^\\circ=9I_0/32$。",
-        "消去未知的原光强：$I_2/I_1=(9/32)/(1/8)=9/4$。增加偏振片并非一定减小相对于原两片组合的透射光，因为它改变了到达最后一片的偏振方向。"
+        "**先用同一个初始光强建立两套表达式。** 设入射自然光强为 $I_0$，原来两个偏振片的夹角为 $60^\\circ$，原组合的出射光强为题给的 $I_1$。插片前后的光源保持相同，不能将 $I_1$ 当作新组合的入射自然光强。",
+        "**计算原来两个偏振片的透射。** 自然光通过第一片后变为线偏振光，强度为 $I_0/2$。再用马吕斯定律经过第二片，得 $I_1=(I_0/2)\\cos^260^\\circ=(I_0/2)(1/4)=I_0/8$，所以 $I_0=8I_1$。",
+        "**确定新组合中相邻轴的夹角。** 中间片与原来两片均成 $30^\\circ$，因此从第一片到中间片、从中间片到最后一片，每一步的偏振夹角都是 $30^\\circ$。每经过一片，出射光的偏振方向都会转为当前透振轴方向。",
+        "**逐片相乘。** 新出射强度 $I_2=(I_0/2)\\cos^230^\\circ\\cos^230^\\circ=(I_0/2)(3/4)(3/4)=9I_0/32$。代入 $I_0=8I_1$，得 $\\boxed{I_2=9I_1/4}$，即原出射光强的 2.25 倍。",
+        "**检查能量与直觉。** 虽然 $I_2>I_1$，仍有 $I_2/I_0=9/32<1$，没有产生额外能量。中间片改变了入射到最后一片的偏振方向，使最后一次投影损失减小；它不是把已经形成的 $I_1$ 再过滤一次。若新片放在两片之后，则应重新按那一排列计算。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -1956,7 +2479,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "插入中间片后原来的 $60^\\circ$ 夹角变成两次 $30^\\circ$ 的相邻夹角，要连乘两个马吕斯因子。",
+        "已知 $I_1$ 是原两片的透射强度，并非入射自然光强；应先取新旧光强比，结果为 $9I_1/4$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E011-038",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "7d7b4210273338ba0cbad2819b3c556ea2e3ede515d16daa2737d6ae3002d5d6",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-001",
@@ -2009,9 +2550,11 @@
       "prompt": "处于平衡状态的一瓶氢气和一瓶氮气的分子数密度相同，分子的平均平动动能也相同，则它们（　）。\n\n**A.** 温度、压强都不相同\n\n**B.** 温度相同，但氢气压强大于氮气压强\n\n**C.** 温度、压强都相同\n\n**D.** 温度相同，但氢气压强小于氮气压强",
       "solution": "正确答案：**C**。\n\n温度、压强都相同",
       "explanation": [
-        "由 $\\overline\\varepsilon_t=3kT/2$，平均平动动能相同意味着温度相同。",
-        "由 $p=(2/3)n_N\\overline\\varepsilon_t$，数密度和平均平动动能都相同，压强也相同。",
-        "气体种类改变分子质量和典型速率，但不会破坏上述温度与压强关系。"
+        "**区分题中两个“平均”。** 分子数密度 $n_N=N/V$ 表示单位体积中的分子个数；平均平动动能 $\\overline\\varepsilon_t$ 是一个分子三个平动方向动能的统计平均。这里比较的是氢气和氮气的这两个量，不是比较它们的质量密度或平均速率。",
+        "**从平动动能判断温度。** 平衡理想气体的三个平动自由度各有平均能量 $kT/2$，故 $\\overline\\varepsilon_t=3kT/2$。玻尔兹曼常量 $k$ 对两种气体相同，所以 $T=2\\overline\\varepsilon_t/(3k)$，相同平均平动动能必给出相同温度。",
+        "**由微观压强关系判断压强。** 气体动理论给出 $p=n_Nm\\overline{v^2}/3=(2/3)n_N\\overline\\varepsilon_t$。题给 $n_N$ 相同、$\\overline\\varepsilon_t$ 相同，因此两气体压强相同。也可代入理想气体关系 $p=n_NkT$ 再核对一次。",
+        "**说明分子质量为什么不影响结论。** 氢气分子较轻，在同温下通常有更大的典型速率，但其平均速度平方恰好与质量成反比，使 $m\\overline{v^2}=3kT$ 保持相同。因此不能由“氢分子更快”推出氢气压强更大。",
+        "**对照选项。** 温度和压强均相同，选 **C**。A 的温度判断不对；B、D 在数密度相等的条件下仍按气体种类给出不同压强，都违背了 $p=n_NkT$。氢气与氮气的转动自由度不影响本题指定的平动能关系。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2026,7 +2569,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "平均平动动能相同意味着温度相同，与分子质量无关；这不意味着两种分子的平均速率相同。",
+        "分子数密度相同再结合 $p=nkT$，才能推出压强相同。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-001",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "ac41645f8184e6ee00b6eab417eebdb585b4bb0803c104bcebc44a4241fed312",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-002",
@@ -2079,9 +2640,11 @@
       "prompt": "$1\\,\\mathrm{mol}$ 氦气和 $1\\,\\mathrm{mol}$ 氧气（视为刚性双原子分子理想气体），温度为 $T$ 时，内能分别为（　）。\n\n**A.** $3RT/2,\\ 5kT/2$\n\n**B.** $3kT/2,\\ 5kT/2$\n\n**C.** $3RT/2,\\ 3RT/2$\n\n**D.** $3RT/2,\\ 5RT/2$",
       "solution": "正确答案：**D**。\n\n$3RT/2,\\ 5RT/2$",
       "explanation": [
-        "氦为单原子气体，三个平动自由度，每摩尔内能 $U_{\\mathrm{He}}=3RT/2$。",
-        "氧气按刚性双原子分子处理，增加两个转动自由度，故每摩尔 $U_{\\mathrm O_2}=5RT/2$。",
-        "$kT$ 是单分子的能量尺度，题给一摩尔，应使用 $RT=N_AkT$。"
+        "**先写能量均分的计数规则。** 在经典、相关自由度已激发的近似下，每个独立二次型自由度对一个分子平均贡献 $kT/2$，所以具有 $f$ 个自由度的 $n$ 摩尔理想气体内能为 $U=fNkT/2=fnRT/2$，其中 $N=nN_A$、$R=N_Ak$。",
+        "**计算氦气。** 氦为单原子分子，题设温区只计三个平动自由度，即 $f=3$。题给 $n=1\\,\\mathrm{mol}$，所以 $U_{\\mathrm{He}}=(3/2)(1)RT=3RT/2$。单个原子的平均能量才是 $3kT/2$，不能代替整摩尔内能。",
+        "**计算氧气。** 题目明确把氧分子看作刚性双原子分子：三个平动自由度加两个转动自由度，共 $f=5$；“刚性”表示不计分子振动自由度。因此 $U_{\\mathrm O_2}=(5/2)(1)RT=5RT/2$。",
+        "**按题目顺序配对。** 氦气、氧气的内能依次为 $\\boxed{3RT/2,\\ 5RT/2}$，选 **D**。同温意味着每个平动自由度的平均能量相同，并不意味着不同结构气体的总内能一定相同。",
+        "**核对干扰项和量纲。** A、B 把单分子能量尺度 $kT$ 用到一摩尔的总内能；C 忽略了刚性双原子分子的两个转动自由度。$R$ 的单位为 $\\mathrm{J/(mol\\,K)}$，乘 $1\\,\\mathrm{mol}$ 和温度后才得到能量单位焦耳。低温冻结或高温振动激发会改变自由度，本题采用给定模型。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2096,7 +2659,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "1 mol 气体内能用 $R$，单个分子的平均能量用 $k$，两者相差阿伏伽德罗常数。",
+        "氦气为单原子、刚性氧气为双原子，分别取3和5个自由度，不能给两者都用 $3RT/2$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-002",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "c1b4eefc924ccc538153ea1b49d2359400f53a4225a8fbe7723d046d677c37d4",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-003",
@@ -2149,9 +2730,11 @@
       "prompt": "三个容器 $A,B,C$ 中装有同种理想气体，分子数密度相同，方均根速率之比为 $1:2:4$，则压强之比 $p_A:p_B:p_C$ 为（　）。\n\n**A.** 1:2:4\n\n**B.** 1:4:8\n\n**C.** 1:4:16\n\n**D.** 4:2:1",
       "solution": "正确答案：**C**。\n\n1:4:16",
       "explanation": [
-        "同种气体的单分子质量相同，数密度也相同，压强 $p=nm\\overline{v^2}/3$。",
-        "方均根速率是 $\\sqrt{\\overline{v^2}}$，所以压强与方均根速率的平方成正比。",
-        "对 $1:2:4$ 各项平方，得到 $1:4:16$。"
+        "**列出相同量和变化量。** 三个容器装的是同种气体，所以单分子质量 $m$ 相同；分子数密度 $n_N$ 也相同。给出的速率是方均根速率 $v_{\\mathrm{rms}}=\\sqrt{\\overline{v^2}}$，不是速度矢量平均值，也不是最概然速率。",
+        "**选用直接联系压强的公式。** 气体动理论给出 $p=\\tfrac13n_Nm\\overline{v^2}=\\tfrac13n_Nm v_{\\mathrm{rms}}^2$。因为 $n_N,m$ 都不变，压强和方均根速率的平方成正比，而不是和速率本身成正比。",
+        "**把比值写成共同倍数。** 设三个方均根速率分别为 $v,2v,4v$，则压强分别为 $Cv^2,C(2v)^2,C(4v)^2$，其中 $C=n_Nm/3$ 为公共因子。消去 $Cv^2$ 后得到 $p_A:p_B:p_C=1:4:16$。",
+        "**用温度独立检查。** 同种理想气体满足 $v_{\\mathrm{rms}}^2=3kT/m$，所以温度之比也是 $1:4:16$。再由数密度相同情况下 $p=n_NkT$，得到同一压强比，说明平方关系和方向均正确。",
+        "**选择与排错。** 选 **C**。A 直接照抄速率比，遗漏平方；B 只将部分项平方，比例不一致；D 把压强和运动剧烈程度的关系颠倒。在平衡气体中平均速度矢量可以为零，但这不表示方均根速率或压强为零。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2166,7 +2749,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "$p=nm\\overline{v^2}/3$ 与方均根速率的平方成正比，不与速率本身成正比。",
+        "同种气体与相同数密度允许约去 $n,m$；比值应为 $1^2:2^2:4^2=1:4:16$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-003",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "0c5ca0f2a8ed208a94c39ffdfea289ae5ee64d2dad2ca0f2c51a291d54b29835",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-004",
@@ -2219,9 +2820,11 @@
       "prompt": "体积不变的容器中贮有一定量理想气体。温度为 $T_0$ 时，平均速率、平均碰撞频率、平均自由程分别为 $\\overline v_0,\\overline Z_0,\\overline\\lambda_0$。温度升为 $4T_0$ 后，三者分别为（　）。\n\n**A.** $4\\overline v_0,4\\overline Z_0,4\\overline\\lambda_0$\n\n**B.** $2\\overline v_0,2\\overline Z_0,\\overline\\lambda_0$\n\n**C.** $2\\overline v_0,2\\overline Z_0,4\\overline\\lambda_0$\n\n**D.** $4\\overline v_0,2\\overline Z_0,\\overline\\lambda_0$",
       "solution": "正确答案：**B**。\n\n$2\\overline v_0,2\\overline Z_0,\\overline\\lambda_0$",
       "explanation": [
-        "温度四倍，平均速率按 $\\sqrt T$ 变化，所以为原来的两倍。",
-        "固定分子数和体积，数密度不变，硬球有效直径不变时 $\\overline\\lambda=1/(\\sqrt2\\pi d^2n_N)$ 不变。",
-        "碰撞频率 $\\overline Z=\\overline v/\\overline\\lambda$ 因此增为两倍。"
+        "**先确认约束。** 容器体积不变、气体总量不变，所以 $n_N=N/V$ 不变。温度从 $T_0$ 升到 $4T_0$，这里使用热力学温度。按题中碰撞模型，把分子的有效直径 $d$ 看成不随温度改变。",
+        "**求平均速率的倍数。** 麦克斯韦气体平均速率 $\\overline v=\\sqrt{8kT/(\\pi m)}$，同种分子质量不变，故 $\\overline v/\\overline v_0=\\sqrt{4T_0/T_0}=2$。所以新平均速率是 $2\\overline v_0$，不能直接乘温度的倍数 4。",
+        "**求平均自由程的倍数。** 硬球模型下 $\\overline\\lambda=1/(\\sqrt2\\pi d^2n_N)$。分子数密度与碰撞截面都不变，故平均自由程仍为 $\\overline\\lambda_0$。自由程是两次碰撞之间走过的平均距离，分子跑得更快并不会在这个密度下自动改变这段平均距离。",
+        "**求平均碰撞频率的倍数。** 每秒碰撞次数为 $\\overline Z=\\overline v/\\overline\\lambda$，所以 $\\overline Z/\\overline Z_0=2/1=2$，新值为 $2\\overline Z_0$。也可由 $\\overline Z=\\sqrt2\\pi d^2n_N\\overline v$ 看出同样的倍数。",
+        "**合并并检查。** 三者依次为 $2\\overline v_0,2\\overline Z_0,\\overline\\lambda_0$，选 **B**。等容加热时压强会增为四倍，但不能据此套用“固定温度时自由程与压强成反比”，因为这里温度同时改变；完整式中的 $T/p$ 恰好不变。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2236,7 +2839,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "定容且气体量不变时数密度不变，温度增至4倍使平均速率增至2倍。",
+        "平均自由程取决于数密度与碰撞截面，保持不变；碰撞频率则随速率增至2倍，不能将二者一起放大。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-004",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "65a1efdfb36c6be8c6db91f3bd580a7e092b8b79055590053f937ff3fd72794e",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-005",
@@ -2289,9 +2910,11 @@
       "prompt": "已知 $n$ 为分子数密度，$f(v)$ 为麦克斯韦速率分布函数，则 $nf(v)dv$ 表示（　）。\n\n**A.** 速率 $v$ 附近、$dv$ 区间内的分子数\n\n**B.** 单位体积内速率在 $v\\sim v+dv$ 区间内的分子数\n\n**C.** 速率 $v$ 附近、$dv$ 区间内分子数占总分子数的比率\n\n**D.** 单位时间内碰到单位面积器壁上速率在 $v\\sim v+dv$ 区间内的分子数",
       "solution": "正确答案：**B**。\n\n单位体积内速率在 $v\\sim v+dv$ 区间内的分子数",
       "explanation": [
-        "$f(v)dv$ 是某速率区间的概率，也就是该区间分子所占比例。",
-        "乘分子数密度 $n$，便得到单位体积内落在该速率区间的分子数，选 B。",
-        "若求整个容器的分子数应乘总数 $N$；若求碰壁通量还需加入速度分量和方向的权重。"
+        "**从概率密度的定义入手。** 速率分布函数 $f(v)$ 满足 $\\int_0^\\infty f(v)\\,dv=1$；$f(v)\\,dv$ 表示随机取一个分子，其速率落在 $[v,v+dv]$ 这个很小区间内的概率，也等于这一速率区间的分子比例。",
+        "**区分总数和数密度。** 若容器内共有 $N$ 个分子，该区间的分子总数为 $dN=Nf(v)\\,dv$。题目给的是分子数密度 $n=N/V$，因此乘 $n$ 得到 $dN/V=nf(v)\\,dv$，即每单位体积内这一速率区间的分子数。",
+        "**用单位作检查。** 因 $f(v)\\,dv$ 无量纲，而 $n$ 的单位为 $\\mathrm{m^{-3}}$，所以 $nf(v)\\,dv$ 的单位也为 $\\mathrm{m^{-3}}$。它必须仍然是数密度，不能突然变为整瓶气体的分子个数，也没有单位时间或单位面积的因子。",
+        "**逐项对应。** B 完整包含“单位体积”与“指定速率区间”两个限定，正确。A 缺少单位体积，适合 $Nf(v)dv$；C 是 $f(v)dv$ 本身；D 是碰壁通量，还要考虑朝向器壁的速度法向分量和分子运动方向的统计。",
+        "**处理有限区间。** 如果题目改问 $v_1$ 到 $v_2$ 的分子数密度，应计算 $n\\int_{v_1}^{v_2}f(v)\\,dv$；再乘容器体积 $V$，才得到这一有限速率范围内的分子总数。不要把密度 $f(v)$ 在一个点的值直接当作该点的概率。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2306,7 +2929,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "$f(v)dv$ 是速率落在窄区间的比例，乘总分子数 $N$ 才是全容器内的分子数。",
+        "此处乘的是数密度 $n$，因此 $nf(v)dv$ 表示单位体积内相应区间的分子数，不能漏掉“单位体积”。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-005",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "9a52978a67935ebd0033c79624b7111d65c41536c35580e6887d1be5b39010e9",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-010",
@@ -2359,11 +3000,12 @@
       "prompt": "一容器内贮有氧气，其压强为 $1.01\\times10^5\\,\\mathrm{Pa}$，温度为 $27.0^\\circ\\mathrm C$，求：（1）气体分子的数密度；（2）氧气的密度；（3）分子的平均平动动能；（4）分子间的平均距离。（设分子均匀等距排列。）",
       "solution": "取 $T\\approx300\\,\\mathrm K$：$n_N\\approx2.44\\times10^{25}\\,\\mathrm{m^{-3}}$；$\\rho\\approx1.30\\,\\mathrm{kg/m^3}$；$\\overline\\varepsilon_t\\approx6.21\\times10^{-21}\\,\\mathrm J$；$d\\approx3.45\\times10^{-9}\\,\\mathrm m$。",
       "explanation": [
-        "先将温度换为开尔文：$T=27.0+273.15=300.15\\,\\mathrm K$。按题目精度取 $300\\,\\mathrm K$。数密度表示每单位体积的分子个数，不是质量密度。",
-        "由理想气体方程 $p=n_NkT$，得 $n_N=p/(kT)=1.01\\times10^5/(1.380649\\times10^{-23}\\times300)\\approx2.44\\times10^{25}\\,\\mathrm{m^{-3}}$。",
-        "氧气摩尔质量 $M=0.032\\,\\mathrm{kg/mol}$。质量密度 $\\rho=pM/(RT)\\approx1.30\\,\\mathrm{kg/m^3}$，也可用单分子质量乘数密度检查。",
-        "平均平动动能只由温度决定：$\\overline\\varepsilon_t=3kT/2\\approx6.21\\times10^{-21}\\,\\mathrm J$。氧气的总内能还含转动能，但本问只求平动部分。",
-        "等距排列近似下，每个分子占据边长为 $d$ 的小立方体，$n_Nd^3=1$，故 $d=n_N^{-1/3}\\approx3.45\\,\\mathrm{nm}$。这不是平均自由程，也不是分子直径。"
+        "**整理量并统一单位。** 已知 $p=1.01\\times10^5\\,\\mathrm{Pa}$、$t=27.0^\\circ\\mathrm C$。温度应换为 $T=t+273.15=300.15\\,\\mathrm K$；按题目精度以下取 $T\\simeq300\\,\\mathrm K$。用 $k=1.380649\\times10^{-23}\\,\\mathrm{J/K}$、$R=8.31446\\,\\mathrm{J/(mol\\,K)}$、氧气摩尔质量 $M=0.032\\,\\mathrm{kg/mol}$。",
+        "**第（1）问：把状态方程改为数密度形式。** 从 $pV=NkT$ 两边除以体积，得 $p=n_NkT$，其中 $n_N=N/V$。所以 $n_N=p/(kT)=(1.01\\times10^5)/(1.380649\\times10^{-23}\\times300)\\approx2.44\\times10^{25}\\,\\mathrm{m^{-3}}$。这里不是物质的量浓度，分母应为 $kT$ 而不是 $RT$。",
+        "**第（2）问：把个数转换成质量。** 单分子质量 $m=M/N_A$，故 $\\rho=n_Nm=n_NM/N_A$。利用 $R=N_Ak$，也可直接得到 $\\rho=pM/(RT)$。代入 $\\rho=(1.01\\times10^5\\times0.032)/(8.31446\\times300)\\approx1.30\\,\\mathrm{kg/m^3}$。摩尔质量必须用千克每摩尔，不能把数值 32 直接代入。",
+        "**第（3）问：只计算平动能。** 三个平动自由度给出 $\\overline\\varepsilon_t=3kT/2=(3/2)(1.380649\\times10^{-23})(300)\\approx6.21\\times10^{-21}\\,\\mathrm J$。氧分子虽还有转动能，本问特意限定“平均平动动能”，因此不使用总平均热能 $5kT/2$。",
+        "**第（4）问：将数密度转换成平均占据体积。** 按题设均匀等距排列近似，每个分子占据边长 $d$ 的小立方体。一个立方体中约有一个分子，故 $n_Nd^3=1$，于是 $d=(1/n_N)^{1/3}\\approx3.45\\times10^{-9}\\,\\mathrm m=3.45\\,\\mathrm{nm}$。",
+        "**检查三个不同的长度概念。** 此 $d$ 是均匀排列模型中的平均间距，不是分子自身的直径，也不是碰撞间的平均自由程。数密度的单位为 $\\mathrm{m^{-3}}$，取负三分之一次方后为米，量纲正确。若全程使用 $300.15\\,\\mathrm K$，数值只在最后几位略变，不影响上述有效数字。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2373,7 +3015,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "状态方程必须使用热力学温度，$27.0^\\circ\\mathrm C\\approx300\\,\\mathrm K$；不能直接代27。",
+        "平均平动动能用 $3kT/2$；平均间距的估计是 $n^{-1/3}$，不是数密度的倒数。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-010",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "a0b2f80e591c70a0869e94c7c7e4e276fe92c1633fb9c3511de7bdf5b5b31361",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-019",
@@ -2426,10 +3086,12 @@
       "prompt": "在容积为 $2.0\\times10^{-3}\\,\\mathrm{m^3}$ 的容器中，有内能为 $6.75\\times10^2\\,\\mathrm J$ 的刚性双原子分子的理想气体。（1）求气体的压强；（2）若容器中分子总数为 $5.4\\times10^{22}$ 个，求分子的平均平动动能及气体的温度。",
       "solution": "$p=1.35\\times10^5\\,\\mathrm{Pa}$；$\\overline\\varepsilon_t=7.50\\times10^{-21}\\,\\mathrm J$；$T\\approx362\\,\\mathrm K$。",
       "explanation": [
-        "刚性双原子分子取三个平动、两个转动自由度，总自由度 $f=5$，因此 $U=5NkT/2=5pV/2$。",
-        "由内能直接求压强：$p=2U/(5V)=2\\times675/(5\\times0.002)=1.35\\times10^5\\,\\mathrm{Pa}$。",
-        "每个分子的总平均热能是 $U/N$，其中平动只占 $3/5$。所以 $\\overline\\varepsilon_t=(3/5)(U/N)=7.50\\times10^{-21}\\,\\mathrm J$。",
-        "由 $\\overline\\varepsilon_t=3kT/2$ 得 $T=2\\overline\\varepsilon_t/(3k)\\approx362\\,\\mathrm K$。也可直接用 $T=2U/(5Nk)$ 复核。"
+        "**确定气体模型。** 已知 $U=6.75\\times10^2=675\\,\\mathrm J$、$V=2.0\\times10^{-3}\\,\\mathrm{m^3}$，以及 $N=5.4\\times10^{22}$。刚性双原子分子有三个平动和两个转动自由度，因此总自由度为 5。不能把本题内能全部当作平动能。",
+        "**第（1）问：消去未知温度。** 能量均分给出 $U=5NkT/2$；理想气体状态方程给出 $pV=NkT$。将后式代入前式得 $U=5pV/2$，整理为 $p=2U/(5V)$。这样即使先不使用给定的分子数，也能求压强。",
+        "**代入求压强。** $p=2\\times675/[5\\times(2.0\\times10^{-3})]=1350/0.010=1.35\\times10^5\\,\\mathrm{Pa}$。由于 $\\mathrm J/\\mathrm{m^3}=\\mathrm{Pa}$，单位也相符。",
+        "**第（2）问：从总能量取出平动部分。** 每个分子的总平均热能为 $U/N$。五个自由度中，三个是平动，所以 $\\overline\\varepsilon_t=(3/5)(U/N)=3\\times675/[5\\times5.4\\times10^{22}]=7.50\\times10^{-21}\\,\\mathrm J$。若直接用 $U/N$，会把两个转动自由度的能量也包括进去。",
+        "**由平动能求温度。** $\\overline\\varepsilon_t=3kT/2$，因此 $T=2\\overline\\varepsilon_t/(3k)=2\\times7.50\\times10^{-21}/(3\\times1.380649\\times10^{-23})\\approx362\\,\\mathrm K$。也可直接由 $U=5NkT/2$ 解得同一结果。",
+        "**独立反代。** $NkT\\approx(5.4\\times10^{22})(1.380649\\times10^{-23})(362)\\approx270\\,\\mathrm J$，而 $pV=(1.35\\times10^5)(0.002)=270\\,\\mathrm J$；再乘 $5/2$ 得内能 $675\\,\\mathrm J$，与题给条件一致。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2439,7 +3101,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "刚性双原子气体的总内能为 $5pV/2$，不是单纯的平动能 $3pV/2$。",
+        "由总内能除以 $N$ 得的是单分子总平均能量；求平均平动动能还需乘 $3/5$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-019",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "a1dc748ab932884b6d8874ed29f42550cff69aafe87ff77893cefed381ac530f",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-020",
@@ -2492,10 +3172,11 @@
       "prompt": "氢气和氧气的温度相同，若氢气分子的平均平动动能为 $6.21\\times10^{-21}\\,\\mathrm J$，试求：（1）氧气分子的平均平动动能及温度；（2）氧气分子的最概然速率。",
       "solution": "氧气的平均平动动能为 $6.21\\times10^{-21}\\,\\mathrm J$，温度约 $300\\,\\mathrm K$，最概然速率约 $395\\,\\mathrm{m/s}$。",
       "explanation": [
-        "同温理想气体分子的平均平动动能均为 $3kT/2$，与气体种类无关。所以氧气与氢气的平均平动动能相同。",
-        "解出温度：$T=2\\overline\\varepsilon_t/(3k)\\approx300\\,\\mathrm K$。",
-        "最概然速率是速率分布曲线峰值对应的速率：$v_p=\\sqrt{2RT/M}$。氧气的 $M=0.032\\,\\mathrm{kg/mol}$，故 $v_p\\approx395\\,\\mathrm{m/s}$。",
-        "不要误用方均根速率 $\\sqrt{3RT/M}$；同温不表示不同种气体的三种特征速率相等。"
+        "**抓住同温条件。** 对处于热平衡的理想气体，每个分子的平均平动动能均为 $3kT/2$，只与热力学温度有关。氢气与氧气的分子质量不同，但本题温度相同，故氧气分子的平均平动动能直接等于题给的 $6.21\\times10^{-21}\\,\\mathrm J$。",
+        "**第（1）问：计算共同温度。** 由 $\\overline\\varepsilon_t=3kT/2$ 解出 $T=2\\overline\\varepsilon_t/(3k)$。代入 $T=2\\times6.21\\times10^{-21}/(3\\times1.380649\\times10^{-23})\\approx299.9\\,\\mathrm K\\approx300\\,\\mathrm K$。这是开尔文温度，若转为摄氏温度则约 $27^\\circ\\mathrm C$。",
+        "**第（2）问：选择正确的特征速率。** 最概然速率是麦克斯韦速率密度曲线达到峰值的位置，由对 $v^2e^{-mv^2/(2kT)}$ 求极值得到 $v_p=\\sqrt{2kT/m}=\\sqrt{2RT/M}$。这里分子中的系数是 2，平均速率和方均根速率分别使用另外的系数。",
+        "**代入氧气摩尔质量。** $M_{\\mathrm O_2}=32\\,\\mathrm{g/mol}=0.032\\,\\mathrm{kg/mol}$，故 $v_p=\\sqrt{2\\times8.31446\\times300/0.032}\\,\\mathrm{m/s}=\\sqrt{1.559\\times10^5}\\,\\mathrm{m/s}\\approx395\\,\\mathrm{m/s}$。",
+        "**核对大小关系。** 同温时三种特征速率均与 $M^{-1/2}$ 成正比，所以氧气分子比氢气分子慢，但二者平均平动动能仍相同。对同一瓶氧气，应有 $v_p<\\overline v<v_{\\mathrm{rms}}$；若代入 $\\sqrt{3RT/M}$，求得的是方均根速率，不能回答本题。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2505,7 +3186,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "同温氢气与氧气的平均平动动能相等；分子质量差异体现在速率上，不能给动能再乘质量比。",
+        "最概然速率为 $\\sqrt{2RT/M}$，与平均速率和方均根速率的系数不同；摩尔质量要用 $\\mathrm{kg/mol}$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-020",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "bfb743c9395a2bc1b2a3901c6e53f6067edaa86d33475ef1085336705513a1b0",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-022",
@@ -2556,12 +3255,14 @@
         "source_image_url": "/discrete-math/physics/v29/sources/p225.jpg"
       },
       "prompt": "已知质点离开地球引力作用所需的逃逸速率为 $v=\\sqrt{2gR_E}$，其中 $R_E$ 为地球半径。（1）若使氢气分子和氧气分子的平均速率分别与逃逸速率相等，它们各自应有多高的温度？（2）说明大气层中为什么氢气比氧气要少。（取 $R_E=6.40\\times10^6\\,\\mathrm m$。）",
-      "solution": "取 $g=9.8\\,\\mathrm{m/s^2}$、$M_{\\mathrm H_2}=0.002\\,\\mathrm{kg/mol}$、$M_{\\mathrm O_2}=0.032\\,\\mathrm{kg/mol}$，得 $T_{\\mathrm H_2}\\approx1.19\\times10^4\\,\\mathrm K$，$T_{\\mathrm O_2}\\approx1.90\\times10^5\\,\\mathrm K$。同温时氢气速率分布更偏向高速，较易逃逸。",
+      "solution": "取 $g=9.8\\,\\mathrm{m/s^2}$、$M_{\\mathrm H_2}=0.002\\,\\mathrm{kg/mol}$、$M_{\\mathrm O_2}=0.032\\,\\mathrm{kg/mol}$，得 $T_{\\mathrm H_2}\\approx1.185\\times10^4\\,\\mathrm K$，$T_{\\mathrm O_2}\\approx1.90\\times10^5\\,\\mathrm K$。同温时氢气速率分布更偏向高速，较易逃逸。",
       "explanation": [
-        "逃逸速率 $v_e=\\sqrt{2gR_E}\\approx1.12\\times10^4\\,\\mathrm{m/s}$。题目指定的是平均速率，不是方均根速率。",
-        "由 $\\overline v=\\sqrt{8RT/(\\pi M)}=v_e$，解得 $T=\\pi Mv_e^2/(8R)=\\pi MgR_E/(4R)$。",
-        "分别代入氢气和氧气的摩尔质量，得到上述两个温度。氧气摩尔质量是氢气的十六倍，因此所需温度也是十六倍。",
-        "实际在远低于这些温度时，分布中仍有高速尾部。氢气较轻，同温下具有更多可能达到逃逸速率的分子。大气丰度还受补给与化学反应等影响，本题说明的是热逃逸因素。"
+        "**先求地球表面的逃逸速率。** 题给 $v_e=\\sqrt{2gR_E}$。取 $g=9.8\\,\\mathrm{m/s^2}$、$R_E=6.40\\times10^6\\,\\mathrm m$，得 $v_e^2=1.2544\\times10^8\\,\\mathrm{m^2/s^2}$，所以 $v_e\\approx1.12\\times10^4\\,\\mathrm{m/s}$。它来自引力势能和动能的平衡，不取决于逃逸分子的质量。",
+        "**识别题目要求的平均方式。** 本题要求平均速率达到 $v_e$，应使用 $\\overline v=\\sqrt{8RT/(\\pi M)}$。若用最概然速率或方均根速率，都会得到另一个温度，不能混用。令 $\\overline v=v_e$，两边平方得 $T=\\pi Mv_e^2/(8R)=\\pi MgR_E/(4R)$。",
+        "**第（1）问：计算氢气温度。** 氢气摩尔质量 $M_H=0.002\\,\\mathrm{kg/mol}$，代入 $T_H=\\pi(0.002)(1.2544\\times10^8)/(8\\times8.31446)\\,\\mathrm K\\approx1.185\\times10^4\\,\\mathrm K$。这个数值只是题设分子模型与平均速率等式下的估算。",
+        "**计算氧气温度并比较。** 氧气 $M_O=0.032\\,\\mathrm{kg/mol}=16M_H$，因此 $T_O=16T_H\\approx1.90\\times10^5\\,\\mathrm K$。也可直接把氧气摩尔质量代入同一公式复核。温度比是摩尔质量比 16，而不是它的平方根。",
+        "**第（2）问：解释热逃逸的差异。** 在相同温度下 $\\overline v\\propto1/\\sqrt M$，氢气平均速率是氧气的 4 倍，其速率分布有更多分子位于超过逃逸阈值的高速尾部。所以长期看氢更易从高层大气热逃逸；并不要求整瓶气体的平均速率先达到逃逸速率。",
+        "**说明模型边界。** 如此高温下真实分子会发生解离、电离，地球大气丰度也受到化学反应、补给及非热逃逸影响。因此计算是按题设理想分子气体给出的比较，不能据此断言现代大气只有到这些温度才会发生逃逸。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2571,7 +3272,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "本题指定平均速率，应使用 $\\bar v=\\sqrt{8RT/(\\pi M)}$，不能替换成最概然速率或方均根速率。",
+        "大气逸散由速率分布的高能尾部决定，平均速率低于逃逸速率不表示没有任何分子逃逸。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-022",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "f174e589d0781e30a5ba0c130e1c4e46f426f9beb3a42db995253945283045d6",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-025",
@@ -2624,11 +3343,13 @@
       "prompt": "$N$ 个质量均为 $m$ 的同种气体分子的速率分布如图所示。（1）说明曲线与横坐标所包围面积的含义；（2）由 $N$ 和 $v_0$ 求 $a$ 值；（3）求在速率 $v_0/2$ 到 $3v_0/2$ 间隔内的分子数；（4）求分子的平均平动动能。\n\n![教材原题 12-25 图](/discrete-math/physics/v29/figures/12-25.png)",
       "solution": "（1）总分子数 $N$；（2）$a=2N/(3v_0)$；（3）$7N/12$；（4）$\\overline\\varepsilon_t=31mv_0^2/36$。",
       "explanation": [
-        "图的纵轴是 $Nf(v)$，不是 $f(v)$。在 $0\\le v\\le v_0$ 时 $Nf(v)=av/v_0$，在 $v_0<v\\le2v_0$ 时 $Nf(v)=a$，其余为零。",
-        "归一化到总分子数：三角形面积加矩形面积为 $av_0/2+av_0=3av_0/2=N$，所以 $a=2N/(3v_0)$。",
-        "所求区间左半段为三角斜边下的梯形，面积 $\\int_{v_0/2}^{v_0}(av/v_0)dv=3av_0/8$；右半段矩形面积为 $av_0/2$。合计 $7av_0/8=7N/12$。",
-        "平均速度平方必须加权积分：$\\overline{v^2}=N^{-1}[\\int_0^{v_0}v^2(av/v_0)dv+\\int_{v_0}^{2v_0}av^2dv]$。",
-        "两项分别为 $av_0^3/4$ 和 $7av_0^3/3$，合计 $31av_0^3/12$。代入归一化系数得 $\\overline{v^2}=31v_0^2/18$，因此 $\\overline\\varepsilon_t=m\\overline{v^2}/2=31mv_0^2/36$。"
+        "**先把图像译成分段函数。** 纵轴是单位速率区间内的分子数 $Nf(v)$：$0\\le v\\le v_0$ 时为斜线 $av/v_0$，$v_0<v\\le2v_0$ 时为常量 $a$，其他速率为零。因纵轴含 $N$，面积表示分子数；若纵轴仅为 $f(v)$，面积才是概率。",
+        "**第（1）、（2）问：总面积与归一化。** 图形由底高分别为 $v_0,a$ 的三角形和宽高分别为 $v_0,a$ 的矩形构成，总面积 $N=av_0/2+av_0=3av_0/2$。解得 $\\boxed{a=2N/(3v_0)}$，单位是分子个数除以速率。此系数确定后，整条曲线才对应题给的总分子数。",
+        "**第（3）问：把跨拐点区间分开积分。** $v_0/2$ 到 $v_0$ 位于斜线段，分子数 $N_L=\\int_{v_0/2}^{v_0}(av/v_0)dv=(a/2v_0)[v_0^2-v_0^2/4]=3av_0/8$；$v_0$ 到 $3v_0/2$ 位于水平段，$N_R=a(3v_0/2-v_0)=av_0/2$。",
+        "**合计并代入系数。** $N_{\\mathrm{区间}}=N_L+N_R=7av_0/8=(7/8)(2N/3)=\\boxed{7N/12}$。结果小于 $N$，符合“部分速率区间”的含义；不能对整个区间都用同一个斜线或常量公式。",
+        "**第（4）问：按每个分子的能量加权。** 平均平动动能为 $\\overline\\varepsilon_t=N^{-1}\\int (mv^2/2)Nf(v)\\,dv$。因此先求 $\\overline{v^2}=N^{-1}[\\int_0^{v_0}(a/v_0)v^3dv+\\int_{v_0}^{2v_0}av^2dv]$，而不是先求平均速率再平方。",
+        "**把两段积分逐项算完。** 第一项 $(a/v_0)[v^4/4]_0^{v_0}=av_0^3/4$；第二项 $a[v^3/3]_{v_0}^{2v_0}=7av_0^3/3$。合计 $31av_0^3/12$，除以 $N$ 并代入 $a=2N/(3v_0)$，得 $\\overline{v^2}=31v_0^2/18$。",
+        "**写出能量并检查上界。** $\\boxed{\\overline\\varepsilon_t=31mv_0^2/36}$。最大速率为 $2v_0$，故最大动能为 $2mv_0^2$，本题平均能量约为 $0.861mv_0^2$，小于上界，单位也为能量。一般而言 $\\overline{v^2}\\ne\\overline v^{\\,2}$。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2638,7 +3359,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "先看纵轴是 $dN/dv$ 还是归一化的 $f(v)$；本题曲线面积为总分子数 $N$，不是1。",
+        "平均平动动能需要积分 $mv^2/2$ 后除以 $N$，不能把平均速率平方代替均方速率。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-025",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "35cf1d9b443a41074b0d1a0ab0613c621f764b8fbc56f76cd1838c089e6bb21a",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E012-027",
@@ -2691,11 +3430,12 @@
       "prompt": "导体中自由电子的运动可看作类似于气体分子的运动（故称电子气）。设导体中共有 $N$ 个自由电子，其中电子的最大速率为 $v_F$（称为费米速率）。电子在速率 $v\\sim v+dv$ 之间的概率为：$$\\frac{dN}{N}=\\begin{cases}\\dfrac{4\\pi A}{N}v^2dv,&0<v<v_F,\\\\0,&v>v_F.\\end{cases}$$ （1）画出分布函数图；（2）用 $N,v_F$ 定出常量 $A$；（3）证明电子气中电子的平均动能 $\\overline\\varepsilon=3\\varepsilon_F/5$，其中 $\\varepsilon_F=mv_F^2/2$ 称为费米能。",
       "solution": "$A=3N/(4\\pi v_F^3)$，$f(v)=3v^2/v_F^3$（$0<v<v_F$），$\\overline\\varepsilon=3mv_F^2/10=3\\varepsilon_F/5$。",
       "explanation": [
-        "概率密度由 $dN/N=f(v)dv$ 定义，因此区间内 $f(v)=4\\pi Av^2/N$。图像从原点按抛物线增加，到 $v_F$ 处截断，其右侧为零。",
-        "使用总概率为一：$\\int_0^{v_F}(4\\pi A/N)v^2dv=4\\pi Av_F^3/(3N)=1$，得 $A=3N/(4\\pi v_F^3)$。",
-        "代回得到归一化密度 $f(v)=3v^2/v_F^3$。这是一道题设给定的费米电子气模型，不能改用麦克斯韦分布。",
-        "平均动能为 $\\int_0^{v_F}(mv^2/2)f(v)dv=(3m/(2v_F^3))(v_F^5/5)=3mv_F^2/10$。",
-        "再用 $\\varepsilon_F=mv_F^2/2$，即得 $\\overline\\varepsilon=3\\varepsilon_F/5$。平均值小于最大值，量纲也为能量。"
+        "**第（1）问：从给定概率识别密度。** 定义为 $dN/N=f(v)dv$，故在 $0<v<v_F$ 内 $f(v)=4\\pi Av^2/N$，在 $v>v_F$ 时为零。图像从原点按开口向上的抛物线增加，到 $v_F$ 左侧达到最大，然后在右侧截断为零；端点取值不影响积分。",
+        "**第（2）问：用总概率归一化。** 所有电子都落在 $[0,v_F]$，所以 $1=\\int_0^{v_F}f(v)dv=(4\\pi A/N)[v^3/3]_0^{v_F}=4\\pi Av_F^3/(3N)$。解出 $\\boxed{A=3N/(4\\pi v_F^3)}$。等价地把 $dN$ 积分为 $N$，不能把两种归一化方式混在一起。",
+        "**代回并完成图像标度。** $f(v)=3v^2/v_F^3$，所以在截断点左侧 $f(v_F^-)=3/v_F$，曲线下面积为 1。若画的是 $dN/dv=Nf(v)$，纵轴峰值则为 $3N/v_F$，面积为 $N$，两种图的纵轴必须标清。",
+        "**第（3）问：写出平均动能的权重积分。** 单电子动能 $\\varepsilon(v)=mv^2/2$，因此 $\\overline\\varepsilon=\\int_0^{v_F}(mv^2/2)f(v)dv=(3m/2v_F^3)\\int_0^{v_F}v^4dv$。使用的是给定费米速率模型，不应换成麦克斯韦分布。",
+        "**计算积分并转成费米能。** $\\int_0^{v_F}v^4dv=[v^5/5]_0^{v_F}=v_F^5/5$，于是 $\\overline\\varepsilon=(3m/2v_F^3)(v_F^5/5)=3mv_F^2/10$。因 $\\varepsilon_F=mv_F^2/2$，故 $\\boxed{\\overline\\varepsilon=3\\varepsilon_F/5}$。",
+        "**核对结果。** 平均能量应介于零与最大能量 $\\varepsilon_F$ 之间，$3/5$ 符合范围；$N$ 在归一化后消去，也符合单个电子平均能量的定义。把平均速率先平方会漏掉速率波动，无法给出正确的平均动能。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -2705,7 +3445,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "已给 $dN/N$ 是概率，归一化时积分结果应为1；也可以对 $dN$ 积分得到 $N$，但两种写法不能混算。",
+        "求平均能量要算 $\\overline{v^2}$；把 $\\bar v^2$ 代入会系统性低估平均动能。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E012-027",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "e54aa19978d2251986e9895c4f5f6be75f5e23e89905fa0b7a5cc266cf95a042",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-001",
@@ -2758,9 +3516,11 @@
       "prompt": "如图，$bca$ 为理想气体绝热过程，$b1a$ 和 $b2a$ 为任意过程。上述两过程中气体做功与吸收热量的情况是（　）。\n\n**A.** b1a 放热、做负功；b2a 放热、做负功\n\n**B.** b1a 吸热、做负功；b2a 放热、做负功\n\n**C.** b1a 吸热、做正功；b2a 吸热、做负功\n\n**D.** b1a 放热、做正功；b2a 吸热、做正功\n\n![教材原题 13-1 图](/discrete-math/physics/v29/figures/13-1.png)",
       "solution": "正确答案：**B**。\n\nb1a 吸热、做负功；b2a 放热、做负功",
       "explanation": [
-        "三条路径都从右侧大体积的 $b$ 到左侧小体积的 $a$，均为压缩，因此气体做功为负。",
-        "内能变化由端点决定；绝热中 $Q=0$，故 $\\Delta U=-W_{\\mathrm{绝热}}$。对于任意路径 $Q=\\Delta U+W=W-W_{\\mathrm{绝热}}$。",
-        "下方路径 b1a 的压强较低，负功的绝对值较小，所以 $W_1>W_{\\mathrm{绝热}}$，$Q_1>0$；上方路径负功绝对值较大，$Q_2<0$。"
+        "**统一功、热量的符号。** 以下规定气体吸热为 $Q>0$，气体对外做功为 $W>0$，第一定律写为 $\\Delta U=Q-W$。图中三条过程都从右侧大体积的 $b$ 到左侧小体积的 $a$，因此都是压缩，不能按照图形的高低直接判断功的正负。",
+        "**先确定所有路径的功。** 准静态体积功 $W=\\int_{V_b}^{V_a}p\\,dV$。因 $V_a<V_b$ 且压强为正，三条路径均有 $W<0$；负功的绝对值等于路径与体积轴之间的面积。由此 C、D 的“做正功”已经不符合图示方向。",
+        "**利用绝热路径消去未知内能变化。** 从同一初态 $b$ 到同一终态 $a$，内能变化相同，因为内能是状态量。绝热路径 $bca$ 上 $Q_{\\mathrm{ad}}=0$，所以共同的 $\\Delta U=-W_{\\mathrm{ad}}$。任意另一条路径上 $Q=\\Delta U+W=W-W_{\\mathrm{ad}}$。",
+        "**判断下方路径 b1a。** 路径 1 的压强整体较低，因此压缩时外界所需做功较少，气体负功绝对值较小，即 $W_1>W_{\\mathrm{ad}}$。代入得 $Q_1=W_1-W_{\\mathrm{ad}}>0$：路径 1 吸热，同时气体做负功。",
+        "**判断上方路径 b2a。** 路径 2 的压强较高，压缩负功的绝对值较大，即 $W_2<W_{\\mathrm{ad}}$，于是 $Q_2<0$：路径 2 放热，气体仍做负功。因此选 **B**。同样压缩并不必然放热，热量由压缩功与固定内能增加量之差决定。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2775,7 +3535,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "三条路径连接相同端态，因此内能变化相同；热量与功的差别来自路径而非端点。",
+        "以气体对外做功为正时 $Q=\\Delta U+W$；膨胀的功为正，比较路径面积后再与绝热路径相减。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-001",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "01afa760f67d9a89a52d198e6d879ce86f932c4008e454e5b825040e4ac5e26d",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-002",
@@ -2828,9 +3606,11 @@
       "prompt": "如图，一定量理想气体由平衡态 $A$ 变到 $B$，两态压强相等且 $V_B>V_A$。无论经过什么过程，气体必然（　）。\n\n**A.** 对外做正功\n\n**B.** 内能增加\n\n**C.** 从外界吸热\n\n**D.** 向外界放热\n\n![教材原题 13-2 图](/discrete-math/physics/v29/figures/13-2.png)",
       "solution": "正确答案：**B**。\n\n内能增加",
       "explanation": [
-        "由端点的状态方程，$T_A=pV_A/(nR)$、$T_B=pV_B/(nR)$，所以 $T_B>T_A$。",
-        "理想气体内能只与温度有关，故 $\\Delta U>0$，与中间路径无关。",
-        "功和热量是过程量。端点压强相同不代表全程等压，无法仅据端点确定功与热量的符号。"
+        "**区分端点条件和全过程条件。** 题目只说初末两态压强相等 $p_A=p_B=p$，且 $V_B>V_A$，没有说从 A 到 B 的每一点都等压。要求“无论经过什么过程”必然成立，应优先寻找只由端点决定的状态量。",
+        "**用两端的状态方程比较温度。** 气体量相同，对 A、B 两态分别有 $T_A=pV_A/(nR)$、$T_B=pV_B/(nR)$。所以 $T_B/T_A=V_B/V_A>1$，或者 $\\Delta T=p(V_B-V_A)/(nR)>0$。",
+        "**由温度判断内能。** 理想气体内能只依赖温度，$\\Delta U=n\\int_{T_A}^{T_B}C_V(T)dT$；在本题模型中热容为正，因此 $\\Delta U>0$。若视作定热容气体，可直接写成 $nC_V(T_B-T_A)>0$，与路径无关，所以 **B** 正确。",
+        "**为什么不能选择功。** 功 $W=\\int p\\,dV$ 是路径量。若取最简单的等压膨胀，功为正；但题目允许任意过程，可先在高压下压缩，再在较低压力下膨胀，并用等容段接回指定端点。通过改变高压压缩段，净功可以变为负，故 A 不是“必然”。",
+        "**为什么吸热或放热也不能保证。** 按 $Q=\\Delta U+W$，虽然 $\\Delta U$ 固定为正，$W$ 却依过程改变，因此 $Q$ 可以为正，也可在外界输入足够功时为负。C、D 均把路径量当成端点唯一决定的量。本题的关键是“必然”，而不是选择最常见路径。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2845,7 +3625,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "端态压强相等不表示整个过程等压，不能据此直接套 $W=p\\Delta V$。",
+        "可确定的是 $T_B/T_A=V_B/V_A>1$，从而理想气体内能增加；功与热量的符号仍取决于路径。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-002",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "5d7481b17c1189a5da1e27488ea5ce57a42b202b8eb114e9ff7937d0d463c565",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-003",
@@ -2898,9 +3696,11 @@
       "prompt": "两个相同刚性容器，一个盛氢气、一个盛氮气（均视为刚性分子理想气体），开始时压强和温度相同。将 $3\\,\\mathrm J$ 热量传给氮气使其升温。要使氢气升高同样温度，应传给氢气的热量为（　）。\n\n**A.** $6\\,\\mathrm J$\n\n**B.** $3\\,\\mathrm J$\n\n**C.** $5\\,\\mathrm J$\n\n**D.** $10\\,\\mathrm J$",
       "solution": "正确答案：**B**。\n\n$3\\,\\mathrm J$",
       "explanation": [
-        "初态压强、体积、温度相同，由状态方程知两瓶物质的量相同，并非质量相同。",
-        "刚性容器内体积不变，气体不做体积功，$Q=\\Delta U=nC_V\\Delta T$。",
-        "两者均按刚性双原子气体处理，$C_V=5R/2$，所以同样物质的量升温相同需相同热量 $3\\,\\mathrm J$。"
+        "**用初态判断气体的量。** 两个容器相同，体积均为 $V$；初始压强 $p$ 和温度 $T$ 也相同。由 $n=pV/(RT)$，两瓶物质的量相同。由于摩尔质量不同，两瓶的质量并不相同，不能按相同质量套用比热容比较。",
+        "**使用刚性容器的过程条件。** 加热时容器不膨胀，$dV=0$，故气体体积功 $W=\\int p\\,dV=0$。在没有其他做功方式的题设下，由第一定律得到 $Q=\\Delta U=nC_V\\Delta T$。",
+        "**比较两种气体的摩尔热容。** 氢分子和氮分子都按刚性双原子分子处理，自由度均为 5，所以 $C_{V,H}=C_{V,N}=5R/2$。这里比较的是每摩尔的热容，分子质量不出现在 $5R/2$ 中。",
+        "**写出比例再代入。** 所需温升相同，两瓶的 $n,C_V,\\Delta T$ 全部相同，故 $Q_H/Q_N=(n_HC_{V,H}\\Delta T)/(n_NC_{V,N}\\Delta T)=1$。已知 $Q_N=3\\,\\mathrm J$，所以 $Q_H=3\\,\\mathrm J$，选 **B**。",
+        "**排除不适用的比较。** A、C、D 都要求热容量存在额外差别，但题中没有这样的条件。不能因为氢气轻就认为升温所需能量更小，也不能使用 $C_p=7R/2$，因为加热过程为等容而非等压。本题近似不计分子振动以及温度引起的自由度变化。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2915,7 +3715,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "两容器初始 $p,V,T$ 均相同，物质的量由状态方程知相同；不能按氢气和氮气的摩尔质量反比分配热量。",
+        "两者都按刚性双原子气体处理，等容摩尔热容相同，升相同温度所需热量相同。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-003",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "166190006585e5fbde78a2b41415b2d4c95c50d964b057a714c280dabd287280",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-004",
@@ -2968,9 +3786,11 @@
       "prompt": "气体经历图示顺时针矩形循环，压强上下限为 $80\\times10^5\\,\\mathrm{Pa}$ 和 $20\\times10^5\\,\\mathrm{Pa}$，体积左右限为 $1\\times10^{-3}\\,\\mathrm{m^3}$ 和 $4\\times10^{-3}\\,\\mathrm{m^3}$。每循环外界传给气体的净热量为（　）。\n\n**A.** $3.2\\times10^4\\,\\mathrm J$\n\n**B.** $1.8\\times10^4\\,\\mathrm J$\n\n**C.** $2.4\\times10^4\\,\\mathrm J$\n\n**D.** $0\\,\\mathrm J$\n\n![教材原题 13-4 图](/discrete-math/physics/v29/figures/13-4.png)",
       "solution": "正确答案：**B**。\n\n$1.8\\times10^4\\,\\mathrm J$",
       "explanation": [
-        "循环回到原态，内能净变化为零，所以净热量等于净功。",
-        "顺时针 $p-V$ 循环净功为正，等于矩形面积 $(p_h-p_l)(V_h-V_l)$。",
-        "$Q_{\\mathrm{净}}=(80-20)\\times10^5\\times(4-1)\\times10^{-3}=1.8\\times10^4\\,\\mathrm J$。必须读出两个坐标轴的倍率。"
+        "**明确题目求的是净热量。** 一次完整循环后气体回到原状态，温度、体积、压强都回到初值，内能作为状态量有 $\\Delta U_{\\mathrm{cycle}}=0$。第一定律 $\\Delta U=Q-W$ 因而给出 $Q_{\\mathrm{net}}=W_{\\mathrm{net}}$，不需要知道各段气体的热容。",
+        "**拆开矩形的四条边。** 两个等容段的 $dV=0$，均不做体积功。高压边从 $V_l$ 膨胀到 $V_h$，功为 $p_h(V_h-V_l)$；低压边从 $V_h$ 压缩回 $V_l$，功为 $-p_l(V_h-V_l)$。相加得 $W_{\\mathrm{net}}=(p_h-p_l)(V_h-V_l)$。",
+        "**检查循环方向。** 图示顺时针意味着在较高压强下膨胀、较低压强下压缩，故净功为正，对应气体净吸热。若图示逆时针，同一面积应取负号。面积的大小与符号必须分开判断。",
+        "**读坐标倍率并代入。** $p_h-p_l=(80-20)\\times10^5=6.0\\times10^6\\,\\mathrm{Pa}$；$V_h-V_l=(4-1)\\times10^{-3}=3.0\\times10^{-3}\\,\\mathrm{m^3}$。因此 $Q_{\\mathrm{net}}=6.0\\times10^6\\times3.0\\times10^{-3}=1.8\\times10^4\\,\\mathrm J$，选 **B**。",
+        "**核对单位和概念。** $\\mathrm{Pa\\,m^3}=\\mathrm J$，量纲正确。D 把“循环内能变化为零”误当成“循环净热量为零”；A、C 没有正确使用两个差值。净吸热是吸热与放热的代数和，并不是热机效率分母中统计的全部正吸热量。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -2985,7 +3805,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "循环净功是 $p-V$ 图所围面积，压强和体积两个坐标都带倍率，必须同时计入。",
+        "顺时针循环对外做正功；一周回到原态时 $\\Delta U=0$，所以净吸热等于净功，而不等于某单段吸热。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-004",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "824fa3911691081e62368a8406d548ae6b68a65580a5919529152e0f780fc955",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-005",
@@ -3038,9 +3876,11 @@
       "prompt": "一台工作于 $327^\\circ\\mathrm C$ 与 $27^\\circ\\mathrm C$ 高低温热源之间的卡诺热机，每个循环吸热 $2000\\,\\mathrm J$，则对外做功为（　）。\n\n**A.** $2000\\,\\mathrm J$\n\n**B.** $1000\\,\\mathrm J$\n\n**C.** $4000\\,\\mathrm J$\n\n**D.** $500\\,\\mathrm J$",
       "solution": "正确答案：**B**。\n\n$1000\\,\\mathrm J$",
       "explanation": [
-        "转为开尔文，高温约 $600\\,\\mathrm K$，低温约 $300\\,\\mathrm K$。",
-        "卡诺效率 $\\eta=1-T_c/T_h\\approx1/2$。",
-        "净功 $W=\\eta Q_h\\approx1000\\,\\mathrm J$。使用摄氏温度之比会得到错误结果。"
+        "**整理输入量。** 高温热源 $t_h=327^\\circ\\mathrm C$，低温热源 $t_c=27^\\circ\\mathrm C$，每循环从高温热源吸热 $Q_h=2000\\,\\mathrm J$。要求的是一个循环的净对外功，吸热量不是功，仍须扣除排向低温热源的热量。",
+        "**将温度转换为热力学温度。** 取教材常用近似 $T=t+273$，得 $T_h\\approx600\\,\\mathrm K$、$T_c\\approx300\\,\\mathrm K$。若采用 $273.15$，得到 $600.15\\,\\mathrm K$ 与 $300.15\\,\\mathrm K$，结果在题目选项精度内相同。卡诺效率中的温度比必须用开尔文。",
+        "**计算卡诺效率。** 可逆卡诺循环满足 $Q_c/Q_h=T_c/T_h$，所以 $\\eta=W/Q_h=1-Q_c/Q_h=1-T_c/T_h=1-300/600=1/2$。约一半吸热转换成净功，另一半排给冷源。",
+        "**求净功并核对能量。** $W=\\eta Q_h=(1/2)(2000\\,\\mathrm J)=1000\\,\\mathrm J$。冷源放热大小为 $Q_c=2000-1000=1000\\,\\mathrm J$，满足一循环内能变化为零时的能量平衡，因此选 **B**。",
+        "**检查干扰项。** A 相当于效率 100%，忽略必须向冷源放热；C 的功大于吸热，不满足本循环能量守恒；D 对应效率 25%，与给定温度比不符。直接用摄氏比 $27/327$ 会算出错误效率，尽管两种温标的温差相同，它们的温度比并不相同。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3055,7 +3895,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "卡诺效率的温度比必须用开尔文温度：高温600 K、低温300 K，不能使用327和27的摄氏温度比。",
+        "对外做功为吸热量乘效率，$W=\\eta Q_1$；排热量才是 $Q_1-W$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-005",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "4b60ed0d82ba4d0ec8f3db2a72474e775c61610a0264d13de2af28a12196661b",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-006",
@@ -3108,9 +3966,11 @@
       "prompt": "根据热力学第二定律，下列说法正确的是（　）。\n\n**A.** 自然界中的一切自发过程都是不可逆的\n\n**B.** 不可逆过程就是不能向相反方向进行的过程\n\n**C.** 热量可以从高温物体传到低温物体，但不能从低温物体传到高温物体\n\n**D.** 任何过程总是沿着熵增加的方向进行",
       "solution": "正确答案：**A**。\n\n自然界中的一切自发过程都是不可逆的",
       "explanation": [
-        "自发过程在没有额外补偿的条件下具有确定方向，是教材所说的不可逆过程，A 正确。",
-        "不可逆并非反方向绝对做不到，而是不能在系统和外界都不留下其他变化的情况下完全恢复，故 B 过强。",
-        "冰箱输入功可把热量从低温传向高温，所以 C 漏掉“自发且不产生其他影响”的条件。熵增原理适用于孤立系统总熵，局部系统可熵减，可逆过程可熵不变，故 D 错。"
+        "**先明确“不可逆”的完整定义。** 一个过程若不能在使系统和外界都完全恢复原状、又不留下其他变化的条件下反向复原，就称为不可逆。它不等于任何反向变化都绝对做不到；热力学第二定律限制的是没有其他代价或补偿的整体恢复。",
+        "**判断 A。** 教材中所说的自发过程具有确定方向，例如有温差时热量自发由高温流向低温、气体自由扩散、摩擦把有序机械能转为内能。它们不能无代价地完全逆向复原，所以按本题语境 A 正确。",
+        "**判断 B。** 把不可逆说成“不能向相反方向进行”过于绝对。比如分散的气体可以用压缩机重新压缩，但需要外界做功，并使外界发生额外变化；这没有把原自发过程可逆化。因此 B 缺少系统和外界共同恢复的限定。",
+        "**判断 C。** 冰箱或热泵可以把热量从低温物体传到高温物体，但要输入功，并向外界带来其他影响。第二定律禁止的是仅使热量从低温向高温转移而不产生其他变化，所以 C 把有条件的限制写成绝对禁止，错误。",
+        "**判断 D。** 熵增原理针对孤立系统的总熵：$\\Delta S_{\\mathrm{total}}\\ge0$，可逆极限等号成立。非孤立子系统可以因放热而熵减，例如冷却的气体；必须与环境一起计算总熵。D 把“任何过程”“系统本身”一概当成严格熵增，不成立，因此选 **A**。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3125,7 +3985,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "不可逆不表示反向变化绝不可能发生，而是不能在不引起其他变化的条件下同时复原系统与环境。",
+        "熵不减原理针对孤立系统或系统与环境的总熵；局部系统熵可以降低，热也可在外界做功下由冷传热。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-006",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "934451db694d6b4c36f8cc11d5665e8fe76e3f2c01dbcc83222899377d65795c",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-007",
@@ -3178,9 +4056,12 @@
       "prompt": "如图有人设想了四个理想气体循环过程，在理论上可以实现的是（　）。\n\n**A.** 图 A\n\n**B.** 图 B\n\n**C.** 图 C\n\n**D.** 图 D\n\n![教材原题 13-7 图](/discrete-math/physics/v29/figures/13-7.png)",
       "solution": "正确答案：**D**。\n\n图 D",
       "explanation": [
-        "检查曲线是否可同时满足状态方程及各过程约束，不能只看图形是否封闭。",
-        "同一点向膨胀方向出发，绝热线必须比等温线更陡，A 的相对位置不符合；B 的两条绝热线在同一状态相交，不成立；C 的两条不同绝热线也相交，同样不成立。",
-        "D 由一段等压、一段等温和一段相容的绝热线组成，不存在上述矛盾，因此可以实现。"
+        "**从状态方程检查曲线约束。** 在 $p-V$ 图上，理想气体等温线满足 $pV=\\text{常量}$，可逆绝热线满足 $pV^\\gamma=\\text{常量}$，其中 $\\gamma=C_p/C_V>1$。图形闭合并不自动意味着每条曲线都能同时满足标注的物理过程。",
+        "**比较同一点的两种斜率。** 等温线斜率为 $(dp/dV)_T=-p/V$，绝热线为 $(dp/dV)_S=-\\gamma p/V$。因此同一点向右膨胀时，绝热压强降得更快，绝热线应在相应等温线下方；向左压缩时相反。这是判断 A 的依据。",
+        "**排除 A。** 图 A 从左上共同状态向右看，标作绝热的曲线却位于等温曲线上方，违反上述关系。直观上，绝热膨胀会降温，压强应比同体积的等温膨胀状态更低，而不能更高。",
+        "**排除 B、C。** 给定一个状态 $(p_*,V_*)$，绝热常数唯一为 $p_*V_*^\\gamma$。所以同一种、同一物质的量的理想气体，通过这一状态的可逆绝热线唯一。B、C 均把两条不同绝热线画成在同一点相交；它们若真的经过同一点，就应是同一条曲线，不能围成图示区域。",
+        "**验证 D。** D 从左上状态沿等压线膨胀，再沿绝热线到右下状态，最后沿等温线压缩回初态。它没有要求两条不同绝热线相交；绝热段的温降可以与回程等温线对应，等压段也满足状态方程。不存在前三图的几何矛盾，因此选 **D**。",
+        "**保留适用条件。** 此处的“绝热曲线”按教材图示指准静态可逆绝热 $pV^\\gamma=\\text{常量}$。对任意不可逆绝热过程，不能不加条件地把整个非平衡演化画成这条状态曲线。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3195,7 +4076,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "先核对图中各点的温度与体积，再判断等温、绝热线的连接能否满足同一状态方程。",
+        "理想气体可逆绝热线在 $p-V$ 图中比等温线更陡；不能仅靠循环顺、逆时针就认定图形都可实现。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-007",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "5fb847a072b72027b786cb20797a58fc68992326f52cca621bc86257864e0d6f",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-022",
@@ -3248,11 +4147,14 @@
       "prompt": "$1\\,\\mathrm{mol}$ 氢气在温度为 $300\\,\\mathrm K$、体积为 $0.025\\,\\mathrm{m^3}$ 的状态下，经过（1）等压膨胀；（2）等温膨胀；（3）绝热膨胀，气体的体积都变为原来的两倍。试分别计算这三种过程中氢气对外做的功以及吸收的热量。",
       "solution": "按刚性双原子理想气体、准静态绝热计算：（1）$W\\approx2.49\\,\\mathrm{kJ}$，$Q\\approx8.73\\,\\mathrm{kJ}$；（2）$W=Q\\approx1.73\\,\\mathrm{kJ}$；（3）$W\\approx1.51\\,\\mathrm{kJ}$，$Q=0$。",
       "explanation": [
-        "氢气在本题温区按刚性双原子分子处理，$C_V=5R/2$、$C_p=7R/2$、$\\gamma=7/5$；以气体对外做功为正。各问起点相同，终体积均为 $2V_1$。",
-        "等压时 $T_2/T_1=V_2/V_1=2$，故 $T_2=600\\,\\mathrm K$、$\\Delta T=300\\,\\mathrm K$。$W=nR\\Delta T\\approx2494\\,\\mathrm J$，$Q=nC_p\\Delta T\\approx8730\\,\\mathrm J$。",
-        "等温时 $\\Delta U=0$，$W=nRT_1\\ln2\\approx1729\\,\\mathrm J$，由第一定律 $Q=W$。",
-        "准静态绝热时 $T_2=T_1(V_1/V_2)^{\\gamma-1}=300\\times2^{-0.4}\\approx227.4\\,\\mathrm K$。",
-        "绝热 $Q=0$，$W=-\\Delta U=nC_V(T_1-T_2)\\approx1510\\,\\mathrm J$。比较可知：同样膨胀比，路径不同导致终温、功和热量不同。"
+        "**统一模型与符号。** 三个过程都从 $n=1\\,\\mathrm{mol}$、$T_i=300\\,\\mathrm K$、$V_i=0.025\\,\\mathrm{m^3}$ 的同一初态出发，末体积均为 $2V_i$，但不是同一末态。氢气按刚性双原子理想气体取 $C_V=5R/2$、$C_p=7R/2$、$\\gamma=7/5$；气体对外做功为正，第一定律 $Q=\\Delta U+W$。",
+        "**第（1）问：等压过程的末温和功。** 由 $V/T=\\text{常量}$，$T_f=2T_i=600\\,\\mathrm K$，故 $\\Delta T=300\\,\\mathrm K$。功 $W_p=p(V_f-V_i)=nR\\Delta T=1\\times8.31446\\times300\\approx2494\\,\\mathrm J$。膨胀时功为正。",
+        "**计算等压吸热。** 内能增量 $\\Delta U_p=nC_V\\Delta T=(5/2)nR\\Delta T\\approx6236\\,\\mathrm J$，所以 $Q_p=\\Delta U_p+W_p=(7/2)nR\\Delta T\\approx8730\\,\\mathrm J$。也就是 $nC_p\\Delta T$，吸入的热量同时用于升温和对外做功。",
+        "**第（2）问：等温积分求功。** 温度不变为 $300\\,\\mathrm K$，理想气体内能不变。由 $p=nRT_i/V$，$W_T=\\int_{V_i}^{2V_i}(nRT_i/V)dV=nRT_i\\ln2\\approx1729\\,\\mathrm J$。不能将压强视为常量直接乘体积差。",
+        "**求等温吸热。** 因 $\\Delta U_T=0$，第一定律给出 $Q_T=W_T\\approx1.73\\,\\mathrm{kJ}$。温度不升高并不表示没有吸热，本段吸热恰好补偿气体膨胀做功。",
+        "**第（3）问：先由绝热关系求末温。** 对准静态可逆绝热过程，$TV^{\\gamma-1}=\\text{常量}$，故 $T_f=T_i(V_i/V_f)^{\\gamma-1}=300\\times2^{-0.4}\\approx227.4\\,\\mathrm K$。如果只给“绝热”而不采用本题准静态模型，就不能直接使用这一关系。",
+        "**求绝热功与热量。** $Q_{\\mathrm{ad}}=0$，所以 $W_{\\mathrm{ad}}=-\\Delta U=nC_V(T_i-T_f)=(5/2)(8.31446)(300-227.4)\\approx1.51\\times10^3\\,\\mathrm J$。气体消耗自身内能做功，因此降温。",
+        "**比较并核对。** 三条路径的功满足 $W_p\\approx2.49\\,\\mathrm{kJ}>W_T\\approx1.73\\,\\mathrm{kJ}>W_{\\mathrm{ad}}\\approx1.51\\,\\mathrm{kJ}$；热量依次为 $8.73,1.73,0\\,\\mathrm{kJ}$。体积变化相同并不能决定功或热量，必须同时知道过程路径。"
       ],
       "issues": [
         "绝热过程按课内常用的准静态可逆绝热处理；若不指定过程性质，仅给“绝热”不足以确定做功。"
@@ -3264,7 +4166,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "三条过程的终体积相同但终温不同，不能用同一 $\\Delta U$ 套三条路径。",
+        "等温有 $\\Delta U=0$，绝热有 $Q=0$，二者不能混同；等压热量还包含气体做功。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-022",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "f34e7157215b48fd0a2c42c0a7fbac40e9bae6d1ae9708afac7f87533da33f94",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-024",
@@ -3317,11 +4237,13 @@
       "prompt": "$0.32\\,\\mathrm{kg}$ 的氧气作图中所示循环 $ABCDA$。设 $V_2=2V_1$、$T_1=300\\,\\mathrm K$、$T_2=200\\,\\mathrm K$，求循环效率。图中 $AB$、$CD$ 分别为高、低温等温过程，$BC$、$DA$ 为等容过程。\n\n![教材原题 13-24 图](/discrete-math/physics/v29/figures/13-24.png)",
       "solution": "不设回热器时 $\\eta=\\dfrac{(T_1-T_2)R\\ln2}{RT_1\\ln2+C_V(T_1-T_2)}\\approx15.1\\%$。",
       "explanation": [
-        "氧气取 $C_V=5R/2$，物质的量 $n=0.32/0.032=10\\,\\mathrm{mol}$。图是两段等温加两段等容的斯特林型循环，不是卡诺循环。",
-        "$AB$ 等温吸热并做功：$Q_{AB}=W_{AB}=nRT_1\\ln2$；$BC$ 等容降温，$W_{BC}=0$、$Q_{BC}=nC_V(T_2-T_1)<0$。",
-        "$CD$ 等温压缩，$W_{CD}=Q_{CD}=-nRT_2\\ln2$；$DA$ 等容升温吸热，$Q_{DA}=nC_V(T_1-T_2)>0$。",
-        "每循环净功 $W=nR(T_1-T_2)\\ln2\\approx5.76\\,\\mathrm{kJ}$；总吸热 $Q_h=Q_{AB}+Q_{DA}\\approx38.1\\,\\mathrm{kJ}$。",
-        "效率 $\\eta=W/Q_h\\approx0.151$。若另加理想完全回热器，外部吸热的统计会改变；原题没有给出该条件，因此不能直接使用卡诺效率 $1-T_2/T_1$。"
+        "**识别循环而非直接套卡诺效率。** 题图由高温 $T_h=300\\,\\mathrm K$ 的等温膨胀 AB、等容降温 BC、低温 $T_c=200\\,\\mathrm K$ 的等温压缩 CD、等容升温 DA 构成，体积比 $r=V_2/V_1=2$。氧气物质的量 $n=0.32/0.032=10\\,\\mathrm{mol}$，取 $C_V=5R/2$。",
+        "**AB：高温等温吸热。** 理想气体等温时 $\\Delta U_{AB}=0$。功 $W_{AB}=nRT_h\\ln r=10R(300)\\ln2\\approx17.29\\,\\mathrm{kJ}$，故 $Q_{AB}=W_{AB}>0$。",
+        "**BC：等容放热。** $V$ 固定，所以 $W_{BC}=0$；温度由 $300$ 降至 $200\\,\\mathrm K$，$Q_{BC}=\\Delta U_{BC}=nC_V(T_c-T_h)\\approx-20.79\\,\\mathrm{kJ}$。负号表示向外放热。",
+        "**CD：低温等温压缩。** 体积由 $V_2$ 回到 $V_1$，故 $W_{CD}=nRT_c\\ln(V_1/V_2)=-nRT_c\\ln2\\approx-11.53\\,\\mathrm{kJ}$。又因等温 $\\Delta U=0$，$Q_{CD}=W_{CD}<0$。",
+        "**DA：等容吸热。** 功仍为零，温度从 $200$ 升至 $300\\,\\mathrm K$，故 $Q_{DA}=nC_V(T_h-T_c)\\approx20.79\\,\\mathrm{kJ}>0$。这部分吸热必须加入效率分母，不能只统计 AB。",
+        "**求净功与全部吸热。** $W_{\\mathrm{net}}=W_{AB}+W_{CD}=nR(T_h-T_c)\\ln2\\approx5.76\\,\\mathrm{kJ}$；$Q_h=Q_{AB}+Q_{DA}\\approx17.29+20.79=38.08\\,\\mathrm{kJ}$。净功也应等于四段热量的代数和。",
+        "**求效率并说明条件。** $\\eta=W_{\\mathrm{net}}/Q_h=R(T_h-T_c)\\ln2/[RT_h\\ln2+C_V(T_h-T_c)]\\approx0.151=15.1\\%$。质量或物质的量在比值中消去。只有额外设置理想完全回热器，把两个等容段的热量在内部回收时，外部吸热统计才改变；原题没有这一条件，不能用 $1-T_c/T_h=33.3\\%$。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -3331,7 +4253,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "无回热装置时两段等容过程也有吸、放热，不能直接把循环效率写成卡诺效率。",
+        "求效率时分母只累加吸热段，放热段不能按带符号的热量并入分母。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-024",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "de94f1837ad395b58faccfbe43a383e6f19a400ba1fa11b92707fa1132b25690",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-027",
@@ -3384,11 +4324,13 @@
       "prompt": "本题图是某单原子分子理想气体循环过程的 $V-T$ 图，图中 $V_C=2V_A$。试问：（1）图中所示循环代表制冷机还是热机？（2）如是正循环（热机循环），求出循环效率。图中 $A\\to B$ 沿过原点的斜线，$B\\to C$ 等容，$C\\to A$ 等温。\n\n![教材原题 13-27 图](/discrete-math/physics/v29/figures/13-27.png)",
       "solution": "为热机循环，$\\eta=\\dfrac{2(1-\\ln2)}5\\approx12.3\\%$。",
       "explanation": [
-        "横轴为 $T$、纵轴为 $V$。$AB$ 过原点，故 $V/T$ 不变，即压强不变；$BC$ 水平，故等容；$CA$ 竖直，故等温。不能把这张图当作 $p-V$ 图直接数面积。",
-        "令 $T_A=T_C=T$，由等压关系和 $V_B=V_C=2V_A$ 得 $T_B=2T$。单原子气体 $C_p=5R/2$、$C_V=3R/2$。",
-        "等压膨胀 $AB$ 做功 $W_{AB}=nR(T_B-T_A)=nRT$，吸热 $Q_{AB}=5nRT/2$。",
-        "$BC$ 等容冷却不做功，$Q_{BC}=-3nRT/2$。$CA$ 等温压缩做功 $W_{CA}=nRT\\ln(V_A/V_C)=-nRT\\ln2$。",
-        "净功 $W=nRT(1-\\ln2)>0$，因此是热机。仅 $AB$ 吸热，$\\eta=W/Q_{AB}=2(1-\\ln2)/5\\approx12.3\\%$。"
+        "**先按 V-T 坐标读图。** 横轴是温度 $T$，纵轴是体积 $V$。AB 是过原点的斜线，$V/T$ 不变，由 $p=nRT/V$ 知为等压；BC 水平，体积不变；CA 竖直，温度不变。不能在这张图上用面积直接当作功。",
+        "**求三个状态的关系。** 令 $T_A=T_C=T$，$V_A=V$，由题给 $V_C=2V_A$ 及 BC 等容得 $V_B=V_C=2V$。AB 等压时 $T_B/T_A=V_B/V_A=2$，故 $T_B=2T$。单原子气体取 $C_V=3R/2$、$C_p=5R/2$。",
+        "**计算 AB。** 气体等压膨胀，$W_{AB}=nR(T_B-T_A)=nRT>0$，内能增加 $\\Delta U_{AB}=(3/2)nRT$，所以 $Q_{AB}=\\Delta U_{AB}+W_{AB}=(5/2)nRT>0$。",
+        "**计算 BC。** 等容降温从 $2T$ 到 $T$，$W_{BC}=0$、$Q_{BC}=nC_V(T-2T)=-(3/2)nRT<0$。因此这一段放热，不能计入效率分母的正吸热。",
+        "**计算 CA。** 温度为 $T$，体积从 $2V$ 压缩到 $V$，$W_{CA}=nRT\\ln(V/2V)=-nRT\\ln2$。等温内能不变，故 $Q_{CA}=W_{CA}<0$。",
+        "**第（1）问：用净功判定机器类型。** $W_{\\mathrm{net}}=nRT-nRT\\ln2=nRT(1-\\ln2)>0$，因为 $\\ln2\\approx0.693<1$。气体每循环净对外做功，故为热机正循环，而不是需要外界输入净功的制冷循环。",
+        "**第（2）问：按所有吸热段求效率。** 只有 AB 吸热，$Q_h=5nRT/2$，所以 $\\eta=W_{\\mathrm{net}}/Q_h=2(1-\\ln2)/5\\approx0.1227=12.3\\%$。检验四段状态量：本循环 $\\Delta U_{AB}+\\Delta U_{BC}+\\Delta U_{CA}=0$，符合循环条件。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -3398,7 +4340,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "在 $V-T$ 图上过原点的直线代表等压，竖横线的含义要按坐标轴确认，不能照搬 $p-V$ 图。",
+        "循环类型由一周净功的正负决定；单原子气体的 $C_V=3R/2,C_P=5R/2$ 与双原子气体不同。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-027",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "b5042300b8c4dd30deac5fa36bb6de4988bab365b1e77a1406015f00b1e19f2b",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-029",
@@ -3451,11 +4411,12 @@
       "prompt": "一定量的理想气体经历如图所示的循环过程。其中 $AB$ 和 $CD$ 是等压过程，$BC$ 和 $DA$ 是绝热过程。已知 $B$ 点温度 $T_B=T_1$、$C$ 点温度 $T_C=T_2$。（1）证明该热机的效率为 $\\eta=1-T_2/T_1$；（2）这个循环是卡诺循环吗？\n\n![教材原题 13-29 图](/discrete-math/physics/v29/figures/13-29.png)",
       "solution": "$\\eta=1-T_2/T_1$。这不是卡诺循环，而是由两段等压和两段绝热组成的布雷顿型循环。",
       "explanation": [
-        "绝热段不交换热量，所以吸热只在高压等压段 $AB$，放热只在低压等压段 $CD$。$Q_h=nC_p(T_B-T_A)$，$Q_c=nC_p(T_C-T_D)$。",
-        "可逆绝热关系写成 $T/p^{(\\gamma-1)/\\gamma}=\\text{常量}$。由于 $p_A=p_B$、$p_C=p_D$，两条绝热线给出 $T_B/T_C=T_A/T_D$。",
-        "设公共比值 $r=T_B/T_C=T_A/T_D$，则 $T_B-T_A=r(T_C-T_D)$，所以 $Q_c/Q_h=1/r=T_C/T_B=T_2/T_1$。",
-        "由效率定义 $\\eta=1-Q_c/Q_h$ 得 $\\eta=1-T_2/T_1$。",
-        "相同形式的效率表达式不代表相同循环。卡诺循环的吸放热发生在两条等温线上，本题吸放热时温度变化，故不是卡诺循环。"
+        "**确定哪些过程交换热量。** AB、CD 等压，BC、DA 可逆绝热。按热机方向，AB 为高压吸热段，CD 为低压放热段。以放热大小 $Q_c$ 为正，写成 $Q_h=nC_p(T_B-T_A)$、$Q_c=nC_p(T_C-T_D)$；绝热两段的热量均为零。",
+        "**写出可逆绝热关系。** 理想气体、定热容近似下 $pV^\\gamma=\\text{常量}$。用 $pV=nRT$ 消去体积可得 $T/p^{(\\gamma-1)/\\gamma}=\\text{常量}$。记 $\\alpha=(\\gamma-1)/\\gamma$，高低压分别为 $p_h=p_A=p_B$、$p_l=p_C=p_D$。",
+        "**将两条绝热线联系起来。** BC 段给出 $T_B/T_C=(p_h/p_l)^\\alpha$；DA 段给出 $T_A/T_D=(p_h/p_l)^\\alpha$。于是有共同温度比 $r=T_B/T_C=T_A/T_D$。这一步同时用了两段的等压端点关系。",
+        "**把温度比转换成温差比。** 由 $T_B=rT_C$、$T_A=rT_D$，相减得到 $T_B-T_A=r(T_C-T_D)$。因此 $Q_c/Q_h=(T_C-T_D)/(T_B-T_A)=1/r=T_C/T_B$，气体量和热容在比值中消去。",
+        "**第（1）问：代入效率定义。** 一循环净功 $W=Q_h-Q_c$，故 $\\eta=W/Q_h=1-Q_c/Q_h=1-T_C/T_B$。题给 $T_B=T_1$、$T_C=T_2$，所以 $\\boxed{\\eta=1-T_2/T_1}$。",
+        "**第（2）问：辨别循环类型。** 这不是卡诺循环。卡诺循环由两等温、两可逆绝热构成；本题由两等压、两可逆绝热构成，属于布雷顿型循环。AB、CD 吸放热期间温度持续变化，$T_1,T_2$ 是指定状态温度，不能仅凭效率公式的外形就认为它们是卡诺循环两个恒温热源的温度。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -3465,7 +4426,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "该循环两段等压、两段绝热，并非卡诺循环的两等温两绝热；效率形式相同不能据此判同一种循环。",
+        "热量只发生在两条等压段；先用两条绝热关系把对应温度比联系起来，再约化热量之比。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-029",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "33688b8ac1df5847e9de7fb4f03c90f48cbb850c4abcb23b550b2ae8df62f351",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-032",
@@ -3518,11 +4497,13 @@
       "prompt": "一可逆卡诺热机高温热源的温度为 $227^\\circ\\mathrm C$，低温热源的温度为 $27^\\circ\\mathrm C$。其每次循环对外做净功 $2000\\,\\mathrm J$。现通过提高高温热源的温度改进热机的工作效率，使其每次对外做净功 $3000\\,\\mathrm J$。若前后两个卡诺循环都工作在相同的两条绝热线间且低温热源温度不变，求：（1）改进前后热机循环的效率；（2）改进后热机的高温热源温度。",
       "solution": "按 $500\\,\\mathrm K$、$300\\,\\mathrm K$ 计算：改进前效率 $40\\%$，改进后效率 $50\\%$，改进后高温为 $600\\,\\mathrm K$，即约 $327^\\circ\\mathrm C$。",
       "explanation": [
-        "先换成热力学温度：初始 $T_h\\approx500\\,\\mathrm K$，$T_c\\approx300\\,\\mathrm K$。原效率 $\\eta_1=1-T_c/T_h=0.40$。",
-        "由 $W_1=\\eta_1Q_{h1}$ 得 $Q_{h1}=5000\\,\\mathrm J$，放热大小 $Q_c=Q_{h1}-W_1=3000\\,\\mathrm J$。",
-        "关键条件是“相同的两条绝热线”。它们与同一低温等温线的交点固定，所以低温段体积比固定，$Q_c=nRT_c\\ln(V_C/V_D)$ 保持不变。",
-        "新循环做功 $3000\\,\\mathrm J$，新吸热 $Q_{h2}=W_2+Q_c=6000\\,\\mathrm J$，所以 $\\eta_2=3000/6000=0.50$。",
-        "再由卡诺效率 $0.50=1-300/T_{h2}$ 得 $T_{h2}=600\\,\\mathrm K$。没有相同绝热线条件，不能假定低温放热量不变。"
+        "**整理两次循环及近似。** 初次热源温度 $T_{h1}\\approx227+273=500\\,\\mathrm K$，冷源温度 $T_c\\approx27+273=300\\,\\mathrm K$；两次净功分别为 $W_1=2000\\,\\mathrm J$、$W_2=3000\\,\\mathrm J$。冷源不变、两条绝热线相同是建立两次循环联系的关键，不能只凭功增大猜效率。",
+        "**第（1）问的初次效率。** 卡诺效率 $\\eta_1=1-T_c/T_{h1}=1-300/500=0.40=40\\%$。由 $\\eta_1=W_1/Q_{h1}$，得到初次吸热 $Q_{h1}=2000/0.40=5000\\,\\mathrm J$。",
+        "**求初次排向冷源的热量。** 完整循环内能变化为零，因此放热大小 $Q_{c1}=Q_{h1}-W_1=5000-2000=3000\\,\\mathrm J$。同样可由可逆关系 $Q_{c1}/Q_{h1}=T_c/T_{h1}=0.60$ 验证。",
+        "**解释为何两次的冷源放热相同。** 同一对绝热线与同一条 $T_c$ 等温线的交点不变，因此冷源等温压缩段的起末体积及其比值不变。可逆等温段放热大小 $Q_c=nRT_c\\ln(V_C/V_D)$，所以 $Q_{c2}=Q_{c1}=3000\\,\\mathrm J$。也可理解为两条绝热线固定了相同的熵差，$Q_c=T_c\\Delta S$ 不变。",
+        "**计算改进后的吸热与效率。** $Q_{h2}=W_2+Q_{c2}=3000+3000=6000\\,\\mathrm J$，所以 $\\eta_2=W_2/Q_{h2}=3000/6000=0.50=50\\%$。不能把 $W_2$ 直接除以旧吸热 $5000\\,\\mathrm J$，因为升高热源温度也改变了每循环吸热量。",
+        "**第（2）问：反求新热源温度。** $\\eta_2=1-T_c/T_{h2}$ 给出 $T_{h2}=T_c/(1-\\eta_2)=300/0.50=600\\,\\mathrm K$，换成摄氏温度约 $327^\\circ\\mathrm C$。新吸热与旧吸热之比 $6000/5000=600/500=1.2$，也满足固定熵差下 $Q_h\\propto T_h$ 的检验。",
+        "**精度说明。** 若全程采用 $273.15$，热源最终温度约为 $600.15\\,\\mathrm K$，对应仍约 $327.0^\\circ\\mathrm C$；效率最后几位略变。题给整数温度与选项式计算通常按 $500,300,600\\,\\mathrm K$ 处理。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -3532,7 +4513,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "两条绝热线相同且冷源温度不变，使冷源等温段的排热量相同；升高热源温度时吸热量会变化，不能假定吸热不变。",
+        "先用初始效率与净功反求旧吸热，再求固定的排热量；改进后的吸热应为新净功加这份排热量。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-032",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "ee607873c649eecf3e249f150fdd11a78b78677b2c1068fe1e07e5363eb98229",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E013-038",
@@ -3585,11 +4584,13 @@
       "prompt": "气缸内有 $0.1\\,\\mathrm{mol}$ 的氧气（视为刚性双原子分子理想气体），作如图所示的循环过程，其中 $ab$ 为等温过程，$bc$ 为等容过程，$ca$ 为绝热过程。已知 $V_b=3V_a$，求：（1）该循环的效率；（2）从状态 $b$ 到状态 $c$，氧气的熵变 $\\Delta S$。\n\n![教材原题 13-38 图](/discrete-math/physics/v29/figures/13-38.png)",
       "solution": "$\\eta=1-\\dfrac{1-3^{-0.4}}{0.4\\ln3}\\approx19.1\\%$；$\\Delta S_{bc}=-nR\\ln3\\approx-0.913\\,\\mathrm{J/K}$。",
       "explanation": [
-        "氧气 $C_V=5R/2$，$\\gamma=7/5$。等温段 $T_b=T_a=T$；由绝热 $T_cV_c^{\\gamma-1}=T_aV_a^{\\gamma-1}$ 和 $V_c=V_b=3V_a$，得 $T_c=T3^{-0.4}$。",
-        "$ab$ 吸热 $Q_h=nRT\\ln3$。$bc$ 等容放热，放热大小 $Q_c=nC_V(T-T_c)$，$ca$ 绝热不交换热量。",
-        "因此 $\\eta=1-Q_c/Q_h=1-[1-3^{-0.4}]/(0.4\\ln3)\\approx0.191$。",
-        "等容段熵变 $\\Delta S_{bc}=nC_V\\ln(T_c/T_b)=n(5R/2)\\ln(3^{-0.4})=-nR\\ln3$。",
-        "代入 $n=0.1\\,\\mathrm{mol}$ 得 $-0.913\\,\\mathrm{J/K}$。气体在放热段熵减是正常现象；循环整体气体熵变为零，第二定律需连同环境考虑。"
+        "**先列三个过程和常量。** 氧气物质的量 $n=0.1\\,\\mathrm{mol}$，刚性双原子分子有 $C_V=5R/2$、$\\gamma=7/5=1.4$。ab 等温、bc 等容、ca 可逆绝热，且 $V_b=3V_a$。令 $T_a=T_b=T$，则 $V_c=V_b=3V_a$。",
+        "**由 ca 的绝热关系求冷端温度。** $T_cV_c^{\\gamma-1}=T_aV_a^{\\gamma-1}$，所以 $T_c/T=(V_a/V_c)^{0.4}=3^{-0.4}\\approx0.6444$。bc 因而是从 $T$ 降至 $0.6444T$ 的等容冷却，确认了放热方向。",
+        "**第（1）问：求吸热与放热。** ab 等温膨胀，内能不变，吸热 $Q_h=W_{ab}=nRT\\ln(V_b/V_a)=nRT\\ln3$。bc 不做功，放热大小 $Q_c=nC_V(T-T_c)=nC_VT(1-3^{-0.4})$。ca 绝热，$Q_{ca}=0$。",
+        "**计算循环效率。** $\\eta=1-Q_c/Q_h=1-[(C_V/R)(1-3^{-0.4})]/\\ln3=1-(1-3^{-0.4})/(0.4\\ln3)\\approx0.191=19.1\\%$。因为温度尺度 $T$ 与气体量都消去，不需要额外知道绝对温度或初始体积。",
+        "**第（2）问：按状态函数公式计算熵变。** 理想气体熵变为 $\\Delta S=nC_V\\ln(T_c/T_b)+nR\\ln(V_c/V_b)$。bc 等容使第二项为零，且 $T_c/T_b=3^{-0.4}$，故 $\\Delta S_{bc}=n(5R/2)\\ln(3^{-0.4})=-nR\\ln3$。",
+        "**代入并检查符号。** $\\Delta S_{bc}=-(0.1)(8.31446)\\ln3\\approx-0.913\\,\\mathrm{J/K}$。熵的单位为焦耳每开尔文，不是焦耳；气体在冷却放热段熵减是正常的，不能把熵增原理误套给这个与外界换热的子系统。",
+        "**用整循环核对。** ab 段 $\\Delta S_{ab}=Q_h/T=nR\\ln3$；可逆绝热 ca 段 $\\Delta S_{ca}=0$。三段相加为零，符合气体完成循环回到原态。环境熵变和总熵另需按实际换热方式计算。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -3599,7 +4600,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "吸热只在等温膨胀段，等容降温段放热，绝热段不传热；效率分母应取等温段的正吸热。",
+        "气体的熵变可用任意可逆辅助路径计算；等容过程有 $\\Delta S=nC_V\\ln(T_c/T_b)$，不是简单的实际 $Q/T$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E013-038",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "c695b14b65dd6bc2498354d429e3e480dc4dc8de1cd1cf7d732b0caadb62a8fa",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-001",
@@ -3652,9 +4671,11 @@
       "prompt": "有下列说法：（1）两个相互作用粒子的系统对一个惯性系满足动量守恒，对另一个惯性系其动量不一定守恒；（2）真空中光速与光的频率、光源运动状态无关；（3）任何惯性系中，光在真空中沿任何方向的传播速率都相同。正确的是（　）。\n\n**A.** 只有（1）（2）\n\n**B.** 只有（1）（3）\n\n**C.** 只有（2）（3）\n\n**D.** 三种都正确",
       "solution": "正确答案：**C**。\n\n只有（2）（3）",
       "explanation": [
-        "物理定律在所有惯性系具有相同形式，正确使用相对论总能量和总动量时，守恒规律不会只在某个惯性系成立，故（1）错。",
-        "真空光速不变原理规定光速不依赖光源运动，也不依赖频率，（2）正确。",
-        "各惯性系中真空光速各向相同，（3）正确；这不是在所有介质中的相速度都相同。"
+        "**先确认适用范围。** 本题谈的是惯性参考系与真空中的光速，使用狭义相对论的两条基本原理：所有惯性系中的物理规律具有相同形式；真空光速为同一常量 $c$，不依赖光源的运动状态。不能把真空结论直接推广到介质光速。",
+        "**判断陈述（1）：守恒规律是否只在某些惯性系成立？** 对完整孤立系统，四动量守恒可写为初末总四动量相等。洛伦兹变换是线性的，若一个惯性系中两者相等，变换到另一个惯性系仍相等，因此总能量、总动量守恒不会在换系后失效。陈述（1）错误。",
+        "**避免将速度直接作经典相加。** 各系测出的总动量数值可以不同，但“碰撞或相互作用前后的总动量相同”这一守恒关系仍成立。不同数值与不守恒是两个概念；在相对论问题中应采用 $\\mathbf p=\\gamma m_0\\mathbf v$ 及系统完整能量动量，不能只看某个粒子的牛顿动量。",
+        "**判断陈述（2）。** 真空中不同频率的电磁波均以 $c$ 传播，光源相对观察者运动也不改变测得的真空光速。运动可以改变频率与传播方向，但不会使真空光速变成 $c+v$ 或 $c-v$，所以（2）正确。",
+        "**判断陈述（3）并组合。** 对任意惯性系，真空光速在各方向都是 $c$，故（3）正确。只有（2）（3）成立，选 **C**。A、B 都错误地纳入（1），D 则将三项全部视为正确。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3669,7 +4690,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "真空光速不变针对所有惯性系；介质中的相速度则可能依赖折射率和频率，不能混为一谈。",
+        "动量守恒需使用相对论总能量与总动量；不能据经典 $mv$ 在高速下的失效否定守恒定律。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-001",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "ba6ee95e03bbe5400040a05166b1168f95734ee4db1c73da038e594752ebf568",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-002",
@@ -3722,9 +4761,11 @@
       "prompt": "按照相对论时空观，下列叙述正确的是（　）。\n\n**A.** 一个惯性系中同时的两个事件，在另一个惯性系中一定同时\n\n**B.** 一个惯性系中同时的两个事件，在另一个惯性系中一定不同时\n\n**C.** 一个惯性系中同时又同地的两个事件，在另一个惯性系中一定同时同地\n\n**D.** 一个惯性系中同时不同地的事件，在另一个惯性系中只可能同时不同地\n\n**E.** 一个惯性系中同时不同地的事件，在另一个惯性系中只可能同地不同时",
       "solution": "正确答案：**C**。\n\n一个惯性系中同时又同地的两个事件，在另一个惯性系中一定同时同地",
       "explanation": [
-        "洛伦兹变换对间隔给出 $\\Delta t\\prime=\\gamma(\\Delta t-v\\Delta x/c^2)$、$\\Delta x\\prime=\\gamma(\\Delta x-v\\Delta t)$。",
-        "若两事件同时同地，$\\Delta t=\\Delta x=\\Delta y=\\Delta z=0$，变换后各坐标差仍全为零，所以 C 正确。",
-        "仅仅同时并不能断言在另一个参考系一定同时或一定不同时，取决于空间间隔与运动方向；同时不同地属于类空间分隔，不可能变成同地不同时。"
+        "**用事件间隔而非物体运动判断。** 对两个事件，沿 x 方向相对速度为 $v$ 的参考系之间有 $\\Delta t'=\\gamma(\\Delta t-v\\Delta x/c^2)$、$\\Delta x'=\\gamma(\\Delta x-v\\Delta t)$，横向间隔不变。这里 $\\gamma=1/\\sqrt{1-v^2/c^2}$。",
+        "**先验证 C。** 若在原系同时又同地，则 $\\Delta t=\\Delta x=\\Delta y=\\Delta z=0$。逐项代入洛伦兹变换后仍有 $\\Delta t'=\\Delta x'=\\Delta y'=\\Delta z'=0$。两个重合事件在所有系仍是同一时空点，所以 C 正确。",
+        "**检验 A 与 B 中的“一定”。** 若只给同时 $\\Delta t=0$，则 $\\Delta t'=-\\gamma v\\Delta x/c^2$。当沿运动方向的空间间隔 $\\Delta x\\ne0$ 时，通常不同步；但若空间间隔纯横向，即 $\\Delta x=0$，即使两事件不同地也仍可同时。因此既不能断言一定同时，也不能断言一定不同时，A、B 都错。",
+        "**检验 D。** “同时不同地”并不保证在另一参考系仍同时：取 $\\Delta x\\ne0$、$v\\ne0$ 就得到 $\\Delta t'\\ne0$ 的直接反例。相对同时性由空间间隔在相对运动方向上的投影决定。",
+        "**检验 E。** 原系同时不同地时，时空间隔 $c^2\\Delta t^2-|\\Delta\\mathbf r|^2=-|\\Delta\\mathbf r|^2<0$，属于类空间隔，洛伦兹变换不能改变它的符号。若另一系同地不同时，间隔将为正，与不变量矛盾。因此 E 不可能成立，最终选 **C**。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3740,7 +4781,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "“某系同时”只给 $\\Delta t=0$，若 $\\Delta x\\ne0$，变换后 $\\Delta t'$ 通常不为0。",
+        "同时又同地意味着同一时空事件，$\\Delta t=\\Delta x=0$ 在洛伦兹变换下仍全为0；“一定不同时”也过强。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-002",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "73eefc33cd137216b9863f1b60fa5e52544800b905f83f0c11c8e8f016e073f9",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-003",
@@ -3793,9 +4852,11 @@
       "prompt": "一根细棒固定在 $S\\prime$ 系中，它与 $Ox\\prime$ 轴夹角为 $60^\\circ$。$S\\prime$ 系以速度 $u$ 沿 $Ox$ 方向相对 $S$ 系运动，$S$ 系观察者测得细棒与 $Ox$ 轴的夹角（　）。\n\n**A.** 等于 $60^\\circ$\n\n**B.** 大于 $60^\\circ$\n\n**C.** 小于 $60^\\circ$\n\n**D.** 沿正方向运动时大于 $60^\\circ$，沿负方向运动时小于 $60^\\circ$",
       "solution": "正确答案：**B**。\n\n大于 $60^\\circ$",
       "explanation": [
-        "沿相对运动方向的长度分量收缩，横向分量不变。若静止系两分量为 $L_x\\prime,L_y\\prime$，则 $S$ 系有 $L_x=L_x\\prime/\\gamma$、$L_y=L_y\\prime$。",
-        "所以 $\\tan\\theta=L_y/L_x=\\gamma\\tan60^\\circ$，非零相对速度时 $\\gamma>1$，角度增大。",
-        "$\\gamma$ 只依赖速度平方，改变运动方向不改变收缩程度，D 错。此处是同时测量两端的坐标角，不是含光传播延迟的照片外观。"
+        "**确定哪一系测到原长。** 棒固定在 $S'$ 系，因此该系中棒与 $x'$ 轴的夹角 $\\theta_0=60^\\circ$ 是静止棒的方向角。设棒原长为 $L_0$，静止系中的纵横分量分别是 $L'_{x}=L_0\\cos60^\\circ$、$L'_{y}=L_0\\sin60^\\circ$。",
+        "**按运动方向分解长度。** $S'$ 相对 S 沿 x 方向运动。S 中同时测量两端时，沿运动方向的分量收缩为 $L_x=L'_x/\\gamma$，垂直运动方向的分量不收缩，$L_y=L'_y$。必须使用同一测量系中的同时端点坐标，不能直接变换两个在另一系同时记录的事件来当长度。",
+        "**计算 S 中的角度。** $\\tan\\theta=L_y/L_x=\\gamma L'_y/L'_x=\\gamma\\tan60^\\circ=\\gamma\\sqrt3$。非零相对速度下 $\\gamma>1$，所以 $\\tan\\theta>\\tan60^\\circ$；本题角度位于第一象限，得到 $\\theta>60^\\circ$。",
+        "**选择并检查速度方向。** 选 **B**。$\\gamma$ 只含 $u^2$，把相对速度由正向改为负向不会改变纵向收缩倍数，因此 D 错。A 仅对应相对速度为零的退化极限，C 则把收缩发生的方向弄反。",
+        "**用极限理解结果。** 当 $u\\to0$ 时，$\\gamma\\to1$，$\\theta\\to60^\\circ$；当速率接近 c 时，纵向分量变得很小、横向分量不变，测得方向趋近 $90^\\circ$。这是坐标同时测量的几何角，不能直接等同于包含光传播时间延迟的照片外观。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3810,7 +4871,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "只沿运动方向的长度分量收缩，垂直方向分量不变；不能把整根斜棒两个分量都除以 $\\gamma$。",
+        "在地面系同时测两端位置后，$\\tan\\theta=\\gamma\\tan60^\\circ$，夹角应增大而非减小。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-003",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "3d2ec5f57f58ce00631d7f8e8a75bd31daccdb488eba42d762f904d3b1bf5a95",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-004",
@@ -3863,9 +4942,11 @@
       "prompt": "一艘飞船固有长度为 $L$，相对地面以速度 $v_1$ 匀速运动。从飞船后端向前端靶子发射子弹，子弹相对飞船速度为 $v_2$。在飞船上测得子弹从射出到击中靶的时间间隔为（　）。\n\n**A.** $L/(v_1+v_2)$\n\n**B.** $L/(v_2-v_1)$\n\n**C.** $L/v_2$\n\n**D.** $L/[v_2\\sqrt{1-(v_1/c)^2}]$",
       "solution": "正确答案：**C**。\n\n$L/v_2$",
       "explanation": [
-        "题目所求为飞船参考系的时间。该系中飞船和靶子静止，后端到前端距离就是固有长度 $L$。",
-        "子弹在同一飞船系的速度给为 $v_2$，故直接有 $\\Delta t\\prime=L/v_2$。",
-        "地面速度 $v_1$ 不参与这个参考系内部的计算。若求地面时间，则需对发射和击中两个不同地点的事件使用洛伦兹变换。"
+        "**锁定题目指定的参考系。** 所求是在飞船上测得的从发射到击中的时间，不是地面钟测得的时间。飞船系记为 $S'$；在这个系中，飞船、发射点和前端靶子全部静止，所以它们之间的距离就是给定固有长度 $L$。",
+        "**检查速度属于哪个参考系。** 子弹相对飞船的速度已经给为 $v_2$，因此它与飞船系中的距离 $L$ 属于同一参考系，可以直接使用匀速直线运动关系。地面所见飞船速度 $v_1$ 不参与这一步。",
+        "**写出位置方程求交会。** 令发射事件为 $t'=0,x'=0$，前端靶子始终在 $x'=L$，子弹运动方程为 $x'=v_2t'$。击中时两者坐标相同，所以 $v_2\\Delta t'=L$，得到 $\\boxed{\\Delta t'=L/v_2}$，选 **C**。",
+        "**说明为什么不用时间膨胀直接相除。** 发射发生在飞船后端，击中发生在前端，两个事件在飞船系不同地，故这个时间间隔不直接是某一只飞船固定位置钟在同地记录的固有时。若求地面时间，应同时变换事件的时间差和位置差，$\\Delta t=\\gamma_1(\\Delta t'+v_1L/c^2)$。",
+        "**核对干扰选项。** A、B 在飞船系计算时却混入地面速度，并使用经典加减；D 对本系已知的长度额外加了不应出现的相对论因子。相对论题并不意味着每一步都必须乘 $\\gamma$，同一参考系内已有距离和速度时仍可用距离除以速度。"
       ],
       "issues": [],
       "question_type": "choice",
@@ -3880,7 +4961,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "题目问飞船上测得的时间，棒长 $L$ 与子弹速度 $v_2$ 都在飞船系给定，可直接用 $L/v_2$。",
+        "飞船对地速度 $v_1$ 不应再次加到船内测量的子弹速度上；那会混用两个参考系的量。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-004",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "f156b9f304a2d508ea95e7a85359cb31d4055d25c62be55edccf430f5f55b129",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-017",
@@ -3933,11 +5032,12 @@
       "prompt": "在 $S$ 系中有一根原长为 $l_0$ 的棒沿 $x$ 轴放置，并以速率 $u$ 沿 $xx\\prime$ 轴运动。若 $S\\prime$ 系以速率 $v$ 相对 $S$ 系沿 $xx\\prime$ 轴运动，试问在 $S\\prime$ 系中测得此棒的长度为多少？",
       "solution": "同向运动且 $u,v$ 为带符号速度时，$L\\prime=l_0\\sqrt{1-\\dfrac{(u-v)^2}{c^2(1-uv/c^2)^2}}=\\dfrac{l_0\\sqrt{(1-u^2/c^2)(1-v^2/c^2)}}{1-uv/c^2}$。",
       "explanation": [
-        "本题需要先求棒相对测量系 $S\\prime$ 的速度，不能直接以经典差 $u-v$ 代替。取两个速度沿同一正向的带符号值。",
-        "一维相对论速度变换给出 $u\\prime=(u-v)/(1-uv/c^2)$。不参与相对运动关系的其他参考系不影响本问。",
-        "棒的原长 $l_0$ 是棒静止系测得的长度；在 $S\\prime$ 中同时测两端，长度为 $L\\prime=l_0\\sqrt{1-u\\prime^2/c^2}$。",
-        "代入并整理：$1-u\\prime^2/c^2=[(1-u^2/c^2)(1-v^2/c^2)]/(1-uv/c^2)^2$。因亚光速有 $1-uv/c^2>0$，得到答案。",
-        "检查：$u=v$ 时棒在 $S\\prime$ 静止，$L\\prime=l_0$；$v=0$ 时退化为 $l_0\\sqrt{1-u^2/c^2}$。"
+        "**区分原长与测量系。** $l_0$ 是棒自身静止系中的长度，不能把它当作 S 中已收缩的长度。棒沿 x 方向放置，S 中棒速为带符号值 u，$S'$ 相对 S 的速度为带符号值 v，要求 $S'$ 中同时测棒两端得到的长度 $L'$。",
+        "**先求棒相对测量系的速度。** 一维洛伦兹速度变换给出 $u'=(u-v)/(1-uv/c^2)$。这里 u、v 同向时取同号，反向时取异号；不能在已经使用带符号量后再重复手动改变正负号，也不能以经典差 $u-v$ 替代分式。",
+        "**用相对速度求长度收缩。** 对沿运动方向的棒，测量系中长度 $L'=l_0\\sqrt{1-u'^2/c^2}$。直接代入得 $L'=l_0\\sqrt{1-(u-v)^2/[c^2(1-uv/c^2)^2]}$。这一形式已可作为答案，而且自动保证当棒与测量系同速时不收缩。",
+        "**逐项展开根号。** 共同分母为 $(1-uv/c^2)^2$，分子为 $(1-uv/c^2)^2-(u-v)^2/c^2$。展开后，$-2uv/c^2$ 与来自平方差的 $+2uv/c^2$ 抵消，剩下 $1-u^2/c^2-v^2/c^2+u^2v^2/c^4=(1-u^2/c^2)(1-v^2/c^2)$。",
+        "**开方并说明分母符号。** 亚光速满足 $|u|,|v|<c$，因此 $1-uv/c^2>0$，无需再保留绝对值。最终 $\\boxed{L'=l_0\\sqrt{(1-u^2/c^2)(1-v^2/c^2)}/(1-uv/c^2)}$。",
+        "**检查三个特殊情况。** u=v 时 $u'=0$，得到 $L'=l_0$；v=0 时退化为 S 中的普通收缩 $l_0\\sqrt{1-u^2/c^2}$；u=0 时棒在 S 中静止，$S'$ 测得 $l_0\\sqrt{1-v^2/c^2}$。三种检验均通过，且总有 $L'\\le l_0$。"
       ],
       "issues": [
         "题干中的方向用带符号速度处理；若两速度方向相反，将相应速度取负。"
@@ -3949,7 +5049,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "先用相对论速度变换求棒在 $S'$ 中的速度 $u'=(u-v)/(1-uv/c^2)$，再由原长计算收缩。",
+        "原长 $l_0$ 属于棒静止系，不是 $S$ 系测长；不能直接把 $S$ 系长度再乘一个独立的收缩因子。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-017",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "010bb12837cfc305213505a5fb2f033ae0e7929e8b03cfaf498dfcd3b5f4c559",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-023",
@@ -4002,11 +5120,13 @@
       "prompt": "若一个电子的总能量为 $5.0\\,\\mathrm{MeV}$，求该电子的静能、动能、动量和速率。",
       "solution": "$E_0\\approx0.511\\,\\mathrm{MeV}$，$K\\approx4.49\\,\\mathrm{MeV}$，$p\\approx4.97\\,\\mathrm{MeV}/c\\approx2.66\\times10^{-21}\\,\\mathrm{kg\\,m/s}$，$v\\approx0.9948c$。",
       "explanation": [
-        "电子静能是固定量 $E_0=m_ec^2\\approx0.511\\,\\mathrm{MeV}$。给出的 $5.0\\,\\mathrm{MeV}$ 是总能量，已包含静能。",
-        "动能 $K=E-E_0=5.0-0.511=4.489\\,\\mathrm{MeV}$。",
-        "由能量动量关系 $pc=\\sqrt{E^2-E_0^2}=\\sqrt{5.0^2-0.511^2}\\,\\mathrm{MeV}\\approx4.974\\,\\mathrm{MeV}$。",
-        "用 $v=pc^2/E$，得到 $v/c=\\sqrt{1-(E_0/E)^2}\\approx0.9948$。",
-        "换算动量时 $1\\,\\mathrm{MeV}/c\\approx5.344\\times10^{-22}\\,\\mathrm{kg\\,m/s}$。不能用非相对论的 $K=p^2/(2m_e)$。"
+        "**辨明给的是总能量。** 题中 $E=5.0\\,\\mathrm{MeV}$ 已包括电子静能，不能将它直接当作动能。电子静止质量 $m_e\\approx9.109\\times10^{-31}\\,\\mathrm{kg}$，真空光速 $c\\approx2.998\\times10^8\\,\\mathrm{m/s}$；常用静能 $E_0=m_ec^2\\approx0.511\\,\\mathrm{MeV}$。",
+        "**第一个量：静能。** $E_0$ 仅由静止质量决定，不随电子运动改变，所以本题电子的静能仍为 $\\boxed{0.511\\,\\mathrm{MeV}}$，约 $8.19\\times10^{-14}\\,\\mathrm J$。它不是给定总能量的某个任意比例。",
+        "**第二个量：动能。** 按 $E=E_0+K$，有 $K=5.0-0.511=4.489\\,\\mathrm{MeV}\\approx4.49\\,\\mathrm{MeV}$。其数值已远大于静能，说明必须使用相对论公式，而不能用低速近似 $K=m_ev^2/2$。",
+        "**第三个量：由不变量求动量。** 能量动量关系为 $E^2=p^2c^2+E_0^2$，所以 $pc=\\sqrt{5.0^2-0.511^2}\\,\\mathrm{MeV}=\\sqrt{24.738879}\\,\\mathrm{MeV}\\approx4.974\\,\\mathrm{MeV}$。故 $p\\approx4.97\\,\\mathrm{MeV}/c$。",
+        "**把动量换为 SI。** $1\\,\\mathrm{MeV}=1.60218\\times10^{-13}\\,\\mathrm J$，因此 $1\\,\\mathrm{MeV}/c\\approx5.34429\\times10^{-22}\\,\\mathrm{kg\\,m/s}$。相乘得 $p\\approx2.66\\times10^{-21}\\,\\mathrm{kg\\,m/s}$。MeV/c 是动量单位，不能漏掉除以 c。",
+        "**第四个量：求速率。** 由 $p=\\gamma m_ev$、$E=\\gamma m_ec^2$ 相除得 $v/c=pc/E=\\sqrt{1-(E_0/E)^2}\\approx4.974/5.0\\approx0.9948$，所以 $v\\approx0.9948c\\approx2.98\\times10^8\\,\\mathrm{m/s}$。",
+        "**反代检查。** $\\gamma=E/E_0\\approx9.78$，代入 $1/\\sqrt{1-v^2/c^2}$ 得相同数量级；算出的速率小于 c，动能小于总能量，均符合物理要求。不能用 $p=\\sqrt{2m_eK}$ 来求本题的高能电子动量。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -4016,7 +5136,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "给出的5.0 MeV是总能量，不是动能；静能为约0.511 MeV，动能需相减。",
+        "动量由 $p^2c^2=E^2-E_0^2$ 求得，单位可写 MeV/$c$；不能把能量数值直接当作动量。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-023",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "371cce0ae03b4e4c2f2e04e7f4eeec8574dab3d283e4cb469f14ec34129a200c",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-024",
@@ -4069,11 +5207,12 @@
       "prompt": "一个被加速器加速的电子，其能量为 $3.00\\times10^9\\,\\mathrm{eV}$。试问：（1）这个电子的质量是其静质量的多少倍？（2）这个电子的速率为多少？",
       "solution": "按总能量解释，$\\gamma=E/E_0\\approx5.87\\times10^3$，$v=c\\sqrt{1-\\gamma^{-2}}\\approx0.9999999855c$。题目所称“动质量”为 $\\gamma m_0$。",
       "explanation": [
-        "先识别术语：教材的“动质量”定义为 $m=\\gamma m_0$；现代常把质量保留为不变的静止质量，用相对论能量表达运动效应。",
-        "电子静能 $E_0=0.511\\times10^6\\,\\mathrm{eV}$。若题给能量为总能量，$m/m_0=\\gamma=3.00\\times10^9/(0.511\\times10^6)\\approx5871$。",
-        "由 $\\gamma=(1-v^2/c^2)^{-1/2}$，得到 $v/c=\\sqrt{1-1/\\gamma^2}$。",
-        "为避免把近光速数字舍入成恰等光速，用 $1-v/c\\approx1/(2\\gamma^2)\\approx1.45\\times10^{-8}$。",
-        "若把题给能量理解为加速增加的动能，应改用 $\\gamma=1+K/E_0$；在本题精度下两个数值极接近，但概念必须区分。"
+        "**解释教材中的“质量倍数”。** 本题沿用相对论动质量 $m=\\gamma m_0$ 的术语，所求倍数为 $m/m_0=\\gamma$。静止质量 $m_0$ 本身不变；现代写法通常用不变质量和增加的总能量来描述同一运动状态。",
+        "**统一能量单位并辨别含义。** 按题目“能量为”解释为总能量，$E=3.00\\times10^9\\,\\mathrm{eV}=3000\\,\\mathrm{MeV}$，电子静能 $E_0=m_0c^2=0.511\\,\\mathrm{MeV}$。若题面另明确为加速增加的动能，下面的关系须改为 $\\gamma=1+K/E_0$。",
+        "**第（1）问：计算质量倍数。** 因 $E=mc^2=\\gamma m_0c^2=\\gamma E_0$，有 $\\gamma=E/E_0=3000/0.511\\approx5870.84\\approx5.87\\times10^3$。因此教材所说的动质量约为静质量的 $5.87\\times10^3$ 倍。",
+        "**第（2）问：由 gamma 反求速率。** $\\gamma=(1-\\beta^2)^{-1/2}$，其中 $\\beta=v/c$。两边取倒数平方得 $1-\\beta^2=\\gamma^{-2}$，所以 $\\beta=\\sqrt{1-\\gamma^{-2}}$，不能把 $\\gamma$ 直接当作速度倍数。",
+        "**保留与光速的细小差别。** $\\gamma^{-2}\\approx2.901\\times10^{-8}$。用 $\\sqrt{1-x}\\approx1-x/2$ 得 $v/c\\approx1-1.4507\\times10^{-8}=0.9999999855$。所以 $v\\approx0.9999999855c$，比 c 约小 $4.35\\,\\mathrm{m/s}$，不能因为常规有效数字舍入而断言电子恰达光速。",
+        "**检查另一能量解释。** 若 $3.00\\times10^9\\,\\mathrm{eV}$ 指动能，则 $\\gamma=1+3000/0.511\\approx5871.84$。在题给精度下速率与质量倍数都非常接近，但总能量与动能的概念仍须区分；本解采用前述总能量解释。"
       ],
       "issues": [
         "原题只写“能量”；主解按相对论总能量解释，并在解析中列出动能解释的换算。"
@@ -4085,7 +5224,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "若题目“能量”指总能量，倍数为 $E/E_0$；若指加速器给予的动能则为 $1+K/E_0$，两种解释须明确区分。",
+        "极高能时 $v$ 与 $c$ 差别很小，过早四舍五入会误写成精确等于 $c$；应保留 $v=c\\sqrt{1-\\gamma^{-2}}$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-024",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "54ff6492fa7b5cfcda361e1484b4802c3504de6c9b32b00fafe7027ff4d56e0d",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": true,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-027",
@@ -4138,11 +5295,12 @@
       "prompt": "若把能量 $0.50\\times10^6\\,\\mathrm{eV}$ 给予电子，且电子垂直于磁场运动，则其运动径迹是半径为 $2.0\\,\\mathrm{cm}$ 的圆。问：（1）该磁场的磁感应强度 $B$ 有多大？（2）这个电子的动质量为静质量的多少倍？",
       "solution": "$B\\approx0.146\\,\\mathrm T$；$m/m_0=\\gamma\\approx1.98$。",
       "explanation": [
-        "“给予电子”的能量是增加的动能 $K=0.50\\,\\mathrm{MeV}$；静能为 $E_0=0.511\\,\\mathrm{MeV}$，所以总能量 $E=1.011\\,\\mathrm{MeV}$。",
-        "由 $E=\\gamma E_0$ 得 $\\gamma=1+K/E_0\\approx1.978$，即教材所说动质量与静质量之比。",
-        "由 $p^2c^2=K(K+2E_0)$，得 $pc=\\sqrt{0.50(0.50+1.022)}\\,\\mathrm{MeV}\\approx0.8724\\,\\mathrm{MeV}$。",
-        "磁场不做功，动量大小恒定；圆运动满足 $\\lvert q\\rvert vB=pv/r$，因此 $B=p/(er)$。",
-        "换为 SI 动量后 $p\\approx4.66\\times10^{-22}\\,\\mathrm{kg\\,m/s}$，$r=0.020\\,\\mathrm m$，故 $B\\approx0.146\\,\\mathrm T$。"
+        "**把加速给予的能量认作动能。** 题目说给予电子 $0.50\\times10^6\\,\\mathrm{eV}=0.50\\,\\mathrm{MeV}$ 能量，按初始静止解释为最终动能 $K$。电子静能 $E_0=0.511\\,\\mathrm{MeV}$，因此总能量 $E=E_0+K=1.011\\,\\mathrm{MeV}$。圆半径 $r=2.0\\,\\mathrm{cm}=0.020\\,\\mathrm m$。",
+        "**先求相对论动量。** 从 $E^2=p^2c^2+E_0^2$ 得 $p^2c^2=(E_0+K)^2-E_0^2=K(K+2E_0)$。代入 $pc=\\sqrt{0.50(0.50+1.022)}\\,\\mathrm{MeV}=\\sqrt{0.761}\\,\\mathrm{MeV}\\approx0.87235\\,\\mathrm{MeV}$。",
+        "**转换为 SI 动量。** $p=0.87235\\,\\mathrm{MeV}/c=0.87235\\times5.34429\\times10^{-22}\\approx4.66\\times10^{-22}\\,\\mathrm{kg\\,m/s}$。电子的动能与静能相当，使用经典动量 $\\sqrt{2m_0K}$ 会产生明显误差。",
+        "**第（1）问：从磁力与动量方向变化求磁场。** 电子速度垂直于磁场，磁力大小为 $e vB$，且不做功，所以动量大小恒定、方向沿圆周变化。均匀圆运动有 $|d\\mathbf p/dt|=pv/r$，于是 $evB=pv/r$，消去 v 得 $B=p/(er)$。",
+        "**代入磁场数值。** $e=1.60218\\times10^{-19}\\,\\mathrm C$，所以 $B=(4.66\\times10^{-22})/[(1.60218\\times10^{-19})(0.020)]\\approx0.1455\\,\\mathrm T\\approx0.146\\,\\mathrm T$。负电荷只影响转弯方向，本问求 B 的大小，应使用电荷量绝对值。",
+        "**第（2）问：求教材质量倍数。** $m/m_0=\\gamma=E/E_0=1+K/E_0=1+0.50/0.511\\approx1.9785\\approx1.98$。若把给予的 $0.50\\,\\mathrm{MeV}$ 误当总能量，会得到小于静能的总能量与 $\\gamma<1$，立即可判为不合理。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -4152,7 +5310,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "“给予电子的能量”是新增动能 $K$，故总能量为 $K+E_0$，不能直接令 $\\gamma=K/E_0$。",
+        "磁场不做功；由圆周轨迹使用 $p=|e|Br$，相对论动量应先由能量关系求出，半径需换成0.020 m。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-027",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "03d9c602c9cbf4824a8fa717ad9a20082860cb6aee419fef8e32fe025eceb50a",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-028",
@@ -4203,13 +5379,14 @@
         "source_image_url": "/discrete-math/physics/v29/sources/p322.jpg"
       },
       "prompt": "如果将电子由静止加速到速率为 $0.10c$，需做多少功？如果将电子的速率由 $0.80c$ 加速到 $0.90c$，又需做多少功？",
-      "solution": "分别约为 $2.57\\,\\mathrm{keV}=4.12\\times10^{-16}\\,\\mathrm J$ 和 $0.321\\,\\mathrm{MeV}=5.15\\times10^{-14}\\,\\mathrm J$。",
+      "solution": "分别约为 $2.57\\,\\mathrm{keV}=4.12\\times10^{-16}\\,\\mathrm J$ 和 $0.321\\,\\mathrm{MeV}=5.14\\times10^{-14}\\,\\mathrm J$。",
       "explanation": [
-        "外力净功等于相对论动能的变化：$W=\\Delta K=m_ec^2(\\gamma_f-\\gamma_i)$，不是总能量本身。",
-        "第一段 $\\gamma_i=1$，$\\gamma_f=1/\\sqrt{1-0.10^2}\\approx1.0050378$。故 $W_1=0.511\\times0.0050378\\,\\mathrm{MeV}\\approx2.57\\,\\mathrm{keV}$。",
-        "第二段 $\\gamma_i=1/\\sqrt{1-0.80^2}=5/3$，$\\gamma_f=1/\\sqrt{1-0.90^2}\\approx2.294157$。",
-        "相减得 $W_2=0.511(2.294157-1.666667)\\,\\mathrm{MeV}\\approx0.32065\\,\\mathrm{MeV}$。",
-        "速率增加同样的 $0.1c$，越靠近光速越需要更多能量；质量为正的电子不能被有限能量加速到恰好光速。"
+        "**先选择功与能量的关系。** 对电子从初速到末速的加速，外力净功等于动能增量，$W=K_f-K_i=(\\gamma_f-\\gamma_i)m_ec^2$。电子静能 $m_ec^2=0.511\\,\\mathrm{MeV}$。两段加速都应从各自初态算差，第二段不是从静止开始。",
+        "**第一段：列初末 gamma。** 初始静止，$\\gamma_i=1$；末速为 $0.10c$，所以 $\\gamma_f=1/\\sqrt{1-0.10^2}=1/\\sqrt{0.99}\\approx1.0050378$。这里用的是速率比的平方 $0.01$，不是 $0.10$ 本身。",
+        "**计算第一段做功。** $W_1=0.511(1.0050378-1)\\,\\mathrm{MeV}\\approx0.0025743\\,\\mathrm{MeV}=2.57\\,\\mathrm{keV}$。利用 $1\\,\\mathrm{MeV}=1.60218\\times10^{-13}\\,\\mathrm J$，得 $W_1\\approx4.12\\times10^{-16}\\,\\mathrm J$。",
+        "**第二段：分别计算两个高速态。** $\\gamma_i=1/\\sqrt{1-0.80^2}=1/0.60=5/3\\approx1.666667$；$\\gamma_f=1/\\sqrt{1-0.90^2}=1/\\sqrt{0.19}\\approx2.294157$。相差 $0.627490$，不能用末态 gamma 减 1。",
+        "**计算第二段做功。** $W_2=0.511(2.294157-1.666667)\\,\\mathrm{MeV}\\approx0.32065\\,\\mathrm{MeV}\\approx0.321\\,\\mathrm{MeV}$，转换为 $W_2\\approx5.14\\times10^{-14}\\,\\mathrm J$，按常用常数及舍入也可写约 $5.15\\times10^{-14}\\,\\mathrm J$。",
+        "**比较并检查。** 两次速率均增加 $0.10c$，但第二次做功约为第一次的 125 倍，因为接近光速时 $\\gamma$ 随速率急剧增大。第一段可用经典 $m_ev^2/2$ 作低速数量级核对；第二段不能用该近似，亦不能认为相同速率增量意味着相同能量增量。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -4219,7 +5396,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "外力功等于相对论动能的增量 $W=(\\gamma_2-\\gamma_1)E_0$，不是两次总能量的和。",
+        "$0.8c$ 到 $0.9c$ 不适合使用 $mv^2/2$；即使速度增量同为 $0.1c$，所需功也远大于从静止到 $0.1c$。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-028",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "7e43a125050f39f434287a70a8efb1d5eebf9b06cafc0f74590805faa1337fbc",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     },
     {
       "id": "SRC-PHYS-E014-029",
@@ -4272,10 +5467,12 @@
       "prompt": "在惯性系中，有两个静止质量都是 $m_0$ 的粒子 $A$ 和 $B$，它们以相同的速率 $v$ 相向运动，碰撞后合成一个粒子。求这个粒子的静止质量 $m_0\\prime$。",
       "solution": "$m_0\\prime=2\\gamma m_0=\\dfrac{2m_0}{\\sqrt{1-v^2/c^2}}$。",
       "explanation": [
-        "两粒子动量大小相等、方向相反，因此初态总动量为零。若碰撞后只形成一个粒子且没有其他辐射带走动量，合成粒子在本参考系中静止。",
-        "初态总能量为 $E_i=2\\gamma m_0c^2$；末态粒子静止，总能量为 $E_f=m_0\\prime c^2$。",
-        "由总能量守恒得到 $m_0\\prime=2\\gamma m_0$。大于 $2m_0$ 的部分对应初态动能转化为合成粒子的内部能量。",
-        "检查低速极限：$m_0\\prime\\approx2m_0+m_0v^2/c^2$。两粒子的总初动能约为 $m_0v^2$，恰好与额外静能对应。"
+        "**确定合成前的参考系。** 两粒子静止质量均为 $m_0$，在题给惯性系中速率同为 v、方向相反。对应动量分别为 $+\\gamma m_0v$ 和 $-\\gamma m_0v$，其中 $\\gamma=1/\\sqrt{1-v^2/c^2}$，所以初始总动量为零。",
+        "**先由动量守恒确定末态运动。** 若碰撞后只留下题目所说的一个合成粒子，没有其他粒子或辐射带走能量动量，则其动量也必须为零。具有正静止质量的合成粒子在此系中因此静止；这一步很关键，否则末态能量不能直接写成静能。",
+        "**写出初末总能量。** 每个入射粒子的总能量为 $\\gamma m_0c^2$，两粒子合计 $E_i=2\\gamma m_0c^2$。合成粒子静止，末态总能量是 $E_f=m'_0c^2$，其中 $m'_0$ 是题求的静止质量。",
+        "**由能量守恒求质量。** 令 $E_i=E_f$，消去 $c^2$，得 $\\boxed{m'_0=2\\gamma m_0=2m_0/\\sqrt{1-v^2/c^2}}$。不能把静止质量简单相加得到 $2m_0$，因为初始动能在合成后也保留为合成粒子的内部能量。",
+        "**解释质量增加对应的能量。** $[m'_0-2m_0]c^2=2(\\gamma-1)m_0c^2$，右边正好等于两粒子的初始总动能。因此多出的静止质量并非凭空产生，而是该参考系中初始动能转化的内部能量。",
+        "**检查极限及假设。** 当 v 趋于零时，$m'_0\\to2m_0$；低速展开 $\\gamma\\approx1+v^2/(2c^2)$，得 $m'_0\\approx2m_0+m_0v^2/c^2$，额外静能约 $m_0v^2$，与两粒子经典总动能吻合。若碰撞伴随逃逸辐射，必须把辐射计入完整守恒方程，本题答案使用单粒子末态条件。"
       ],
       "issues": [],
       "question_type": "calculation",
@@ -4285,7 +5482,25 @@
       "answer_status": "reviewed",
       "text_origin": "user_uploaded_textbook_ocr_reviewed",
       "solution_origin": "依据上传教材题干独立推导的学习解析",
-      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。"
+      "review_basis": "对照教材印刷题干、题号、单位与题图校订；解析独立计算，未冒充书后答案。",
+      "common_mistakes": [
+        "两粒子动量等大反向，因此合成粒子的动量为0，碰后静止；此时碰后总能量全部是合成粒子的静能。",
+        "合成后的静质量包含转化进系统内部的初始动能，为 $2\\gamma m_0$，不是 $2m_0$；守恒的是总能量与总动量。"
+      ],
+      "common_mistakes_basis": {
+        "status": "question_specific",
+        "question_id": "SRC-PHYS-E014-029",
+        "individual_derivation_verified": true
+      },
+      "detail_review": {
+        "status": "question_specific_checked",
+        "scope": "all_stated_subquestions",
+        "prompt_sha256": "0a25e9105eebd1aaf5408c890d79305a4e0dd309a30fc365e74e27a4356cf156",
+        "check": "逐项核对模型、公式来源、代入、单位、符号、选择题排错及各小问结论。",
+        "source_revision": "7959c4f6f254284cfde52e43b42cdb69f6e0d425",
+        "conditional_answer": false,
+        "original_source_retranscribed_in_this_pass": false
+      }
     }
   ],
   "sources": [

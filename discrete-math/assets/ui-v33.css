@@ -18,3 +18,6 @@
 .v33-solution-step .math-content{line-height:1.85}
 .v33-solution-scope{padding:12px;border-radius:12px;background:var(--surface-soft,#eef4ef);font-size:12px;line-height:1.7}
 @media(max-width:700px){.v33-whole-page{padding:14px!important}.v33-map-page .v27-map-actions{gap:4px}.v33-directory-closed>.v18-tree-points{width:100%}}
+
+/* Detailed derivation and pitfalls */
+.solution-step-number{display:inline-block;font-size:.75em;font-weight:650;color:var(--muted,#6b7a70);margin-inline-end:.7em}.v33-solution-step h3{display:flex;align-items:baseline;gap:.3em;flex-wrap:wrap}.solution-mistakes{margin-block:1.1rem;padding:1rem 1.15rem;border:1px solid color-mix(in srgb,#ad7839 24%,transparent);border-inline-start:3px solid #ad7839;border-radius:12px;background:color-mix(in srgb,#f2c984 10%,var(--panel,#fff))}.solution-mistakes h3{margin:0 0 .65rem;color:var(--text,#33483a)}.solution-mistakes ol{padding-inline-start:1.35rem;margin:0}.solution-mistakes li+li{margin-top:.7rem}.solution-mistakes p{margin:.25rem 0}.v33-complete-solution .katex-display{overflow-x:auto;overflow-y:hidden;padding-block:.35rem;max-width:100%}
