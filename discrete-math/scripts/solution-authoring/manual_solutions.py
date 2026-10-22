@@ -6,6 +6,9 @@ PATCHES={}
 def add(book,number,steps,errors,check):
  PATCHES[f'SRC-{book}-E{number}']={'steps':steps,'errors':errors,'check':check}
 
+def add_example(book, number, steps, errors, check):
+ PATCHES[f'SRC-{book}-X{number}']={'steps':steps,'errors':errors,'check':check}
+
 add('DM2T','001-001',[
  r'本题按二值命题逻辑判断：先问句子是否是具有确定真值的陈述句，再问其真值。简单命题不能再按命题联结词分解，复合命题则由完整断言连接而成；“真假未知”不是“不存在真值”。',
  r'第（1）、（2）、（10）句各自表达一个完整事实，分别是中国四大发明、$\sqrt5$ 的无理性和圆面积公式，所以都按简单真命题处理。第（7）句表达两人的同学关系，“与”连接人名而非两个命题；第（13）句是在约定地点背景下的一次天气陈述，也按简单命题处理。这两句的真值不能从题面推出，尤其不能只凭日期推断天气。',
@@ -198,17 +201,18 @@ add('PS3','028-004',[
 def main():
  counts={}
  for book in ['DM2T','LA7','PS3']:
-  p=ROOT/'data'/f'exercises-{book}-v20.json';d=json.loads(p.read_text())
-  for item in d['items']:
-   patch=PATCHES.get(item['id'])
-   if not patch:continue
-   supplemental=[s for s in item.get('explanation',[]) if s.startswith('**演算补充：') or s.startswith('**公式 ')]
-   item['explanation']=patch['steps']+supplemental
-   item['common_mistakes']=patch['errors']
-   item['detail_review']={'status':'question_specific_checked','scope':'all_stated_subquestions','prompt_sha256':hashlib.sha256(item['prompt'].encode()).hexdigest(),'check':patch['check'],'source_revision':'7959c4f6f254284cfde52e43b42cdb69f6e0d425'}
-   item['common_mistakes_basis']={'status':'question_specific','question_id':item['id'],'individual_derivation_verified':True}
-   counts[book]=counts.get(book,0)+1
-  p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
+  for filename in [f'exercises-{book}-v20.json',f'examples-{book}-ready-v17.json']:
+   p=ROOT/'data'/filename;d=json.loads(p.read_text())
+   for item in d['items']:
+    patch=PATCHES.get(item['id'])
+    if not patch:continue
+    supplemental=[s for s in item.get('explanation',[]) if s.startswith('**演算补充：') or s.startswith('**公式 ')]
+    item['explanation']=patch['steps']+supplemental
+    item['common_mistakes']=patch['errors']
+    item['detail_review']={'status':'question_specific_checked','scope':'all_stated_subquestions','prompt_sha256':hashlib.sha256(item['prompt'].encode()).hexdigest(),'check':patch['check'],'source_revision':'7959c4f6f254284cfde52e43b42cdb69f6e0d425'}
+    item['common_mistakes_basis']={'status':'question_specific','question_id':item['id'],'individual_derivation_verified':True}
+    counts[book]=counts.get(book,0)+1
+   p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
  print(json.dumps({'question_specific_checked':counts,'total':sum(counts.values())},ensure_ascii=False))
 
 if __name__=='__main__':main()
