@@ -1,7 +1,7 @@
 /* Foreground release messages for the website and Android WebView. No tracking. */
 (()=>{
  'use strict';
- const CURRENT=32,KEY='mona-release-v28',HOME='/discrete-math/',POLL=120000;
+ const CURRENT=33,KEY='mona-release-v28',HOME='/discrete-math/',POLL=120000;
  let latest=null,inFlight=null,lastError='',dialog=null,banner=null,previousFocus=null;
  const listeners=new Set();
  function read(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}}
@@ -10,12 +10,12 @@
  function valid(data){if(!data||!Number.isSafeInteger(data.web_version)||data.web_version<1)throw Error('版本信息不完整，请稍后重试。');return {...data,release_notes:Array.isArray(data.release_notes)?data.release_notes.filter(n=>typeof n==='string').slice(0,12):[],android:data.android&&typeof data.android==='object'?data.android:null}}
  function nativeInfo(){let name='',code=0;try{name=window.MonaApp?.getVersionName?.()||'';code=Number(window.MonaApp?.getVersionCode?.())||0}catch{}const match=navigator.userAgent.match(/MonaStudy\/([\d.]+)/);return {native:!!window.MonaApp||!!match,name:name||match?.[1]||'',code}}
  function newerName(offered,installed){const a=String(offered||'').split('.').map(Number),b=String(installed||'').split('.').map(Number);if(!installed||a.some(n=>!Number.isFinite(n)))return false;for(let i=0;i<Math.max(a.length,b.length);i++){if((a[i]||0)!==(b[i]||0))return (a[i]||0)>(b[i]||0)}return false}
- function state(){const n=nativeInfo(),a=latest?.android;return {current:CURRENT,latest,checking:!!inFlight,error:lastError,native:n.native,nativeName:n.name,webUpdate:!!latest&&latest.web_version>CURRENT,appUpdate:!!(n.native&&a&&(n.code?Number(a.version_code)>n.code:newerName(a.version_name,n.name))&&safeDownload(a.download_url)),unread:!!latest&&(Number(read().seenWeb)||0)<latest.web_version,automatic:read().automatic!==false}}
+ function state(){const n=nativeInfo(),a=latest?.android;return {current:CURRENT,latest,checking:!!inFlight,error:lastError,native:n.native,nativeName:n.name,webUpdate:!n.native&&!!latest&&latest.web_version>CURRENT,appUpdate:!!(n.native&&a&&(n.code?Number(a.version_code)>n.code:newerName(a.version_name,n.name))&&safeDownload(a.download_url)),unread:!!latest&&(Number(read().seenWeb)||0)<latest.web_version,automatic:read().automatic!==false}}
  function node(tag,attrs={},...children){const el=document.createElement(tag);for(const [key,value]of Object.entries(attrs)){if(key==='class')el.className=value;else if(key.startsWith('on')&&typeof value==='function')el.addEventListener(key.slice(2),value);else if(value!==undefined&&value!==null)el.setAttribute(key,String(value))}for(const item of children.flat())if(item!==null&&item!==false&&item!==undefined)el.append(typeof item==='string'?document.createTextNode(item):item);return el}
  function button(text,action,klass='',id=''){return node('button',{type:'button',class:klass,'data-action':id,onclick:action},text)}
  function announce(){const s=state();document.querySelectorAll('.v28-update-button').forEach(b=>b.classList.toggle('has-update',s.webUpdate||s.appUpdate||s.unread));if(dialog?.open)renderDialog();renderBanner();listeners.forEach(fn=>fn(s))}
  async function check(manual=false){if(inFlight)return inFlight;lastError='';const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),12000);
-  inFlight=(async()=>{try{const response=await fetch(HOME+'version.json?t='+Date.now(),{cache:'no-store',signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);latest=valid(await response.json());lastError='';}catch(error){lastError='暂时无法连接更新服务，请检查网络后重试。';}finally{clearTimeout(timeout);inFlight=null;announce()}return state()})();announce();return inFlight;
+  inFlight=(async()=>{try{const response=await fetch(HOME+'version.json?remote=1&t='+Date.now(),{cache:'no-store',signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);latest=valid(await response.json());lastError='';}catch(error){lastError='暂时无法连接更新服务，请检查网络后重试。';}finally{clearTimeout(timeout);inFlight=null;announce()}return state()})();announce();return inFlight;
  }
  function markRead(){if(latest)write({seenWeb:latest.web_version});if(banner){banner.remove();banner=null}announce()}
  function snooze(){write({snoozeUntil:Date.now()+86400000,seenWeb:latest?.web_version||CURRENT});if(banner){banner.remove();banner=null}announce()}

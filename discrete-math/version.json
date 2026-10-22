@@ -1,26 +1,25 @@
 {
-  "web_version": 32,
-  "web_name": "v32 · 教材导学与页内批注",
-  "updated_at": "2026-10-21",
+  "web_version": 33,
+  "web_name": "v33 · 无界导图与离线学习",
+  "updated_at": "2026-10-22",
   "android": {
-    "version_code": 2,
-    "version_name": "1.1.0",
-    "download_url": "https://mona1207.github.io/discrete-math/download/mona-study-1.1.0.apk",
-    "notes": "统一学习界面；版本中心显示更新内容、稍后提醒；前台每2分钟检查新版本，覆盖安装保留本机记录。",
-    "alternate_url": "https://raw.githubusercontent.com/Mona1207/Mona1207.github.io/main/discrete-math/download/mona-study-1.1.0.apk",
-    "sha256": "b13fb8c2c866ef1056772d0d0db2332fa12784254026bfe11cc46fe6088bbc6a",
-    "size_bytes": 78299,
+    "version_code": 3,
+    "version_name": "1.2.0",
+    "download_url": "https://mona1207.github.io/discrete-math/download/mona-study-1.2.0.apk",
+    "notes": "首次启动即可离线学习；内置教材、题库、原书与图示。整页批注、筛选记忆和9种无界脑图布局；同签名覆盖安装保留本机记录。",
+    "alternate_url": "https://raw.githubusercontent.com/Mona1207/Mona1207.github.io/main/discrete-math/download/mona-study-1.2.0.apk",
     "package_id": "io.github.mona1207.study",
     "minimum_android": "8.0",
-    "certificate_sha256": "866b6387171740b4df57a53c07d0fba62a3e53f6e53339be9be95be04f51f7bb"
+    "certificate_sha256": "866b6387171740b4df57a53c07d0fba62a3e53f6e53339be9be95be04f51f7bb",
+    "sha256": "06dd9b6c01cd4187a99c3a84e54f69ba1f352712e2061dd11930dc774851b705",
+    "size_bytes": 103051448
   },
-  "release_title": "详细导学、页内手写与整洁顶部栏",
+  "release_title": "整页批注、筛选记忆与无界导图",
   "release_notes": [
-    "233个知识点补充问题引导与逐步理解，优先展开教材例题。",
-    "知识点上方可直接调用画笔、荧光笔、橡皮、撤销和重做；页内笔迹与文字笔记自动保存并纳入完整备份。",
-    "平板讲解文字在左，图示与教材定位页在右；手机自动纵向适配。",
-    "首页取消切换教材按钮，书名与logo合并到顶部白条；设置与脑图标题同样统一。",
-    "统一筛选可连续选择，点确定收起；答题顶部显示教材名与logo，知识树选题移除全部章节按钮。",
-    "首页补充知识点范围预览、学习问题和导学内容，收紧模块留白。"
+    "知识点正文、标题、图示与留白可连续做笔记，保留原有页内笔迹。",
+    "知识树练习目录可收起；筛选条件、教材范围与知识点在重启后保留。",
+    "导图采用可自由平移缩放的无界画布，支持居中和9种布局。",
+    "分步讲解完整展示已有步骤和解答；新增12道题的逐小问详解，其余题目继续保留现有解析。",
+    "Android新版内置教材、题库、公式、题图与笔记功能，首次启动也不依赖网络。"
   ]
 }
