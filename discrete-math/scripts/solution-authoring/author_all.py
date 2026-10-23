@@ -11,6 +11,9 @@ import linear_algebra_chapter_two
 import linear_algebra_chapter_three
 import discrete_chapter_three
 import probability_chapter_three
+import linear_algebra_chapter_four
+import linear_algebra_chapter_five
+import linear_algebra_chapter_six
 import previous_review_tips
 
 if __name__ == '__main__':

@@ -141,6 +141,51 @@ class DerivationTests(unittest.TestCase):
   with self.assertRaises(AssertionError):inference.resolvent([['p'],['-p']],[(1,2,'q')])
   self.assertTrue(inference.valid([r'(p\lor q)\to(r\land s)',r'(s\lor t)\to u'],r'p\to u'))
   self.assertFalse(inference.valid([r'p\to q','q'],'p'))
+ def test_vector_coordinates_and_parameter_branches(self):
+  sp=mat.sp;root=HERE.parents[1]
+  Q={q['id']:q for q in json.loads((root/'data/exercises-LA7-v20.json').read_text())['items']}
+  A=sp.Matrix.hstack(sp.Matrix([1,1,1]),sp.Matrix([1,0,-1]),sp.Matrix([1,0,1]))
+  B=sp.Matrix.hstack(sp.Matrix([1,2,1]),sp.Matrix([2,3,4]),sp.Matrix([3,4,3]))
+  P=mat.matrices(Q['SRC-LA7-E004-024']['solution'])[0][2]
+  self.assertEqual(A*P,B);self.assertEqual(B*sp.Matrix([-8,-1,5]),A*sp.Matrix([1,1,3]))
+  a,b,c=sp.symbols('alpha beta c')
+  A=sp.Matrix([[a,-2,-1],[2,1,1],[10,5,4]]);target=sp.Matrix([1,b,-1])
+  self.assertEqual(A.det(),-a-4)
+  for bv in [-2,0,3]:
+   M=A.subs(a,-4);rhs=target.subs(b,bv)
+   self.assertEqual(M.rank()==M.row_join(rhs).rank(),bv==0)
+  self.assertEqual(A.subs(a,-4)*sp.Matrix([c,-2*c-1,1]),target.subs(b,0))
+ def test_spectral_answers_and_quadratic_changes(self):
+  sp=mat.sp;root=HERE.parents[1]
+  Q={q['id']:q for q in json.loads((root/'data/exercises-LA7-v20.json').read_text())['items']}
+  A=mat.matrices(Q['SRC-LA7-E005-020']['prompt'])[0][2];P=mat.matrices(Q['SRC-LA7-E005-020']['solution'].replace(r'\sqrt2',r'\sqrt{2}'))[0][2]
+  A=A.subs({s:4 for s in A.free_symbols})
+  self.assertEqual(sp.simplify(P.T*P),sp.eye(3));self.assertEqual(sp.simplify(P.T*A*P),sp.diag(5,-4,5))
+  A=mat.matrices(Q['SRC-LA7-E005-021']['solution'])[0][2]
+  for value,v in [(2,[0,1,1]),(-2,[1,1,1]),(1,[1,1,0])]:self.assertEqual(A*sp.Matrix(v),value*sp.Matrix(v))
+  Cs=[A for _,_,A in mat.matrices(Q['SRC-LA7-E005-032']['solution'].replace(r'\sqrt2',r'\sqrt{2}'))]
+  As=[sp.Matrix([[1,1,-2],[1,3,0],[-2,0,5]]),sp.Matrix([[1,0,1],[0,0,1],[1,1,2]]),sp.Matrix([[2,1,0],[1,1,-1],[0,-1,4]])]
+  Cs[2]=Cs[2]/sp.sqrt(2)
+  for A,C,D in zip(As,Cs,[sp.diag(1,1,-1),sp.diag(1,-1,1),sp.eye(3)]):
+   self.assertNotEqual(C.det(),0);self.assertEqual(sp.simplify(C.T*A*C),D)
+  a=sp.Symbol('a');A=sp.Matrix([[1,a,-1],[a,1,2],[-1,2,5]])
+  self.assertEqual(sp.factor(A.det()),-a*(5*a+4))
+  for value,positive in [(sp.Rational(-1,2),True),(sp.Rational(-4,5),False),(0,False),(sp.Rational(1,2),False),(-1,False)]:
+   M=A.subs(a,value);self.assertEqual(all(M[:k,:k].det()>0 for k in range(1,4)),positive)
+ def test_operator_and_change_of_basis_answers(self):
+  sp=mat.sp;root=HERE.parents[1]
+  Q={q['id']:q for q in json.loads((root/'data/exercises-LA7-v20.json').read_text())['items']}
+  P,N=[A for _,_,A in mat.matrices(Q['SRC-LA7-E006-006']['solution'])]
+  self.assertEqual(P*N/27,sp.eye(4));self.assertEqual((P-sp.eye(4))*sp.Matrix([1,1,1,-1]),sp.zeros(4,1));self.assertEqual((P-sp.eye(4)).nullspace().__len__(),1)
+  C,R=[A for _,_,A in mat.matrices(Q['SRC-LA7-E006-005']['solution'])]
+  A=sp.Matrix([[1,2,3],[2,3,7],[1,3,-2]]);B=sp.Matrix([[3,5,1],[1,2,1],[4,1,-6]])
+  self.assertEqual(B*C,A);self.assertEqual(A*R,B);self.assertEqual(C*R,sp.eye(3))
+  t=sp.Symbol('x');basis=[t*t*sp.exp(t),t*sp.exp(t),sp.exp(t)]
+  D=mat.matrices(Q['SRC-LA7-E006-010']['solution'])[0][2]
+  for j,p in enumerate(basis):self.assertEqual(sp.simplify(sp.diff(p,t)-sum(D[i,j]*basis[i] for i in range(3))),0)
+  L=sp.Matrix([[1,0],[1,1]]);basis=[sp.Matrix([[1,0],[0,0]]),sp.Matrix([[0,1],[1,0]]),sp.Matrix([[0,0],[0,1]])]
+  D=mat.matrices(Q['SRC-LA7-E006-011']['solution'])[0][2]
+  for j,p in enumerate(basis):self.assertEqual(L*p*L.T,sum((D[i,j]*basis[i] for i in range(3)),sp.zeros(2)))
  def test_conditional_models_by_enumeration(self):
   from fractions import Fraction as F
   # Three cards, six equally likely labeled faces, rather than two equiprobable cards after conditioning.
@@ -196,7 +241,7 @@ class DerivationTests(unittest.TestCase):
   self.assertEqual(d['reviewed_count']+d['remaining_count'],d['total'])
   self.assertEqual(d['reviewed_count'],len(d['complete']))
   self.assertEqual(d['remaining_count'],len(d['remaining']))
-  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('LA7',1,23),('LA7',2,48),('LA7',3,37),('PS3',1,27),('PS3',2,38),('PS3',3,58)]:
+  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('LA7',1,23),('LA7',2,48),('LA7',3,37),('LA7',4,64),('LA7',5,52),('LA7',6,26),('PS3',1,27),('PS3',2,38),('PS3',3,58)]:
    rows=[x for x in d['items'] if x['book_id']==book and x['chapter']==chapter]
    self.assertEqual(len(rows),count)
    self.assertTrue(all(x['status'] in ['question_specific_checked','previous_detailed_review'] for x in rows))
