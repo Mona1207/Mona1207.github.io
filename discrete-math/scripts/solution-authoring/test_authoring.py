@@ -209,6 +209,31 @@ class DerivationTests(unittest.TestCase):
     for (a,b),prob in states.items():
      for key,p in [((a+c,b),F(a,a+b)),((a,b+c),F(b,a+b))]:nxt[key]=nxt.get(key,F(0))+prob*p
     states=nxt;self.assertEqual(sum(states.values()),1)
+ def test_finite_quantifier_models_and_prenex_equivalences(self):
+  # Exhaustively interpret predicates on a two-element domain. The left
+  # formulas retain their original scopes; the right formulas evaluate each
+  # newly authored prefix. This detects capture and quantifier reversals.
+  D=range(2)
+  for bits in itertools.product([False,True],repeat=8):
+   F=lambda x,y:bits[2*x+y];G=lambda x,y:bits[4+2*x+y]
+   for y in D:
+    left=all(F(x,y) for x in D)==any(G(x,y) for x in D)
+    right=any(any(all(all(((not F(u,y)) or G(v,y)) and ((not G(s,y)) or F(t,y)) for t in D) for s in D) for v in D) for u in D)
+    self.assertEqual(left,right)
+  for bits in itertools.product([False,True],repeat=12):
+   F=lambda u:bits[u];G=lambda u,x:bits[2+2*u+x];H=lambda v:bits[6+v];L=lambda x,w:bits[8+2*x+w]
+   for x in D:
+    A=all((not F(u)) or G(u,x) for u in D);B=any(H(v) for v in D);C=any(L(x,w) for w in D)
+    left=(not A) or (not B) or C
+    right=any(all(any((F(u) and not G(u,x)) or not H(v) or L(x,w) for w in D) for v in D) for u in D)
+    self.assertEqual(left,right)
+  for bits in itertools.product([False,True],repeat=4):
+   F=lambda x:bits[x];G=lambda x:bits[2+x]
+   first=all((not F(x)) or G(x) for x in D);second=any(F(x) and G(x) for x in D)
+   if bits==(True,False,True,False):self.assertTrue(first and second)
+   if bits==(True,False,False,True):self.assertFalse(first or second)
+   self.assertEqual(all(any(F(x) and G(y) for y in D) for x in D),all(F(x) for x in D) and any(G(y) for y in D))
+   self.assertEqual(all(all(F(x) or G(y) for y in D) for x in D),all(F(x) for x in D) or all(G(y) for y in D))
  def test_adder_and_application_assignments(self):
   for x,y,z in itertools.product([0,1],repeat=3):
    h=x^y;d=x&y;s=h^z;c=d|(h&z)
@@ -221,6 +246,40 @@ class DerivationTests(unittest.TestCase):
    if (not p or r) and (not q or not r) and (r or p or q):research.append((p,q,r))
   self.assertEqual(professor,[(0,1,0),(1,0,1)])
   self.assertEqual(research,[(0,0,1),(0,1,0),(1,0,1)])
+ def test_distributions_by_labeled_sampling_and_stopping_paths(self):
+  from fractions import Fraction as F
+  sets=list(itertools.combinations(range(1,6),3))
+  self.assertEqual([F(sum(max(s)==k for s in sets),len(sets)) for k in [3,4,5]],[F(1,10),F(3,10),F(3,5)])
+  self.assertEqual([F(sum(min(s)==k for s in sets),len(sets)) for k in [1,2,3]],[F(3,5),F(3,10),F(1,10)])
+  # Recursively follow changing inventories; do not substitute the written path formulas.
+  for replacement,expected in [('none',[F(10,13),F(5,26),F(5,143),F(1,286)]),('good',[F(10,13),F(33,169),F(72,2197),F(6,2197)])]:
+   g,b,reach=10,3,F(1);probs=[]
+   for k in range(4):
+    probs.append(reach*F(g,g+b));reach*=F(b,g+b);b-=1
+    if replacement=='good':g+=1
+   self.assertEqual(probs,expected);self.assertEqual(sum(probs),1)
+  # Stop only on an attempted draw from an empty matchbox, rather than when
+  # the last match is removed. Enumerate the binary choice tree directly.
+  for n in range(5):
+   leaves=[F(0)]*(n+1);stack=[(n,n,F(1))]
+   while stack:
+    a,b,p=stack.pop()
+    for side in [0,1]:
+     if (a if side==0 else b)==0:leaves[b if side==0 else a]+=p/2
+     else:stack.append((a-(side==0),b-(side==1),p/2))
+   self.assertEqual(sum(leaves),1)
+   self.assertEqual(leaves,[F(math.comb(2*n-k,n),2**(2*n-k)) for k in range(n+1)])
+ def test_density_integrals_and_stock_threshold(self):
+  sp=mat.sp;x=sp.Symbol('x')
+  for density,lo,hi in [(2*(1-x),0,1),(2*x,0,1),(sp.Rational(3,500)*(25-x*x),-5,5),(x*sp.exp(-x),0,sp.oo),(sp.exp(-x/2)/2,0,sp.oo)]:
+   self.assertEqual(sp.integrate(density,(x,lo,hi)),1)
+  self.assertEqual(sp.integrate(sp.Rational(3,500)*(25-x*x),(x,2,5)),sp.Rational(27,125))
+  # A recurrence verifies both sides of the minimal inventory threshold.
+  p=math.exp(-4);cdf=p;levels=[cdf]
+  for k in range(1,10):p*=4/k;cdf+=p;levels.append(cdf)
+  self.assertLess(levels[8],.99);self.assertGreaterEqual(levels[9],.99)
+  root=HERE.parents[1];Q={q['id']:q for q in json.loads((root/'data/exercises-PS3-v20.json').read_text())['items']}
+  self.assertIn('未定义',Q['SRC-PS3-E015-017']['solution'])
  def test_physics_values_and_fixed_cold_heat(self):
   import math
   self.assertAlmostEqual(.5*.01*(8*math.pi)**2*.005**2,7.895683520871487e-5)
@@ -241,7 +300,7 @@ class DerivationTests(unittest.TestCase):
   self.assertEqual(d['reviewed_count']+d['remaining_count'],d['total'])
   self.assertEqual(d['reviewed_count'],len(d['complete']))
   self.assertEqual(d['remaining_count'],len(d['remaining']))
-  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('LA7',1,23),('LA7',2,48),('LA7',3,37),('LA7',4,64),('LA7',5,52),('LA7',6,26),('PS3',1,27),('PS3',2,38),('PS3',3,58)]:
+  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('DM2T',4,24),('DM2T',5,36),('LA7',1,23),('LA7',2,48),('LA7',3,37),('LA7',4,64),('LA7',5,52),('LA7',6,26),('PS3',1,27),('PS3',2,38),('PS3',3,58),('PS3',4,67)]:
    rows=[x for x in d['items'] if x['book_id']==book and x['chapter']==chapter]
    self.assertEqual(len(rows),count)
    self.assertTrue(all(x['status'] in ['question_specific_checked','previous_detailed_review'] for x in rows))

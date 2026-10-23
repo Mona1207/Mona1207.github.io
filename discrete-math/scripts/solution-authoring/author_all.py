@@ -10,7 +10,10 @@ import discrete_chapter_two_examples
 import linear_algebra_chapter_two
 import linear_algebra_chapter_three
 import discrete_chapter_three
+import discrete_chapter_four
+import discrete_chapter_five
 import probability_chapter_three
+import probability_chapter_four
 import linear_algebra_chapter_four
 import linear_algebra_chapter_five
 import linear_algebra_chapter_six
