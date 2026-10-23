@@ -6,15 +6,15 @@ ROOT=Path(__file__).resolve().parents[2]
 REPLACEMENTS={r'\leftrightarrow':'↔',r'\Leftrightarrow':'↔',r'\iff':'↔',r'\to':'→',r'\rightarrow':'→',r'\Rightarrow':'→',r'\implies':'→',r'\land':'∧',r'\wedge':'∧',r'\lor':'∨',r'\vee':'∨',r'\neg':'¬',r'\lnot':'¬',r'\oplus':'⊕',r'\uparrow':'↑',r'\downarrow':'↓',r'\equiv':'↔',r'\left':'',r'\right':'',r'\,':'',r'\;':'',r'\!':''}
 
 class Formula:
- def __init__(self,text):
+ def __init__(self,text,max_variables=4):
   s=text
   for a,b in REPLACEMENTS.items():s=s.replace(a,b)
   s=s.replace('{','(').replace('}',')').replace(' ','').replace('\n','')
-  if not s or re.search(r'[^pqrs01¬∧∨→↔⊕↑↓()]',s):raise ValueError('Not a supported propositional formula')
+  if not s or re.search(r'[^pqrstuv01¬∧∨→↔⊕↑↓()]',s):raise ValueError('Not a supported propositional formula')
   self.tokens=list(s);self.pos=0;self.tree=self.parse(0)
   if self.pos!=len(self.tokens):raise ValueError('Trailing formula tokens')
-  self.variables=sorted(set(re.findall('[pqrs]',s)))
-  if not 1<=len(self.variables)<=4:raise ValueError('Variable count')
+  self.variables=sorted(set(re.findall('[pqrstuv]',s)))
+  if not 1<=len(self.variables)<=max_variables:raise ValueError('Variable count')
  def peek(self):return self.tokens[self.pos] if self.pos<len(self.tokens) else None
  def parse(self,level):
   groups=[['↔'],['→'],['∨','⊕','↓'],['∧','↑']]
@@ -25,7 +25,7 @@ class Formula:
     node=self.parse(0)
     if self.peek()!=')':raise ValueError('Unclosed parenthesis')
     self.pos+=1;return node
-   if t in ['p','q','r','s','0','1']:return t
+   if t in ['p','q','r','s','t','u','v','0','1']:return t
    raise ValueError('Expected atom')
   node=self.parse(level+1)
   while self.peek() in groups[level]:

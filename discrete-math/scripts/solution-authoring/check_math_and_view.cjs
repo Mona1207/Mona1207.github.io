@@ -12,7 +12,7 @@ for(const fn of ['exercises-DM2T-v20.json','examples-DM2T-ready-v17.json','exerc
  if(current.items.length!==baseline.items.length)throw Error('Question count changed: '+fn);
  for(const q of current.items){
   if(!byId.has(q.id))throw Error('Question ID changed: '+q.id);
-  for(const field of ['explanation','common_mistakes']){
+  for(const field of ['prompt','solution','explanation','common_mistakes']){
    const texts=Array.isArray(q[field])?q[field]:[q[field]||''];
    const old=byId.get(q.id)[field]||[];
    for(const text of texts){

@@ -114,6 +114,56 @@ class DerivationTests(unittest.TestCase):
   for n in [4,5]:
    p=1-Fraction(math.prod(range(12-n+1,13)),12**n)
    self.assertEqual(p>=Fraction(1,2),n==5)
+ def test_full_solution_sets_in_chapter_three(self):
+  sp=mat.sp;root=HERE.parents[1]
+  Q={q['id']:q for q in json.loads((root/'data/exercises-LA7-v20.json').read_text())['items']}
+  q=Q['SRC-LA7-E003-014'];As=[A for _,_,A in mat.matrices(q['prompt'])];vectors=[A for _,_,A in mat.matrices(q['solution'])]
+  start=0
+  for A,count in zip(As,[1,2,1,2]):
+   basis=sp.Matrix.hstack(*vectors[start:start+count]);start+=count
+   self.assertEqual(A*basis,sp.zeros(A.rows,count));self.assertEqual(basis.rank(),A.cols-A.rank())
+  q=Q['SRC-LA7-E003-015'];Ms=[A for _,_,A in mat.matrices(q['prompt'])];solutions=[A for _,_,A in mat.matrices(q['solution'])]
+  self.assertLess(Ms[0].rank(),Ms[0].row_join(Ms[1]).rank())
+  for pair,x in zip([2,4,6],solutions):
+   A,b=Ms[pair:pair+2];self.assertEqual(A*x,b)
+   params=sorted(x.free_symbols,key=str)
+   directions=sp.Matrix.hstack(*(x.diff(p) for p in params))
+   self.assertEqual(directions.rank(),A.cols-A.rank())
+ def test_reasoning_tables_and_resolution_steps(self):
+  inference=module('discrete_chapter_three')
+  for index,(premises,goal) in enumerate(inference.forms,1):
+   variables,rows=inference.inference(premises,goal)
+   self.assertEqual(not any(P and not C for bits,pv,P,C,I in rows),index in [1,3,6])
+  for premises,goal,clauses,path in inference.RESOLUTION_CASES:
+   self.assertTrue(inference.valid(premises,goal))
+   result=inference.resolvent(clauses,path)
+   self.assertTrue(any(r'\square' in text for text in result))
+  with self.assertRaises(AssertionError):inference.resolvent([['p'],['-p']],[(1,2,'q')])
+  self.assertTrue(inference.valid([r'(p\lor q)\to(r\land s)',r'(s\lor t)\to u'],r'p\to u'))
+  self.assertFalse(inference.valid([r'p\to q','q'],'p'))
+ def test_conditional_models_by_enumeration(self):
+  from fractions import Fraction as F
+  # Three cards, six equally likely labeled faces, rather than two equiprobable cards after conditioning.
+  faces=[('RR','R'),('RR','R'),('WW','W'),('WW','W'),('RW','R'),('RW','W')]
+  white=[card for card,face in faces if face=='W']
+  self.assertEqual(F(white.count('WW'),len(white)),F(2,3))
+  # Practice and match are separately uniform pairs; used balls retain their identity but cease being new.
+  pairs=list(itertools.combinations(range(6),2));counts=[0,0,0]
+  for practice in pairs:
+   new=set(range(4))-set(practice);k=len(set(practice)&set(range(4)))
+   for match in pairs:
+    if set(match)<=new:counts[k]+=1
+  self.assertEqual(F(sum(counts),len(pairs)**2),F(4,25))
+  self.assertEqual([F(n,sum(counts)) for n in counts],[F(1,6),F(2,3),F(1,6)])
+  # Forward exact state recursion verifies Pólya's invariant without using the induction formula.
+  for c in [0,1,3]:
+   states={(2,3):F(1)}
+   for step in range(6):
+    self.assertEqual(sum(prob*F(a,a+b) for (a,b),prob in states.items()),F(2,5))
+    nxt={}
+    for (a,b),prob in states.items():
+     for key,p in [((a+c,b),F(a,a+b)),((a,b+c),F(b,a+b))]:nxt[key]=nxt.get(key,F(0))+prob*p
+    states=nxt;self.assertEqual(sum(states.values()),1)
  def test_adder_and_application_assignments(self):
   for x,y,z in itertools.product([0,1],repeat=3):
    h=x^y;d=x&y;s=h^z;c=d|(h&z)
@@ -146,7 +196,7 @@ class DerivationTests(unittest.TestCase):
   self.assertEqual(d['reviewed_count']+d['remaining_count'],d['total'])
   self.assertEqual(d['reviewed_count'],len(d['complete']))
   self.assertEqual(d['remaining_count'],len(d['remaining']))
-  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('LA7',1,23),('LA7',2,48),('PS3',1,27),('PS3',2,38)]:
+  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('LA7',1,23),('LA7',2,48),('LA7',3,37),('PS3',1,27),('PS3',2,38),('PS3',3,58)]:
    rows=[x for x in d['items'] if x['book_id']==book and x['chapter']==chapter]
    self.assertEqual(len(rows),count)
    self.assertTrue(all(x['status'] in ['question_specific_checked','previous_detailed_review'] for x in rows))
