@@ -12,8 +12,10 @@ import linear_algebra_chapter_three
 import discrete_chapter_three
 import discrete_chapter_four
 import discrete_chapter_five
+import discrete_chapter_six
 import probability_chapter_three
 import probability_chapter_four
+import probability_chapter_five
 import linear_algebra_chapter_four
 import linear_algebra_chapter_five
 import linear_algebra_chapter_six

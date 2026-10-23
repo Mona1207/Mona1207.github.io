@@ -280,6 +280,62 @@ class DerivationTests(unittest.TestCase):
   self.assertLess(levels[8],.99);self.assertGreaterEqual(levels[9],.99)
   root=HERE.parents[1];Q={q['id']:q for q in json.loads((root/'data/exercises-PS3-v20.json').read_text())['items']}
   self.assertIn('未定义',Q['SRC-PS3-E015-017']['solution'])
+ def test_set_identities_nested_power_sets_and_counting(self):
+  E=frozenset(range(3));sets=[frozenset(c) for n in range(4) for c in itertools.combinations(E,n)]
+  powers=lambda S:frozenset(frozenset(c) for n in range(len(S)+1) for c in itertools.combinations(S,n))
+  for A,B,C in itertools.product(sets,repeat=3):
+   self.assertEqual((A-B)|(B-A),(A|B)-(A&B))
+   self.assertEqual((A-B)-C,(A-C)-(B-C))
+   self.assertEqual(A&(B|(E-A)),A&B)
+   self.assertEqual(powers(A)&powers(B),powers(A&B))
+   self.assertEqual(((A-B)|(A-C))==A,not (A&B&C))
+   self.assertEqual(((A-B)&(A-C))==A,not (A&(B|C)))
+   if A|B==A|C and A&B==A&C:self.assertEqual(B,C)
+  empty=frozenset();u=frozenset([empty]);v=frozenset([u]);A=frozenset([u,v])
+  self.assertEqual(len(A),2);self.assertEqual(len(powers(A)),4)
+  self.assertEqual(frozenset().union(*powers(A)),A)
+  self.assertEqual(sum(all(str(d) in str(n) for d in [1,2,3,4]) for n in range(1,1000001)),23160)
+  self.assertEqual(sum(all(n%d for d in [4,5,6]) for n in range(1,10001)),5334)
+  self.assertEqual(sum(all(n%d for d in [3,5,7]) for n in range(1,301)),138)
+  squares={n*n for n in range(1,101)};cubes={n**3 for n in range(1,22)}
+  self.assertEqual(10000-len(squares|cubes),9883)
+  primes=[n for n in range(2,121) if all(n%d for d in range(2,math.isqrt(n)+1))]
+  self.assertEqual(len(primes),30)
+  for n in range(1,8):
+   derangements=sum(all(i!=v for i,v in enumerate(p)) for p in itertools.permutations(range(n)))
+   self.assertEqual(derangements%2,n%2==0)
+ def test_venn_artifacts_are_linked_and_valid_xml(self):
+  import xml.etree.ElementTree as ET,re
+  root=HERE.parents[1];Q={q['id']:q for q in json.loads((root/'data/exercises-DM2T-v20.json').read_text())['items']}
+  q=Q['SRC-DM2T-E006-015'];links=re.findall(r'!\[[^\]]*\]\(([^)]+)\)','\n'.join(q['explanation']))
+  self.assertEqual(len(links),3)
+  for url in links:
+   self.assertTrue(url.startswith('/discrete-math/figures/solutions/'))
+   file=root.parent/url.lstrip('/');ET.parse(file)
+   self.assertIn('\n\n![','\n'.join(q['explanation']))
+ def test_joint_distributions_by_labeled_enumeration(self):
+  from fractions import Fraction as F
+  joint=module('probability_chapter_five');sp=mat.sp
+  def enumerate_table(samples,xs,ys,xy):
+   samples=list(samples);P=sp.zeros(len(xs),len(ys))
+   for s in samples:
+    a,b=xy(s);P[xs.index(a),ys.index(b)]+=sp.Rational(1,len(samples))
+   return P
+  labels=[1,2,2,3]
+  self.assertEqual(enumerate_table(itertools.permutations(range(4),2),[1,2,3],[1,2,3],lambda ij:(labels[ij[0]],labels[ij[1]])),joint.P18_2)
+  self.assertEqual(enumerate_table(itertools.combinations(range(7),4),[0,1,2,3],[0,1,2],lambda S:(sum(i<3 for i in S),sum(3<=i<5 for i in S))),joint.P18_3)
+  self.assertEqual(enumerate_table(itertools.permutations(range(8),4),[0,1,2],[0,1,2,3,4],lambda S:(sum(i<4 for i in S[:2]),sum(i<4 for i in S))),joint.P18_4)
+  self.assertEqual(enumerate_table(itertools.combinations(range(12),3),[0,1,2,3],[0,1,2,3],lambda S:(sum(i<3 for i in S),sum(3<=i<7 for i in S))),joint.P20_1)
+  P=joint.P21_2;rows=[sum(P.row(i)) for i in range(2)];cols=[sum(P.col(j)) for j in range(3)]
+  self.assertTrue(all(P[i,j]==rows[i]*cols[j] for i in range(2) for j in range(3)))
+ def test_joint_integral_regions(self):
+  sp=mat.sp;x,y=sp.symbols('x y',real=True)
+  f=24*(1-x)*y
+  self.assertEqual(sp.integrate(sp.integrate(f,(y,0,x)),(x,0,1)),1)
+  self.assertEqual(sp.expand(sp.integrate(f,(y,0,x))-12*x*x*(1-x)),0)
+  self.assertEqual(sp.expand(sp.integrate(f,(x,y,1))-12*y*(1-y)**2),0)
+  self.assertEqual(sp.integrate(sp.integrate(25*sp.exp(-5*y),(y,0,x)),(x,0,sp.Rational(1,5))),sp.exp(-1))
+  self.assertEqual(sp.integrate(-9*y*y*sp.log(y),(y,0,1)),1)
  def test_physics_values_and_fixed_cold_heat(self):
   import math
   self.assertAlmostEqual(.5*.01*(8*math.pi)**2*.005**2,7.895683520871487e-5)
@@ -300,7 +356,7 @@ class DerivationTests(unittest.TestCase):
   self.assertEqual(d['reviewed_count']+d['remaining_count'],d['total'])
   self.assertEqual(d['reviewed_count'],len(d['complete']))
   self.assertEqual(d['remaining_count'],len(d['remaining']))
-  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('DM2T',4,24),('DM2T',5,36),('LA7',1,23),('LA7',2,48),('LA7',3,37),('LA7',4,64),('LA7',5,52),('LA7',6,26),('PS3',1,27),('PS3',2,38),('PS3',3,58),('PS3',4,67)]:
+  for book,chapter,count in [('DM2T',1,40),('DM2T',2,51),('DM2T',3,26),('DM2T',4,24),('DM2T',5,36),('DM2T',6,65),('LA7',1,23),('LA7',2,48),('LA7',3,37),('LA7',4,64),('LA7',5,52),('LA7',6,26),('PS3',1,27),('PS3',2,38),('PS3',3,58),('PS3',4,67),('PS3',5,50)]:
    rows=[x for x in d['items'] if x['book_id']==book and x['chapter']==chapter]
    self.assertEqual(len(rows),count)
    self.assertTrue(all(x['status'] in ['question_specific_checked','previous_detailed_review'] for x in rows))
