@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "status": "draft_unverified",
+  "book_id": "PS3",
+  "chapter": 6,
+  "item_count": 42,
+  "reason": "Runtime disconnected after authoring. These drafts are preserved separately; not applied to app question data, completion ledger, or author_all imports. Re-run exact calculation, prompt comparison, mathematical rendering, and full chapter coverage checks before marking complete.",
+  "items": [
+    {
+      "id": "SRC-PS3-E024-001",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "逐个原值映射。X取−2、−1/2、0、2、4，概率依次1/8、1/4、1/8、1/6、1/3；线性变换一一对应，每个概率跟随原像。",
+        "第（1）X+2取0、3/2、2、4、6，概率照原序。第（2）1−X取3、3/2、1、−1、−3，概率照原序，若把新值排序必须同时重排概率。",
+        "第（3）平方取4、1/4、0、4、16；两个原像−2与2合到4，概率1/8+1/6=7/24。故平方在0、1/4、4、16处概率1/8、1/4、7/24、1/3，其他0，总和1。"
+      ],
+      "common_mistakes": [
+        "多对一映射的同值概率相加，不能覆盖。",
+        "乘负数改变排序，概率须与对应原像一起移动。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-002",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Y=0的原像为X=0或1，Y=1的原像为X≥2，二者互斥穷尽。",
+        "X~Poisson(1)，P(X=0)=P(X=1)=e⁻¹，所以P(Y=0)=2/e。",
+        "P(Y=1)=1−2/e，其他值0。两个概率非负且和1；原X无限支持被这个指示变换压成两点。"
+      ],
+      "common_mistakes": [
+        "X≤1包含0和1。",
+        "新变量不因原变量泊松而继续服从泊松分布。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-003",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "第（1）Z=2X，支持0<z<2，反解x=z/2、绝对反导数1/2。密度f_Z(z)=2(z/2)·1/2=z/2，支持外0。",
+        "第（2）Z=1−X，支持0<z<1，反解x=1−z、绝对反导数1。密度2(1−z)，支持外0。",
+        "第（3）原X正，平方单调，只取x=√z，反导数1/(2√z)。密度2√z/(2√z)=1在(0,1)，支持外0。三项分别积分均1。"
+      ],
+      "common_mistakes": [
+        "反函数导数取绝对值。",
+        "原支持为正，平方不额外增加负根原像。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-004",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "X是直径，圆面积Y=πX²/4。X~U(5,6)密度1；变换在正区间递增，新支持25π/4<y<9π。",
+        "反解x=2√(y/π)，导数1/√(πy)，故f_Y(y)=1/√(πy)在上述区间，其他0。",
+        "积分原函数2√(y/π)，代两端得6−5=1，归一核验。"
+      ],
+      "common_mistakes": [
+        "直径代圆面积要除4。",
+        "密度必须标明变换后的面积支持。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-005",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "第（1）Y=2X+1，原X>0给y>1。反解x=(y−1)/2，绝对反导数1/2，密度e^{−(y−1)/2}/2，其他0。",
+        "第（2）Z=e^X给z>1，反解x=lnz、反导数1/z，f_Z(z)=e^{−lnz}/z=1/z²，其他0。",
+        "两密度在各自支持积分都1。指数变换后尾概率为1/z，不能仍按指数分布处理。"
+      ],
+      "common_mistakes": [
+        "两种新支持下界都是1。",
+        "f_X(lnz)之外还要乘1/z。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-006",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Y=X²≥0。y<0时CDF为0，y≥0时事件等价−√y≤X≤√y，所以F_Y(y)=2Φ(√y)−1。",
+        "y>0求导，两原像贡献相加：f_Y(y)=[φ(√y)+φ(−√y)]/(2√y)=e^{−y/2}/√(2πy)，其余0。",
+        "这是χ²(1)密度。换元t=√y核验总积分为2∫₀∞φ(t)dt=1；0处无原子概率。"
+      ],
+      "common_mistakes": [
+        "实轴平方不是全局单调，须计正负两支。",
+        "0附近密度无界不代表单点概率非零。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-007",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Y=|X|≥0。y≥0时CDF为P(−y≤X≤y)=2Φ(y)−1，y<0为0。",
+        "求导得f_Y(y)=2φ(y)=√(2/π)e^{−y²/2}，y>0，其余0。",
+        "总积分为标准正态正半轴积分的两倍，恰1；连续性保证0点无原子质量。"
+      ],
+      "common_mistakes": [
+        "绝对值和平方的反导数不同。",
+        "折叠两支后密度相加，不能只删掉负半轴。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-008",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "设Y=σX+a，σ>0，任意实y满足F_Y(y)=P(X≤(y−a)/σ)=Φ((y−a)/σ)。",
+        "链式求导f_Y(y)=φ((y−a)/σ)/σ=exp[−(y−a)²/(2σ²)]/(σ√(2π))，y∈R。",
+        "这正是N(a,σ²)密度，得证。σ=0会成为常数退化分布，已被题设排除。"
+      ],
+      "common_mistakes": [
+        "σ是标准差倍数，方差为σ²。",
+        "反函数导数1/σ不能漏。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E024-009",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "三个值的原像分别为[−1,0)、{0}、(0,2]，原均匀密度1/3。",
+        "故P(Y=−1)=1/3，P(Y=0)=0，P(Y=1)=2/3，其他0。",
+        "概率和1。原X连续，但阶梯函数像可以是离散变量；映射定义中的零值可以只对应一个零概率原像。"
+      ],
+      "common_mistakes": [
+        "连续变量的函数未必连续型。",
+        "三种写法不意味着三值等可能。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-001",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "对原表每个非零格作函数映射，联合格(1,1),(1,2),(1,3),(2,1),(3,1),(3,2)的概率为1/4、1/4、1/8、1/8、1/8、1/8。",
+        "第（1）和依次2、3、4、3、4、5，合并得2、3、4、5处概率1/4、3/8、1/4、1/8。",
+        "第（2）差依次0、−1、−2、1、2、1，合并得−2、−1、0、1、2处概率1/8、1/4、1/4、1/4、1/8。",
+        "第（3）2X取2、4、6，按行和得5/8、1/8、1/4。第（4）积依次1、2、3、2、3、6，合并后1、2、3、6处概率1/4、3/8、1/4、1/8。每组总和1，其余0。"
+      ],
+      "common_mistakes": [
+        "同值可以来自多个格，须合并。",
+        "直接使用联合格，不另假定独立。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-002",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "独立伯努利成功率1/4，联合00为9/16，01与10各3/16，11为1/16。",
+        "Z=X+Y取0、1、2，概率分别9/16、3/8、1/16；U=2X只取0、2，概率3/4、1/4。",
+        "Z取1概率正而U取1概率0，故不同分布。同分布X、Y不能当成同一个随机量；2X两个加项完全相同，而X+Y两项独立。"
+      ],
+      "common_mistakes": [
+        "同分布不意味着结果逐次相等。",
+        "独立和能取1，单个伯努利乘2不能。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-003",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "第（1）对n≥0，和事件按X₁=k、X₂=n−k划分，独立相乘得e⁻⁴2ⁿ∑[1/(k!(n−k)!)]，k=0至n。用∑C(n,k)=2ⁿ，得P(Z=n)=e⁻⁴4ⁿ/n!，即Poisson(4)。",
+        "第（2）(X₁=k,Z=n)等价(X₁=k,X₂=n−k)，联合e⁻⁴2ⁿ/[k!(n−k)!]，整数n≥0、0≤k≤n，其他0。",
+        "第（3）联合格除和边缘，P(X₁=2|Z=3)=[e⁻⁴2³/(2!1!)]/[e⁻⁴4³/3!]=3/8。一般给定Z=n时X₁~B(n,1/2)，也能核验。"
+      ],
+      "common_mistakes": [
+        "X₁与Z一般不独立。",
+        "条件分母是和的边缘。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-004",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "原表全部非零格在X≥Y，所以几乎必然U=max(X,Y)=X，V=min(X,Y)=Y。",
+        "因此(U,V)联合表按行U=1,2,3、列V=1,2,3仍为[[1/9,0,0],[2/9,1/9,0],[2/9,2/9,1/9]]。",
+        "行和给U在1、2、3处概率1/9、1/3、5/9；列和给V概率5/9、1/3、1/9。两边缘与联合均归一，其他值0。"
+      ],
+      "common_mistakes": [
+        "保留原表来自本题支撑，不是最大最小变换的一般性质。",
+        "一般需合并(X,Y)与(Y,X)。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-005",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "原三角形x>0、y>0、x+y<2面积2，常联合密度1/2。Z支持0<z<2。",
+        "令辅助变量U=X，反解y=z−u，绝对雅可比1；固定z时0<u<z。故f_Z(z)=∫₀ᶻ(1/2)du=z/2，支持外0。",
+        "面积CDF法也给F_Z(z)=小三角面积z²/2除总面积2=z²/4，求导一致。"
+      ],
+      "common_mistakes": [
+        "联合常密度为1/2而非1。",
+        "沿和的截面积分须使用正确坐标变换。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-006",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "令y=z−x，矩形支持要求max(0,z−1)<x<min(1,z)，沿截面联合密度为2−z。",
+        "第（2）0<z<1时区间长z，密度z(2−z)；1≤z<2时长2−z，密度(2−z)²，其他0。两段积分分别2/3、1/3。",
+        "第（1）P(X+Y>1)=∫₁²(2−z)²dz=[−(2−z)³/3]₁²=1/3。没有使用独立假设。"
+      ],
+      "common_mistakes": [
+        "截面在z=1切换边界。",
+        "非独立也能用联合密度求和，只不能擅自乘边缘。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-007",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "正方形(0,2)²面积4、密度1/4，差Z支持(−2,2)。z≤−2时CDF0，z≥2时CDF1。",
+        "−2<z≤0，X−Y≤z部分为直角边长z+2的三角，CDF为(z+2)²/8。0<z<2时算补三角直角边2−z，CDF为1−(2−z)²/8。",
+        "求导密度分别(z+2)/4和(2−z)/4，合为(2−|z|)/4，|z|<2，其他0。CDF在0为1/2且端点连续，密度面积1。"
+      ],
+      "common_mistakes": [
+        "差支持含负值。",
+        "正z的CDF宜用小三角的补。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-008",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "令U=X、Z=X+Y，反解x=u、y=z−u，绝对雅可比1，所以新联合g(u,z)=f(u,z−u)。",
+        "对辅助u积分得到f_Z(z)=∫R f(u,z−u)du，几乎处处成立；原支持通过支持外f=0自动纳入。",
+        "只有再假设独立，才能把联合因子替成f_X(u)f_Y(z−u)。题中一般公式不需独立。"
+      ],
+      "common_mistakes": [
+        "联合密度不无条件等于两边缘乘积。",
+        "一般和公式的雅可比恰1，仍需说明反解。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-009",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "给定X=x，Z=x+Y。独立使Y的条件分布仍N(b,τ²)，x成为常数。",
+        "故条件CDF为Φ((z−x−b)/τ)，求导f_{Z|X}(z|x)=exp[−(z−x−b)²/(2τ²)]/(τ√(2π))，z∈R。",
+        "即Z|X=x~N(x+b,τ²)。条件方差不再含X的σ²，不能与无条件和方差混用。"
+      ],
+      "common_mistakes": [
+        "条件下x是已知常数。",
+        "条件方差τ²与无条件σ²+τ²不同。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-010",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "W=−Y~N(−μ₂,2σ²)，仍与X独立。令d=z−μ₁+μ₂、u=x−μ₁，使用和的卷积。",
+        "指数配方u²/(2σ²)+(d−u)²/(4σ²)=3(u−d/3)²/(4σ²)+d²/(6σ²)。卷积系数1/(2π√2σ²)，高斯积分为√(4πσ²/3)。",
+        "相乘得f_Z(z)=exp[−(z−μ₁+μ₂)²/(6σ²)]/(σ√(6π))，z∈R，即N(μ₁−μ₂,3σ²)，默认σ>0。"
+      ],
+      "common_mistakes": [
+        "独立差的方差相加。",
+        "均值差在平方中是z−μ₁+μ₂。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-011",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "第（1）理想备用件启用后才开始计算工作寿命，总Z=X+Y。z>0卷积∫₀ᶻ0.2e⁻⁰·²ˣ·0.2e^{−0.2(z−x)}dx=0.04z e⁻⁰·²ᶻ，其他0。",
+        "第（2）同时使用且到最后一件失效才停止，U=max(X,Y)。u>0时CDF=(1−e⁻⁰·²ᵘ)²，独立用于两CDF相乘。",
+        "求导f_U(u)=0.4e⁻⁰·²ᵘ(1−e⁻⁰·²ᵘ)，u>0，其余0。两CDF无穷趋1，归一；两模式不能都算和。"
+      ],
+      "common_mistakes": [
+        "同时使用取最后失效时刻，备用顺次使用才取和。",
+        "备用模型包含启用前不消耗这段工作寿命的假设。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-012",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "单位正方形联合密度1，Z=XY支持(0,1)。固定X=x>0，反解y=z/x，雅可比1/x。",
+        "0<y<1要求z<x<1，所以f_Z(z)=∫_z¹dx/x=−lnz，0<z<1，其他0。",
+        "CDF也可写z+∫_z¹(z/x)dx=z−zlnz，求导一致；密度在0附近可积，总积分1。"
+      ],
+      "common_mistakes": [
+        "雅可比1/x不能漏。",
+        "x下界是z，不能从0积分1/x。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E025-013",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "取U=Y，Z=X/Y>0，反解x=zu、y=u，绝对雅可比u。",
+        "单位正方形给0<u<min(1,1/z)。故f_Z(z)=∫₀^{min(1,1/z)}u du，0<z<1为1/2，z≥1为1/(2z²)，z≤0为0。",
+        "两段各积分1/2，总1。比值可无上界，因为分母能任意接近0。"
+      ],
+      "common_mistakes": [
+        "比值支持不是(0,1)。",
+        "雅可比为u而非1/u。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-001",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "先选X均匀1至3，给X=x后Y在1至x均匀，所以联合1/(3x)，整数1≤y≤x≤3，其他0。",
+        "行X=1,2,3、列Y=1,2,3的表为[[1/3,0,0],[1/6,1/6,0],[1/9,1/9,1/9]]。",
+        "Z的和原像：2来自(1,1)，3来自(2,1)，4来自(2,2)及(3,1)，5来自(3,2)，6来自(3,3)。概率依次1/3、1/6、5/18、1/9、1/9，总1。"
+      ],
+      "common_mistakes": [
+        "分阶段均匀不意味着六个可行对等概率。",
+        "第二阶段分母随X变化。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-002",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "记V=X−Y。男成功i、余j的联合事件等价X=i+j且Y=i，按条件乘法得e⁻λ λ^{i+j}/(i+j)!·C(i+j,i)pⁱ(1−p)ʲ。",
+        "约为e⁻λ(λp)ⁱ[λ(1−p)]ʲ/(i!j!)，再拆e⁻λ=e^{−λp}e^{−λ(1−p)}，分成两泊松因子。",
+        "分别求另一坐标和得到Y~Poisson(λp)、V~Poisson(λ(1−p))；联合等于边缘乘积，故独立。λ=0时均退化0也成立。"
+      ],
+      "common_mistakes": [
+        "Y与总数X一般不独立，与剩余X−Y则可独立。",
+        "证明独立须识别联合及两个边缘。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-003",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "令A={X≥0}、B={Y≥0}。min(X,Y)<0是A∩B的补，所以概率1−3/7=4/7。",
+        "max(X,Y)≥0是A∪B，概率4/7+4/7−3/7=5/7。",
+        "不要求连续假设，按严格与非严格不等号精确取补。这两所求事件不是互补，一正一负时会同时发生。"
+      ],
+      "common_mistakes": [
+        "最小与最大事件的并交方向不同。",
+        "不可无连续假设随意改换<与≤。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-004",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Y=1−X递减，X支持(−1,1)，新支持为(0,2)。",
+        "0<y<2时CDF=P(X≥1−y)=[1−(1−y)]/2=y/2；支持下方0、上方1。",
+        "求导密度1/2在(0,2)，其他0，即U(0,2)。反函数导数−1取绝对值也给相同结果。"
+      ],
+      "common_mistakes": [
+        "递减变换反解不等号反向。",
+        "端点映射后要按从小到大重新写支持。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-005",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "三角支持0<x<1、−x<y<x面积1，密度1。纵切f_X(x)=2x在(0,1)，横切f_Y(y)=1−|y|在(−1,1)，其他0。",
+        "在0<x<1/4、1/2<y<3/4正面积矩形，联合0但边缘乘积正，因此不独立。",
+        "Z=X+Y令y=z−x；−x<z−x<x化为z>0、x>z/2，加x<1给0<z<2、z/2<x<1。雅可比1，f_Z(z)=1−z/2在(0,2)，其他0，积分1。"
+      ],
+      "common_mistakes": [
+        "不可因各有一段边缘支持就用独立卷积。",
+        "和的支持须从联合约束求。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-006",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Y是最小值，Y>y当且仅当全部Xᵢ>y。0<y<1时独立给尾概率(1−y)ⁿ。",
+        "CDF为0(y≤0)、1−(1−y)ⁿ(0<y<1)、1(y≥1)。求导密度n(1−y)^{n−1}在(0,1)，其他0。",
+        "n为正整数，密度积分1，n=1回到均匀。直接乘各CDF对应最大值，不能用于最小值。"
+      ],
+      "common_mistakes": [
+        "最小值用尾概率的乘积。",
+        "最大值才是所有都≤y。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-007",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "U=X−Y的卷积为∫R(1/(2π))exp[−(t²+(t−u)²)/2]dt。配方2(t−u/2)²+u²/2，积分后f_U(u)=e^{−u²/4}/(2√π)，即N(0,2)。",
+        "V=|U|的正v密度是f_U(v)+f_U(−v)=e^{−v²/4}/√π，v>0，其他0。",
+        "第一密度全实积分1，第二将正半轴加倍也为1；指数尺度仍由原方差2决定。"
+      ],
+      "common_mistakes": [
+        "独立差方差1+1=2。",
+        "不能直接套标准半正态的指数−v²/2。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-E026-008",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "五参数给均值(1,0)、方差(1,1)、ρ=0。联合二维正态的零相关给独立，W=X−1为标准正态且与Y独立。",
+        "不等式XY−Y<0等价Y(X−1)<0，即W与Y异号。两个变量连续对称，各正负概率1/2，坐标轴质量0。",
+        "异号两象限互斥，概率1/4+1/4=1/2。若只有边缘正态与零相关而无联合正态，不能直接套独立结论。"
+      ],
+      "common_mistakes": [
+        "应以X−1的正负分象限。",
+        "相乘依据是联合正态零相关带来的独立。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X093-1287",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "原X=−1、0、1、2、5/2，概率1/5、1/10、1/10、3/10、3/10。第（1）X−1依次−2、−1、0、1、3/2，概率跟随原序。",
+        "第（2）−2X依次2、0、−2、−4、−5，概率仍跟随原序；排序新值需同步重排。",
+        "第（3）平方在0处1/10；在1处合并原−1与1的1/5+1/10=3/10；在4和25/4各3/10。其他0，总1。"
+      ],
+      "common_mistakes": [
+        "平方同值合并。",
+        "乘负数重排时不要把概率留在原位置。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X094-5467",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "X~U(0,1)，正半轴平方递增。CDF为0(y<0)、√y(0≤y<1)、1(y≥1)。",
+        "求导密度1/(2√y)在(0,1)，其他0；反函数导数法也直接得此式。",
+        "积分[√y]₀¹=1。平方不保留均匀分布，新密度在0附近较高但可积。"
+      ],
+      "common_mistakes": [
+        "原X正，只取正根。",
+        "不能把变换后变量仍视作均匀。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X095-1648",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "y≥0时CDF=P(−y≤X≤y)=2Φ(y)−1，y<0为0。",
+        "y>0密度为2φ(y)=√(2/π)e^{−y²/2}，其他0，0点无原子质量。",
+        "正态正半轴质量1/2，折叠后加倍归一为1。"
+      ],
+      "common_mistakes": [
+        "不能截正半轴却不加倍。",
+        "绝对值和平方的导数因子不同。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X096-1633",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "X>0，Y=e^X支持y>1，反函数lny。CDF为1−1/y(y>1)，y≤1为0。",
+        "求导f_Y(y)=1/y²，y>1，其他0；也等于f_X(lny)乘1/y。",
+        "密度积分1，右尾1/y。新变量不再指数分布。"
+      ],
+      "common_mistakes": [
+        "反函数导数1/y是额外因子。",
+        "支持起点是e⁰=1。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X096-4624",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "利润−5、−1、20分别对应X>12、X<10、10≤X≤12。标准化Z=X−11，边界为±1。",
+        "两个负利润概率各1−Φ(1)≈0.158655，中央利润20概率2Φ(1)−1≈0.682689。",
+        "按四位表Φ(1)=0.8413时写0.1587、0.1587、0.6826；精确值与查表舍入须区分。三原像无重无漏，总概率1。"
+      ],
+      "common_mistakes": [
+        "利润符号与偏大偏小条件要配对。",
+        "连续原量可经阶梯映射变离散利润。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X098-2016",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "原六非零格按行X=−1、2，列Y=−1、1、2，概率为5/20、1/10、3/10、3/20、3/20、1/20。",
+        "和的格值依次−2、0、1、1、3、4，合并后−2、0、1、3、4处概率5/20、1/10、9/20、3/20、1/20。",
+        "差的格值依次0、−2、−3、3、1、0，合并后−3、−2、0、1、3处概率3/10、1/10、3/10、3/20、3/20。各总1，其他0。"
+      ],
+      "common_mistakes": [
+        "同值来自不同格时相加。",
+        "使用原联合格，无须独立假设。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X098-8017",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "和为i的事件分成X=k,Y=i−k，k=0至i。独立相乘再跨互斥原像求和。",
+        "概率为e^{−(λ₁+λ₂)}∑λ₁ᵏλ₂^{i−k}/[k!(i−k)!]。提出1/i!，剩二项式和(λ₁+λ₂)ⁱ。",
+        "所以和为Poisson(λ₁+λ₂)，整数i≥0，其他0。零参数对应常数0也符合。"
+      ],
+      "common_mistakes": [
+        "独立是乘两泊松概率的依据。",
+        "两原变量非负使求和上界为i。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X099-5840",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "标准正态独立和的卷积为∫R(1/(2π))exp[−(x²+(z−x)²)/2]dx。",
+        "配方x²+(z−x)²=2(x−z/2)²+z²/2，提取e^{−z²/4}/(2π)，余高斯积分√π。",
+        "密度e^{−z²/4}/(2√π)，z∈R，即N(0,2)。不能把独立同分布两项当同一个量的两倍。"
+      ],
+      "common_mistakes": [
+        "配方后最终指数为−z²/4。",
+        "独立和方差2，2X方差4。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X100-4463",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "Z半径非负。z≥0的CDF为半径z圆盘上的联合密度积分。",
+        "极坐标面积元r dr dθ，CDF=∫₀²π∫₀ᶻe^{−r²/2}r/(2π)drdθ=1−e^{−z²/2}；z<0为0。",
+        "求导密度z e^{−z²/2}在z>0，其余0。换元u=z²/2核验总积分1。"
+      ],
+      "common_mistakes": [
+        "极坐标雅可比r不能漏。",
+        "半径与半径平方的密度不同。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X101-7493",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "最大值Z只能0或1，Z=0当且仅当两变量都0。",
+        "独立给P(Z=0)=1/4，P(Z=1)=1−1/4=3/4。",
+        "后者包含01、10、11三种情况。最大值不再以各半取0或1。"
+      ],
+      "common_mistakes": [
+        "最大值1只需至少一者1。",
+        "边缘各半本身不足，需独立来相乘。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X102-3177",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "串联任一件坏即系统坏，寿命最小。独立尾相乘得P(Y>y)=e⁻³ʸ，y>0，CDF1−e⁻³ʸ、密度3e⁻³ʸ；y≤0均0。",
+        "并联到最后一件失效才坏，寿命最大。正z的CDF为(1−e⁻ᶻ)³。",
+        "求导密度3(1−e⁻ᶻ)²e⁻ᶻ，z>0，其余0。两CDF无穷趋1，归一；并联不是顺次相加寿命。"
+      ],
+      "common_mistakes": [
+        "串联取最小，并联取最大。",
+        "最小用尾乘积，最大用CDF乘积。"
+      ]
+    },
+    {
+      "id": "SRC-PS3-X102-7522",
+      "status": "draft_unverified",
+      "scope": "all_stated_subquestions",
+      "explanation": [
+        "两条指标边界为y=−x、y=x，互相垂直且过圆心，把圆盘切为四个90°扇区。",
+        "均匀密度1/π，每扇区面积π/4，所以(U,V)的00、01、10、11四格概率均1/4。边界直线零面积，不影响等号取法。",
+        "两个指标边缘均各半，联合等边缘乘积，故这两个指标独立；不反推原圆盘坐标X、Y独立。"
+      ],
+      "common_mistakes": [
+        "按两个半平面条件同时定位扇区。",
+        "函数指标独立不反推原变量独立。"
+      ]
+    }
+  ]
+}
